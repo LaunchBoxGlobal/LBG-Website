@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#fff];
+}
+
+.red-text {
+  @apply text-[#F40E00];
+}
+
+.red-bg {
+  @apply bg-[#F40E00];
+}
+
+.padding-x {
+  @apply px-4 md:px-8 lg:px-28 xl:px-32 2xl:px-48;
+}
+
+.red-btn-shadow {
+  box-shadow: #f40e0080 0px 8px 24px;
+}
+.red-btn-shadow:hover {
+  box-shadow: #3d3d3d80 0px 8px 24px;
+}
+
+.red-btn {
+  @apply bg-[#F40E00] text-white px-5 lg:px-10 py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300;
+}
+
+.black-btn {
+  @apply bg-[#000] text-white px-5 lg:px-10 py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#e0443c] transition-all duration-300;
+}
+
+.section-heading {
+  @apply text-3xl md:text-4xl lg:text-[85px] 2xl:text-[95px] font-bold 2xl:font-extrabold lg:tracking-tight lg:leading-[95px];
+}
+
+.section-paragraph {
+  @apply text-base lg:text-[24px] 2xl:text-[30px] font-light lg:leading-[36px] text-gray-400;
+}
+
+.custom-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* swiper start */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  overflow: visible !important;
+}
+
+.swiper-vertical {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: visible !important; */
+  height: 55vh !important;
+  /* border: 1px soli black !important; */
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%;
+    height: 100%; */
+  object-fit: cover;
+}
+
+/* swiper end */
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f40e00;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f40e00;
+}
+
+/* canvas {
+  width: 100% !important;
+  height: 100vh !important;
+} */

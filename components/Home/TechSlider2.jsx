@@ -1,0 +1,56 @@
+"use client";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
+import gsap from "gsap";
+import { TECH_STACK } from "@/constants/techStack";
+
+const TechSlider2 = () => {
+  const marqueeRef = useRef(null);
+
+  useEffect(() => {
+    const marquee = marqueeRef.current;
+    if (!marquee) return;
+
+    // Get the total width of the content
+    const totalWidth = marquee.scrollWidth;
+
+    // GSAP animation for continuous left-to-right scrolling
+    gsap.to(marquee, {
+      x: totalWidth, // Move the content to the right
+      duration: 30, // Adjust the scroll speed
+      ease: "linear", // Continuous, smooth scrolling
+      repeat: -1, // Infinite repeat
+      modifiers: {
+        x: gsap.utils.wrap(0, totalWidth), // Wrap the animation for seamless looping
+      },
+    });
+  }, []);
+
+  return (
+    <section className="w-full py-3 overflow-hidden bg-white">
+      <div className="flex items-center gap-x-2 w-max" ref={marqueeRef}>
+        {[...TECH_STACK, ...TECH_STACK].map((platform, index) => (
+          <div
+            className="border px-3 py-2 rounded-xl flex items-center justify-center gap-4"
+            key={index}
+          >
+            <div className="bg-white custom-shadow w-[53px] h-[53px] flex items-center justify-center p-2.5 rounded-xl">
+              <Image
+                src={platform?.image}
+                width={20}
+                height={20}
+                alt={platform?.title}
+                className="w-auto h-full object-contain"
+              />
+            </div>
+            <h3 className="text-[25px] 2xl:text-[30px] text-gray-400 font-light">
+              {platform?.title}
+            </h3>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default TechSlider2;

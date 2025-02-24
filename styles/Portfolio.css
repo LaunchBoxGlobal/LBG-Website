@@ -1,0 +1,36 @@
+.portfolio01,
+.portfolio02,
+.portfolio03,
+.portfolio04,
+.portfolio05 {
+  opacity: 1; /* Initially hidden */
+  scale: 1;
+  transition: transform 1s ease-in-out, opacity 0.9s ease-in-out;
+  animation-delay: 6s;
+}
+
+.portfolio01.active {
+  transform: translate(750px, -70px);
+  scale: 0.5;
+  opacity: 1;
+}
+
+.portfolio02.active {
+  transform: translate(-500px, -160px);
+  opacity: 1;
+}
+
+.portfolio03.active {
+  transform: translate(500px, -160px);
+  opacity: 1;
+}
+
+.portfolio04.active {
+  transform: translate(-500px, 160px);
+  opacity: 1;
+}
+
+.portfolio05.active {
+  transform: translate(500px, 160px);
+  opacity: 1;
+}
