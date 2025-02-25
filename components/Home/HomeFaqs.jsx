@@ -2,6 +2,7 @@
 import { FAQS } from "@/constants/Faqs";
 import Image from "next/image";
 import React, { useState } from "react";
+import { PiStarFourFill } from "react-icons/pi";
 
 const HomeFaqs = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -17,22 +18,32 @@ const HomeFaqs = () => {
       </h2>
       <section
         id="faqs"
-        className="w-full mt-28 flex flex-col items-start gap-4 lg:w-[90%]"
+        className="w-full mt-10 lg:mt-24 flex flex-col items-start gap-4 lg:w-[90%]"
       >
         {FAQS?.map((faq, index) => (
           <div className="w-full border-b border-black pt-4 pb-10" key={index}>
             <button
               onClick={() => toggleFaq(index)}
-              className="w-full text-start flex items-center justify-between"
+              className="w-full text-start flex items-center justify-between outline-none"
             >
-              <h5 className="font-medium text-xl md:text-3xl lg:text-[35px] 2xl:text-[45px]">
+              <h5 className="font-medium text-xl md:text-3xl lg:text-[35px] 2xl:text-[45px] w-[95%]">
                 {faq?.question}
               </h5>
-              <Image
+              {/* <Image
                 src={"/faq-arrow-icon.png"}
                 alt="faq-arrow-icon"
-                width={28}
-                height={24}
+                width={22}
+                height={18}
+                className={`${
+                  openFaq === index ? "rotate-180" : "rotate-0"
+                } transition-all duration-500`}
+              /> */}
+              <PiStarFourFill
+                className={`text-2xl ${
+                  openFaq === index
+                    ? "rotate-180 text-[#F40E00]"
+                    : "rotate-0 text-gray-700"
+                } transition-all duration-500`}
               />
             </button>
             {openFaq === index && (
