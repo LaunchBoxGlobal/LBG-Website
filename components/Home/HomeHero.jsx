@@ -7,12 +7,12 @@ import { GlobeDemo } from "../talk-to-us/GlobeDemo";
 
 const HomeHero = () => {
   return (
-    <section className="w-full bg-white relative pt-40 2xl:pt-48 flex flex-col items-center justify-start padding-x gap-4 lg:gap-[25px] h-[80vh] lg:h-[120vh] 2xl:h-[95vh] overflow-hidden">
+    <section className="w-full bg-white relative pt-40 2xl:pt-48 flex flex-col items-center justify-start padding-x gap-0 lg:gap-[25px] h-[80vh] lg:h-[120vh] 2xl:h-[90vh] overflow-hidden">
       <h1 className="font-bold text-3xl lg:text-[84px] 2xl:text-[100px] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
           <Image
-            src={"/arrow-right.svg"}
+            src={"/hero-heading-icon.png"}
             width={80}
             height={80}
             alt={"arrow icon"}
@@ -20,7 +20,7 @@ const HomeHero = () => {
           />{" "}
           Build{" "}
           <Image
-            src={"/arrow-right.svg"}
+            src={"/hero-heading-icon.png"}
             width={80}
             height={80}
             alt={"arrow icon"}
@@ -29,19 +29,21 @@ const HomeHero = () => {
           Succeed
         </span>
 
-        <FlippingText />
+        <div className="w-full relative -top-3 2xl:-top-1.5">
+          <FlippingText />
+        </div>
       </h1>
-      <div className="flex items-center justify-center gap-2 w-[76%]">
+      <div className="flex items-center justify-center gap-2 w-[76%] relative -top-6 2xl:-pt-1">
         <h2 className="text-lg lg:text-[22px] 2xl:text-[26px] font-medium text-gray-500 text-center">
           Available in your Timezone, at Affordable Rates, with Full
           Transparency.
         </h2>
       </div>
 
-      <div className="flex items-center justify-center gap-4 mt-4">
+      <div className="flex items-center justify-center gap-4 mt-0 relative -top-1">
         <ContactButton text={"Get a Free Consultation"} />
       </div>
-      <div className="w-full  h-[340px] flex items-center justify-center relative">
+      <div className="w-full h-[340px] flex items-center justify-center relative">
         <GlobeDemo />
       </div>
 

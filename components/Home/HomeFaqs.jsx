@@ -1,6 +1,5 @@
 "use client";
 import { FAQS } from "@/constants/Faqs";
-import Image from "next/image";
 import React, { useState } from "react";
 import { PiStarFourFill } from "react-icons/pi";
 
@@ -26,18 +25,10 @@ const HomeFaqs = () => {
               onClick={() => toggleFaq(index)}
               className="w-full text-start flex items-center justify-between outline-none"
             >
-              <h5 className="font-medium text-xl md:text-3xl lg:text-[35px] 2xl:text-[45px] w-[95%]">
+              <h5 className="font-medium text-xl md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[95%]">
                 {faq?.question}
               </h5>
-              {/* <Image
-                src={"/faq-arrow-icon.png"}
-                alt="faq-arrow-icon"
-                width={22}
-                height={18}
-                className={`${
-                  openFaq === index ? "rotate-180" : "rotate-0"
-                } transition-all duration-500`}
-              /> */}
+
               <PiStarFourFill
                 className={`text-2xl ${
                   openFaq === index

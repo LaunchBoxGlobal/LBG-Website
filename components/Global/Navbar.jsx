@@ -38,7 +38,7 @@ const Navbar = () => {
           className="w-[40px] lg:hidden"
         />
         <div className="border border-[#CECEEA] w-[0.5px] h-[27px] opacity-50 hidden lg:block" />
-        <span className="text-xs 2xl:text-sm font-semibold lg:leading-[14px] hidden lg:block">
+        <span className="text-xs 2xl:text-sm font-medium lg:leading-[14px] hidden lg:block">
           <strong>
             Trusted Talent, <br /> Anywhere, Anytime.
           </strong>
@@ -49,25 +49,25 @@ const Navbar = () => {
         <li>
           <Link
             href={`/`}
-            className={`font-medium text-sm 2xl:text-[18px] flex items-center justify-start gap-1 group`}
+            className={`font-medium text-[17px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
           >
             Services{" "}
-            <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" />
+            <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" />
           </Link>
         </li>
         <li>
           <Link
             href={`#services`}
-            className={`font-medium text-sm 2xl:text-[18px] flex items-center justify-start gap-1 group`}
+            className={`font-medium text-[17px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
           >
             Solutions{" "}
-            <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" />
+            <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 mt-0.5" />
           </Link>
         </li>
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-medium text-sm 2xl:text-[18px] flex items-center justify-start gap-1 group`}
+            className={`font-medium text-[17px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
           >
             Resources{" "}
             <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" />
@@ -76,7 +76,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-medium text-sm 2xl:text-[18px]`}
+            className={`font-medium text-[17px] 2xl:text-[18px]`}
           >
             Pricing
           </Link>
@@ -84,17 +84,9 @@ const Navbar = () => {
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-medium text-sm 2xl:text-[18px]`}
+            className={`font-medium text-[17px] 2xl:text-[18px]`}
           >
             Work
-          </Link>
-        </li>
-        <li>
-          <Link
-            href={`/contact-us`}
-            className={`font-medium text-sm 2xl:text-[18px] text-black`}
-          >
-            Contact Us
           </Link>
         </li>
       </ul>
@@ -102,14 +94,14 @@ const Navbar = () => {
       <div className="bg-white hidden lg:flex items-center justify-center gap-4 pl-5 pr-2 rounded-[17px] border border-[#CECEEA] h-[57px]">
         <Link
           href={`/`}
-          className="flex items-center justify-end gap-1 outline-none font-medium text-sm 2xl:text-[18px]"
+          className="flex items-center justify-end gap-1 outline-none font-medium text-[17px] 2xl:text-[18px]"
         >
           <span>Login</span>
-          <IoIosArrowDown />
+          <IoIosArrowDown className="text-lg mt-0.5" />
         </Link>
         <Link
-          href={`/`}
-          className="red-bg px-3 py-3 rounded-[11px] text-white hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-sm 2xl:text-[18px]"
+          href={`/contact-us`}
+          className="red-bg px-3 py-3 rounded-[11px] text-white hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-[17px] 2xl:text-[18px]"
         >
           <span>Contact Sales</span>
         </Link>
