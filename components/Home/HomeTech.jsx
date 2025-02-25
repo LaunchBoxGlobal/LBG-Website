@@ -5,10 +5,10 @@ import TechSlider2 from "./TechSlider2";
 const HomeTech = () => {
   return (
     <>
-      <section className="w-full padding-x py-10">
-        <section className="w-full flex flex-col items-center justify-center gap-5">
-          <h2 className="section-heading">
-            Smart Technology <br /> For Better{" "}
+      <section className="w-full py-10 lg:py-20 bg-[#F9F9F9]">
+        <section className="w-full padding-x flex flex-col items-center justify-center gap-5 mb-8">
+          <h2 className="section-heading text-center">
+            Smart Technology For <br /> Better{" "}
             <span className="red-text">Solution</span>
           </h2>
           <p className="section-paragraph text-center">
@@ -17,9 +17,9 @@ const HomeTech = () => {
             business needs.
           </p>
         </section>
+        <HomeTechnologiesSlider />
+        <TechSlider2 />
       </section>
-      <HomeTechnologiesSlider />
-      <TechSlider2 />
     </>
   );
 };

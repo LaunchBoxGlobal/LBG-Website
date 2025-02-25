@@ -107,7 +107,7 @@ function Globe({ globeConfig, data }) {
 
     let animationFrameId;
     // Rotate the globe on the X-axis (Bottom to Top movement)
-    globeRef.current.rotation.x += 0.002; // Adjust speed if needed
+    // globeRef.current.rotation.x += 0.002; // Adjust speed if needed
 
     globeRef.current
       .arcsData(data)

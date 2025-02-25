@@ -7,31 +7,46 @@ import { TECH_STACK } from "@/constants/techStack";
 const TechSlider2 = () => {
   const marqueeRef = useRef(null);
 
+  // useEffect(() => {
+  //   const marquee = marqueeRef.current;
+  //   if (!marquee) return;
+
+  //   // Get the total width of the content
+  //   const totalWidth = marquee.scrollWidth;
+
+  //   // GSAP animation for continuous left-to-right scrolling
+  //   gsap.to(marquee, {
+  //     x: totalWidth, // Move the content to the right
+  //     duration: 30, // Adjust the scroll speed
+  //     ease: "linear", // Continuous, smooth scrolling
+  //     repeat: -1, // Infinite repeat
+  //     modifiers: {
+  //       x: gsap.utils.wrap(0, totalWidth), // Wrap the animation for seamless looping
+  //     },
+  //   });
+  // }, []);
+
   useEffect(() => {
     const marquee = marqueeRef.current;
     if (!marquee) return;
 
-    // Get the total width of the content
-    const totalWidth = marquee.scrollWidth;
-
-    // GSAP animation for continuous left-to-right scrolling
     gsap.to(marquee, {
-      x: totalWidth, // Move the content to the right
-      duration: 30, // Adjust the scroll speed
-      ease: "linear", // Continuous, smooth scrolling
-      repeat: -1, // Infinite repeat
+      xPercent: 50,
+      duration: 30,
+      ease: "linear",
+      repeat: -1,
       modifiers: {
-        x: gsap.utils.wrap(0, totalWidth), // Wrap the animation for seamless looping
+        xPercent: gsap.utils.wrap(0, -50),
       },
     });
   }, []);
 
   return (
-    <section className="w-full py-3 overflow-hidden bg-white">
+    <section className="w-full py-3 overflow-hidden bg-[#F9F9F9]">
       <div className="flex items-center gap-x-2 w-max" ref={marqueeRef}>
         {[...TECH_STACK, ...TECH_STACK].map((platform, index) => (
           <div
-            className="border px-3 py-2 rounded-xl flex items-center justify-center gap-4"
+            className="border px-3 py-2 rounded-xl flex items-center justify-center gap-3"
             key={index}
           >
             <div className="bg-white custom-shadow w-[53px] h-[53px] flex items-center justify-center p-2.5 rounded-xl">

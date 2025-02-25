@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Global/Navbar";
 import Footer from "@/components/Global/Footer";
+import HomeFooter from "@/components/Global/HomeFooter";
 
 const poppinsFont = Poppins({
   weight: "700",
@@ -20,7 +21,8 @@ export default function RootLayout({ children }) {
       <body className={`${poppinsFont.variable} overflow-x-hidden`}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
+        <HomeFooter />
       </body>
     </html>
   );

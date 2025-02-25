@@ -17,9 +17,9 @@ const HomeServices = () => {
         <h2 className="section-heading">
           What We <span className="red-text">Do?</span>
         </h2>
-        <p className="text-xl 2xl:text-[26px] mt-6 font-medium w-full lg:w-2/5 text-center lg:leading-[31px] text-gray-500">
-          We help businesses grow with clear software solutions created by
-          skilled experts from around the world.
+        <p className="section-paragraph text-center">
+          We help businesses grow with clear software solutions <br /> created
+          by skilled experts from around the world.
         </p>
       </section>
 

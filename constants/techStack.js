@@ -13,7 +13,7 @@ export const TECH_STACK = [
   },
   {
     image: "/google-cloud-logo.png",
-    title: "/Google Cloud",
+    title: "Google Cloud",
   },
   {
     image: "/angular-logo.png",

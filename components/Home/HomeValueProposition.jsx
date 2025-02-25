@@ -44,11 +44,11 @@ const HomeValueProposition = () => {
       className="w-full py-10 lg:py-20 relative overflow-hidden padding-x bg-[#F9F9F9]"
       id="portfolio"
     >
-      <section className="w-full flex flex-col items-start justify-start gap-4">
+      <section className="w-full flex flex-col items-start justify-start gap-4 mb-4">
         <h2 className="section-heading lg:leading-[80px] text-start">
           See How We Are <br /> <span className="red-text">Different</span>
         </h2>
-        <p className="text-base lg:text-[24px] 2xl:text-[30px] w-full lg:w-2/3 mt-1 mb-2 lg:leading-[26px] 2xl:leading-[36px] text-gray-400 font-light">
+        <p className="section-paragraph text-start">
           We offer expert-driven, scalable, and affordable software <br />
           solutions with a focus on speed, support, and client success."
         </p>

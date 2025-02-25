@@ -10,7 +10,7 @@ const HomeFaqs = () => {
     setOpenFaq(openFaq === index ? null : index);
   };
   return (
-    <section className="w-full py-10 lg:py-20 padding-x flex flex-col items-center">
+    <section className="w-full py-10 lg:pt-20 lg:pb-32 padding-x flex flex-col items-center">
       <h2 className="section-heading text-center">
         Got Questions? <br /> We've Got You{" "}
         <span className="red-text">Covered!</span>
@@ -36,7 +36,7 @@ const HomeFaqs = () => {
               />
             </button>
             {openFaq === index && (
-              <div className="w-full text-start mt-3">
+              <div className="w-full text-start mt-3 lg:mt-4">
                 <p className="text-[20px] font-normal text-gray-400 lg:w-[95%]">
                   {faq?.answer}
                 </p>
