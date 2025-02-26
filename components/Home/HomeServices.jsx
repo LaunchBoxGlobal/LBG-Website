@@ -18,8 +18,8 @@ const HomeServices = () => {
           What We <span className="red-text">Do?</span>
         </h2>
         <p className="section-paragraph text-center">
-          We help businesses grow with clear software solutions <br /> created
-          by skilled experts from around the world.
+          We help you grow with clear software solutions <br /> created by
+          skilled experts around the world.
         </p>
       </section>
 

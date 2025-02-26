@@ -12,9 +12,8 @@ const HomeTech = () => {
             <span className="red-text">Solution</span>
           </h2>
           <p className="section-paragraph text-center">
-            We carefully select the best tools and technologies to build strong,
-            fast, <br /> and secure software solutions that perfectly fit your
-            business needs.
+            You get the best tools and technologies to build fast, secure, and{" "}
+            <br /> reliable software that fits your business perfectly.
           </p>
         </section>
         <HomeTechnologiesSlider />

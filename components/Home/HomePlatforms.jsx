@@ -4,34 +4,77 @@ import Image from "next/image";
 import gsap from "gsap";
 
 const platforms = [
-  { src: "/glassdoor-icon.png", width: 178, height: 28, alt: "glassdoor icon" },
-  { src: "/yelp-icon.png", width: 100, height: 27, alt: "yelp icon" },
-  { src: "/goodfirms-icon.png", width: 182, height: 28, alt: "goodfirms icon" },
-  { src: "/clutch-icon.png", width: 96.03, height: 28, alt: "clutch icon" },
   {
-    src: "/techreviewer-icon.png",
-    width: 209.86,
-    height: 38,
-    alt: "techreviewer icon",
+    src: "/cost-effective.png",
+    width: 180,
+    height: 19,
+    alt: "cost effective value proposition",
   },
   {
-    src: "/trustpilot-icon.png",
-    width: 160,
-    height: 18,
-    alt: "trustpilot icon",
+    src: "/startup-friendly.png",
+    width: 180,
+    height: 19,
+    alt: "startup friendly value proposition",
   },
   {
-    src: "/reviews-icon.png",
-    width: 162.58,
-    height: 28.4,
-    alt: "reviews icon",
+    src: "/transparent-process.png",
+    width: 195,
+    height: 29,
+    alt: "transparent process icon",
   },
-  { src: "/fiverr-icon.png", width: 92, height: 10.4, alt: "fiverr icon" },
   {
-    src: "/sitejabber-icon.png",
-    width: 174.9,
-    height: 20,
-    alt: "sitejabber icon",
+    src: "/quick-turnaround.png",
+    width: 185,
+    height: 22,
+    alt: "quick turnaround icon",
+  },
+  {
+    src: "/partner-first.png",
+    width: 180,
+    height: 19,
+    alt: "partner first",
+  },
+  {
+    src: "/global-talents.png",
+    width: 180,
+    height: 19,
+    alt: "global talents icon",
+  },
+  {
+    src: "/cost-effective.png",
+    width: 180,
+    height: 19,
+    alt: "cost effective value proposition",
+  },
+  {
+    src: "/startup-friendly.png",
+    width: 180,
+    height: 19,
+    alt: "startup friendly value proposition",
+  },
+  {
+    src: "/transparent-process.png",
+    width: 195,
+    height: 29,
+    alt: "transparent process icon",
+  },
+  {
+    src: "/quick-turnaround.png",
+    width: 185,
+    height: 22,
+    alt: "quick turnaround icon",
+  },
+  {
+    src: "/partner-first.png",
+    width: 180,
+    height: 19,
+    alt: "partner first",
+  },
+  {
+    src: "/global-talents.png",
+    width: 180,
+    height: 19,
+    alt: "global talents icon",
   },
 ];
 
@@ -63,7 +106,8 @@ const HomePlatforms = () => {
             width={platform.width}
             height={platform.height}
             alt={platform.alt}
-            className="grayscale hover:grayscale-0 transition-all duration-200"
+            className={`object-contain grayscale-img`}
+            style={{ width: platform.width, height: platform.height }}
           />
         ))}
       </div>

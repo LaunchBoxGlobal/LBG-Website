@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 export const sliderSettings = {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 40,
   centeredSlides: true,
   // autoplay: {
   //   delay: 3000,
@@ -41,25 +41,25 @@ export const sliderSettings = {
 const HomeValueProposition = () => {
   return (
     <section
-      className="w-full py-10 lg:py-20 relative overflow-hidden padding-x bg-[#F9F9F9]"
+      className="w-full py-10 lg:py-20 relative overflow-hidden padding-x bg-[#fff]"
       id="portfolio"
     >
-      <section className="w-full flex flex-col items-start justify-start gap-4 mb-4">
+      <section className="w-full flex flex-col items-start justify-start gap-4 mb-7">
         <h2 className="section-heading lg:leading-[80px] text-start">
           See How We Are <br /> <span className="red-text">Different</span>
         </h2>
-        <p className="section-paragraph text-start">
-          We offer expert-driven, scalable, and affordable software <br />
-          solutions with a focus on speed, support, and client success."
+        <p className="section-paragraph text-start mt-2">
+          We bring you expert-driven, scalable, and affordable software <br />
+          solutions fast, reliable, and built for your success!
         </p>
       </section>
 
-      <section className={`w-full relative overflow-hidden h-[280px] mt-5`}>
+      <section className={`w-full relative overflow-hidden h-[280px] mt-10`}>
         <Swiper {...sliderSettings} modules={[Autoplay]} className="">
           {VALUE_PROPOSITION?.map((value, index) => {
             return (
               <SwiperSlide key={index} className="">
-                <div className="w-full rounded-xl p-6 bg-white h-[197px] flex flex-col items-start justify-center">
+                <div className="w-full rounded-xl p-6 bg-white h-[197px] border flex flex-col items-start justify-center">
                   <div className="flex items-center justify-start gap-3">
                     <div
                       className={`w-[22px] h-[22px] ${

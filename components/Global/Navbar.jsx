@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <Link
         href={"/"}
-        className="rounded-[17px] bg-white lg:border border-[#CECEEA] h-[57px] flex items-center justify-center gap-3 px-3"
+        className="rounded-[17px] bg-white lg:border border-[#CECEEA] h-[50px] flex items-center justify-center gap-3 px-3"
       >
         <Image
           src={`/logo02.png`}
@@ -38,45 +38,45 @@ const Navbar = () => {
           className="w-[40px] lg:hidden"
         />
         <div className="border border-[#CECEEA] w-[0.5px] h-[27px] opacity-50 hidden lg:block" />
-        <span className="text-xs 2xl:text-sm font-medium lg:leading-[14px] hidden lg:block">
+        <span className="text-xs 2xl:text-sm font-[300] lg:leading-[14px] 2xl:leading-[13px] hidden lg:block">
           <strong>
             Trusted Talent, <br /> Anywhere, Anytime.
           </strong>
         </span>
       </Link>
 
-      <ul className="hidden lg:flex items-center justify-center gap-x-6 bg-[#fff] py-3 px-6 rounded-[17px] border border-[#CECEEA] h-[57px]">
+      <ul className="hidden lg:flex items-center justify-center gap-x-10 bg-[#fff] py-3 px-6 rounded-[17px] border border-[#CECEEA] h-[50px]">
         <li>
           <Link
             href={`/`}
-            className={`font-medium text-[17px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
+            className={`font-medium text-[16px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
           >
             Services{" "}
-            <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" />
+            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
           </Link>
         </li>
         <li>
           <Link
             href={`#services`}
-            className={`font-medium text-[17px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
+            className={`font-medium text-[16px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
           >
             Solutions{" "}
-            <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 mt-0.5" />
+            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 mt-0.5" /> */}
           </Link>
         </li>
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-medium text-[17px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
+            className={`font-medium text-[16px] 2xl:text-[18px] flex items-center justify-start gap-1 group`}
           >
             Resources{" "}
-            <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" />
+            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" /> */}
           </Link>
         </li>
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-medium text-[17px] 2xl:text-[18px]`}
+            className={`font-medium text-[16px] 2xl:text-[18px]`}
           >
             Pricing
           </Link>
@@ -84,24 +84,24 @@ const Navbar = () => {
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-medium text-[17px] 2xl:text-[18px]`}
+            className={`font-medium text-[16px] 2xl:text-[18px]`}
           >
             Work
           </Link>
         </li>
       </ul>
 
-      <div className="bg-white hidden lg:flex items-center justify-center gap-4 pl-5 pr-2 rounded-[17px] border border-[#CECEEA] h-[57px]">
-        <Link
+      <div className="bg-white hidden lg:flex items-center justify-center gap-4 p-1 rounded-[12px] border border-[#CECEEA] h-[50px]">
+        {/* <Link
           href={`/`}
-          className="flex items-center justify-end gap-1 outline-none font-medium text-[17px] 2xl:text-[18px]"
+          className="flex items-center justify-end gap-1 outline-none font-medium text-[16px] 2xl:text-[18px]"
         >
           <span>Login</span>
           <IoIosArrowDown className="text-lg mt-0.5" />
-        </Link>
+        </Link> */}
         <Link
           href={`/contact-us`}
-          className="red-bg px-3 py-3 rounded-[11px] text-white hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-[17px] 2xl:text-[18px]"
+          className="red-bg px-3 h-full rounded-[11px] text-white hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-[17px] 2xl:text-[18px]"
         >
           <span>Contact Sales</span>
         </Link>

@@ -1,5 +1,6 @@
 "use client";
 import { FAQS } from "@/constants/Faqs";
+import Image from "next/image";
 import React, { useState } from "react";
 import { PiStarFourFill } from "react-icons/pi";
 
@@ -29,12 +30,18 @@ const HomeFaqs = () => {
                 {faq?.question}
               </h5>
 
-              <PiStarFourFill
+              {/* <PiStarFourFill
                 className={`text-2xl ${
                   openFaq === index
                     ? "rotate-180 text-[#F40E00]"
                     : "rotate-0 text-gray-700"
                 } transition-all duration-500`}
+              /> */}
+              <Image
+                src={"/faq-arrow-icon.png"}
+                width={24}
+                height={20}
+                alt="arrow icon"
               />
             </button>
             {openFaq === index && (

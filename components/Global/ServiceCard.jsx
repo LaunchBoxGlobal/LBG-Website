@@ -18,16 +18,16 @@ const ServiceCard = ({ service, index, setModal }) => {
     >
       <Image
         src={service?.image}
-        width={300}
-        height={230}
+        width={270}
+        height={200}
         alt={service?.title}
-        className="-rotate-[22deg] invisible group-hover:visible transition-all duration-300 absolute left-[10%] -top-[46%]"
+        className="-rotate-[22deg] invisible group-hover:visible transition-all duration-300 absolute left-[8%] -top-[46%]"
       />
       <span className="text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300">{`(0${
         index + 1
       })`}</span>
       <div className="flex items-start justify-between w-[80%] lg:w-[750px]">
-        <h3 className="text-lg md:text-[34px] lg:text-[40px] 2xl:text-[55px] leading-[45px] tracking-tight font-normal text-gray-400 group-hover:text-white group-hover:font-medium transition-all duration-300">
+        <h3 className="text-lg md:text-[34px] lg:text-[40px] 2xl:text-[55px] leading-[45px] tracking-tight font-light text-gray-400 group-hover:text-white group-hover:font-normal transition-all duration-300">
           {service?.title}
         </h3>
         <Link href={"/"}>

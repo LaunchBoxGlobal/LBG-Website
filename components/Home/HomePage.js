@@ -9,6 +9,7 @@ import HomeCustomerReviews from "./HomeCustomerReviews";
 import HomeTeamSection from "./HomeTeamSection";
 import HomeValueProposition from "./HomeValueProposition";
 import HomeFaqs from "./HomeFaqs";
+import HomeComparison from "./HomeComparison";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <HomeHero />
       <HomePlatforms />
       <HomeServices />
+      <HomeComparison />
       <HomeValueProposition />
       <HomePortfolio />
       <HomeTech />

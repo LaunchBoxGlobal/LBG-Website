@@ -20,7 +20,7 @@ const HomePortfolio = () => {
           }
         });
       },
-      { threshold: 0.5 } // Adjust to control when the animation triggers
+      { threshold: 0 } // Adjust to control when the animation triggers
     );
 
     elements.forEach((el) => observer.observe(el));
@@ -41,9 +41,9 @@ const HomePortfolio = () => {
       <p className="text-base lg:text-[24px] 2xl:text-[30px] w-full lg:w-2/3 mt-1 mb-2 mx-auto text-center lg:leading-[26px] 2xl:leading-[36px] text-gray-400 font-light">
         See the remarkable results achieved <br /> through our proven methods
       </p>
-      <div className="w-[220px] mt-2">
+      {/* <div className="w-[220px] mt-2">
         <ContactButton text={"View More"} />
-      </div>
+      </div> */}
 
       <Image
         src={"/portfolio01.png"}
