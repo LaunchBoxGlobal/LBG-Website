@@ -40,7 +40,7 @@ export const HOME_SERVICES = [
   {
     image: "/software-development.png",
     title: "Software Development",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    desc: "Your business is unique, and your software should be too. With custom software development services, get tailored solutions that could fix your exact needs. Whether it’s automating tasks, improving efficiency, or scaling operations, the correct software could make a difference. There are no unnecessary features, just the tools that are used perfectly and built specifically for your business requirements.",
     img_width: "30px",
     img_height: "28px",
     tags: [

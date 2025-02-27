@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Process = () => {
-  const [openFaq, setOpenFaq] = useState(null);
+  const [openFaq, setOpenFaq] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
 
   const toggleFaq = (index) => {
