@@ -34,3 +34,31 @@
   transform: translate(500px, 160px);
   opacity: 1;
 }
+
+@media screen and (min-width: 1920px) {
+  .portfolio01.active {
+    transform: translate(850px, -70px);
+    scale: 0.5;
+    opacity: 1;
+  }
+
+  .portfolio02.active {
+    transform: translate(-550px, -160px);
+    opacity: 1;
+  }
+
+  .portfolio03.active {
+    transform: translate(550px, -160px);
+    opacity: 1;
+  }
+
+  .portfolio04.active {
+    transform: translate(-550px, 160px);
+    opacity: 1;
+  }
+
+  .portfolio05.active {
+    transform: translate(550px, 160px);
+    opacity: 1;
+  }
+}

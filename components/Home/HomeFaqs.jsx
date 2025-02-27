@@ -3,6 +3,7 @@ import { FAQS } from "@/constants/Faqs";
 import Image from "next/image";
 import React, { useState } from "react";
 import { PiStarFourFill } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const HomeFaqs = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -42,15 +43,26 @@ const HomeFaqs = () => {
                 width={24}
                 height={20}
                 alt="arrow icon"
+                className={`${
+                  openFaq === index ? "scale-y-[-1]" : "scale-y-[1]"
+                } transition-all duration-700`}
               />
             </button>
-            {openFaq === index && (
-              <div className="w-full text-start mt-3 lg:mt-4">
-                <p className="text-[20px] font-normal text-gray-400 lg:w-[95%]">
-                  {faq?.answer}
-                </p>
-              </div>
-            )}
+
+            <motion.div
+              initial={false}
+              animate={{
+                height: openFaq === index ? "auto" : 0,
+                opacity: openFaq === index ? 1 : 0,
+                marginTop: openFaq === index ? "18px" : 0,
+              }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="overflow-hidden"
+            >
+              <p className="text-[20px] font-normal text-gray-900 lg:w-[75%]">
+                {faq?.answer}
+              </p>
+            </motion.div>
           </div>
         ))}
       </section>

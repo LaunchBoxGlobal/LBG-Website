@@ -7,7 +7,7 @@ import { GlobeDemo } from "../talk-to-us/GlobeDemo";
 
 const HomeHero = () => {
   return (
-    <section className="w-full bg-white relative pt-40 2xl:pt-48 flex flex-col items-center justify-start padding-x gap-0 lg:gap-[25px] h-[80vh] lg:h-[120vh] 2xl:h-[90vh] overflow-hidden">
+    <section className="w-full bg-white relative pt-40 2xl:pt-52 flex flex-col items-center justify-start gap-0 lg:gap-[25px] h-[80vh] lg:h-[140vh] xl:h-[120vh] 2xl:h-[98vh] overflow-hidden">
       <h1 className="font-bold text-3xl lg:text-[84px] 2xl:text-[100px] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
@@ -29,18 +29,18 @@ const HomeHero = () => {
           Succeed
         </span>
 
-        <div className="w-full relative -top-3 2xl:-top-1.5">
+        <div className="w-full relative -top-3 2xl:top-2">
           <FlippingText />
         </div>
       </h1>
-      <div className="flex items-center justify-center gap-2 w-[76%] relative -top-6 2xl:-pt-1">
+      <div className="flex items-center justify-center gap-2 w-[76%] relative -top-6 2xl:top-4 padding-x">
         <h2 className="text-lg lg:text-[22px] 2xl:text-[26px] font-medium text-gray-500 text-center">
           Available in your Timezone, at Affordable Rates, with Full
           Transparency.
         </h2>
       </div>
 
-      <div className="flex items-center justify-center gap-4 mt-0 relative -top-1">
+      <div className="flex items-center justify-center gap-4 mt-0 relative -top-1 2xl:top-10">
         <ContactButton text={"Get a Free Consultation"} />
       </div>
       {/* <div className="w-full h-[340px] flex items-center justify-center relative">

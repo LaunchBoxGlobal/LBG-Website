@@ -10,6 +10,8 @@ import HomeTeamSection from "./HomeTeamSection";
 import HomeValueProposition from "./HomeValueProposition";
 import HomeFaqs from "./HomeFaqs";
 import HomeComparison from "./HomeComparison";
+import FlagsSection from "./FlagsSection";
+import Process from "./Process";
 
 const HomePage = () => {
   return (
@@ -19,10 +21,12 @@ const HomePage = () => {
       <HomeServices />
       <HomeComparison />
       <HomeValueProposition />
+      <Process />
       <HomePortfolio />
       <HomeTech />
       {/* <HomeIdeaToLaunch /> */}
       <HomeCustomerReviews />
+      <FlagsSection />
       <HomeFaqs />
       {/* <HomeTeamSection /> */}
     </main>

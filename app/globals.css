@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Outfit", serif;
+  font-family: "Outfit", serif !important;
   scroll-behavior: smooth;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .padding-x {
-  @apply px-4 md:px-8 lg:px-28 xl:px-44 2xl:px-60;
+  @apply px-4 md:px-8 lg:px-28 xl:px-44 2xl:px-[300px];
 }
 
 .red-btn-shadow {
@@ -41,7 +41,7 @@ body {
 }
 
 .section-heading {
-  @apply text-3xl md:text-4xl lg:text-[85px] 2xl:text-[95px] font-bold 2xl:font-extrabold lg:tracking-tight lg:leading-[95px];
+  @apply text-3xl md:text-4xl lg:text-[85px] 2xl:text-[95px] font-bold 2xl:font-extrabold lg:tracking-tight lg:leading-[95px] 2xl:leading-[105px];
 }
 
 .section-paragraph {

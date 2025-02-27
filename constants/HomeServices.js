@@ -4,7 +4,7 @@ export const HOME_SERVICES = [
     img_width: "33px",
     img_height: "34px",
     title: "Mobile App Development",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    desc: "You need an app that works smoothly and keeps the users engaged. A mobile app development company that helps you build fast, secure, and easy-to-use apps for IOS and Android. Every step is handled with care that makes sure that app fits your goals and reaches the right audience.",
     tags: [
       "HTML",
       "CSS",
@@ -22,7 +22,7 @@ export const HOME_SERVICES = [
   {
     image: "/web-app-development-service.png",
     title: "Web App Development",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    desc: "Strong web app development keeps your business running efficiently. With web app development services, you get custom-built fast, secure, and user-friendly solutions for customers or internal teams. A well-designed web app improves workflows, boosts engagement, and delivers user experience.",
     img_width: "31.71px",
     img_height: "40px",
     tags: [
@@ -77,7 +77,7 @@ export const HOME_SERVICES = [
   {
     image: "/uiux-design-service.png",
     title: "UI/UX Design",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    desc: "Good design makes things easier to use. UI/UX design services create smooth and appealing experiences for websites or apps. Easy navigation, clear layouts, engaging designs keep users happy and make them want to experience again. A great interface improves satisfaction and boosts conversions.",
     img_width: "34.17px",
     img_height: "28px",
     tags: [
@@ -96,8 +96,8 @@ export const HOME_SERVICES = [
   },
   {
     image: "/branding-and-design-service.png",
-    title: "Branding & Design",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    title: "Branding & Designing",
+    desc: "Your brand is how people remember you. With branding & designing services, create a strong identity that connects with the customers. From the logos to the entire brand strategy, every small detail matters. Clear, creative, and eye-catching designs that helps build trust, and make you stand out from the competition.",
     img_width: "26px",
     img_height: "26px",
     tags: [
@@ -113,7 +113,7 @@ export const HOME_SERVICES = [
   {
     image: "/digital-marketing-service.png",
     title: "Digital Marketing",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    desc: "Reaching the right online audience takes approach and ability. With digital marketing services, visibility can be boosted through SEO, paid ads, and social media. Also, drive traffic and lead generation and turn your visitors into loyal customers. A strong digital presence that helps your business grow and stay ahead in a competitive online world.",
     img_width: "29px",
     img_height: "26.1px",
     tags: ["SEO", "SMM", "Paid Campaigns", "ORM", "Content Creation"],
@@ -122,7 +122,7 @@ export const HOME_SERVICES = [
   {
     image: "/maintenance-and-consutling-service.png",
     title: "Maintenance & Consulting ",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    desc: "It is essential to keep your software up to date. With maintenance and consulting services, you can get expert support, daily updates, and security fixes to make sure everything runs smoothly. Do you need expert guidance regarding tech strategy? Get clear advice to make well-informed choices and improve performance without any technical issues.",
     img_width: "36px",
     img_height: "26.31px",
     tags: [

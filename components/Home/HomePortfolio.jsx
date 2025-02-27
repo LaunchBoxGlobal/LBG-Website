@@ -32,7 +32,7 @@ const HomePortfolio = () => {
 
   return (
     <section
-      className="w-full py-10 lg:py-20 relative overflow-hidden padding-x lg:min-h-[100vh] flex flex-col items-center justify-center gap-5"
+      className="w-full py-10 lg:py-20 relative overflow-hidden padding-x lg:min-h-[100vh] 2xl:min-h-[70vh] flex flex-col items-center justify-center gap-5"
       id="portfolio"
     >
       <h2 className="section-heading lg:leading-[80px] text-center">

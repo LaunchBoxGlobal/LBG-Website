@@ -23,11 +23,7 @@ const HomeCustomerReviews = () => {
 
       {/* Sliding Animation Container */}
       <div className="relative w-full h-full overflow-hidden">
-        <div
-          className={`flex flex-col items-center gap-6 ${
-            isHovered && "animate-slide"
-          }`}
-        >
+        <div className={`flex flex-col items-center gap-6 animate-slide`}>
           {REVIEWS?.map((review, index) => (
             <div
               className={`relative ${
