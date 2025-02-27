@@ -57,7 +57,7 @@ export const HOME_SERVICES = [
   {
     image: "/ecommerce-development-service.png",
     title: "E-Commerce Development",
-    desc: "We help businesses grow with clear software solutions created by skilled experts from around the world.",
+    desc: "Selling online should be simple and effective with e-commerce app development services. Create an easy-to-use store that helps customers find, buy, and return with confidence. Create a secure and fast mobile-friendly platform that ensures smooth shopping experiences. Build an online store that grows your business and keeps customers coming back.",
     img_width: "28px",
     img_height: "28px",
     tags: [

@@ -58,14 +58,14 @@ const HomePortfolio = () => {
         className="w-[400px] h-[276px] absolute z-10 portfolio02"
       />
       <Image
-        src={"/portfolio03.png"}
+        src={"/portfolio06.png"}
         width={440}
         height={306}
-        className="w-[400px] h-[276px] absolute z-10 portfolio03"
+        className="w-[400px] h-[276px] absolute z-10 portfolio03 rounded-3xl"
       />
       <Image
-        src={"/portfolio04.png"}
-        className="w-[400px] h-[276px] absolute z-10 portfolio04"
+        src={"/portfolio07.png"}
+        className="w-[400px] h-[276px] absolute z-10 portfolio04 rounded-3xl"
         width={440}
         height={306}
       />

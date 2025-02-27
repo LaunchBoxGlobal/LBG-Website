@@ -5,14 +5,9 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import "./ServiceCard.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { IoMdArrowDown } from "react-icons/io";
 
-const ServiceCard = ({ service, index, setModal }) => {
-  const [openFaq, setOpenFaq] = useState(null);
-
-  const toggleFaq = (index) => {
-    setOpenFaq(openFaq === index ? null : index);
-  };
-
+const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
   return (
     <button
       type="button"
@@ -34,15 +29,13 @@ const ServiceCard = ({ service, index, setModal }) => {
           >
             {service?.title}
           </h3>
-          <Link href={"/"}>
-            <MdOutlineArrowOutward
-              className={`w-[21px] h-[21px] ${
-                openFaq === index
-                  ? "text-[#fff] opacity-100"
-                  : "text-[#F40E00] opacity-60"
-              } transition-all duration-300`}
-            />
-          </Link>
+          <IoMdArrowDown
+            className={`w-[31px] h-[31px] ${
+              openFaq === index
+                ? "text-[#fff] opacity-100 scale-y-[-1]"
+                : "text-[#F40E00] opacity-60 scale-y-[1]"
+            } transition-all duration-300`}
+          />
         </div>
       </div>
 

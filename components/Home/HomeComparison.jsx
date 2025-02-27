@@ -6,7 +6,7 @@ const HomeComparison = () => {
     <section className="w-full padding-x py-12 lg:py-28 bg-[#F9F9F9]">
       <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
         <section className="flex flex-col items-start">
-          <h2 className="text-[55px] 2xl:text-[60px] font-bold">
+          <h2 className="text-[45px] 2xl:text-[60px] font-bold">
             <strong>
               Problems You <span className="text-[#F40E00]">Face</span>
             </strong>
@@ -24,7 +24,7 @@ const HomeComparison = () => {
           />
         </section>
         <section className="flex flex-col items-start">
-          <h2 className="text-[55px] 2xl:text-[60px] font-bold">
+          <h2 className="text-[45px] 2xl:text-[60px] font-bold">
             <strong>
               Solutions We<span className="text-[#F40E00]"> Provide</span>
             </strong>

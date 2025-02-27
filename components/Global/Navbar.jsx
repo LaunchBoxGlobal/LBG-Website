@@ -56,7 +56,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            href={`/`}
+            href={`#services`}
             className={`font-medium text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Services{" "}
@@ -65,10 +65,10 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            href={`#services`}
+            href={`#workflow`}
             className={`font-medium text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
-            Solutions{" "}
+            Work Flow{" "}
             {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 mt-0.5" /> */}
           </Link>
         </li>
@@ -77,24 +77,24 @@ const Navbar = () => {
             href={`#portfolio`}
             className={`font-medium text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
-            Resources{" "}
+            Portfolio{" "}
             {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" /> */}
           </Link>
         </li>
         <li>
           <Link
-            href={`#portfolio`}
+            href={`#testimonials`}
             className={`font-medium text-[16px] 2xl:text-[22px]`}
           >
-            Pricing
+            Testimonials
           </Link>
         </li>
         <li>
           <Link
-            href={`#portfolio`}
+            href={`#faqs`}
             className={`font-medium text-[16px] 2xl:text-[22px]`}
           >
-            Work
+            FAQs
           </Link>
         </li>
       </ul>

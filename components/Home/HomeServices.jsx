@@ -7,6 +7,11 @@ import "../Global/ServiceCard.css";
 
 const HomeServices = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
 
   return (
     <section className="w-full padding-x py-12 lg:py-28 bg-[#fff]">
@@ -30,6 +35,9 @@ const HomeServices = () => {
             index={index}
             key={index}
             setModal={setModal}
+            openFaq={openFaq}
+            setOpenFaq={setOpenFaq}
+            toggleFaq={toggleFaq}
           />
         ))}
         {/* <ServiceCardModal modal={modal} projects={HOME_SERVICES} /> */}
