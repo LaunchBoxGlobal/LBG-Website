@@ -12,7 +12,7 @@ const HomeFooter = () => {
             Ready to Build <br /> Something <br /> Great?
           </h2>
           <Link
-            href={"/"}
+            href={"/contact-us"}
             className="w-[156px] h-[156px] rounded-full border border-white text-[25px] flex flex-col gap-2 uppercase items-center justify-center hover:border-[#f40e00] hover:bg-[#f40e00] transition-all duration-300"
           >
             let's <br /> talk

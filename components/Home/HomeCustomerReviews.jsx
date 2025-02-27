@@ -12,6 +12,7 @@ const HomeCustomerReviews = () => {
   return (
     <section
       className="w-full h-screen relative flex flex-col items-center justify-center overflow-hidden padding-x"
+      id="testimonials"
       // onMouseEnter={() => toggleIsHovered()}
       // onMouseLeave={() => toggleIsHovered()}
     >

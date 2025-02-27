@@ -12,7 +12,10 @@ const HomeFaqs = () => {
     setOpenFaq(openFaq === index ? null : index);
   };
   return (
-    <section className="w-full py-10 lg:pt-20 lg:pb-32 padding-x flex flex-col items-center">
+    <section
+      className="w-full py-10 lg:pt-20 lg:pb-32 padding-x flex flex-col items-center"
+      id="faqs"
+    >
       <h2 className="section-heading text-center">
         Got Questions? <br /> We've Got You{" "}
         <span className="red-text">Covered!</span>

@@ -40,10 +40,7 @@ export const sliderSettings = {
 
 const HomeValueProposition = () => {
   return (
-    <section
-      className="w-full py-10 lg:pt-20 relative overflow-hidden padding-x bg-[#fff]"
-      id="portfolio"
-    >
+    <section className="w-full py-10 lg:pt-20 relative overflow-hidden padding-x bg-[#fff]">
       <section className="w-full flex flex-col items-start justify-start gap-4 mb-7">
         <h2 className="section-heading text-start">
           See How We Are <br /> <span className="red-text">Different</span>

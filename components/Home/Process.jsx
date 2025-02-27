@@ -14,7 +14,10 @@ const Process = () => {
   };
 
   return (
-    <section className="w-full padding-x py-12 lg:py-28 bg-[#F9F9F9]">
+    <section
+      className="w-full padding-x py-12 lg:py-28 bg-[#F9F9F9]"
+      id="workflow"
+    >
       <section
         className="w-full flex flex-col items-center justify-center gap-5"
         id="services"
