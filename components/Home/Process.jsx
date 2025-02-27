@@ -29,7 +29,6 @@ const Process = () => {
           We follow a structured and client focused development process to{" "}
           <br />
           ensure the successful delivery of high quality software solutions.{" "}
-          <br /> Our workflow includes.:
         </p>
       </section>
 
