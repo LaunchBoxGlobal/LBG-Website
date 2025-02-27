@@ -62,7 +62,7 @@ const Process = () => {
                 </div>
                 <div className="flex flex-col items-start justify-start">
                   <h2
-                    className={`text-[30px] ${
+                    className={`text-2xl text-start lg:text-[30px] ${
                       openFaq === index
                         ? "font-bold text-[#F40E00]"
                         : "font-semibold text-gray-400"

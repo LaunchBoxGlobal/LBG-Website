@@ -127,13 +127,13 @@ const HomeFooter = () => {
               </Link>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.7555282936764!2d-81.43643949999999!3d28.4869082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77eafa8a55555%3A0x581fad0a30cde538!2s4700%20Millenia%20Blvd%20Suite%20500%2C%20Orlando%2C%20FL%2032839%2C%20USA!5e0!3m2!1sen!2s!4v1740460099542!5m2!1sen!2s"
-                width="491"
-                height="227"
+                // width="491"
+                // height="227"
                 style={{ borderRadius: "20px" }}
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className="mt-5"
+                className="mt-5 w-full lg:w-[490px] h-[227px]"
               />
             </li>
           </ul>
@@ -160,13 +160,13 @@ const HomeFooter = () => {
 
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.120869308278!2d67.05240119999999!3d24.859721099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f2ac9ab4ba1%3A0xd7fb808390cbecd0!2sLaunchBox%20Pakistan!5e0!3m2!1sen!2s!4v1740459898336!5m2!1sen!2s"
-                width="491"
-                height="227"
+                // width="491"
+                // height="227"
                 style={{ borderRadius: "20px" }}
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className="mt-5"
+                className="mt-5 w-full lg:w-[490px] h-[227px]"
               />
             </li>
           </ul>

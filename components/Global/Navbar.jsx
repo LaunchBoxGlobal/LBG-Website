@@ -109,7 +109,7 @@ const Navbar = () => {
         </Link> */}
         <Link
           href={`/contact-us`}
-          className="red-bg px-6 h-[48px] 2xl:h-[60px] rounded-[17px] text-white hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-[17px] 2xl:text-[18px]"
+          className="red-bg px-6 h-[48px] 2xl:h-[60px] rounded-[17px] text-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-[17px] 2xl:text-[18px]"
         >
           <span>Contact Sales</span>
         </Link>

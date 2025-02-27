@@ -24,11 +24,11 @@ const HomePage = () => {
       <Process />
       <HomePortfolio />
       <HomeTech />
-      {/* <HomeIdeaToLaunch /> */}
       <HomeCustomerReviews />
-      <FlagsSection />
+      <div className="hidden lg:block w-full">
+        <FlagsSection />
+      </div>
       <HomeFaqs />
-      {/* <HomeTeamSection /> */}
     </main>
   );
 };
