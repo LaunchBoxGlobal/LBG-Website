@@ -18,17 +18,10 @@ const ServiceCard = ({ service, index, setModal }) => {
       type="button"
       className={`w-full rounded-xl pt-5 2xl:pt-7 2xl:px-8 px-6 pb-[40px] 2xl:pb-[50px] flex flex-col items-start justify-between gap-4 ${
         openFaq === index ? "bg-[#000]" : "bg-white"
-      } transition-all duration-300 h-auto bg-transparent relative overflow-y-visible mb-4`}
+      } transition-all duration-300 h-auto relative overflow-y-visible mb-4`}
       key={index}
       onClick={() => toggleFaq(index)}
     >
-      {/* <Image
-        src={service?.image}
-        width={270}
-        height={200}
-        alt={service?.title}
-        className="-rotate-[22deg] transition-all duration-300 absolute left-[8%] 2xl:left-[12%] -top-[46%] 2xl:-top-[44%] 2xl:w-[306px] 2xl:h-[230px]"
-      /> */}
       <div className="w-full flex items-start justify-between">
         <span className="text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300">{`(0${
           index + 1
