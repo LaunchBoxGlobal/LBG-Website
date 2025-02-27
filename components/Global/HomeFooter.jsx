@@ -38,15 +38,7 @@ const HomeFooter = () => {
               </li>
               <li>
                 <Link
-                  href={"/"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
-                >
-                  about
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"/"}
+                  href={"#services"}
                   className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
                 >
                   Services
@@ -54,26 +46,34 @@ const HomeFooter = () => {
               </li>
               <li>
                 <Link
-                  href={"/"}
+                  href={"#workflow"}
                   className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
                 >
-                  solutions
+                  Workflow
                 </Link>
               </li>
               <li>
                 <Link
-                  href={"/"}
+                  href={"#portfolio"}
                   className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
                 >
-                  industries
+                  Portfolio
                 </Link>
               </li>
               <li>
                 <Link
-                  href={"/"}
+                  href={"#testimonials"}
                   className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
                 >
-                  case studies
+                  Testimonials
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"#faqs"}
+                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
+                >
+                  FAQs
                 </Link>
               </li>
             </ul>
@@ -155,7 +155,7 @@ const HomeFooter = () => {
                 href={"/"}
                 className="text-white opacity-80 hover:opacity-100 transition-all duration-200 underline"
               >
-                Emarah Suites, Shara-e-Faisal, Suite# 301, Karachi
+                Emarah Suites, Sharah-e-Faisal, Suite# 301, Karachi
               </Link>
 
               <iframe

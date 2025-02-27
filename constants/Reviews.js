@@ -2,31 +2,31 @@ export const REVIEWS = [
   {
     text: "I needed a website but wasn't sure where to start. The Launchbox Global team guided me through the entire process and created exactly what I expected. Super smooth experience.",
     author: "Sarah Mitchell",
-    designation: "CEO at TechFlow",
+    designation: "CEO of ThreadCraft Co.",
     image: "/review-girl.png",
   },
   {
     text: "The Launchbox Global team was outstanding! Fast response, honest communication, and an excellent end result.",
     author: "Michael Reynolds",
-    designation: "CEO at BrightTech",
+    designation: "CEO of PureGlow Labs",
     image: "/review-01.png",
   },
   {
     text: " They took care of everything from beginning to end. The app works perfectly, and we are really pleased with the outcome!",
     author: "Daniel Foster",
-    designation: "Product Manager at Elevate Systems",
+    designation: "Founder &  CTO of GlowLuxe Beauty",
     image: "/review-03.png",
   },
   {
     text: "The entire process, from design to development, went smoothly. Thanks to their knowledge, our app is now operating without a glitch",
     author: "Emily Walker",
-    designation: "Founder at Visionary Labs",
+    designation: "IT Project  Manager of SavoryBite Foods",
     image: "/review-girl-2.png",
   },
   {
     text: "The Launchbox Global team was outstanding! Fast response, honest communication, and an excellent end result",
     author: "David Lee",
-    designation: "Founder at NextGen Solutions",
+    designation: "Co-founder & President of Dealsparx",
     image: "/review-04.png",
   },
 
