@@ -13,9 +13,9 @@ const flags = [
   "/flag-04.png",
   "/flag-05.png",
   "/flag-06.png",
-  "/flag-09.png",
   "/flag-07.png",
   "/flag-08.png",
+  "/flag-09.png",
 ];
 
 const FlagsSection = () => {
@@ -27,7 +27,7 @@ const FlagsSection = () => {
 
     // Animate flags: Move left & Rotate
     gsap.to(".flag-item", {
-      rotation: -360,
+      rotation: -360, // Full rotation like car wheels
       x: "-100%", // Move left
       ease: "none",
       scrollTrigger: {
