@@ -22,7 +22,7 @@ body {
 }
 
 .padding-x {
-  @apply px-4 md:px-8 lg:px-28 xl:px-44 2xl:px-[300px];
+  @apply px-4 md:px-8 lg:px-28 xl:px-44 2xl:px-60;
 }
 
 .red-btn-shadow {
