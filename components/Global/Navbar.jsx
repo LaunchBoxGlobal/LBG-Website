@@ -37,7 +37,7 @@ const Navbar = () => {
           className="w-[40px] lg:hidden"
         />
         <div className="border border-[#CECEEA] w-[0.5px] h-[27px] opacity-50 hidden lg:block" />
-        <span className="text-xs 2xl:text-sm font-[300] lg:leading-[14px] 2xl:leading-[13px] hidden lg:block">
+        <span className="text-xs 2xl:text-sm font-[300] lg:leading-[14px] 2xl:leading-[14px] hidden lg:block">
           <strong>
             Trusted Talent, <br /> Anywhere, Anytime.
           </strong>

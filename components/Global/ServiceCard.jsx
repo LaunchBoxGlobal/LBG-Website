@@ -21,7 +21,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
         <span className="text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300">{`(0${
           index + 1
         })`}</span>
-        <div className="flex items-start justify-between w-[80%] lg:w-[750px] 2xl:lg:w-[70%]">
+        <div className="flex items-start justify-between w-[80%] lg:w-[750px] 2xl:w-[70%]">
           <h3
             className={`text-lg text-start md:text-[34px] lg:text-[40px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
               openFaq === index ? "text-white" : "text-gray-400"
@@ -46,7 +46,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           opacity: openFaq === index ? 1 : 0,
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="w-[970px] relative xl:left-[3%] flex items-start gap-10 overflow-hidden"
+        className="w-[970px] relative xl:left-[3%] 2xl:left-[5%] flex items-start gap-10 overflow-hidden"
       >
         <Image
           src={service?.image}
