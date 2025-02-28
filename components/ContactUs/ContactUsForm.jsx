@@ -8,7 +8,7 @@ const ContactUsForm = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
-      lastName: "",
+      service: "",
       email: "",
       phoneNumber: "",
       message: "",
@@ -17,9 +17,7 @@ const ContactUsForm = () => {
       firstName: Yup.string()
         .max(15, "Must be 15 characters or less")
         .required("First name is required"),
-      lastName: Yup.string()
-        .max(20, "Must be 20 characters or less")
-        .required("Last name is required"),
+      service: Yup.string().required("Please select a service"),
       email: Yup.string()
         .email("Invalid email address")
         .required("Email address is required"),
@@ -41,13 +39,13 @@ const ContactUsForm = () => {
     <section
       className={`w-full pb-10 lg:pb-20 padding-x flex items-center justify-center relative overflow-hidden`}
     >
-      <Image
+      {/* <Image
         src={"/map.jpg"}
         width={500}
         height={500}
         alt="world map image"
         className="w-[80%] lg:w-[70%] h-[50vh] lg:h-[70vh] 2xl:h-[55vh] absolute inset-0 left-1/2 transform -translate-x-1/2 opacity-45"
-      />
+      /> */}
       <form
         onSubmit={formik.handleSubmit}
         className="w-full lg:w-[70%] 2xl:w-[60%] flex flex-col items-start gap-6 z-10 pb-10"
@@ -58,7 +56,7 @@ const ContactUsForm = () => {
               htmlFor="firstName"
               className="block text-sm font-medium text-gray-900"
             >
-              First Name
+              Your Name
             </label>
             <input
               type="text"
@@ -75,24 +73,48 @@ const ContactUsForm = () => {
           </div>
           <div className="flex flex-col items-start gap-1">
             <label
-              htmlFor="lastName"
+              htmlFor="service"
               className="block text-sm font-medium text-gray-900"
             >
-              Last Name
+              I'm interested in
             </label>
-            <input
+            <select
+              id="service"
+              name="service"
+              {...formik.getFieldProps("service")}
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
+            >
+              <option defaultValue={""} value="">
+                Choose a service
+              </option>
+              <option value="mobileAppDevelopment">
+                Mobile App Development
+              </option>
+              <option value="webAppDevelopment">Web App Development</option>
+              <option value="softwareDevelopment">Software Development</option>
+              <option value="ecommerceDevelopment">
+                E-Commerce Development
+              </option>
+              <option value="uiuxDesign">UI/UX Design</option>
+              <option value="brandingAndDesign">Branding & Design</option>
+              <option value="digitalMarketing">Digital Marketing</option>
+              <option value="maintenanceAndSupport">
+                Maintenance & Support
+              </option>
+            </select>
+            {formik.touched.service && formik.errors.service ? (
+              <div className="text-red-500 text-sm">
+                {formik.errors.service}
+              </div>
+            ) : null}
+            {/* <input
               type="text"
               id="lastName"
               name="lastName"
               {...formik.getFieldProps("lastName")}
               className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
               //   placeholder="Last name"
-            />
-            {formik.touched.lastName && formik.errors.lastName ? (
-              <div className="text-red-500 text-sm">
-                {formik.errors.lastName}
-              </div>
-            ) : null}
+            /> */}
           </div>
         </div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -101,7 +123,7 @@ const ContactUsForm = () => {
               htmlFor="email"
               className="block text-sm font-medium text-gray-900"
             >
-              Email
+              Your Email
             </label>
             <input
               type="email"
@@ -120,7 +142,7 @@ const ContactUsForm = () => {
               htmlFor="phoneNumber"
               className="block text-sm font-medium text-gray-900"
             >
-              Phone
+              Your Phone Number
             </label>
             <input
               type="number"
@@ -142,7 +164,7 @@ const ContactUsForm = () => {
             htmlFor="message"
             className="block text-sm font-medium text-gray-900"
           >
-            Message
+            Project Description
           </label>
           <textarea
             name="message"
@@ -159,7 +181,7 @@ const ContactUsForm = () => {
 
         <div className="flex justify-end w-full">
           <button type="submit" className="red-btn">
-            Send Message
+            Schedule A Meeting
           </button>
         </div>
       </form>

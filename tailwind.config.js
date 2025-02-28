@@ -18,7 +18,7 @@ export default {
 
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
-      xl: "1340px",
+      xl: "1390px",
       // => @media (min-width: 1280px) { ... }
       mac: "1470px",
 

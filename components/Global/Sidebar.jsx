@@ -12,32 +12,55 @@ const Sidebar = ({ onclick }) => {
       </button> */}
       <ul className="flex flex-col items-start w-full justify-center gap-4 py-5 px-7">
         <li>
-          <Link href={`/`} className={`font-normal text-black text-[15px]`}>
-            Home
+          <Link
+            href={`/`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+          >
+            Home{" "}
+            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
           </Link>
         </li>
         <li>
           <Link
             href={`#services`}
-            className={`font-normal text-black text-[15px]`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
-            Services
+            Services{" "}
+            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`#workflow`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+          >
+            Work Flow{" "}
+            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 mt-0.5" /> */}
           </Link>
         </li>
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-normal text-black text-[15px]`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
-            Our Work
+            Portfolio{" "}
+            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" /> */}
           </Link>
         </li>
         <li>
           <Link
-            href={`/contact-us`}
-            className={`font-normal text-black text-[15px]`}
+            href={`#testimonials`}
+            className={`font-normal text-[16px] 2xl:text-[22px]`}
           >
-            Contact Us
+            Testimonials
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`#faqs`}
+            className={`font-normal text-[16px] 2xl:text-[22px]`}
+          >
+            FAQs
           </Link>
         </li>
       </ul>

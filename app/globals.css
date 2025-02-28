@@ -143,3 +143,8 @@ body {
     transform: translateY(-30px);
   }
 }
+
+.custom-red-shadow {
+  /* box-shadow: #f40e00 0px 7px 29px 0px; */
+  filter: drop-shadow(0px 7px 29px #fc6058);
+}

@@ -20,7 +20,7 @@ const HomeComparison = () => {
             width={400}
             height={386}
             alt="problems-you-face"
-            className="lg:mt-14 xl:mt-24 w-[300px] xl:w-[420px]"
+            className="lg:mt-14 xl:mt-20 w-[300px] xl:w-[400px]"
           />
         </section>
         <section className="flex flex-col items-start">
@@ -34,11 +34,11 @@ const HomeComparison = () => {
             explaining the process.
           </p>
           <Image
-            src={"/solutions-we-provide.png"}
+            src={"/comparison-image.png"}
             width={509}
             height={500}
             alt="solutions we provide"
-            className="w-[350px] xl:w-[500px]"
+            className="w-[350px] xl:w-[450px] mt-6 custom-red-shadow opacity-90"
           />
         </section>
       </section>
