@@ -59,7 +59,7 @@ const HomeStats = () => {
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
             <h2 className="lg:text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
-              20+
+              40+
             </h2>
             <p className="text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Happy Clients
