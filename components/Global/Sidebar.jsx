@@ -7,9 +7,6 @@ const Sidebar = ({ onclick }) => {
     <div
       className={`w-[50%] h-auto bg-white custom-shadow rounded-xl float-end mr-4`}
     >
-      {/* <button type="button" className="float-end m-6 text-xl" onClick={onclick}>
-        <IoClose />
-      </button> */}
       <ul className="flex flex-col items-start w-full justify-center gap-4 py-5 px-7">
         <li>
           <Link
@@ -26,7 +23,6 @@ const Sidebar = ({ onclick }) => {
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Services{" "}
-            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
           </Link>
         </li>
         <li>
@@ -35,7 +31,6 @@ const Sidebar = ({ onclick }) => {
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Work Flow{" "}
-            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 mt-0.5" /> */}
           </Link>
         </li>
         <li>
@@ -44,7 +39,6 @@ const Sidebar = ({ onclick }) => {
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Portfolio{" "}
-            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" /> */}
           </Link>
         </li>
         <li>

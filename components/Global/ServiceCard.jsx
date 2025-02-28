@@ -29,7 +29,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           width={300}
           height={220}
           alt={service?.title}
-          className={`2xl:left-[9%] -top-[46%] xl:w-[309px] 2xl:h-[230px] absolute lg:left-[2%] xl:left-[7%] transition-all duration-300 z-10 ${
+          className={`2xl:left-[9%] -top-[46%] xl:w-[309px] 2xl:h-[230px] absolute lg:left-[2%] xl:left-[7%] z-10 ${
             openFaq === index
               ? "lg:top-[14%] top-[10%] rotate-0 visible"
               : "-rotate-[22deg] invisible group-hover:visible"
