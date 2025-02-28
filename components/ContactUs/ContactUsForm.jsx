@@ -82,7 +82,7 @@ const ContactUsForm = () => {
               id="service"
               name="service"
               {...formik.getFieldProps("service")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 appearance-none"
             >
               <option defaultValue={""} value="">
                 Choose a service
