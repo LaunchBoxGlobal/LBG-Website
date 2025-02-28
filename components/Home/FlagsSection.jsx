@@ -27,7 +27,7 @@ const FlagsSection = () => {
 
     // Animate flags: Move left & Rotate
     gsap.to(".flag-item", {
-      rotation: -360, // Full rotation like car wheels
+      rotation: -360,
       x: "-100%", // Move left
       ease: "none",
       scrollTrigger: {
