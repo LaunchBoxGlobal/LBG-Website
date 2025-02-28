@@ -52,8 +52,16 @@ const HomeHero = () => {
         width={1710}
         height={439}
         alt="globe image"
-        className="w-full h-[139px] lg:h-[359px] 2xl:h-[439px] absolute bottom-0 2xl:-bottom-8 shadow-bottom"
+        className="w-[80%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute bottom-0 2xl:-bottom-11 shadow-bottom"
       />
+      <Image
+        src={"/image-glow.png"}
+        width={1710}
+        height={439}
+        alt="globe image"
+        className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-[20%] 2xl:-bottom-[22%]"
+      />
+      {/* <div className="absolute left-1/2 -translate-x-1/2 -bottom-20 h-[250px] bg-gradient-to-t from-gray-400 opacity-40 z-30 w-[80%] rounded-t-[600px]" /> */}
     </section>
   );
 };

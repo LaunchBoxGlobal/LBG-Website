@@ -44,11 +44,11 @@ const Navbar = () => {
         </span>
       </Link>
 
-      <ul className="hidden lg:flex items-center justify-center gap-x-10 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
+      <ul className="hidden xl:flex items-center justify-center gap-x-10 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
         <li>
           <Link
             href={`/`}
-            className={`font-medium text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Home{" "}
             {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
@@ -57,7 +57,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`#services`}
-            className={`font-medium text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Services{" "}
             {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
@@ -66,7 +66,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`#workflow`}
-            className={`font-medium text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Work Flow{" "}
             {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 mt-0.5" /> */}
@@ -75,7 +75,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`#portfolio`}
-            className={`font-medium text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Portfolio{" "}
             {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" /> */}
@@ -84,7 +84,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`#testimonials`}
-            className={`font-medium text-[16px] 2xl:text-[22px]`}
+            className={`font-normal text-[16px] 2xl:text-[22px]`}
           >
             Testimonials
           </Link>
@@ -92,14 +92,14 @@ const Navbar = () => {
         <li>
           <Link
             href={`#faqs`}
-            className={`font-medium text-[16px] 2xl:text-[22px]`}
+            className={`font-normal text-[16px] 2xl:text-[22px]`}
           >
             FAQs
           </Link>
         </li>
       </ul>
 
-      <div className="hidden lg:flex items-center justify-center gap-4">
+      <div className="hidden xl:flex items-center justify-center gap-4">
         {/* <Link
           href={`/`}
           className="flex items-center justify-end gap-1 outline-none font-medium text-[16px] 2xl:text-[18px]"
@@ -119,7 +119,7 @@ const Navbar = () => {
         type="button"
         name="sidebar menu button"
         onClick={toggleSidebar}
-        className="lg:hidden"
+        className="xl:hidden"
       >
         <TbMenu2 className="text-2xl" />
       </button>

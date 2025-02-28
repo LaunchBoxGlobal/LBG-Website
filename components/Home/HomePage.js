@@ -12,6 +12,7 @@ import HomeFaqs from "./HomeFaqs";
 import HomeComparison from "./HomeComparison";
 import FlagsSection from "./FlagsSection";
 import Process from "./Process";
+import HomeStats from "./HomeStats";
 
 const HomePage = () => {
   return (
@@ -24,6 +25,7 @@ const HomePage = () => {
       <Process />
       <HomePortfolio />
       <HomeTech />
+      {/* <HomeStats /> */}
       <HomeCustomerReviews />
       <div className="hidden lg:block w-full">
         <FlagsSection />

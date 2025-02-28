@@ -121,7 +121,7 @@ export const HOME_SERVICES = [
   },
   {
     image: "/maintenance-and-consutling-service.png",
-    title: "Maintenance & Consulting ",
+    title: "Maintenance & Support ",
     desc: "It is essential to keep your software up to date. With maintenance and consulting services, you can get expert support, daily updates, and security fixes to make sure everything runs smoothly. Do you need expert guidance regarding tech strategy? Get clear advice to make well-informed choices and improve performance without any technical issues.",
     img_width: "36px",
     img_height: "26.31px",

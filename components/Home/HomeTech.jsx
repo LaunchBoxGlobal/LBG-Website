@@ -1,6 +1,7 @@
 import React from "react";
 import HomeTechnologiesSlider from "./HomeTechnologiesSlider";
 import TechSlider2 from "./TechSlider2";
+import HomeStats from "./HomeStats";
 
 const HomeTech = () => {
   return (
@@ -19,6 +20,7 @@ const HomeTech = () => {
         <HomeTechnologiesSlider />
         <TechSlider2 />
       </section>
+      <HomeStats />
     </>
   );
 };

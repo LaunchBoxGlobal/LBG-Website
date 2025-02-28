@@ -1,0 +1,25 @@
+.floatUp {
+  animation: floatUpDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.floatDown {
+  animation: floatDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}

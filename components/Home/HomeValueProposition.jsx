@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 export const sliderSettings = {
   slidesPerView: 1,
   spaceBetween: 40,
-  centeredSlides: true,
+  centeredSlides: false,
   // autoplay: {
   //   delay: 3000,
   // },
@@ -40,8 +40,8 @@ export const sliderSettings = {
 
 const HomeValueProposition = () => {
   return (
-    <section className="w-full py-10 lg:pt-20 relative overflow-hidden padding-x bg-[#fff]">
-      <section className="w-full flex flex-col items-start justify-start gap-4 mb-7">
+    <section className="w-full py-10 lg:pt-20 relative overflow-hidden bg-[#fff]">
+      <section className="w-full flex flex-col items-start justify-start gap-4 mb-7 padding-x">
         <h2 className="section-heading text-start">
           See How We Are <br /> <span className="red-text">Different</span>
         </h2>
@@ -51,13 +51,19 @@ const HomeValueProposition = () => {
         </p>
       </section>
 
-      <section className={`w-full relative overflow-hidden h-[280px] mt-10`}>
-        <Swiper {...sliderSettings} modules={[Autoplay]} className="">
+      <section
+        className={`w-full relative overflow-hidden h-[280px] mt-10 pl-4 md:pl-8 lg:pl-28 xl:pl-44 2xl:pl-60`}
+      >
+        <Swiper
+          {...sliderSettings}
+          modules={[Autoplay]}
+          className="overflow-hidden"
+        >
           {VALUE_PROPOSITION?.map((value, index) => {
             return (
-              <SwiperSlide key={index} className="">
-                <div className="w-full rounded-xl p-6 bg-white h-[197px] border flex flex-col items-start justify-center">
-                  <div className="flex items-center justify-start gap-3">
+              <SwiperSlide key={index} className="w-full">
+                <div className="rounded-xl p-6 bg-white h-[197px] border flex flex-col items-start justify-center">
+                  <div className="flex items-center justify-start gap-3 w-full">
                     <div
                       className={`w-[22px] h-[22px] ${
                         index % 2 === 0 ? "bg-red-600" : "bg-black"

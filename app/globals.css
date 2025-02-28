@@ -118,3 +118,28 @@ body {
 .shadow-bottom {
   box-shadow: 0 -40px -100px rgba(0, 0, 0, 0.9);
 }
+
+.workFlowImage {
+  /* animation: animateSlide 1s ease-in-out forwards, */
+  animation: floatUpDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes animateSlide {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}

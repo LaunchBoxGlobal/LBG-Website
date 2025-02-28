@@ -3,6 +3,8 @@ import { PROCESS } from "@/constants/Process";
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import ProjectDiscoveryImage from "./ProjectDiscoveryImage";
+import "./ProcessAnimations.css";
 
 const Process = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -46,7 +48,7 @@ const Process = () => {
                   className={`flex flex-col items-center justify-start gap-1 relative`}
                 >
                   <p
-                    className={`text-[30px] font-bold ${
+                    className={`lg:text-[25px] xl:text-[30px] font-bold ${
                       openFaq === index ? "text-[#F40E00]" : "text-gray-400"
                     } transition-all duration-1000`}
                   >
@@ -62,7 +64,7 @@ const Process = () => {
                 </div>
                 <div className="flex flex-col items-start justify-start">
                   <h2
-                    className={`text-2xl text-start lg:text-[30px] ${
+                    className={`text-2xl text-start lg:text-[25px] xl:text-[30px] ${
                       openFaq === index
                         ? "font-bold text-[#F40E00]"
                         : "font-semibold text-gray-400"
@@ -77,7 +79,7 @@ const Process = () => {
                       opacity: openFaq === index ? 1 : 0,
                     }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                    className="overflow-hidden"
+                    className="overflow-hidden mt-2"
                   >
                     <p className="text-[20px] font-normal text-start leading-[24px] tracking-tight text-gray-900 w-[90%]">
                       {process?.text}
@@ -89,13 +91,61 @@ const Process = () => {
           })}
         </section>
         <section className="w-full flex items-start justify-center">
-          <Image
-            src={PROCESS[imageIndex]?.image}
-            alt={`process images`}
-            width={380}
-            height={410}
-            className="transition-all duration-1000 object-contain w-[400px] h-[470px]"
-          />
+          {imageIndex === 0 && <ProjectDiscoveryImage />}
+          {imageIndex === 1 && (
+            <Image
+              src={PROCESS[imageIndex]?.image}
+              alt={`process images`}
+              width={380}
+              height={410}
+              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+            />
+          )}
+          {imageIndex === 2 && (
+            <Image
+              src={PROCESS[imageIndex]?.image}
+              alt={`process images`}
+              width={380}
+              height={410}
+              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+            />
+          )}
+          {imageIndex === 3 && (
+            <Image
+              src={PROCESS[imageIndex]?.image}
+              alt={`process images`}
+              width={380}
+              height={410}
+              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+            />
+          )}
+          {imageIndex === 4 && (
+            <Image
+              src={PROCESS[imageIndex]?.image}
+              alt={`process images`}
+              width={380}
+              height={410}
+              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+            />
+          )}
+          {imageIndex === 5 && (
+            <Image
+              src={PROCESS[imageIndex]?.image}
+              alt={`process images`}
+              width={380}
+              height={410}
+              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+            />
+          )}
+          {imageIndex === 6 && (
+            <Image
+              src={PROCESS[imageIndex]?.image}
+              alt={`process images`}
+              width={380}
+              height={410}
+              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+            />
+          )}
         </section>
       </section>
     </section>

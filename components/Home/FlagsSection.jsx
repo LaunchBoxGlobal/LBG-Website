@@ -13,9 +13,9 @@ const flags = [
   "/flag-04.png",
   "/flag-05.png",
   "/flag-06.png",
+  "/flag-09.png",
   "/flag-07.png",
   "/flag-08.png",
-  "/flag-09.png",
 ];
 
 const FlagsSection = () => {

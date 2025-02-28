@@ -7,7 +7,7 @@ const HomeFooter = () => {
   return (
     <footer className="w-full padding-x py-12 lg:pt-20 bg-black text-white">
       <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <section className="flex items-start gap-10">
+        <section className="flex flex-col xl:flex-row items-start gap-10">
           <h2 className="text-2xl lg:text-[50px] font-bold lg:leading-[55px]">
             Ready to Build <br /> Something <br /> Great?
           </h2>
@@ -24,7 +24,7 @@ const HomeFooter = () => {
             />
           </Link>
         </section>
-        <section className="flex items-start gap-x-20">
+        <section className="flex flex-col gap-y-10 lg:flex-row items-start gap-x-20">
           <div className="">
             <h3 className="text-[18px] font-bold uppercase">quick links</h3>
             <ul className="flex flex-col items-start gap-3 mt-5">
@@ -80,7 +80,9 @@ const HomeFooter = () => {
           </div>
 
           <div className="">
-            <h3 className="text-[18px] font-bold uppercase">Contact us</h3>
+            <h3 className="text-sm lg:text-[18px] font-bold uppercase">
+              Contact us
+            </h3>
             <ul className="flex flex-col items-start gap-3 mt-5">
               <li>
                 <Link
@@ -133,7 +135,7 @@ const HomeFooter = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className="mt-5 w-full lg:w-[490px] h-[227px]"
+                className="mt-5 w-full lg:w-[350px] xl:w-[490px] h-[227px]"
               />
             </li>
           </ul>
@@ -166,7 +168,7 @@ const HomeFooter = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className="mt-5 w-full lg:w-[490px] h-[227px]"
+                className="mt-5 w-full lg:w-[370px] xl:w-[490px] h-[227px]"
               />
             </li>
           </ul>
