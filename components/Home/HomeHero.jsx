@@ -7,7 +7,7 @@ import { GlobeDemo } from "../talk-to-us/GlobeDemo";
 
 const HomeHero = () => {
   return (
-    <section className="w-full bg-white relative pt-40 2xl:pt-52 flex flex-col items-center justify-start gap-0 lg:gap-[25px] h-[80vh] lg:h-[140vh] xl:h-[120vh] overflow-hidden">
+    <section className="w-full bg-white relative pt-40 2xl:pt-52 flex flex-col items-center justify-start gap-0 lg:gap-[25px] mac:h-[105vh] overflow-hidden">
       <h1 className="font-bold text-3xl lg:text-[84px] 2xl:text-[100px] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
