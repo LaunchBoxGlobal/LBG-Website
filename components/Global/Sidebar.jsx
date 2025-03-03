@@ -35,10 +35,10 @@ const Sidebar = ({ onclick }) => {
         </li>
         <li>
           <Link
-            href={`#portfolio`}
+            href={`#teckstack`}
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
-            Portfolio{" "}
+            Tech Stack{" "}
           </Link>
         </li>
         <li>

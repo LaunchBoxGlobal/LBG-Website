@@ -74,10 +74,10 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            href={`#portfolio`}
+            href={`#teckstack`}
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
-            Portfolio{" "}
+            Tech Stack{" "}
             {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0" /> */}
           </Link>
         </li>

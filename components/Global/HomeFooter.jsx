@@ -54,10 +54,10 @@ const HomeFooter = () => {
               </li>
               <li>
                 <Link
-                  href={"#portfolio"}
+                  href={"#teckstack"}
                   className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
                 >
-                  Portfolio
+                  Tech Stack
                 </Link>
               </li>
               <li>
