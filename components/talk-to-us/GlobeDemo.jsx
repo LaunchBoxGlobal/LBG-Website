@@ -34,9 +34,9 @@ export function GlobeDemo() {
   const colors = ["#F40E00", "#F40E00", "#F40E00"];
 
   return (
-    <div className="flex flex-row items-center justify-center  h-[340px]  relative w-full">
+    <div className="flex flex-row items-center justify-center h-[340px] relative w-full">
       <div className="w-full relative overflow-hidden h-full  ">
-        <div className="  lg:w-[100vw]  lg:h-[100vw] absolute -bottom-[70vw] 2xl:-bottom-[75vw] left-1/2 -translate-x-1/2 z-10">
+        <div className="lg:w-[110vw] lg:h-[110vw] absolute -bottom-[78vw] 2xl:-bottom-[75vw] left-1/2 -translate-x-1/2 z-10">
           <World data={[]} globeConfig={globeConfig} />
         </div>
       </div>

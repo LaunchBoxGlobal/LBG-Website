@@ -20,7 +20,7 @@ export default {
       // => @media (min-width: 1024px) { ... }
       xl: "1440px",
       // => @media (min-width: 1280px) { ... }
-      mac: "1470px",
+      // mac: "1470px",
 
       "2xl": "1920px",
     },

@@ -43,23 +43,23 @@ const HomeHero = () => {
       <div className="flex items-center justify-center gap-4 mt-0 relative -top-1 2xl:top-10">
         <ContactButton text={"Get a Free Consultation"} />
       </div>
-      {/* <div className="w-full h-[340px] flex items-center justify-center relative">
+      <div className="w-full h-[30%] xl:h-[40%] lg:h-[30%] 2xl:h-[45%] flex items-center justify-center relative">
         <GlobeDemo />
-      </div> */}
+      </div>
 
-      <Image
+      {/* <Image
         src={"/hero-globe-02.png"}
         width={1710}
         height={439}
         alt="globe image"
         className="w-full lg:w-[85%] h-[30%] xl:h-[40%] lg:h-[30%] 2xl:h-[45%] absolute -bottom-10 2xl:-bottom-11 shadow-bottom"
-      />
+      /> */}
       <Image
         src={"/image-glow.png"}
         width={1710}
         height={439}
         alt="globe image"
-        className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-[20%] 2xl:-bottom-[22%]"
+        className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-[20%] 2xl:-bottom-[22%] z-20"
       />
     </section>
   );
