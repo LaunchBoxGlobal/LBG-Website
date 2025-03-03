@@ -5,9 +5,15 @@ import { BsBuilding } from "react-icons/bs";
 const HomeStats = () => {
   return (
     <section className="w-full padding-x py-10 lg:py-28 bg-[#F9F9F9] flex flex-col items-center gap-6">
-      <h2 className="section-heading">
-        Backed by <span className="text-[#F40E00]">Experience</span>
-      </h2>
+      <section className="w-full flex flex-col items-center justify-center gap-5">
+        <h2 className="section-heading">
+          Backed by <span className="text-[#F40E00]">Experience</span>
+        </h2>
+        <p className="section-paragraph text-center">
+          Explore how we’ve helped clients, delivered projects, and turned{" "}
+          <br /> ideas into reality your success is what drives our work.
+        </p>
+      </section>
       <section className="w-full grid grid-cols-2 md:grid-cols-4 gap-5 lg:gap-x-10 mt-8">
         <section className="w-full flex flex-col items-center justify-center gap-0">
           <div className="w-14 h-14 bg-white flex items-center justify-center rounded-xl p-3">
