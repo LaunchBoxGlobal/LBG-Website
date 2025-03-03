@@ -18,6 +18,7 @@ const flags = [
   "/flag-08.png",
   "/white-flag.png",
   "/white-flag.png",
+  "/white-flag.png",
 ];
 
 const FlagsSection = () => {
