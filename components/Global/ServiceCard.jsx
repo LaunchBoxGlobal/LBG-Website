@@ -12,7 +12,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
   return (
     <button
       type="button"
-      className={`w-full rounded-xl pt-5 2xl:pt-7 2xl:px-8 px-6 pb-[60px] 2xl:pb-[60px] flex flex-col items-start justify-between gap-4 group hover:bg-black ${
+      className={`w-full rounded-xl pt-5 2xl:pt-7 2xl:px-8 px-6 pb-1 lg:pb-[60px] 2xl:pb-[60px] flex flex-col items-start justify-between gap-4 group hover:bg-black ${
         openFaq === index ? "bg-[#000]" : "bg-white"
       } transition-all duration-300 h-auto relative overflow-visible mb-4`}
       key={index}
@@ -20,8 +20,8 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
         toggleFaq(index);
       }}
     >
-      <div className="w-full flex items-start justify-between">
-        <span className="text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300">{`(0${
+      <div className="w-full flex items-center lg:items-start justify-between">
+        <span className="text-sm lg:text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300">{`(0${
           index + 1
         })`}</span>
         <Image
@@ -29,13 +29,13 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           width={300}
           height={220}
           alt={service?.title}
-          className={`2xl:left-[9%] -top-[46%] xl:w-[309px] 2xl:h-[230px] absolute lg:left-[2%] xl:left-[7%] z-10 ${
+          className={`2xl:left-[9%] -top-[46%] xl:w-[309px] 2xl:h-[230px] hidden lg:block absolute lg:left-[2%] xl:left-[7%] z-10 ${
             openFaq === index
               ? "lg:top-[14%] top-[10%] rotate-0 visible"
               : "-rotate-[22deg] invisible group-hover:visible"
           }`}
         />
-        <div className="flex items-start justify-between w-[80%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
+        <div className="flex items-center lg:items-start justify-between w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
           <h3
             className={`text-lg text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
               openFaq === index ? "text-white" : "text-gray-400"
@@ -44,7 +44,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
             {service?.title}
           </h3>
           <IoMdArrowDown
-            className={`w-[31px] h-[31px] ${
+            className={`w-[15px] lg:w-[31px] h-[15px] lg:h-[31px] ${
               openFaq === index
                 ? "text-[#fff] opacity-100 scale-y-[-1]"
                 : "text-[#F40E00] opacity-60 scale-y-[1]"

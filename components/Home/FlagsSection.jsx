@@ -60,7 +60,7 @@ const FlagsSection = () => {
       className="w-full h-[172px] overflow-hidden flex items-center relative"
     >
       {/* Flags container */}
-      <div className="w-[80%] flex items-center justify-center h-full gap-3">
+      <div className="w-[80%] flex items-center justify-center h-full gap-3 xl:pr-2">
         {flags.map((flag, index) => (
           <Image
             key={index}

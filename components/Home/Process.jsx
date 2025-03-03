@@ -98,7 +98,7 @@ const Process = () => {
               alt={`process images`}
               width={380}
               height={410}
-              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
             />
           )}
           {imageIndex === 2 && (
@@ -107,7 +107,7 @@ const Process = () => {
               alt={`process images`}
               width={380}
               height={410}
-              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
             />
           )}
           {imageIndex === 3 && (
@@ -116,7 +116,7 @@ const Process = () => {
               alt={`process images`}
               width={380}
               height={410}
-              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
             />
           )}
           {imageIndex === 4 && (
@@ -125,7 +125,7 @@ const Process = () => {
               alt={`process images`}
               width={380}
               height={410}
-              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
             />
           )}
           {imageIndex === 5 && (
@@ -134,7 +134,7 @@ const Process = () => {
               alt={`process images`}
               width={380}
               height={410}
-              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
             />
           )}
           {imageIndex === 6 && (
@@ -143,7 +143,7 @@ const Process = () => {
               alt={`process images`}
               width={380}
               height={410}
-              className="transition-all duration-1000 object-contain lg:w-[300px] xl:w-[400px] h-[470px] workFlowImage"
+              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
             />
           )}
         </section>
