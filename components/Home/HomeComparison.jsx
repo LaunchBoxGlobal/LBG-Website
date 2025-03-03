@@ -11,7 +11,7 @@ const HomeComparison = () => {
               Problems You <span className="text-[#F40E00]">Face</span>
             </strong>
           </h2>
-          <p className="text-xl xl:text-[24px] font-light text-gray-400">
+          <p className="text-xl xl:text-[22px] font-light text-gray-400">
             Lack of transparency and poor methods lead <br /> to glitches,
             delays, and ultimate failures.
           </p>
@@ -29,7 +29,7 @@ const HomeComparison = () => {
               Solutions We<span className="text-[#F40E00]"> Provide</span>
             </strong>
           </h2>
-          <p className="text-xl xl:text-[24px] font-light text-gray-400">
+          <p className="text-xl xl:text-[22px] font-light text-gray-400">
             You will be informed at every step, using Agile <br /> methods to
             keep your project on track and up to date.
           </p>
