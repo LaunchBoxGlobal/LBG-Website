@@ -97,7 +97,7 @@ const HomePlatforms = () => {
   }, []);
 
   return (
-    <section className="w-full py-3 overflow-hidden bg-white border-t-2 border-b-2 relative -top-5 z-20">
+    <section className="w-full py-3 overflow-hidden bg-white border-t-2 border-b-2 relative -top-5 2xl:-top-16 z-20">
       <div className="flex items-center gap-x-10 w-max" ref={marqueeRef}>
         {[...platforms, ...platforms].map((platform, index) => (
           <Image
