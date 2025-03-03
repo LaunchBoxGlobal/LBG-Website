@@ -60,7 +60,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           opacity: openFaq === index ? 1 : 0,
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="float-end relative lg:left-[40%] xl:left-[22.5%] 2xl:left-[15%] flex items-start justify-end overflow-hidden lg:w-[50%] xl:w-[67%]"
+        className="float-end relative lg:left-[40%] xl:left-[25.5%] 2xl:left-[15%] flex items-start justify-end overflow-hidden lg:w-[50%] xl:w-[67%]"
       >
         <div className="w-full border-t py-4 lg:w-[670px] float-end">
           <p className="text-white text-start text-lg font-light">
