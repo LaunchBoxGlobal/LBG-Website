@@ -61,7 +61,6 @@ const HomeHero = () => {
         alt="globe image"
         className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-[20%] 2xl:-bottom-[22%]"
       />
-      {/* <div className="absolute left-1/2 -translate-x-1/2 -bottom-20 h-[250px] bg-gradient-to-t from-gray-400 opacity-40 z-30 w-[80%] rounded-t-[600px]" /> */}
     </section>
   );
 };

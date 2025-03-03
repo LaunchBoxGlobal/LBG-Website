@@ -13,22 +13,24 @@ import HomeComparison from "./HomeComparison";
 import FlagsSection from "./FlagsSection";
 import Process from "./Process";
 import HomeStats from "./HomeStats";
+import CountryAnimation from "./CountryAnimation";
 
 const HomePage = () => {
   return (
-    <main className={`bg-transparent`}>
+    <main className={`bg-transparent relative`}>
       <HomeHero />
       <HomePlatforms />
       <HomeServices />
       <HomeComparison />
       <HomeValueProposition />
       <Process />
-      <HomePortfolio />
+      {/* <HomePortfolio /> */}
       <HomeTech />
       {/* <HomeStats /> */}
       <HomeCustomerReviews />
       <div className="hidden lg:block w-full">
         <FlagsSection />
+        {/* <CountryAnimation /> */}
       </div>
       <HomeFaqs />
     </main>

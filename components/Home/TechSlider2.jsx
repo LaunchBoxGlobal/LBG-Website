@@ -42,7 +42,7 @@ const TechSlider2 = () => {
   }, []);
 
   return (
-    <section className="w-full py-3 overflow-hidden bg-[#F9F9F9]">
+    <section className="w-full py-3 overflow-hidden bg-[#fff]">
       <div className="flex items-center gap-x-2 w-max" ref={marqueeRef}>
         {[...TECH_STACK, ...TECH_STACK].map((platform, index) => (
           <div

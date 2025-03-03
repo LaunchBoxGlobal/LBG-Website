@@ -13,9 +13,11 @@ const flags = [
   "/flag-04.png",
   "/flag-05.png",
   "/flag-06.png",
+  "/flag-09.png",
   "/flag-07.png",
   "/flag-08.png",
-  "/flag-09.png",
+  "/white-flag.png",
+  "/white-flag.png",
 ];
 
 const FlagsSection = () => {
@@ -64,7 +66,7 @@ const FlagsSection = () => {
             src={flag}
             width={179}
             height={179}
-            className="h-[159px] w-[159px] flag-item"
+            className="h-[159px] w-[159px] flag-item rounded-full object-cover"
             alt="flag icon"
           />
         ))}

@@ -4,7 +4,7 @@ import { BsBuilding } from "react-icons/bs";
 
 const HomeStats = () => {
   return (
-    <section className="w-full padding-x py-10 lg:pb-28 bg-[#F9F9F9] flex flex-col items-center gap-6">
+    <section className="w-full padding-x py-10 lg:py-28 bg-[#F9F9F9] flex flex-col items-center gap-6">
       <h2 className="lg:text-[35px] xl:text-[45px] 2xl:text-[60px] font-bold">
         Backed by <span className="text-[#F40E00]">Experience</span>
       </h2>

@@ -6,7 +6,7 @@ import HomeStats from "./HomeStats";
 const HomeTech = () => {
   return (
     <>
-      <section className="w-full py-10 lg:py-20 bg-[#F9F9F9]">
+      <section className="w-full py-10 lg:py-20 bg-[#ffff]">
         <section className="w-full padding-x flex flex-col items-center justify-center gap-5 mb-8">
           <h2 className="section-heading text-center">
             Smart Technology For <br /> Better{" "}
