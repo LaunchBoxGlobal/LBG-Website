@@ -9,9 +9,9 @@ const ContactUsHero = () => {
         Great Things Start <br /> With a{" "}
         <span className="red-text">Conversation!</span>
       </h1>
-      <p className="text-base lg:text-[24px] text-center 2xl:text-[30px] font-light lg:leading-[36px] text-gray-400 lg:w-2/3">
-        Big things start with a simple action. Share your idea with us, <br />
-        and We’ll help you turn it into something amazing.
+      <p className="text-base lg:text-[24px] text-center 2xl:text-[30px] font-light lg:leading-[36px] text-gray-400 lg:w-1/2">
+        Let's start with a simple action. Share your idea with us, and we’ll
+        help you make it amazing.
       </p>
     </section>
   );

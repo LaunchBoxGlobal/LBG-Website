@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 export const sliderSettings = {
   slidesPerView: 1,
-  spaceBetween: 40,
+  spaceBetween: 20,
   centeredSlides: false,
   // autoplay: {
   //   delay: 3000,
@@ -33,7 +33,7 @@ export const sliderSettings = {
       slidesPerView: 2,
     },
     1100: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
   },
 };
@@ -71,7 +71,7 @@ const HomeValueProposition = () => {
                     ></div>
                     <h3 className="text-lg lg:text-[26px]">{value?.title}</h3>
                   </div>
-                  <p className="text-sm lg:text-[18px] lg:leading-[24px] mt-3 text-start">
+                  <p className="text-sm lg:text-[18px] lg:leading-[24px] mt-3 text-start font-light text-gray-400">
                     {value?.desc}
                   </p>
                 </div>
