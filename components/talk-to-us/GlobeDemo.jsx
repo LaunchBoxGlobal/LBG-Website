@@ -36,7 +36,7 @@ export function GlobeDemo() {
   return (
     <div className="flex flex-row items-center justify-center h-[340px] relative w-full">
       <div className="w-full relative overflow-hidden h-full  ">
-        <div className="w-[120vw] h-[120vw] lg:w-[110vw] lg:h-[110vw] absolute -bottom-[50%] lg:-bottom-[78vw] 2xl:-bottom-[80vw] left-1/2 -translate-x-1/2 z-10">
+        <div className="w-[120vw] h-[120vw] lg:w-[110vw] lg:h-[110vw] absolute -bottom-[60%] lg:-bottom-[78vw] 2xl:-bottom-[80vw] left-1/2 -translate-x-1/2 z-10">
           <World data={[]} globeConfig={globeConfig} />
         </div>
       </div>
