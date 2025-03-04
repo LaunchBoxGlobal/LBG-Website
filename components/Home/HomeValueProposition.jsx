@@ -41,18 +41,18 @@ export const sliderSettings = {
 const HomeValueProposition = () => {
   return (
     <section className="w-full py-10 lg:pt-20 relative overflow-hidden bg-[#fff]">
-      <section className="w-full flex flex-col items-start justify-start gap-4 mb-7 padding-x">
-        <h2 className="section-heading text-start">
+      <section className="w-full flex flex-col items-center text-center lg:text-start lg:items-start justify-start gap-4 mb-7 padding-x">
+        <h2 className="section-heading text-center lg:text-start">
           See How We Are <br /> <span className="red-text">Different</span>
         </h2>
-        <p className="section-paragraph text-start mt-2">
+        <p className="section-paragraph text-center lg:text-start mt-2">
           We bring you expert-driven, scalable, and affordable software <br />
           solutions fast, reliable, and built for your success!
         </p>
       </section>
 
       <section
-        className={`w-full relative overflow-hidden h-[280px] mt-10 pl-4 md:pl-8 lg:pl-28 xl:pl-44 2xl:pl-60`}
+        className={`w-full relative overflow-hidden h-[280px] mt-10 pl-4 md:pl-8 lg:pl-28 xl:pl-40 2xl:pl-[13%]`}
       >
         <Swiper
           {...sliderSettings}
@@ -90,7 +90,7 @@ export default HomeValueProposition;
 function SwiperButtons() {
   const swiper = useSwiper();
   return (
-    <section className="w-full flex items-center gap-1 mt-6 absolute bottom-4 left-0 z-40">
+    <section className="w-full flex items-center justify-center lg:justify-start gap-3 lg:gap-1 mt-6 absolute bottom-4 left-0 z-40">
       <button
         type="button"
         onClick={() => swiper.slidePrev()}
