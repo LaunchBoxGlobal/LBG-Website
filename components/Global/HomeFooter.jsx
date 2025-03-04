@@ -125,7 +125,7 @@ const HomeFooter = () => {
                 href={"/"}
                 className="text-white opacity-80 hover:opacity-100 transition-all duration-200 underline"
               >
-                4700 Millenia Blvd Suite# 500, Orlando FL 32839
+                4700 Millenia Blvd, Orlando FL 32839
               </Link>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.7555282936764!2d-81.43643949999999!3d28.4869082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77eafa8a55555%3A0x581fad0a30cde538!2s4700%20Millenia%20Blvd%20Suite%20500%2C%20Orlando%2C%20FL%2032839%2C%20USA!5e0!3m2!1sen!2s!4v1740460099542!5m2!1sen!2s"

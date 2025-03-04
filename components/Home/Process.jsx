@@ -40,7 +40,7 @@ const Process = () => {
             return (
               <button
                 type="button"
-                className={`w-full flex items-start gap-10 mb-3.5 outline-none`}
+                className={`w-full flex items-start gap-10 mb-5 outline-none`}
                 key={index}
                 onClick={() => toggleFaq(index)}
               >

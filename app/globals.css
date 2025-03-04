@@ -112,7 +112,8 @@ body {
 } */
 
 .grayscale-img {
-  filter: grayscale(1) !important;
+  /* filter: grayscale(1) !important; */
+  aspect-ratio: 3/2 !important;
 }
 
 .shadow-bottom {

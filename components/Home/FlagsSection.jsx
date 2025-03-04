@@ -32,24 +32,24 @@ const FlagsSection = () => {
     gsap.to(".flag-item", {
       rotation: -360, // Full rotation like car wheels
       x: "-100%", // Move left
-      ease: "none",
+      // ease: "none",
       scrollTrigger: {
         trigger: flagsRef.current,
         start: "top bottom",
         end: "bottom top",
-        scrub: 2,
+        scrub: 0,
       },
     });
 
     // Animate right div: Expand width ONLY (No left movement)
     gsap.to(rightDivRef.current, {
       width: "80%", // Expands smoothly (Min: 20%, Max: 60%)
-      ease: "none",
+      // ease: "none",
       scrollTrigger: {
         trigger: flagsRef.current,
         start: "top bottom",
         end: "bottom top",
-        scrub: 3,
+        scrub: 0,
       },
     });
   }, []);
@@ -67,7 +67,7 @@ const FlagsSection = () => {
             src={flag}
             width={179}
             height={179}
-            className="h-[159px] w-[159px] flag-item rounded-full object-cover"
+            className="h-[149px] w-[149px] flag-item rounded-full object-cover"
             alt="flag icon"
           />
         ))}
@@ -76,9 +76,9 @@ const FlagsSection = () => {
       {/* Expanding right div (No left movement, only width expansion) */}
       <div
         ref={rightDivRef}
-        className="h-full bg-[#F40E00] p-1.5 rounded-l-full flex items-center justify-start overflow-hidden gap-x-20 min-w-[20%] max-w-[80%] right-div z-10 relative"
+        className="h-[152px] bg-[#F40E00] p-1.5 rounded-l-full flex items-center justify-start overflow-hidden gap-x-20 min-w-[20%] max-w-[80%] right-div z-10 relative"
       >
-        <div className="rounded-full bg-white flex items-center justify-center h-[159px] w-[159px]">
+        <div className="rounded-full bg-white flex items-center justify-center h-[143px] w-[143px]">
           <Image
             src={"/flag-red-arrow.png"}
             className="w-[80px] h-[63px]"
@@ -87,7 +87,7 @@ const FlagsSection = () => {
             height={63}
           />
         </div>
-        <h3 className="text-2xl lg:text-[65px] font-bold text-white flex-1 whitespace-nowrap absolute top-1/2 -translate-y-1/2 left-[30%]">
+        <h3 className="text-2xl lg:text-[55px] font-bold text-white flex-1 whitespace-nowrap absolute top-1/2 -translate-y-1/2 left-[25%]">
           Our Global Presence
         </h3>
       </div>

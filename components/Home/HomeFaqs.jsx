@@ -12,7 +12,7 @@ const HomeFaqs = () => {
   };
   return (
     <section
-      className="w-full py-10 lg:pt-28 lg:pb-32 padding-x flex flex-col items-center"
+      className="w-full pb-10 lg:pt-28 lg:pb-32 padding-x flex flex-col items-center"
       id="faqs"
     >
       <h2 className="section-heading text-center">
@@ -25,14 +25,14 @@ const HomeFaqs = () => {
       >
         {FAQS?.map((faq, index) => (
           <div
-            className={`w-full rounded-3xl px-10 py-14 bg-[#F9F9F9] text-black`}
+            className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
             key={index}
           >
             <button
               onClick={() => toggleFaq(index)}
               className="w-full text-start flex items-center justify-between outline-none"
             >
-              <h5 className="font-medium text-xl md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[95%]">
+              <h5 className="font-medium text-lg md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[95%]">
                 {faq?.question}
               </h5>
 
@@ -50,7 +50,7 @@ const HomeFaqs = () => {
                 alt="arrow icon"
                 className={`${
                   openFaq === index ? "scale-y-[-1]" : "scale-y-[1]"
-                } transition-all duration-700`}
+                } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[20px]`}
               />
             </button>
 
@@ -64,7 +64,7 @@ const HomeFaqs = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="overflow-hidden"
             >
-              <p className="text-[20px] font-normal lg:w-[75%]">
+              <p className="text-base lg:text-[20px] font-normal lg:w-[75%]">
                 {faq?.answer}
               </p>
             </motion.div>

@@ -6,7 +6,7 @@ const HomeComparison = () => {
     <section className="w-full padding-x py-12 lg:py-28 bg-[#F9F9F9]">
       <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
         <section className="flex flex-col items-start">
-          <h2 className="text-2xl lg:text-[35px] xl:text-[45px] 2xl:text-[60px] font-bold mb-5">
+          <h2 className="text-2xl lg:text-[35px] xl:text-[45px] 2xl:text-[60px] font-bold mb-6">
             <strong>
               Problems You <span className="text-[#F40E00]">Face</span>
             </strong>
@@ -20,11 +20,11 @@ const HomeComparison = () => {
             width={400}
             height={386}
             alt="problems-image"
-            className="xl:mt-8 w-[300px] xl:w-[500px] xl:h-[465px] mx-auto lg:ml-0"
+            className="xl:mt-9 w-[85%] xl:h-[465px] mx-auto lg:ml-0"
           />
         </section>
         <section className="flex flex-col items-start">
-          <h2 className="text-2xl lg:text-[35px] xl:text-[45px] 2xl:text-[60px] font-bold mb-5">
+          <h2 className="text-2xl lg:text-[35px] xl:text-[45px] 2xl:text-[60px] font-bold mb-6">
             <strong>
               Solutions We<span className="text-[#F40E00]"> Provide</span>
             </strong>
@@ -38,7 +38,7 @@ const HomeComparison = () => {
             width={509}
             height={500}
             alt="solutions we provide"
-            className="w-[350px] xl:w-[550px] custom-red-shadow opacity-90"
+            className="w-[95%] custom-red-shadow opacity-90"
           />
         </section>
       </section>

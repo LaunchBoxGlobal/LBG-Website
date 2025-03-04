@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import CustomerReviewCard from "../Global/CustomerReviewCard";
 import { REVIEWS } from "@/constants/Reviews";
+import CustomerReviewsMobileVersion from "../Global/CustomerReviewsMobileVersion";
 
 const HomeCustomerReviews = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,19 +12,23 @@ const HomeCustomerReviews = () => {
   };
   return (
     <section
-      className="w-full h-screen relative flex flex-col items-center justify-center overflow-hidden padding-x"
+      className="w-full h-auto pt-20 lg:pt-0 lg:h-screen relative flex flex-col items-center gap-y-10 justify-start overflow-hidden padding-x"
       id="testimonials"
       // onMouseEnter={() => toggleIsHovered()}
       // onMouseLeave={() => toggleIsHovered()}
     >
       {/* Centered Heading */}
-      <h2 className="section-heading text-center absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-0">
+      <h2 className="section-heading text-center static lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 z-0">
         Success Stories From <br /> Our{" "}
         <span className="red-text">Clients</span>
       </h2>
 
+      <div className="w-full lg:hidden">
+        <CustomerReviewsMobileVersion />
+      </div>
+
       {/* Sliding Animation Container */}
-      <div className="relative w-full h-full overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden hidden lg:block">
         <div className={`flex flex-col items-center gap-6 animate-slide`}>
           {REVIEWS?.map((review, index) => (
             <div
