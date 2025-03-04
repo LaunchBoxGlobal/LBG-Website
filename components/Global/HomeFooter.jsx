@@ -108,10 +108,10 @@ const HomeFooter = () => {
       <div className="w-full border mt-8 border-gray-600" />
 
       <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
-        <section className="">
+        <section className="w-full">
           <h3 className="text-[20px] font-normal">Our Presense</h3>
-          <ul className="flex flex-col lg:flex-row items-start gap-6 lg:gap-14 mt-5">
-            <li>
+          <ul className="w-full flex flex-col lg:flex-row items-start gap-6 lg:gap-14 mt-5">
+            <li className="w-full">
               <span className="text-xl font-bold flex items-center justify-start gap-2">
                 USA{" "}
                 <Image
@@ -135,7 +135,7 @@ const HomeFooter = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className="mt-5 w-[115%] lg:w-[370px] xl:w-[490px] h-[227px]"
+                className="mt-5 w-[100%] lg:w-[370px] xl:w-[490px] h-[227px]"
               />
             </li>
           </ul>
