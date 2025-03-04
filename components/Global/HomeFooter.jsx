@@ -135,7 +135,7 @@ const HomeFooter = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className="mt-5 w-[114%] lg:w-[350px] xl:w-[490px] h-[227px]"
+                className="mt-5 w-[115%] lg:w-[370px] xl:w-[490px] h-[227px]"
               />
             </li>
           </ul>
