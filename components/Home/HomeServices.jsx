@@ -14,7 +14,7 @@ const HomeServices = () => {
   };
 
   return (
-    <section className="w-full padding-x py-12 lg:py-28 bg-[#fff]">
+    <section className="w-full padding-x py-12 bg-[#fff]">
       <section
         className="w-full flex flex-col items-center justify-center gap-5"
         id="services"

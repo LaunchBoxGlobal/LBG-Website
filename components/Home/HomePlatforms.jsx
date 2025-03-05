@@ -6,75 +6,99 @@ import gsap from "gsap";
 const platforms = [
   {
     src: "/cost-effective.png",
-    width: 240,
-    height: 19,
+    width: 20,
+    height: 22,
     alt: "cost effective value proposition",
+    title: "Cost Effective",
+    icon: "/cost-effective-icon.png",
   },
   {
     src: "/startup-friendly.png",
-    width: 240,
-    height: 19,
+    width: 16,
+    height: 20,
     alt: "startup friendly value proposition",
+    title: "Startup Friendly",
+    icon: "/startup-friendly-icon.png",
   },
   {
     src: "/transparent-process.png",
-    width: 240,
-    height: 19,
+    width: 20,
+    height: 20,
     alt: "transparent process icon",
+    title: "Transparent Process",
+    icon: "/transparent-process-icon.png",
   },
   {
     src: "/quick-turnaround.png",
-    width: 240,
-    height: 19,
+    width: 29,
+    height: 20,
     alt: "quick turnaround icon",
+    title: "quick turnaround",
+    icon: "/quick-turnaround-icon.png",
   },
   {
     src: "/partner-first.png",
-    width: 240,
-    height: 19,
+    width: 31,
+    height: 20,
     alt: "partner first",
+    title: "partner first",
+    icon: "/partner-first-icon.png",
   },
   {
     src: "/global-talents.png",
-    width: 240,
+    width: 19,
     height: 19,
     alt: "global talents icon",
+    title: "global talents",
+    icon: "/global-talents-icon-gray.png",
   },
   {
     src: "/cost-effective.png",
-    width: 240,
-    height: 19,
+    width: 20,
+    height: 24,
     alt: "cost effective value proposition",
+    title: "Cost Effective",
+    icon: "/cost-effective-icon.png",
   },
   {
     src: "/startup-friendly.png",
-    width: 240,
-    height: 19,
+    width: 16,
+    height: 20,
     alt: "startup friendly value proposition",
+    title: "Startup Friendly",
+    icon: "/startup-friendly-icon.png",
   },
   {
     src: "/transparent-process.png",
-    width: 240,
-    height: 19,
+    width: 20,
+    height: 20,
     alt: "transparent process icon",
+    title: "Transparent Process",
+    icon: "/transparent-process-icon.png",
   },
   {
     src: "/quick-turnaround.png",
-    width: 240,
-    height: 19,
+    width: 29,
+    height: 20,
     alt: "quick turnaround icon",
+    title: "quick turnaround",
+    icon: "/quick-turnaround-icon.png",
   },
   {
     src: "/partner-first.png",
-    width: 240,
-    height: 19,
+    width: 31,
+    height: 20,
     alt: "partner first",
+    title: "partner first",
+    icon: "/partner-first-icon.png",
   },
   {
     src: "/global-talents.png",
-    width: 240,
+    width: 19,
     height: 19,
     alt: "global talents icon",
+    title: "global talents",
+    icon: "/global-talents-icon-gray.png",
   },
 ];
 
@@ -98,20 +122,25 @@ const HomePlatforms = () => {
 
   return (
     <section className="w-full py-3.5 overflow-hidden bg-white border-t-[1.5px] border-b-[1.5px] border-gray-400 relative -top-5 xl:-top-20 2xl:-top-24 z-30">
-      <div className="flex items-center gap-x-6 w-max" ref={marqueeRef}>
+      <div className="flex items-center gap-x-10 w-max" ref={marqueeRef}>
         {[...platforms, ...platforms].map((platform, index) => {
           return (
             <>
-              <Image
-                key={index}
-                src={platform.src}
-                width={platform.width}
-                height={platform.height}
-                alt={platform.alt}
-                className={`object-contain grayscale-img w-[90px] h-[18px] lg:w-[270px] lg:h-[22px]`}
-                style={{ width: platform.width, height: platform.height }}
-              />
-              <div className="h-[16px] border-[1.5px] border-gray-500" />
+              <div className="flex items-center justify-center gap-2">
+                <Image
+                  key={index}
+                  src={platform?.icon}
+                  width={platform?.width}
+                  height={platform?.height}
+                  alt={platform?.title}
+                  className={``}
+                  style={{ width: platform?.width, height: platform?.height }}
+                />
+                <strong className="uppercase font-bold text-[#545454] text-[20px] opacity-70">
+                  {platform?.title}
+                </strong>
+              </div>
+              <div className="h-[16px] border-[1.5px] border-[#545454]" />
             </>
           );
         })}
