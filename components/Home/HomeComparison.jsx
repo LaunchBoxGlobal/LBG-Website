@@ -29,16 +29,16 @@ const HomeComparison = () => {
               Solutions We<span className="text-[#F40E00]"> Provide</span>
             </strong>
           </h2>
-          <p className="text-xl xl:text-[22px] font-light text-gray-400 mb-5 lg:mb-1">
+          <p className="text-xl xl:text-[22px] font-light text-gray-400 mb-5 lg:mb-3">
             You will be informed at every step, using Agile <br /> methods to
             keep your project on track and up to date.
           </p>
           <Image
-            src={"/comparison-image.png"}
+            src={"/solutions-we-provide-puzzle.png"}
             width={509}
             height={500}
             alt="solutions we provide"
-            className="w-[95%] custom-red-shadow opacity-90"
+            className="w-[88%] opacity-90"
           />
         </section>
       </section>
