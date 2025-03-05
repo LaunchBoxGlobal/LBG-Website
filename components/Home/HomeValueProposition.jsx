@@ -61,15 +61,15 @@ const HomeValueProposition = () => {
         >
           {VALUE_PROPOSITION?.map((value, index) => {
             return (
-              <SwiperSlide key={index} className="w-full">
-                <div className="rounded-xl p-6 bg-white h-[197px] border flex flex-col items-start justify-center">
+              <SwiperSlide key={index} className="w-full lg:w-[340px]">
+                <div className="w-full rounded-xl p-6 bg-white h-[197px] lg:w-[340px] border flex flex-col items-start justify-start">
                   <div className="flex items-center justify-start gap-3 w-full">
                     <div
                       className={`w-[22px] h-[22px] ${
                         index % 2 === 0 ? "bg-red-600" : "bg-black"
                       }`}
                     ></div>
-                    <h3 className="text-lg lg:text-[26px]">{value?.title}</h3>
+                    <h3 className="text-lg lg:text-[22px]">{value?.title}</h3>
                   </div>
                   <p className="text-sm lg:text-[18px] lg:leading-[24px] mt-3 text-start font-light text-gray-400">
                     {value?.desc}
