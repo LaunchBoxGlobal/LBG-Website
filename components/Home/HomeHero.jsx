@@ -59,7 +59,7 @@ const HomeHero = () => {
         width={1710}
         height={439}
         alt="globe image"
-        className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-[20%] 2xl:-bottom-[22%] z-30 opacity-100"
+        className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-[14%] 2xl:-bottom-[22%] z-30 opacity-100"
       />
     </section>
   );
