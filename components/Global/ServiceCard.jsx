@@ -24,7 +24,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
       >
         <span
           className={`text-[15px] lg:text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300 ${
-            openFaq === index && "pt-2.5 lg:pt-0"
+            openFaq === index && "pt-2.5 lg:pt-0 text-white"
           }`}
         >{`(0${index + 1})`}</span>
         <Image
@@ -39,7 +39,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           }`}
         />
         <div className="flex flex-col items-center w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
-          <div className="w-full flex items-center lg:items-start justify-between">
+          <div className="w-full flex items-center lg:items-start justify-between mb-4">
             <h3
               className={`text-lg text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
                 openFaq === index ? "text-white" : "text-gray-400"
