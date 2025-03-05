@@ -20,10 +20,10 @@ const HomeComparison = () => {
             width={400}
             height={386}
             alt="problems-image"
-            className="xl:mt-20 w-[80%] mx-auto"
+            className="xl:mt-12 w-[80%] mx-auto"
           />
         </section>
-        <section className="flex flex-col items-center lg:items-center text-center lg:pr-[3%]">
+        <section className="flex flex-col items-center lg:items-center text-center lg:pr-[5%]">
           <h2 className="text-2xl lg:text-[35px] xl:text-[40px] 2xl:text-[60px] font-bold mb-6">
             <strong>
               Solutions We<span className="text-[#F40E00]"> Provide</span>
