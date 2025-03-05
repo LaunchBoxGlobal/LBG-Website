@@ -136,7 +136,7 @@ const HomePlatforms = () => {
                   className={``}
                   style={{ width: platform?.width, height: platform?.height }}
                 />
-                <strong className="uppercase font-bold text-[#545454] text-[20px] opacity-70">
+                <strong className="uppercase font-bold text-[#545454] text-[20px] opacity-60">
                   {platform?.title}
                 </strong>
               </div>
