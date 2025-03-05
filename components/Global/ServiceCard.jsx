@@ -9,24 +9,22 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
   return (
     <button
       type="button"
-      className={`w-full rounded-xl lg:pt-5 2xl:pt-7 2xl:px-8 px-6 lg:pb-[40px] 2xl:pb-[60px] flex flex-col items-start justify-between gap-4 group hover:bg-black ${
+      className={`w-full px-4 pb-0 lg:pt-6 lg:pb-[50px] lg:px-7 rounded-xl flex flex-col items-start justify-between gap-x-4 group hover:bg-black ${
         openFaq === index ? "bg-[#000]" : "bg-white"
-      } transition-all duration-300 h-auto relative overflow-visible mb-4`}
+      } transition-all duration-300 h-auto relative overflow-visible mb-0`}
       key={index}
       onClick={() => {
         toggleFaq(index);
       }}
     >
-      <div
-        className={`w-full flex ${
-          openFaq === index ? "items-start" : "items-center"
-        } lg:items-start justify-between`}
-      >
-        <span
-          className={`text-[15px] lg:text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300 ${
-            openFaq === index && "pt-2.5 lg:pt-0 text-white"
-          }`}
-        >{`(0${index + 1})`}</span>
+      <div className={`w-full flex items-start justify-between`}>
+        <div className="flex items-start pt-2.5">
+          <span
+            className={`text-[15px] lg:text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300 ${
+              openFaq === index && "text-white"
+            }`}
+          >{`(0${index + 1})`}</span>
+        </div>
         <Image
           src={service?.image}
           width={300}
@@ -38,8 +36,8 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
               : "-rotate-[22deg] invisible group-hover:visible"
           }`}
         />
-        <div className="flex flex-col items-center w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
-          <div className="w-full flex items-center lg:items-start justify-between mb-4">
+        <div className="flex flex-col items-center w-[80%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
+          <div className="w-full flex items-center lg:items-start justify-between mb-0 py-0">
             <h3
               className={`text-lg text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
                 openFaq === index ? "text-white" : "text-gray-400"
@@ -48,7 +46,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
               {service?.title}
             </h3>
             <IoMdArrowDown
-              className={`w-[15px] lg:w-[31px] h-[15px] lg:h-[31px] ${
+              className={`w-[15px] block lg:mt-1 lg:w-[31px] h-[15px] lg:h-[31px] ${
                 openFaq === index
                   ? "text-[#fff] opacity-100 scale-y-[-1]"
                   : "text-[#F40E00] opacity-60 scale-y-[1]"
@@ -62,7 +60,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
               opacity: openFaq === index ? 1 : 0,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="relative flex items-start justify-start overflow-hidden w-full pl-0.5"
+            className="relative flex items-start justify-start overflow-hidden w-full pl-0.5 mt-2 md:mt-4"
           >
             <div className="w-full lg:w-[70%] border-t py-4">
               <p className="text-white text-start text-lg font-light">
@@ -72,22 +70,6 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           </motion.div>
         </div>
       </div>
-
-      {/* <motion.div
-        initial={false}
-        animate={{
-          height: openFaq === index ? "auto" : 0,
-          opacity: openFaq === index ? 1 : 0,
-        }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="float-end relative lg:left-[40%] xl:left-[25.5%] 2xl:left-[15%] flex items-start justify-end overflow-hidden lg:w-[50%] xl:w-[67%]"
-      >
-        <div className="w-full border-t py-4 lg:w-[670px] float-end">
-          <p className="text-white text-start text-lg font-light">
-            {service?.desc}
-          </p>
-        </div>
-      </motion.div> */}
     </button>
   );
 };
