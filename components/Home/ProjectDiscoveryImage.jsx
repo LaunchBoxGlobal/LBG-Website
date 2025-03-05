@@ -4,7 +4,7 @@ import "./ProcessAnimations.css";
 
 const ProjectDiscoveryImage = () => {
   return (
-    <div className="w-full h-[471px] relative">
+    <div className="w-full h-[301px] lg:h-[471px] relative">
       <Image
         src={"/project-discovery-search.png"}
         width={380}

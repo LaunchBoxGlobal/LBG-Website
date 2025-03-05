@@ -9,9 +9,9 @@ const HomeStats = () => {
         <h2 className="section-heading">
           Backed by <span className="text-[#F40E00]">Experience</span>
         </h2>
-        <p className="section-paragraph text-center">
-          Explore how we’ve helped clients, delivered projects, and turned{" "}
-          <br /> ideas into reality your success is what drives our work.
+        <p className="section-paragraph text-center w-full lg:w-[60%]">
+          Explore how we’ve helped clients, delivered projects, and turned ideas
+          into reality your success is what drives our work.
         </p>
       </section>
       <section className="w-full grid grid-cols-2 md:grid-cols-4 gap-5 lg:gap-x-10 mt-8">

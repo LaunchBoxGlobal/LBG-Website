@@ -12,7 +12,8 @@ const words = [
   "Strategic Business Analysts",
   "Visionary Software Architects",
   "Certified Scrum Masters",
-  "Precision-Driven QA Engineers",
+  // "Precision-Driven QA Engineers",
+  "Diligent QA Engineer",
   "Specialist Database Architects",
   "Creative Storyboard Artists",
   "Skilled Video Editors",
@@ -58,7 +59,7 @@ const FlippingText = () => {
   }, [index]);
 
   return (
-    <div className="relative h-12 md:h-16 lg:h-32 flex items-center justify-center overflow-hidden text-3xl font-bold text-center w-[100%] mx-auto">
+    <div className="relative h-14 md:h-16 lg:h-32 flex items-center justify-center overflow-hidden text-3xl font-bold text-center w-[100%] mx-auto">
       <div
         ref={wordRef}
         className="absolute flex space-x-2"
@@ -67,7 +68,7 @@ const FlippingText = () => {
         {words[index].split(" ").map((word, i) => (
           <span
             key={i}
-            className="inline-block mr-0 lg:mr-2 red-text text-xl md:text-4xl lg:text-[80px] 2xl:text-[100px]"
+            className="inline-block mr-0 lg:mr-2 red-text text-2xl md:text-4xl lg:text-[84px] 2xl:text-[100px]"
           >
             {word}
           </span>

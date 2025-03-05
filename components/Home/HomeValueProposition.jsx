@@ -45,8 +45,8 @@ const HomeValueProposition = () => {
         <h2 className="section-heading text-center lg:text-start">
           See How We Are <br /> <span className="red-text">Different</span>
         </h2>
-        <p className="section-paragraph text-center lg:text-start mt-2">
-          We bring you expert-driven, scalable, and affordable software <br />
+        <p className="section-paragraph text-center lg:text-start mt-2 lg:w-1/2 w-full">
+          We bring you expert-driven, scalable, and affordable software
           solutions fast, reliable, and built for your success!
         </p>
       </section>

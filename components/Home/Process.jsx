@@ -27,9 +27,8 @@ const Process = () => {
         <h2 className="section-heading">
           From Start To <span className="red-text">Finish</span>
         </h2>
-        <p className="section-paragraph text-center">
+        <p className="section-paragraph text-center w-full lg:w-2/3">
           We follow a structured and client focused development process to{" "}
-          <br />
           ensure the successful delivery of high quality software solutions.{" "}
         </p>
       </section>

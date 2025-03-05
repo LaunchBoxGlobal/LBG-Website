@@ -12,9 +12,9 @@ const HomeTech = () => {
             Smart Technology For <br /> Better{" "}
             <span className="red-text">Solution</span>
           </h2>
-          <p className="section-paragraph text-center">
-            You get the best tools and technologies to build fast, secure, and{" "}
-            <br /> reliable software that fits your business perfectly.
+          <p className="section-paragraph text-center lg:w-2/3 w-full">
+            You get the best tools and technologies to build fast, secure, and
+            reliable software that fits your business perfectly.
           </p>
         </section>
         <HomeTechnologiesSlider />
