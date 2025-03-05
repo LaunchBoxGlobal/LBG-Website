@@ -1,14 +1,11 @@
 "use client";
-import Link from "next/link";
-import React, { useState } from "react";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import React from "react";
 import "./ServiceCard.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoMdArrowDown } from "react-icons/io";
 
 const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
-  const [state, setState] = useState(false);
   return (
     <button
       type="button"
@@ -53,7 +50,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
         </div>
       </div>
 
-      <motion.div
+      {/* <motion.div
         initial={false}
         animate={{
           height: openFaq === index ? "auto" : 0,
@@ -67,25 +64,24 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
             {service?.desc}
           </p>
         </div>
+      </motion.div> */}
+      <motion.div
+        initial={false}
+        animate={{
+          height: openFaq === index ? "auto" : 0,
+          opacity: openFaq === index ? 1 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="relative flex items-start justify-start overflow-hidden w-full lg:max-w-[59.5%] xl:max-w-[66.7%] ml-auto"
+      >
+        <div className="w-full lg:w-[80%] border-t py-4">
+          <p className="text-white text-start text-lg font-light">
+            {service?.desc}
+          </p>
+        </div>
       </motion.div>
     </button>
   );
 };
 
 export default ServiceCard;
-
-{
-  /* <motion.div
-                    initial={false}
-                    animate={{
-                      height: openFaq === index ? "auto" : 0,
-                      opacity: openFaq === index ? 1 : 0,
-                    }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                    className="overflow-hidden"
-                  >
-                    <p className="text-[20px] font-normal text-start leading-[24px] tracking-tight text-gray-900 w-[90%]">
-                      {process?.text}
-                    </p>
-                  </motion.div> */
-}
