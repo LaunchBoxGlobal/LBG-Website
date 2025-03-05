@@ -40,7 +40,7 @@ const HomeHero = () => {
         </h2>
       </div>
 
-      <div className="flex items-center justify-center gap-4 mt-0 relative top-3 2xl:top-10 z-20">
+      <div className="flex items-center justify-center gap-4 mt-0 relative top-3 lg:-top-3 2xl:top-10 z-20">
         <ContactButton text={"Get a Free Consultation"} />
       </div>
       <div className="w-full h-[45%] xl:h-[40%] lg:h-[30%] 2xl:h-[55%] flex items-center justify-center relative z-0">
