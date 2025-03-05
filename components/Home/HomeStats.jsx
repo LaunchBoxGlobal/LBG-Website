@@ -26,10 +26,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="lg:text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               100+
             </h2>
-            <p className="text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Global Talents
             </p>
           </div>
@@ -45,10 +45,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="lg:text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               50+
             </h2>
-            <p className="text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Projects Delivered
             </p>
           </div>
@@ -64,10 +64,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="lg:text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               40+
             </h2>
-            <p className="text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Happy Clients
             </p>
           </div>
@@ -83,10 +83,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="lg:text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               7+
             </h2>
-            <p className="text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Global Presence
             </p>
           </div>
