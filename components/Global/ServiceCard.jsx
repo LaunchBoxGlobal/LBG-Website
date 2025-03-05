@@ -9,7 +9,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
   return (
     <button
       type="button"
-      className={`w-full rounded-xl pt-5 2xl:pt-7 2xl:px-8 px-6 pb-1 lg:pb-[60px] 2xl:pb-[60px] flex flex-col items-start justify-between gap-4 group hover:bg-black ${
+      className={`w-full rounded-xl pt-5 2xl:pt-7 2xl:px-8 px-6 pb-1 lg:pb-[40px] 2xl:pb-[60px] flex flex-col items-start justify-between gap-4 group hover:bg-black ${
         openFaq === index ? "bg-[#000]" : "bg-white"
       } transition-all duration-300 h-auto relative overflow-visible mb-4`}
       key={index}
@@ -32,21 +32,38 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
               : "-rotate-[22deg] invisible group-hover:visible"
           }`}
         />
-        <div className="flex items-center lg:items-start justify-between w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
-          <h3
-            className={`text-lg text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
-              openFaq === index ? "text-white" : "text-gray-400"
-            } font-normal transition-all duration-300`}
+        <div className="flex flex-col items-start gap-y-4 w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
+          <div className="w-full flex items-center lg:items-start justify-between">
+            <h3
+              className={`text-lg text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
+                openFaq === index ? "text-white" : "text-gray-400"
+              } font-normal transition-all duration-300`}
+            >
+              {service?.title}
+            </h3>
+            <IoMdArrowDown
+              className={`w-[15px] lg:w-[31px] h-[15px] lg:h-[31px] ${
+                openFaq === index
+                  ? "text-[#fff] opacity-100 scale-y-[-1]"
+                  : "text-[#F40E00] opacity-60 scale-y-[1]"
+              } transition-all duration-300`}
+            />
+          </div>
+          <motion.div
+            initial={false}
+            animate={{
+              height: openFaq === index ? "auto" : 0,
+              opacity: openFaq === index ? 1 : 0,
+            }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="relative flex items-start justify-start overflow-hidden w-full"
           >
-            {service?.title}
-          </h3>
-          <IoMdArrowDown
-            className={`w-[15px] lg:w-[31px] h-[15px] lg:h-[31px] ${
-              openFaq === index
-                ? "text-[#fff] opacity-100 scale-y-[-1]"
-                : "text-[#F40E00] opacity-60 scale-y-[1]"
-            } transition-all duration-300`}
-          />
+            <div className="w-full lg:w-[70%] border-t py-4">
+              <p className="text-white text-start text-lg font-light">
+                {service?.desc}
+              </p>
+            </div>
+          </motion.div>
         </div>
       </div>
 
@@ -65,21 +82,6 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           </p>
         </div>
       </motion.div> */}
-      <motion.div
-        initial={false}
-        animate={{
-          height: openFaq === index ? "auto" : 0,
-          opacity: openFaq === index ? 1 : 0,
-        }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="relative flex items-start justify-start overflow-hidden w-full lg:max-w-[59.5%] xl:max-w-[66.7%] ml-auto"
-      >
-        <div className="w-full lg:w-[80%] border-t py-4">
-          <p className="text-white text-start text-lg font-light">
-            {service?.desc}
-          </p>
-        </div>
-      </motion.div>
     </button>
   );
 };
