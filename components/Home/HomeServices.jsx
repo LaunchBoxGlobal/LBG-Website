@@ -28,7 +28,7 @@ const HomeServices = () => {
         </p>
       </section>
 
-      <section className="w-full flex flex-col flex-wrap items-start justify-center mt-20 overflow-y-visible">
+      <section className="w-full flex flex-col flex-wrap items-start justify-center mt-8 lg:mt-20 overflow-y-visible">
         {HOME_SERVICES?.map((service, index) => (
           <ServiceCard
             service={service}

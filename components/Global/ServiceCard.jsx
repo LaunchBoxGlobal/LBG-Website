@@ -9,7 +9,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
   return (
     <button
       type="button"
-      className={`w-full rounded-xl pt-5 2xl:pt-7 2xl:px-8 px-6 pb-1 lg:pb-[40px] 2xl:pb-[60px] flex flex-col items-start justify-between gap-4 group hover:bg-black ${
+      className={`w-full rounded-xl 2xl:pt-7 2xl:px-8 px-6 lg:pb-[40px] 2xl:pb-[60px] flex flex-col items-start justify-between gap-4 group hover:bg-black ${
         openFaq === index ? "bg-[#000]" : "bg-white"
       } transition-all duration-300 h-auto relative overflow-visible mb-4`}
       key={index}
@@ -17,10 +17,16 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
         toggleFaq(index);
       }}
     >
-      <div className="w-full flex items-center lg:items-start justify-between">
-        <span className="text-[15px] lg:text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300">{`(0${
-          index + 1
-        })`}</span>
+      <div
+        className={`w-full flex ${
+          openFaq === index ? "items-start" : "items-center"
+        } lg:items-start justify-between`}
+      >
+        <span
+          className={`text-[15px] lg:text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300 ${
+            openFaq === index && "pt-2.5"
+          }`}
+        >{`(0${index + 1})`}</span>
         <Image
           src={service?.image}
           width={300}
@@ -32,7 +38,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
               : "-rotate-[22deg] invisible group-hover:visible"
           }`}
         />
-        <div className="flex flex-col items-center lg:gap-y-4 w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
+        <div className="flex flex-col items-center w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
           <div className="w-full flex items-center lg:items-start justify-between">
             <h3
               className={`text-lg text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
