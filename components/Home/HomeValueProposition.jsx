@@ -61,8 +61,8 @@ const HomeValueProposition = () => {
         >
           {VALUE_PROPOSITION?.map((value, index) => {
             return (
-              <SwiperSlide key={index} className="w-full lg:w-[340px]">
-                <div className="w-full rounded-xl p-6 bg-white h-[197px] lg:w-[340px] border flex flex-col items-start justify-start">
+              <SwiperSlide key={index} className="w-full lg:w-[320px]">
+                <div className="w-full rounded-xl p-6 bg-white h-[197px] lg:w-[320px] border flex flex-col items-start justify-start">
                   <div className="flex items-center justify-start gap-3 w-full">
                     <div
                       className={`w-[22px] h-[22px] ${
