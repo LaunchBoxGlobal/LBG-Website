@@ -52,7 +52,7 @@ const HomeHero = () => {
         width={1710}
         height={439}
         alt="globe image"
-        className="globe-img w-[90%] absolute bottom-12"
+        className="globe-img w-[90%] absolute bottom-12 lg:hidden"
       />
 
       <Image
