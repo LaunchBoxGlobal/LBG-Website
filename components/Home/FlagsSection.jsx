@@ -60,7 +60,7 @@ const FlagsSection = () => {
       className="w-full h-[70px] lg:h-[172px] overflow-hidden flex items-center relative"
     >
       {/* Flags container */}
-      <div className="w-[50%] lg:w-[80%] flex items-center justify-center h-full gap-1.5 lg:gap-3 xl:pr-2">
+      <div className="w-[80%] flex items-center justify-center h-full gap-1.5 lg:gap-3 xl:pr-2">
         {flags.map((flag, index) => (
           <Image
             key={index}
@@ -85,19 +85,12 @@ const FlagsSection = () => {
           className="h-[63px] lg:h-[149px] w-[63px] lg:w-[149px] flag-item rounded-full object-cover lg:hidden"
           alt="flag icon"
         />
-        <Image
-          src={"/white-flag.png"}
-          width={179}
-          height={179}
-          className="h-[63px] lg:h-[149px] w-[63px] lg:w-[149px] flag-item rounded-full object-cover lg:hidden"
-          alt="flag icon"
-        />
       </div>
 
       {/* Expanding right div (No left movement, only width expansion) */}
       <div
         ref={rightDivRef}
-        className="h-[69px] lg:h-[152px] bg-[#F40E00] p-1 lg:p-1.5 rounded-l-full flex items-center justify-start overflow-hidden gap-x-20 min-w-[50%] lg:min-w-[25%] max-w-[80%] right-div z-10 relative"
+        className="h-[69px] lg:h-[152px] bg-[#F40E00] p-1 lg:p-1.5 rounded-l-full flex items-center justify-start overflow-hidden gap-x-20 min-w-[25%] max-w-[80%] right-div z-10 relative"
       >
         <div className="rounded-full bg-white flex items-center justify-center h-[63px] lg:h-[143px] w-[63px] lg:w-[143px]">
           <Image
