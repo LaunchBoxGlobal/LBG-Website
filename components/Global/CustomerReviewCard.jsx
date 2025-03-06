@@ -4,7 +4,7 @@ import React from "react";
 const CustomerReviewCard = ({ text }) => {
   return (
     <div
-      className={`customer-review-card custom-shadow p-5 lg:px-7 flex flex-col items-start justify-center gap-5 bg-[#F9F9F9] w-[90%] lg:w-[383px] mx-auto lg:ml-auto`}
+      className={`customer-review-card p-5 lg:px-7 flex flex-col items-start justify-center gap-5 bg-[#F9F9F9] w-[90%] lg:w-[383px] mx-auto lg:ml-auto`}
     >
       <p className="leading-[21.76px] text-gray-600">{text?.text}</p>
       <div className="w-full flex items-center gap-2">

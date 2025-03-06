@@ -121,8 +121,11 @@ const HomePlatforms = () => {
   }, []);
 
   return (
-    <section className="w-full py-3.5 overflow-hidden bg-white border-t-[1.5px] border-b-[1.5px] border-gray-400 relative -top-5 xl:-top-20 2xl:-top-24 z-30">
-      <div className="flex items-center gap-x-10 w-max" ref={marqueeRef}>
+    <section className="w-full py-3.5 overflow-hidden bg-white border-t-[1.5px] border-b-[1.5px] border-gray-400 relative -top-10 xl:-top-20 2xl:-top-24 z-30">
+      <div
+        className="flex items-center gap-x-6 lg:gap-x-10 w-max"
+        ref={marqueeRef}
+      >
         {[...platforms, ...platforms].map((platform, index) => {
           return (
             <>
@@ -133,10 +136,11 @@ const HomePlatforms = () => {
                   width={platform?.width}
                   height={platform?.height}
                   alt={platform?.title}
-                  className={``}
-                  style={{ width: platform?.width, height: platform?.height }}
+                  className={`w-[13px] h-[13px] object-contain`}
+
+                  // style={{ width: platform?.width, height: platform?.height }}
                 />
-                <strong className="uppercase font-bold text-[#545454] text-[20px] opacity-60">
+                <strong className="uppercase font-bold text-[#545454] text-xs lg:text-[20px] opacity-60">
                   {platform?.title}
                 </strong>
               </div>

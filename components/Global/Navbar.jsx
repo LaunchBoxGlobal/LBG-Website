@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`py-6 md:py-7 flex items-center justify-between fixed top-0 z-50 w-full padding-x`}
+      className={`py-3 md:py-7 flex items-center justify-between fixed top-0 z-50 w-full padding-x bg-white lg:bg-transparent shadow-md lg:shadow-none`}
     >
       <Link
         href={"/"}
@@ -27,15 +27,15 @@ const Navbar = () => {
           width={180}
           height={45.73}
           alt="launchbox global logo"
-          className="w-[110px] lg:w-[182px] 2xl:w-[220px] h-[31px] 2xl:h-[40px] hidden lg:block"
+          className="w-[192px] lg:w-[182px] 2xl:w-[220px] h-[35px] 2xl:h-[40px] block"
         />
-        <Image
+        {/* <Image
           src={`/lb-logo-mobile.png`}
           width={180}
           height={45.73}
           alt="launchbox global logo"
           className="w-[40px] lg:hidden"
-        />
+        /> */}
         <div className="border border-[#CECEEA] w-[0.5px] h-[27px] opacity-50 hidden lg:block" />
         <span className="text-xs 2xl:text-sm font-[300] lg:leading-[14px] 2xl:leading-[14px] hidden lg:block">
           <strong>
@@ -121,7 +121,7 @@ const Navbar = () => {
         onClick={toggleSidebar}
         className="xl:hidden"
       >
-        <TbMenu2 className="text-2xl" />
+        <TbMenu2 className="text-2xl text-[#F40E00]" />
       </button>
       <div
         className={`w-full h-screen bg-transparent z-50 fixed inset-0 ${

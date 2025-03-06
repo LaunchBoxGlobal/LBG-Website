@@ -9,7 +9,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
   return (
     <button
       type="button"
-      className={`w-full px-4 pb-0 lg:pt-6 lg:pb-[50px] lg:px-7 rounded-xl flex flex-col items-start justify-between gap-x-4 group hover:bg-black ${
+      className={`w-full px-4 pb-0 lg:pt-6 lg:pb-[50px] lg:px-7 rounded-xl flex flex-col items-start justify-between gap-x-4 group lg:hover:bg-black ${
         openFaq === index ? "bg-[#000]" : "bg-white"
       } transition-all duration-300 h-auto relative overflow-visible mb-0`}
       key={index}
@@ -20,7 +20,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
       <div className={`w-full flex items-start justify-between`}>
         <div className="flex items-start pt-2.5">
           <span
-            className={`text-[15px] lg:text-[20px] font-medium text-gray-400 group-hover:text-white transition-all duration-300 ${
+            className={`text-[12px] lg:text-[20px] font-medium text-gray-400 lg:group-hover:text-white transition-all duration-300 ${
               openFaq === index && "text-white"
             }`}
           >{`(0${index + 1})`}</span>
@@ -36,10 +36,10 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
               : "-rotate-[22deg] invisible group-hover:visible"
           }`}
         />
-        <div className="flex flex-col items-center w-[80%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
+        <div className="flex flex-col items-center w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
           <div className="w-full flex items-center lg:items-start justify-between mb-0 py-0">
             <h3
-              className={`text-lg text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
+              className={`text-[20px] text-start md:text-[34px] xl:text-[45px] 2xl:text-[55px] leading-[45px] tracking-tight font-light ${
                 openFaq === index ? "text-white" : "text-gray-400"
               } font-normal transition-all duration-300`}
             >

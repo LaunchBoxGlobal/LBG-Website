@@ -19,11 +19,11 @@ const HomeCustomerReviews = () => {
     >
       {/* Centered Heading */}
       <h2 className="section-heading text-center static lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 z-0">
-        Success Stories From <br /> Our{" "}
+        Success Stories From <br className="hidden lg:block" /> Our{" "}
         <span className="red-text">Clients</span>
       </h2>
 
-      <div className="w-full lg:hidden h-[300px]">
+      <div className="w-full lg:hidden h-[350px]">
         <CustomerReviewsMobileVersion />
       </div>
 

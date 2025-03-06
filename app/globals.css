@@ -23,7 +23,7 @@ body {
 }
 
 .padding-x {
-  @apply px-4 md:px-8 lg:px-28 xl:px-[10%] 2xl:px-[13%];
+  @apply px-2 md:px-8 lg:px-28 xl:px-[10%] 2xl:px-[13%];
 }
 
 .red-btn-shadow {
@@ -34,7 +34,7 @@ body {
 }
 
 .red-btn {
-  @apply bg-[#F40E00] text-white px-5 lg:px-10 py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300;
+  @apply bg-[#F40E00] text-white px-5 lg:px-10 py-4 md:py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300;
 }
 
 .black-btn {
@@ -42,7 +42,7 @@ body {
 }
 
 .section-heading {
-  @apply text-3xl md:text-4xl lg:text-[85px] 2xl:text-[95px] font-bold 2xl:font-extrabold lg:tracking-tight lg:leading-[95px] 2xl:leading-[105px];
+  @apply text-[36px] lg:text-[85px] 2xl:text-[95px] font-bold 2xl:font-extrabold lg:tracking-tight leading-10 lg:leading-[95px] 2xl:leading-[105px];
 }
 
 .section-paragraph {

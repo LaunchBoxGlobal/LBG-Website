@@ -7,23 +7,24 @@ const HomeFooter = () => {
   return (
     <footer className="w-full padding-x py-12 lg:pt-20 bg-black text-white">
       <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <section className="flex flex-col xl:flex-row items-start gap-10">
-          <h2 className="text-2xl lg:text-[50px] font-bold lg:leading-[55px]">
+        <section className="flex items-start gap-4 lg:gap-10">
+          <h2 className="text-[32px] lg:text-[50px] font-bold leading-[36px] lg:leading-[55px]">
             Ready to Build <br /> Something <br /> Great?
           </h2>
           <Link
             href={"/contact-us"}
-            className="w-[156px] h-[156px] rounded-full border border-white text-[25px] flex flex-col gap-2 uppercase items-center justify-center hover:border-[#f40e00] hover:bg-[#f40e00] transition-all duration-300"
+            className="w-[109px] lg:w-[156px] h-[109px] lg:h-[156px] rounded-full border border-white text-base lg:text-[25px] flex flex-col gap-2 uppercase items-center justify-center hover:border-[#f40e00] hover:bg-[#f40e00] transition-all duration-300"
           >
             let's <br /> talk
             <Image
               src={"/footer-cta-icon.png"}
               width={28}
               height={24}
-              className=""
+              className="w-[18px] h-[15px] lg:w-[28px] lg:h-[24px]"
             />
           </Link>
         </section>
+
         <section className="flex flex-col gap-y-10 lg:flex-row items-start gap-x-20">
           <div className="">
             <h3 className="text-[18px] font-bold uppercase">quick links</h3>
@@ -31,7 +32,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"/"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
                 >
                   Home
                 </Link>
@@ -39,7 +40,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"#services"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
                 >
                   Services
                 </Link>
@@ -47,7 +48,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"#workflow"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
                 >
                   Workflow
                 </Link>
@@ -55,7 +56,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"#teckstack"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
                 >
                   Tech Stack
                 </Link>
@@ -63,7 +64,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"#testimonials"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
                 >
                   Testimonials
                 </Link>
@@ -71,7 +72,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"#faqs"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200 uppercase"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
                 >
                   FAQs
                 </Link>
@@ -87,7 +88,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"/"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
                 >
                   hello@launchboxglobal.com
                 </Link>
@@ -95,7 +96,7 @@ const HomeFooter = () => {
               <li>
                 <Link
                   href={"/"}
-                  className="text-white opacity-80 hover:opacity-100 transition-all duration-200"
+                  className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
                 >
                   +66 2399 1145
                 </Link>
@@ -107,7 +108,7 @@ const HomeFooter = () => {
 
       <div className="w-full border mt-8 border-gray-600" />
 
-      <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
+      <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-0 mt-10">
         <section className="w-full">
           <h3 className="text-[20px] font-normal">Our Presense</h3>
           <ul className="w-full flex flex-col lg:flex-row items-start gap-6 lg:gap-14 mt-5">
@@ -123,7 +124,7 @@ const HomeFooter = () => {
               </span>
               <Link
                 href={"/"}
-                className="text-white opacity-80 hover:opacity-100 transition-all duration-200 underline"
+                className="text-white opacity-90 hover:opacity-100 transition-all duration-200 underline"
               >
                 4700 Millenia Blvd, Orlando FL 32839
               </Link>
@@ -155,7 +156,7 @@ const HomeFooter = () => {
               </span>
               <Link
                 href={"/"}
-                className="text-white opacity-80 hover:opacity-100 transition-all duration-200 underline"
+                className="text-white opacity-90 hover:opacity-100 transition-all duration-200 underline"
               >
                 Emarah Suites, Sharah-e-Faisal, Suite# 301, Karachi
               </Link>

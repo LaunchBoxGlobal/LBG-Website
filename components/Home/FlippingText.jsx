@@ -13,7 +13,7 @@ const words = [
   "Visionary Software Architects",
   "Certified Scrum Masters",
   // "Precision-Driven QA Engineers",
-  "Diligent QA Engineer",
+  "Diligent QA Engineers",
   "Specialist Database Architects",
   "Creative Storyboard Artists",
   "Skilled Video Editors",
@@ -53,22 +53,28 @@ const FlippingText = () => {
       });
     };
 
-    const interval = setInterval(animateText, 2000); // Change word every 6 seconds
+    const interval = setInterval(animateText, 2000);
 
     return () => clearInterval(interval);
   }, [index]);
 
   return (
-    <div className="relative h-14 md:h-16 lg:h-32 flex items-center justify-center overflow-hidden text-3xl font-bold text-center w-[100%] mx-auto">
+    <div className="relative h-24 md:h-16 lg:h-32 flex items-start justify-center flex-wrap overflow-hidden font-bold text-center w-[100%] mx-auto mt-2 px-4 lg:px-0 leading-10">
       <div
         ref={wordRef}
-        className="absolute flex space-x-2"
-        style={{ fontSize: "40px" }}
+        className="absolute flex flex-wrap justify-center items-center gap-x-2"
+        style={{
+          fontSize: "40px",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
       >
+        {/* Wrap all words normally */}
         {words[index].split(" ").map((word, i) => (
           <span
             key={i}
-            className="inline-block mr-0 lg:mr-2 red-text text-2xl md:text-4xl lg:text-[84px] 2xl:text-[100px]"
+            className="mr-0 lg:mr-2 red-text text-[34px] md:text-4xl lg:text-[84px] 2xl:text-[100px] break-words"
           >
             {word}
           </span>

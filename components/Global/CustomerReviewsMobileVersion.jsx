@@ -1,11 +1,15 @@
 import React from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { REVIEWS } from "@/constants/Reviews";
 import CustomerReviewCard from "./CustomerReviewCard";
+import {
+  MdOutlineKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -38,8 +42,12 @@ export const sliderSettings = {
 
 const CustomerReviewsMobileVersion = () => {
   return (
-    <section className="w-full overflow-hidden block lg:hidden">
-      <Swiper {...sliderSettings} modules={[Autoplay]} className="">
+    <section className="w-full overflow-hidden block lg:hidden relative">
+      <Swiper
+        {...sliderSettings}
+        modules={[Autoplay, Navigation, Pagination]}
+        className=""
+      >
         {REVIEWS?.map((review, index) => {
           return (
             <SwiperSlide key={index} className="">
@@ -47,9 +55,32 @@ const CustomerReviewsMobileVersion = () => {
             </SwiperSlide>
           );
         })}
+        <Buttons />
       </Swiper>
     </section>
   );
 };
 
 export default CustomerReviewsMobileVersion;
+
+export const Buttons = () => {
+  const swiper = useSwiper();
+  return (
+    <div className="w-full flex items-center justify-center gap-2 absolute bottom-20">
+      <button
+        type="button"
+        onClick={() => swiper.slidePrev()}
+        className="w-[31px] h-[31px] rounded-full bg-black flex items-center justify-center"
+      >
+        <MdOutlineKeyboardArrowLeft className="text-white text-xl" />
+      </button>
+      <button
+        type="button"
+        onClick={() => swiper.slideNext()}
+        className="w-[31px] h-[31px] rounded-full bg-[#F40E00] flex items-center justify-center"
+      >
+        <MdOutlineKeyboardArrowRight className="text-white text-xl" />
+      </button>
+    </div>
+  );
+};

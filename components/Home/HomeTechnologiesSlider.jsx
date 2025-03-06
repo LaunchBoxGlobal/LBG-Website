@@ -27,7 +27,7 @@ const HomeTechnologiesSlider = () => {
       <div className="flex items-center gap-x-2 w-max" ref={marqueeRef}>
         {[...TECH_STACK, ...TECH_STACK].map((platform, index) => (
           <div className="border px-3 py-2 rounded-xl flex items-center justify-center gap-3">
-            <div className="bg-white custom-shadow w-[53px] h-[53px] flex items-center justify-center p-2.5 rounded-xl">
+            <div className="bg-white custom-shadow w-[29px] h-[29px] lg:w-[53px] lg:h-[53px] flex items-center justify-center p-1 lg:p-2.5 rounded-xl">
               <Image
                 key={index}
                 src={platform?.image}
@@ -37,7 +37,7 @@ const HomeTechnologiesSlider = () => {
                 className="w-auto h-full object-contain"
               />
             </div>
-            <h3 className="text-[25px] 2xl:text-[30px] text-gray-400 font-light">
+            <h3 className="text-base lg:text-[25px] 2xl:text-[30px] text-gray-400 font-light">
               {platform?.title}
             </h3>
           </div>

@@ -12,7 +12,7 @@ const HomeFaqs = () => {
   };
   return (
     <section
-      className="w-full pb-10 lg:pt-28 lg:pb-32 padding-x flex flex-col items-center"
+      className="w-full pb-10 pt-20 lg:pt-28 lg:pb-32 padding-x flex flex-col items-center"
       id="faqs"
     >
       <h2 className="section-heading text-center">
@@ -32,7 +32,7 @@ const HomeFaqs = () => {
               onClick={() => toggleFaq(index)}
               className="w-full text-start flex items-center justify-between outline-none"
             >
-              <h5 className="font-medium text-lg md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[95%]">
+              <h5 className="font-medium text-[17px] md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[85%]">
                 {faq?.question}
               </h5>
 

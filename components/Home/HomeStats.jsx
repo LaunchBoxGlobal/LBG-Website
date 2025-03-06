@@ -5,7 +5,7 @@ import { BsBuilding } from "react-icons/bs";
 const HomeStats = () => {
   return (
     <section className="w-full padding-x py-10 lg:py-28 bg-[#F9F9F9] flex flex-col items-center gap-6">
-      <section className="w-full flex flex-col items-center justify-center gap-5">
+      <section className="w-full flex flex-col items-center justify-center gap-5 text-center lg:text-start">
         <h2 className="section-heading">
           Backed by <span className="text-[#F40E00]">Experience</span>
         </h2>
@@ -14,7 +14,7 @@ const HomeStats = () => {
           into reality your success is what drives our work.
         </p>
       </section>
-      <section className="w-full grid grid-cols-2 md:grid-cols-4 gap-5 lg:gap-x-10 mt-8">
+      <section className="w-full grid grid-cols-1 md:grid-cols-4 gap-y-16 lg:gap-10 mt-8">
         <section className="w-full flex flex-col items-center justify-center gap-0">
           <div className="w-14 h-14 bg-white flex items-center justify-center rounded-xl p-3">
             <Image
@@ -26,10 +26,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[70px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               100+
             </h2>
-            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-2xl lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Global Talents
             </p>
           </div>
@@ -45,10 +45,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[70px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               50+
             </h2>
-            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-2xl lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Projects Delivered
             </p>
           </div>
@@ -64,10 +64,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[70px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               40+
             </h2>
-            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-2xl lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Happy Clients
             </p>
           </div>
@@ -83,10 +83,10 @@ const HomeStats = () => {
             />
           </div>
           <div className="flex flex-col items-center gap-2 mt-1">
-            <h2 className="text-[35px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
+            <h2 className="text-[70px] xl:text-[60px] 2xl:text-[60px] font-bold text-[#F40E00]">
               7+
             </h2>
-            <p className="text-lg lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
+            <p className="text-2xl lg:text-xl font-light text-gray-400 transition-all duration-300 relative -mt-3">
               Global Presence
             </p>
           </div>

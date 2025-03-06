@@ -39,7 +39,7 @@ const Process = () => {
             return (
               <button
                 type="button"
-                className={`w-full flex items-start gap-10 mb-5 outline-none`}
+                className={`w-full flex flex-col lg:flex-row items-center lg:items-start lg:gap-10 mb-5 outline-none`}
                 key={index}
                 onClick={() => toggleFaq(index)}
               >
@@ -47,7 +47,7 @@ const Process = () => {
                   className={`flex flex-col items-center justify-start gap-1 relative`}
                 >
                   <p
-                    className={`lg:text-[25px] xl:text-[30px] font-bold ${
+                    className={`text-[25px] xl:text-[30px] font-bold ${
                       openFaq === index ? "text-[#F40E00]" : "text-gray-400"
                     } transition-all duration-1000`}
                   >
@@ -58,12 +58,12 @@ const Process = () => {
                       openFaq === index
                         ? "h-14 bg-[#F40E00]"
                         : "h-0 bg-gray-400"
-                    } transition-all duration-1000 rounded-full`}
+                    } transition-all duration-1000 rounded-full hidden lg:block`}
                   ></div>
                 </div>
-                <div className="flex flex-col items-start justify-start">
+                <div className="flex flex-col items-center lg:items-start justify-start text-center lg:text-start w-full">
                   <h2
-                    className={`text-2xl text-start lg:text-[25px] xl:text-[30px] ${
+                    className={`text-[26px] text-start xl:text-[30px] ${
                       openFaq === index
                         ? "font-bold text-[#F40E00]"
                         : "font-semibold text-gray-400"
@@ -78,18 +78,27 @@ const Process = () => {
                       opacity: openFaq === index ? 1 : 0,
                     }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                    className="overflow-hidden mt-2"
+                    className="overflow-hidden mt-4 lg:mt-2 mx-auto lg:ml-0"
                   >
-                    <p className="text-[20px] font-normal text-start leading-[24px] tracking-tight text-gray-900 w-[90%]">
+                    <p className="text-base lg:text-[20px] font-normal text-center lg:text-start mx-auto lg:ml-0 leading-[24px] tracking-tight text-gray-900 w-[90%]">
                       {process?.text}
                     </p>
                   </motion.div>
+                  {index < 6 && (
+                    <div
+                      className={`w-1 ${
+                        openFaq === index
+                          ? "h-14 bg-[#F40E00] mt-3"
+                          : "h-14 bg-gray-400"
+                      } transition-all duration-1000 rounded-full lg:hidden`}
+                    ></div>
+                  )}
                 </div>
               </button>
             );
           })}
         </section>
-        <section className="w-full flex items-start justify-center">
+        <section className="w-full hidden lg:flex items-start justify-center">
           {imageIndex === 0 && <ProjectDiscoveryImage />}
           {imageIndex === 1 && (
             <Image
@@ -147,6 +156,8 @@ const Process = () => {
           )}
         </section>
       </section>
+
+      <section className="w-full"></section>
     </section>
   );
 };

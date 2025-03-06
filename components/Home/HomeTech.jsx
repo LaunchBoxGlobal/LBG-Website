@@ -9,7 +9,7 @@ const HomeTech = () => {
       <section className="w-full py-10 lg:py-20 bg-[#ffff]" id="teckstack">
         <section className="w-full padding-x flex flex-col items-center justify-center gap-5 mb-12">
           <h2 className="section-heading text-center">
-            Smart Technology For <br /> Better{" "}
+            Smart Technology For <br className="hidden lg:block" /> Better{" "}
             <span className="red-text">Solution</span>
           </h2>
           <p className="section-paragraph text-center lg:w-2/3 w-full">

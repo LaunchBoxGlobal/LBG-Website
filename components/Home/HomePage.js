@@ -28,7 +28,7 @@ const HomePage = () => {
       <HomeTech />
       {/* <HomeStats /> */}
       <HomeCustomerReviews />
-      <div className="hidden lg:block w-full">
+      <div className="w-full">
         <FlagsSection />
         {/* <CountryAnimation /> */}
       </div>
