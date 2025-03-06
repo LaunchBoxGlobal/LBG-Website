@@ -71,6 +71,22 @@ const FlagsSection = () => {
             alt="flag icon"
           />
         ))}
+        <Image
+          // key={index}
+          src={"/white-flag.png"}
+          width={179}
+          height={179}
+          className="h-[63px] lg:h-[149px] w-[63px] lg:w-[149px] flag-item rounded-full object-cover lg:hidden"
+          alt="flag icon"
+        />
+        <Image
+          // key={index}
+          src={"/white-flag.png"}
+          width={179}
+          height={179}
+          className="h-[63px] lg:h-[149px] w-[63px] lg:w-[149px] flag-item rounded-full object-cover lg:hidden"
+          alt="flag icon"
+        />
       </div>
 
       {/* Expanding right div (No left movement, only width expansion) */}

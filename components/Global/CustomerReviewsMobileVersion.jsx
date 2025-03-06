@@ -66,7 +66,7 @@ export default CustomerReviewsMobileVersion;
 export const Buttons = () => {
   const swiper = useSwiper();
   return (
-    <div className="w-full flex items-center justify-center gap-2 absolute bottom-20">
+    <div className="w-full flex items-center justify-center gap-2 absolute bottom-28 z-10">
       <button
         type="button"
         onClick={() => swiper.slidePrev()}
