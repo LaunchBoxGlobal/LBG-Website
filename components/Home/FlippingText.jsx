@@ -59,12 +59,12 @@ const FlippingText = () => {
   }, [index]);
 
   return (
-    <div className="relative h-24 md:h-16 lg:h-32 flex items-start justify-center flex-wrap overflow-hidden font-bold text-center w-[100%] mx-auto mt-2 lg:px-0 leading-10 px-6">
+    <div className="relative h-24 md:h-16 lg:h-32 flex items-start justify-center flex-wrap overflow-hidden font-bold text-center w-[92%] lg:w-full mx-auto mt-2 lg:px-0 leading-10 px-6">
       <div
         ref={wordRef}
         className="absolute flex flex-wrap justify-center items-center gap-x-2"
         style={{
-          fontSize: "40px",
+          // fontSize: "40px",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
