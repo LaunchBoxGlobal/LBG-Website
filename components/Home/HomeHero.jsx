@@ -7,7 +7,7 @@ import { GlobeDemo } from "../talk-to-us/GlobeDemo";
 
 const HomeHero = () => {
   return (
-    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-[88vh] lg:h-[120vh] lg:gap-[25px] xl:h-[110vh] 2xl:h-[100vh] overflow-hidden">
+    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-[87vh] lg:h-[120vh] lg:gap-[25px] xl:h-[110vh] 2xl:h-[100vh] overflow-hidden">
       <h1 className="font-bold text-[34px] lg:text-[84px] 2xl:text-[100px] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
@@ -52,7 +52,7 @@ const HomeHero = () => {
         width={1710}
         height={439}
         alt="globe image"
-        className="w-[110%] lg:w-[85%] h-[26%] xl:h-[40%] lg:h-[30%] 2xl:h-[45%] absolute bottom-0 2xl:-bottom-11 shadow-bottom"
+        className="w-[120%] lg:w-[85%] h-[26%] xl:h-[40%] lg:h-[30%] 2xl:h-[45%] absolute bottom-[-4%] 2xl:-bottom-11 shadow-bottom"
       />
       <Image
         src={"/image-glow.png"}
@@ -61,7 +61,7 @@ const HomeHero = () => {
         alt="globe image"
         className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-6 lg:-bottom-[14%] 2xl:-bottom-[22%] z-30 opacity-100"
       />
-      <div className="w-full h-[50px] bg-white absolute bottom-0" />
+      <div className="w-full h-[20px] lg:h-[50px] bg-white absolute bottom-0" />
     </section>
   );
 };
