@@ -27,7 +27,7 @@ const Navbar = () => {
           width={180}
           height={45.73}
           alt="launchbox global logo"
-          className="w-[192px] lg:w-[182px] 2xl:w-[220px] h-[35px] 2xl:h-[40px] block"
+          className="w-[188px] lg:w-[182px] 2xl:w-[220px] h-[35px] 2xl:h-[40px] block"
         />
         {/* <Image
           src={`/lb-logo-mobile.png`}
