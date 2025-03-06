@@ -52,14 +52,15 @@ const HomeHero = () => {
         width={1710}
         height={439}
         alt="globe image"
-        className="w-[120%] lg:w-[85%] h-[26%] xl:h-[40%] lg:h-[30%] 2xl:h-[45%] absolute bottom-[-4%] 2xl:-bottom-11 shadow-bottom"
+        className="w-[130%] sm:w-[100%] lg:w-[85%] h-[28%] xl:h-[40%] lg:h-[30%] 2xl:h-[45%] absolute bottom-[-4%] 2xl:-bottom-11 shadow-bottom lg:hidden"
       />
+
       <Image
         src={"/image-glow.png"}
         width={1710}
         height={439}
         alt="globe image"
-        className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-6 lg:-bottom-[14%] 2xl:-bottom-[22%] z-30 opacity-100"
+        className="w-[90%] h-[139px] lg:h-[359px] 2xl:h-[439px] absolute -bottom-12 lg:-bottom-[14%] 2xl:-bottom-[22%] z-30 opacity-100"
       />
       <div className="w-full h-[20px] lg:h-[50px] bg-white absolute bottom-0" />
     </section>

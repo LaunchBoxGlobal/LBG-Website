@@ -119,7 +119,7 @@ const Navbar = () => {
         type="button"
         name="sidebar menu button"
         onClick={toggleSidebar}
-        className="xl:hidden"
+        className="xl:hidden mr-3"
       >
         <TbMenu2 className="text-2xl text-[#F40E00]" />
       </button>
