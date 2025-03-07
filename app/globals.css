@@ -34,7 +34,7 @@ body {
 }
 
 .red-btn {
-  @apply bg-[#F40E00] text-white px-5 lg:px-10 py-4 md:py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300;
+  @apply bg-[#F40E00] text-white px-5 lg:px-10 py-4 md:py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300 border border-black;
 }
 
 .black-btn {

@@ -26,6 +26,7 @@ const HomePage = () => {
       <Process />
       {/* <HomePortfolio /> */}
       <HomeTech />
+      <HomeStats />
       {/* <HomeStats /> */}
       <HomeCustomerReviews />
       <div className="w-full">

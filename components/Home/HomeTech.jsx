@@ -20,7 +20,6 @@ const HomeTech = () => {
         <HomeTechnologiesSlider />
         <TechSlider2 />
       </section>
-      <HomeStats />
     </>
   );
 };
