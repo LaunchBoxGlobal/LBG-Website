@@ -71,7 +71,13 @@ const SmartPlanning = () => {
           return (
             <div
               className={`w-full lg:w-[490px] h-[243px] rounded-2xl flex flex-col py-6 px-10 items-start border gap-1 relative z-10 bg-white mb-5 ${
-                index === 5 ? "xl:-top-24" : index === 6 ? "xl:-top-28" : ""
+                index === 4
+                  ? "lg:-top-20"
+                  : index === 5
+                  ? "xl:-top-24"
+                  : index === 6
+                  ? "xl:-top-40"
+                  : ""
               } ${
                 isLeft
                   ? `border-l-[17px] border-[#F40E00] lg:mr-auto`

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
@@ -43,6 +43,7 @@ export const sliderSettings = {
 };
 
 const Industries = () => {
+  const [state, setState] = useState(false);
   return (
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
@@ -70,19 +71,26 @@ const Industries = () => {
           style={{ width: "100%", height: "100%" }}
         >
           {INDUSTRIES?.map((value, index) => {
+            const [isHovered, setIsHovered] = useState(false);
             return (
               <SwiperSlide
                 key={index}
                 className="w-full h-[360px]"
                 style={{ width: "100%" }}
               >
-                <div className="w-full rounded-xl p-6 bg-white min-h-[360px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300">
+                <div
+                  className="w-full rounded-xl p-6 bg-white min-h-[360px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
                   <Image
-                    src={value?.icon}
+                    src={isHovered ? value?.whiteIcon : value?.redIcon}
                     alt={value?.title}
                     width={29}
                     height={29}
-                    className="object-contain group-hover:invert group-hover:brightness-0 group-hover:filter transition-all duration-300"
+                    className={`object-contain transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:filter group-hover:contrast-200 ${
+                      index === 0 && "w-[23px] h-[27px]"
+                    }`}
                   />
                   <h3 className="text-[22px] lg:text-[26px] font-semibold tracking-tight">
                     {value?.title}

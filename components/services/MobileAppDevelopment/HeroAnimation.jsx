@@ -37,7 +37,8 @@ function HeroAnimation() {
         centeredSlides={true}
         loop={true}
         slidesPerView={"auto"}
-        // initialSlide={Math.floor(7 / 2)}
+        // initialSlide={3}
+        // loopAdditionalSlides={3}
         coverflowEffect={{
           rotate: 0,
           stretch: -20,
@@ -57,7 +58,6 @@ function HeroAnimation() {
           clickable: true,
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        // loopAdditionalSlides={3}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="relative h-[322px] lg:h-[423px] flex items-center"
       >
