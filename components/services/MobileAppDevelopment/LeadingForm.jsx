@@ -4,7 +4,7 @@ const LeadingForm = () => {
   return (
     <form className="w-full bg-white rounded-2xl p-5 lg:p-10 text-black">
       <h2 className="text-[30px] lg:text-[40px] leading-8 lg:leading-[44px]">
-        Share your contact info, and we’ll get in touch.
+        Less stress. More success. <span className="red-text">Let’s go!</span>
       </h2>
 
       <div className="w-full mt-7 flex flex-col items-start gap-3 lg:gap-5">
@@ -52,7 +52,7 @@ const LeadingForm = () => {
             type="submit"
             className="bg-[#212121] text-white w-full rounded-full h-[45px] text-lg font-semibold"
           >
-            Submit
+            Get Your Free App Plan
           </button>
         </div>
       </div>

@@ -13,9 +13,9 @@ const CreateYourMobileApp = () => {
           height={410}
           className="w-[70%] h-full absolute inset-0 opacity-10"
         />
-        <section className="h-full z-10 text-white flex flex-col items-start justify-center gap-5 w-full lg:w-[65%] px-4 lg:px-16">
+        <section className="h-full z-10 text-white flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[65%] px-4 lg:px-16">
           <h2 className="font-bold text-[36px] lg:text-[50px] leading-10">
-            Let’s create your app
+            Let’s Create Your App
           </h2>
           <p className="text-lg lg:text-[22px] font-light">
             We follow a structured and client focused development process to
@@ -26,7 +26,7 @@ const CreateYourMobileApp = () => {
             href={"/contact-us"}
             className="w-[242px] h-[47px] mt-3 bg-white text-black flex items-center justify-center rounded-[11px] text-lg font-medium"
           >
-            Start Your App Today
+            Start Your App Today!
           </Link>
         </section>
         <Image

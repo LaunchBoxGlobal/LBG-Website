@@ -62,73 +62,73 @@ function HeroAnimation() {
         className="relative h-[322px] lg:h-[423px] flex items-center"
       >
         <SwiperSlide
-          className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+          className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup07.png"}
             alt={`slide_image}`}
-            className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+            className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
         </SwiperSlide>
         <SwiperSlide
-          className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+          className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
           style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup02.png"}
             alt={`slide_image}`}
-            className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+            className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
         </SwiperSlide>
         <SwiperSlide
-          className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+          className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup03.png"}
             alt={`slide_image}`}
-            className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+            className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
         </SwiperSlide>
         <SwiperSlide
-          className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+          className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
           style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup04.png"}
             alt={`slide_image}`}
-            className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+            className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
         </SwiperSlide>
         <SwiperSlide
-          className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+          className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup05.png"}
             alt={`slide_image}`}
-            className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+            className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
         </SwiperSlide>
         <SwiperSlide
-          className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+          className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
           style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup06.png"}
             alt={`slide_image}`}
-            className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+            className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
         </SwiperSlide>
         <SwiperSlide
-          className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+          className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup01.png"}
             alt={`slide_image}`}
-            className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+            className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
         </SwiperSlide>
       </Swiper>
@@ -154,13 +154,13 @@ export default HeroAnimation;
 //     return (
 //       <SwiperSlide
 //         key={index}
-//         className="w-[10rem] lg:w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
+//         className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
 //         style={{ marginTop: randomOffset, marginBottom: randomOffset }}
 //       >
 //         <img
 //           src={image}
 //           alt={`slide_image_${index + 1}`}
-//           className="w-[10rem] lg:w-[13rem] h-[423px] rounded-[2rem] object-cover shadow-none"
+//           className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
 //         />
 //       </SwiperSlide>
 //     );

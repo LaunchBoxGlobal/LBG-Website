@@ -121,7 +121,8 @@ body {
   display: none;
 }
 
-.cardContainer > img {
+.cardContainer {
+  /* cursor: cell; */
   cursor: url("/portfolio-button-image.png"), auto;
 }
 

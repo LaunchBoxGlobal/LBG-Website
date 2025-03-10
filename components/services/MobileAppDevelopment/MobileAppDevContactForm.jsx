@@ -5,7 +5,7 @@ const MobileAppDevContactForm = () => {
   return (
     <section className="w-full padding-x py-10 lg:py-20 mb-5 lg:mb-14">
       <section className="w-full bg-[#212121] rounded-2xl p-8 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div className="text-white w-full flex flex-col items-start justify-center">
+        <div className="text-white w-full flex flex-col items-center text-center lg:text-start lg:items-start justify-center">
           <h2 className="text-[36px] lg:text-[70px] font-medium leading-10 lg:leading-[68px] mb-7">
             Your App Idea Deserves Expert Execution
           </h2>

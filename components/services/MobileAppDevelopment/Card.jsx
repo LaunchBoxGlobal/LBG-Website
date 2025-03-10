@@ -3,6 +3,8 @@
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 
+const CursorImage = "/portfolio-cursor-image.png";
+
 const Card = ({
   i,
   title,
@@ -28,7 +30,7 @@ const Card = ({
     <div
       ref={container}
       className={
-        "cardContainer w-full h-[80vh] lg:h-[100vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10"
+        "cardContainer group w-full h-[80vh] lg:h-[100vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10"
       }
     >
       <motion.div
@@ -45,9 +47,9 @@ const Card = ({
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover rounded-3xl brightness-75"
+          className="w-full h-full object-cover rounded-3xl group-hover:brightness-50 transition-all duration-300"
         />
-        <div className="w-full h-full absolute inset-0 flex items-end px-5 lg:px-14 py-6">
+        <div className="w-full h-full absolute inset-0 hidden group-hover:flex items-end px-5 lg:px-14 py-6 transition-all duration-300">
           <p className="text-white text-[18px] lg:w-[80%]">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eum
             obcaecati quia earum esse, ipsam numquam nemo fugiat alias

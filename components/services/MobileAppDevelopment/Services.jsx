@@ -20,11 +20,9 @@ const Services = () => {
           <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Turn your app idea into reality with Mobile App Development Services
-          from small teams or bigger companies. We build easy-to-use apps with
-          simple designs, features that work right, and step-by-step code tested
-          on actual phones and tablets. After launch, we support and maintain
-          things based on what users say. Let’s build an app that matters.
+          Mobile app development services create apps for your needs. Tested on
+          real devices, with updates based on user feedback. Let’s make an app
+          that truly helps your business.
         </p>
       </section>
 

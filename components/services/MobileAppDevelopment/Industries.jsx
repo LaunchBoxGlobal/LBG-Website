@@ -48,16 +48,13 @@ const Industries = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Industries we power with Our{" "}
+          Industry-Focused{" "}
           <span className="red-text">Mobile App Development</span> Company
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Our Mobile App Development Company builds apps that tackle real
-          challenges for your industry. From start to finish, we focus on clear
-          features, smooth performance, and updates that make sense. We test
-          every app on real devices to catch problems early. After launch, we
-          stick around to fix bugs or add tools as your needs grow. Let’s create
-          an app that truly works for your business.
+          Our mobile app development company builds apps that solve real
+          industry challenges. We focus on clear features, smooth performance,
+          and updates that fit your needs. Let’s create apps that truly work.
         </p>
       </section>
 

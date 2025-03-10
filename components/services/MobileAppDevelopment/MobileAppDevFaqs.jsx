@@ -1,5 +1,5 @@
 "use client";
-import { FAQS } from "@/constants/Faqs";
+import { MobileAppFaqs } from "@/constants/mobile-app-development/MobileAppDevFaqs";
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -23,7 +23,7 @@ const MobileAppDevFaqs = () => {
         id="faqs"
         className="w-full mt-10 lg:mt-24 flex flex-col items-start gap-4 lg:w-[90%]"
       >
-        {FAQS?.map((faq, index) => (
+        {MobileAppFaqs?.map((faq, index) => (
           <div
             className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
             key={index}
