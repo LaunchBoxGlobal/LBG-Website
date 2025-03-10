@@ -18,6 +18,7 @@ export const HOME_SERVICES = [
       "Next.js",
     ],
     alt_tag: "mobile app development image",
+    pageUrl: "/services/mobile-app-development-services",
   },
   {
     image: "/web-app-development-service.png",
@@ -36,6 +37,7 @@ export const HOME_SERVICES = [
       "MongoDB",
     ],
     alt_tag: "web app development image",
+    pageUrl: "/",
   },
   {
     image: "/software-development.png",
@@ -53,6 +55,7 @@ export const HOME_SERVICES = [
       "Social Media Setup",
     ],
     alt_tag: "software development image",
+    pageUrl: "/",
   },
   {
     image: "/ecommerce-development-service.png",
@@ -73,6 +76,7 @@ export const HOME_SERVICES = [
       "Shopify",
     ],
     alt_tag: "ecommerce development image",
+    pageUrl: "/",
   },
   {
     image: "/uiux-design-service.png",
@@ -93,6 +97,7 @@ export const HOME_SERVICES = [
       "AWS",
     ],
     alt_tag: "ui ux design image",
+    pageUrl: "/",
   },
   {
     image: "/branding-and-design-service.png",
@@ -109,6 +114,7 @@ export const HOME_SERVICES = [
       "Advisory",
     ],
     alt_tag: "branding & design image",
+    pageUrl: "/",
   },
   {
     image: "/digital-marketing-service.png",
@@ -118,6 +124,7 @@ export const HOME_SERVICES = [
     img_height: "26.1px",
     tags: ["SEO", "SMM", "Paid Campaigns", "ORM", "Content Creation"],
     alt_tag: "digital marketing image",
+    pageUrl: "/",
   },
   {
     image: "/maintenance-and-consutling-service.png",
@@ -134,5 +141,6 @@ export const HOME_SERVICES = [
       "Sketches",
     ],
     alt_tag: "maintenance & consulting image",
+    pageUrl: "/",
   },
 ];

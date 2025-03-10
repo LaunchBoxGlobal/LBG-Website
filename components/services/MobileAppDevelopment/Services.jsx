@@ -34,7 +34,7 @@ const Services = () => {
       >
         {MOBILE_APP_DEVELOPMENT_SERVICES?.map((service, index) => (
           <div
-            className={`w-full pt-5 lg:py-10 ${
+            className={`w-full pt-5 lg:py-10 hover:bg-black rounded-3xl rounded-b-none hover:rounded-b-3xl hover:text-white transition-all duration-300 ${
               openFaq === index
                 ? "bg-black text-white rounded-3xl"
                 : "bg-[#fff] text-black border-b"
