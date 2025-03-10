@@ -73,6 +73,9 @@ const Services = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="overflow-hidden w-full border-t pt-5 pb-5 lg:pb-0"
             >
+              <p className="text-base lg:text-[20px] font-bold mb-3 lg:w-[75%] px-5 lg:px-[10%] xl:px-[10.5%]">
+                {service?.subtitle}
+              </p>
               <p className="text-base lg:text-[20px] font-normal lg:w-[75%] px-5 lg:px-[10%] xl:px-[10.5%]">
                 {service?.description}
               </p>
