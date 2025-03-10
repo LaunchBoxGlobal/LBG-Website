@@ -124,3 +124,10 @@ body {
 .cardContainer > img {
   cursor: url("/portfolio-button-image.png"), auto;
 }
+
+/* Hide the number input arrows in Chrome, Safari, and Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

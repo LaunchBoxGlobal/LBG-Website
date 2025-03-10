@@ -12,11 +12,10 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
-import "./style.css";
 
 export const sliderSettings = {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 40,
   centeredSlides: false,
   // autoplay: {
   //   delay: 3000,
@@ -59,6 +58,44 @@ const Industries = () => {
           stick around to fix bugs or add tools as your needs grow. Let’s create
           an app that truly works for your business.
         </p>
+      </section>
+
+      <section
+        className={`w-full relative overflow-hidden mt-10 lg:mt-16 h-[447px]`}
+      >
+        <Swiper
+          {...sliderSettings}
+          modules={[Autoplay]}
+          className="overflow-hidden h-[447px] w-full"
+          style={{ width: "100%", height: "100%" }}
+        >
+          {INDUSTRIES?.map((value, index) => {
+            return (
+              <SwiperSlide
+                key={index}
+                className="w-full h-[360px]"
+                style={{ width: "100%" }}
+              >
+                <div className="w-full rounded-xl p-6 bg-white min-h-[360px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300">
+                  <Image
+                    src={value?.icon}
+                    alt={value?.title}
+                    width={29}
+                    height={29}
+                    className="object-contain group-hover:invert group-hover:brightness-0 group-hover:filter transition-all duration-300"
+                  />
+                  <h3 className="text-[22px] lg:text-[26px] font-semibold tracking-tight">
+                    {value?.title}
+                  </h3>
+                  <p className="text-lg lg:text-[19px] lg:leading-[24px] text-start font-light text-gray-400 group-hover:text-white">
+                    {value?.description}
+                  </p>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+          <SwiperButtons />
+        </Swiper>
       </section>
     </section>
   );

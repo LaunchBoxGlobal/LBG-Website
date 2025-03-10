@@ -61,17 +61,19 @@ const Benefits = () => {
               alt="launchbox global logo"
             />
           </div>
-          {[1, 2, 3, 4, 5, 6, 7, 8]?.map((b, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9]?.map((_, i) => {
             return (
               <div
                 key={i}
-                className={`bg-white px-4 w-full mb-1.5 h-[74px] relative ${
-                  i % 2 === 0 ? "bg-white" : "bg-gray-50"
+                className={`bg-white px-4 lg:w-[219px]  shadow z-10 border-none relative ${
+                  i === 8 ? "rounded-b-2xl h-[70px]" : "h-[80px]"
                 }`}
               >
-                <div className="w-[40px] h-[40px] rounded-full bg-[#078F40] p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                  <FaCheck className="text-white w-full h-full" />
-                </div>
+                {i !== 8 && (
+                  <div className="w-[40px] h-[40px] rounded-full bg-[#078F40] p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                    <FaCheck className="text-white w-full h-full" />
+                  </div>
+                )}
               </div>
             );
           })}

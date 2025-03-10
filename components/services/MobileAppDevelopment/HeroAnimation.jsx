@@ -25,11 +25,11 @@ function HeroAnimation() {
   };
 
   return (
-    <div className="w-full h-[425px] bg-white mx-auto flex items-center justify-center relative right-[-3%]">
+    <div className="w-full h-[425px] bg-white mx-auto flex items-center justify-center relative right-[-1%]">
       <img
         src="/iphone-mockup.png"
         alt=""
-        className="w-[13.3rem] h-[425px] z-20 absolute left-[47.5%] -translate-x-1/2 top-1/2 -translate-y-1/2"
+        className="w-[13.3rem] h-[425px] z-20 absolute left-[49.3%] -translate-x-1/2 top-1/2 -translate-y-1/2"
       />
       <Swiper
         effect={"coverflow"}
@@ -63,7 +63,7 @@ function HeroAnimation() {
       >
         <SwiperSlide
           className="w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
-          style={{ marginTop: "60px" }}
+          style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup07.png"}
@@ -73,7 +73,7 @@ function HeroAnimation() {
         </SwiperSlide>
         <SwiperSlide
           className="w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
-          style={{ marginBottom: "60px" }}
+          style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup02.png"}
@@ -83,7 +83,7 @@ function HeroAnimation() {
         </SwiperSlide>
         <SwiperSlide
           className="w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
-          style={{ marginTop: "60px" }}
+          style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup03.png"}
@@ -93,7 +93,7 @@ function HeroAnimation() {
         </SwiperSlide>
         <SwiperSlide
           className="w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
-          style={{ marginBottom: "60px" }}
+          style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup04.png"}
@@ -103,7 +103,7 @@ function HeroAnimation() {
         </SwiperSlide>
         <SwiperSlide
           className="w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
-          style={{ marginTop: "60px" }}
+          style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup05.png"}
@@ -113,7 +113,7 @@ function HeroAnimation() {
         </SwiperSlide>
         <SwiperSlide
           className="w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
-          style={{ marginBottom: "60px" }}
+          style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup06.png"}
@@ -123,7 +123,7 @@ function HeroAnimation() {
         </SwiperSlide>
         <SwiperSlide
           className="w-[14rem] h-[425px] relative rounded-[3rem] shadow-none"
-          style={{ marginTop: "60px" }}
+          style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
             src={"/mobile-mockup01.png"}

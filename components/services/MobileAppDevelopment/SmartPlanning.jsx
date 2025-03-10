@@ -59,23 +59,23 @@ const SmartPlanning = () => {
           height={1580}
           className="h-[1740px] absolute left-1/2 -translate-x-1/2 top-12 hidden lg:block"
         />
-        {/* <Image
+        <Image
           src={"/rocket-mockup.png"}
           width={119}
           height={221}
-          className="object-contain absolute bottom-[-5.5%] right-[27%] w-[219px] h-[221px] hidden lg:block"
-        /> */}
+          className="object-contain absolute bottom-[0.3%] right-[27%] w-[219px] h-[221px] hidden lg:block"
+        />
         {SMART_PLANNING?.map((plan, index) => {
           // Logic to alternate between left and right
           const isLeft = index % 2 === 0;
           return (
             <div
               className={`w-full lg:w-[490px] h-[243px] rounded-2xl flex flex-col py-6 px-10 items-start border gap-1 relative z-10 bg-white mb-5 ${
+                index === 5 ? "xl:-top-24" : index === 6 ? "xl:-top-28" : ""
+              } ${
                 isLeft
-                  ? `border-l-[17px] border-[#F40E00] lg:mr-auto ${
-                      index === 2 ? "lg:-top-20" : ""
-                    }`
-                  : `border-r-[17px] border-[#F40E00] lg:ml-auto`
+                  ? `border-l-[17px] border-[#F40E00] lg:mr-auto`
+                  : `border-r-[17px] border-[#F40E00] lg:ml-auto top-0`
               }`}
               key={index}
             >
