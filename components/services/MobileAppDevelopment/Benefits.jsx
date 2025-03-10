@@ -29,8 +29,8 @@ const Benefits = () => {
         </p>
       </section>
 
-      <section className="w-full mt-10 lg:mt-20 border-black grid grid-cols-2 lg:grid-cols-6 gap-0">
-        <div className="w-full col-span-1 lg:col-span-2 flex flex-col items-start">
+      <section className="w-full mt-10 lg:mt-20 border-black grid grid-cols-3 lg:grid-cols-6 gap-0">
+        <div className="w-full col-span-2 lg:col-span-2 flex flex-col items-start">
           <p className="h-[62px] pt-3 px-4 text-lg font-semibold">
             Features / Metric
           </p>
@@ -65,7 +65,7 @@ const Benefits = () => {
             return (
               <div
                 key={i}
-                className={`bg-white px-4 lg:w-[219px]  shadow z-10 border-none relative ${
+                className={`bg-white px-4 w-[110px] lg:w-[219px]  shadow z-10 border-none relative ${
                   i === 8 ? "rounded-b-2xl h-[70px]" : "h-[80px]"
                 }`}
               >
