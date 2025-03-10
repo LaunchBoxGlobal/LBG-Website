@@ -1,91 +1,68 @@
-import Image from "next/image";
+"use client";
 import React from "react";
+import Card from "./Card";
+import { useScroll } from "framer-motion";
+import { useRef } from "react";
+import { projects } from "@/constants/mobile-app-development/Projects";
+
+import "./style.css";
 
 const MobileAppDevPortfolio = () => {
   return (
-    <section className="w-full relative padding-x py-20 flex flex-col items-start gap-3">
-      <div className="w-full h-[40vh] lg:h-[90vh] relative">
-        <Image
-          src={"/mobile-app-dev-portfolio-01.png"}
-          height={655}
-          width={1270}
-          className="h-[80%] lg:h-[94%] w-full lg:w-[1270px] object-cover rounded-3xl"
-        />
-        <div className="w-full flex items-center justify-between px-0 lg:px-10 gap-4">
-          <p className="text-sm lg:text-[26px] font-medium">
-            Health Mobile App
-          </p>
-          <p className="text-sm lg:text-[26px] font-medium">
-            Development, Marketing, Social media Management
-          </p>
-        </div>
-      </div>
-      <div className="w-full h-[40vh] lg:h-[90vh] relative">
-        <Image
-          src={"/mobile-app-dev-portfolio-02.png"}
-          height={655}
-          width={1270}
-          className="h-[80%] lg:h-[94%] w-full lg:w-[1270px] object-cover rounded-3xl"
-        />
-        <div className="w-full flex items-center justify-between px-0 lg:px-10 gap-4">
-          <p className="text-sm lg:text-[26px] font-medium">
-            Health Mobile App
-          </p>
-          <p className="text-sm lg:text-[26px] font-medium">
-            Development, Marketing, Social media Management
-          </p>
-        </div>
-      </div>
-      <div className="w-full h-[40vh] lg:h-[90vh] relative">
-        <Image
-          src={"/mobile-app-dev-portfolio-03.png"}
-          height={655}
-          width={1270}
-          className="h-[80%] lg:h-[94%] w-full lg:w-[1270px] object-cover rounded-3xl"
-        />
-        <div className="w-full flex items-center justify-between px-0 lg:px-10 gap-4">
-          <p className="text-sm lg:text-[26px] font-medium">
-            Health Mobile App
-          </p>
-          <p className="text-sm lg:text-[26px] font-medium">
-            Development, Marketing, Social media Management
-          </p>
-        </div>
-      </div>
-      <div className="w-full h-[40vh] lg:h-[90vh] relative">
-        <Image
-          src={"/mobile-app-dev-portfolio-04.png"}
-          height={655}
-          width={1270}
-          className="h-[80%] lg:h-[94%] w-full lg:w-[1270px] object-cover rounded-3xl"
-        />
-        <div className="w-full flex items-center justify-between px-0 lg:px-10 gap-4">
-          <p className="text-sm lg:text-[26px] font-medium">
-            Health Mobile App
-          </p>
-          <p className="text-sm lg:text-[26px] font-medium">
-            Development, Marketing, Social media Management
-          </p>
-        </div>
-      </div>
-      <div className="w-full h-[40vh] lg:h-[90vh] relative">
-        <Image
-          src={"/mobile-app-dev-portfolio-05.png"}
-          height={655}
-          width={1270}
-          className="h-[80%] lg:h-[94%] w-full lg:w-[1270px] object-cover rounded-3xl"
-        />
-        <div className="w-full flex items-center justify-between px-0 lg:px-10 gap-4">
-          <p className="text-sm lg:text-[26px] font-medium">
-            Health Mobile App
-          </p>
-          <p className="text-sm lg:text-[26px] font-medium">
-            Development, Marketing, Social media Management
-          </p>
-        </div>
-      </div>
-    </section>
+    <div class="container">
+      <ul id="cards">
+        <li class="card" id="card1">
+          <div class="card-body">
+            <h2>Card 1</h2>
+          </div>
+        </li>
+        <li class="card" id="card2">
+          <div class="card-body">
+            <h2>Card 2</h2>
+          </div>
+        </li>
+        <li class="card" id="card3">
+          <div class="card-body">
+            <h2>Card 3</h2>
+          </div>
+        </li>
+        <li class="card" id="card4">
+          <div class="card-body">
+            <h2>Card 4</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
   );
 };
 
 export default MobileAppDevPortfolio;
+
+export function CardsParallex() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
+
+  return (
+    <main
+      ref={container}
+      className={"styles.main w-full relative border border-black"}
+    >
+      {projects.map((project, i) => {
+        const targetScale = 1 - (projects.length - i) * 0.05;
+        return (
+          <Card
+            key={`p_${i}`}
+            i={i}
+            {...project}
+            progress={scrollYProgress}
+            range={[i * 0.25, 1]}
+            targetScale={targetScale}
+          />
+        );
+      })}
+    </main>
+  );
+}

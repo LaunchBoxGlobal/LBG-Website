@@ -1,0 +1,14 @@
+.swiper-slide {
+  width: 17rem !important;
+  background: transparent !important;
+}
+
+.swiper-slide img {
+  box-shadow: none !important;
+  filter: drop-shadow(0 0 0 transparent) !important;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none !important;
+}

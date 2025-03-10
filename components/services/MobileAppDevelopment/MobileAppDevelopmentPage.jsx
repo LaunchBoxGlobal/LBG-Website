@@ -11,16 +11,18 @@ import SmartPlanning from "./SmartPlanning";
 import Benefits from "./Benefits";
 import Industries from "./Industries";
 import MobileAppDevContactForm from "./MobileAppDevContactForm";
-import MobileAppDevPortfolio from "./MobileAppDevPortfolio";
+import CardsParallex from "./CardsParallex";
+// import MobileAppDevPortfolio from "./MobileAppDevPortfolio";
 
 const MobileAppDevelopmentPage = () => {
   return (
-    <main className="w-full overflow-hidden">
+    <main className="w-full h-auto relative">
       <Hero />
       <HomePlatforms />
       <About />
       <Services />
-      <MobileAppDevPortfolio />
+      {/* <MobileAppDevPortfolio /> */}
+      <CardsParallex />
       <Industries />
       <CreateYourMobileApp />
       <Benefits />

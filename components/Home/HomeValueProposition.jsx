@@ -57,7 +57,7 @@ const HomeValueProposition = () => {
         <Swiper
           {...sliderSettings}
           modules={[Autoplay]}
-          className="overflow-hidden"
+          className="overflow-hidden h-full"
         >
           {VALUE_PROPOSITION?.map((value, index) => {
             return (
@@ -92,7 +92,7 @@ export default HomeValueProposition;
 function SwiperButtons() {
   const swiper = useSwiper();
   return (
-    <section className="w-full flex items-center justify-center lg:justify-start gap-3 lg:gap-1 mt-6 absolute bottom-4 left-0 z-40">
+    <section className="w-full flex items-center justify-center lg:justify-start gap-3 lg:gap-1 absolute bottom-[0px] left-0 z-40">
       <button
         type="button"
         onClick={() => swiper.slidePrev()}
