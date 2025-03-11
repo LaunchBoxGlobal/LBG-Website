@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="w-full relative mb-20 lg:mb-40 overflow-x-hidden">
       <section className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-5 bg-white overflow-hidden">
-        <h1 className="font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] w-[100%]">
+        <h1 className="font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-[100%]">
           Reliable Mobile App Development Company for{" "}
           <span className="red-text">Your Business</span>
         </h1>
