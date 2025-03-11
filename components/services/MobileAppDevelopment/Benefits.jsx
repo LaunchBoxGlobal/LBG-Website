@@ -32,7 +32,7 @@ const Benefits = () => {
 
       <section className="w-full mt-10 lg:mt-20 border-black grid grid-cols-3 lg:grid-cols-6 gap-0">
         <div className="w-full col-span-2 lg:col-span-2 flex flex-col items-start">
-          <p className="h-[62px] pt-3 px-4 text-lg font-semibold">
+          <p className="h-[62px] pt-4 px-4 text-lg font-semibold">
             Features / Metric
           </p>
 
@@ -80,8 +80,8 @@ const Benefits = () => {
           })}
         </div>
         <div className="w-full col-span-1 hidden lg:flex flex-col justify-start items-center">
-          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold">
-            Company 1
+          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6">
+            Local <br /> Companies
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8]?.map((b, i) => {
             return (
@@ -107,8 +107,8 @@ const Benefits = () => {
           })}
         </div>
         <div className="w-full col-span-1 hidden lg:flex flex-col justify-start items-center">
-          <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold">
-            Company 2
+          <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold text-center lg:leading-6">
+            Traditional <br /> Firms
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8]?.map((b, i) => {
             return (
@@ -136,8 +136,8 @@ const Benefits = () => {
           })}
         </div>
         <div className="w-full col-span-1 hidden lg:flex flex-col justify-start items-center">
-          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold">
-            Company 3
+          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6">
+            Freelance <br /> Agencies 
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8]?.map((b, i) => {
             return (

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 const paragraph =
-  "Constructing apps that are simple, fast, and accessible. We specialize in mobile app development services focusing on quality, design, and smooth deployment. With expertise in building apps people love to use. Every project is carefully planned to deliver smooth experiences for businesses. We solve real problems while keeping users first in every stage. We ensure the final product is polished, reliable, and easy to navigate.";
+  "Constructing apps that are simple, fast, and accessible. We specialize in Mobile App Development Services focusing on quality, design, and smooth deployment. With expertise in building apps people love to use. Every project is carefully planned to deliver smooth experiences for businesses. We solve real problems while keeping users first in every stage. We ensure the final product is polished, reliable, and easy to navigate.";
 
 const About = () => {
   const buttonRef = useRef(null);
