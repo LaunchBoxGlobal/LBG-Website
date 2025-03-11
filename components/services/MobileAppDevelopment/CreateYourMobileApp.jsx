@@ -5,7 +5,7 @@ import React from "react";
 const CreateYourMobileApp = () => {
   return (
     <section className="w-full padding-x py-10 lg:py-28 mt-6">
-      <section className="w-full h-[410px] rounded-lg bg-[#212121] relative">
+      <section className="w-full h-[410px] rounded-lg bg-[#212121] relative group">
         <Image
           src={"/create-your-mobile-app-map.png"}
           alt="map image"
@@ -30,11 +30,18 @@ const CreateYourMobileApp = () => {
           </Link>
         </section>
         <Image
-          src={"/create-your-mobile-app-mockup.png"}
+          src={"/create-your-mobile-app-mockup-01.png"}
           alt="mobile app mockups"
-          width={434}
+          width={266}
           height={492}
-          className="w-[35%] h-[492px] absolute right-0 bottom-0 hidden lg:block z-0"
+          className="w-[266px] h-[492px] absolute right-[14%] bottom-[-4%] hidden lg:block z-0 rotate-[-2deg] group-hover:rotate-[6deg] transition-all duration-1000"
+        />
+        <Image
+          src={"/create-your-mobile-app-mockup-02.png"}
+          alt="mobile app mockups"
+          width={299}
+          height={492}
+          className="w-[299px] h-[492px] absolute right-0 bottom-[-3%] hidden lg:block z-0 rotate-[3deg] group-hover:rotate-[-6deg] transition-all duration-1000"
         />
       </section>
     </section>

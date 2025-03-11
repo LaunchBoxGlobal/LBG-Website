@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 const paragraph =
-  "Constructing apps that are simple, fast, and accessible. We mainly offer mobile app development services, focusing on quality, design, and deployment. Experienced in iOS mobile app development. Developing apps that are fluent to implement. Each project is carefully planned to deliver a smooth experience for enterprises and companies. That solves the actual problems and involves users. Every step is taken with proper attention to detail. Making sure the final product is top-notch and straight forward.";
+  "Constructing apps that are simple, fast, and accessible. We specialize in mobile app development services focusing on quality, design, and smooth deployment. With expertise in building apps people love to use. Every project is carefully planned to deliver smooth experiences for businesses. We solve real problems while keeping users first in every stage. We ensure the final product is polished, reliable, and easy to navigate.";
 
 const About = () => {
   const buttonRef = useRef(null);
@@ -20,7 +20,7 @@ const About = () => {
   return (
     <section className="w-full py-12 lg:pb-20 flex flex-col items-center justify-center text-center gap-4 padding-x">
       <h2 className="red-text text-[25px] font-semibold">
-        Reliable Mobile App Services for iOS and more
+        Building Apps That Work: Simple, Reliable, and User-Focused
       </h2>
       <Character value={paragraph} />
 

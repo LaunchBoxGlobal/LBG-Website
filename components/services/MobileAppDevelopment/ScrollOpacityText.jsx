@@ -12,7 +12,10 @@ const Character = ({ value }) => {
   const words = value.split(" ");
 
   return (
-    <p ref={element} className="w-[90%] mx-auto flex flex-wrap justify-center">
+    <p
+      ref={element}
+      className="w-full lg:w-[85%] mx-auto flex flex-wrap justify-center"
+    >
       {words?.map((word, i) => {
         // const start = i / words.length;
         // const end = start + i / words.length;
@@ -35,7 +38,7 @@ const SingleWord = ({ children, range, progress }) => {
   const amount = range[1] - range[0];
   const step = amount / children.length;
   return (
-    <span className="mt-[4px] mr-[6px] relative">
+    <span className="mr-[4px] relative">
       {characters.map((ch, i) => {
         const start = range[0] + step * i;
         const end = range[0] + step * (i + 1);
@@ -53,7 +56,7 @@ const SingleCharacter = ({ children, range, progress }) => {
   const opacity = useTransform(progress, range, [0, 1]);
   return (
     <span>
-      <span className="absolute opacity-10 text-[22px] lg:text-[43px] text-center lg:leading-[53px] text-gray-400">
+      <span className="absolute opacity-10 text-[22px] lg:text-[33px] text-center lg:leading-[46px] text-gray-400 tracking-tight">
         {children}
       </span>
       <motion.span
@@ -61,7 +64,7 @@ const SingleCharacter = ({ children, range, progress }) => {
           opacity,
           transition: "opacity 0.5s ease-in-out",
         }}
-        className="text-[22px] lg:text-[43px] text-center lg:leading-[53px] text-gray-400"
+        className="text-[22px] lg:text-[33px] text-center lg:leading-[46px] text-gray-400 tracking-tight"
       >
         {children}
       </motion.span>

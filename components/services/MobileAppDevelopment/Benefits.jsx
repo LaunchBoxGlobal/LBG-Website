@@ -2,6 +2,7 @@ import ContactButton from "@/components/Global/ContactButton";
 import Image from "next/image";
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
 
 const benefits = [
   "Custom Build Solution",
@@ -95,7 +96,11 @@ const Benefits = () => {
                     i === 0 || i === 2 ? "bg-[#F40E00]" : "bg-[#078F40]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  <FaCheck className="text-white w-full h-full" />
+                  {i === 0 || i === 2 ? (
+                    <IoClose className="text-white w-full h-full" />
+                  ) : (
+                    <FaCheck className="text-white w-full h-full" />
+                  )}
                 </div>
               </div>
             );
@@ -120,7 +125,11 @@ const Benefits = () => {
                       : "bg-[#078F40]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  <FaCheck className="text-white w-full h-full" />
+                  {i === 2 || i === 3 || i === 4 || i === 6 || i === 7 ? (
+                    <IoClose className="text-white w-full h-full" />
+                  ) : (
+                    <FaCheck className="text-white w-full h-full" />
+                  )}
                 </div>
               </div>
             );
@@ -150,7 +159,16 @@ const Benefits = () => {
                       : "bg-[#078F40]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  <FaCheck className="text-white w-full h-full" />
+                  {i === 1 ||
+                  i === 2 ||
+                  i === 3 ||
+                  i === 5 ||
+                  i === 6 ||
+                  i === 7 ? (
+                    <IoClose className="text-white w-full h-full" />
+                  ) : (
+                    <FaCheck className="text-white w-full h-full" />
+                  )}
                 </div>
               </div>
             );
