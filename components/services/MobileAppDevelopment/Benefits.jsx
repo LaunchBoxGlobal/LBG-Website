@@ -5,14 +5,18 @@ import { FaCheck } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
 const benefits = [
+  "Flexible & Fast Development (Agile Workflow)",
+  "Knowledge-First Approach",
+  "World Class Talents",
+  "Rapid Prototyping (Test Ideas Faster)",
+  "Real-Time Progress Tracking",
+  "Industry-Specific Expertise",
   "Custom Build Solution",
   "Post Launch Support & Maintenance",
-  "Agile Workflow",
-  "Knowledge-First Approach",
-  "Staying Ahead with New Technologies",
+  "Latest Technologies & Best Practices",
+  "Transparent Pricing (no hidden fees)",
   "24/7 Customer Support",
-  "Affordable without sacrificing quality",
-  "Global Tech Experts",
+  "Always Affordable",
 ];
 
 const Benefits = () => {
@@ -62,15 +66,15 @@ const Benefits = () => {
               alt="launchbox global logo"
             />
           </div>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9]?.map((_, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]?.map((_, i) => {
             return (
               <div
                 key={i}
                 className={`bg-white px-4 w-[110px] lg:w-[219px]  shadow z-10 border-none relative ${
-                  i === 8 ? "rounded-b-2xl h-[70px]" : "h-[80px]"
+                  i === 12 ? "rounded-b-2xl h-[70px]" : "h-[80px]"
                 }`}
               >
-                {i !== 8 && (
+                {i !== 12 && (
                   <div className="w-[40px] h-[40px] rounded-full bg-[#078F40] p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
                     <FaCheck className="text-white w-full h-full" />
                   </div>
@@ -83,7 +87,7 @@ const Benefits = () => {
           <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6">
             Local <br /> Companies
           </p>
-          {[1, 2, 3, 4, 5, 6, 7, 8]?.map((b, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]?.map((b, i) => {
             return (
               <div
                 key={i}
@@ -93,13 +97,15 @@ const Benefits = () => {
               >
                 <div
                   className={`w-[40px] h-[40px] rounded-full ${
-                    i === 0 || i === 2 ? "bg-[#F40E00]" : "bg-[#078F40]"
+                    i === 0 || i === 6 || i === 8 || i === 10
+                      ? "bg-[#078F40]"
+                      : "bg-[#F40E00]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  {i === 0 || i === 2 ? (
-                    <IoClose className="text-white w-full h-full" />
-                  ) : (
+                  {i === 0 || i === 6 || i === 8 || i === 10 ? (
                     <FaCheck className="text-white w-full h-full" />
+                  ) : (
+                    <IoClose className="text-white w-full h-full" />
                   )}
                 </div>
               </div>
@@ -110,7 +116,7 @@ const Benefits = () => {
           <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold text-center lg:leading-6">
             Traditional <br /> Firms
           </p>
-          {[1, 2, 3, 4, 5, 6, 7, 8]?.map((b, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]?.map((b, i) => {
             return (
               <div
                 key={i}
@@ -120,15 +126,13 @@ const Benefits = () => {
               >
                 <div
                   className={`w-[40px] h-[40px] rounded-full ${
-                    i === 2 || i === 3 || i === 4 || i === 6 || i === 7
-                      ? "bg-[#F40E00]"
-                      : "bg-[#078F40]"
+                    i === 6 || i === 7 ? "bg-[#078F40]" : "bg-[#F40E00]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  {i === 2 || i === 3 || i === 4 || i === 6 || i === 7 ? (
-                    <IoClose className="text-white w-full h-full" />
-                  ) : (
+                  {i === 6 || i === 7 ? (
                     <FaCheck className="text-white w-full h-full" />
+                  ) : (
+                    <IoClose className="text-white w-full h-full" />
                   )}
                 </div>
               </div>
@@ -139,7 +143,7 @@ const Benefits = () => {
           <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6">
             Freelance <br /> Agencies 
           </p>
-          {[1, 2, 3, 4, 5, 6, 7, 8]?.map((b, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]?.map((b, i) => {
             return (
               <div
                 key={i}
@@ -149,25 +153,15 @@ const Benefits = () => {
               >
                 <div
                   className={`w-[40px] h-[40px] rounded-full ${
-                    i === 1 ||
-                    i === 2 ||
-                    i === 3 ||
-                    i === 5 ||
-                    i === 6 ||
-                    i === 7
-                      ? "bg-[#F40E00]"
-                      : "bg-[#078F40]"
+                    i === 4 || i === 6 || i === 9 || i === 10
+                      ? "bg-[#078F40]"
+                      : "bg-[#F40E00]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  {i === 1 ||
-                  i === 2 ||
-                  i === 3 ||
-                  i === 5 ||
-                  i === 6 ||
-                  i === 7 ? (
-                    <IoClose className="text-white w-full h-full" />
-                  ) : (
+                  {i === 4 || i === 6 || i === 9 || i === 10 ? (
                     <FaCheck className="text-white w-full h-full" />
+                  ) : (
+                    <IoClose className="text-white w-full h-full" />
                   )}
                 </div>
               </div>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import Character from "./ScrollOpacityText";
+import Character, { TextMaskEffect } from "./ScrollOpacityText";
 import Link from "next/link";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
@@ -22,6 +22,7 @@ const About = () => {
       <h2 className="red-text text-[25px] font-semibold">
         Building Apps That Work: Simple, Reliable, and User-Focused
       </h2>
+      {/* <TextMaskEffect value={paragraph} /> */}
       <Character value={paragraph} />
 
       <section className="w-full flex items-start justify-end relative -top-10">

@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
+import useMousePosition from "@/utils/useMousePosition";
 
 const Character = ({ value }) => {
   const element = useRef(null);
@@ -72,3 +73,37 @@ const SingleCharacter = ({ children, range, progress }) => {
     </span>
   );
 };
+
+export function TextMaskEffect({ value }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const { x = 0, y = 0 } = useMousePosition(); // Default to 0 to prevent NaN errors
+  const size = isHovered ? 200 : 40;
+
+  return (
+    <main className="main">
+      <h2 className="red-text text-[25px] font-semibold">
+        Building Apps That Work: Simple, Reliable, and User-Focused
+      </h2>
+      <motion.div
+        className="mask"
+        animate={{
+          WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
+          WebkitMaskSize: `${size}px`,
+        }}
+        transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
+      >
+        <p
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setTimeout(() => setIsHovered(false), 100)}
+          className="text-[40px]"
+        >
+          {value}
+        </p>
+      </motion.div>
+
+      <div className="maskBody">
+        <p className="text-[40px]">{value}</p>
+      </div>
+    </main>
+  );
+}
