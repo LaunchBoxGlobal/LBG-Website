@@ -1,7 +1,7 @@
 "use client";
 
 import { useTransform, motion, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const CursorImage = "/portfolio-cursor-image.png";
 
@@ -26,11 +26,33 @@ const Card = ({
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
+  // Custom cursor state
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
+
+  useEffect(() => {
+    const moveCursor = (e) => {
+      setCursorPos({ x: e.clientX, y: e.clientY });
+    };
+
+    if (isHovering) {
+      window.addEventListener("mousemove", moveCursor);
+    } else {
+      window.removeEventListener("mousemove", moveCursor);
+    }
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+    };
+  }, [isHovering]);
+
   return (
     <div
       ref={container}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
       className={
-        "cardContainer group w-full h-[80vh] lg:h-[100vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10"
+        "group w-full h-[80vh] lg:h-[100vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10 cardContainer"
       }
     >
       <motion.div
@@ -41,7 +63,7 @@ const Card = ({
           transformOrigin: "top",
         }}
         className={
-          "styles.card w-full h-[300px] lg:h-[655px] flex flex-col relative top-[-25%] rounded-3xl"
+          "w-full h-[300px] lg:h-[655px] flex flex-col relative top-[-25%] rounded-3xl"
         }
       >
         <img
@@ -49,21 +71,27 @@ const Card = ({
           alt={title}
           className="w-full h-full object-cover rounded-3xl group-hover:brightness-50 transition-all duration-300"
         />
-        <div className="w-full h-full absolute inset-0 hidden group-hover:flex items-end px-5 lg:px-14 py-6 transition-all duration-300">
-          <p className="text-white text-[18px] lg:w-[80%]">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eum
-            obcaecati quia earum esse, ipsam numquam nemo fugiat alias
-            explicabo?
+        <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-14 py-6 transition-all duration-300">
+          <h3 className="text-2xl lg:text-[30px] font-bold text-white">
+            {title}
+          </h3>
+          <p className="text-white text-[18px] font-medium lg:w-[80%]">
+            {description}
           </p>
         </div>
       </motion.div>
-
-      <div className="w-[1040px] hidden lg:flex items-start justify-between bg-white text-black px-4">
-        <p className="text-xl w-1/2 font-medium">{title}</p>
-        <p className="text-xl font-medium">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-      </div>
+      {/* Custom Cursor */}
+      {isHovering && (
+        <motion.img
+          src={CursorImage}
+          alt="Custom Cursor"
+          className="fixed w-16 h-16 lg:w-[150px] lg:h-[150px] pointer-events-none z-10"
+          style={{
+            left: cursorPos.x - 32, // Centering cursor image
+            top: cursorPos.y - 32,
+          }}
+        />
+      )}
     </div>
   );
 };

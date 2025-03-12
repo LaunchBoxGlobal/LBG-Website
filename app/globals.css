@@ -121,9 +121,9 @@ body {
   display: none;
 }
 
-.cardContainer {
-  /* cursor: cell; */
-  cursor: url("/portfolio-button-image.png"), auto;
+.cardContainer:hover {
+  /* cursor: url("/genetic-data-svgrepo-com.svg"), auto !important; */
+  cursor: none !important;
 }
 
 /* Hide the number input arrows in Chrome, Safari, and Edge */

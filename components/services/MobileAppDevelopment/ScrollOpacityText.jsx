@@ -6,7 +6,7 @@ const Character = ({ value }) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.75", "start 0.25"],
+    offset: ["start 0.75", "start 0.50"],
   });
 
   const words = value.split(" ");
@@ -54,6 +54,7 @@ const SingleWord = ({ children, range, progress }) => {
 
 const SingleCharacter = ({ children, range, progress }) => {
   const opacity = useTransform(progress, range, [0, 1]);
+
   return (
     <span>
       <span className="absolute opacity-10 text-[22px] lg:text-[33px] text-center lg:leading-[46px] text-gray-400 tracking-tight">

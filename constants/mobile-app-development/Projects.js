@@ -1,44 +1,44 @@
 export const projects = [
   {
-    title: "Mark Rammers",
+    title: "Bloom",
     description:
-      "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote. Titled ‘Beginnings’, the mesmerizing collection of images is a visual and meditative journey into the origins of regrets and the uncertainty of stepping into new unknowns.",
+      "We created Bloom, a social app that helps people turn online chats into real friendships. It focuses on real connections without using algorithms. This project shows our team’s skills in building simple, user-friendly apps.",
     src: "cactus.jpg",
     link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
     color: "#88A28D",
     image: "/mobile-app-dev-portfolio-01.png",
   },
   {
-    title: "Matthias Leidinger",
+    title: "Now you Know Nashville",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+      "Now You Know Nashville is a travel app designed to make exploring the city easy and fun. With simple tips and useful insights, it helps travelers discover hidden gems. A great example of our team’s expertise in building user-friendly apps.",
     src: "rock.jpg",
     link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     color: "#BBACAF",
     image: "/mobile-app-dev-portfolio-02.png",
   },
   {
-    title: "Clément Chapillon",
+    title: "Fitness by Faith",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
+      "We created Fitness by Faith, a health and fitness app that helps people stay active and motivated. It focuses on simple, real support without gimmicks. This project shows our team’s skills in building easy-to-use, helpful apps.",
     src: "tree.jpg",
     link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
     color: "#977F6D",
     image: "/mobile-app-dev-portfolio-03.png",
   },
   {
-    title: "Zissou",
+    title: "My Garage Outlet",
     description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
+      "My Garage Outlet is a shopping app designed for easy and hassle-free buying. It helps users find great deals on a variety of products. A perfect example of our team’s ability to create smooth and user-friendly shopping experiences.",
     src: "water.jpg",
     link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
     color: "#C2491D",
     image: "/mobile-app-dev-portfolio-04.png",
   },
   {
-    title: "Mathias Svold and Ulrik Hasemann",
+    title: "USubz",
     description:
-      "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
+      "Usubz is a job portal that makes applying for jobs simple and stress-free. It connects job seekers with opportunities easily. A great example of our team’s expertise in building user-friendly and efficient career platforms.",
     src: "house.jpg",
     link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
     color: "#B62429",
