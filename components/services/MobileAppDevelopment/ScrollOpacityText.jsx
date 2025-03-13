@@ -2,6 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import useMousePosition from "@/utils/useMousePosition";
+import Image from "next/image";
+import Link from "next/link";
 
 const Character = ({ value }) => {
   const element = useRef(null);
@@ -74,18 +76,27 @@ const SingleCharacter = ({ children, range, progress }) => {
   );
 };
 
-export function TextMaskEffect({ value }) {
+export function TextMaskEffect() {
   const [isHovered, setIsHovered] = useState(false);
-  const { x = 0, y = 0 } = useMousePosition(); // Default to 0 to prevent NaN errors
+  const { x, y } = useMousePosition();
   const size = isHovered ? 200 : 40;
 
+  const buttonRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: buttonRef,
+    offset: ["start end", "start center"],
+  });
+
+  // Animate fill width from 0% to 100% based on scroll progress
+  const fillWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
   return (
-    <main className="main">
-      <h2 className="red-text text-[25px] font-semibold">
+    <section className={"main"}>
+      <h2 className={"sectionHeading"}>
         Building Apps That Work: Simple, Reliable, and User-Focused
       </h2>
       <motion.div
-        className="mask"
+        className={"mask"}
         animate={{
           WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
           WebkitMaskSize: `${size}px`,
@@ -93,17 +104,57 @@ export function TextMaskEffect({ value }) {
         transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
       >
         <p
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setTimeout(() => setIsHovered(false), 100)}
-          className="text-[40px]"
+          onMouseEnter={() => {
+            setIsHovered(true);
+          }}
+          onMouseLeave={() => {
+            setIsHovered(false);
+          }}
         >
-          {value}
+          Constructing apps that are simple, fast, and accessible. We specialize
+          in Mobile App Development Services focusing on quality, design, and
+          smooth deployment. With expertise in building apps people love to use.
+          Every project is carefully planned to deliver smooth experiences for
+          businesses. We solve real problems while keeping users first in every
+          stage. We ensure the final product is polished, reliable, and easy to
+          navigate.
         </p>
       </motion.div>
 
-      <div className="maskBody">
-        <p className="text-[40px]">{value}</p>
+      <div className={"textBody"}>
+        <p>
+          Constructing apps that are simple, fast, and accessible. We specialize
+          in Mobile App Development Services focusing on quality, design, and
+          smooth deployment. With expertise in building apps people love to use.
+          Every project is carefully planned to deliver smooth experiences for
+          businesses. We solve real problems while keeping users first in every
+          stage. We ensure the final product is polished, reliable, and easy to
+          navigate.
+        </p>
       </div>
-    </main>
+
+      <Link
+        href={"/contact-us"}
+        ref={buttonRef}
+        className="w-[109px] lg:w-[156px] h-[109px] lg:h-[156px] rounded-full border text-base lg:text-[25px] flex flex-col gap-2 uppercase items-center justify-center border-[#f40e00] text-white overflow-hidden absolute bottom-[5%] right-[12%]"
+      >
+        <motion.div
+          className="absolute inset-0 bg-[#f40e00] z-0"
+          style={{
+            width: fillWidth,
+          }}
+        />
+
+        <span className="relative z-10 flex flex-col items-center justify-center">
+          let's <br /> talk
+          <Image
+            src={"/footer-cta-icon.png"}
+            width={28}
+            height={24}
+            className="w-[18px] h-[15px] lg:w-[28px] lg:h-[24px] mt-2"
+          />
+        </span>
+      </Link>
+    </section>
   );
 }

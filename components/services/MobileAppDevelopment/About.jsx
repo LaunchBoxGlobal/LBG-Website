@@ -4,34 +4,34 @@ import Character, { TextMaskEffect } from "./ScrollOpacityText";
 import Link from "next/link";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
+import "./Styles.css";
 
 const paragraph =
   "Constructing apps that are simple, fast, and accessible. We specialize in Mobile App Development Services focusing on quality, design, and smooth deployment. With expertise in building apps people love to use. Every project is carefully planned to deliver smooth experiences for businesses. We solve real problems while keeping users first in every stage. We ensure the final product is polished, reliable, and easy to navigate.";
 
 const About = () => {
-  const buttonRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: buttonRef,
-    offset: ["start end", "start center"],
-  });
+  // const buttonRef = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: buttonRef,
+  //   offset: ["start end", "start center"],
+  // });
 
-  // Animate fill width from 0% to 100% based on scroll progress
-  const fillWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  // // Animate fill width from 0% to 100% based on scroll progress
+  // const fillWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   return (
-    <section className="w-full py-12 lg:pb-20 flex flex-col items-center justify-center text-center gap-4 padding-x">
-      <h2 className="red-text text-[25px] font-semibold">
+    <section className="w-full">
+      {/* <h2 className="red-text text-[25px] font-semibold">
         Building Apps That Work: Simple, Reliable, and User-Focused
-      </h2>
-      {/* <TextMaskEffect value={paragraph} /> */}
-      <Character value={paragraph} />
+      </h2> */}
+      <TextMaskEffect />
+      {/* <Character value={paragraph} /> */}
 
-      <section className="w-full flex items-start justify-end relative -top-10">
+      {/* <section className="w-full flex items-start justify-end relative -top-10">
         <Link
           href={"/contact-us"}
           ref={buttonRef}
           className="relative w-[109px] lg:w-[156px] h-[109px] lg:h-[156px] rounded-full border text-base lg:text-[25px] flex flex-col gap-2 uppercase items-center justify-center border-[#f40e00] text-white overflow-hidden"
         >
-          {/* Background fill animation */}
           <motion.div
             className="absolute inset-0 bg-[#f40e00] z-0"
             style={{
@@ -39,7 +39,6 @@ const About = () => {
             }}
           />
 
-          {/* Button Content (placed above animated bg) */}
           <span className="relative z-10 flex flex-col items-center justify-center">
             let's <br /> talk
             <Image
@@ -50,7 +49,7 @@ const About = () => {
             />
           </span>
         </Link>
-      </section>
+      </section> */}
     </section>
   );
 };

@@ -1,0 +1,45 @@
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.sectionHeading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  color: #f40e00;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.mask,
+.textBody {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #909090;
+  font-size: 43px;
+  line-height: 66px;
+  cursor: default;
+}
+
+p {
+  width: 1270px;
+  line-height: 57px;
+  text-align: center;
+  /* color: #909090; */
+  /* // padding: 40px; */
+}
+
+.mask {
+  -webkit-mask-image: url("/mask.svg");
+  mask-image: url("/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  background: #f40e00;
+  position: absolute;
+  color: #fff;
+}
