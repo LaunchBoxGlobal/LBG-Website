@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 
 const benefits = [
   "Flexible & Fast Development (Agile Workflow)",
-  "Knowledge-First Approach",
+  "Functionality-First Approach",
   "World Class Talents",
   "Rapid Prototyping (Test Ideas Faster)",
   "Real-Time Progress Tracking",
@@ -97,12 +97,12 @@ const Benefits = () => {
               >
                 <div
                   className={`w-[40px] h-[40px] rounded-full ${
-                    i === 0 || i === 6 || i === 8 || i === 10
+                    i === 0 || i === 5 || i === 6 || i === 8
                       ? "bg-[#078F40]"
                       : "bg-[#F40E00]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  {i === 0 || i === 6 || i === 8 || i === 10 ? (
+                  {i === 0 || i === 5 || i === 6 || i === 8 ? (
                     <FaCheck className="text-white w-full h-full" />
                   ) : (
                     <IoClose className="text-white w-full h-full" />
@@ -126,10 +126,12 @@ const Benefits = () => {
               >
                 <div
                   className={`w-[40px] h-[40px] rounded-full ${
-                    i === 6 || i === 7 ? "bg-[#078F40]" : "bg-[#F40E00]"
+                    i === 5 || i === 6 || i === 7 || i === 10
+                      ? "bg-[#078F40]"
+                      : "bg-[#F40E00]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  {i === 6 || i === 7 ? (
+                  {i === 5 || i === 6 || i === 7 || i === 10 ? (
                     <FaCheck className="text-white w-full h-full" />
                   ) : (
                     <IoClose className="text-white w-full h-full" />
@@ -153,12 +155,26 @@ const Benefits = () => {
               >
                 <div
                   className={`w-[40px] h-[40px] rounded-full ${
-                    i === 4 || i === 6 || i === 9 || i === 10
+                    i === 0 ||
+                    i === 2 ||
+                    i === 4 ||
+                    i === 6 ||
+                    i === 8 ||
+                    i === 9 ||
+                    i === 10 ||
+                    i === 11
                       ? "bg-[#078F40]"
                       : "bg-[#F40E00]"
                   } p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2`}
                 >
-                  {i === 4 || i === 6 || i === 9 || i === 10 ? (
+                  {i === 0 ||
+                  i === 2 ||
+                  i === 4 ||
+                  i === 6 ||
+                  i === 8 ||
+                  i === 9 ||
+                  i === 10 ||
+                  i === 11 ? (
                     <FaCheck className="text-white w-full h-full" />
                   ) : (
                     <IoClose className="text-white w-full h-full" />
