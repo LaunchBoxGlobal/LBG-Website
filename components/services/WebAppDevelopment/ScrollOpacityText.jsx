@@ -136,7 +136,7 @@ export function TextMaskEffect() {
       <Link
         href={"/contact-us"}
         ref={buttonRef}
-        className="w-[109px] lg:w-[156px] h-[109px] lg:h-[156px] rounded-full border text-base lg:text-[25px] flex flex-col gap-2 uppercase items-center justify-center border-[#f40e00] text-white overflow-hidden absolute bottom-[8%] lg:bottom-[5%] right-[12%]"
+        className="w-[109px] lg:w-[156px] h-[109px] lg:h-[156px] rounded-full border text-base lg:text-[25px] flex flex-col gap-2 uppercase items-center justify-center border-[#f40e00] text-white overflow-hidden absolute bottom-[5%] right-[12%]"
       >
         <motion.div
           className="absolute inset-0 bg-[#f40e00] z-0"

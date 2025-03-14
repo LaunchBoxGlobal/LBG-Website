@@ -13,7 +13,7 @@ import Industries from "./Industries";
 import MobileAppDevContactForm from "./MobileAppDevContactForm";
 import CardsParallex from "./CardsParallex";
 
-const MobileAppDevelopmentPage = () => {
+const WebAppDevelopmentPage = () => {
   return (
     <main className="w-full h-auto relative">
       <Hero />
@@ -33,4 +33,4 @@ const MobileAppDevelopmentPage = () => {
   );
 };
 
-export default MobileAppDevelopmentPage;
+export default WebAppDevelopmentPage;
