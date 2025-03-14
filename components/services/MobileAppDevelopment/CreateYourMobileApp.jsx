@@ -29,7 +29,6 @@ const CreateYourMobileApp = () => {
           <p className="text-lg lg:text-[22px] font-light">
             We follow a structured and client-focused development process to
             ensure the successful delivery of high-quality software solutions.
-            Our workflow includes:
           </p>
           <Link
             href={"/contact-us"}
