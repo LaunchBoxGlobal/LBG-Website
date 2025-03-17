@@ -23,19 +23,18 @@ const CreateYourMobileApp = () => {
 
         {/* Text Section */}
         <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[65%] px-4 lg:px-16">
-          <h2 className="font-bold text-[36px] lg:text-[50px] leading-10">
-            Let’s Create Your App
+          <h2 className="font-bold text-[36px] lg:text-[50px] lg:leading-[52px]">
+            Let's Engineer Your Web App!
           </h2>
           <p className="text-lg lg:text-[22px] font-light">
-            We follow a structured and client-focused development process to
-            ensure the successful delivery of high-quality software solutions.
-            Our workflow includes:
+            We follow a transparent, agile-driven process to build scalable and
+            high-performing web applications that solve real business problems.
           </p>
           <Link
             href={"/contact-us"}
             className="w-[242px] h-[47px] mt-3 bg-white text-black flex items-center justify-center rounded-[11px] text-lg font-medium z-30"
           >
-            Start Your App Today!
+            Start Your Web App Today!
           </Link>
         </section>
 

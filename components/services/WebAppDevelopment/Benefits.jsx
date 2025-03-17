@@ -193,7 +193,7 @@ const Benefits = () => {
       </section>
 
       <section className="w-full mt-14 flex justify-center">
-        <ContactButton text={"Get Started – 100% Risk-Free"} />
+        <ContactButton text={"Get started - We’re Ready to build!"} />
       </section>
     </section>
   );
