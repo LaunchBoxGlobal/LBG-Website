@@ -41,7 +41,7 @@
   mask-size: 40px;
   background: #f40e00;
   position: absolute;
-  color: #fff;
+  color: #fff !important;
 }
 
 @media (max-width: 600px) {
