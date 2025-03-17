@@ -44,7 +44,7 @@ const CreateYourMobileApp = () => {
           width={543}
           height={588}
           alt="cta-laptop-mockup"
-          className="absolute right-[-0%] bottom-[-1%] w-[503px] h-[438px] workFlowImage hidden lg:block"
+          className="absolute right-[-0%] bottom-[7%] w-[503px] h-[438px] workFlowImage hidden lg:block"
         />
       </section>
     </section>
