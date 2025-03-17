@@ -1,11 +1,11 @@
-// components/Gallery.jsx
 "use client";
 import { useEffect, useRef, useState } from "react";
-import "./Styles.css"; // Or use module CSS if preferred
+import "./Styles.css";
 import Image from "next/image";
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [exitingIndex, setExitingIndex] = useState(null); // Track image that's leaving
   const galleryRef = useRef(null);
 
   const images = [
@@ -18,17 +18,28 @@ const ImageSlider = () => {
 
   const totalItems = images.length;
 
-  // Update classes for positioning
+  // Get class with exit logic
   const getItemClass = (index) => {
     const position = ((index - currentIndex + totalItems) % totalItems) + 1;
-    return `gallery-item gallery-item-${position}`;
+    let baseClass = `gallery-item gallery-item-${position}`;
+    if (index === exitingIndex) {
+      baseClass += " gallery-item-exit"; // Add exit class to fading item
+    }
+    return baseClass;
   };
 
-  // Autoplay logic
+  // Autoplay logic with exit tracking
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
-    }, 4000); // Change interval if needed
+      const exitIndex = currentIndex; // Current center will become left-most
+      setExitingIndex(exitIndex);
+
+      // Allow CSS animation to apply before index changes
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
+        setExitingIndex(null); // Reset after fade out
+      }, 100); // Small delay for transition
+    }, 4000);
 
     const gallery = galleryRef.current;
 
@@ -37,7 +48,12 @@ const ImageSlider = () => {
       clearInterval(interval);
       // Restart autoplay on mouse leave
       setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
+        const exitIndex = currentIndex;
+        setExitingIndex(exitIndex);
+        setTimeout(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
+          setExitingIndex(null);
+        }, 100);
       }, 4000);
     };
 

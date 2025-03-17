@@ -94,7 +94,7 @@ export function TextMaskEffect() {
     <section className={"web-app-main"}>
       <h2
         className={
-          "absolute left-1/2 -translate-x-1/2 text-[#f40e00] text-[25px] font-semibold top-2 lg:top-[5%] w-full text-center"
+          "absolute left-1/2 -translate-x-1/2 text-[#f40e00] text-[25px] font-semibold top-2 lg:top-[6%] xl:top-[9%] w-full text-center"
         }
       >
         Your Trusted Web App Development Services Partner
@@ -115,29 +115,23 @@ export function TextMaskEffect() {
             setIsHovered(false);
           }}
         >
-          We are a reliable web application service agency focused on building
-          web apps that solve real problems. From startups to established
-          businesses, we work closely with you to create apps that are simple,
-          reliable, and built to grow. Our web app development services include
-          clear planning, clean coding and thorough testing to ensure your web
-          app works smoothly across all devices. We stay to fix bugs, add
-          features and keep your web app running at its best. Whether you need a
-          web app for e-commerce, healthcare or any industry. We’re here to
-          help. Let’s build something that truly works for your business.
+          We are a trusted web application service agency, building web apps
+          that solve real problems. From startups to businesses, we create apps
+          that are simple, reliable, and ready to grow. Our web app development
+          services include clear planning, clean coding, and thorough testing.
+          We stay to fix bugs, add features, and keep your app running well.
+          Let’s build something that truly works for your business.
         </p>
       </motion.div>
 
       <div className={"textBody"}>
         <p>
-          We are a reliable web application service agency focused on building
-          web apps that solve real problems. From startups to established
-          businesses, we work closely with you to create apps that are simple,
-          reliable, and built to grow. Our web app development services include
-          clear planning, clean coding and thorough testing to ensure your web
-          app works smoothly across all devices. We stay to fix bugs, add
-          features and keep your web app running at its best. Whether you need a
-          web app for e-commerce, healthcare or any industry. We’re here to
-          help. Let’s build something that truly works for your business.
+          We are a trusted web application service agency, building web apps
+          that solve real problems. From startups to businesses, we create apps
+          that are simple, reliable, and ready to grow. Our web app development
+          services include clear planning, clean coding, and thorough testing.
+          We stay to fix bugs, add features, and keep your app running well.
+          Let’s build something that truly works for your business.
         </p>
       </div>
     </section>

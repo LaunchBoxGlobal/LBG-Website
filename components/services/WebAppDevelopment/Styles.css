@@ -1,5 +1,5 @@
 .web-app-main {
-  height: 105vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -46,7 +46,7 @@
 
 @media (max-width: 600px) {
   .web-app-main {
-    height: 140vh;
+    height: 100vh;
     position: relative;
   }
   .mask,
@@ -82,7 +82,6 @@
 }
 
 /* image slider */
-
 .main-container {
   width: 100%;
   height: 450px;
@@ -160,6 +159,13 @@
   opacity: 1;
   transform: translateX(-50%);
   top: 38%;
+}
+
+.gallery-item-exit {
+  /* opacity: 0 !important; */
+  display: none !important;
+  transition: display 3.5s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 0;
 }
 
 /* gallery controls */
