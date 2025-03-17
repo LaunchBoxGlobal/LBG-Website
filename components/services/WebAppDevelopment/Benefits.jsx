@@ -24,13 +24,13 @@ const Benefits = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          What Sets Us Apart in{" "}
-          <span className="red-text">Mobile App Development</span>
+          Your Reliable Web Application Development
+          <span className="red-text"> Partner</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          We follow a proven process to turn your ideas into successful apps. we
-          focus on clear steps, regular updates, and your feedback. we stay to
-          fix issues, add features, and keep your app growing.
+          Struggling with slow, unclear app projects? Our web app development
+          services use Agile methods to break work into clear steps, deliver
+          updates fast, and keep you involved every step of the way.
         </p>
       </section>
 

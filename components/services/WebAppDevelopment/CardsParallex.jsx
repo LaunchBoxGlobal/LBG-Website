@@ -4,6 +4,7 @@ import { projects } from "@/constants/mobile-app-development/Projects";
 import Card from "./Card";
 import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { WEB_APP_PROJECTS } from "@/constants/web-app-dvelopment/WebAppProjects";
 // import Lenis from "lenis";
 
 export default function CardsParallex() {
@@ -28,21 +29,20 @@ export default function CardsParallex() {
     <>
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center pt-10 lg:pt-20">
         <h2 className="section-heading">
-          Discover the Apps <br />
-          that We’ve
-          <span className="red-text"> Built</span>
+          See How We’ve Built Web <br /> Apps That{" "}
+          <span className="red-text">Work</span>
         </h2>
         <p className="section-paragraph lg:w-[60%] text-center">
-          Explore real examples of apps we’ve made simple reliable and built to
-          solve problems From startups to businesses see how our work delivers
-          results that matter.
+          Explore real examples of web apps we’ve created using React, Node.js,
+          and PostgreSQL. We build apps that are fast, reliable, and solve real
+          problems.
         </p>
       </section>
       <main
         ref={container}
         className={"styles.main w-full relative lg:mt-[20vh] padding-x"}
       >
-        {projects.map((project, i) => {
+        {WEB_APP_PROJECTS.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;
           return (
             <Card

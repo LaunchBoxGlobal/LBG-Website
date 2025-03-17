@@ -31,9 +31,9 @@ export const SMART_PLANNING = [
   },
   {
     title: "Deployment & Launch",
-    tag_line: "Making It Live",
+    tag_line: "MakiTaking It Live with Confidence",
     description:
-      "Conduct final testing & approval, publish on App Store / Play Store, and monitor app performance post-launch for smooth operation.",
+      "After final testing and approval, we deploy the web app on cloud platforms like AWS and Vercel, with monitoring tools to ensure performance and stability.",
   },
   {
     title: "Post-Launch Support",

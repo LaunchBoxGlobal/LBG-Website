@@ -7,13 +7,14 @@ const SmartPlanning = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          9 Out of 10 Successful Apps Begin with{" "}
-          <span className="red-text">Smart Planning</span>
+          Agile Web App Development: Simple Plans,{" "}
+          <span className="red-text">Steady Progress</span>
         </h2>
-        <p className="section-paragraph lg:w-[90%]">
-          We follow a proven process to turn your ideas into successful apps. we
-          focus on clear steps, regular updates, and your feedback. we stay to
-          fix issues, add features, and keep your app growing.
+        <p className="section-paragraph lg:w-[85%]">
+          Struggling with slow, hard-to-use web apps? Our web app development
+          services create fast, reliable, and easy-to-navigate apps. As a
+          dependable web application development agency, we focus on solving
+          real problems and delivering results that matter.
         </p>
       </section>
 

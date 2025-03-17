@@ -39,36 +39,13 @@ const CreateYourMobileApp = () => {
           </Link>
         </section>
 
-        {/* Mockups with Sliding Up Animation */}
-        <motion.div
-          initial={{ opacity: 0, y: 70 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute right-[14%] bottom-[-4%] hidden lg:block z-0"
-        >
-          <Image
-            src={"/create-your-mobile-app-mockup-01.png"}
-            alt="mobile app mockup 1"
-            width={266}
-            height={492}
-            className="w-[266px] h-[492px] mockup2"
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 70 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute right-0 bottom-[-3%] hidden lg:block z-0"
-        >
-          <Image
-            src={"/create-your-mobile-app-mockup-02.png"}
-            alt="mobile app mockup 2"
-            width={299}
-            height={492}
-            className="w-[299px] h-[492px] mockup"
-          />
-        </motion.div>
+        <Image
+          src={"/cta-laptop-mockup.png"}
+          width={543}
+          height={588}
+          alt="cta-laptop-mockup"
+          className="absolute right-[-0%] bottom-[-1%] w-[503px] h-[438px] workFlowImage hidden lg:block"
+        />
       </section>
     </section>
   );

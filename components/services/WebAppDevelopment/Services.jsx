@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { IoArrowDownSharp } from "react-icons/io5";
 import Link from "next/link";
+import { WEB_APP_DEVELOPMENT_SERVICES } from "@/constants/web-app-dvelopment/WebAppDevServices";
 
 const Services = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -16,13 +17,12 @@ const Services = () => {
     <section className="w-full pb-10 lg:pb-20 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Mobile App <br /> Development{" "}
-          <span className="red-text">Services</span>
+          Web App <br /> Development <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Mobile app development services create apps for your needs. Tested on
-          real devices, with updates based on user feedback. Let’s make an app
-          that truly helps your business.
+          We provide web app development services that solve real problems. As a
+          trusted web application service agency, we build apps that are simple,
+          reliable, and ready to grow with your business.
         </p>
       </section>
 
@@ -30,7 +30,7 @@ const Services = () => {
         id="faqs"
         className="w-full mt-10 flex flex-col items-start lg:w-[90%] mx-auto"
       >
-        {MOBILE_APP_DEVELOPMENT_SERVICES?.map((service, index) => (
+        {WEB_APP_DEVELOPMENT_SERVICES?.map((service, index) => (
           <div
             className={`w-full pt-5 lg:py-10 hover:bg-black rounded-3xl rounded-b-none hover:rounded-b-3xl hover:text-white transition-all duration-300 ${
               openFaq === index

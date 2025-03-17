@@ -1,17 +1,16 @@
 "use client";
 import React, { useState } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { VALUE_PROPOSITION } from "@/constants/HomeValueProposition";
-import { INDUSTRIES } from "@/constants/mobile-app-development/MobileAppDevIndustries";
 import Image from "next/image";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import { WEB_APP_DEVELOPMENT_INDUSTRIES } from "@/constants/web-app-dvelopment/WebAppIndustries";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -48,13 +47,13 @@ const Industries = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Industry-Focused{" "}
-          <span className="red-text">Mobile App Development</span> Company
+          Web <span className="red-text">Application Development Services</span>{" "}
+          for Every Industry
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Our mobile app development company builds apps that solve real
-          industry challenges. We focus on clear features, smooth performance,
-          and updates that fit your needs. Let’s create apps that truly work.
+          We provide web application development services tailored to your
+          industry needs. From startups to enterprises, our web app developers
+          build fast, reliable, and user-friendly apps that solve real problems.
         </p>
       </section>
 
@@ -67,7 +66,7 @@ const Industries = () => {
           className="overflow-hidden h-[447px] w-full"
           style={{ width: "100%", height: "100%" }}
         >
-          {INDUSTRIES?.map((value, index) => {
+          {WEB_APP_DEVELOPMENT_INDUSTRIES?.map((value, index) => {
             const [isHovered, setIsHovered] = useState(false);
             return (
               <SwiperSlide
@@ -86,7 +85,7 @@ const Industries = () => {
                     width={29}
                     height={29}
                     className={`object-contain transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:filter group-hover:contrast-200 ${
-                      index === 0 && "w-[23px] h-[27px]"
+                      index === 3 && "w-[23px] h-[27px]"
                     }`}
                   />
                   <h3 className="text-[22px] lg:text-[26px] font-semibold tracking-tight">

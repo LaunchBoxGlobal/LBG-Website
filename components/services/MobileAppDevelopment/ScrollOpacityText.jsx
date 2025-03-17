@@ -132,29 +132,6 @@ export function TextMaskEffect() {
           navigate.
         </p>
       </div>
-
-      <Link
-        href={"/contact-us"}
-        ref={buttonRef}
-        className="w-[109px] lg:w-[156px] h-[109px] lg:h-[156px] rounded-full border text-base lg:text-[25px] flex flex-col gap-2 uppercase items-center justify-center border-[#f40e00] text-white overflow-hidden absolute bottom-[8%] lg:bottom-[5%] right-[12%]"
-      >
-        <motion.div
-          className="absolute inset-0 bg-[#f40e00] z-0"
-          style={{
-            width: fillWidth,
-          }}
-        />
-
-        <span className="relative z-10 flex flex-col items-center justify-center">
-          let's <br /> talk
-          <Image
-            src={"/footer-cta-icon.png"}
-            width={28}
-            height={24}
-            className="w-[18px] h-[15px] lg:w-[28px] lg:h-[24px] mt-2"
-          />
-        </span>
-      </Link>
     </section>
   );
 }

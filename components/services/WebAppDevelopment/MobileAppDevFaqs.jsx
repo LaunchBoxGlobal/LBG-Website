@@ -3,6 +3,7 @@ import { MobileAppFaqs } from "@/constants/mobile-app-development/MobileAppDevFa
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { WEB_APP_DEV_FAQS } from "@/constants/web-app-dvelopment/WebAppDevFaqs";
 
 const MobileAppDevFaqs = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -16,14 +17,13 @@ const MobileAppDevFaqs = () => {
       id="faqs"
     >
       <h2 className="section-heading text-center">
-        Got Questions? <br /> We've Got You{" "}
-        <span className="red-text">Covered!</span>
+        Frequently Asked Questions
       </h2>
       <section
         id="faqs"
         className="w-full mt-10 lg:mt-24 flex flex-col items-start gap-4 lg:w-[90%]"
       >
-        {MobileAppFaqs?.map((faq, index) => (
+        {WEB_APP_DEV_FAQS?.map((faq, index) => (
           <div
             className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
             key={index}
@@ -32,7 +32,10 @@ const MobileAppDevFaqs = () => {
               onClick={() => toggleFaq(index)}
               className="w-full text-start flex items-center justify-between outline-none"
             >
-              <h5 className="font-medium text-[17px] md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[85%]">
+              <h5
+                className="font-medium text-[17px] md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[85%] lg:leading-10
+              "
+              >
                 {faq?.question}
               </h5>
 

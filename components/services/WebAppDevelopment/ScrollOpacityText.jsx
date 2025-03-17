@@ -91,9 +91,13 @@ export function TextMaskEffect() {
   const fillWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section className={"main"}>
-      <h2 className={"sectionHeading"}>
-        Building Apps That Work: Simple, Reliable, and User-Focused
+    <section className={"web-app-main"}>
+      <h2
+        className={
+          "absolute left-1/2 -translate-x-1/2 text-[#f40e00] text-[25px] font-semibold top-2 lg:top-[5%] w-full text-center"
+        }
+      >
+        Your Trusted Web App Development Services Partner
       </h2>
       <motion.div
         className={"mask"}
@@ -111,50 +115,31 @@ export function TextMaskEffect() {
             setIsHovered(false);
           }}
         >
-          Constructing apps that are simple, fast, and accessible. We specialize
-          in Mobile App Development Services focusing on quality, design, and
-          smooth deployment. With expertise in building apps people love to use.
-          Every project is carefully planned to deliver smooth experiences for
-          businesses. We solve real problems while keeping users first in every
-          stage. We ensure the final product is polished, reliable, and easy to
-          navigate.
+          We are a reliable web application service agency focused on building
+          web apps that solve real problems. From startups to established
+          businesses, we work closely with you to create apps that are simple,
+          reliable, and built to grow. Our web app development services include
+          clear planning, clean coding and thorough testing to ensure your web
+          app works smoothly across all devices. We stay to fix bugs, add
+          features and keep your web app running at its best. Whether you need a
+          web app for e-commerce, healthcare or any industry. We’re here to
+          help. Let’s build something that truly works for your business.
         </p>
       </motion.div>
 
       <div className={"textBody"}>
         <p>
-          Constructing apps that are simple, fast, and accessible. We specialize
-          in Mobile App Development Services focusing on quality, design, and
-          smooth deployment. With expertise in building apps people love to use.
-          Every project is carefully planned to deliver smooth experiences for
-          businesses. We solve real problems while keeping users first in every
-          stage. We ensure the final product is polished, reliable, and easy to
-          navigate.
+          We are a reliable web application service agency focused on building
+          web apps that solve real problems. From startups to established
+          businesses, we work closely with you to create apps that are simple,
+          reliable, and built to grow. Our web app development services include
+          clear planning, clean coding and thorough testing to ensure your web
+          app works smoothly across all devices. We stay to fix bugs, add
+          features and keep your web app running at its best. Whether you need a
+          web app for e-commerce, healthcare or any industry. We’re here to
+          help. Let’s build something that truly works for your business.
         </p>
       </div>
-
-      <Link
-        href={"/contact-us"}
-        ref={buttonRef}
-        className="w-[109px] lg:w-[156px] h-[109px] lg:h-[156px] rounded-full border text-base lg:text-[25px] flex flex-col gap-2 uppercase items-center justify-center border-[#f40e00] text-white overflow-hidden absolute bottom-[5%] right-[12%]"
-      >
-        <motion.div
-          className="absolute inset-0 bg-[#f40e00] z-0"
-          style={{
-            width: fillWidth,
-          }}
-        />
-
-        <span className="relative z-10 flex flex-col items-center justify-center">
-          let's <br /> talk
-          <Image
-            src={"/footer-cta-icon.png"}
-            width={28}
-            height={24}
-            className="w-[18px] h-[15px] lg:w-[28px] lg:h-[24px] mt-2"
-          />
-        </span>
-      </Link>
     </section>
   );
 }
