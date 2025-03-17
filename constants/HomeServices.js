@@ -37,7 +37,7 @@ export const HOME_SERVICES = [
       "MongoDB",
     ],
     alt_tag: "web app development image",
-    pageUrl: "/",
+    pageUrl: "/services/web-app-development-services",
   },
   {
     image: "/software-development.png",
