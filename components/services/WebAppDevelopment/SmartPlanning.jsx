@@ -7,8 +7,7 @@ const SmartPlanning = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading w-full">
-          Building Digital Products Through a Well-Defined{" "}
-          <span className="red-text">Workflow</span>
+          Powered by a Well-Defined <span className="red-text">Workflow</span>
         </h2>
         <p className="section-paragraph lg:w-[85%]">
           Struggling with slow, hard-to-use web apps? Our web app development

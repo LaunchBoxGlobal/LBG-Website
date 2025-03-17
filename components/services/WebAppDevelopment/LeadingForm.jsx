@@ -50,9 +50,9 @@ const LeadingForm = () => {
         <div className="w-full">
           <button
             type="submit"
-            className="bg-[#212121] text-white w-full rounded-full h-[45px] text-lg font-semibold"
+            className="bg-[#212121] text-white w-full rounded-full h-[45px] text-sm lg:text-lg font-semibold"
           >
-            Get Your Free App Plan
+            Get a Winning Web App Plan!
           </button>
         </div>
       </div>
