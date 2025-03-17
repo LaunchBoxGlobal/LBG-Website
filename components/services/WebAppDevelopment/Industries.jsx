@@ -47,8 +47,8 @@ const Industries = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Web <span className="red-text">Application Development Services</span>{" "}
-          for Every Industry
+          Web Application Development Services for{" "}
+          <span className="red-text"> Every Industry</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
           We provide web application development services tailored to your
