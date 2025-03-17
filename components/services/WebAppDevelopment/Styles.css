@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #909090;
+  color: #fff;
   font-size: 43px;
   line-height: 66px;
   cursor: default;
@@ -56,7 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #909090;
+    color: #fff;
     font-size: 23px;
     line-height: 66px;
     cursor: default;
@@ -141,11 +141,11 @@
 
 .gallery-item-3 {
   box-shadow: none;
-  height: 370px;
+  height: 378px;
   opacity: 1;
   left: 50%;
   transform: translateX(-50%);
-  width: 542px;
+  width: 554px;
   z-index: 2;
 }
 
