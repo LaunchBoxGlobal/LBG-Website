@@ -192,7 +192,7 @@ const Benefits = () => {
         </div>
       </section>
 
-      <section className="w-full mt-14 flex justify-start lg:pl-[32%]">
+      <section className="w-full mt-14 flex justify-center lg:justify-start lg:pl-[32%]">
         <ContactButton text={"Get started - We’re Ready to build!"} />
       </section>
     </section>

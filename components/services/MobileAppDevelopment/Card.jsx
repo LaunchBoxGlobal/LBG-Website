@@ -75,7 +75,7 @@ const Card = ({
           <h3 className="text-2xl lg:text-[30px] font-bold text-white">
             {title}
           </h3>
-          <p className="text-white text-[18px] font-medium lg:w-[80%]">
+          <p className="text-white text-sm lg:text-[18px] font-medium lg:w-[80%]">
             {description}
           </p>
         </div>

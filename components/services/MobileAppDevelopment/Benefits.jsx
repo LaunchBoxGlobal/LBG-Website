@@ -186,7 +186,7 @@ const Benefits = () => {
         </div>
       </section>
 
-      <section className="w-full mt-14 flex justify-start lg:pl-[34.3%]">
+      <section className="w-full mt-14 flex justify-center lg:justify-start lg:pl-[34.3%]">
         <ContactButton text={"Get Started – 100% Risk-Free"} />
       </section>
     </section>
