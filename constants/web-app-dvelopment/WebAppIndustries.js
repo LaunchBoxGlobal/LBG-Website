@@ -28,8 +28,8 @@ export const WEB_APP_DEVELOPMENT_INDUSTRIES = [
     icon: "/real-state-icon.svg",
     description:
       "Our e-learning web app development creates platforms for virtual classrooms, course management and progress tracking. We make learning accessible and engaging for students and educators.",
-    redIcon: "/education-red-icon.png",
-    whiteIcon: "/education-white-icon.png",
+    redIcon: "/education-red-icon.webp",
+    whiteIcon: "/education-white-icon.webp",
   },
   {
     title: "Travel & Experiences",
