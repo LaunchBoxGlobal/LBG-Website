@@ -30,22 +30,15 @@ const MobileAppDevFaqs = () => {
           >
             <button
               onClick={() => toggleFaq(index)}
-              className="w-full text-start flex items-center justify-between outline-none"
+              className="w-full text-start flex items-start justify-between outline-none"
             >
               <h5
-                className="font-medium text-[17px] md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[85%] lg:leading-10
+                className="font-medium text-[17px] md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[95%] lg:leading-10
               "
               >
                 {faq?.question}
               </h5>
 
-              {/* <PiStarFourFill
-                className={`text-2xl ${
-                  openFaq === index
-                    ? "rotate-180 text-[#F40E00]"
-                    : "rotate-0 text-gray-700"
-                } transition-all duration-500`}
-              /> */}
               <Image
                 src={"/faq-arrow-icon.png"}
                 width={24}
@@ -53,7 +46,7 @@ const MobileAppDevFaqs = () => {
                 alt="arrow icon"
                 className={`${
                   openFaq === index ? "scale-y-[-1]" : "scale-y-[1]"
-                } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px]`}
+                } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
               />
             </button>
 
@@ -67,7 +60,7 @@ const MobileAppDevFaqs = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="overflow-hidden"
             >
-              <p className="text-base lg:text-[20px] font-normal lg:w-[75%]">
+              <p className="text-base lg:text-[20px] font-normal lg:w-[95%]">
                 {faq?.answer}
               </p>
             </motion.div>

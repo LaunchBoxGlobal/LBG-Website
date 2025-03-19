@@ -29,7 +29,7 @@ const HomeComparison = () => {
               Solutions We<span className="text-[#F40E00]"> Provide</span>
             </strong>
           </h2>
-          <p className="text-base xl:text-[18px] font-light leading-6 text-gray-400 mb-5 lg:w-[70%]">
+          <p className="text-base xl:text-[18px] font-light leading-6 text-gray-400 mb-5 lg:w-[75%]">
             Stay informed at every step with Agile methods, ensuring a smooth
             and on-track project.
           </p>

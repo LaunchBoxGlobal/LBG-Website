@@ -1,17 +1,17 @@
 .main {
-  height: 100vh;
+  height: 75vh;
   position: relative;
 }
 
-.sectionHeading {
+/* .sectionHeading {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 120px;
+  top: 5%;
   color: #f40e00;
   font-size: 25px;
   font-weight: 600;
-}
+} */
 
 .mask,
 .textBody {

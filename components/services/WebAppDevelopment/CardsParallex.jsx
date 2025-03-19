@@ -40,7 +40,7 @@ export default function CardsParallex() {
       </section>
       <main
         ref={container}
-        className={"styles.main w-full relative lg:mt-[20vh] padding-x"}
+        className={"styles.main w-full relative lg:mt-[10vh] padding-x"}
       >
         {WEB_APP_PROJECTS.map((project, i) => {
           const targetScale = 1 - (projects.length - i) * 0.05;

@@ -84,7 +84,7 @@ const Benefits = () => {
           })}
         </div>
         <div className="w-full lg:w-[15%] hidden lg:flex flex-col justify-start items-center ">
-          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6 lg:pl-14">
+          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6 xl:pl-24">
             Local <br /> Companies
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]?.map((b, i) => {
@@ -96,7 +96,7 @@ const Benefits = () => {
                 }`}
               >
                 <div
-                  className={`w-[40px] h-[40px] rounded-full lg:ml-[11%] ${
+                  className={`w-[40px] h-[40px] rounded-full lg:ml-[11%] xl:ml-[24%] ${
                     i === 0 || i === 5 || i === 6 || i === 8
                       ? "bg-[#078F40]"
                       : "bg-[#F40E00]"
@@ -113,7 +113,7 @@ const Benefits = () => {
           })}
         </div>
         <div className="w-full lg:w-[15%] hidden lg:flex flex-col justify-start items-center">
-          <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold text-center lg:leading-6 lg:pl-[23%]">
+          <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold text-center lg:leading-6 lg:pl-[23%] xl:pl-[26%]">
             Traditional <br /> Firms
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]?.map((b, i) => {
@@ -125,7 +125,7 @@ const Benefits = () => {
                 }`}
               >
                 <div
-                  className={`w-[40px] h-[40px] rounded-full lg:ml-[8%] ${
+                  className={`w-[40px] h-[40px] rounded-full lg:ml-[8%] xl:ml-[10%] ${
                     i === 5 || i === 6 || i === 7 || i === 10
                       ? "bg-[#078F40]"
                       : "bg-[#F40E00]"

@@ -63,7 +63,7 @@ const HomeValueProposition = () => {
             return (
               <SwiperSlide key={index} className="w-[95%] lg:w-[320px]">
                 <div className="w-[95%] rounded-xl p-6 bg-white h-[197px] lg:w-[320px] border flex flex-col items-center justify-start">
-                  <div className="flex items-center justify-center gap-3 w-full">
+                  <div className="flex items-center justify-center lg:justify-start gap-3 w-full">
                     <div
                       className={`lg:w-[22px] lg:h-[22px] w-[20px] h-[20px] ${
                         index % 2 === 0 ? "bg-red-600" : "bg-black"

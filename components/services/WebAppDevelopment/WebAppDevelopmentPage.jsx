@@ -4,7 +4,6 @@ import HomePlatforms from "@/components/Home/HomePlatforms";
 import About from "./About";
 import Services from "./Services";
 import CreateYourMobileApp from "./CreateYourMobileApp";
-import HomeTech from "@/components/Home/HomeTech";
 import FlagsSection from "@/components/Home/FlagsSection";
 import MobileAppDevFaqs from "./MobileAppDevFaqs";
 import SmartPlanning from "./SmartPlanning";
@@ -12,6 +11,7 @@ import Benefits from "./Benefits";
 import Industries from "./Industries";
 import MobileAppDevContactForm from "./MobileAppDevContactForm";
 import CardsParallex from "./CardsParallex";
+import Technologies from "./Technologies";
 
 const WebAppDevelopmentPage = () => {
   return (
@@ -25,7 +25,7 @@ const WebAppDevelopmentPage = () => {
       <CreateYourMobileApp />
       <Benefits />
       <SmartPlanning />
-      <HomeTech />
+      <Technologies />
       <FlagsSection />
       <MobileAppDevFaqs />
       <MobileAppDevContactForm />

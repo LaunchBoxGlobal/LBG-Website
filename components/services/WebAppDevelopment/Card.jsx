@@ -49,10 +49,8 @@ const Card = ({
   return (
     <div
       ref={container}
-      onMouseEnter={() => setIsHovering(true)}
-      onMouseLeave={() => setIsHovering(false)}
       className={
-        "group w-full h-[80vh] lg:h-[100vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10 cardContainer"
+        "group w-full h-[80vh] lg:h-[700px] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10"
       }
     >
       <motion.div
@@ -63,8 +61,10 @@ const Card = ({
           transformOrigin: "top",
         }}
         className={
-          "w-full h-[300px] lg:h-[655px] flex flex-col relative top-[-25%] rounded-3xl"
+          "w-full h-[300px] lg:h-[655px] flex flex-col relative top-[-25%] rounded-3xl cardContainer"
         }
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
       >
         <img
           src={image}

@@ -12,6 +12,7 @@ import Benefits from "./Benefits";
 import Industries from "./Industries";
 import MobileAppDevContactForm from "./MobileAppDevContactForm";
 import CardsParallex from "./CardsParallex";
+import Technologies from "./Technologies";
 
 const MobileAppDevelopmentPage = () => {
   return (
@@ -25,7 +26,7 @@ const MobileAppDevelopmentPage = () => {
       <CreateYourMobileApp />
       <Benefits />
       <SmartPlanning />
-      <HomeTech />
+      <Technologies />
       <FlagsSection />
       <MobileAppDevFaqs />
       <MobileAppDevContactForm />

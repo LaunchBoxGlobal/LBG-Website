@@ -32,17 +32,10 @@ const HomeFaqs = () => {
               onClick={() => toggleFaq(index)}
               className="w-full text-start flex items-center justify-between outline-none"
             >
-              <h5 className="font-medium text-[17px] md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[85%]">
+              <h5 className="font-medium text-[17px] md:text-3xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
                 {faq?.question}
               </h5>
 
-              {/* <PiStarFourFill
-                className={`text-2xl ${
-                  openFaq === index
-                    ? "rotate-180 text-[#F40E00]"
-                    : "rotate-0 text-gray-700"
-                } transition-all duration-500`}
-              /> */}
               <Image
                 src={"/faq-arrow-icon.png"}
                 width={24}
@@ -64,7 +57,7 @@ const HomeFaqs = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="overflow-hidden"
             >
-              <p className="text-base lg:text-[20px] font-normal lg:w-[75%]">
+              <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
                 {faq?.answer}
               </p>
             </motion.div>

@@ -37,7 +37,7 @@ export const WEB_APP_DEVELOPMENT_INDUSTRIES = [
     description:
       "We design travel web apps for booking, itineraries and local guides. Our apps make planning trips easy and enjoyable  helping users explore the world hassle-free.",
     redIcon: "/travel-red-icon.png",
-    whiteIcon: "/travle-white-icon.png",
+    whiteIcon: "/travel-white-icon.png",
   },
   {
     title: "Real Estate",

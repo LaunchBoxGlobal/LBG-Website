@@ -81,18 +81,13 @@ export function TextMaskEffect() {
   const { x, y } = useMousePosition();
   const size = isHovered ? 200 : 40;
 
-  const buttonRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: buttonRef,
-    offset: ["start end", "start center"],
-  });
-
-  // Animate fill width from 0% to 100% based on scroll progress
-  const fillWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-
   return (
     <section className={"main"}>
-      <h2 className={"sectionHeading"}>
+      <h2
+        className={
+          "sectionHeading absolute left-1/2 -translate-x-1/2 text-[25px] text-[#f40e00] font-semibold xl:top-[8%]"
+        }
+      >
         Building Apps That Work: Simple, Reliable, and User-Focused
       </h2>
       <motion.div

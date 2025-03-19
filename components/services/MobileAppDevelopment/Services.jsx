@@ -13,7 +13,7 @@ const Services = () => {
     setOpenFaq(openFaq === index ? null : index);
   };
   return (
-    <section className="w-full pb-10 lg:pb-20 padding-x">
+    <section className="w-full pb-10 lg:pb-20 lg:pt-16 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
           Mobile App <br /> Development{" "}
