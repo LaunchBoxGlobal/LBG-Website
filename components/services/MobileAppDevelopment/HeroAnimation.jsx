@@ -14,6 +14,7 @@ import {
   Navigation,
   Autoplay,
 } from "swiper/modules";
+import Image from "next/image";
 
 function HeroAnimation() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,9 +27,12 @@ function HeroAnimation() {
 
   return (
     <div className="w-full h-[425px] bg-white mx-auto flex items-center justify-center relative right-[-9%] lg:right-[-1%]">
-      <img
-        src="/iphone-mockup.png"
-        alt=""
+      <Image
+        src="/iphone-mockup.webp"
+        alt="iphone mockup"
+        priority
+        width={248}
+        height={518}
         className="w-[10.3rem] lg:w-[13.3rem] h-[325px] lg:h-[425px] z-20 absolute left-[41%] lg:left-[49.3%] -translate-x-1/2 top-1/2 -translate-y-1/2"
       />
       <Swiper
@@ -66,7 +70,7 @@ function HeroAnimation() {
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
-            src={"/mobile-mockup07.png"}
+            src={"/mobile-mockup07.webp"}
             alt={`slide_image}`}
             className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
@@ -76,7 +80,7 @@ function HeroAnimation() {
           style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
-            src={"/mobile-mockup02.png"}
+            src={"/mobile-mockup02.webp"}
             alt={`slide_image}`}
             className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
@@ -86,7 +90,7 @@ function HeroAnimation() {
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
-            src={"/mobile-mockup03.png"}
+            src={"/mobile-mockup03.webp"}
             alt={`slide_image}`}
             className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
@@ -96,7 +100,7 @@ function HeroAnimation() {
           style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
-            src={"/mobile-mockup04.png"}
+            src={"/mobile-mockup04.webp"}
             alt={`slide_image}`}
             className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
@@ -106,7 +110,7 @@ function HeroAnimation() {
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
-            src={"/mobile-mockup05.png"}
+            src={"/mobile-mockup05.webp"}
             alt={`slide_image}`}
             className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
@@ -116,7 +120,7 @@ function HeroAnimation() {
           style={{ marginBottom: "60px", width: "14rem" }}
         >
           <img
-            src={"/mobile-mockup06.png"}
+            src={"/mobile-mockup06.webp"}
             alt={`slide_image}`}
             className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
@@ -126,7 +130,7 @@ function HeroAnimation() {
           style={{ marginTop: "60px", width: "14rem" }}
         >
           <img
-            src={"/mobile-mockup01.png"}
+            src={"/mobile-mockup01.webp"}
             alt={`slide_image}`}
             className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
           />
@@ -137,32 +141,3 @@ function HeroAnimation() {
 }
 
 export default HeroAnimation;
-
-// {
-//   [
-//     "/mobile-mockup07.png",
-//     "/mobile-mockup02.png",
-//     "/mobile-mockup03.png",
-//     "/mobile-mockup04.png",
-//     "/mobile-mockup05.png",
-//     "/mobile-mockup06.png",
-//     "/mobile-mockup01.png",
-//   ].map((image, index) => {
-//     // Apply random offset only to non-centered slides
-//     const isCentered = index === activeIndex;
-//     const randomOffset = isCentered ? "0px" : getRandomOffset();
-//     return (
-//       <SwiperSlide
-//         key={index}
-//         className="w-[10rem] lg:w-[14rem] h-[325px] lg:h-[425px] relative rounded-[3rem] shadow-none"
-//         style={{ marginTop: randomOffset, marginBottom: randomOffset }}
-//       >
-//         <img
-//           src={image}
-//           alt={`slide_image_${index + 1}`}
-//           className="w-[10rem] lg:w-[13rem] h-[322px] lg:h-[423px] rounded-[2rem] object-cover shadow-none"
-//         />
-//       </SwiperSlide>
-//     );
-//   });
-// }

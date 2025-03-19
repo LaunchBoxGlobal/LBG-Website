@@ -13,17 +13,6 @@ export default function CardsParallex() {
     offset: ["start start", "end end"],
   });
 
-  // useEffect(() => {
-  //   const lenis = new Lenis();
-
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-
-  //   requestAnimationFrame(raf);
-  // });
-
   return (
     <>
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center pt-10 lg:pt-20">

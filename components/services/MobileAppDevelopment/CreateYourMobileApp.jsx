@@ -46,7 +46,7 @@ const CreateYourMobileApp = () => {
           className="absolute right-[14%] bottom-[-4%] hidden lg:block z-0"
         >
           <Image
-            src={"/create-your-mobile-app-mockup-01.png"}
+            src={"/create-your-mobile-app-mockup-01.webp"}
             alt="mobile app mockup 1"
             width={266}
             height={492}
@@ -61,7 +61,7 @@ const CreateYourMobileApp = () => {
           className="absolute right-0 bottom-[-3%] hidden lg:block z-0"
         >
           <Image
-            src={"/create-your-mobile-app-mockup-02.png"}
+            src={"/create-your-mobile-app-mockup-02.webp"}
             alt="mobile app mockup 2"
             width={299}
             height={492}

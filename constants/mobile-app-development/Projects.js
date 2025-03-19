@@ -6,7 +6,7 @@ export const projects = [
     src: "cactus.jpg",
     link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
     color: "#88A28D",
-    image: "/mobile-app-dev-portfolio-01.png",
+    image: "/mobile-app-dev-portfolio-01.webp",
   },
   {
     title: "Now you Know Nashville",
@@ -15,7 +15,7 @@ export const projects = [
     src: "rock.jpg",
     link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
     color: "#BBACAF",
-    image: "/mobile-app-dev-portfolio-02.png",
+    image: "/mobile-app-dev-portfolio-02.webp",
   },
   {
     title: "Fitness by Faith",
@@ -24,7 +24,7 @@ export const projects = [
     src: "tree.jpg",
     link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
     color: "#977F6D",
-    image: "/mobile-app-dev-portfolio-03.png",
+    image: "/mobile-app-dev-portfolio-03.webp",
   },
   {
     title: "My Garage Outlet",
@@ -33,7 +33,7 @@ export const projects = [
     src: "water.jpg",
     link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
     color: "#C2491D",
-    image: "/mobile-app-dev-portfolio-04.png",
+    image: "/mobile-app-dev-portfolio-04.webp",
   },
   {
     title: "USubz",
@@ -42,6 +42,6 @@ export const projects = [
     src: "house.jpg",
     link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
     color: "#B62429",
-    image: "/mobile-app-dev-portfolio-05.png",
+    image: "/mobile-app-dev-portfolio-05.webp",
   },
 ];
