@@ -85,7 +85,7 @@ export function TextMaskEffect() {
     <section className={"main"}>
       <h2
         className={
-          "sectionHeading absolute left-1/2 -translate-x-1/2 text-[25px] text-[#f40e00] font-semibold xl:top-[8%]"
+          "sectionHeading absolute left-1/2 -translate-x-1/2 text-[25px] text-[#f40e00] font-semibold xl:top-[2%]"
         }
       >
         Building Apps That Work: Simple, Reliable, and User-Focused
