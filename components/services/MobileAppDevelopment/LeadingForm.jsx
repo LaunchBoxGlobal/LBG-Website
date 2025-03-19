@@ -50,7 +50,7 @@ const LeadingForm = () => {
         <div className="w-full">
           <button
             type="submit"
-            className="bg-[#212121] text-white w-full rounded-full h-[45px] text-lg font-semibold"
+            className="bg-[#212121] text-white w-full rounded-full h-[45px] text-lg font-semibold hover:bg-[#F40E00] transition-all duration-300"
           >
             Get Your Free App Plan
           </button>

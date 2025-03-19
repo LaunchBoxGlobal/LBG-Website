@@ -36,8 +36,8 @@ const Benefits = () => {
         </p>
       </section>
 
-      <section className="w-full mt-10 lg:mt-20 border-black grid grid-cols-3 lg:grid-cols-6 gap-0">
-        <div className="w-full col-span-2 lg:col-span-2 flex flex-col items-start">
+      <section className="w-full mt-10 lg:mt-20 border-black flex items-start gap-0">
+        <div className="w-[70%] lg:w-[40%] flex flex-col items-start">
           <p className="h-[62px] pt-4 px-4 text-lg font-semibold">
             Features / Metric
           </p>
@@ -59,7 +59,7 @@ const Benefits = () => {
             })}
           </div>
         </div>
-        <div className="w-full col-span-1">
+        <div className="w-[30%] lg:w-[15%]">
           <div className="w-[110px] px-3 lg:w-[219px] h-[62px] bg-[#F40E00] flex items-center justify-center rounded-t-2xl">
             <Image
               src={"/lb-white-logo.png"}
@@ -85,8 +85,8 @@ const Benefits = () => {
             );
           })}
         </div>
-        <div className="w-full col-span-1 hidden lg:flex flex-col justify-start items-center">
-          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6">
+        <div className="w-full lg:w-[15%] hidden lg:flex flex-col justify-start items-center">
+          <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6 lg:pl-14">
             Local <br /> Companies
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]?.map((b, i) => {
@@ -98,7 +98,7 @@ const Benefits = () => {
                 }`}
               >
                 <div
-                  className={`w-[40px] h-[40px] rounded-full ${
+                  className={`w-[40px] h-[40px] rounded-full lg:ml-[11%] ${
                     i === 0 || i === 5 || i === 6 || i === 7 || i === 10
                       ? "bg-[#078F40]"
                       : "bg-[#F40E00]"
@@ -114,8 +114,8 @@ const Benefits = () => {
             );
           })}
         </div>
-        <div className="w-full col-span-1 hidden lg:flex flex-col justify-start items-center">
-          <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold text-center lg:leading-6">
+        <div className="w-full lg:w-[15%] hidden lg:flex flex-col justify-start items-center">
+          <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold text-center lg:leading-6 lg:pl-[20%]">
             Traditional <br /> Firms
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]?.map((b, i) => {
@@ -127,7 +127,7 @@ const Benefits = () => {
                 }`}
               >
                 <div
-                  className={`w-[40px] h-[40px] rounded-full ${
+                  className={`w-[40px] h-[40px] rounded-full lg:ml-[6%] ${
                     i === 6 || i === 7 || i === 9 || i === 12
                       ? "bg-[#078F40]"
                       : "bg-[#F40E00]"
@@ -143,7 +143,7 @@ const Benefits = () => {
             );
           })}
         </div>
-        <div className="w-full col-span-1 hidden lg:flex flex-col justify-start items-center">
+        <div className="w-full lg:w-[15%] hidden lg:flex flex-col justify-start items-center">
           <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6">
             Freelance <br /> Agencies 
           </p>
@@ -192,7 +192,7 @@ const Benefits = () => {
         </div>
       </section>
 
-      <section className="w-full mt-14 flex justify-center">
+      <section className="w-full mt-14 flex justify-start lg:pl-[32%]">
         <ContactButton text={"Get started - We’re Ready to build!"} />
       </section>
     </section>
@@ -200,26 +200,3 @@ const Benefits = () => {
 };
 
 export default Benefits;
-
-{
-  /* <div className="col-span-1">
-<div className="bg-[#F40E00]">
-  <Image
-    src={"/lb-white-logo.png"}
-    width={188}
-    height={33}
-    alt="launchbox global logo"
-    className="w-[188px] h-[33px]"
-  />
-</div>
-{[1, 2, 3, 4, 5, 6, 7, 8]?.map((icon, i) => {
-  return (
-    <div className="w-full py-2" key={i}>
-      <div className="w-[40px] h-[40px] rounded-full bg-[#078F40] p-2">
-        <FaCheck className="text-white w-full h-full" />
-      </div>
-    </div>
-  );
-})}
-</div> */
-}
