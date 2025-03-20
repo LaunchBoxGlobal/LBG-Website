@@ -52,7 +52,7 @@ const Card = ({
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       className={
-        "group w-full h-[80vh] lg:h-[100vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10 cardContainer"
+        "group w-full h-[80vh] lg:h-[80vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10 cardContainer"
       }
     >
       <motion.div
@@ -71,7 +71,7 @@ const Card = ({
           alt={title}
           className="w-full h-full object-cover rounded-3xl group-hover:brightness-50 transition-all duration-300"
         />
-        <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-14 py-6 transition-all duration-300">
+        <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-14 py-6 lg:py-14 transition-all duration-300">
           <h3 className="text-2xl lg:text-[30px] font-bold text-white">
             {title}
           </h3>
