@@ -1,17 +1,7 @@
 .main {
-  height: 90vh;
+  height: 80vh;
   position: relative;
 }
-
-/* .sectionHeading {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 5%;
-  color: #f40e00;
-  font-size: 25px;
-  font-weight: 600;
-} */
 
 .mask,
 .textBody {
@@ -30,8 +20,6 @@
   width: 1270px;
   line-height: 57px;
   text-align: center;
-  /* color: #909090; */
-  /* // padding: 40px; */
 }
 
 .mask {
