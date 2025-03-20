@@ -16,6 +16,7 @@ const Card = ({
   range,
   targetScale,
   image,
+  setIsHovering,
 }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -28,23 +29,23 @@ const Card = ({
 
   // Custom cursor state
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
 
-  useEffect(() => {
-    const moveCursor = (e) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    };
+  // useEffect(() => {
+  //   const moveCursor = (e) => {
+  //     setCursorPos({ x: e.clientX, y: e.clientY });
+  //   };
 
-    if (isHovering) {
-      window.addEventListener("mousemove", moveCursor);
-    } else {
-      window.removeEventListener("mousemove", moveCursor);
-    }
+  //   if (isHovering) {
+  //     window.addEventListener("mousemove", moveCursor);
+  //   } else {
+  //     window.removeEventListener("mousemove", moveCursor);
+  //   }
 
-    return () => {
-      window.removeEventListener("mousemove", moveCursor);
-    };
-  }, [isHovering]);
+  //   return () => {
+  //     window.removeEventListener("mousemove", moveCursor);
+  //   };
+  // }, [isHovering]);
 
   return (
     <div
@@ -81,7 +82,7 @@ const Card = ({
         </div>
       </motion.div>
       {/* Custom Cursor */}
-      {isHovering && (
+      {/* {isHovering && (
         <motion.img
           src={CursorImage}
           alt="Custom Cursor"
@@ -91,7 +92,7 @@ const Card = ({
             top: cursorPos.y - 32,
           }}
         />
-      )}
+      )} */}
     </div>
   );
 };
