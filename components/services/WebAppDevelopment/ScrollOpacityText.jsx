@@ -85,7 +85,7 @@ export function TextMaskEffect() {
     <section className={"web-app-main"}>
       <h2
         className={
-          "absolute left-1/2 -translate-x-1/2 text-[#f40e00] text-[25px] font-semibold top-2 lg:top-[6%] xl:top-[8%] w-full text-center"
+          "absolute left-1/2 -translate-x-1/2 text-[#f40e00] text-[25px] font-semibold top-2 lg:top-2%] xl:top-[4%] w-full text-center"
         }
       >
         Your Trusted Web App Development Services Partner
