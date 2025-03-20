@@ -16,6 +16,7 @@ const Card = ({
   range,
   targetScale,
   image,
+  setIsHovering,
 }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -28,23 +29,23 @@ const Card = ({
 
   // Custom cursor state
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
 
-  useEffect(() => {
-    const moveCursor = (e) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    };
+  // useEffect(() => {
+  //   const moveCursor = (e) => {
+  //     setCursorPos({ x: e.clientX, y: e.clientY });
+  //   };
 
-    if (isHovering) {
-      window.addEventListener("mousemove", moveCursor);
-    } else {
-      window.removeEventListener("mousemove", moveCursor);
-    }
+  //   if (isHovering) {
+  //     window.addEventListener("mousemove", moveCursor);
+  //   } else {
+  //     window.removeEventListener("mousemove", moveCursor);
+  //   }
 
-    return () => {
-      window.removeEventListener("mousemove", moveCursor);
-    };
-  }, [isHovering]);
+  //   return () => {
+  //     window.removeEventListener("mousemove", moveCursor);
+  //   };
+  // }, [isHovering]);
 
   return (
     <div
@@ -52,7 +53,7 @@ const Card = ({
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       className={
-        "group w-full h-[80vh] lg:h-[80vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10 cardContainer"
+        "group w-full h-[80vh] lg:h-[695px] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-0 cardContainer"
       }
     >
       <motion.div
@@ -81,17 +82,17 @@ const Card = ({
         </div>
       </motion.div>
       {/* Custom Cursor */}
-      {isHovering && (
+      {/* {isHovering && (
         <motion.img
           src={CursorImage}
           alt="Custom Cursor"
-          className="fixed w-16 h-16 lg:w-[150px] lg:h-[150px] pointer-events-none z-10"
+          className="fixed w-16 h-16 lg:w-[150px] lg:h-[150px] pointer-events-none z-50"
           style={{
             left: cursorPos.x - 32, // Centering cursor image
             top: cursorPos.y - 32,
           }}
         />
-      )}
+      )} */}
     </div>
   );
 };

@@ -3,10 +3,12 @@
 import { projects } from "@/constants/mobile-app-development/Projects";
 import Card from "./Card";
 import { useScroll } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Cursor from "@/components/Global/Cursor";
 // import Lenis from "lenis";
 
 export default function CardsParallex() {
+  const [isCursorHovering, setIsCursorHovering] = useState(false);
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -41,9 +43,12 @@ export default function CardsParallex() {
               progress={scrollYProgress}
               range={[i * 0.25, 1]}
               targetScale={targetScale}
+              setIsHovering={setIsCursorHovering}
             />
           );
         })}
+
+        <Cursor isHovering={isCursorHovering} />
       </main>
     </>
   );
