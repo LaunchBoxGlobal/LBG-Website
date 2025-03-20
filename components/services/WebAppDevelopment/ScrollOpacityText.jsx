@@ -81,20 +81,11 @@ export function TextMaskEffect() {
   const { x, y } = useMousePosition();
   const size = isHovered ? 200 : 40;
 
-  const buttonRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: buttonRef,
-    offset: ["start end", "start center"],
-  });
-
-  // Animate fill width from 0% to 100% based on scroll progress
-  const fillWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-
   return (
     <section className={"web-app-main"}>
       <h2
         className={
-          "absolute left-1/2 -translate-x-1/2 text-[#f40e00] text-[25px] font-semibold top-2 lg:top-[6%] xl:top-[10%] w-full text-center"
+          "absolute left-1/2 -translate-x-1/2 text-[#f40e00] text-[25px] font-semibold top-2 lg:top-[6%] xl:top-[4%] w-full text-center"
         }
       >
         Your Trusted Web App Development Services Partner
