@@ -3,42 +3,41 @@ import { useEffect, useRef, useState } from "react";
 import "./Styles.css";
 import Image from "next/image";
 
-const ImageSlider = () => {
+const MobileImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [exitingIndex, setExitingIndex] = useState(null);
   const galleryRef = useRef(null);
 
   const images = [
-    "/web-app-01.png",
-    "/web-app-02.png",
-    "/web-app-03.png",
-    "/web-app-04.png",
-    "/web-app-05.png",
+    "/mobile-mockup01.webp",
+    "/mobile-mockup02.webp",
+    "/mobile-mockup03.webp",
+    "/mobile-mockup04.webp",
+    "/mobile-mockup05.webp",
+    // "/mobile-mockup06.webp",
+    // "/mobile-mockup07.webp",
   ];
 
   const totalItems = images.length;
 
-  // Get class with exit logic
   const getItemClass = (index) => {
     const position = ((index - currentIndex + totalItems) % totalItems) + 1;
-    let baseClass = `gallery-item gallery-item-${position}`;
+    let baseClass = `mobile-gallery-item mobile-gallery-item-${position}`;
     if (index === exitingIndex) {
-      baseClass += " gallery-item-exit"; // Add exit class to fading item
+      baseClass += " mobile-gallery-item-exit";
     }
     return baseClass;
   };
 
-  // Autoplay logic with exit tracking
   useEffect(() => {
     const interval = setInterval(() => {
-      const exitIndex = currentIndex; // Current center will become left-most
+      const exitIndex = currentIndex;
       setExitingIndex(exitIndex);
 
-      // Allow CSS animation to apply before index changes
       setTimeout(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
-        setExitingIndex(null); // Reset after fade out
-      }, 100); // Small delay for transition
+        setExitingIndex(null);
+      }, 100);
     }, 4000);
 
     const gallery = galleryRef.current;
@@ -46,7 +45,6 @@ const ImageSlider = () => {
     const handleMouseEnter = () => clearInterval(interval);
     const handleMouseLeave = () => {
       clearInterval(interval);
-      // Restart autoplay on mouse leave
       setTimeout(() => {
         const exitIndex = currentIndex;
         setExitingIndex(exitIndex);
@@ -68,21 +66,21 @@ const ImageSlider = () => {
   }, [currentIndex, totalItems]);
 
   return (
-    <section className="main-container">
-      <div className="gallery relative">
+    <section className="mobile-main-container">
+      <div className="mobile-gallery relative">
         <Image
-          src={"/macbook-mockup.png"}
-          className="w-[682px] h-[210px] lg:h-[400px] absolute z-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+          src={"/iphone-mockup.png"}
+          className="w-[10.3rem] lg:w-[13.3rem] h-[325px] lg:h-[425px] z-20 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
           alt=""
           width={782}
           height={508}
         />
-        <div className="gallery-container" ref={galleryRef}>
+        <div className="mobile-gallery-container" ref={galleryRef}>
           {images.map((src, index) => (
             <img
               key={index}
               src={src}
-              alt={`Gallery ${index + 1}`}
+              alt={`mobile-Gallery ${index + 1}`}
               className={getItemClass(index)}
               data-index={index + 1}
             />
@@ -93,4 +91,4 @@ const ImageSlider = () => {
   );
 };
 
-export default ImageSlider;
+export default MobileImageSlider;

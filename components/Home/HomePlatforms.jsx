@@ -136,7 +136,7 @@ const HomePlatforms = () => {
                   width={platform?.width}
                   height={platform?.height}
                   alt={platform?.title}
-                  className={`w-[13px] h-[13px] object-contain`}
+                  className={`w-[20px] h-[18px] object-contain`}
 
                   // style={{ width: platform?.width, height: platform?.height }}
                 />

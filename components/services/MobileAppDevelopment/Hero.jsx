@@ -2,6 +2,7 @@ import React from "react";
 import HeroAnimation from "./HeroAnimation";
 import Link from "next/link";
 import Image from "next/image";
+import MobileImageSlider from "./MobileImageSlider";
 
 const Hero = () => {
   return (
@@ -25,8 +26,9 @@ const Hero = () => {
           </Link>
         </div>
       </section>
-      <div className="w-full bg-white mt-0 lg:mt-5 padding-x hidden lg:block">
-        <HeroAnimation />
+      <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
+        {/* <HeroAnimation /> */}
+        <MobileImageSlider />
       </div>
       <Image
         src={"/mobile-app-dev-mobile-mockups.png"}
