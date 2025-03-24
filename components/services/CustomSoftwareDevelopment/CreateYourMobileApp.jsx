@@ -11,7 +11,7 @@ const CreateYourMobileApp = () => {
 
   return (
     <section className="w-full padding-x py-10 lg:py-28 mt-6" ref={ref}>
-      <section className="w-full h-[410px] rounded-lg bg-[#212121] relative group overflow-x-hidden overflow-y-hidden flex items-center justify-end">
+      <section className="w-full h-[410px] rounded-lg bg-[#212121] relative border group overflow-x-hidden overflow-y-hidden flex items-center justify-end">
         {/* Background Image */}
         <Image
           src={"/create-your-mobile-app-map.png"}

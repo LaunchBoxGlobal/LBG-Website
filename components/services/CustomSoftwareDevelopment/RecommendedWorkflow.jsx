@@ -48,7 +48,7 @@ const RecommendedWorkflow = () => {
             <p className="font-medium text-base lg:text-[17px]">
               {plan?.tag_line}
             </p>
-            <h3 className="font-medium text-[22px] lg:text-[34px] red-text">
+            <h3 className="font-medium text-[22px] lg:text-[30px] red-text">
               {plan?.title}
             </h3>
             <p className="text-[16px] lg:text-lg">{plan?.description}</p>
