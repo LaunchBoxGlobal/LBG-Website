@@ -23,12 +23,12 @@ const CustomSoftwareDevelopmentPage = () => {
       <HomePlatforms />
       <About />
       <Services />
-      <CardsParallex />
+      {/* <CardsParallex /> */}
       <Industries />
       <GenericSoftware />
       <WhyChooseUs />
       <CreateYourMobileApp />
-      <Benefits />
+      {/* <Benefits /> */}
       <SmartPlanning />
       <Technologies />
       <CustomDevelopmentJourney />

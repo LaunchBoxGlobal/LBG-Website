@@ -15,7 +15,7 @@ const Services = () => {
     <section className="w-full pb-10 lg:pb-20 lg:pt-14 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Custom Software Services <br /> Development{" "}
+          Custom Software <br /> Development{" "}
           <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
