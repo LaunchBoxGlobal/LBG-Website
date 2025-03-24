@@ -1,9 +1,8 @@
 "use client";
-
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 
-const FlippingText = ({ phrases }) => {
+const FlipText = ({ phrases }) => {
   const [index, setIndex] = useState(0);
   const wordRef = useRef(null);
 
@@ -13,7 +12,6 @@ const FlippingText = ({ phrases }) => {
 
       const wordsArray = wordRef.current.children;
 
-      // Fade Out Old Word
       gsap.to(wordsArray, {
         opacity: 0,
         duration: 1,
@@ -21,7 +19,6 @@ const FlippingText = ({ phrases }) => {
         onComplete: () => {
           setIndex((prevIndex) => (prevIndex + 1) % phrases?.length);
 
-          // Fade In & Slide-up Effect for Each Word
           gsap.fromTo(
             wordsArray,
             { opacity: 0, y: 15 },
@@ -43,29 +40,27 @@ const FlippingText = ({ phrases }) => {
   }, [index]);
 
   return (
-    <div className="relative h-24 md:h-16 lg:h-28 flex items-start lg:items-center justify-center flex-wrap overflow-hidden font-bold text-center w-[92%] lg:w-[100%] mx-auto mt-2 lg:px-0 leading-10 px-6">
-      <div
+    <span className="relative h-24 md:h-16 lg:h-24 flex items-start lg:items-center justify-start flex-wrap overflow-hidden font-bold text-center w-[92%] lg:w-[100%] mt-2 lg:px-0 leading-10">
+      <span
         ref={wordRef}
-        className="absolute flex flex-wrap justify-center items-center gap-x-2"
+        className="absolute flex flex-wrap justify-start items-center gap-x-2"
         style={{
-          // fontSize: "40px",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
         }}
       >
-        {/* Wrap all words normally */}
         {phrases[index]?.split(" ")?.map((word, i) => (
           <span
             key={i}
-            className="mr-0 lg:mr-2 red-text text-[34px] md:text-4xl lg:text-[84px] 2xl:text-[100px] break-words"
+            className="mr-0 lg:mr-2 red-text font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] break-words"
           >
             {word}
           </span>
         ))}
-      </div>
-    </div>
+      </span>
+    </span>
   );
 };
 
-export default FlippingText;
+export default FlipText;

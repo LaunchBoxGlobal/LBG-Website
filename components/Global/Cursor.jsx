@@ -1,4 +1,3 @@
-// components/GlobalCursor.jsx
 "use client";
 
 import { useEffect, useState } from "react";

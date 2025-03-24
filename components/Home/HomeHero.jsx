@@ -5,6 +5,22 @@ import FlippingText from "./FlippingText";
 import Image from "next/image";
 import { GlobeDemo } from "../talk-to-us/GlobeDemo";
 
+const words = [
+  "End-to-End Product Teams",
+  "Agile Development Teams",
+  "Elite Software Engineers",
+  "Innovative UI/UX Designers",
+  "Expert Project Managers",
+  "Strategic Business Analysts",
+  "Visionary Software Architects",
+  "Certified Scrum Masters",
+  // "Precision-Driven QA Engineers",
+  "Diligent QA Engineers",
+  "Specialist Database Architects",
+  "Creative Storyboard Artists",
+  "Skilled Video Editors",
+];
+
 const HomeHero = () => {
   return (
     <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-[85vh] lg:h-[120vh] lg:gap-[25px] xl:h-[110vh] 2xl:h-[100vh] overflow-hidden">
@@ -30,7 +46,7 @@ const HomeHero = () => {
         </span>
 
         <div className="w-full relative -top-1.5 md:-top-3 2xl:top-2">
-          <FlippingText />
+          <FlippingText phrases={words} />
         </div>
       </h1>
       <div className="flex items-center justify-center gap-2 w-[95%] lg:w-[76%] relative -top-3 md:-top-6 2xl:top-4 padding-x">

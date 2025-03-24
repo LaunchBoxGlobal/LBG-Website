@@ -1,11 +1,10 @@
 "use client";
 import { MOBILE_APP_DEVELOPMENT_SERVICES } from "@/constants/mobile-app-development/MobileAppDevelopmentServices";
-import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { IoArrowDownSharp } from "react-icons/io5";
 import Link from "next/link";
-import { WEB_APP_DEVELOPMENT_SERVICES } from "@/constants/web-app-dvelopment/WebAppDevServices";
+import { CUSTOM_SOFTWARE_SERVICES } from "@/constants/custom-software-development/CustomSoftwareServices";
 
 const Services = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -14,7 +13,7 @@ const Services = () => {
     setOpenFaq(openFaq === index ? null : index);
   };
   return (
-    <section className="w-full pb-10 lg:py-20 padding-x">
+    <section className="w-full pb-10 lg:pb-20 lg:pt-14 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
           Web App <br /> Development <span className="red-text">Services</span>
@@ -30,7 +29,7 @@ const Services = () => {
         id="faqs"
         className="w-full mt-10 flex flex-col items-start lg:w-[90%] mx-auto"
       >
-        {WEB_APP_DEVELOPMENT_SERVICES?.map((service, index) => (
+        {CUSTOM_SOFTWARE_SERVICES?.map((service, index) => (
           <div
             className={`w-full pt-5 lg:py-10 hover:bg-black rounded-3xl rounded-b-none hover:rounded-b-3xl hover:text-white transition-all duration-300 ${
               openFaq === index
