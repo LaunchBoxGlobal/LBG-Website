@@ -4,12 +4,26 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import Sidebar from "./Sidebar";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleScrollToServices = (e) => {
+    e.preventDefault();
+
+    if (pathname === "/") {
+      // Already on Home, smooth scroll to #services
+      const section = document.getElementById("services");
+      section?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Not on Home, navigate to Home with hash
+      router.push("/#services");
+    }
+  };
 
   const toggleSidebar = () => {
     setOpenSidebar((prev) => !prev);
@@ -55,13 +69,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link
-            href={`#services`}
-            className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+          <a
+            href="#services"
+            onClick={handleScrollToServices}
+            className="font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group"
           >
-            Services{" "}
-            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
-          </Link>
+            Services
+          </a>
         </li>
         <li>
           <Link

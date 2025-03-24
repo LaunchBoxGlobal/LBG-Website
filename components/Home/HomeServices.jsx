@@ -28,7 +28,7 @@ const HomeServices = () => {
         </p>
       </section>
 
-      <section className="w-full flex flex-col flex-wrap items-start justify-center gap-y-4 mt-8 lg:mt-20 overflow-y-visible">
+      <section className="w-full flex flex-col flex-wrap items-start justify-center gap-y-4 mt-8 lg:my-20 overflow-y-visible">
         {HOME_SERVICES?.map((service, index) => (
           <ServiceCard
             service={service}
@@ -40,7 +40,6 @@ const HomeServices = () => {
             toggleFaq={toggleFaq}
           />
         ))}
-        {/* <ServiceCardModal modal={modal} projects={HOME_SERVICES} /> */}
       </section>
     </section>
   );
