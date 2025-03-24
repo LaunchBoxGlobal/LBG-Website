@@ -45,21 +45,21 @@ const HomeHero = () => {
           Succeed
         </span>
 
-        <div className="w-full relative -top-1.5 md:-top-3 lg:-top-9 2xl:top-2">
+        <div className="w-full relative -top-1.5 md:-top-3 xl:-top-8 2xl:top-2">
           <FlippingText phrases={words} />
         </div>
       </h1>
-      <div className="flex items-center justify-center gap-2 w-[95%] lg:w-[76%] relative -top-3 md:-top-6 lg:-top-8 2xl:top-4 padding-x">
+      <div className="flex items-center justify-center gap-2 w-[95%] lg:w-[76%] relative -top-3 md:-top-6 2xl:top-4 padding-x">
         <h2 className="text-base lg:text-[22px] 2xl:text-[26px] font-medium text-gray-500 text-center">
           Available in your Timezone, at Affordable Rates, with Full
           Transparency.
         </h2>
       </div>
 
-      <div className="flex items-center justify-center gap-4 mt-0 relative top-3 lg:-top-1 2xl:top-12 z-20 my-10">
+      <div className="flex items-center justify-center gap-4 mt-0 relative top-3 mb-7 2xl:top-10 z-20">
         <ContactButton text={"Get a Free Consultation"} />
       </div>
-      <div className="w-full h-[45%] xl:h-[35%] lg:h-[30%] 2xl:h-[55%] hidden lg:flex items-center justify-center relative z-0">
+      <div className="w-full h-[45%] xl:h-[40%] lg:h-[30%] 2xl:h-[55%] hidden lg:flex items-center justify-center relative z-0">
         <GlobeDemo />
       </div>
 
