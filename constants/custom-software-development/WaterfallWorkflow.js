@@ -24,6 +24,12 @@ export const WATERFALL_WORKFLOW = [
       "Once development is complete, we test everything thoroughly to catch bugs, improve performance, and ensure a seamless user experience.",
   },
   {
+    tag_line: "User Acceptance & Refinements",
+    title: "Validating with Users",
+    description:
+      "We involve key stakeholders or end-users to test the software in real-world scenarios, making refinements based on feedback before the final launch.",
+  },
+  {
     tag_line: "Deployment",
     title: "Launching with Confidence",
     description:

@@ -35,4 +35,10 @@ export const RECOMMENDED_WORKFLOW = [
     description:
       "After launch, we focus on scaling, refining, and enhancing based on real-world usage, ensuring your software grows alongside your business.",
   },
+  {
+    tag_line: "Extensibility & Long-Term Adaptability",
+    title: "Future-Proof the System",
+    description:
+      "We design software with flexibility in mind, ensuring it can integrate new features, technologies, and user needs without requiring a complete overhaul.",
+  },
 ];
