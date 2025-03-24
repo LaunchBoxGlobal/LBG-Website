@@ -43,7 +43,7 @@ export const sliderSettings = {
 
 const Industries = () => {
   return (
-    <section className="w-full padding-x py-10 lg:pb-20 relative overflow-hidden">
+    <section className="w-full padding-x pb-10 lg:pb-20 relative overflow-hidden">
       {/* heading */}
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">

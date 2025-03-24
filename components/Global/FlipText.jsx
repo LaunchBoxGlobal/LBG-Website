@@ -40,11 +40,11 @@ const FlipText = ({ phrases }) => {
 
   return (
     <span className="relative inline-block align-baseline min-w-[1px]">
-      <span ref={wordRef} className="flex flex-wrap items-center gap-x-1">
+      <span ref={wordRef} className="flex flex-wrap items-center gap-x-1.5">
         {phrases[index]?.split(" ")?.map((word, i) => (
           <span
             key={i}
-            className="red-text font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] break-words"
+            className="red-text font-bold text-[30px] lg:text-[64px] 2xl:text-[100px] break-words"
           >
             {word}
           </span>
