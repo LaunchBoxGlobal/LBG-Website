@@ -18,7 +18,7 @@ const Hero = () => {
         </p>
         <h1 className="font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-full">
           Custom Software Development That Delivers{" "}
-          <span className="relative inline-flex align-baseline text-center -top-[2px] min-w-fit">
+          <span className="relative inline-flex align-baseline text-center min-w-fit">
             <FlipText phrases={phrases} />
           </span>
         </h1>
