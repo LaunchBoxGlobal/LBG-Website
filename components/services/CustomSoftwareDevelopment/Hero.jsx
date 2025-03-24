@@ -13,14 +13,14 @@ const Hero = () => {
   return (
     <section className="w-full relative overflow-x-hidden">
       <div className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-5 bg-white overflow-hidden">
-        <h1 className="font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-[100%]">
+        <h1 className="font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-full">
           Custom Software Development Services That Truly{" "}
-          <span className="red-text">Deliver Results</span>
-          {/* <div className="relative -top-1.5 md:-top-3 2xl:top-2 inline">
+          <span className="relative inline-flex align-baseline -top-[2px] min-w-fit">
             <FlipText phrases={phrases} />
-          </div> */}
+          </span>
         </h1>
 
+        {/* <span className="red-text">Deliver </span> */}
         <p className="text-base lg:text-[22px] 2xl:text-[26px] font-medium text-gray-500 text-center lg:w-[75%] leading-8">
           We offer web app development services that solve real problems. As a
           trusted web application service agency. We build web apps that are

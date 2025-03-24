@@ -1,51 +1,44 @@
 export const CUSTOM_SOFTWARE_SERVICES = [
   {
-    title: "Progressive Web App Development Services",
-    subtitle: "Are you struggling with hard to use websites?",
+    title: "Software Consulting",
     description:
-      "We build progressive web app development services that work like apps fast and accessible on any of the devices. We create PWAs that load quickly, work offline and feel quite smooth to use. The team focuses on the clean design, easy navigation and features that solve the real problems. Let’s make the website faster and more engaging.",
+      "Our software consultant services offer expert guidance to help you plan, develop, and enhance your software solutions.  We assist in selecting the right technologies, optimizing workflows, and improving existing systems to align with your business goals. By partnering with us, you can solve technical challenges, make informed decisions, and increase efficiency across your software projects.",
   },
   {
-    title: "Custom Web App Development",
-    subtitle: "Struggling with clunky, outdated systems?",
+    title: "Custom Software Development",
     description:
-      "We build custom web application development solutions that solve the real problems. We focus on creating apps that are simple and easy to use. Our team works closely with you to deliver tools that fit the needs. We test every feature, fix the issues quickly and make sure that your app grows your business.",
+      "Our custom software development services create software solutions tailored to your business needs. We handle everything from planning and design to coding and support, ensuring the software fits your goals. By choosing our services, you can improve how your business operates, work more efficiently, and stay ahead in your industry.",
   },
   {
-    title: "Single Page Web App Development",
-    subtitle: "Struggling with slow, clunky websites that frustrate users?",
+    title: "UI/UX Design & Prototyping",
     description:
-      "We specialize in single page web app development, creating fast, smooth, and engaging experiences. Our web app consultation services help you plan, design, and build apps that load quickly, work seamlessly, and keep users coming back. Whether you’re a startup or an established business, we focus on solving real problems with clean code and smart design. Let’s build a single page web app that works for your needs.",
+      "Our UI and UX design services focus on creating visually appealing and user-friendly interfaces. We design interactive prototypes, ensuring smooth navigation and a seamless user experience. By choosing our services, you enhance customer engagement, improve usability, and make your digital product more effective.",
   },
   {
-    title: "Web Portal Development",
-    subtitle: "Tired of scattered data and inefficient workflows?",
+    title: "System Integration",
     description:
-      "Our web portal development services create centralized, easy-to-use platforms that streamline your operations. We build web portals that connect teams, manage data, and improve communication all in one place. We focus on clean design, smooth performance, and tools that grow with your business. Let’s solve your workflow challenges with a web portal that works smarter, not harder.",
+      "Our system integration testing services ensure that different software components work together seamlessly. We test compatibility, identify issues, and optimize performance for smooth operations. By choosing our services, you reduce errors, enhance efficiency, and ensure a reliable system for your business.",
   },
   {
-    title: "Enterprise Web App Development",
+    title: "Cloud-Based Solutions",
     subtitle:
       "Is your business stuck with outdated systems that slow down growth?",
     description:
-      "We specialize in enterprise web app development, building powerful, reliable apps that solve real problems. From planning to launch, we focus on creating tools that streamline workflows, improve efficiency, and scale with your needs. Our team works closely with you to ensure every feature works as it should. Let’s build a web app that helps your business move forward.",
+      "Our cloud-based solutions help businesses store, manage, and access data securely from anywhere. We provide scalable and reliable cloud services, including migration, storage, and security enhancements. By choosing our solutions, you improve flexibility, reduce costs, and ensure seamless collaboration.",
   },
   {
-    title: "Cross Platform Web App Development",
-    subtitle: "Tired of building separate apps for different platforms?",
+    title: "Enterprise Software Development",
     description:
-      "We specialize in cross-platform mobile web app development, creating apps that work smoothly on any device. Our web app services focus on solving real problems like saving time and money while delivering apps that are fast, reliable, and easy to use. Whether you’re a startup or a growing business, we help you reach more users without the hassle. Let’s build a cross-platform mobile web app that fits your needs and grows with your business.",
+      "Our enterprise software development services create powerful, scalable solutions tailored to your business needs. We design and develop custom software to streamline operations, improve efficiency, and support growth. By choosing our services, you enhance productivity, automate processes, and gain a competitive edge.",
   },
   {
-    title: "Ecommerce Web Application Development",
-    subtitle: "Is your online store slow, hard to manage, or losing customers?",
+    title: "Software Maintenance & Support",
     description:
-      "We build web app ecommerce platforms that are fast, easy to use, and ready to grow with your business. From product listings to secure payments, we create apps that make shopping smooth for your customers and simpler for you to manage. With our web app expertise, we solve real problems and deliver results that matter. Let’s build an ecommerce app that works for your needs.",
+      "Our maintenance services ensure your software stays updated, secure, and running smoothly. We provide bug fixes, performance improvements, and regular updates to keep your system efficient. By choosing our services, you minimize downtime, enhance security, and extend the life of your software.",
   },
   {
-    title: "Web App Consultation",
-    subtitle: "Tired of slow, confusing websites that drive users away?",
+    title: "MVP Development for Startups",
     description:
-      "We create single page web app that are fast, easy to use, and built to solve real problems. Our web app consultation helps you plan and design apps that load quickly, work smoothly, and keep users engaged. Whether you’re a startup or a growing business, we focus on clean code and smart layouts to make your app stand out. Let’s build a single page web app that works for your goals.",
+      "Our minimal viable product development services help startups launch quickly with a functional and cost-effective solution. We build and refine core features to test ideas, gather user feedback, and validate market demand. By choosing our services, you reduce risks, save costs, and accelerate business growth.",
   },
 ];

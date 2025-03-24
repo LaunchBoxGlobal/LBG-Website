@@ -43,7 +43,7 @@ const FlippingText = ({ phrases }) => {
   }, [index]);
 
   return (
-    <div className="relative h-24 md:h-16 lg:h-28 flex items-start lg:items-center justify-center flex-wrap overflow-hidden font-bold text-center w-[92%] lg:w-[100%] mx-auto mt-2 lg:px-0 leading-10 px-6">
+    <div className="relative h-24 md:h-16 lg:h-36 flex items-start lg:items-center justify-center flex-wrap overflow-hidden font-bold text-center w-[92%] lg:w-[100%] mx-auto mt-2 lg:px-0 leading-10 px-6">
       <div
         ref={wordRef}
         className="absolute flex flex-wrap justify-center items-center gap-x-2"

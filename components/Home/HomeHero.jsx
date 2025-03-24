@@ -23,7 +23,7 @@ const words = [
 
 const HomeHero = () => {
   return (
-    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-[85vh] lg:h-[120vh] lg:gap-[25px] xl:h-[110vh] 2xl:h-[100vh] overflow-hidden">
+    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-[85vh] lg:h-[120vh] xl:h-[110vh] 2xl:h-[100vh] overflow-hidden">
       <h1 className="font-bold text-[34px] lg:text-[84px] 2xl:text-[100px] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
@@ -45,18 +45,18 @@ const HomeHero = () => {
           Succeed
         </span>
 
-        <div className="w-full relative -top-1.5 md:-top-3 2xl:top-2">
+        <div className="w-full relative -top-1.5 md:-top-3 lg:-top-9 2xl:top-2">
           <FlippingText phrases={words} />
         </div>
       </h1>
-      <div className="flex items-center justify-center gap-2 w-[95%] lg:w-[76%] relative -top-3 md:-top-6 2xl:top-4 padding-x">
+      <div className="flex items-center justify-center gap-2 w-[95%] lg:w-[76%] relative -top-3 md:-top-6 lg:-top-8 2xl:top-4 padding-x">
         <h2 className="text-base lg:text-[22px] 2xl:text-[26px] font-medium text-gray-500 text-center">
           Available in your Timezone, at Affordable Rates, with Full
           Transparency.
         </h2>
       </div>
 
-      <div className="flex items-center justify-center gap-4 mt-0 relative top-3 lg:-top-3 2xl:top-10 z-20">
+      <div className="flex items-center justify-center gap-4 mt-0 relative top-3 lg:-top-1 2xl:top-12 z-20 my-10">
         <ContactButton text={"Get a Free Consultation"} />
       </div>
       <div className="w-full h-[45%] xl:h-[40%] lg:h-[30%] 2xl:h-[55%] hidden lg:flex items-center justify-center relative z-0">

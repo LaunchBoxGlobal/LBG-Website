@@ -1,5 +1,4 @@
 "use client";
-import { MOBILE_APP_DEVELOPMENT_SERVICES } from "@/constants/mobile-app-development/MobileAppDevelopmentServices";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { IoArrowDownSharp } from "react-icons/io5";
@@ -16,12 +15,13 @@ const Services = () => {
     <section className="w-full pb-10 lg:pb-20 lg:pt-14 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Web App <br /> Development <span className="red-text">Services</span>
+          Custom Software Services <br /> Development{" "}
+          <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          We provide web app development services that solve real problems. As a
-          trusted web application service agency, we build apps that are simple,
-          reliable, and ready to grow with your business.
+          Custom software development services build solutions for your needs.
+          thoroughly tested and updated in response to user input. Together, we
+          can develop software that genuinely strengthens your company.
         </p>
       </section>
 
@@ -70,9 +70,6 @@ const Services = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="overflow-hidden w-full border-t pt-5 pb-5 lg:pb-0"
             >
-              <p className="text-base lg:text-[20px] font-bold mb-3 lg:w-[95%] px-5 lg:px-[10%] xl:px-[10.5%]">
-                {service?.subtitle}
-              </p>
               <p className="text-base lg:text-[20px] font-normal lg:w-[95%] px-5 lg:px-[10%] xl:px-[10.5%]">
                 {service?.description}
               </p>

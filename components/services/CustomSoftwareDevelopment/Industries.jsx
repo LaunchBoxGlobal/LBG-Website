@@ -57,12 +57,12 @@ const Industries = () => {
       </section>
 
       <section
-        className={`w-full relative overflow-hidden mt-10 lg:mt-16 h-[577px]`}
+        className={`w-full relative overflow-hidden mt-10 lg:mt-16 h-[447px]`}
       >
         <Swiper
           {...sliderSettings}
           modules={[Autoplay]}
-          className="overflow-hidden h-[577px] w-full"
+          className="overflow-hidden h-[447px] w-full"
           style={{ width: "100%", height: "100%" }}
         >
           {CUSTOM_SOFTWARE_INDUSTRIES?.map((value, index) => {
@@ -70,11 +70,11 @@ const Industries = () => {
             return (
               <SwiperSlide
                 key={index}
-                className="w-full h-[460px]"
+                className="w-full h-[300px]"
                 style={{ width: "100%" }}
               >
                 <div
-                  className="w-full rounded-xl p-6 bg-white min-h-[460px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+                  className="w-full rounded-xl p-6 bg-white min-h-[340px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
