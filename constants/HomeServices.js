@@ -55,7 +55,7 @@ export const HOME_SERVICES = [
       "Social Media Setup",
     ],
     alt_tag: "software development image",
-    pageUrl: "/",
+    pageUrl: "/services/custom-software-development-services",
   },
   {
     image: "/ecommerce-development-service.png",
