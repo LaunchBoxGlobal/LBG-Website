@@ -7,7 +7,7 @@ import React, { useState } from "react";
 const CustomDevelopmentJourney = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
-    <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
+    <section className="w-full padding-x pt-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="red-text text-[25px] font-semibold">Partner With Us</h2>
         <h3 className="section-heading w-full">
@@ -22,7 +22,7 @@ const CustomDevelopmentJourney = () => {
         </p>
       </section>
 
-      <section className="w-full mt-16 mb-28 flex flex-col lg:flex-row gap-y-6 items-center justify-center">
+      <section className="w-full my-10 lg:mt-16 lg:mb-28 flex flex-col lg:flex-row gap-y-10 items-center justify-center">
         {PARTNET_WITH_US.map((plan, i) => {
           // Determine if this card is hovered
           const isHovered = hoveredIndex === i;
