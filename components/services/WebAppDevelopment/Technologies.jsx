@@ -9,9 +9,10 @@ const Technologies = () => {
         <h2 className="section-heading text-center lg:w-[60%]">
           Tools We Use for <span className="red-text">Web Apps</span>
         </h2>
-        <p className="section-paragraph text-center lg:w-2/3 w-full">
-          We build web apps with tools like React, Node.js, and PostgreSQL.
-          Clean code, fast performance, and reliable results every time.
+        <p className="section-paragraph text-center lg:w-[78%] w-full">
+          From front-end frameworks to back-end solutions and databases, our
+          carefully selected tech stack ensures seamless functionality,
+          security, and efficiency for your business.
         </p>
       </section>
       <HomeTechnologiesSlider />

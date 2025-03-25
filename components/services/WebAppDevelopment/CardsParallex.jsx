@@ -1,12 +1,10 @@
 "use client";
-
 import { projects } from "@/constants/mobile-app-development/Projects";
 import Card from "./Card";
 import { useScroll } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { WEB_APP_PROJECTS } from "@/constants/web-app-dvelopment/WebAppProjects";
 import Cursor from "@/components/Global/Cursor";
-// import Lenis from "lenis";
 
 export default function CardsParallex() {
   const [isCursorHovering, setIsCursorHovering] = useState(false);
@@ -16,17 +14,6 @@ export default function CardsParallex() {
     offset: ["start start", "end end"],
   });
 
-  // useEffect(() => {
-  //   const lenis = new Lenis();
-
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-
-  //   requestAnimationFrame(raf);
-  // });
-
   return (
     <>
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center pt-10 lg:pt-20">
@@ -35,9 +22,9 @@ export default function CardsParallex() {
           <span className="red-text">Work</span>
         </h2>
         <p className="section-paragraph lg:w-[60%] text-center">
-          Explore real examples of web apps we’ve created using React, Node.js,
-          and PostgreSQL. We build apps that are fast, reliable, and solve real
-          problems.
+          Explore real examples of web apps we’ve built fast, reliable and
+          designed to solve problems. See how our web app development services
+          deliver results that matter.
         </p>
       </section>
       <main
