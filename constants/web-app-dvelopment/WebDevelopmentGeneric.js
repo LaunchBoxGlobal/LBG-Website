@@ -59,14 +59,4 @@ export const WEB_APP_DEVELOPMENT_GENERIC_APP = [
     iconWidth: "30",
     iconHeight: "32",
   },
-  {
-    title: "Real-Time Insights & Data-Driven Decisions",
-    titleBg: "#212121",
-    description:
-      "With built-in analytics and reporting tools, a custom web application provides valuable insights into user behavior, sales performance, and business operations. This allows for better decision-making and more effective strategy planning.",
-    descriptionBg: "#4E4D4F",
-    icon: "/data-driven-decisions.png",
-    iconWidth: "30",
-    iconHeight: "32",
-  },
 ];
