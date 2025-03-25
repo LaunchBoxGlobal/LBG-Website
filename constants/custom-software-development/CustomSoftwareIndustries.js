@@ -3,7 +3,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Health & Wellness",
     icon: "/health-wellness-icon.svg",
     description:
-      "Build a healthcare web app development solution for fitness and nutrition, designed to be simple, secure, and wearable-friendly, helping clients stay healthy while growing your wellness business.",
+      "Build a health and wellness app that makes staying fit and feeling good easy. From nutrition tracking to wearable-friendly features, we create secure and simple solutions that help your clients stay on top of their health while you grow your business. Let’s bring your vision to life!",
     redIcon: "/health-red-icon.png",
     whiteIcon: "/health-white-icon.png",
   },
@@ -11,7 +11,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Financial Services & Fintech",
     icon: "/fintech-icon.svg",
     description:
-      "Develop a secure, user-friendly fintech web app for banking, payments, and investments, ensuring seamless transactions, preventing fraud, and keeping customers happy while you scale your business.",
+      " Create smart and secure financial solutions built for the future. From seamless payments to powerful fintech apps, we design easy-to-use, reliable software that keeps transactions smooth and data safe.",
     redIcon: "/fintech-red-icon.png",
     whiteIcon: "/fintech-white-icon.png",
   },
@@ -19,7 +19,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "E-Learning",
     icon: "/real-state-icon.svg",
     description:
-      "Create engaging elearning web app development solutions for virtual classes, course management, and student tracking, simplifying learning, keeping users engaged, and helping your educational business grow effortlessly.",
+      "Turn learning into an engaging and seamless experience with custom e-learning solutions. From interactive courses to virtual classrooms, we build easy-to-use, secure, and scalable platforms that make education accessible anytime, anywhere. Let’s create the future of online learning!",
     redIcon: "/education-red-icon.webp",
     whiteIcon: "/education-white-icon.webp",
   },
@@ -27,7 +27,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Travel & Experiences",
     icon: "/travle-and-experience.svg",
     description:
-      "Design a travel web app development for bookings, local tours, and trip planning, making exploring easy, keeping travelers engaged, and allowing your business to thrive without tech hassles.",
+      "Create a travel web app that handles bookings, local tours, and trip planning with ease. Keep travelers interested, make exploring hassle-free, and help your business grow—without dealing with tech troubles.",
     redIcon: "/travel-red-icon.png",
     whiteIcon: "/travel-white-icon.png",
   },
@@ -35,7 +35,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Real Estate",
     icon: "/sports-icon.svg",
     description:
-      "Build a real estate web app for listings, virtual tours, and client management, streamlining deals, attracting buyers, and simplifying property transactions with ease.",
+      "Create a real estate web app for property listings, virtual tours, and client management. Make deals smoother, draw in buyers, and handle transactions without the usual complications.",
     redIcon: "/real-estate-red-icon.png",
     whiteIcon: "/real-estate-white-icon.png",
   },
@@ -43,7 +43,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Saas Marketing",
     icon: "/sports-icon.svg",
     description:
-      "Develop a scalable SaaS web app for subscriptions, user analytics, and automation, enhancing customer retention, optimizing sales, and simplifying management so you can focus on growth.",
+      "Build a flexible SaaS web app for subscriptions, user insights, and automation. Keep customers engaged, boost sales, and streamline management.so you can focus on growing your business.",
     redIcon: "/saas-marketing-red-icon.png",
     whiteIcon: "/saas-marketing-white-icon.png",
   },

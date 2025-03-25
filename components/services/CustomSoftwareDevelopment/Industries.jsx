@@ -50,10 +50,12 @@ const Industries = () => {
           Software Development Services for{" "}
           <span className="red-text"> Every Industry</span>
         </h2>
-        <p className="section-paragraph lg:w-[90%]">
-          We provide web application development services tailored to your
-          industry needs. From startups to enterprises, our web app developers
-          build fast, reliable, and user-friendly apps that solve real problems.
+        <p className="section-paragraph lg:w-[93%]">
+          Every industry has unique challenges, and we’re here to solve them.
+          From startups to enterprises, we build tailored software solutions
+          that drive efficiency, innovation, and growth. Whether you’re in
+          healthcare, finance, retail, or any other sector, we create technology
+          that works seamlessly for your business.
         </p>
       </section>
 

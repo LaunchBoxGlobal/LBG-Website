@@ -70,8 +70,8 @@ const CustomDevelopmentJourney = () => {
 
               {/* Link Button */}
               <Link
-                href="/"
-                className={`w-[149px] h-[46px] py-4 rounded-full flex items-center justify-center font-semibold text-base transition-all duration-300 ${
+                href="/contact-us"
+                className={`w-[149px] z-10 h-[46px] py-4 rounded-full flex items-center justify-center font-semibold text-base transition-all duration-300 ${
                   bgColor.includes("bg-white")
                     ? "bg-[#F40E00] text-white hover:bg-[#F40E00]"
                     : "bg-white text-[#F40E00] hover:bg-white"

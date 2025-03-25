@@ -25,7 +25,7 @@ const RecommendedWorkflow = () => {
         const cardRef = useRef(null);
         const isInView = useInView(cardRef, { once: true, margin: "-100px" });
         return (
-          <motion.div
+          <div
             className={`w-full lg:w-[490px] h-[243px] rounded-2xl flex flex-col py-6 px-10 items-start border gap-1 relative z-10 bg-white mb-5 ${
               index === 4
                 ? "lg:-top-20"
@@ -40,10 +40,10 @@ const RecommendedWorkflow = () => {
                 : `border-r-[17px] border-[#F40E00] lg:ml-auto top-0`
             }`}
             key={index}
-            ref={cardRef}
-            initial={{ opacity: 0.5, y: 0 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1, ease: "easeOut" }}
+            // ref={cardRef}
+            // initial={{ opacity: 0.5, y: 0 }}
+            // animate={isInView ? { opacity: 1, y: 0 } : {}}
+            // transition={{ duration: 1, ease: "easeOut" }}
           >
             <p className="font-medium text-base lg:text-[17px]">
               {plan?.tag_line}
@@ -61,7 +61,7 @@ const RecommendedWorkflow = () => {
                 index + 1
               }`}</span>
             </div>
-          </motion.div>
+          </div>
         );
       })}
     </section>

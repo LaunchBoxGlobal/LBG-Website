@@ -7,11 +7,13 @@ const Technologies = () => {
     <section className="w-full py-10 lg:pb-20 bg-[#ffff]" id="teckstack">
       <section className="w-full padding-x flex flex-col items-center justify-center gap-5 mb-12">
         <h2 className="section-heading text-center lg:w-[60%]">
-          Tools We Use for <span className="red-text">Web Apps</span>
+          Built with the Best <span className="red-text">Technologies</span>
         </h2>
-        <p className="section-paragraph text-center lg:w-2/3 w-full">
-          We build web apps with tools like React, Node.js, and PostgreSQL.
-          Clean code, fast performance, and reliable results every time.
+        <p className="section-paragraph text-center lg:w-[75%] w-full">
+          We leverage a modern tech stack to create scalable, secure, and
+          high-performance custom software. From intuitive front-end frameworks
+          to powerful back-end systems, our technologies ensure seamless
+          functionality and future-ready solutions.
         </p>
       </section>
       <HomeTechnologiesSlider />
