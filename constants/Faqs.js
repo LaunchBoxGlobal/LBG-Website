@@ -10,9 +10,9 @@ export const FAQS = [
       "Our UI/UX design team develops appealing, simple user interfaces that maintain user engagement. Not only is great design visually appealing, but it also solves issues and delivers results.",
   },
   {
-    question: "What industries do you specialize in?",
+    question: "How do I get started?",
     answer:
-      "Despite our flexibility, we are particularly strong in SaaS platforms, retail, healthcare, and hospitality.",
+      "Contact us for a consultation! We’ll discuss your project requirements, define core functionalities, and map out the development plan to bring your idea to life efficiently.",
   },
   {
     question: "How do you keep mobile apps and websites secure?",

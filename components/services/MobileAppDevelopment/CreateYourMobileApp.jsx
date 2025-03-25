@@ -10,8 +10,18 @@ const CreateYourMobileApp = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
 
   return (
-    <section className="w-full padding-x py-10 lg:py-28 mt-6" ref={ref}>
-      <section className="w-full h-[410px] rounded-lg bg-[#212121] relative group overflow-visible">
+    <section
+      className="w-full padding-x py-10 lg:py-28 mt-6 relative"
+      ref={ref}
+    >
+      <Image
+        src={"/create-your-mobile-app-map.png"}
+        alt="map image"
+        width={600}
+        height={410}
+        className="w-[70%] h-[90%] absolute inset-0 opacity-10 z-0"
+      />
+      <section className="w-full z-10 h-[410px] rounded-lg bg-[#212121] relative group overflow-visible">
         {/* Background Image */}
         <Image
           src={"/create-your-mobile-app-map.png"}

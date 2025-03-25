@@ -184,8 +184,8 @@ const HomeFooter = () => {
           height={142}
           className="w-full absolute z-0"
         /> */}
-        <p className="absolute z-0 inset-x-0 w-full text-center text-[8.4rem] -left-1 opacity-20 bottom-[-80%] flex whitespace-nowrap overflow-hidden uppercase font-extrabold">
-          launchbox pakistan
+        <p className="absolute z-0 inset-x-0 w-full text-center lg:text-[10rem] -left-1 opacity-10 bottom-[-80%] flex whitespace-nowrap overflow-hidden uppercase font-extrabold">
+          launchbox global
         </p>
         <p className="text-sm md:text-base font-semibold opacity-70 z-10">
           © 2025 LaunchBox Global. All Rights Reserved.

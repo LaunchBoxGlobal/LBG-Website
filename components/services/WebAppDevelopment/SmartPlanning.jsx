@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import AgileWorkflow from "../CustomSoftwareDevelopment/AgileWorkflow";
 import RecommendedWorkflow from "../CustomSoftwareDevelopment/RecommendedWorkflow";
 import WaterfallWorkflow from "../CustomSoftwareDevelopment/WaterfallWorkflow";
+import { WEB_DEVELOPMENT_RECOMMENDED_WORKFLOW } from "@/constants/web-app-dvelopment/WebAppRecommendedWorkflow";
+import { WEB_DEVELOPMENT_WATERFALL_WORKFLOW } from "@/constants/web-app-dvelopment/WebAppWaterfallWorkflow";
 
 const SmartPlanning = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -64,10 +66,10 @@ const SmartPlanning = () => {
         <AgileWorkflow workflow={WEB_APP_SMART_PLANNING} />
       )}
       {activeTab === "recommended" && (
-        <RecommendedWorkflow workflow={WEB_APP_SMART_PLANNING} />
+        <RecommendedWorkflow workflow={WEB_DEVELOPMENT_RECOMMENDED_WORKFLOW} />
       )}
       {activeTab === "waterfall" && (
-        <WaterfallWorkflow workflow={WEB_APP_SMART_PLANNING} />
+        <WaterfallWorkflow workflow={WEB_DEVELOPMENT_WATERFALL_WORKFLOW} />
       )}
 
       {/* <section className="w-full mt-10 lg:mt-20 lg:mb-10 relative">
