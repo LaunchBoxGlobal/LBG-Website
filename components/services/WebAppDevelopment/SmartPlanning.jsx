@@ -1,8 +1,13 @@
+"use client";
 import { WEB_APP_SMART_PLANNING } from "@/constants/web-app-dvelopment/WebAppSmartPlanning";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import AgileWorkflow from "../CustomSoftwareDevelopment/AgileWorkflow";
+import RecommendedWorkflow from "../CustomSoftwareDevelopment/RecommendedWorkflow";
+import WaterfallWorkflow from "../CustomSoftwareDevelopment/WaterfallWorkflow";
 
 const SmartPlanning = () => {
+  const [activeTab, setActiveTab] = useState("recommended");
   return (
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
@@ -17,7 +22,55 @@ const SmartPlanning = () => {
         </p>
       </section>
 
-      <section className="w-full mt-10 lg:mt-20 lg:mb-10 relative">
+      <div className="w-full flex justify-center mt-10">
+        <div className="w-full lg:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
+          <button
+            type="button"
+            onClick={() => setActiveTab("agile")}
+            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
+              activeTab === "agile"
+                ? "bg-[#F40E00] text-white"
+                : "bg-white text-gray-500"
+            }`}
+          >
+            AGILE
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("recommended")}
+            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
+              activeTab === "recommended"
+                ? "bg-[#F40E00] text-white"
+                : "bg-white text-gray-500"
+            }`}
+          >
+            recommended
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("waterfall")}
+            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
+              activeTab === "waterfall"
+                ? "bg-[#F40E00] text-white"
+                : "bg-white text-gray-500"
+            }`}
+          >
+            Waterfall
+          </button>
+        </div>
+      </div>
+
+      {activeTab === "agile" && (
+        <AgileWorkflow workflow={WEB_APP_SMART_PLANNING} />
+      )}
+      {activeTab === "recommended" && (
+        <RecommendedWorkflow workflow={WEB_APP_SMART_PLANNING} />
+      )}
+      {activeTab === "waterfall" && (
+        <WaterfallWorkflow workflow={WEB_APP_SMART_PLANNING} />
+      )}
+
+      {/* <section className="w-full mt-10 lg:mt-20 lg:mb-10 relative">
         <Image
           src={"/smart-planning-line.png"}
           width={1175}
@@ -31,7 +84,6 @@ const SmartPlanning = () => {
           className="object-contain absolute bottom-[0.3%] right-[27%] w-[219px] h-[221px] hidden lg:block"
         />
         {WEB_APP_SMART_PLANNING?.map((plan, index) => {
-          // Logic to alternate between left and right
           const isLeft = index % 2 === 0;
           return (
             <div
@@ -69,7 +121,7 @@ const SmartPlanning = () => {
             </div>
           );
         })}
-      </section>
+      </section> */}
     </section>
   );
 };

@@ -1,11 +1,8 @@
 "use client";
-import { SMART_PLANNING } from "@/constants/mobile-app-development/SmartPlanning";
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
 import Image from "next/image";
-import { WATERFALL_WORKFLOW } from "@/constants/custom-software-development/WaterfallWorkflow";
 
-const WaterfallWorkflow = () => {
+const WaterfallWorkflow = ({ workflow }) => {
   return (
     <section className="w-full mt-10 lg:mt-20 lg:mb-10 relative">
       <Image
@@ -20,10 +17,8 @@ const WaterfallWorkflow = () => {
         height={221}
         className="object-contain absolute bottom-[0.3%] right-[27%] w-[219px] h-[221px] hidden lg:block"
       />
-      {WATERFALL_WORKFLOW?.map((plan, index) => {
+      {workflow?.map((plan, index) => {
         const isLeft = index % 2 === 0;
-        const cardRef = useRef(null);
-        const isInView = useInView(cardRef, { once: true, margin: "-100px" });
         return (
           <div
             className={`w-full lg:w-[490px] h-[243px] rounded-2xl flex flex-col py-6 px-10 items-start border gap-1 relative z-10 bg-white mb-5 ${
@@ -40,10 +35,6 @@ const WaterfallWorkflow = () => {
                 : `border-r-[17px] border-[#F40E00] lg:ml-auto top-0`
             }`}
             key={index}
-            // ref={cardRef}
-            // initial={{ opacity: 0.5, y: 0 }}
-            // animate={isInView ? { opacity: 1, y: 0 } : {}}
-            // transition={{ duration: 1, ease: "easeOut" }}
           >
             <p className="font-medium text-base lg:text-[17px]">
               {plan?.tag_line}
