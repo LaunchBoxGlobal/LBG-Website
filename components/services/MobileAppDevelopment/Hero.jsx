@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="w-full relative mb-20 lg:mb-40 overflow-x-hidden">
       <section className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden">
         <p className="text-xl font-bold red-text">Your Reliable Partner</p>
-        <h1 className="font-bold text-[34px] lg:text-[54px] xl:text-[84px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] xl:leading-[104px] 2xl:leading-[104px] w-full">
+        <h1 className="font-bold text-[34px] lg:text-[84px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[84px] xl:leading-[104px] 2xl:leading-[104px] w-full">
           Mobile App Development Company that{" "}
           <span className="red-text">Fuels Growth</span>
           {/* <span className="relative inline-flex align-baseline text-center min-w-fit">
