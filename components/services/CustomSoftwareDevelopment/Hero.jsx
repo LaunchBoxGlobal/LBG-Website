@@ -23,7 +23,7 @@ const Hero = () => {
         </h1>
 
         {/* <span className="red-text">Deliver </span> */}
-        <p className="text-base lg:text-[22px] 2xl:text-[26px] my-2 font-medium text-gray-500 text-center lg:w-[75%] leading-8">
+        <p className="text-base lg:text-[22px] 2xl:text-[26px] my-2 font-medium text-gray-500 text-center lg:w-[75%] leading-6 lg:leading-8">
           Smart software starts with functionality. As a leading software
           development company, we build solutions that integrate seamlessly,
           scale effortlessly, and adapt with the agility your business demands.

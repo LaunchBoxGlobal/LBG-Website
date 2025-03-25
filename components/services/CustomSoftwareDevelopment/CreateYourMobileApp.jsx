@@ -23,7 +23,7 @@ const CreateYourMobileApp = () => {
 
         {/* Text Section */}
         <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] pl-4 lg:px-16">
-          <h2 className="font-bold text-[36px] lg:text-[50px] lg:leading-[52px]">
+          <h2 className="font-bold text-[36px] lg:text-[50px] leading-[2.7rem] lg:leading-[52px]">
             Tired of Software That Doesn’t Fit? <br /> Let’s Fix That.
           </h2>
           <p className="text-lg lg:text-[22px] font-light">
