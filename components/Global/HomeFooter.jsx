@@ -6,7 +6,7 @@ import FooterLocations from "./FooterLocations";
 
 const HomeFooter = () => {
   return (
-    <footer className="w-full pt-12 pb-6 lg:pt-20 bg-black text-white">
+    <footer className="w-full pt-12 pb-6 lg:pt-20 bg-black text-white overflow-hidden">
       <section className="w-full padding-x">
         <section className="flex flex-col lg:flex-row items-start justify-between gap-4">
           <div className="w-full lg:w-[80%] py-4 lg:py-0 lg:h-[196px] bg-[#3D3C3F] rounded-full overflow-hidden flex items-center justify-center relative">
@@ -177,20 +177,24 @@ const HomeFooter = () => {
       </section>
 
       <section className="w-full flex flex-col items-center gap-5 justify-center mt-10 lg:mt-16 relative">
-        <Image
+        {/* <Image
           src={"/footer-lb-image.png"}
           alt="footer-lb-image"
           width={1919}
           height={142}
           className="w-full absolute z-0"
-        />
+        /> */}
+        <p className="absolute z-0 inset-x-0 w-full text-center text-[8.4rem] -left-1 opacity-20 bottom-[-80%] flex whitespace-nowrap overflow-hidden uppercase font-extrabold">
+          launchbox pakistan
+        </p>
         <p className="text-sm md:text-base font-semibold opacity-70 z-10">
           © 2025 LaunchBox Global. All Rights Reserved.
         </p>
 
         <div className="flex items-center justify-end gap-3 z-10">
           <Link
-            href={"/"}
+            href={"/https://www.facebook.com/"}
+            target="_blank"
             className="w-[35px] h-[35px] md:w-[45px] md:h-[45px] flex items-center justify-center rounded-full border border-gray-600"
           >
             <RiFacebookFill className="text-white w-[16.96px] h-[21.35px]" />

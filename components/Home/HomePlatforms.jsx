@@ -137,8 +137,6 @@ const HomePlatforms = () => {
                   height={platform?.height}
                   alt={platform?.title}
                   className={`w-[20px] h-[18px] object-contain`}
-
-                  // style={{ width: platform?.width, height: platform?.height }}
                 />
                 <strong className="uppercase font-bold text-[#545454] text-xs lg:text-[20px] opacity-60">
                   {platform?.title}

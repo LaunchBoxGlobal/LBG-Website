@@ -7,25 +7,6 @@ import { TECH_STACK } from "@/constants/techStack";
 const TechSlider2 = () => {
   const marqueeRef = useRef(null);
 
-  // useEffect(() => {
-  //   const marquee = marqueeRef.current;
-  //   if (!marquee) return;
-
-  //   // Get the total width of the content
-  //   const totalWidth = marquee.scrollWidth;
-
-  //   // GSAP animation for continuous left-to-right scrolling
-  //   gsap.to(marquee, {
-  //     x: totalWidth, // Move the content to the right
-  //     duration: 30, // Adjust the scroll speed
-  //     ease: "linear", // Continuous, smooth scrolling
-  //     repeat: -1, // Infinite repeat
-  //     modifiers: {
-  //       x: gsap.utils.wrap(0, totalWidth), // Wrap the animation for seamless looping
-  //     },
-  //   });
-  // }, []);
-
   useEffect(() => {
     const marquee = marqueeRef.current;
     if (!marquee) return;

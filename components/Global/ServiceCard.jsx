@@ -65,7 +65,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="relative flex items-start justify-start overflow-hidden w-full pl-0.5 mt-2 md:mt-4"
           >
-            <div className="w-full lg:w-[70%] border-t py-4 flex flex-col items-start gap-2">
+            <div className="w-full lg:w-[90%] border-t py-4 flex flex-col items-start gap-2">
               <p className="text-white text-start text-lg font-light">
                 {service?.desc}
               </p>

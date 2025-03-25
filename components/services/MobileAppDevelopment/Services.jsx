@@ -5,15 +5,18 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { IoArrowDownSharp } from "react-icons/io5";
 import Link from "next/link";
+import ServiceCard from "@/components/Global/ServiceCard";
 
 const Services = () => {
   const [openFaq, setOpenFaq] = useState(null);
+
+  const [modal, setModal] = useState({ active: false, index: 0 });
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
   return (
-    <section className="w-full pb-10 lg:py-20 padding-x">
+    <section className="w-full pb-10 lg:pb-20 lg:pt-10 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
           Mobile App <br /> Development{" "}
@@ -28,7 +31,21 @@ const Services = () => {
         </p>
       </section>
 
-      <section
+      <section className="w-full flex flex-col flex-wrap items-start justify-center gap-y-4 mt-8 lg:mt-24 overflow-y-visible">
+        {MOBILE_APP_DEVELOPMENT_SERVICES?.map((service, index) => (
+          <ServiceCard
+            service={service}
+            index={index}
+            key={index}
+            setModal={setModal}
+            openFaq={openFaq}
+            setOpenFaq={setOpenFaq}
+            toggleFaq={toggleFaq}
+          />
+        ))}
+      </section>
+
+      {/* <section
         id="faqs"
         className="w-full mt-10 flex flex-col items-start lg:w-[90%] mx-auto"
       >
@@ -73,9 +90,6 @@ const Services = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="overflow-hidden w-full border-t pt-5 pb-5 lg:pb-0"
             >
-              {/* <p className="text-base lg:text-[20px] font-bold mb-3 lg:w-[95%] px-5 lg:px-[10%] xl:px-[10.5%]">
-                {service?.subtitle}
-              </p> */}
               <p className="text-base lg:text-[20px] font-normal lg:w-[95%] px-5 lg:px-[10%] xl:px-[10.5%]">
                 {service?.description}
               </p>
@@ -91,7 +105,7 @@ const Services = () => {
             </motion.div>
           </div>
         ))}
-      </section>
+      </section> */}
     </section>
   );
 };

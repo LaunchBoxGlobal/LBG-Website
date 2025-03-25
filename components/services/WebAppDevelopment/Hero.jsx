@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import ImageSlider from "./ImageSlider";
-import FlipText from "@/components/Global/FlipText";
 
 const phrases = [
   "Empower Startups",
@@ -15,7 +13,7 @@ const Hero = () => {
   return (
     <section className="w-full relative mb-10 lg:mb-40 overflow-x-hidden">
       <section className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-1 bg-white overflow-hidden">
-        <p className="text-xl font-bold red-text">Your Success Partner In</p>
+        <p className="text-xl font-bold red-text">Your Success Partner</p>
         <h1 className="font-bold text-[34px] lg:text-[84px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[84px] xl:leading-[104px] 2xl:leading-[104px] w-[100%]">
           Web App Development Services that{" "}
           <span className="red-text">Drive Results</span>

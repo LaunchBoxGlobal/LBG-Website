@@ -6,14 +6,12 @@ import HomePortfolio from "./HomePortfolio";
 import HomeTech from "./HomeTech";
 import HomeIdeaToLaunch from "./HomeIdeaToLaunch";
 import HomeCustomerReviews from "./HomeCustomerReviews";
-import HomeTeamSection from "./HomeTeamSection";
 import HomeValueProposition from "./HomeValueProposition";
 import HomeFaqs from "./HomeFaqs";
 import HomeComparison from "./HomeComparison";
 import FlagsSection from "./FlagsSection";
 import Process from "./Process";
 import HomeStats from "./HomeStats";
-import CountryAnimation from "./CountryAnimation";
 
 const HomePage = () => {
   return (
@@ -27,11 +25,9 @@ const HomePage = () => {
       {/* <HomePortfolio /> */}
       <HomeTech />
       <HomeStats />
-      {/* <HomeStats /> */}
       <HomeCustomerReviews />
       <div className="w-full">
         <FlagsSection />
-        {/* <CountryAnimation /> */}
       </div>
       <HomeFaqs />
     </main>

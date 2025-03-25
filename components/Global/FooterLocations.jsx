@@ -30,7 +30,7 @@ const FooterLocations = () => {
               location === "Dubai" && "bg-[#F40E00] text-white"
             }`}
           >
-            DXB
+            UAE
           </button>
           <button
             type="button"

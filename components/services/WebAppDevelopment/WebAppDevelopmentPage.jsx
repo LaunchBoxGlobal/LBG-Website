@@ -12,6 +12,7 @@ import Industries from "./Industries";
 import MobileAppDevContactForm from "./MobileAppDevContactForm";
 import CardsParallex from "./CardsParallex";
 import Technologies from "./Technologies";
+import GenericSoftware from "./GenericSoftware";
 
 const WebAppDevelopmentPage = () => {
   return (
@@ -22,6 +23,7 @@ const WebAppDevelopmentPage = () => {
       <Services />
       <CardsParallex />
       <Industries />
+      <GenericSoftware />
       <CreateYourMobileApp />
       <Benefits />
       <SmartPlanning />

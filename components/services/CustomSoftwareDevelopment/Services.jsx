@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import { IoArrowDownSharp } from "react-icons/io5";
 import Link from "next/link";
 import { CUSTOM_SOFTWARE_SERVICES } from "@/constants/custom-software-development/CustomSoftwareServices";
+import ServiceCard from "@/components/Global/ServiceCard";
 
 const Services = () => {
   const [openFaq, setOpenFaq] = useState(null);
+  const [modal, setModal] = useState({ active: false, index: 0 });
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -25,7 +27,21 @@ const Services = () => {
         </p>
       </section>
 
-      <section
+      <section className="w-full flex flex-col flex-wrap items-start justify-center gap-y-4 mt-8 lg:mt-24 overflow-y-visible">
+        {CUSTOM_SOFTWARE_SERVICES?.map((service, index) => (
+          <ServiceCard
+            service={service}
+            index={index}
+            key={index}
+            setModal={setModal}
+            openFaq={openFaq}
+            setOpenFaq={setOpenFaq}
+            toggleFaq={toggleFaq}
+          />
+        ))}
+      </section>
+
+      {/* <section
         id="faqs"
         className="w-full mt-10 flex flex-col items-start lg:w-[90%] mx-auto"
       >
@@ -85,7 +101,7 @@ const Services = () => {
             </motion.div>
           </div>
         ))}
-      </section>
+      </section> */}
     </section>
   );
 };

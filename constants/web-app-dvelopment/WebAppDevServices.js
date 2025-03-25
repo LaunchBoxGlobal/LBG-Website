@@ -1,50 +1,58 @@
 export const WEB_APP_DEVELOPMENT_SERVICES = [
   {
-    title: "Progressive Web App Development Services",
+    title: "PWA Development Services",
     subtitle: "Are you struggling with hard to use websites?",
-    description:
-      "Progressive Web App Development focuses on building fast, reliable, and engaging web applications that work seamlessly across all devices. Our progressive web app development services ensure offline accessibility, push notifications, and a smooth user experience. Choosing this solution enhances performance, improves user engagement, and reaches a wider audience.",
+    image: "/pwa-web-development-service-image.png",
+    pageUrl: "/",
+    desc: "Progressive Web App Development focuses on building fast, reliable, and engaging web applications that work seamlessly across all devices. Our progressive web app development services ensure offline accessibility, push notifications, and a smooth user experience. Choosing this solution enhances performance, improves user engagement, and reaches a wider audience.",
   },
   {
     title: "Custom Web App Development",
     subtitle: "",
-    description:
-      "Custom Web Application development focuses on building tailored solutions that meet your unique business needs. Our custom web application development solution ensures scalable, secure, and high-performance applications with seamless functionality. By choosing this solution, you improve efficiency, streamline operations, and enhance user experience.",
+    image: "/custom-web-development-service-image.png",
+    pageUrl: "/",
+    desc: "Custom Web Application development focuses on building tailored solutions that meet your unique business needs. Our custom web application development solution ensures scalable, secure, and high-performance applications with seamless functionality. By choosing this solution, you improve efficiency, streamline operations, and enhance user experience.",
   },
   {
     title: "Single Page Web App Development",
     subtitle: "",
-    description:
-      "Single-Page Web App development focuses on creating fast, dynamic, and seamless web applications that load content without refreshing the page. We design high-performing SPAs with smooth navigation, responsive layouts, and enhanced user experience. By choosing this solution, you improve speed, boost engagement, and optimize performance across all devices.",
+    image: "/single-web-development-service-image.png",
+    pageUrl: "/",
+    desc: "Single-Page Web App development focuses on creating fast, dynamic, and seamless web applications that load content without refreshing the page. We design high-performing SPAs with smooth navigation, responsive layouts, and enhanced user experience. By choosing this solution, you improve speed, boost engagement, and optimize performance across all devices.",
   },
   {
     title: "Web Portal Development",
     subtitle: "",
-    description:
-      "Web Portal development focuses on creating secure, interactive, and user-friendly platforms for businesses and organizations. Our web portal development services provide customized solutions for seamless data management, collaboration, and customer engagement. By choosing this solution, you enhance accessibility, improve efficiency, and streamline operations.",
+    image: "/web-portal-development-service-image.png",
+    pageUrl: "/",
+    desc: "Web Portal development focuses on creating secure, interactive, and user-friendly platforms for businesses and organizations. Our web portal development services provide customized solutions for seamless data management, collaboration, and customer engagement. By choosing this solution, you enhance accessibility, improve efficiency, and streamline operations.",
   },
   {
     title: "Enterprise Web App Development",
     subtitle: "",
-    description:
-      "Enterprise Web Apps are powerful, scalable solutions designed to streamline business operations and enhance productivity. Our enterprise web app development solution ensures secure, high-performance applications tailored to your organization’s needs. By choosing this solution, you improve efficiency, automate processes, and support business growth.",
+    image: "/enterprise-web-app-development-service-image.png",
+    pageUrl: "/",
+    desc: "Enterprise Web Apps are powerful, scalable solutions designed to streamline business operations and enhance productivity. Our enterprise web app development solution ensures secure, high-performance applications tailored to your organization’s needs. By choosing this solution, you improve efficiency, automate processes, and support business growth.",
   },
   {
     title: "Cross Platform Web App Development",
     subtitle: "",
-    description:
-      "Our cross-platform mobile web app development services create apps that run smoothly on multiple devices and operating systems. We design and develop responsive, high-performance applications to ensure a seamless user experience. By choosing our services, you reach a wider audience, reduce development costs, and improve efficiency.",
+    image: "/cross-platform-weba-app-development-service-image.png",
+    pageUrl: "/",
+    desc: "Our cross-platform mobile web app development services create apps that run smoothly on multiple devices and operating systems. We design and develop responsive, high-performance applications to ensure a seamless user experience. By choosing our services, you reach a wider audience, reduce development costs, and improve efficiency.",
   },
   {
-    title: "Ecommerce Web Application Development",
+    title: "Ecommerce Web App Development",
     subtitle: "",
-    description:
-      "A web app ecommerce solution allows businesses to sell products online through a secure and user-friendly platform. We develop feature-rich applications with seamless navigation, fast checkout, and mobile responsiveness. By choosing our solution, you enhance customer experience, increase sales, and expand your online reach.",
+    image: "/ecommerce-web-app-development-service-image.png",
+    pageUrl: "/",
+    desc: "A web app ecommerce solution allows businesses to sell products online through a secure and user-friendly platform. We develop feature-rich applications with seamless navigation, fast checkout, and mobile responsiveness. By choosing our solution, you enhance customer experience, increase sales, and expand your online reach.",
   },
   {
     title: "Web App Consultation",
     subtitle: "",
-    description:
-      "Our Web App Consultation helps your businesses plan, strategize, and optimize their web applications for better performance and scalability. Our web app consulting solution provides expert guidance on technology selection, architecture design, and development best practices. By choosing this solution, you reduce risks, improve efficiency, and ensure long-term success.",
+    image: "/consultation-web-app-development-service-image.png",
+    pageUrl: "/",
+    desc: "Our Web App Consultation helps your businesses plan, strategize, and optimize their web applications for better performance and scalability. Our web app consulting solution provides expert guidance on technology selection, architecture design, and development best practices. By choosing this solution, you reduce risks, improve efficiency, and ensure long-term success.",
   },
 ];

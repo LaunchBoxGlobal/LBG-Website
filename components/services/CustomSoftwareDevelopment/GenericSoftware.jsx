@@ -1,7 +1,7 @@
 "use client";
 import { GENERIC_SOFTWARE_CONTENT } from "@/constants/custom-software-development/GenericSoftwareContent";
 import Image from "next/image";
-import { useInView, motion, useTransform, useScroll } from "framer-motion";
+import { motion, useTransform, useScroll } from "framer-motion";
 import React, { useRef } from "react";
 
 const GenericSoftware = () => {

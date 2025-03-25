@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import MobileImageSlider from "./MobileImageSlider";
-import FlipText from "@/components/Global/FlipText";
 
 const phrases = ["Delivers Results", "Fuels Growth", "Ensures Reliability"];
 
