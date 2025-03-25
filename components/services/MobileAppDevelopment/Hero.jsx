@@ -1,5 +1,4 @@
 import React from "react";
-import HeroAnimation from "./HeroAnimation";
 import Link from "next/link";
 import Image from "next/image";
 import MobileImageSlider from "./MobileImageSlider";
@@ -11,16 +10,13 @@ const Hero = () => {
   return (
     <section className="w-full relative mb-20 lg:mb-40 overflow-x-hidden">
       <section className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden">
-        {/* <h1 className="font-bold text-[34px] lg:text-[64px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-[100%]">
-          Reliable Mobile App Development Company for{" "}
-          <span className="red-text">Your Business</span>
-        </h1> */}
         <p className="text-xl font-bold red-text">Your Reliable Partner</p>
-        <h1 className="font-bold text-[34px] lg:text-[54px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-full">
-          Mobile App Development Company That{" "}
-          <span className="relative inline-flex align-baseline text-center min-w-fit">
+        <h1 className="font-bold text-[34px] lg:text-[54px] xl:text-[84px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] xl:leading-[104px] 2xl:leading-[104px] w-full">
+          Mobile App Development Company that{" "}
+          <span className="red-text">Fuels Growth</span>
+          {/* <span className="relative inline-flex align-baseline text-center min-w-fit">
             <FlipText phrases={phrases} />
-          </span>
+          </span> */}
         </h1>
         <p className="text-base lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center lg:w-[70%] leading-8">
           Expert Mobile App Development services tailored to create
@@ -36,7 +32,6 @@ const Hero = () => {
         </div>
       </section>
       <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
-        {/* <HeroAnimation /> */}
         <MobileImageSlider />
       </div>
       <Image

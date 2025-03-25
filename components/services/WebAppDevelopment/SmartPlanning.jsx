@@ -1,4 +1,4 @@
-import { SMART_PLANNING } from "@/constants/mobile-app-development/SmartPlanning";
+import { WEB_APP_SMART_PLANNING } from "@/constants/web-app-dvelopment/WebAppSmartPlanning";
 import Image from "next/image";
 import React from "react";
 
@@ -30,7 +30,7 @@ const SmartPlanning = () => {
           height={221}
           className="object-contain absolute bottom-[0.3%] right-[27%] w-[219px] h-[221px] hidden lg:block"
         />
-        {SMART_PLANNING?.map((plan, index) => {
+        {WEB_APP_SMART_PLANNING?.map((plan, index) => {
           // Logic to alternate between left and right
           const isLeft = index % 2 === 0;
           return (

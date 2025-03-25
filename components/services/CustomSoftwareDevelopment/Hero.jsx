@@ -14,7 +14,7 @@ const Hero = () => {
     <section className="w-full relative overflow-x-hidden">
       <div className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden">
         <p className="text-xl font-bold red-text">Powering Innovation with</p>
-        <h1 className="font-bold text-[34px] lg:text-[54px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-full">
+        <h1 className="font-bold text-[34px] lg:text-[54px] xl:text-[84px] 2xl:text-[100px] text-center tracking-normal leading-10 lg:leading-[64px] 2xl:leading-[104px] w-full">
           Custom Software Development That Delivers{" "}
           <span className="relative inline-flex align-baseline text-center min-w-fit">
             <FlipText phrases={phrases} />

@@ -41,7 +41,7 @@ const Navbar = () => {
           width={180}
           height={45.73}
           alt="launchbox global logo"
-          className="w-[188px] lg:w-[182px] 2xl:w-[220px] h-[35px] 2xl:h-[40px] block"
+          className="w-[188px] lg:w-[152px] lg:h-auto xl:w-[182px] 2xl:w-[220px] h-[35px] 2xl:h-[40px] block"
         />
         {/* <Image
           src={`/lb-logo-mobile.png`}
@@ -51,14 +51,14 @@ const Navbar = () => {
           className="w-[40px] lg:hidden"
         /> */}
         <div className="border border-[#CECEEA] w-[0.5px] h-[27px] opacity-50 hidden lg:block" />
-        <span className="text-xs 2xl:text-sm font-[300] lg:leading-[14px] 2xl:leading-[14px] hidden lg:block">
+        <span className="text-xs font-light lg:leading-[12px] xl:leading-[14px] hidden lg:block">
           <strong>
             Trusted Talent, <br /> Anywhere, Anytime.
           </strong>
         </span>
       </Link>
 
-      <ul className="hidden xl:flex items-center justify-center gap-x-10 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
+      <ul className="hidden lg:flex items-center justify-center gap-x-10 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
         <li>
           <Link
             href={`/`}
@@ -113,7 +113,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="hidden xl:flex items-center justify-center gap-4">
+      <div className="hidden lg:flex items-center justify-center gap-4">
         {/* <Link
           href={`/`}
           className="flex items-center justify-end gap-1 outline-none font-medium text-[16px] 2xl:text-[18px]"
@@ -133,7 +133,7 @@ const Navbar = () => {
         type="button"
         name="sidebar menu button"
         onClick={toggleSidebar}
-        className="xl:hidden mr-3"
+        className="lg:hidden mr-3"
       >
         <TbMenu2 className="text-2xl text-[#F40E00]" />
       </button>

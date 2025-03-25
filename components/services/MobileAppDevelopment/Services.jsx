@@ -20,9 +20,11 @@ const Services = () => {
           <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Mobile app development services create apps for your needs. Tested on
-          real devices, with updates based on user feedback. Let’s make an app
-          that truly helps your business.
+          We build apps that solve real-world problems and keep users coming
+          back. Our mobile app development services focus on simple designs,
+          fast performance, and updates that make sense. We work with you to
+          create apps that grow as you do. Let’s make an app that truly works
+          for your goals.
         </p>
       </section>
 
@@ -71,10 +73,10 @@ const Services = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="overflow-hidden w-full border-t pt-5 pb-5 lg:pb-0"
             >
-              <p className="text-base lg:text-[20px] font-bold mb-3 lg:w-[75%] px-5 lg:px-[10%] xl:px-[10.5%]">
+              {/* <p className="text-base lg:text-[20px] font-bold mb-3 lg:w-[95%] px-5 lg:px-[10%] xl:px-[10.5%]">
                 {service?.subtitle}
-              </p>
-              <p className="text-base lg:text-[20px] font-normal lg:w-[75%] px-5 lg:px-[10%] xl:px-[10.5%]">
+              </p> */}
+              <p className="text-base lg:text-[20px] font-normal lg:w-[95%] px-5 lg:px-[10%] xl:px-[10.5%]">
                 {service?.description}
               </p>
 

@@ -52,9 +52,10 @@ const Industries = () => {
           <span className="red-text">Mobile App Development</span> Company
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Our mobile app development company builds apps that solve real
-          industry challenges. We focus on clear features, smooth performance,
-          and updates that fit your needs. Let’s create apps that truly work.
+          We’re a mobile app development company focused on your industry’s
+          unique needs healthcare, retail, finance or more. We build apps that
+          solve daily challenges, keep users engaged, and make your business
+          grow.
         </p>
       </section>
 

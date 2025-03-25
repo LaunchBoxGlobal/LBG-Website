@@ -3,6 +3,7 @@ import { SMART_PLANNING } from "@/constants/mobile-app-development/SmartPlanning
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { CUSTOM_SOFTWARE_SMART_PLANNING } from "@/constants/custom-software-development/CustomSoftwareSmartPlanning";
 
 const AgileWorkflow = () => {
   return (
@@ -19,7 +20,7 @@ const AgileWorkflow = () => {
         height={221}
         className="object-contain absolute bottom-[0.3%] right-[27%] w-[219px] h-[221px] hidden lg:block"
       />
-      {SMART_PLANNING?.map((plan, index) => {
+      {CUSTOM_SOFTWARE_SMART_PLANNING?.map((plan, index) => {
         const isLeft = index % 2 === 0;
         const cardRef = useRef(null);
         const isInView = useInView(cardRef, { once: true, margin: "-100px" });

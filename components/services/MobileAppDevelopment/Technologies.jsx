@@ -13,9 +13,10 @@ const Technologies = () => {
             Smart Technology for Better{" "}
             <span className="red-text">Solution</span>
           </h2>
-          <p className="section-paragraph text-center lg:w-2/3 w-full">
-            You get the best tools and technologies to build fast, secure, and
-            reliable software that fits your business perfectly.
+          <p className="section-paragraph text-center lg:w-[70%] w-full">
+            Great apps need the right tools. As a mobile app development
+            company, the best technologies are used to build apps that run fast,
+            work smoothly, and last long.
           </p>
         </section>
         <HomeTechnologiesSlider />
