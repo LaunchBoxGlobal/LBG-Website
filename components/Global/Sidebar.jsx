@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 const Sidebar = ({ onclick }) => {
   return (
     <div
-      className={`w-[50%] h-auto bg-white custom-shadow rounded-xl float-end mr-4`}
+      className={`w-[50%] md:w-[30%] h-auto bg-white custom-shadow rounded-xl float-end mr-4`}
     >
       <ul className="flex flex-col items-start w-full justify-center gap-4 py-5 px-7">
         <li>
