@@ -10,7 +10,7 @@ const FooterLocations = () => {
   return (
     <div className="flex flex-col items-start gap-4">
       <h3 className="text-sm lg:text-[18px] font-bold uppercase">
-        Areas We Serve
+        Serving Businesses Worldwide
       </h3>
       <div className="">
         <div className="h-[48px] bg-[#2D2D2E] rounded-full p-1 flex items-start gap-0 lg:gap-1 flex-wrap">
@@ -48,7 +48,7 @@ const FooterLocations = () => {
               location === "Canada" && "bg-[#F40E00] text-white"
             }`}
           >
-            CAN
+            CA
           </button>
           <button
             type="button"

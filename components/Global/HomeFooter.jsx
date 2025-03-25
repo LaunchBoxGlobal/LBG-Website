@@ -177,16 +177,13 @@ const HomeFooter = () => {
       </section>
 
       <section className="w-full flex flex-col items-center gap-5 justify-center mt-10 lg:mt-16 relative">
-        {/* <Image
+        <Image
           src={"/footer-lb-image.png"}
           alt="footer-lb-image"
           width={1919}
           height={142}
-          className="w-full absolute z-0"
-        /> */}
-        <p className="absolute z-0 inset-x-0 w-full text-center lg:text-[10rem] -left-1 opacity-10 bottom-[-80%] flex whitespace-nowrap overflow-hidden uppercase font-extrabold">
-          launchbox global
-        </p>
+          className="w-full absolute z-0 -bottom-2"
+        />
         <p className="text-sm md:text-base font-semibold opacity-70 z-10">
           © 2025 LaunchBox Global. All Rights Reserved.
         </p>
