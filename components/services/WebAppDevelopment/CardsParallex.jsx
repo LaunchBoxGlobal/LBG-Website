@@ -1,19 +1,8 @@
 "use client";
-import { projects } from "@/constants/mobile-app-development/Projects";
-import Card from "./Card";
-import { useScroll } from "framer-motion";
-import { useRef, useState } from "react";
 import { WEB_APP_PROJECTS } from "@/constants/web-app-dvelopment/WebAppProjects";
-import Cursor from "@/components/Global/Cursor";
+import PortfolioParallexCards from "@/components/Common/PortfolioParallexCards";
 
 export default function CardsParallex() {
-  const [isCursorHovering, setIsCursorHovering] = useState(false);
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start start", "end end"],
-  });
-
   return (
     <>
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center pt-10 lg:pt-20">
@@ -27,26 +16,7 @@ export default function CardsParallex() {
           deliver results that matter.
         </p>
       </section>
-      <main
-        ref={container}
-        className={"styles.main w-full relative lg:mt-[10vh] padding-x"}
-      >
-        {WEB_APP_PROJECTS.map((project, i) => {
-          const targetScale = 1 - (projects.length - i) * 0.05;
-          return (
-            <Card
-              key={`p_${i}`}
-              i={i}
-              {...project}
-              progress={scrollYProgress}
-              range={[i * 0.25, 1]}
-              targetScale={targetScale}
-              setIsHovering={setIsCursorHovering}
-            />
-          );
-        })}
-        <Cursor isHovering={isCursorHovering} />
-      </main>
+      <PortfolioParallexCards projects={WEB_APP_PROJECTS} />
     </>
   );
 }

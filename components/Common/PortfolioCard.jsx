@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 const CursorImage = "/portfolio-cursor-image.png";
 
-const Card = ({
+const PortfolioCard = ({
   i,
   title,
   description,
@@ -50,8 +50,10 @@ const Card = ({
   return (
     <div
       ref={container}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
       className={
-        "group w-full h-[80vh] lg:h-[700px] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-10"
+        "group w-full h-[80vh] lg:h-[695px] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-0 cardContainer"
       }
     >
       <motion.div
@@ -62,21 +64,19 @@ const Card = ({
           transformOrigin: "top",
         }}
         className={
-          "w-full h-[300px] lg:h-[655px] flex flex-col relative top-[-25%] rounded-3xl cardContainer"
+          "w-full h-[300px] lg:h-[655px] flex flex-col relative top-[-25%] rounded-3xl"
         }
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
       >
         <img
           src={image}
           alt={title}
           className="w-full h-full object-cover rounded-3xl group-hover:brightness-50 transition-all duration-300"
         />
-        <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-14 py-6 transition-all duration-300">
+        <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-14 py-6 lg:py-14 transition-all duration-300">
           <h3 className="text-2xl lg:text-[30px] font-bold text-white">
             {title}
           </h3>
-          <p className="text-white text-xs lg:text-[18px] font-normal lg:w-[80%] lg:leading-6">
+          <p className="text-white text-sm lg:text-[18px] font-medium lg:w-[80%]">
             {description}
           </p>
         </div>
@@ -86,7 +86,7 @@ const Card = ({
         <motion.img
           src={CursorImage}
           alt="Custom Cursor"
-          className="fixed w-16 h-16 lg:w-[150px] lg:h-[150px] pointer-events-none z-10"
+          className="fixed w-16 h-16 lg:w-[150px] lg:h-[150px] pointer-events-none z-50"
           style={{
             left: cursorPos.x - 32, // Centering cursor image
             top: cursorPos.y - 32,
@@ -97,4 +97,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default PortfolioCard;

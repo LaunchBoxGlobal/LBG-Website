@@ -1,7 +1,5 @@
 import React from "react";
 import HomeHero from "./HomeHero";
-import HomePortfolio from "./HomePortfolio";
-import HomeIdeaToLaunch from "./HomeIdeaToLaunch";
 import HomeCustomerReviews from "./HomeCustomerReviews";
 import HomeValueProposition from "./HomeValueProposition";
 import HomeFaqs from "./HomeFaqs";
@@ -31,7 +29,6 @@ const HomePage = () => {
       <HomeComparison />
       <HomeValueProposition />
       <Process />
-      {/* <HomePortfolio /> */}
       <TeckStack
         heading={"Smart Technology for Better"}
         redText={"Solution"}
@@ -41,7 +38,6 @@ const HomePage = () => {
       />
       <HomeStats />
       <HomeCustomerReviews />
-      {/* <FlagsSection /> */}
       <FlagsAnimation />
       <HomeFaqs />
     </main>
