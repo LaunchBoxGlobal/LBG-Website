@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
@@ -8,6 +8,7 @@ import { IoClose } from "react-icons/io5";
 const Sidebar = ({ onclose }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useRouter();
+  const pathname = usePathname();
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
@@ -21,6 +22,13 @@ const Sidebar = ({ onclose }) => {
 
   const navigator = (path) => {
     navigate.push(path);
+    onclose();
+  };
+
+  const handleScrollToServices = (id) => {
+    console.log("clicked");
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth" });
     onclose();
   };
 
@@ -122,36 +130,43 @@ const Sidebar = ({ onclose }) => {
           )}
         </li>
         <li>
-          <Link
-            href={`#workflow`}
+          <button
+            type="button"
+            onClick={() => handleScrollToServices("workflow")}
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Work Flow{" "}
-          </Link>
+          </button>
         </li>
         <li>
-          <Link
-            href={`#teckstack`}
+          <button
+            type="button"
+            onClick={() => handleScrollToServices("teckstack")}
+            // href={`#teckstack`}
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Tech Stack{" "}
-          </Link>
+          </button>
         </li>
         <li>
-          <Link
-            href={`#testimonials`}
+          <button
+            type="button"
+            onClick={() => handleScrollToServices("testimonials")}
+            // href={`#testimonials`}
             className={`font-normal text-[16px] 2xl:text-[22px]`}
           >
             Testimonials
-          </Link>
+          </button>
         </li>
         <li>
-          <Link
-            href={`#faqs`}
+          <button
+            type="button"
+            onClick={() => handleScrollToServices("faqs")}
+            // href={`#faqs`}
             className={`font-normal text-[16px] 2xl:text-[22px]`}
           >
             FAQs
-          </Link>
+          </button>
         </li>
       </ul>
     </div>
