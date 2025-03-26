@@ -87,7 +87,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.3 }}
-              className="bg-white border border-[#CECEEA] rounded-xl p-5 w-[350px] absolute left-[0%] mt-4 z-50"
+              className="bg-white border border-[#CECEEA] rounded-xl p-5 xl:min-w-[333px] xl:max-w-[350px] absolute left-[0%] mt-4 z-50"
             >
               <ul className="space-y-2">
                 <li className="">

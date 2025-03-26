@@ -123,7 +123,7 @@ const FooterLocations = () => {
           </div>
           <div className="">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.478206718873!2d55.0943135!3d24.9838617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f128008900c79%3A0x5205a4aab5afc3e1!2sRegus%20-%20Dubai%20BCW%20Jafza%20View%2018%20%26%2019!5e0!3m2!1sen!2s!4v1742806861118!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4666900878788!2d55.2855485!3d25.221201600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42ec950232cd%3A0xae12478d4a0a631a!2sRegus%20-%20Dubai%2C%20DWTC%20District!5e0!3m2!1sen!2s!4v1742969728791!5m2!1sen!2s"
               style={{ borderRadius: "20px" }}
               allowfullscreen=""
               loading="lazy"
