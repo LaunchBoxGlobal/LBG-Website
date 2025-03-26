@@ -80,7 +80,6 @@ const Navbar = () => {
             />
           </button>
 
-          {/* Dropdown */}
           {isOpen && (
             <motion.div
               initial={{ opacity: 0, y: -10 }}
