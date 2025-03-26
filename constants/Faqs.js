@@ -15,7 +15,7 @@ export const FAQS = [
       "Contact us for a consultation! We’ll discuss your project requirements, define core functionalities, and map out the development plan to bring your idea to life efficiently.",
   },
   {
-    question: "How do you keep mobile apps and websites secure?",
+    question: "How do you keep Mobile Apps and Websites Secure?",
     answer:
       "We protect your data with strong encryption, regular security checks, and secure coding. We follow strict privacy rules to prevent breaches and keep your information safe from hackers.",
   },

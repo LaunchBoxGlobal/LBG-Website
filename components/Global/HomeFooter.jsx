@@ -8,7 +8,7 @@ const HomeFooter = () => {
   return (
     <footer className="w-full pt-12 pb-6 lg:pt-20 bg-black text-white overflow-hidden">
       <section className="w-full padding-x">
-        <section className="flex flex-col lg:flex-row items-start justify-between gap-4">
+        <section className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <div className="w-full lg:w-[80%] py-4 lg:py-0 lg:h-[196px] bg-[#3D3C3F] rounded-full overflow-hidden flex items-center justify-center relative">
             <h2 class="text-[18px] lg:text-[75px] font-bold leading-[36px] lg:leading-[55px] inline-block mx-4 lg:hidden">
               Ready to Build Something Great?
@@ -64,14 +64,14 @@ const HomeFooter = () => {
         </section>
       </section>
 
-      <section className="w-full padding-x flex flex-col lg:flex-row items-start justify-between gap-x-20 mt-10">
+      <section className="w-full padding-x flex flex-col lg:flex-row items-center lg:items-start justify-between gap-y-10 gap-x-20 mt-10">
         <div className="">
           <h3 className="text-[18px] font-bold uppercase">quick links</h3>
-          <ul className="flex flex-col items-start gap-3 mt-5">
+          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
             <li>
               <Link
                 href={"/"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
               >
                 Home
               </Link>
@@ -79,7 +79,7 @@ const HomeFooter = () => {
             <li>
               <Link
                 href={"#services"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
               >
                 Services
               </Link>
@@ -87,7 +87,7 @@ const HomeFooter = () => {
             <li>
               <Link
                 href={"#workflow"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
               >
                 Workflow
               </Link>
@@ -95,7 +95,7 @@ const HomeFooter = () => {
             <li>
               <Link
                 href={"#teckstack"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
               >
                 Tech Stack
               </Link>
@@ -103,7 +103,7 @@ const HomeFooter = () => {
             <li>
               <Link
                 href={"#testimonials"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
               >
                 Testimonials
               </Link>
@@ -111,7 +111,7 @@ const HomeFooter = () => {
             <li>
               <Link
                 href={"#faqs"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 uppercase"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200"
               >
                 FAQs
               </Link>
@@ -119,10 +119,10 @@ const HomeFooter = () => {
           </ul>
         </div>
         <div className="">
-          <h3 className="text-sm lg:text-[18px] font-bold uppercase">
+          <h3 className="text-[18px] font-bold uppercase text-center lg:text-start">
             Contact us
           </h3>
-          <ul className="flex flex-col items-start gap-3 mt-5">
+          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
             <li>
               <Link
                 href={"/"}

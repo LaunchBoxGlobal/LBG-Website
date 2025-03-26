@@ -8,8 +8,8 @@ const FooterLocations = () => {
     setLocation(address);
   };
   return (
-    <div className="flex flex-col items-start gap-4">
-      <h3 className="text-sm lg:text-[18px] font-bold uppercase">
+    <div className="flex flex-col items-center lg:items-start gap-4">
+      <h3 className="text-[18px] text-center lg:text-start font-bold uppercase">
         Serving Businesses Worldwide
       </h3>
       <div className="">
@@ -116,7 +116,10 @@ const FooterLocations = () => {
               height={19}
               alt="footer-location-icon"
             />
-            <p className="text-lg">JAFZA View 18 & 19</p>
+            <p className="text-lg">
+              C1 building Dubai World Trade Center District - Sheikh Zayed Rd -
+              Dubai - United Arab Emirates
+            </p>
           </div>
           <div className="">
             <iframe

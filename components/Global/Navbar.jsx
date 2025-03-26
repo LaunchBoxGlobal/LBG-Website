@@ -1,16 +1,21 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { TbMenu2 } from "react-icons/tb";
 import Sidebar from "./Sidebar";
 import { usePathname, useRouter } from "next/navigation";
 import { IoIosArrowDown } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
 
   const handleScrollToServices = (e) => {
     e.preventDefault();
@@ -43,13 +48,7 @@ const Navbar = () => {
           alt="launchbox global logo"
           className="w-[188px] lg:w-[152px] lg:h-auto xl:w-[182px] 2xl:w-[220px] h-[35px] 2xl:h-[40px] block"
         />
-        {/* <Image
-          src={`/lb-logo-mobile.png`}
-          width={180}
-          height={45.73}
-          alt="launchbox global logo"
-          className="w-[40px] lg:hidden"
-        /> */}
+
         <div className="border border-[#CECEEA] w-[0.5px] h-[27px] opacity-50 hidden lg:block" />
         <span className="text-xs font-light lg:leading-[12px] xl:leading-[14px] hidden lg:block">
           <strong>
@@ -65,17 +64,60 @@ const Navbar = () => {
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Home{" "}
-            {/* <IoIosArrowDown className="group-hover:rotate-180 transition-all duration-300 rotate-0 text-lg mt-0.5" /> */}
           </Link>
         </li>
-        <li>
-          <a
-            href="#services"
-            onClick={handleScrollToServices}
+        <li className="relative">
+          <button
+            type="button"
+            onClick={toggleDropdown}
             className="font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group"
           >
-            Services
-          </a>
+            Services{" "}
+            <IoIosArrowDown
+              className={`transition-transform duration-300 ${
+                isOpen ? "rotate-180" : "rotate-0"
+              }`}
+            />
+          </button>
+
+          {/* Dropdown */}
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white border border-[#CECEEA] rounded-xl p-5 w-[350px] absolute left-[0%] mt-4 z-50"
+            >
+              <ul className="space-y-2">
+                <li className="">
+                  <Link
+                    href={`/services/mobile-app-development-services`}
+                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                  >
+                    Mobile App Development Services
+                  </Link>
+                </li>
+                <li className="">
+                  <Link
+                    href={`/services/web-app-development-services`}
+                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                  >
+                    Web App Development Services
+                  </Link>
+                </li>
+                <li className="">
+                  <Link
+                    href={`/services/custom-software-development-services`}
+                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                  >
+                    Custom Software Development Services
+                  </Link>
+                </li>
+                <li className=""> </li>
+              </ul>
+            </motion.div>
+          )}
         </li>
         <li>
           <Link
@@ -114,13 +156,6 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden lg:flex items-center justify-center gap-4">
-        {/* <Link
-          href={`/`}
-          className="flex items-center justify-end gap-1 outline-none font-medium text-[16px] 2xl:text-[18px]"
-        >
-          <span>Login</span>
-          <IoIosArrowDown className="text-lg mt-0.5" />
-        </Link> */}
         <Link
           href={`/contact-us`}
           className="red-bg px-6 h-[48px] 2xl:h-[60px] rounded-[17px] text-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-[17px] 2xl:text-[18px]"
@@ -140,10 +175,9 @@ const Navbar = () => {
       <div
         className={`w-full h-screen bg-transparent z-50 fixed inset-0 ${
           openSidebar ? "-translate-x-0" : "translate-x-full"
-        } transition-all duration-700 pt-20`}
-        onClick={toggleSidebar}
+        } transition-all duration-700 pt-3 bg-white`}
       >
-        <Sidebar onclick={toggleSidebar} />
+        <Sidebar onclose={toggleSidebar} />
       </div>
     </nav>
   );
