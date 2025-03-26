@@ -30,14 +30,14 @@ const FlagsAnimation = () => {
   const rotate = useTransform(scrollYProgress, [0, 1], ["0deg", "-720deg"]);
 
   return (
-    <div className="bg-white w-full py-10">
+    <div className="bg-white w-full pt-10 md:py-10">
       <div
         ref={targetRef}
-        className="w-full relative flex justify-between gap-3 overflow-hidden"
+        className="w-full relative flex justify-between gap-1 md:gap-3 overflow-hidden"
       >
         <motion.div
           style={{ width: flagsContainerWidth, transformOrigin: "left" }}
-          className="h-[69px] lg:h-[152px] rounded-r-full bg-white flex items-center justify-end gap-3 p-1"
+          className="h-[69px] lg:h-[152px] rounded-r-full bg-white flex items-center justify-end gap-1 md:gap-3 p-1"
         >
           {flags?.map((image, i) => (
             <motion.img
@@ -65,7 +65,7 @@ const FlagsAnimation = () => {
               height={63}
             />
           </div>
-          <h3 className="text-white text-6xl font-bold whitespace-nowrap">
+          <h3 className="text-white text-xl md:text-4xl lg:text-6xl font-bold whitespace-nowrap">
             Our Global Presence
           </h3>
         </motion.div>
