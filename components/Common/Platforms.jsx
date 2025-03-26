@@ -1,7 +1,6 @@
 "use client";
-import { useEffect, useRef } from "react";
 import Image from "next/image";
-import gsap from "gsap";
+import { motion } from "framer-motion";
 
 const platforms = [
   {
@@ -102,34 +101,32 @@ const platforms = [
   },
 ];
 
-const HomePlatforms = () => {
-  const marqueeRef = useRef(null);
-
-  useEffect(() => {
-    const marquee = marqueeRef.current;
-    if (!marquee) return;
-
-    gsap.to(marquee, {
-      xPercent: -50, // Moves halfway to create a seamless loop
-      duration: 30, // Adjust speed (larger = slower)
-      ease: "linear",
-      repeat: -1, // Infinite loop
-      modifiers: {
-        xPercent: gsap.utils.wrap(-100, 0), // Reset when reaching the end
+const Platforms = () => {
+  const marqueeVariants = {
+    animate: {
+      x: [0, -1280],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 20,
+          ease: "linear",
+        },
       },
-    });
-  }, []);
+    },
+  };
 
   return (
     <section className="w-full py-3.5 overflow-hidden bg-white border-t-[1.5px] border-b-[1.5px] border-gray-400 relative -top-10 xl:-top-20 2xl:-top-24 z-30">
-      <div
-        className="flex items-center gap-x-6 lg:gap-x-10 w-max"
-        ref={marqueeRef}
+      <motion.div
+        variants={marqueeVariants}
+        animate="animate"
+        className="flex gap-10"
       >
         {[...platforms, ...platforms].map((platform, index) => {
           return (
             <>
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex w-[400px] mr-4 items-center justify-start gap-2">
                 <Image
                   key={index}
                   src={platform?.icon}
@@ -138,7 +135,7 @@ const HomePlatforms = () => {
                   alt={platform?.title}
                   className={`w-[20px] h-[18px] object-contain`}
                 />
-                <strong className="uppercase font-bold text-[#545454] text-xs lg:text-[20px] opacity-60">
+                <strong className="uppercase font-bold text-[#545454] text-xs lg:text-[20px] opacity-60 whitespace-nowrap">
                   {platform?.title}
                 </strong>
               </div>
@@ -146,9 +143,9 @@ const HomePlatforms = () => {
             </>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };
 
-export default HomePlatforms;
+export default Platforms;

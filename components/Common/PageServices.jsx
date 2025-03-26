@@ -1,11 +1,15 @@
 "use client";
-import { HOME_SERVICES } from "@/constants/HomeServices";
 import React, { useState } from "react";
-import ServiceCard from "../Global/ServiceCard";
-import ServiceCardModal from "../Global/ServiceCardModal";
 import "../Global/ServiceCard.css";
+import ServiceCard from "../Global/ServiceCard";
 
-const HomeServices = () => {
+const PageServices = ({
+  heading,
+  redText,
+  description,
+  services,
+  descriptionWidth,
+}) => {
   const [modal, setModal] = useState({ active: false, index: 0 });
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -20,16 +24,15 @@ const HomeServices = () => {
         id="services"
       >
         <h2 className="section-heading">
-          What We <span className="red-text">Do?</span>
+          {heading} <span className="red-text">{redText}</span>
         </h2>
-        <p className="section-paragraph text-center">
-          We help you grow with clear software solutions <br /> created by
-          skilled experts around the world.
+        <p className={`section-paragraph text-center ${descriptionWidth}`}>
+          {description}
         </p>
       </section>
 
       <section className="w-full flex flex-col flex-wrap items-start justify-center gap-y-4 mt-8 lg:my-20 overflow-y-visible">
-        {HOME_SERVICES?.map((service, index) => (
+        {services?.map((service, index) => (
           <ServiceCard
             service={service}
             index={index}
@@ -45,4 +48,4 @@ const HomeServices = () => {
   );
 };
 
-export default HomeServices;
+export default PageServices;

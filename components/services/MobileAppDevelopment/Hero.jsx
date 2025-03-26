@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import MobileImageSlider from "./MobileImageSlider";
+import ContactButton from "@/components/Global/ContactButton";
 
 const phrases = ["Delivers Results", "Fuels Growth", "Ensures Reliability"];
 
@@ -22,12 +22,7 @@ const Hero = () => {
           high-performing apps that fuel business growth.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1 mb-8">
-          <Link
-            href={"/contact-us"}
-            className={`bg-[#F40E00] text-white px-5 lg:px-7 py-4 md:py-5 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[18px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300 red-btn-shadow`}
-          >
-            Get A Free Consultation
-          </Link>
+          <ContactButton text={"Get a Free Consultation"} />
         </div>
       </section>
       <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">

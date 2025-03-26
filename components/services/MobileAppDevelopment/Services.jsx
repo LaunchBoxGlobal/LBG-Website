@@ -1,10 +1,6 @@
 "use client";
 import { MOBILE_APP_DEVELOPMENT_SERVICES } from "@/constants/mobile-app-development/MobileAppDevelopmentServices";
-import Image from "next/image";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { IoArrowDownSharp } from "react-icons/io5";
-import Link from "next/link";
 import ServiceCard from "@/components/Global/ServiceCard";
 
 const Services = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
 import ImageSlider from "./ImageSlider";
+import ContactButton from "@/components/Global/ContactButton";
 
 const phrases = [
   "Empower Startups",
@@ -25,16 +25,11 @@ const Hero = () => {
           </span>
         </h1> */}
         <p className="text-base lg:text-[22px] 2xl:text-[26px] font-medium text-gray-500 text-center lg:w-[75%] leading-8 my-2">
-          Helping startups scale and enterprises operate smarter with reliable
+          Helping startups scale and enterprises operate smarter with Reliable
           Web App Development Services that drive real results.
         </p>
         <div className="flex items-center justify-center gap-4 mt-3 mb-8">
-          <Link
-            href={"/contact-us"}
-            className={`bg-[#F40E00] text-white px-5 lg:px-7 py-4 md:py-5 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[18px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300 red-btn-shadow`}
-          >
-            Get A Free Consultation
-          </Link>
+          <ContactButton text={"Get A Free Consultation"} />
         </div>
       </section>
       <div className="w-full bg-white">

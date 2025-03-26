@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
 import HeroAnimation from "./HeroAnimation";
+import ContactButton from "@/components/Global/ContactButton";
 
 const phrases = [
   "Advanced Infrastructure",
@@ -23,17 +23,12 @@ const Hero = () => {
 
         {/* <span className="red-text">Deliver </span> */}
         <p className="text-base lg:text-[22px] 2xl:text-[26px] my-2 font-medium text-gray-500 text-center lg:w-[75%] leading-6 lg:leading-8">
-          Smart software starts with functionality. As a leading software
-          development company, we build solutions that integrate seamlessly,
+          Smart software starts with functionality. As a Leading Software
+          Development Company, We build solutions that integrate seamlessly,
           scale effortlessly, and adapt with the agility your business demands.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1">
-          <Link
-            href={"/contact-us"}
-            className={`bg-[#F40E00] text-white px-5 lg:px-7 py-4 md:py-5 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[18px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300 red-btn-shadow`}
-          >
-            Get A Free Consultation
-          </Link>
+          <ContactButton text={"Get A Free Consultation"} />
         </div>
         <HeroAnimation />
       </div>

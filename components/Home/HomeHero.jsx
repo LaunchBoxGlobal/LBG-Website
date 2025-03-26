@@ -14,7 +14,6 @@ const words = [
   "Strategic Business Analysts",
   "Visionary Software Architects",
   "Certified Scrum Masters",
-  // "Precision-Driven QA Engineers",
   "Diligent QA Engineers",
   "Specialist Database Architects",
   "Creative Storyboard Artists",

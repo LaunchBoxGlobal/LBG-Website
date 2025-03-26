@@ -13,7 +13,6 @@ const benefits = [
   "Scalable Web Architecture",
   "Industry-Specific Expertise",
   "Custom Build Solution",
-  "High-Performance Backend Engineers",
   "Post Launch Support & Maintenance",
   "Latest Technologies & Best Practices",
   "Transparent Pricing (no hidden fees)",
@@ -68,7 +67,7 @@ const Benefits = () => {
               alt="launchbox global logo"
             />
           </div>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]?.map((_, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]?.map((_, i) => {
             return (
               <div
                 key={i}
@@ -76,7 +75,7 @@ const Benefits = () => {
                   i === 14 ? "rounded-b-2xl h-[70px]" : "h-[80px]"
                 }`}
               >
-                {i !== 14 && (
+                {i !== 13 && (
                   <div className="w-[40px] h-[40px] rounded-full bg-[#078F40] p-2 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
                     <FaCheck className="text-white w-full h-full" />
                   </div>
@@ -89,7 +88,7 @@ const Benefits = () => {
           <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6 lg:pl-14">
             Local <br /> Companies
           </p>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]?.map((b, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]?.map((b, i) => {
             return (
               <div
                 key={i}
@@ -118,7 +117,7 @@ const Benefits = () => {
           <p className="h-[62px] flex items-center px-4 justify-center text-lg font-semibold text-center lg:leading-6 lg:pl-[20%]">
             Traditional <br /> Firms
           </p>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]?.map((b, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]?.map((b, i) => {
             return (
               <div
                 key={i}
@@ -147,7 +146,7 @@ const Benefits = () => {
           <p className="h-[62px] flex items-center justify-center px-4 text-lg font-semibold text-center lg:leading-6">
             Freelance <br /> Agencies 
           </p>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]?.map((b, i) => {
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]?.map((b, i) => {
             return (
               <div
                 key={i}

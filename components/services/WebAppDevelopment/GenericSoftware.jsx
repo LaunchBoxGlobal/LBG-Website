@@ -9,9 +9,6 @@ const GenericSoftware = () => {
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
-        <h2 className="red-text font-semibold text-lg lg:text-[25px] text-center">
-          Why you should have Customized Software?
-        </h2>
         <h3 className="section-heading text-center">
           Why Your Business Needs a Custom{" "}
           <span className="red-text">Web Application</span>
