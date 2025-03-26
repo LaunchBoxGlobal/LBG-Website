@@ -93,7 +93,7 @@ const Navbar = () => {
                 <li className="">
                   <Link
                     href={`/services/mobile-app-development-services`}
-                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group w-full hover:text-[#F40E00]`}
                   >
                     Mobile App Development Services
                   </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
                 <li className="">
                   <Link
                     href={`/services/web-app-development-services`}
-                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]`}
                   >
                     Web App Development Services
                   </Link>
@@ -109,7 +109,7 @@ const Navbar = () => {
                 <li className="">
                   <Link
                     href={`/services/custom-software-development-services`}
-                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                    className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]`}
                   >
                     Custom Software Development Services
                   </Link>
