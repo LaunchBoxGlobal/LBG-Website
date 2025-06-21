@@ -1,0 +1,56 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import AnimatedText from "../StaffAugmentation/AnimatedText";
+
+const CTA = () => {
+  return (
+    <section className="w-full py-20 midlg:py-32 xl:py-40 px-6 md:px-8 midlg:px-[10%] 2xl:px-[13%] overflow-hidden">
+      <AnimatedText>
+        <div className="w-full h-[504px] lg:min-h-[619px] relative flex items-end justify-center pb-10">
+          <Image
+            src={"/on-demand-talent/cta-image.png"}
+            alt="cta-icons"
+            width={918}
+            height={289}
+            className="absolute w-full h-full inset-0 z-0 hidden lg:block"
+          />
+          {/* cta-icons-and-border-image */}
+          <Image
+            src={"/on-demand-talent/cta-icons-and-border-image.png"}
+            alt="cta-mobile-image"
+            width={758}
+            height={424}
+            className="absolute w-[500px] md:w-full h-full inset-0 z-0 lg:hidden"
+          />
+          <div className="w-full z-10 flex flex-col items-center justify-end gap-4 lg:gap-6 px-4">
+            <AnimatedText>
+              <h2 className="text-[28px] md:text-[35px] lg:text-[60px] font-bold text-center leading-[1.1] lg:w-[60%] mx-auto z-10">
+                Need Top Talent Fast? We've Got You Covered.
+              </h2>
+            </AnimatedText>
+            <AnimatedText>
+              <p className="mx-auto text-base lg:text-[22px] text-gray-500 lg:w-[60%] text-center z-10">
+                Let's help you augment talent quickly with the right tech
+                professionals - available immediately and perfectly matched to
+                your needs.
+              </p>
+            </AnimatedText>
+            <AnimatedText>
+              <div className="w-full flex justify-center mt-2 z-10">
+                <Link
+                  href={`/contact-us`}
+                  className="bg-[#F40E00] text-white z-10 rounded-full px-5 py-3 lg:px-10 lg:py-5 text-base lg:text-[22px] font-medium"
+                >
+                  See How It Works
+                </Link>
+              </div>
+            </AnimatedText>
+          </div>
+        </div>
+      </AnimatedText>
+    </section>
+  );
+};
+
+export default CTA;

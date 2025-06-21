@@ -1,0 +1,19 @@
+.bloomTextColor {
+  color: #c04db2;
+}
+
+.bloomBgColor {
+  background: #c04db2;
+}
+
+.ctaBtn:hover {
+  box-shadow: #d696df 0px 0px 30px;
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+  .prupleShadow:hover {
+    box-shadow: #fce7f9 0px 0px 30px;
+    transition: all 0.3s;
+  }
+}

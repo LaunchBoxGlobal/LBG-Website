@@ -1,0 +1,18 @@
+.fitnessText {
+  color: #64b5ac;
+}
+
+.fitnessBg {
+  background-color: #64b5ac;
+}
+
+@media screen and (min-width: 1024px) {
+  .fitnessShadow:hover {
+    box-shadow: #b2ebe5 0px 0px 30px;
+    transition: all 0.3s;
+  }
+}
+
+.cta-shadow {
+  box-shadow: #64b5ac59 0px 0px 20px;
+}

@@ -1,0 +1,17 @@
+.blueText {
+  color: #00a7d4;
+}
+
+.service-heading {
+  font-size: clamp(22px, 26px, 28px);
+}
+
+.react-native-tech-stack-card {
+  border: 1px solid rgb(213, 213, 213);
+}
+
+.react-native-tech-stack-card:hover {
+  border: 1px solid #00a7d4;
+  box-shadow: #a1e7fa 0 0 15px;
+  transition: all 0.3s;
+}

@@ -1,0 +1,119 @@
+.web-app-main {
+  height: 70vh;
+  position: relative;
+}
+
+.mask,
+.textBody {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #909090;
+  font-size: 43px;
+  line-height: 66px;
+  cursor: default;
+}
+
+.web-app-main p {
+  width: 1270px;
+  line-height: 57px;
+  text-align: center;
+}
+
+.mask {
+  -webkit-mask-image: url("/mask.svg");
+  mask-image: url("/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  background: #f40e00;
+  position: absolute;
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .web-app-main {
+    height: 100vh;
+    position: relative;
+  }
+  .mask,
+  .textBody {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #909090;
+    font-size: 23px;
+    line-height: 66px;
+    cursor: default;
+  }
+
+  .web-app-main p {
+    line-height: 34px;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+/* hero */
+.hero-img {
+  /* opacity: 0; */
+  transform: translateY(50px) scale(0.5);
+  animation: fadeInSlideUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hero-card-img {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: fadeInScaleCard 1s ease-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeInScaleCard {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.orbiting-cursor {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 40px;
+  height: 39px;
+  animation: orbit 8s linear infinite;
+}
+
+@keyframes orbit {
+  0% {
+    /* initial position */
+    transform: translate(0px, 0px);
+  }
+  25% {
+    /* move left to right */
+    transform: translate(175px, 0px);
+  }
+  50% {
+    /* move top right to bottom */
+    transform: translate(175px, 165px);
+  }
+  75% {
+    /* move bottom right to left */
+    transform: translate(0px, 165px);
+  }
+  100% {
+    /* move to normal position */
+    transform: translate(0px, 0px);
+  }
+}

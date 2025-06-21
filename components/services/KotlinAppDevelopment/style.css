@@ -1,0 +1,51 @@
+.kotlin-text {
+  background: linear-gradient(to right, #00aeff, #756efe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.kotlin-button {
+  padding: 17px 34px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #00aeff, #756efe);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  box-shadow: #00aeff80 0 0 10px;
+  border: 1px solid #21212173;
+}
+
+.kotlin-button:hover {
+  opacity: 0.9;
+}
+
+.kotlin-services-card {
+  background: #f6f6f6;
+  color: black;
+}
+
+.kotlin-services-card:hover {
+  background: linear-gradient(to right, #00aeff, #756efe);
+  color: white;
+  transition: all 0.3s;
+}
+
+.kotin-bg {
+  background: linear-gradient(to right, #00aeff, #756efe);
+}
+
+.kotlin-industry-card {
+  background: #ffff;
+  color: black;
+}
+
+.kotlin-industry-card:hover {
+  background: linear-gradient(to right, #00aeff, #756efe);
+  color: white;
+  transition: all 0.3s;
+}

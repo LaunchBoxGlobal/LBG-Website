@@ -1,0 +1,25 @@
+.ionic-button {
+  padding: 17px 34px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #478aff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  box-shadow: #00aeff80 0 0 10px;
+  border: 1px solid #21212173;
+}
+
+.ionic-button:hover {
+  opacity: 0.9;
+}
+
+.ionic-text {
+  color: #478aff;
+}
+
+.ionic-bg {
+  background-color: #478aff;
+}

@@ -1,0 +1,15 @@
+.iconBox {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.iconBox:hover {
+  box-shadow: none;
+  transition: all 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+  .blueShadow:hover {
+    box-shadow: #c9dae7 0px 0px 30px;
+    transition: all 0.3s;
+  }
+}

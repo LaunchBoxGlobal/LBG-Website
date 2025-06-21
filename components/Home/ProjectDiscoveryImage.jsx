@@ -1,0 +1,28 @@
+import Image from "next/image";
+import React from "react";
+import "./ProcessAnimations.css";
+
+const ProjectDiscoveryImage = () => {
+  return (
+    <div className="w-full h-[301px] lg:h-[471px] relative">
+      <Image
+        src={"/project-discovery-search.webp"}
+        alt="project discovery main image"
+        width={380}
+        height={410}
+        loading="lazy"
+        className="absolute inset-0 z-10 left-[20%] floatUp w-[60%]"
+      />
+      <Image
+        src={"/project-discovery-03.webp"}
+        alt="project discovery bulb image"
+        width={189}
+        height={300}
+        loading="lazy"
+        className="absolute right-[13%] top-[20%] z-0 scale-150 floatDown w-[40%]"
+      />
+    </div>
+  );
+};
+
+export default ProjectDiscoveryImage;

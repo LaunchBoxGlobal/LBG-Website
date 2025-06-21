@@ -1,0 +1,234 @@
+.blogContent > h1 {
+  font-size: clamp(2rem, 40px, 50px);
+  line-height: 1.1;
+  margin: 0 auto 1.5rem 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+#author-details {
+  font-size: 18px !important;
+}
+
+.blogContent > h2 {
+  font-size: clamp(26px, 30px, 35px);
+  line-height: 1.35;
+  margin: 50px 0 10px 0;
+  font-weight: 700;
+}
+
+.blogContent > h3 {
+  font-size: clamp(1.5rem, 20px, 20px);
+  line-height: 1.4;
+  margin: 50px 0 5px 0;
+  font-weight: 600;
+}
+
+.blogContent > h4 {
+  font-size: clamp(1.25rem, 18px, 20px);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.blogContent > p {
+  font-size: clamp(14px, 18px, 20px);
+  line-height: 1.35;
+  color: #434343 !important;
+}
+
+.blogContent ol {
+  font-size: clamp(14px, 18px, 20px);
+  line-height: 1.35;
+  padding: 0 22px;
+  list-style: disc;
+}
+
+.blogContent ol li {
+  font-size: clamp(14px, 18px, 20px);
+  line-height: 1.35;
+  color: #434343 !important;
+}
+
+.blogContent ul li {
+  font-size: clamp(14px, 18px, 20px);
+  line-height: 1.35;
+  color: #434343 !important;
+}
+
+.blogContent img,
+.blogContent figure img,
+.blogContent .wp-block-image img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  .blogContent > h1 {
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogContent > h1 {
+    font-size: 2rem;
+  }
+  .blogContent > h2 {
+    font-size: 1.5rem;
+  }
+  .blogContent > h3 {
+    font-size: 1.25rem;
+  }
+  .blogContent > h4 {
+    font-size: 1.1rem;
+  }
+}
+
+details {
+  @apply w-full rounded-3xl p-5 lg:p-8 bg-[#F9F9F9] text-black cursor-pointer mt-5;
+}
+
+summary {
+  @apply font-medium text-[17px] md:text-2xl lg:text-[22px] w-[90%];
+}
+
+details[open] {
+  background: #f9f9f9;
+}
+
+details[open] > summary {
+  margin-bottom: 15px;
+}
+
+.blogContent ul {
+  margin: 10px 0 20px 0;
+  list-style: disc;
+  padding: 0 0 0 40px;
+}
+
+details > p {
+  @apply font-normal lg:w-[90%] mt-3;
+  font-size: clamp(14px, 18px, 20px);
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::marker {
+  content: none;
+}
+
+.blogCta {
+  background-color: #f40e00;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 11px;
+}
+
+.grayCta {
+  background-color: #f2f2f2;
+  border-radius: 17px;
+  width: 100%;
+  padding: 30px 40px;
+  margin: 20px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.grayCta > h3 {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  line-height: 1.1 !important;
+}
+
+.grayCta > p {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+
+.grayCta > p > a {
+  background-color: #f40e00 !important;
+  color: white !important;
+  padding: 15px 20px !important;
+  border-radius: 11px !important;
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  position: absolute;
+  right: 40px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.blackCta {
+  background-color: #000;
+  border-radius: 17px;
+  width: 100%;
+  padding: 30px 40px;
+  margin: 30px 0 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackCta > h3 {
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  color: white !important;
+  line-height: 1.1 !important;
+}
+
+.blackCta > p {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+
+.blackCta > p > a {
+  background-color: #f40e00 !important;
+  color: white !important;
+  padding: 15px 25px !important;
+  border-radius: 11px !important;
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .grayCta > p > a {
+    background-color: #f40e00 !important;
+    color: white !important;
+    padding: 15px 20px !important;
+    border-radius: 11px !important;
+    display: block;
+    margin-top: 45px;
+    display: block;
+    font-weight: 600;
+    position: static;
+    /* right: 40px; */
+    /* top: 40%; */
+    /* transform: translateY(-50%); */
+  }
+}
+
+.subscribe-email-form {
+  border: 1px solid #f40e00;
+  background-image: url("/blog-subscribe-card-image.png");
+  background-position: center;
+  background-size: cover;
+}

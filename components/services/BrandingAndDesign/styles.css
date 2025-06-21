@@ -1,0 +1,31 @@
+.design-and-branding-orbiting-cursor {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 40px;
+  height: 39px;
+  animation: orbittingCursor 8s linear infinite;
+}
+
+@keyframes orbittingCursor {
+  0% {
+    /* initial position */
+    transform: translate(-10px, 0px);
+  }
+  25% {
+    /* move left to right */
+    transform: translate(115px, 0px);
+  }
+  50% {
+    /* move top right to bottom */
+    transform: translate(115px, 75px);
+  }
+  75% {
+    /* move bottom right to left */
+    transform: translate(-10px, 75px);
+  }
+  100% {
+    /* move to normal position */
+    transform: translate(-10px, 0px);
+  }
+}
