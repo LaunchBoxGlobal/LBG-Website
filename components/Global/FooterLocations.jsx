@@ -13,12 +13,12 @@ const FooterLocations = () => {
         Serving Businesses Worldwide
       </h3>
 
-      <div className="h-[42px] md:h-[48px] bg-[#2D2D2E] w-full rounded-full p-1 flex items-start gap-0 lg:gap-1 flex-wrap">
+      <div className="h-[42px] md:h-[48px] bg-[#2D2D2E] w-full rounded-full p-1 flex items-start gap-0 xl:gap-1 flex-wrap">
         <button
           type="button"
           name="United States location button"
           onClick={() => toggleLocation("US")}
-          className={`px-2.5 lg:px-4 h-full text-xs lg:text-lg font-semibold rounded-full ${
+          className={`px-2.5 lg:px-4 h-full text-xs midlg:text-base xl:text-lg font-semibold rounded-full ${
             location === "US" && "bg-[#F40E00] text-white"
           }`}
         >
@@ -28,7 +28,7 @@ const FooterLocations = () => {
           type="button"
           name="United Kingdom location button"
           onClick={() => toggleLocation("UK")}
-          className={`px-2.5 lg:px-4 h-full text-xs lg:text-lg font-semibold rounded-full ${
+          className={`px-2.5 lg:px-4 h-full text-xs midlg:text-base xl:text-lg font-semibold rounded-full ${
             location === "UK" && "bg-[#F40E00] text-white"
           }`}
         >
@@ -38,7 +38,7 @@ const FooterLocations = () => {
           type="button"
           name="Canada location button"
           onClick={() => toggleLocation("Canada")}
-          className={`px-2.5 lg:px-4 h-full text-xs lg:text-lg font-semibold rounded-full ${
+          className={`px-2.5 lg:px-4 h-full text-xs midlg:text-base xl:text-lg font-semibold rounded-full ${
             location === "Canada" && "bg-[#F40E00] text-white"
           }`}
         >
@@ -48,7 +48,7 @@ const FooterLocations = () => {
           type="button"
           name="Australia location button"
           onClick={() => toggleLocation("Australia")}
-          className={`px-2.5 lg:px-4 h-full text-xs lg:text-lg font-semibold rounded-full ${
+          className={`px-2.5 lg:px-4 h-full text-xs midlg:text-base xl:text-lg font-semibold rounded-full ${
             location === "Australia" && "bg-[#F40E00] text-white"
           }`}
         >
@@ -58,7 +58,7 @@ const FooterLocations = () => {
           type="button"
           name="UAE location button"
           onClick={() => toggleLocation("Dubai")}
-          className={`px-2.5 lg:px-4 h-full text-xs lg:text-lg font-semibold rounded-full ${
+          className={`px-2.5 lg:px-4 h-full text-xs midlg:text-base xl:text-lg font-semibold rounded-full ${
             location === "Dubai" && "bg-[#F40E00] text-white"
           }`}
         >
@@ -68,7 +68,7 @@ const FooterLocations = () => {
           type="button"
           name="Qatar location button"
           onClick={() => toggleLocation("Qatar")}
-          className={`px-2.5 lg:px-4 h-full text-xs lg:text-lg font-semibold rounded-full ${
+          className={`px-2.5 lg:px-4 h-full text-xs midlg:text-base xl:text-lg font-semibold rounded-full ${
             location === "Qatar" && "bg-[#F40E00] text-white"
           }`}
         >
@@ -78,7 +78,7 @@ const FooterLocations = () => {
           type="button"
           name="Pakistan location button"
           onClick={() => toggleLocation("PK")}
-          className={`px-2.5 lg:px-4 h-full text-xs lg:text-lg font-semibold rounded-full ${
+          className={`px-2.5 lg:px-4 h-full text-xs midlg:text-base xl:text-lg font-semibold rounded-full ${
             location === "PK" && "bg-[#F40E00] text-white"
           }`}
         >
