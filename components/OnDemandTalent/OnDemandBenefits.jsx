@@ -57,7 +57,7 @@ const OnDemandBenefits = () => {
                 }}
                 className={`absolute top-0 bg-red-400 rounded-2xl z-20 p-10 flex flex-col items-start justify-center gap-4 h-[220px] overflow-hidden`}
               >
-                <AnimatedText delay={0.2}>
+                <AnimatedText delay={0.1}>
                   <Image
                     src={solution?.icon}
                     width={solution?.iconWidth}
@@ -65,7 +65,7 @@ const OnDemandBenefits = () => {
                     alt={solution?.title}
                   />
                 </AnimatedText>
-                <AnimatedText delay={0.2}>
+                <AnimatedText delay={0.1}>
                   <h3 className="text-white text-[24px] md:text-[2.5vw] font-medium leading-10">
                     {solution?.title}
                   </h3>
@@ -81,7 +81,7 @@ const OnDemandBenefits = () => {
                 className={`absolute top-0 h-full bg-red-600 rounded-2xl flex justify-end items-center z-10 p-10 overflow-hidden`}
               >
                 <div className="w-full lg:w-[80%]">
-                  <AnimatedText delay={0.2}>
+                  <AnimatedText delay={0.1}>
                     <p className="text-white text-center text-base xl:text-xl">
                       {solution?.description}
                     </p>

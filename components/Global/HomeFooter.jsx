@@ -70,67 +70,141 @@ const HomeFooter = () => {
       <section className="w-full padding-x flex flex-wrap items-center lg:items-start justify-start lg:justify-between gap-y-10 mt-10 lg:mt-20">
         <div className="w-full lg:w-[18%]">
           <h3 className="text-[18px] xl:text-[21px] font-bold uppercase">
-            quick links
+            Services
           </h3>
           <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
             <li>
               <Link
-                href={"/"}
+                href={"/services/mobile-app-development"}
                 aria-label="link to home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
-                Home
+                Mobile App Development
               </Link>
             </li>
             <li>
               <Link
-                href={"#services"}
+                href={"/services/web-app-development"}
                 aria-label="link to services page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
-                Services
+                Web App Development
               </Link>
             </li>
             <li>
               <Link
-                href={"#workflow"}
+                href={"/services/custom-software-development"}
                 aria-label="link to workflow section on home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
-                Workflow
+                Custom Software Development
               </Link>
             </li>
             <li>
               <Link
-                href={"#teckstack"}
+                href={"/services/ecommerce-development"}
                 aria-label="link to technologies section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
-                Tech Stack
+                E-commerce Development
               </Link>
             </li>
             <li>
               <Link
-                href={"#testimonials"}
+                href={"/services/digital-marketing"}
                 aria-label="link to testimonials section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
-                Testimonials
+                Digital Marketing
               </Link>
             </li>
             <li>
               <Link
-                href={"#faqs"}
+                href={"/services/branding-and-design"}
                 aria-label="link to frequently asked questions"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
-                FAQs
+                Branding & Design
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="w-full lg:w-[20%] lg:px-10">
+          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase">
+            Technology
+          </h3>
+          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
+            <li>
+              <Link
+                href={"/development-technologies/react-native-app-development"}
+                aria-label="link to home page"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Native App Development
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/development-technologies/flutter-app-development"}
+                aria-label="link to services page"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Flutter App Development
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/development-technologies/swift-app-development"}
+                aria-label="link to workflow section on home page"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Swift App Development
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/development-technologies/kotlin-app-development"}
+                aria-label="link to technologies section"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Kotlin App Development
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/development-technologies/ionic-app-development"}
+                aria-label="link to testimonials section"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Ionic App Development
               </Link>
             </li>
           </ul>
         </div>
         <div className="w-full lg:w-[20%]">
           <h3 className="text-[18px] xl:text-[21px] font-bold uppercase text-center lg:text-start">
+            Resources
+          </h3>
+          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
+            <li>
+              <Link
+                href={"/blogs"}
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Blogs
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/case-studies`}
+                aria-label="launchbox global phone number"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Case Studies
+              </Link>
+            </li>
+          </ul>
+          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase text-center lg:text-start mt-10">
             Contact us
           </h3>
           <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
@@ -138,7 +212,7 @@ const HomeFooter = () => {
               <Link
                 href={"/"}
                 aria-label="launchbox global email address"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
                 hello@launchboxglobal.com
               </Link>
@@ -147,65 +221,14 @@ const HomeFooter = () => {
               <Link
                 href={`tel:8888688385`}
                 aria-label="launchbox global phone number"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
               >
                 (888) 868-8385
               </Link>
             </li>
           </ul>
         </div>
-        <div className="w-full lg:w-[20%] lg:px-10">
-          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase">
-            About Us
-          </h3>
-          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
-            <li>
-              <Link
-                href={"/"}
-                aria-label="link to home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/"}
-                aria-label="link to services page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
-              >
-                Referal
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/blogs"}
-                aria-label="link to workflow section on home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
-              >
-                Blogs
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/"}
-                aria-label="link to technologies section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/"}
-                aria-label="link to testimonials section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[20px]"
-              >
-                Copy Rights
-              </Link>
-            </li>
-          </ul>
-        </div>
+
         <FooterLocations />
       </section>
 

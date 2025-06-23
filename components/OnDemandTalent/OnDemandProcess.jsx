@@ -24,7 +24,7 @@ const OnDemandProcess = () => {
           </p>
         </AnimatedText>
       </section>
-      <div className="w-full relative mt-10 py-20">
+      <div className="w-full relative mt-10 pt-20 pb-24">
         <AnimatedLine />
         <div className="absolute bottom-[7%] left-[13%] items-center justify-center hidden lg:flex">
           <Image
@@ -64,12 +64,12 @@ const AnimatedLine = () => {
   return (
     <div
       ref={ref}
-      className="absolute left-[20%] top-28 h-[2654px] hidden lg:block"
+      className="absolute left-[20%] top-28 h-[1450px] hidden lg:block"
     >
       <svg
         width="613"
-        height="2654"
-        viewBox="0 0 613 2654"
+        height="1450"
+        viewBox="0 0 613 1450"
         fill="none"
         className="absolute left-[20%] top-32"
         xmlns="http://www.w3.org/2000/svg"

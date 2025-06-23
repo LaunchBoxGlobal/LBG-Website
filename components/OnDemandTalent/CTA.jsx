@@ -5,25 +5,30 @@ import AnimatedText from "../StaffAugmentation/AnimatedText";
 
 const CTA = () => {
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 px-6 md:px-8 midlg:px-[10%] 2xl:px-[13%] overflow-hidden">
+    <section className="w-full py-20 md:pb-40 midlg:py-32 xl:py-40 px-6 md:px-8 midlg:px-[10%] 2xl:px-[13%] overflow-hidden">
       <AnimatedText>
-        <div className="w-full h-[504px] lg:min-h-[619px] relative flex items-end justify-center pb-10">
+        <div className="w-full h-[504px] md:h-auto lg:min-h-[619px] relative flex items-end justify-center pb-10">
           <Image
-            src={"/on-demand-talent/cta-image.png"}
+            src={"/on-demand-talent/on-demand-cta-image.png"}
             alt="cta-icons"
             width={918}
             height={289}
             className="absolute w-full h-full inset-0 z-0 hidden lg:block"
           />
           {/* cta-icons-and-border-image */}
-          <Image
-            src={"/on-demand-talent/cta-icons-and-border-image.png"}
-            alt="cta-mobile-image"
-            width={758}
-            height={424}
-            className="absolute w-[500px] md:w-full h-full inset-0 z-0 lg:hidden"
-          />
-          <div className="w-full z-10 flex flex-col items-center justify-end gap-4 lg:gap-6 px-4">
+          <section className="w-full h-[404px] absolute md:h-auto inset-x-0 top-14 md:top-0 block lg:hidden">
+            <AnimatedText delay={0.2}>
+              <Image
+                src={"/on-demand-talent/cta-icons-and-border-image.png"}
+                alt="cta-mobile-image"
+                width={758}
+                height={424}
+                className="w-[500px] md:w-full md:h-auto md:max-h-[400px] inset-0 z-0"
+              />
+            </AnimatedText>
+          </section>
+
+          <div className="w-full mt-32 z-10 flex flex-col items-center justify-end gap-4 lg:gap-6 px-4">
             <AnimatedText>
               <h2 className="text-[28px] md:text-[35px] lg:text-[60px] font-bold text-center leading-[1.1] lg:w-[60%] mx-auto z-10">
                 Need Top Talent Fast? We've Got You Covered.
