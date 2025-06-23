@@ -128,6 +128,38 @@ const HomeFooter = () => {
               </Link>
             </li>
           </ul>
+          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase mt-10">
+            Staff Augmentation
+          </h3>
+          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
+            <li>
+              <Link
+                href={"/staff-augmentation"}
+                aria-label="link to staff augmentation page"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Team Augmentation
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/off-shore-software-development"}
+                aria-label="link to off-shore-software-development page"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                Off-Shore Software Development
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={"/on-demand-talent"}
+                aria-label="link to on-demand-talent page"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+              >
+                On-Demand Talent Augmentation
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="w-full lg:w-[20%] lg:px-10">
           <h3 className="text-[18px] xl:text-[21px] font-bold uppercase">
