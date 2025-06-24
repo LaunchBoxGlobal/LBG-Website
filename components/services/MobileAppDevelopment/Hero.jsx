@@ -2,16 +2,10 @@ import React from "react";
 import Image from "next/image";
 import MobileImageSlider from "./MobileImageSlider";
 import ContactButton from "@/components/Global/ContactButton";
-import Link from "next/link";
-import PageBreadcrumb from "@/components/Common/PageBreadcrumb";
 
 const Hero = () => {
   return (
     <section className="w-full relative mb-20 lg:mb-40 overflow-x-hidden pt-36 2xl:pt-52 padding-x">
-      <PageBreadcrumb
-        pageLink={"/services/mobile-app-development"}
-        pageTitle={"Mobile App Development"}
-      />
       <section className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden">
         <p className="text-xl font-bold red-text">Your Reliable Partner</p>
         <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-10 md:leading-[54px] lg:leading-[84px] xl:leading-[104px] 2xl:leading-[104px] w-full">

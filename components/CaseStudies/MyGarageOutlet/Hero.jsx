@@ -12,12 +12,12 @@ const Hero = () => {
   });
   return (
     <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-5 overflow-hidden padding-x">
-      <PageBreadcrumb
+      {/* <PageBreadcrumb
         pageLink={"/case-studies/my-garage-outlet"}
         pageTitle={"My Garage Outlet"}
         primaryLink={"/case-studies"}
         primaryPageTitle={"Case Studies"}
-      />
+      /> */}
       <Image
         src={"/case-studies/my-garage-outlet/my-garage-outlet-logo.png"}
         width={109}

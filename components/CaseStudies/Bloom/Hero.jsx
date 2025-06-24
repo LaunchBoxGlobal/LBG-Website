@@ -6,12 +6,12 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-5 overflow-hidden padding-x">
-      <PageBreadcrumb
+      {/* <PageBreadcrumb
         pageLink={"/case-studies/bloom"}
         pageTitle={"Bloom"}
         primaryLink={"/case-studies"}
         primaryPageTitle={"Case Studies"}
-      />
+      /> */}
       <Image
         src={"/case-studies/bloom-logo.png"}
         width={149}

@@ -6,12 +6,12 @@ import PageBreadcrumb from "@/components/Common/PageBreadcrumb";
 const Hero = () => {
   return (
     <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-5 overflow-hidden padding-x">
-      <PageBreadcrumb
+      {/* <PageBreadcrumb
         pageLink={"/case-studies/now-you-know-nashville"}
         pageTitle={"Now You Know Nashville"}
         primaryLink={"/case-studies"}
         primaryPageTitle={"Case Studies"}
-      />
+      /> */}
       <Image
         src={"/case-studies/nashville/nashville-logo.png"}
         width={109}

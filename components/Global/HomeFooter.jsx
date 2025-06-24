@@ -249,13 +249,23 @@ const HomeFooter = () => {
                 hello@launchboxglobal.com
               </Link>
             </li>
+            {/*  +1 307-922-0100 */}
             <li>
               <Link
                 href={`tel:8888688385`}
                 aria-label="launchbox global phone number"
                 className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
-                (888) 868-8385
+                Ph: (888) 868-8385
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`tel:13079220100`}
+                aria-label="launchbox global phone number"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
+              >
+                Fax No: 1307-922-0100
               </Link>
             </li>
           </ul>
