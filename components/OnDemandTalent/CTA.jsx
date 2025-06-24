@@ -16,21 +16,28 @@ const CTA = () => {
             className="absolute w-full h-full inset-0 z-0 hidden lg:block"
           />
           {/* cta-icons-and-border-image */}
-          <section className="w-full h-[404px] absolute md:h-auto inset-x-0 top-14 md:top-0 block lg:hidden">
+          <section className="w-full max-h-[504px] absolute md:h-auto inset-x-0 top-14 md:top-0 block lg:hidden">
             <AnimatedText delay={0.2}>
               <Image
                 src={"/on-demand-talent/cta-icons-and-border-image.png"}
                 alt="cta-mobile-image"
                 width={758}
                 height={424}
-                className="w-[500px] md:w-full md:h-auto md:max-h-[400px] inset-0 z-0"
+                className="w-[500px] md:w-full md:h-auto md:max-h-[400px] inset-0 z-0 md:hidden"
+              />
+              <Image
+                src={`/on-demand-talent/cta-image-tablet-version-01.png`}
+                width={855}
+                height={504}
+                alt="on-demand-cta-image-tablet-version"
+                className="w-full md:block max-h-[504px] hidden lg:hidden"
               />
             </AnimatedText>
           </section>
 
-          <div className="w-full mt-32 z-10 flex flex-col items-center justify-end gap-4 lg:gap-6 px-4">
+          <div className="w-full mt-32 z-10 flex flex-col items-center justify-end gap-4 lg:gap-6 px-4 pt-20">
             <AnimatedText>
-              <h2 className="text-[28px] md:text-[35px] lg:text-[60px] font-bold text-center leading-[1.1] lg:w-[60%] mx-auto z-10">
+              <h2 className="text-[28px] md:text-[35px] midlg:text-[45px] xl:text-[60px] font-bold text-center leading-[1.1] lg:w-[60%] mx-auto z-10">
                 Need Top Talent Fast? We've Got You Covered.
               </h2>
             </AnimatedText>

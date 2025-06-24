@@ -77,7 +77,7 @@ const HomeFooter = () => {
               <Link
                 href={"/services/mobile-app-development"}
                 aria-label="link to home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Mobile App Development
               </Link>
@@ -86,7 +86,7 @@ const HomeFooter = () => {
               <Link
                 href={"/services/web-app-development"}
                 aria-label="link to services page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Web App Development
               </Link>
@@ -95,7 +95,7 @@ const HomeFooter = () => {
               <Link
                 href={"/services/custom-software-development"}
                 aria-label="link to workflow section on home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Custom Software Development
               </Link>
@@ -104,7 +104,7 @@ const HomeFooter = () => {
               <Link
                 href={"/services/ecommerce-development"}
                 aria-label="link to technologies section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 E-commerce Development
               </Link>
@@ -113,7 +113,7 @@ const HomeFooter = () => {
               <Link
                 href={"/services/digital-marketing"}
                 aria-label="link to testimonials section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Digital Marketing
               </Link>
@@ -122,7 +122,7 @@ const HomeFooter = () => {
               <Link
                 href={"/services/branding-and-design"}
                 aria-label="link to frequently asked questions"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Branding & Design
               </Link>
@@ -136,7 +136,7 @@ const HomeFooter = () => {
               <Link
                 href={"/staff-augmentation"}
                 aria-label="link to staff augmentation page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Team Augmentation
               </Link>
@@ -145,7 +145,7 @@ const HomeFooter = () => {
               <Link
                 href={"/off-shore-software-development"}
                 aria-label="link to off-shore-software-development page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Off-Shore Software Development
               </Link>
@@ -154,7 +154,7 @@ const HomeFooter = () => {
               <Link
                 href={"/on-demand-talent"}
                 aria-label="link to on-demand-talent page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 On-Demand Talent Augmentation
               </Link>
@@ -170,7 +170,7 @@ const HomeFooter = () => {
               <Link
                 href={"/development-technologies/react-native-app-development"}
                 aria-label="link to home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Native App Development
               </Link>
@@ -179,7 +179,7 @@ const HomeFooter = () => {
               <Link
                 href={"/development-technologies/flutter-app-development"}
                 aria-label="link to services page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Flutter App Development
               </Link>
@@ -188,7 +188,7 @@ const HomeFooter = () => {
               <Link
                 href={"/development-technologies/swift-app-development"}
                 aria-label="link to workflow section on home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Swift App Development
               </Link>
@@ -197,7 +197,7 @@ const HomeFooter = () => {
               <Link
                 href={"/development-technologies/kotlin-app-development"}
                 aria-label="link to technologies section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Kotlin App Development
               </Link>
@@ -206,7 +206,7 @@ const HomeFooter = () => {
               <Link
                 href={"/development-technologies/ionic-app-development"}
                 aria-label="link to testimonials section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Ionic App Development
               </Link>
@@ -221,7 +221,7 @@ const HomeFooter = () => {
             <li>
               <Link
                 href={"/blogs"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Blogs
               </Link>
@@ -230,7 +230,7 @@ const HomeFooter = () => {
               <Link
                 href={`/case-studies`}
                 aria-label="launchbox global phone number"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 Case Studies
               </Link>
@@ -244,7 +244,7 @@ const HomeFooter = () => {
               <Link
                 href={"/"}
                 aria-label="launchbox global email address"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 hello@launchboxglobal.com
               </Link>
@@ -253,7 +253,7 @@ const HomeFooter = () => {
               <Link
                 href={`tel:8888688385`}
                 aria-label="launchbox global phone number"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[18px] xl:text-[18px]"
+                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
               >
                 (888) 868-8385
               </Link>

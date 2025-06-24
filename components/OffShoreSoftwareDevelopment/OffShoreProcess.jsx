@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -40,7 +39,7 @@ const AnimatedLine = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start center", "end start"], // adjust if needed
+    offset: ["start center", "end start"],
   });
 
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
