@@ -3,8 +3,7 @@ import nodemailer from "nodemailer";
 export async function POST(request) {
   try {
     const body = await request.json();
-
-    const { name, email, message } = body;
+    // console.log("body >>", body);
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
@@ -19,15 +18,19 @@ export async function POST(request) {
 
     // Send the email
     await transporter.sendMail({
-      from: `"Website Contact" <${process.env.SMTP_USER}>`,
+      from: `${body?.firstName} <${process.env.SMTP_USER}>`,
       to: process.env.TO_EMAIL, // where the form gets sent
-      subject: "New Form Submission",
+      subject: body?.emailSubject
+        ? body?.emailSubject
+        : "New Contact Form Website",
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Name:</strong> ${body?.firstName}</p>
+        <p><strong>Email:</strong> ${body?.email}</p>
+        <p><strong>Phone No:</strong> ${body?.phoneNumber}</p>
+        <p><strong>Service:</strong> ${body?.service}</p>
         <p><strong>Message:</strong></p>
-        <p>${message}</p>
+        <p>${body?.message}</p>
+         <p><strong>Submitted from:</strong> ${body?.pageUrl}</p>
       `,
     });
 

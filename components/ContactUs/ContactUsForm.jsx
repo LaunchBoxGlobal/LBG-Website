@@ -1,9 +1,12 @@
 "use client";
+import axios from "axios";
 import { useFormik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import * as Yup from "yup";
+import ButtonLoader from "../Global/ButtonLoader";
 
 const ContactUsForm = () => {
+  const [loading, setLoading] = useState(false);
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -11,6 +14,8 @@ const ContactUsForm = () => {
       email: "",
       phoneNumber: "",
       message: "",
+      pageUrl: window.location.href,
+      emailSubject: "New Contact Form Website",
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -29,22 +34,33 @@ const ContactUsForm = () => {
         .max(500, "Message cannot exceed 500 characters")
         .required("Message is required"),
     }),
-    onSubmit: (values, { resetForm }) => {
-      console.log("values >>>", values);
-      resetForm();
+    onSubmit: async (values, { resetForm }) => {
+      setLoading(true);
+      try {
+        const res = await axios.post(`/api/submit-form`, values, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (res?.status === 200) {
+          // console.log("res >>>>", res);
+
+          resetForm();
+          alert("Form submitted successfully!");
+        }
+      } catch (error) {
+        // console.log("error while submitting form >>>", error);
+        alert("Something went wrong!");
+      } finally {
+        setLoading(false);
+      }
     },
   });
   return (
     <section
       className={`w-full pb-10 lg:pb-20 padding-x flex items-center justify-center relative overflow-hidden`}
     >
-      {/* <Image
-        src={"/map.jpg"}
-        width={500}
-        height={500}
-        alt="world map image"
-        className="w-[80%] lg:w-[70%] h-[50vh] lg:h-[70vh] 2xl:h-[55vh] absolute inset-0 left-1/2 transform -translate-x-1/2 opacity-45"
-      /> */}
       <form
         onSubmit={formik.handleSubmit}
         className="w-full lg:w-[70%] 2xl:w-[60%] flex flex-col items-start gap-6 z-10 pb-10"
@@ -177,9 +193,9 @@ const ContactUsForm = () => {
         <div className="flex justify-end w-full">
           <button
             type="submit"
-            className="bg-[#F40E00] text-white px-5 lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] hover:bg-[#000] transition-all duration-300"
+            className="bg-[#F40E00] text-white px-5 min-w-[220px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
           >
-            Schedule A Meeting
+            {loading ? <ButtonLoader /> : "Schedule A Meeting"}
           </button>
         </div>
       </form>

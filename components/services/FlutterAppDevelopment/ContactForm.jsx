@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import LeadForm from "./LeadForm";
+import LeadForm from "../ReactNativeAppDevelopment/LeadForm";
+// import LeadForm from "./LeadForm";
 
 const ContactForm = () => {
   return (

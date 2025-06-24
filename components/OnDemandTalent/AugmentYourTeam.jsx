@@ -95,7 +95,7 @@ const AugmentYourTeam = () => {
       <section className="w-full mt-10 lg:mt-14 flex items-center justify-center gap-5 flex-wrap">
         {augment?.map((a, i) => {
           return (
-            <div key={i} className="w-full md:w-[320px] lg:max-w-[390px]">
+            <div key={i} className="w-full md:w-[320px] midlg:w-[340px]">
               <AnimatedText>
                 <div
                   className={`w-full max-w-[390px] min-h-[270px] bg-white hover:bg-[#F40E00] transition-all duration-300 relative group rounded-[17px]`}

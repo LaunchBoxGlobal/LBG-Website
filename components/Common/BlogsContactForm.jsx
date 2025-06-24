@@ -1,17 +1,22 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import axios from "axios";
+import ButtonLoader from "../Global/ButtonLoader";
 
 const BlogsContactForm = () => {
+  const [loading, setLoading] = useState(false);
   const formik = useFormik({
     initialValues: {
-      name: "",
+      firstName: "",
       email: "",
       message: "",
+      pageUrl: window.location.href,
+      emailSubject: "New Contact Form From Blogs Archive Page",
     },
     validationSchema: Yup.object({
-      name: Yup.string()
+      firstName: Yup.string()
         .min(3, "Name can not be less than 3 characters")
         .max(15, "Name can not be more than 25 characters")
         .required("Please enter your name"),
@@ -19,13 +24,31 @@ const BlogsContactForm = () => {
         .email("Invalid email address")
         .required("Please enter your email address"),
       message: Yup.string()
-        .min(100, "Message can not be less than 100 characters")
-        .max(600, "Message can not be less than 600 characters")
-        .required("Please enter a message"),
+        .min(100, "Must be 100 characters")
+        .max(1000, "Can not be more than 1000 characters.")
+        .required("Please enter your message."),
     }),
-    onSubmit: (values, { resetForm }) => {
-      // alert(JSON.stringify(values, null, 2));
-      resetForm();
+    onSubmit: async (values, { resetForm }) => {
+      setLoading(true);
+      try {
+        const res = await axios.post(`/api/submit-form`, values, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (res?.status === 200) {
+          // console.log("res >>>>", res);
+
+          resetForm();
+          alert("Form submitted successfully!");
+        }
+      } catch (error) {
+        console.log("error while submitting form >>>", error);
+        alert("Something went wrong!");
+      } finally {
+        setLoading(false);
+      }
     },
   });
 
@@ -45,17 +68,19 @@ const BlogsContactForm = () => {
           <div className="w-full">
             <input
               type="text"
-              id="name"
-              name="name"
+              id="firstName"
+              name="firstName"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.name}
+              value={formik.values.firstName}
               className="w-full h-[56px] bg-white block rounded-[15px] text-black placeholder:text-black outline-none px-5"
               placeholder="Name"
             />
             <div className="w-full">
-              {formik.touched.name && formik.errors.name ? (
-                <span className="text-xs red-text">{formik.errors.name}</span>
+              {formik.touched.firstName && formik.errors.firstName ? (
+                <span className="text-xs red-text">
+                  {formik.errors.firstName}
+                </span>
               ) : null}
             </div>
           </div>
@@ -100,7 +125,7 @@ const BlogsContactForm = () => {
             type="submit"
             className="w-full h-[56px] bg-[#F40E00] block rounded-[15px] text-white text-center uppercase font-bold outline-none px-5"
           >
-            send
+            {loading ? <ButtonLoader /> : "Send"}
           </button>
         </form>
       </div>

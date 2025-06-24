@@ -1,17 +1,22 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import axios from "axios";
+import ButtonLoader from "@/components/Global/ButtonLoader";
 
 const LeadForm = ({ title, buttonTitle, colorfulText }) => {
+  const [loading, setLoading] = useState(false);
   const formik = useFormik({
     initialValues: {
-      name: "",
+      firstName: "",
       email: "",
       phoneNumber: "",
+      pageUrl: window.location.href,
+      emailSubject: "New Contact Form From Service Page",
     },
     validationSchema: Yup.object({
-      name: Yup.string()
+      firstName: Yup.string()
         .min(3, "Name can not be less than 3 characters")
         .max(15, "Name can not be more than 25 characters")
         .required("Please enter your name"),
@@ -23,9 +28,27 @@ const LeadForm = ({ title, buttonTitle, colorfulText }) => {
         .max(10, "Must be 10 digits")
         .required("Please enter your phone number"),
     }),
-    onSubmit: (values, { resetForm }) => {
-      //   alert(JSON.stringify(values, null, 2));
-      resetForm();
+    onSubmit: async (values, { resetForm }) => {
+      setLoading(true);
+      try {
+        const res = await axios.post(`/api/submit-form`, values, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (res?.status === 200) {
+          // console.log("res >>>>", res);
+
+          resetForm();
+          alert("Form submitted successfully!");
+        }
+      } catch (error) {
+        console.log("error while submitting form >>>", error);
+        alert("Something went wrong!");
+      } finally {
+        setLoading(false);
+      }
     },
   });
 
@@ -48,23 +71,25 @@ const LeadForm = ({ title, buttonTitle, colorfulText }) => {
       <div className="w-full mt-7 flex flex-col items-start gap-3 lg:gap-5">
         <div className="w-full">
           <label
-            htmlFor="name"
+            htmlFor="firstName"
             className="block text-sm font-medium text-[#212121]"
           >
             Your Name
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="firstName"
+            name="firstName"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            value={formik.values.name}
+            value={formik.values.firstName}
             className="pb-2 pt-1 block w-full border-b border-gray-800 lg:text-lg outline-none"
           />
           <div className="w-full">
-            {formik.touched.name && formik.errors.name ? (
-              <span className="text-xs red-text">{formik.errors.name}</span>
+            {formik.touched.firstName && formik.errors.firstName ? (
+              <span className="text-xs red-text">
+                {formik.errors.firstName}
+              </span>
             ) : null}
           </div>
         </div>
@@ -119,7 +144,7 @@ const LeadForm = ({ title, buttonTitle, colorfulText }) => {
             type="submit"
             className="bg-[#212121] text-white w-full rounded-full h-[45px] text-sm lg:text-lg font-semibold hover:bg-[#F40E00] transition-all duration-300"
           >
-            {buttonTitle}
+            {loading ? <ButtonLoader /> : buttonTitle}
           </button>
         </div>
       </div>
