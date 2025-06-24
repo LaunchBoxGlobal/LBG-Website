@@ -10,7 +10,7 @@ const DevelopmentModel = () => {
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <p className="text-[#F40E00] text-lg lg:text-[25px] font-semibold">
-            Offshore vs Nearshore vs Onshore
+            Offshore vs Nearshore vs Onshore: What’s Best?
           </p>
         </AnimatedText>
         <AnimatedText>

@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
       <section className="w-full flex flex-col items-center gap-5">
         <AnimatedText>
           <h2 className="section-heading text-center mx-auto">
-            Why Choose <span className="red-text">LaunchBox Global</span>
+            Why You Should Work <span className="red-text">With Us</span>
           </h2>
         </AnimatedText>
         <AnimatedText>

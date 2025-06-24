@@ -9,7 +9,8 @@ const WhenToChooseOffshore = () => {
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <h2 className="section-heading lg:w-[90%] mx-auto">
-            When To Choose <span className="red-text">Offshore</span>
+            When to Consider Offshore{" "}
+            <span className="red-text">Development</span>
           </h2>
         </AnimatedText>
         <AnimatedText>

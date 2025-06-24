@@ -10,7 +10,7 @@ const FooterCta = () => {
         <div className="w-full relative bg-[#000] text-white rounded-[17px] flex items-start">
           <div className="w-full lg:w-[60%] flex flex-col items-start justify-center gap-5 p-10 midlg:p-20">
             <h2 className="text-[25px] md:text-[35px] lg:text-[50px] font-bold leading-[1.1]">
-              Build Better with Offshore Software Development
+              Claim Your Free Offshore Software Development Strategy Call
             </h2>
             <p className="text-lg font-normal leading-[1.2]">
               Scale your development with our global talent pool and
@@ -28,10 +28,10 @@ const FooterCta = () => {
           </div>
           <div className="w-[40%] h-full pt-10 pr-20 hidden lg:flex items-center justify-center">
             <Image
-              src={"/off-shore/footer-cta-mockup.png"}
-              width={371}
-              height={428}
-              alt="footer-cta-mockup"
+              src={"/off-shore/offshore-cta-image.png"}
+              width={391}
+              height={458}
+              alt="offshore-cta-image"
             />
           </div>
         </div>
