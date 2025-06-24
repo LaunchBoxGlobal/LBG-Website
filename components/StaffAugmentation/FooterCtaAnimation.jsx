@@ -7,18 +7,18 @@ const FooterCtaAnimation = () => {
       <span className="animate-ping transition-all duration-500 absolute inline-flex h-[140px] w-[140px] rounded-full bg-[#E1E1E1] opacity-75 z-0"></span>
       <span className="animate-ping transition-all duration-500 absolute inline-flex h-[180px] w-[180px] rounded-full bg-[#E1E1E1] opacity-50 z-0"></span>
       <span className="animate-ping transition-all duration-500 absolute inline-flex h-[220px] w-[220px] rounded-full bg-[#E1E1E1] opacity-35 z-0"></span>
-      <Image
+      {/* <Image
         src={"/staff-augmentation/footer-cta-image.png"}
         alt="footer-cta-image"
         width={147}
         height={143}
         className="relative inline-flex z-10"
-      />
+      /> */}
 
       <div className="w-full h-full absolute inset-0">
         <Image
-          src={"/staff-augmentation/footer-cta-profiles.png"}
-          alt="footer-cta-profiles"
+          src={"/staff-augmentation/footer-cta-icons-image.png"}
+          alt="footer-cta-icons-image"
           width={391}
           height={377}
           className="absolute left-1/2 -translate-x-1/2 top-5"

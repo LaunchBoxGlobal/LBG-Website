@@ -19,9 +19,9 @@ export const ON_DEMAND_PROCESS = [
     icon: "/staff-augmentation/interviews-icon.png",
     iconWidth: 34,
     iconHeight: 34,
-    title: "Conduct Interviews",
+    title: "Seamless Onboarding",
     description:
-      "Meet pre-approved candidates and select your preferred match. We facilitate interviews at your convenience across all time zones.",
+      "No hiring delays. We allocate project-ready experts who match your needs—fully vetted and briefed to integrate smoothly.",
   },
   {
     icon: "/on-demand-talent/start-working-icon.png",

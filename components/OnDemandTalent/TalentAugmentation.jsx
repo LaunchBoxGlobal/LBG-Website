@@ -27,35 +27,31 @@ const TalentAugmentation = () => {
           return (
             <div key={index} className="w-full">
               <AnimatedText>
-                <div className="w-full flex flex-col items-start gap-3 bg-[#F6F6F6] rounded-[29px] p-7 min-h-[498px] relative">
+                <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] rounded-[29px] p-7 min-h-[558px] relative">
                   <div className="w-[11px] h-[93px] red-bg rounded-l-2xl absolute left-[-10px]" />
-                  <div className="rounded-full red-bg w-[71px] lg:w-[91px] h-[71px] lg:h-[91px] flex items-center justify-center">
-                    <Image
-                      src={talent?.icon}
-                      width={talent?.width}
-                      height={talent?.height}
-                      alt={`${talent?.title} icon`}
-                    />
-                  </div>
-                  <h3 className="text-[27px] font-semibold">{talent?.title}</h3>
-                  <p className="text-xl lg:text-[23px] leading-[1.1] font-light">
-                    {talent?.description}
-                  </p>
-                  {talent?.techIcons?.length > 0 && (
-                    <div className="flex items-center justify-start flex-wrap gap-1.5 mt-3">
-                      {talent?.techIcons?.map((icon, i) => {
-                        return (
-                          <Image
-                            src={icon}
-                            key={i}
-                            width={120}
-                            height={48}
-                            className="h-[48px] min-w-[130px] object-cover rounded-full"
-                          />
-                        );
-                      })}
+                  <div className="flex flex-col items-start gap-3">
+                    <div className="rounded-full red-bg w-[71px] lg:w-[91px] h-[71px] lg:h-[91px] flex items-center justify-center">
+                      <Image
+                        src={talent?.icon}
+                        width={talent?.width}
+                        height={talent?.height}
+                        alt={`${talent?.title} icon`}
+                      />
                     </div>
-                  )}
+                    <h3 className="text-[27px] font-semibold">
+                      {talent?.title}
+                    </h3>
+                    <p className="text-xl lg:text-[23px] leading-[1.1] font-light">
+                      {talent?.description}
+                    </p>
+                  </div>
+                  <Image
+                    src={talent?.techIcons}
+                    width={talent?.iconWidth}
+                    height={talent?.iconHeight}
+                    alt={`${talent?.title} icon`}
+                    className=""
+                  />
                 </div>
               </AnimatedText>
             </div>

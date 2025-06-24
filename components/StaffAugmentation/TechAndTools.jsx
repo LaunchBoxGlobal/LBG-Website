@@ -5,13 +5,14 @@ import ProgrammingLanguages from "./ProgrammingLanguages";
 import CloudPlatforms from "./CloudPlatforms";
 import DevelopmentTools from "./DevelopmentTools";
 import AnimatedText from "./AnimatedText";
+import Databases from "./Databases";
 
 const TechAndTools = () => {
   const [activeTechStack, setActiveTechStack] = useState(
     "programming-languages"
   );
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
+    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#f9f9f9] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <p className="text-lg md:text-xl lg:text-[22px] font-medium mx-auto">
@@ -48,6 +49,17 @@ const TechAndTools = () => {
             </button>
             <button
               type="button"
+              onClick={() => setActiveTechStack("databases")}
+              className={`border-b-[3px] ${
+                activeTechStack === "databases"
+                  ? "border-[#F40E00]"
+                  : "border-gray-300"
+              } pb-3 px-3 text-lg lg:text-[22px] text-[#212121]`}
+            >
+              Databases
+            </button>
+            <button
+              type="button"
               onClick={() => setActiveTechStack("cloud-platforms")}
               className={`border-b-[3px] ${
                 activeTechStack === "cloud-platforms"
@@ -77,6 +89,8 @@ const TechAndTools = () => {
         <CloudPlatforms />
       ) : activeTechStack === "development-tools" ? (
         <DevelopmentTools />
+      ) : activeTechStack === "databases" ? (
+        <Databases />
       ) : null}
     </section>
   );

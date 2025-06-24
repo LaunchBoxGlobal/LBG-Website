@@ -50,7 +50,7 @@ const StaffAugmentationPage = () => {
       <HowItWorks />
       <MarketShifts />
       <HiringHassels />
-      <BuildYourTechTeam />
+      {/* <BuildYourTechTeam /> */}
       <TechNeed />
       <AugmentationProcess />
       <TechAndTools />

@@ -7,7 +7,7 @@ const TechStackCard = ({ tech, index }) => {
     <div className="w-full max-w-[189px]">
       <AnimatedText>
         <div
-          className={`w-full max-w-[189px] h-[205px] bg-[#F9F9F9] transition-all duration-200 flex flex-col items-center justify-center gap-4 rounded relative overflow-hidden group`}
+          className={`w-full max-w-[189px] h-[205px] bg-[#fff] transition-all duration-200 flex flex-col items-center justify-center gap-4 rounded relative overflow-hidden group`}
         >
           <div
             className={`w-[88px] h-[88px] bg-transparent group-hover:w-full group-hover:h-full group-hover:inset-0 group-hover:rounded group-hover:bg-[#F40E00] transition-all duration-200 absolute z-0 top-[17.2%]`}

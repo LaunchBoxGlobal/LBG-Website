@@ -10,7 +10,7 @@ const augment = [
     title: "MVP Development",
     description:
       "Accelerate your product launch with experienced developers who hit the ground running perfect for proving concepts fast.",
-    image1: "/on-demand-talent/mvp-development-bg-1.png",
+    image1: "/on-demand-talent/mvp-development-bg-image.png",
     image2: "/on-demand-talent/mvp-development-bg-2.png",
     width1: 440,
     height1: 300,
@@ -52,7 +52,7 @@ const augment = [
     title: "Tech Trials",
     description:
       "Test new technologies or approaches with specialized talent, no need to retrain your core team.",
-    image1: "/on-demand-talent/tech-trials-bg-1.png",
+    image1: "/on-demand-talent/tech-trialsbg.png",
     image2: "/on-demand-talent/tech-trials-bg-2.png",
     width1: 473,
     height1: 461,
@@ -116,8 +116,8 @@ const AugmentYourTeam = () => {
                       width={a?.width1}
                       height={a?.height1}
                       alt="background image"
-                      className={`absolute inset-0 z-0 object-contain ${
-                        i === 0 ? "opacity-10" : "opacity-50"
+                      className={`absolute h-full w-full inset-0 z-0 object-cover ${
+                        i === 3 ? "opacity-10" : "opacity-100"
                       }`}
                     />
                   </div>

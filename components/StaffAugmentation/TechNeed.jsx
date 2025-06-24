@@ -5,7 +5,7 @@ import AnimatedText from "./AnimatedText";
 
 const TechNeed = () => {
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
+    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#F9F9F9] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <h2 className="section-heading lg:w-[90%] mx-auto">
@@ -27,7 +27,7 @@ const TechNeed = () => {
             <div key={i} className="w-full md:w-[318px]">
               <AnimatedText>
                 <div
-                  className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#F6F6F6] flex flex-col items-start gap-4`}
+                  className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#fff] flex flex-col items-start gap-4`}
                 >
                   <Image
                     src={t?.icon}

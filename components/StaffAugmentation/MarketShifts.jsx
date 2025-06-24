@@ -10,7 +10,7 @@ import AnimatedText from "./AnimatedText";
 
 export const sliderSettings = {
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 30,
   centeredSlides: false,
   // autoplay: {
   //   delay: 3000,
@@ -37,13 +37,16 @@ export const sliderSettings = {
     1390: {
       slidesPerView: 4,
     },
+    1900: {
+      slidesPerView: 5,
+    },
   },
 };
 
 const MarketShifts = () => {
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#F9F9F9] overflow-hidden">
-      <section className="w-full flex flex-col items-center justify-center gap-6 text-center padding-x">
+    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#F9F9F9] overflow-hidden padding-x">
+      <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <h2 className="section-heading lg:w-[90%] mx-auto">
             IT Staff Augmentation{" "}
@@ -59,16 +62,14 @@ const MarketShifts = () => {
         </AnimatedText>
       </section>
 
-      <section
-        className={`w-full relative overflow-hidden mt-10 lg:mt-14 pl-4 md:pl-8 lg:pl-28 xl:pl-40 2xl:pl-[13%]`}
-      >
+      <section className={`w-full relative overflow-hidden mt-10 lg:mt-14`}>
         <Swiper
           {...sliderSettings}
           className="overflow-hidden h-full flex gap-4 relative"
         >
           {MARKET_SHIFTS?.map((value, index) => {
             return (
-              <SwiperSlide key={index} className="w-[95%] lg:w-[320px]">
+              <SwiperSlide key={index} className="mx-4">
                 <AnimatedText direction="left">
                   <div className="w-[95%] rounded-xl p-6 bg-white h-[386px] lg:w-[320px] flex flex-col items-start justify-start gap-2 mx-2">
                     <Image

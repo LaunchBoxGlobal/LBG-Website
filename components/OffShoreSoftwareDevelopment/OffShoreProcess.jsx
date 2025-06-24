@@ -10,7 +10,7 @@ const OffShoreProcess = () => {
   return (
     <div className="w-full relative py-20 lg:pb-60 midlg:pb-40">
       <AnimatedLine />
-      <div className="absolute lg:bottom-[8%] xl:bottom-[5.5%] -right-5 midlg:right-[2.2%] xl:right-[10.8%] items-center justify-center hidden lg:flex">
+      <div className="absolute lg:bottom-[8%] xl:bottom-[5.5%] -right-5 midlg:right-[2%] xl:right-[10.8%] items-center justify-center hidden lg:flex">
         <Image
           src={"/staff-augmentation/Rocket.png"}
           alt="Rocket"

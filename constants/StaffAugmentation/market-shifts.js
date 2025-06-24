@@ -32,7 +32,7 @@ export const MARKET_SHIFTS = [
       "Projects can't wait for long hiring cycles. Get specialized developers in days, not months, and launch faster.",
   },
   {
-    image: "/staff-augmentation/market-shifts-icon-4.png",
+    image: "/staff-augmentation/post-covid-digital-icon.png",
     width: 140,
     height: 115,
     title: "Post-COVID Digital Acceleration",

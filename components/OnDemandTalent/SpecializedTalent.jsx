@@ -29,9 +29,22 @@ export const points = [
   },
   {
     icon1: "/on-demand-talent/fees-icon.png",
-    title1: "No extra hiring fees",
+    title1: "No employment laws we handle contracts and payments",
     icon2: "/on-demand-talent/high-recruitment-icon.png",
-    title2: "High recruitment costs",
+    title2: "Employment contracts, taxes, compliance headaches",
+  },
+  //
+  {
+    icon1: "/on-demand-talent/fees-icon.png",
+    title1: "Remote pros use their own tools and workspace",
+    icon2: "/on-demand-talent/high-recruitment-icon.png",
+    title2: "Office space, equipment, and software licenses add up",
+  },
+  {
+    icon1: "/on-demand-talent/fees-icon.png",
+    title1: "Talent uses their own equipment",
+    icon2: "/on-demand-talent/high-recruitment-icon.png",
+    title2: "You provide laptops, phones, and IT support",
   },
 ];
 
@@ -86,7 +99,7 @@ const SpecializedTalent = () => {
                   height={24}
                   className="object-contain"
                 />
-                <h3 className="text-[18px] lg:text-[28px] font-medium">
+                <h3 className="text-[18px] lg:text-[28px] font-medium max-w-[80%] leading-[1]">
                   {p?.title1}
                 </h3>
               </div>
@@ -98,7 +111,7 @@ const SpecializedTalent = () => {
                   height={24}
                   className="object-contain"
                 />
-                <h3 className="text-[18px] lg:text-[28px] font-medium">
+                <h3 className="text-[18px] lg:text-[28px] font-medium max-w-[80%] leading-[1]">
                   {p?.title2}
                 </h3>
               </div>
@@ -127,7 +140,7 @@ const SpecializedTalent = () => {
                   height={24}
                   className="object-contain"
                 />
-                <h3 className="text-[18px] lg:text-[28px] font-medium">
+                <h3 className="text-[18px] lg:text-[28px] font-medium leading-[1]">
                   {p?.title1}
                 </h3>
               </div>
@@ -139,7 +152,7 @@ const SpecializedTalent = () => {
                   height={24}
                   className="object-contain"
                 />
-                <h3 className="text-[18px] lg:text-[28px] font-medium">
+                <h3 className="text-[18px] lg:text-[28px] font-medium leading-[1]">
                   {p?.title2}
                 </h3>
               </div>

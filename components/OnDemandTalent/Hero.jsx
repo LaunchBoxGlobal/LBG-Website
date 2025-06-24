@@ -26,7 +26,7 @@ const Hero = () => {
         <HeroSearchInput />
       </section>
 
-      <div className="absolute -left-10 top-20 w-[300px] h-[570px] hidden midlg:flex justify-start z-0">
+      <div className="absolute -left-20 top-20 w-[300px] h-[570px] hidden midlg:flex justify-start z-0">
         <Image
           src="/on-demand-talent/hero-left-gray-dots-image.png"
           alt="dots"
@@ -104,7 +104,7 @@ const Hero = () => {
       </div>
 
       {/* right section */}
-      <div className="absolute -right-10 top-20 w-[300px] h-[570px] hidden midlg:flex justify-end z-0">
+      <div className="absolute -right-20 top-20 w-[300px] h-[570px] hidden midlg:flex justify-end z-0">
         {/* Dots image */}
         <Image
           src="/on-demand-talent/hero-right-gray-dots-image.png"

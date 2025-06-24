@@ -99,11 +99,13 @@ const FooterLocations = () => {
                 alt="location icon"
                 loading="lazy"
               />
-              <p className="text-lg">1623 Central Ave, Cheyenne, WY 82001</p>
+              <p className="text-lg">
+                1621 Central Ave, Office 8945 Cheyenne, WY 82001
+              </p>
             </div>
             <div className="">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6010.051265064422!2d-104.81440979999999!3d41.1339664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876f3ac24c862bb5%3A0x85dc195fd0f500b3!2s1623%20Central%20Ave%2C%20Cheyenne%2C%20WY%2082001%2C%20USA!5e0!3m2!1sen!2s!4v1749039691251!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.736095640838!2d-104.8202268!3d41.140286700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876f3aeb63cd1cfb%3A0xee85d7fc31e76e14!2s1621%20Central%20Ave%20%238945%2C%20Cheyenne%2C%20WY%2082001%2C%20USA!5e0!3m2!1sen!2s!4v1750750459763!5m2!1sen!2s"
                 style={{ borderRadius: "20px" }}
                 allowFullScreen=""
                 loading="lazy"

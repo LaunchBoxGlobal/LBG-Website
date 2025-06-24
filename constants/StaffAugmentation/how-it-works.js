@@ -21,10 +21,10 @@ export const HOW_IT_WORKS = [
     icon: "/staff-augmentation/how-it-works-icon-3.svg",
     width: 44,
     height: 40,
-    title: "Interview & Onboard",
+    title: "Expert You Need",
     borderImage: "/staff-augmentation/borderImage-1.svg",
     description:
-      "Review profiles, conduct interviews, and onboard seamlessly. Only approve the best fit for your project.",
+      "We connect you with the professional you need according to your timeline. You don’t end up going through the entire process of hiring.",
   },
   {
     icon: "/staff-augmentation/how-it-works-icon-4.svg",

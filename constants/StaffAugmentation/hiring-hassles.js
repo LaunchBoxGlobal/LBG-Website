@@ -44,4 +44,22 @@ export const HIRING_HASSLES = [
     description:
       "Keep projects on track with accountable developers who deliver on time, every time.",
   },
+  {
+    icon: "/staff-augmentation/missed-deadlines-icon.svg",
+    whiteIcon: "/staff-augmentation/missed-deadlines-white-icon.png",
+    height: 41,
+    width: 40,
+    title: "Availability At Your Time",
+    description:
+      "Get talent that works in your time zone so you can work at times that work best for you.",
+  },
+  {
+    icon: "/staff-augmentation/missed-deadlines-icon.svg",
+    whiteIcon: "/staff-augmentation/missed-deadlines-white-icon.png",
+    height: 41,
+    width: 40,
+    title: "Cost-Effective Talent Sourcing",
+    description:
+      "Staff augmentation saves overhead costs while getting access to specialist talent when needed.",
+  },
 ];

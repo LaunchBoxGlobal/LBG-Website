@@ -26,6 +26,31 @@ const platforms = [
     height: 57,
     title: "Digital Ocean",
   },
+  // google-cloud-icon
+  {
+    icon: "/staff-augmentation/google-cloud-icon.png",
+    width: 61,
+    height: 47,
+    title: "Google Cloud",
+  },
+  {
+    icon: "/staff-augmentation/cloudinary-icon.png",
+    width: 87,
+    height: 57,
+    title: "Cloudinary",
+  },
+  {
+    icon: "/staff-augmentation/datadog-icon.png",
+    width: 53,
+    height: 57,
+    title: "Datadog",
+  },
+  {
+    icon: "/staff-augmentation/grafana-icon.png",
+    width: 53,
+    height: 57,
+    title: "Grafana",
+  },
 ];
 
 const CloudPlatforms = () => {

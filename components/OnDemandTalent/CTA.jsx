@@ -37,8 +37,8 @@ const CTA = () => {
 
           <div className="w-full mt-32 z-10 flex flex-col items-center justify-end gap-4 lg:gap-6 px-4 pt-20">
             <AnimatedText>
-              <h2 className="text-[28px] md:text-[35px] midlg:text-[45px] xl:text-[60px] font-bold text-center leading-[1.1] lg:w-[60%] mx-auto z-10">
-                Need Top Talent Fast? We've Got You Covered.
+              <h2 className="text-[25px] md:text-[30px] lg:text-[30px] xl:text-[40px] font-bold text-center leading-[1.1] lg:w-[60%] mx-auto z-10">
+                Get Skilled Developers in 48 Hours - Book Your Free Match Now.
               </h2>
             </AnimatedText>
             <AnimatedText>

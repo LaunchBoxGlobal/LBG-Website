@@ -3,7 +3,7 @@ import Process from "./Process";
 
 const AugmentationProcess = () => {
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#F9F9F9] padding-x overflow-hidden">
+    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#ffff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <h2 className="section-heading lg:w-[90%] mx-auto">

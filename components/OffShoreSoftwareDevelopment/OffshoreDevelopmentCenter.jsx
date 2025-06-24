@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import AnimatedText from "../StaffAugmentation/AnimatedText";
 import { OFFSHORE_DEVELOPMENT_CENTER } from "@/constants/off-shore-development/off-shore-development-center";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { TALENT_AUGMENTATION } from "@/constants/on-demand-talent-content/talent-augmentation";
 
 const OffshoreDevelopmentCenter = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -29,7 +31,44 @@ const OffshoreDevelopmentCenter = () => {
         </AnimatedText>
       </section>
 
-      <section className="w-full mt-10 lg:mt-14">
+      <section className="w-full mt-10 lg:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-5 pl-5 overflow-hidden">
+        {TALENT_AUGMENTATION?.map((talent, index) => {
+          return (
+            <div key={index} className="w-full">
+              <AnimatedText>
+                <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#fff] rounded-[29px] p-7 min-h-[558px] relative">
+                  <div className="w-[11px] h-[93px] red-bg rounded-l-2xl absolute left-[-10px]" />
+                  <div className="flex flex-col items-start gap-3">
+                    <div className="rounded-full red-bg w-[71px] lg:w-[91px] h-[71px] lg:h-[91px] flex items-center justify-center">
+                      <Image
+                        src={talent?.icon}
+                        width={talent?.width}
+                        height={talent?.height}
+                        alt={`${talent?.title} icon`}
+                      />
+                    </div>
+                    <h3 className="text-[27px] font-semibold">
+                      {talent?.title}
+                    </h3>
+                    <p className="text-xl lg:text-[23px] leading-[1.1] font-light">
+                      {talent?.description}
+                    </p>
+                  </div>
+                  <Image
+                    src={talent?.techIcons}
+                    width={talent?.iconWidth}
+                    height={talent?.iconHeight}
+                    alt={`${talent?.title} icon`}
+                    className=""
+                  />
+                </div>
+              </AnimatedText>
+            </div>
+          );
+        })}
+      </section>
+
+      {/* <section className="w-full mt-10 lg:mt-14">
         {OFFSHORE_DEVELOPMENT_CENTER?.map((center, index) => {
           return (
             <AnimatedText>
@@ -62,7 +101,7 @@ const OffshoreDevelopmentCenter = () => {
             </AnimatedText>
           );
         })}
-      </section>
+      </section> */}
     </section>
   );
 };
