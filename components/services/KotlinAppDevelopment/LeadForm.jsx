@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -7,12 +7,17 @@ import ButtonLoader from "@/components/Global/ButtonLoader";
 
 const LeadForm = ({ title, buttonTitle, colorfulText }) => {
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    formik.setFieldValue("pageUrl", window.location.href);
+  }, []);
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
       email: "",
       phoneNumber: "",
-      pageUrl: window.location.href,
+      // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Service Page",
     },
     validationSchema: Yup.object({
