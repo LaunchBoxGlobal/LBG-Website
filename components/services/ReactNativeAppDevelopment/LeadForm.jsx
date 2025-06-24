@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -12,7 +12,7 @@ const LeadForm = ({ title, buttonTitle }) => {
       firstName: "",
       email: "",
       phoneNumber: "",
-      pageUrl: window.location.href,
+      // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Service Page",
     },
     validationSchema: Yup.object({
@@ -51,6 +51,10 @@ const LeadForm = ({ title, buttonTitle }) => {
       }
     },
   });
+
+  useEffect(() => {
+    formik.setFieldValue("pageUrl", window.location.href);
+  }, []);
 
   return (
     <form

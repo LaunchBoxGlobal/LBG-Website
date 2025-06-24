@@ -1,12 +1,17 @@
 "use client";
 import axios from "axios";
 import { useFormik } from "formik";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import ButtonLoader from "../Global/ButtonLoader";
 
 const ContactUsForm = () => {
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    formik.setFieldValue("pageUrl", window.location.href);
+  }, []);
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -14,7 +19,7 @@ const ContactUsForm = () => {
       email: "",
       phoneNumber: "",
       message: "",
-      pageUrl: window.location.href,
+      // pageUrl: window.location.href,
       emailSubject: "New Contact Form Website",
     },
     validationSchema: Yup.object({

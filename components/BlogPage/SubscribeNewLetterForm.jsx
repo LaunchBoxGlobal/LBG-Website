@@ -1,7 +1,7 @@
 "use client";
 import { useFormik } from "formik";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import axios from "axios";
 
@@ -10,7 +10,7 @@ const SubscribeNewLetterForm = () => {
   const formik = useFormik({
     initialValues: {
       email: "",
-      pageUrl: window.location.href,
+      // pageUrl: window.location.href,
       emailSubject: "Subscribe Form from Blog Page",
     },
     validationSchema: Yup.object({
@@ -41,6 +41,11 @@ const SubscribeNewLetterForm = () => {
       }
     },
   });
+
+  useEffect(() => {
+    formik.setFieldValue("pageUrl", window.location.href);
+  }, []);
+
   return (
     <div className="w-full rounded-[15px] p-5 lg:p-7 h-[278px] flex flex-col items-center justify-center gap-4 subscribe-email-form">
       <Image src={"/mail-icon.png"} width={58} height={62} alt="mail-icon" />

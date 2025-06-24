@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
@@ -7,12 +7,17 @@ import ButtonLoader from "../Global/ButtonLoader";
 
 const BlogsContactForm = () => {
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    formik.setFieldValue("pageUrl", window.location.href);
+  }, []);
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
       email: "",
       message: "",
-      pageUrl: window.location.href,
+      // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Blogs Archive Page",
     },
     validationSchema: Yup.object({
