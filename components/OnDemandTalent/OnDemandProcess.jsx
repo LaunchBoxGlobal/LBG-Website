@@ -26,7 +26,7 @@ const OnDemandProcess = () => {
       </section>
       <div className="w-full relative mt-10 pt-20 pb-24">
         <AnimatedLine />
-        <div className="absolute bottom-[7%] left-[13%] items-center justify-center hidden lg:flex">
+        <div className="absolute bottom-[7%] left-[11%] midlg:left-[13%] items-center justify-center hidden lg:flex">
           <Image
             src={"/staff-augmentation/Rocket.png"}
             alt="Rocket"

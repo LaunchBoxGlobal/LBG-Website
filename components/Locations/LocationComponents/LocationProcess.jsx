@@ -86,7 +86,7 @@ const LocationProcess = ({
           </button>
         </div>
       </div>
-      <div className="w-full relative py-20">
+      <div className="w-full relative py-20 lg:pb-40">
         <AnimatedLine />
         <div className="absolute bottom-[3%] lg:right-1 midlg:right-[10%] xl:right-[17.5%] items-center justify-center hidden lg:flex">
           <Image

@@ -11,7 +11,7 @@ const Process = () => {
   return (
     <div className="w-full relative  py-20">
       <AnimatedLine />
-      <div className="absolute bottom-[7%] left-[13%] items-center justify-center hidden lg:flex">
+      <div className="absolute bottom-[7%] lg:left-[11%] midlg:left-[12.2%] xl:left-[13%] items-center justify-center hidden lg:flex">
         <Image
           src={"/staff-augmentation/Rocket.png"}
           alt="Rocket"
