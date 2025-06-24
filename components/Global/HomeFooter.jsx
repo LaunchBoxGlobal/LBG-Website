@@ -3,6 +3,13 @@ import Link from "next/link";
 import React from "react";
 import { RiFacebookFill, RiLinkedinFill, RiTwitterXFill } from "react-icons/ri";
 import FooterLocations from "./FooterLocations";
+import {
+  FOOTER_CONTACTS,
+  FOOTER_RESOURCES,
+  FOOTER_SERVICES,
+  FOOTER_STAFF_AUGMENTATION_LINKS,
+  FOOTER_TECH_LINKS,
+} from "@/constants/footer/footerLinks";
 
 const HomeFooter = () => {
   return (
@@ -67,212 +74,115 @@ const HomeFooter = () => {
         </section>
       </section>
 
-      <section className="w-full padding-x flex flex-wrap items-center lg:items-start justify-start lg:justify-between gap-y-10 mt-10 lg:mt-20">
-        <div className="w-full lg:w-[18%]">
+      <section className="w-full padding-x flex justify-between items-start flex-wrap gap-y-10 gap-x-0 mt-10 lg:mt-20">
+        <div className="w-full md:w-1/2 lg:w-[25%]">
           <h3 className="text-[18px] xl:text-[21px] font-bold uppercase">
             Services
           </h3>
-          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
-            <li>
-              <Link
-                href={"/services/mobile-app-development"}
-                aria-label="link to home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Mobile App Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/services/web-app-development"}
-                aria-label="link to services page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Web App Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/services/custom-software-development"}
-                aria-label="link to workflow section on home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Custom Software Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/services/ecommerce-development"}
-                aria-label="link to technologies section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                E-commerce Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/services/digital-marketing"}
-                aria-label="link to testimonials section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Digital Marketing
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/services/branding-and-design"}
-                aria-label="link to frequently asked questions"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Branding & Design
-              </Link>
-            </li>
-          </ul>
-          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase mt-10">
-            Staff Augmentation
-          </h3>
-          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
-            <li>
-              <Link
-                href={"/staff-augmentation"}
-                aria-label="link to staff augmentation page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Team Augmentation
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/off-shore-software-development"}
-                aria-label="link to off-shore-software-development page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Off-Shore Software Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/on-demand-talent"}
-                aria-label="link to on-demand-talent page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                On-Demand Talent Augmentation
-              </Link>
-            </li>
+          <ul className="flex flex-col items-start gap-3 mt-5">
+            {FOOTER_SERVICES?.map((service, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    href={service?.url}
+                    aria-label={`${service?.title}`}
+                    className="text-gray-200 opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
+                  >
+                    {service?.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div className="w-full lg:w-[20%] lg:px-10">
+        <div className="w-full md:w-1/2 lg:w-[25%] lg:pl-3">
           <h3 className="text-[18px] xl:text-[21px] font-bold uppercase">
             Technology
           </h3>
-          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
-            <li>
-              <Link
-                href={"/development-technologies/react-native-app-development"}
-                aria-label="link to home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Native App Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/development-technologies/flutter-app-development"}
-                aria-label="link to services page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Flutter App Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/development-technologies/swift-app-development"}
-                aria-label="link to workflow section on home page"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Swift App Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/development-technologies/kotlin-app-development"}
-                aria-label="link to technologies section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Kotlin App Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={"/development-technologies/ionic-app-development"}
-                aria-label="link to testimonials section"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Ionic App Development
-              </Link>
-            </li>
+          <ul className="flex flex-col items-start gap-3 mt-5">
+            {FOOTER_TECH_LINKS?.map((service, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    href={service?.url}
+                    aria-label={service?.title}
+                    className="text-gray-200 opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
+                  >
+                    {service?.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <div className="w-full lg:w-[20%]">
-          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase text-center lg:text-start">
+        <div className="w-full md:w-1/2 lg:w-[25%]">
+          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase">
+            Staff Augmentation
+          </h3>
+          <ul className="flex flex-col items-start gap-3 mt-5">
+            {FOOTER_STAFF_AUGMENTATION_LINKS?.map((service, i) => {
+              return (
+                <li key={i}>
+                  <Link
+                    href={service?.url}
+                    aria-label={service?.title}
+                    className="text-gray-200 opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
+                  >
+                    {service?.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="w-full md:w-1/2 lg:w-[25%] lg:pl-10">
+          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase text-start">
             Resources
           </h3>
-          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
-            <li>
-              <Link
-                href={"/blogs"}
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Blogs
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/case-studies`}
-                aria-label="launchbox global phone number"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Case Studies
-              </Link>
-            </li>
+          <ul className="w-full flex flex-col items-start gap-3 mt-5">
+            {FOOTER_RESOURCES?.map((resource, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    href={resource?.url}
+                    className="text-gray-200 opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
+                  >
+                    {resource?.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
-          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase text-center lg:text-start mt-10">
+          <h3 className="text-[18px] xl:text-[21px] font-bold uppercase text-start mt-10">
             Contact us
           </h3>
-          <ul className="flex flex-col items-center lg:items-start gap-3 mt-5">
-            <li>
-              <Link
-                href={"/"}
-                aria-label="launchbox global email address"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                hello@launchboxglobal.com
-              </Link>
-            </li>
-            {/*  +1 307-922-0100 */}
-            <li>
-              <Link
-                href={`tel:8888688385`}
-                aria-label="launchbox global phone number"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Ph: (888) 868-8385
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`tel:13079220100`}
-                aria-label="launchbox global phone number"
-                className="text-white opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px]"
-              >
-                Fax No: 1307-922-0100
-              </Link>
-            </li>
+          <ul className="flex flex-col items-start gap-3 mt-5 w-full">
+            {FOOTER_CONTACTS?.map((contact, index) => {
+              return (
+                <li key={index} className="w-full">
+                  <Link
+                    href={contact?.url}
+                    aria-label={contact?.title}
+                    className="text-gray-200 opacity-90 hover:opacity-100 underline transition-all duration-200 lg:text-[16px] xl:text-[18px] whitespace-nowrap"
+                  >
+                    {contact?.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
-
-        <FooterLocations />
       </section>
+
+      <div className="w-full padding-x">
+        <div className="w-full my-16 border border-neutral-800" />
+      </div>
+
+      <FooterLocations />
+
+      <div className="w-full padding-x">
+        <div className="w-full my-16 border border-neutral-800" />
+      </div>
 
       <section className="w-full flex flex-col items-center gap-5 justify-center mt-10 lg:mt-20 relative">
         <Image
@@ -281,13 +191,13 @@ const HomeFooter = () => {
           width={1919}
           height={142}
           loading="lazy"
-          className="w-full absolute z-0 -bottom-2"
+          className="w-full absolute z-0 inset-x-0 top-1.5"
         />
-        <p className="text-sm md:text-base font-semibold opacity-70 z-10">
+        <p className="text-sm md:text-base font-semibold opacity-70 z-10 relative top-5">
           © 2025 LaunchBox Global. All Rights Reserved.
         </p>
 
-        <div className="flex items-center justify-end gap-3 z-10">
+        <div className="flex items-center justify-end gap-3 z-10 relative top-3">
           <Link
             href={"/https://www.facebook.com/"}
             target="_blank"
@@ -317,3 +227,5 @@ const HomeFooter = () => {
 };
 
 export default HomeFooter;
+
+//  <FooterLocations />
