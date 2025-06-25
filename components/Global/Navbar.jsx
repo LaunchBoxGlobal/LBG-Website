@@ -187,7 +187,7 @@ const Navbar = () => {
       <div className="hidden lg:flex items-center justify-center gap-4">
         <Link
           href={`/contact-us`}
-          className="red-bg px-6 h-[48px] 2xl:h-[60px] rounded-[17px] whitespace-nowrap text-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-sm xl:text-[17px] 2xl:text-[18px]"
+          className="red-bg px-6 h-[48px] 2xl:h-[60px] rounded-[17px] whitespace-nowrap text-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-sm xl:text-[16px] 2xl:text-[20px]"
         >
           <span>Contact Sales</span>
         </Link>
