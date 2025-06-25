@@ -55,7 +55,7 @@ const HomeNewProcess = ({
       </div>
       <div className="w-full relative py-20 lg:pb-40">
         <AnimatedLine />
-        <div className="absolute bottom-[3%] lg:right-0 midlg:right-[11%] xl:right-[14%] mac:right-[15.6%] midxl:right-[17.5%] 2xl:right-[26.2%] items-center justify-center hidden lg:flex">
+        <div className="absolute bottom-[3%] lg:right-0 midlg:right-[12%] xl:right-[14%] mac:right-[16.6%] midxl:right-[17.5%] 2xl:right-[26.2%] items-center justify-center hidden lg:flex">
           <Image
             src={"/staff-augmentation/Rocket.png"}
             alt="Rocket"
