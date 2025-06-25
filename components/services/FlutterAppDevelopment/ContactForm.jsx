@@ -13,7 +13,7 @@ const ContactForm = () => {
           width={600}
           height={410}
           loading="lazy"
-          className="w-[70%] h-[90%] max-w-full object-cover opacity-10 absolute inset-0"
+          className="w-[70%] h-[90%] max-w-full object-cover lg:object-none opacity-10 absolute inset-0"
         />
         <div className="text-white w-full flex flex-col items-center text-center lg:text-start lg:items-start justify-center">
           <h2 className="text-[36px] lg:text-[70px] font-medium leading-10 lg:leading-[68px] z-10">

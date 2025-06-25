@@ -22,7 +22,7 @@ const CreateYourMobileApp = () => {
             alt="map image"
             width={600}
             height={410}
-            className="w-[70%] h-full absolute inset-0 opacity-10 z-0"
+            className="w-[70%] h-full absolute inset-0 opacity-10 z-0 object-cover lg:object-none"
           />
           <h2 className="font-bold text-[36px] lg:text-[50px] leading-[2.7rem] lg:leading-[52px]">
             Software That Fits. Finally.

@@ -55,7 +55,7 @@ const HomeNewProcess = ({
       </div>
       <div className="w-full relative py-20 lg:pb-40">
         <AnimatedLine />
-        <div className="absolute bottom-[3%] lg:right-0 midlg:right-[12%] xl:right-[14%] mac:right-[16.6%] midxl:right-[17.5%] 2xl:right-[26.2%] items-center justify-center hidden lg:flex">
+        <div className="absolute bottom-[3%] lg:right-0 midlg:right-[12%] xl:right-[14%] mac:right-[17%] midxl:right-[17.5%] 2xl:right-[26.2%] items-center justify-center hidden lg:flex">
           <Image
             src={"/staff-augmentation/Rocket.png"}
             alt="Rocket"
@@ -132,9 +132,3 @@ const AnimatedLine = () => {
     </div>
   );
 };
-
-{
-  /* <svg width="682" height="2634" viewBox="0 0 682 2634" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M332 2.00122H528C555.5 1.8399 610.5 17.5847 610.5 81.8546V299.151V360.13H91.5C49 360.13 1.5 366.325 1.5 447.243V742.943H528C555.5 742.297 610.5 757.365 610.5 822.796V1090.43V1135H91.5C61.5 1133.83 1.5 1145.6 1.5 1202V1485.5L550.5 1486.41C578 1485.5 610.5 1492.84 610.5 1533.13C610.5 1573.43 610.5 1768.5 610.5 1861H91.5C55 1860.6 1.5 1869.5 1.5 1945.5L4.28717 2579.18C5.78719 2596.5 1.5 2632.46 69.9 2632.46H598C665.5 2632.46 680.5 2630.9 680.5 2566.5V2454.5" stroke="#F40E00" stroke-width="2.5"/>
-</svg> */
-}

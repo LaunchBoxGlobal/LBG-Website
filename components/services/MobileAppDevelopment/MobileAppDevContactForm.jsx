@@ -11,7 +11,7 @@ const MobileAppDevContactForm = () => {
           alt="map image"
           width={600}
           height={410}
-          className="w-full lg:w-[70%] h-[90%] absolute inset-0 opacity-10 z-0 object-cover"
+          className="w-full lg:w-[70%] h-[90%] absolute inset-0 opacity-10 z-0 object-cover lg:object-none"
         />
         <div className="text-white w-full flex flex-col items-center text-center lg:text-start lg:items-start justify-center">
           <h2 className="text-[36px] lg:text-[70px] font-medium leading-10 lg:leading-[68px] mb-7 z-10">
