@@ -9,10 +9,26 @@ import { IoIosArrowDown } from "react-icons/io";
 import { motion } from "framer-motion";
 import NavbarDropdown from "./NavbarDropdown";
 
+const augmentationLinks = [
+  {
+    title: "Off-Shore Software Development",
+    pageUrl: "off-shore-software-development",
+  },
+  {
+    title: "On-Demand Talent",
+    pageUrl: "on-demand-talent",
+  },
+];
+
 const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
+  const [augmentationDropdown, setAugmentationDropdown] = useState(false);
+
+  const toggleAugmentationDropdown = () => {
+    setAugmentationDropdown((prev) => !prev);
+  };
 
   const closeDropdown = () => {
     setIsHovered((prev) => !prev);
@@ -34,7 +50,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-3 md:py-7 flex items-center justify-between fixed top-0 z-50 w-full padding-x bg-white lg:bg-transparent shadow-md lg:shadow-none`}
+      className={`py-3 md:py-7 flex items-center justify-between gap-4 fixed top-0 z-50 w-full padding-x bg-white lg:bg-transparent shadow-md lg:shadow-none`}
     >
       <Link
         href={"/"}
@@ -92,7 +108,7 @@ const Navbar = () => {
               transition={{ duration: 0.4 }}
               onMouseEnter={() => toggleDropdown()}
               onMouseLeave={() => toggleDropdown()}
-              className="bg-transparent absolute inset-x-0 mt-0 z-40 top-16 padding-x"
+              className="bg-transparent absolute inset-x-0 mt-0 z-40 top-16 2xl:top-20 padding-x"
             >
               <NavbarDropdown closeDropdown={closeDropdown} />
             </motion.div>
@@ -102,10 +118,52 @@ const Navbar = () => {
         <li>
           <Link
             href={`/case-studies`}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group whitespace-nowrap`}
           >
             Case Studies{" "}
           </Link>
+        </li>
+        <li
+          className="z-50 h-full flex items-center"
+          onMouseEnter={() => toggleAugmentationDropdown()}
+          onMouseLeave={() => toggleAugmentationDropdown()}
+        >
+          <Link
+            href={"/staff-augmentation"}
+            // onClick={() => handleNavClick("testimonials")}
+            className={`font-normal text-sm xl:text-[14px] 2xl:text-[20px] whitespace-nowrap`}
+          >
+            Team Augmentation
+          </Link>
+          {augmentationDropdown && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              onMouseEnter={() => toggleDropdown()}
+              onMouseLeave={() => toggleDropdown()}
+              className="bg-transparent absolute right-[13%] mt-0 z-40 top-16 2xl:top-20 padding-x"
+            >
+              {/* <NavbarDropdown closeDropdown={closeDropdown} /> */}
+              <div className="bg-white min-w-[300px] max-w-[350px] mx-auto mt-6 flex items-start justify-center gap-10 rounded-[17px] border border-[#CECEEA] p-6">
+                <div className="w-full flex flex-col items-start gap-2">
+                  {augmentationLinks?.map((p, i) => {
+                    return (
+                      <Link
+                        href={`/${p?.pageUrl}`}
+                        key={i}
+                        onClick={() => closeDropdown()}
+                        className="text-lg underline text-gray-600 hover:text-black"
+                      >
+                        {p?.title}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </motion.div>
+          )}
         </li>
         <li>
           <Link
@@ -115,14 +173,7 @@ const Navbar = () => {
             Blogs{" "}
           </Link>
         </li>
-        <li>
-          <button
-            onClick={() => handleNavClick("testimonials")}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px]`}
-          >
-            Testimonials
-          </button>
-        </li>
+
         <li>
           <button
             onClick={() => handleNavClick("faqs")}
@@ -136,7 +187,7 @@ const Navbar = () => {
       <div className="hidden lg:flex items-center justify-center gap-4">
         <Link
           href={`/contact-us`}
-          className="red-bg px-6 h-[48px] 2xl:h-[60px] rounded-[17px] text-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-sm xl:text-[17px] 2xl:text-[18px]"
+          className="red-bg px-6 h-[48px] 2xl:h-[60px] rounded-[17px] whitespace-nowrap text-white hover:bg-black hover:text-white transition-all duration-300 hidden lg:flex items-center justify-end gap-3 outline-none font-medium text-sm xl:text-[17px] 2xl:text-[18px]"
         >
           <span>Contact Sales</span>
         </Link>
