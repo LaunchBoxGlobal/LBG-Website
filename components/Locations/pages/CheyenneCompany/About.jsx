@@ -8,22 +8,24 @@ const About = () => {
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <h2 className="text-[25px] font-semibold red-text lg:w-[90%] mx-auto">
-            About LaunchBox Global – Wyoming's Digital Growth Partner
+            Cheyenne SEO Company That Gets Results
           </h2>
         </AnimatedText>
         <AnimatedText>
           <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
             LaunchBox Global is a full-service{" "}
-            <Link href={`digital marketing`} className="red-text">
-              digital marketing
+            <Link
+              href={`https://developers.google.com/search/docs/fundamentals/seo-starter-guide`}
+              rel="nofollow"
+              target="_blank"
+            >
+              SEO company
             </Link>{" "}
-            and software development partner helping Wyoming businesses succeed
-            online. While we serve as one of the leading software companies in
-            Houston, we specialize in helping Wyoming clients build
-            revenue-generating digital products from custom websites to
-            eCommerce platforms all optimized for local markets. Our agile
-            approach combines data-driven marketing with technical excellence to
-            deliver measurable results.
+            in Cheyenne, Wyoming, helping local businesses dominate search
+            rankings. While we excel at technical SEO and content marketing, our
+            roots in software development give us unique insights into website
+            performance. We’ve helped 50+ Cheyenne clients grow through:
+            marketing with technical excellence to deliver measurable results.
           </p>
         </AnimatedText>
       </section>

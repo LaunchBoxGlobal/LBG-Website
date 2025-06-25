@@ -12,7 +12,7 @@ const ProcessCard = ({ process, index }) => {
           index % 2 === 0 ? "px-10 py-10" : "py-10 px-14 ml-auto"
         } relative ${index !== 0 && "mt-16"}`}
       >
-        <h3 className="font-medium text-[26px] lg:text-[39px] red-text">
+        <h3 className="font-medium text-[26px] lg:text-[39px] red-text leading-[1]">
           {process?.title}
         </h3>
         <p className="text-lg lg:text-[22px] leading-[1.2] mt-2">
