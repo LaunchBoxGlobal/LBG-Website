@@ -24,7 +24,7 @@ const tabs = [
 const NavbarDropdown = ({ closeDropdown }) => {
   const [selectedTab, setSelectedTab] = useState("Services");
   return (
-    <div className="bg-white w-[80%] mx-auto min-h-[420px] mt-6 flex items-start gap-10 rounded-[17px] border border-[#CECEEA] p-6">
+    <div className="bg-white w-[80%] mx-auto min-h-[420px] mt-6 flex items-start justify-center gap-10 rounded-[17px] border border-[#CECEEA] p-6">
       {/* <div className="min-w-[231px] flex flex-col items-start gap-2">
         {tabs?.map((tab, i) => {
           return (
@@ -232,28 +232,43 @@ const Industry = ({ selectedTab }) => {
   );
 };
 
-const Location = ({ selectedTab }) => {
+const Location = ({ selectedTab, closeDropdown }) => {
   const locations = [
     {
-      title: "United Kingdom",
+      title: "Mobile App Development in Florida",
+      pageUrl: "/mobile-app-developer-in-florida",
     },
     {
-      title: "United States of America",
+      title: "Software Development Company in Florida",
+      pageUrl: "/software-development-company-in-florida",
     },
     {
-      title: "Canada",
+      title: "Software Development Company in New Jersey",
+      pageUrl: "/software-development-company-in-new-jersey",
     },
     {
-      title: "Australia",
+      title: "Web Development Company in New Jersey",
+      pageUrl: "/web-development-company-in-new-jersey",
     },
     {
-      title: "United Arab Emirates",
+      title: "Mobile App Development in Houston",
+      pageUrl: "/mobile-app-developers-in-houston",
     },
     {
-      title: "Qatar",
+      title: "Custom Software Development Company in Houston",
+      pageUrl: "/custom-software-development-company-in-houston",
     },
     {
-      title: "Pakistan",
+      title: "Mobile App Development Company in Texas",
+      pageUrl: "/mobile-app-development-company-in-texas",
+    },
+    {
+      title: "Digital Marketing Company in wyoming",
+      pageUrl: "/wyoming-digital-company",
+    },
+    {
+      title: "Seo Company in Cheyenne",
+      pageUrl: "/cheyenne-seo-company",
     },
   ];
   return (
@@ -269,12 +284,14 @@ const Location = ({ selectedTab }) => {
         <ul className="space-y-1 mt-3 flex flex-col items-start">
           {locations?.map((p, i) => {
             return (
-              <p
+              <Link
+                href={`${p?.pageUrl}`}
                 key={i}
+                onClick={closeDropdown}
                 className="text-lg underline text-gray-600 hover:text-black"
               >
                 {p?.title}
-              </p>
+              </Link>
             );
           })}
         </ul>
