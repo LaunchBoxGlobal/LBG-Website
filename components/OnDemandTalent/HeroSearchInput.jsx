@@ -8,22 +8,22 @@ import Link from "next/link";
 
 const relatedPages = [
   {
-    title: "Dedicated Software Team",
-    url: "/on-demand-talent",
+    title: "Build My Project",
+    url: "/services/mobile-app-development",
     icon: "/on-demand-talent/dedicated-software-team-icon.png",
     iconWidth: 21,
     iconHeight: 19,
   },
   {
-    title: "Software Development Outsourcing",
-    url: "/on-demand-talent",
+    title: "Build My Team",
+    url: "/off-shore-software-development",
     icon: "/on-demand-talent/software-development-outsourcing-icon.png",
     iconWidth: 19,
     iconHeight: 19,
   },
   {
-    title: "Dedicated Software Team",
-    url: "/on-demand-talent",
+    title: "Provide Me Talents",
+    url: "/contact-us",
     icon: "/on-demand-talent/related-page-icon-3.png",
     iconWidth: 21,
     iconHeight: 19,
@@ -55,7 +55,7 @@ const HeroSearchInput = () => {
               <input
                 type="text"
                 value={userEmail}
-                placeholder="Don't have any idea ? Drop your email address!"
+                placeholder="Drop your email address!"
                 onChange={(e) => setUserEmail(e.target.value)}
                 className="w-full h-full bg-transparent outline-none text-xs"
               />

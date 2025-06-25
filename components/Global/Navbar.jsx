@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-3 md:py-7 flex items-center justify-between gap-4 fixed top-0 z-50 w-full padding-x bg-white lg:bg-transparent shadow-md lg:shadow-none`}
+      className={`py-3 md:py-7 flex items-center justify-between gap-2 fixed top-0 z-50 w-full padding-x bg-white lg:bg-transparent shadow-md lg:shadow-none`}
     >
       <Link
         href={"/"}
@@ -76,7 +76,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`/`}
-            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Home{" "}
           </Link>
@@ -118,7 +118,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`/case-studies`}
-            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group whitespace-nowrap`}
+            className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px] flex items-center justify-start gap-1 group whitespace-nowrap`}
           >
             Case Studies{" "}
           </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`/blogs`}
-            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Blogs{" "}
           </Link>
@@ -174,7 +174,7 @@ const Navbar = () => {
         <li>
           <button
             onClick={() => handleNavClick("testimonials")}
-            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px]`}
+            className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px]`}
           >
             Testimonials
           </button>
@@ -183,7 +183,7 @@ const Navbar = () => {
         <li>
           <button
             onClick={() => handleNavClick("faqs")}
-            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px]`}
+            className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px]`}
           >
             FAQs
           </button>
