@@ -57,7 +57,7 @@ const Sidebar = ({ onclose }) => {
           <IoClose className="w-full h-full red-text" />
         </button>
       </div>
-      <ul className="flex border-t flex-col items-start w-full justify-center gap-4 py-5">
+      <ul className="flex border-t flex-col items-start w-full justify-center gap-2 py-5">
         <li>
           <button
             type="button"
@@ -84,7 +84,7 @@ const Sidebar = ({ onclose }) => {
           </button>
           {isOpen && (
             <div className="bg-white px-2 from-blue-50 mt-4 z-50">
-              <ul className="space-y-2">
+              <ul className="space-y-1">
                 {sidebarlinks?.map((l, i) => {
                   return (
                     <li className="" key={i}>

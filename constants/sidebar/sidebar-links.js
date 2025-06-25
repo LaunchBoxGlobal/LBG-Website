@@ -43,4 +43,16 @@ export const sidebarlinks = [
     title: "Ionic App Development",
     url: "/development-technologies/ionic-app-development",
   },
+  {
+    title: "Team Augmentation",
+    url: "/staff-augmentation",
+  },
+  {
+    title: "On-Demand Talent",
+    url: "/on-demand-talent",
+  },
+  {
+    title: "Off-Shore Software Development",
+    url: "/off-shore-software-development",
+  },
 ];
