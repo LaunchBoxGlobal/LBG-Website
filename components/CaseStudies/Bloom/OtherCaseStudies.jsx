@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Card from "../ArchivePage/Card";
+import { ARCHIVED_CASE_STUDIES } from "@/constants/case-studies/archived-case-studies";
 
 const OTHER_CASE_STUDIES = [
   {
@@ -21,38 +24,37 @@ const OTHER_CASE_STUDIES = [
 ];
 
 const OtherCaseStudies = () => {
+  const [page, setPage] = useState(null);
+
+  useEffect(() => {
+    setPage(window?.location?.href);
+  }, []);
+
+  const filteredCaseStudies = ARCHIVED_CASE_STUDIES?.filter((c) => {
+    // You can adjust this condition based on whether `c.url` is a full URL or relative path
+    return page && !page.includes(c?.url);
+  });
   return (
     <section className="w-full padding-x flex flex-wrap pb-40">
       <h2 className="section-heading text-center mb-10 mx-auto">
         Wanna See More?
       </h2>
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
-        {OTHER_CASE_STUDIES?.map((c, i) => {
+
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {filteredCaseStudies?.map((c, i) => {
           return (
-            <div
-              key={i}
-              className={`w-full flex flex-col items-start relative ${
-                i === 0
-                  ? "w-full h-auto "
-                  : i === 1
-                  ? "w-full h-auto "
-                  : i === 2
-                  ? "w-full h-auto "
-                  : ""
-              }`}
-            >
-              <Image
-                src={c?.image}
-                alt={c?.title}
-                width={302}
-                height={301}
-                className="w-full object-contain"
-              />
-              <h3 className="text-[22px] mt-3">{c?.title}</h3>
-              <Link href={"/"} className="text-lg text-gray-600">
-                {c?.url}
-              </Link>
-            </div>
+            <Link key={i} href={c?.url}>
+              <div className="w-full relative space-y-4">
+                <Image
+                  src={c?.image}
+                  width={403}
+                  height={380}
+                  alt={`${c?.title}-featured-image`}
+                  className="h-[380px] object-cover"
+                />
+                <h3 className="text-lg md:text-xl lg:text-2xl">{c?.title}</h3>
+              </div>
+            </Link>
           );
         })}
       </div>

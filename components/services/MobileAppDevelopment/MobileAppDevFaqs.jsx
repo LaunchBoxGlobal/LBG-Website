@@ -35,7 +35,7 @@ const MobileAppDevFaqs = () => {
               className="w-full text-start flex items-start justify-between outline-none"
             >
               <h3 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
-                {faq?.question}
+                <span className="leading-[1.1]">{faq?.question}</span>
               </h3>
 
               <Image
@@ -71,9 +71,11 @@ const MobileAppDevFaqs = () => {
             className="w-full text-start flex items-start justify-between outline-none"
           >
             <h3 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
-              How does Launchbox Global integrate branding and design into
-              mobile app development to ensure a cohesive user experience and
-              stronger brand identity?
+              <span className="leading-[1.1]">
+                How does Launchbox Global integrate branding and design into
+                mobile app development to ensure a cohesive user experience and
+                stronger brand identity?
+              </span>
             </h3>
 
             <Image

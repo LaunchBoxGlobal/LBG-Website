@@ -28,23 +28,23 @@ export const FOOTER_SERVICES = [
 export const FOOTER_TECH_LINKS = [
   {
     title: "Native App Development",
-    url: "/services/react-native-app-development",
+    url: "/development-technologies/react-native-app-development",
   },
   {
     title: "Flutter App Development",
-    url: "/services/flutter-app-development",
+    url: "/development-technologies/flutter-app-development",
   },
   {
     title: "Swift App Development",
-    url: "/services/swift-app-development",
+    url: "/development-technologies/swift-app-development",
   },
   {
     title: "Kotlin App Development",
-    url: "/services/kotlin-app-development",
+    url: "/development-technologies/kotlin-app-development",
   },
   {
     title: "Ionic App Development",
-    url: "/services/ionic-app-development",
+    url: "/development-technologies/ionic-app-development",
   },
 ];
 
@@ -76,15 +76,15 @@ export const FOOTER_RESOURCES = [
 
 export const FOOTER_CONTACTS = [
   {
-    title: "hello@launchboxglobal.com",
+    title: "E. hello@launchboxglobal.com",
     url: "mailto:hello@launchboxglobal.com",
   },
   {
-    title: "Ph: (888) 868-8385",
-    url: "8888688385",
+    title: "P. (888) 868-8385",
+    url: "tel:8888688385",
   },
   {
-    title: "Fax No: 1307-922-0100",
-    url: "13079220100",
+    title: "F. (307) 922-0100",
+    url: "tel:307922-0100",
   },
 ];

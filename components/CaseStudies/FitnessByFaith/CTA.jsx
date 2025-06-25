@@ -13,7 +13,7 @@ const CTA = () => {
     <section className="w-full relative overflow-hidden padding-x py-20">
       <div
         ref={ref}
-        className="w-full border border-[#64B5AC73] cta-shadow relative rounded-[80px] flex items-center justify-start flex-col gap-5 h-[440px] lg:h-[540px]"
+        className="w-full border border-[#64B5AC73] cta-shadow relative rounded-[80px] flex items-center justify-start flex-col gap-5 min-h-[450px] lg:h-[540px]"
         style={{
           backgroundImage: "url('/case-studies/fitness-by-faith/cta-bg.png')",
           backgroundSize: "cover",
@@ -24,7 +24,7 @@ const CTA = () => {
           initial={{ x: -70 }}
           animate={inView ? { x: 0 } : { x: -70 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="absolute left-[6%] top-[5%] lg:top-[25%]"
+          className="absolute left-[6%] top-[5%] lg:top-[25%] hidden lg:block"
         >
           <Image
             src={"/case-studies/fitness-by-faith/fitness-by-faith-cta-logo.svg"}
@@ -38,12 +38,13 @@ const CTA = () => {
           initial={{ y: 100 }}
           animate={inView ? { y: 0 } : { y: 100 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
+          className="px-4"
         >
           <h2 className="z-10 text-center font-medium text-[45px] md:text-[60px] lg:text-[65px] midlg:text-[85px] leading-[1] tracking-tight mt-14">
             You’re One <br /> Conversation <br />
             <span className="fitnessText">Away!</span>
           </h2>
-          <p className="mt-5 lg:text-lg xl:text-xl w-1/2 text-center mx-auto">
+          <p className="mt-5 lg:text-lg xl:text-xl lg:w-1/2 text-center mx-auto">
             You’re one conversation away from a smarter way of building. Talk to
             us and discover how our process turns complexity into simplicity.
           </p>

@@ -91,7 +91,7 @@ const Reasons = () => {
               key={i}
             >
               <div
-                className={`w-full lg:w-1/2 p-10 rounded-2xl flex flex-col items-start justify-center gap-4 static lg:absolute h-[220px] leftDiv`}
+                className={`w-full lg:w-1/2 p-10 rounded-2xl flex flex-col items-start justify-center gap-4 static lg:absolute min-h-[220px] leftDiv`}
                 style={{ background: solution?.titleBg }}
               >
                 <Image
@@ -100,12 +100,12 @@ const Reasons = () => {
                   height={solution?.iconHeight}
                   alt={solution?.title}
                 />
-                <h4 className="text-white text-[24px] md:text-[30px] xl:text-[40px] font-medium leading-10">
+                <h4 className="text-white text-[24px] md:text-[30px] xl:text-[40px] font-medium leading-[1.1]">
                   {solution?.title}
                 </h4>
               </div>
               <div
-                className={`w-full py-10 px-[8%] rounded-2xl flex items-center justify-end h-[220px] rightDiv`}
+                className={`w-full py-10 px-[8%] rounded-2xl flex items-center justify-end min-h-[220px] rightDiv`}
                 style={{ background: solution?.descriptionBg }}
               >
                 <p className="text-white text-start text-lg xl:text-xl w-full lg:w-[80%]">

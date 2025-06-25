@@ -31,7 +31,7 @@ const DigitalMarketingFaqs = () => {
               className="w-full text-start flex items-start justify-between outline-none"
             >
               <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
-                <span className="w-full leading-7 lg:leading-10">
+                <span className="w-full leading-[1] lg:leading-[1.1]">
                   {faq?.question}
                 </span>
               </h5>

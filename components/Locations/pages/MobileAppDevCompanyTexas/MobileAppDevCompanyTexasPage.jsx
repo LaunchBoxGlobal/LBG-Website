@@ -47,8 +47,8 @@ const MobileAppDevCompanyTexasPage = () => {
         description={`At LaunchBox Global, we specialize in mobile app development in Texas, including Dallas mobile development, to help your business succeed in the digital landscape.`}
       />
       <LocationProcess
-        heading={"Agile, Waterfall & Functionality-First  Built for"}
-        redText={"Florida"}
+        heading={"Project Development"}
+        redText={"Process"}
         agileDescription={
           "Our Agile approach is ideal for fast-paced startups in Texas seeking iterative development and early MVPs. This methodology allows teams to react swiftly to market changes, making it particularly suitable for mobile app development in Texas. Regular feedback loops and sprints ensure the product evolves based on real user input, fostering collaboration and innovation. By prioritizing flexibility, we empower businesses in Dallas to accomplish their objectives while maintaining a competitive edge."
         }

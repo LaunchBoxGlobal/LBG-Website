@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const FooterLocations = () => {
@@ -10,8 +11,8 @@ const FooterLocations = () => {
   return (
     <section className="w-full flex items-start flex-col lg:flex-row gap-x-10 gap-y-6 padding-x mt-10">
       <div className="w-full lg:w-[45%]">
-        <h3 className="mb-5 text-[28px] md:text-[65px] xl:text-[91px] leading-[1] text-center lg:text-start font-bold uppercase">
-          Areas we serve
+        <h3 className="mb-5 text-[28px] md:text-[60px] xl:text-[81px] leading-[1] text-center lg:text-start font-bold uppercase">
+          serving businesses worldwide
         </h3>
 
         <div className="h-[42px] md:h-[48px] bg-[#2D2D2E] w-full midlg:max-w-[90%] rounded-full p-1 flex items-start justify-between gap-0 xl:gap-1 flex-wrap">
@@ -120,7 +121,9 @@ const FooterLocations = () => {
         {location === "Dubai" && (
           <div className="w-full bg-[#2D2D2E] p-5 rounded-[25px] grid grid-cols-2 gap-5 min-h-[253px]">
             <div className="flex flex-col items-start gap-4 justify-center">
-              <h4 className="font-semibold text-lg mb-4">Dubai</h4>
+              <h4 className="font-semibold text-lg mb-4">
+                United Arab Emirates
+              </h4>
               <Image
                 src={"/footer-location-icon.png"}
                 width={17}
@@ -130,7 +133,7 @@ const FooterLocations = () => {
               />
               <p className="text-lg">
                 C1 building Dubai World Trade Center District - Sheikh Zayed Rd
-                - Dubai - United Arab Emirates
+                - Dubai
               </p>
             </div>
             <div className="">
@@ -269,8 +272,9 @@ const FooterLocations = () => {
                 alt="location icon"
               />
               <p className="text-lg">
-                Suite # 301, Emarah Suites, Sharah-e-Faisal Karachi, Pakistan
+                Suite # 301, Emarah Suites, Sharah-e-Faisal Karachi
               </p>
+              <Link href={"tel:+922134522244"}>+92 21 345-222-44</Link>
             </div>
             <div className="">
               <iframe

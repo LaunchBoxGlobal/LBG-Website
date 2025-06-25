@@ -15,11 +15,11 @@ const ProcessCard = ({ process, index }) => {
         <h3 className="font-medium text-[26px] lg:text-[39px] red-text leading-[1]">
           {process?.title}
         </h3>
-        <p className="text-lg lg:text-[22px] leading-[1.2] mt-2">
+        <p className="text-lg lg:text-[22px] leading-[1.2] mt-2 z-10 relative">
           {process?.description}
         </p>
         <p
-          className={`text-[#DADADA] text-[84px] font-bold leading-none m-0 p-0 absolute right-6 bottom-4`}
+          className={`text-[#DADADA] text-[84px] font-bold leading-none m-0 p-0 absolute right-6 bottom-4 z-0`}
         >
           0{index + 1}
         </p>

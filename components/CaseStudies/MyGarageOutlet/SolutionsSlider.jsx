@@ -1,12 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 import { My_Garage_Outlet_Solutions } from "@/constants/case-studies/my-garage-outlet/challenges-and-solutions";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -91,9 +92,32 @@ const SolutionsSlider = ({
             </SwiperSlide>
           );
         })}
+        <SliderButtons />
       </Swiper>
     </section>
   );
 };
 
 export default SolutionsSlider;
+
+export const SliderButtons = () => {
+  const swiper = useSwiper();
+  return (
+    <div className="w-full flex items-center justify-center gap-3">
+      <button
+        type="button"
+        onClick={() => swiper.slidePrev()}
+        className="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-black text-white"
+      >
+        <FiArrowLeft className="text-xl" />
+      </button>
+      <button
+        type="button"
+        onClick={() => swiper.slideNext()}
+        className="w-[40px] h-[40px] rounded-full flex items-center justify-center red-bg text-white"
+      >
+        <FiArrowRight className="text-xl" />
+      </button>
+    </div>
+  );
+};

@@ -3,8 +3,13 @@ import { PROCESS } from "@/constants/Process";
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import ProjectDiscoveryImage from "./ProjectDiscoveryImage";
 import "./ProcessAnimations.css";
+import HomeNewProcess from "./HomeNewProcess";
+import {
+  FLORDIA_AGILE_PROCESS,
+  FLORDIA_RECOMMENDED_PROCESS,
+  FLORDIA_WATERFALL_PROCESS,
+} from "@/constants/locations/mobile-app-developer/agile-process-florida";
 
 const Process = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -33,7 +38,13 @@ const Process = () => {
         </p>
       </section>
 
-      <section className="w-full mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <HomeNewProcess
+        agileProcess={FLORDIA_AGILE_PROCESS}
+        recommendedProcess={FLORDIA_RECOMMENDED_PROCESS}
+        waterfallProcess={FLORDIA_WATERFALL_PROCESS}
+      />
+
+      {/* <section className="w-full mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10">
         <section className="w-full">
           {PROCESS?.map((process, index) => {
             return (
@@ -162,7 +173,7 @@ const Process = () => {
             />
           )}
         </section>
-      </section>
+      </section> */}
     </section>
   );
 };

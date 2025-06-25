@@ -19,7 +19,7 @@ const TechStack = () => {
         {FLUTTER_TECH_STACK?.map((t, i) => {
           return (
             <div
-              className="border px-[16px] py-[14px] lg:py-[24px] rounded-[10px] flex items-center justify-center gap-2 group"
+              className="border px-[10px] lg:px-[16px] py-[14px] lg:py-[24px] rounded-[10px] flex items-center justify-center gap-2 group"
               key={i}
               style={{ width: t?.boxWidth }}
             >

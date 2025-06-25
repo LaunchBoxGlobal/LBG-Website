@@ -24,8 +24,8 @@ const tabs = [
 const NavbarDropdown = ({ closeDropdown }) => {
   const [selectedTab, setSelectedTab] = useState("Services");
   return (
-    <div className="bg-white w-full min-h-[420px] mt-6 flex items-start gap-10 rounded-[17px] border border-[#CECEEA] p-6">
-      <div className="min-w-[231px] flex flex-col items-start gap-2">
+    <div className="bg-white w-[80%] mx-auto min-h-[420px] mt-6 flex items-start gap-10 rounded-[17px] border border-[#CECEEA] p-6">
+      {/* <div className="min-w-[231px] flex flex-col items-start gap-2">
         {tabs?.map((tab, i) => {
           return (
             <button
@@ -56,12 +56,15 @@ const NavbarDropdown = ({ closeDropdown }) => {
             </button>
           );
         })}
-      </div>
-      {selectedTab === "Services" ? (
+      </div> */}
+      {/* {selectedTab === "Services" ? (
         <Services closeDropdown={closeDropdown} selectedTab={selectedTab} />
       ) : (
         <Technology closeDropdown={closeDropdown} selectedTab={selectedTab} />
-      )}
+      )} */}
+      <Services closeDropdown={closeDropdown} selectedTab={selectedTab} />
+      <Technology closeDropdown={closeDropdown} selectedTab={selectedTab} />
+      <Location closeDropdown={closeDropdown} selectedTab={selectedTab} />
     </div>
   );
 };
@@ -149,7 +152,7 @@ const Technology = ({ closeDropdown, selectedTab }) => {
           selectedTab === "Technology"
             ? "bg-[#E6E6E673] border"
             : "bg-white border border-white"
-        } p-5 rounded-[7px] w-[33%] mr-4`}
+        } rounded-[7px] mr-4 w-full`}
       >
         <p className="text-lg font-medium">Technology</p>
         <ul className="space-y-1 mt-3 flex flex-col items-start">
@@ -167,12 +170,12 @@ const Technology = ({ closeDropdown, selectedTab }) => {
           })}
         </ul>
       </div>
-      <div className="border-r border-l px-4 w-[33%]">
+      {/* <div className="border-r border-l px-4 w-[33%]">
         <Industry selectedTab={selectedTab} />
       </div>
       <div className="w-[33%] px-4">
         <Location selectedTab={selectedTab} />
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -260,7 +263,7 @@ const Location = ({ selectedTab }) => {
           selectedTab === "Location"
             ? "bg-[#E6E6E673] border"
             : "bg-white border border-white"
-        } p-5 rounded-[7px] w-full`}
+        } rounded-[7px] w-full`}
       >
         <p className="text-lg font-medium">Location</p>
         <ul className="space-y-1 mt-3 flex flex-col items-start">

@@ -15,7 +15,7 @@ const HomeFooter = () => {
   return (
     <footer className="w-full pt-12 pb-6 lg:pt-20 bg-black text-white overflow-hidden">
       <section className="w-full padding-x">
-        <section className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <section className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div className="w-full lg:w-[80%] py-4 lg:py-0 md:h-[95px] lg:h-[129px] xl:h-[196px] bg-[#3D3C3F] rounded-full overflow-hidden flex items-center justify-center relative">
             {/* <h2 className="text-[18px] lg:text-[75px] font-bold leading-[36px] lg:leading-[55px] inline-block mx-4 lg:hidden">
               Ready to Build Something Great?
@@ -191,7 +191,7 @@ const HomeFooter = () => {
           width={1919}
           height={142}
           loading="lazy"
-          className="w-full absolute z-0 inset-x-0 top-1.5"
+          className="w-full absolute z-0 inset-x-0 top-14 lg:top-10 midlg:top-1.5"
         />
         <p className="text-sm md:text-base font-semibold opacity-70 z-10 relative top-5">
           © 2025 LaunchBox Global. All Rights Reserved.

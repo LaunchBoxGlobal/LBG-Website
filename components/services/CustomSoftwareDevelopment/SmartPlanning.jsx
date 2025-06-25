@@ -6,6 +6,12 @@ import WaterfallWorkflow from "./WaterfallWorkflow";
 import { CUSTOM_SOFTWARE_SMART_PLANNING } from "@/constants/custom-software-development/CustomSoftwareSmartPlanning";
 import { RECOMMENDED_WORKFLOW } from "@/constants/custom-software-development/RecommendedWorkflow";
 import { WATERFALL_WORKFLOW } from "@/constants/custom-software-development/WaterfallWorkflow";
+import NewWorkflow from "@/components/Common/NewWorkflow";
+import {
+  SOFTWARE_DEV_FLORIDA_AGILE_PROCESS,
+  SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS,
+  SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS,
+} from "@/constants/locations/software-dev-company-florida/software-dev-florida-process";
 
 const SmartPlanning = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -24,7 +30,13 @@ const SmartPlanning = () => {
         </p>
       </section>
 
-      <div className="w-full flex justify-center mt-10">
+      <NewWorkflow
+        agileProcess={SOFTWARE_DEV_FLORIDA_AGILE_PROCESS}
+        recommendedProcess={SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS}
+        waterfallProcess={SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS}
+      />
+
+      {/* <div className="w-full flex justify-center mt-10">
         <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
           <button
             type="button"
@@ -73,7 +85,7 @@ const SmartPlanning = () => {
       )}
       {activeTab === "waterfall" && (
         <WaterfallWorkflow workflow={WATERFALL_WORKFLOW} />
-      )}
+      )} */}
     </section>
   );
 };

@@ -58,12 +58,12 @@ const EcommerceIndustries = () => {
       </section>
 
       <section
-        className={`w-full relative overflow-hidden mt-10 lg:mt-16 h-[420px] lg:h-[547px]`}
+        className={`w-full relative overflow-hidden mt-10 lg:mt-16 h-[490px] lg:h-[547px]`}
       >
         <Swiper
           {...sliderSettings}
           modules={[Autoplay]}
-          className="overflow-hidden h-[350px] md:h-[530px] lg:h-[447px] midlg:h-[547px] w-full"
+          className="overflow-hidden h-[520px] md:h-[530px] lg:h-[447px] midlg:h-[547px] w-full"
           style={{ width: "100%", height: "100%" }}
         >
           {ECOMMERCE_INDUSTRIES?.map((value, index) => {
@@ -71,11 +71,11 @@ const EcommerceIndustries = () => {
             return (
               <SwiperSlide
                 key={index}
-                className="w-full h-[350px] midlg:h-[520px]"
+                className="w-full h-[380px] midlg:h-[520px]"
                 style={{ width: "100%" }}
               >
                 <div
-                  className="w-full rounded-xl p-6 bg-white h-[350px] md:h-[370px] lg:min-h-[380px] midlg:h-[440px] xl:h-[410px] border flex flex-col justify-between gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+                  className="w-full rounded-xl p-6 bg-white h-[380px] md:h-[370px] lg:min-h-[380px] midlg:h-[440px] xl:h-[410px] border flex flex-col justify-between gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >

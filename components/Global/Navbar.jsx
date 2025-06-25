@@ -56,7 +56,7 @@ const Navbar = () => {
         </span>
       </Link>
 
-      <ul className="hidden lg:flex items-center justify-center gap-5 xl:gap-x-12 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
+      <ul className="hidden lg:flex items-center justify-center gap-5 xl:gap-x-10 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
         <li>
           <Link
             href={`/`}
@@ -204,12 +204,12 @@ const Navbar = () => {
         </li>
 
         <li>
-          <button
-            onClick={() => handleNavClick("workflow")}
+          <Link
+            href={`/case-studies`}
             className={`font-normal text-sm xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
-            Work Flow{" "}
-          </button>
+            Case Studies{" "}
+          </Link>
         </li>
         <li>
           <Link

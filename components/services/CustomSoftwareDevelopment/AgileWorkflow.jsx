@@ -25,7 +25,7 @@ const AgileWorkflow = ({ workflow }) => {
         const isLeft = index % 2 === 0;
         return (
           <div
-            className={`w-full lg:w-[490px] h-[243px] rounded-2xl flex flex-col py-6 px-10 items-start justify-center border gap-1 relative z-10 bg-white mb-5 ${
+            className={`w-full lg:w-[490px] h-auto lg:min-h-[253px] rounded-2xl flex flex-col py-6 px-10 items-start justify-center border gap-1 relative z-10 bg-white mb-5 ${
               index === 4
                 ? "xl:-top-20"
                 : index === 5

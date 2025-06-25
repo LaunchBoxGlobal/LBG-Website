@@ -6,6 +6,12 @@ import WaterfallWorkflow from "../CustomSoftwareDevelopment/WaterfallWorkflow";
 import { SMART_PLANNING } from "@/constants/mobile-app-development/SmartPlanning";
 import { MOBILE_APP_WATERFALL_WORKFLOW } from "@/constants/mobile-app-development/MobileAppWaterfall";
 import { MOBILE_APP_RECOMMENDED_WORKFLOW } from "@/constants/mobile-app-development/MobileAppRecommendedWorkflow";
+import NewWorkflow from "@/components/Common/NewWorkflow";
+import {
+  FLORDIA_AGILE_PROCESS,
+  FLORDIA_RECOMMENDED_PROCESS,
+  FLORDIA_WATERFALL_PROCESS,
+} from "@/constants/locations/mobile-app-developer/agile-process-florida";
 
 const SmartPlanning = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -24,7 +30,13 @@ const SmartPlanning = () => {
         </p>
       </section>
 
-      <div className="w-full flex justify-center mt-10">
+      <NewWorkflow
+        agileProcess={FLORDIA_AGILE_PROCESS}
+        recommendedProcess={FLORDIA_RECOMMENDED_PROCESS}
+        waterfallProcess={FLORDIA_WATERFALL_PROCESS}
+      />
+
+      {/* <div className="w-full flex justify-center mt-10">
         <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
           <button
             type="button"
@@ -71,7 +83,7 @@ const SmartPlanning = () => {
       )}
       {activeTab === "waterfall" && (
         <WaterfallWorkflow workflow={MOBILE_APP_WATERFALL_WORKFLOW} />
-      )}
+      )} */}
     </section>
   );
 };

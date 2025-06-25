@@ -12,14 +12,14 @@ const HeroAnimation = () => {
   return (
     <div
       ref={ref}
-      className="h-[399px] lg:h-[499px] midlg:h-[529px] w-full mx-auto relative overflow-hidden"
+      className="h-[269px] md:h-[400px] lg:h-[499px] midlg:h-[529px] w-full mx-auto relative overflow-hidden"
     >
       <Image
         src={"/kotlin/kotlin-hero-bg.png"}
         alt="hero-bg"
         width={748}
         height={370}
-        className="absolute bottom-[-3%] left-1/2 -translate-x-1/2 object-cover md:object-contain z-0 h-[287px] lg:h-[387px]"
+        className="absolute bottom-[-3%] left-1/2 -translate-x-1/2 object-cover md:object-contain z-0 h-auto lg:h-[387px]"
       />
       {/* mobile-mockup */}
       <motion.div
@@ -33,7 +33,7 @@ const HeroAnimation = () => {
           alt="mobile-mockup"
           width={383}
           height={563}
-          className="object-contain h-[363px] lg:h-[463px] migld:h-[583px] z-10"
+          className="object-contain h-auto md:max-h-[400px] lg:h-[463px] migld:h-[583px] z-10"
         />
       </motion.div>
 

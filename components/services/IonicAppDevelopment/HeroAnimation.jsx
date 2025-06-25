@@ -31,7 +31,7 @@ const HeroAnimation = () => {
           initial={{ y: 450 }}
           animate={inView ? { y: 0 } : { y: 450 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="z-10 absolute -left-16 md:-left-10 lg:left-0 max-w-[264px] flex justify-start bottom-0"
+          className="z-10 absolute -left-12 md:-left-10 lg:left-0 max-w-[264px] flex justify-start bottom-0"
         >
           <Image
             src={"/ionic-app-development/hero-mockup-2.png"}
@@ -61,7 +61,7 @@ const HeroAnimation = () => {
           initial={{ y: 500 }}
           animate={inView ? { y: 0 } : { y: 500 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="z-10 absolute -right-16 md:-right-10 lg:right-0"
+          className="z-10 absolute -right-12 md:-right-10 lg:right-0"
         >
           <Image
             src={"/ionic-app-development/hero-mockup-3.png"}

@@ -7,7 +7,6 @@ import HomeComparison from "./HomeComparison";
 import Process from "./Process";
 import HomeStats from "./HomeStats";
 import Platforms from "../Common/Platforms";
-import PageServices from "../Common/PageServices";
 import { HOME_SERVICES } from "@/constants/HomeServices";
 import TeckStack from "../Common/TechStack";
 import FlagsAnimation from "../Common/FlagsAnimation";

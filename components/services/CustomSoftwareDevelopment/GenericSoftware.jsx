@@ -45,7 +45,7 @@ const GenericSoftware = () => {
             <div
               ref={containerRef}
               key={i}
-              className="relative w-full h-[220px]"
+              className="relative w-full min-h-[220px]"
             >
               <motion.div
                 style={{
@@ -83,15 +83,15 @@ const GenericSoftware = () => {
         })}
       </div>
 
-      <div className="w-full mt-14">
+      <div className="w-full mt-14 lg:hidden">
         {GENERIC_SOFTWARE_CONTENT?.map((solution, i) => {
           return (
             <div
-              className="w-full flex flex-col lg:hidden relative h-auto lg:h-[220px]"
+              className="w-full flex flex-col relative h-auto lg:h-[220px]"
               key={i}
             >
               <div
-                className={`w-full lg:w-1/2 p-10 rounded-2xl flex flex-col items-start justify-center gap-4 static lg:absolute h-[220px] leftDiv`}
+                className={`w-full lg:w-1/2 p-10 rounded-2xl flex flex-col items-start justify-center gap-4 static lg:absolute min-h-[220px] leftDiv`}
                 style={{ background: solution?.titleBg }}
               >
                 <Image
@@ -100,12 +100,12 @@ const GenericSoftware = () => {
                   height={solution?.iconHeight}
                   alt={solution?.title}
                 />
-                <h4 className="text-white text-[24px] md:text-[30px] xl:text-[40px] font-medium leading-10">
+                <h4 className="text-white text-[24px] md:text-[30px] xl:text-[40px] font-medium leading-[1]">
                   {solution?.title}
                 </h4>
               </div>
               <div
-                className={`w-full py-10 px-[8%] rounded-2xl flex items-center justify-end h-[220px] rightDiv`}
+                className={`w-full py-10 px-[8%] rounded-2xl flex items-center justify-end min-h-[220px] rightDiv`}
                 style={{ background: solution?.descriptionBg }}
               >
                 <p className="text-white text-center text-base xl:text-xl w-full lg:w-[80%]">

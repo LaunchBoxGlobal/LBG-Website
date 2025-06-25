@@ -11,8 +11,8 @@ import "swiper/css/pagination";
 
 export const sliderSettings = {
   slidesPerView: 1,
-  spaceBetween: 20,
-  centeredSlides: false,
+  spaceBetween: 10,
+  centeredSlides: true,
   // autoplay: {
   //   delay: 3000,
   // },
@@ -38,6 +38,9 @@ export const sliderSettings = {
     1390: {
       slidesPerView: 4,
     },
+    1900: {
+      slidesPerView: 5,
+    },
   },
 };
 
@@ -55,7 +58,7 @@ const HomeValueProposition = () => {
       </section>
 
       <section
-        className={`w-full relative overflow-hidden h-[280px] mt-10 lg:mt-14 pl-4 md:pl-8 lg:pl-28 xl:pl-40 2xl:pl-[13%]`}
+        className={`w-full relative overflow-hidden h-[280px] mt-10 lg:mt-14`}
       >
         <Swiper
           {...sliderSettings}

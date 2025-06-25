@@ -45,7 +45,7 @@ const CustomDevelopmentJourney = () => {
               key={i}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`w-[90%] md:w-[60%] lg:w-[400px] h-[480px] rounded-[14px] custom-shadow flex flex-col items-center justify-center gap-6 group text-center p-10 relative transition-all duration-300 hover:scale-110 overflow-hidden ${
+              className={`w-[90%] md:w-[60%] lg:w-[400px] min-h-[480px] rounded-[14px] custom-shadow flex flex-col items-center justify-center gap-6 group text-center p-10 relative transition-all duration-300 hover:scale-110 overflow-hidden ${
                 i === 0
                   ? "lg:-rotate-6 z-10 lg:top-5 hover:rotate-0 hover:top-0"
                   : i === 2
@@ -61,7 +61,7 @@ const CustomDevelopmentJourney = () => {
                 className="w-[150%] h-[150%] absolute inset-0 z-0 opacity-[0.02]"
               />
               {/* Title */}
-              <h4 className="text-[25px] font-bold lg:leading-8">
+              <h4 className="text-[25px] font-bold leading-[1.1]">
                 {plan?.title}
               </h4>
 

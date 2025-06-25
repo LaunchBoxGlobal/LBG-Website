@@ -30,7 +30,7 @@ const Solutions = () => {
           return (
             <div key={i} className={`w-full`}>
               <div
-                className={`flex flex-col items-start gap-3 lg:px-5 h-auto lg:min-h-[314px]  ${
+                className={`flex flex-col items-start gap-3 lg:px-5 h-auto lg:h-[414px] xl:h-[390px]  ${
                   i !== 4 && "lg:border-r-2 border-dashed border-[#64B5AC]"
                 }`}
               >
@@ -88,7 +88,7 @@ const Solutions = () => {
                 </motion.p>
               </div>
               <div
-                className={`bg-[#64B5AC] h-auto lg:min-h-[394px] p-5 flex flex-col items-start gap-3 text-white mt-5 ${
+                className={`bg-[#64B5AC] h-auto lg:h-[494px] xl:h-[450px] p-5 flex flex-col items-start gap-3 text-white mt-5 ${
                   i !== 4 && "lg:border-r-2 border-dashed border-[#fff]"
                 } ${
                   i === 0

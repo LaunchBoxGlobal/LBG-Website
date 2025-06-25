@@ -29,7 +29,7 @@ const TechnologyServices = ({
               style={{
                 backgroundColor: hoveredIndex === i ? hoverBg : "#F6F6F6",
               }}
-              className={`w-full  rounded-[16px] p-8 md:w-[45%] lg:w-[30%] min-h-[400px] h-[400px] flex flex-col items-start gap-3 group hover:text-white transition-all duration-300`}
+              className={`w-full  rounded-[16px] p-8 md:w-[45%] lg:w-[30%] min-h-[400px] h-[450px] flex flex-col items-start gap-3 group hover:text-white transition-all duration-300`}
               key={i}
             >
               <Image

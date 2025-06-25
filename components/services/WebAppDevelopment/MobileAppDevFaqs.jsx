@@ -34,7 +34,7 @@ const MobileAppDevFaqs = () => {
               name="web app development faq"
               className="w-full text-start flex items-start justify-between outline-none"
             >
-              <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%] lg:leading-10">
+              <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%] lg:leading-[1.1]">
                 {faq?.question}
               </h5>
 
@@ -72,8 +72,10 @@ const MobileAppDevFaqs = () => {
             className="w-full text-start flex items-start justify-between outline-none"
           >
             <h3 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
-              How does Launchbox Global ensure seamless integration between
-              mobile and web applications for cross-platform consistency?
+              <span className="leading-[1.1]">
+                How does Launchbox Global ensure seamless integration between
+                mobile and web applications for cross-platform consistency?
+              </span>
             </h3>
 
             <Image

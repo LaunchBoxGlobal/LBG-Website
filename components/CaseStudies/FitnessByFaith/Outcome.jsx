@@ -70,7 +70,7 @@ const ImageMockup = ({ m, i }) => {
             : i === 7
             ? "lg:-mt-32"
             : ""
-        } object-contain w-[248px] lg:w-[348px]`}
+        } object-contain w-[248px] xl:w-[348px]`}
       />
     </motion.div>
   );

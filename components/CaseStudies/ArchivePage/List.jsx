@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 const List = () => {
   return (
     <section className="w-full padding-x py-20 lg:py-32">
-      <div className="w-full">
+      {/* <div className="w-full">
         <div className="flex items-center gap-2">
           <label htmlFor="category" className="text-base md:text-lg lg:text-xl">
             Sort By Category:
@@ -26,7 +26,7 @@ const List = () => {
             <option value="branding-and-design">Branding & Design</option>
           </select>
         </div>
-      </div>
+      </div> */}
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 mt-14">
         {ARCHIVED_CASE_STUDIES?.map((c, i) => {
           return <Card key={i} c={c} />;

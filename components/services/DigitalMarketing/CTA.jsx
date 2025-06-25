@@ -15,7 +15,7 @@ const CTA = () => {
             width={600}
             height={410}
             loading="lazy"
-            className="w-[100%] h-full absolute inset-0 opacity-10 z-0"
+            className="w-[100%] h-full absolute inset-0 opacity-10 z-0 object-cover"
           />
           <h2 className="font-bold text-[36px] lg:text-[50px] leading-[2.7rem] lg:leading-[52px]">
             Your Audience is Out There — Let’s Reach Them.

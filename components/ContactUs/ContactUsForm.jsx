@@ -5,6 +5,23 @@ import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import ButtonLoader from "../Global/ButtonLoader";
 
+const serviceLinks = [
+  "Mobile App Development",
+  "Web App Development",
+  "Custom Software Development",
+  "E-commerce Development",
+  "Digital Marketing",
+  "Branding & Design",
+  "Native App Development",
+  "Flutter App Development",
+  "Swift App Development",
+  "Kotlin App Development",
+  "Ionic App Development",
+  "Team Augmentation",
+  "On-Demand Talent Augmentation",
+  "Off-Shore Software Development",
+];
+
 const ContactUsForm = () => {
   const [loading, setLoading] = useState(false);
 
@@ -107,7 +124,14 @@ const ContactUsForm = () => {
               <option defaultValue={""} value="">
                 Choose a service
               </option>
-              <option value="mobileAppDevelopment">
+              {serviceLinks?.map((service, index) => {
+                return (
+                  <option value={service} key={index}>
+                    {service}
+                  </option>
+                );
+              })}
+              {/* <option value="mobileAppDevelopment">
                 Mobile App Development
               </option>
               <option value="webAppDevelopment">Web App Development</option>
@@ -116,21 +140,13 @@ const ContactUsForm = () => {
                 E-Commerce Development
               </option>
               <option value="digitalMarketing">Digital Marketing</option>
-              <option value="brandingAndDesign">Branding & Designing</option>
+              <option value="brandingAndDesign">Branding & Designing</option> */}
             </select>
             {formik.touched.service && formik.errors.service ? (
               <div className="text-red-500 text-sm">
                 {formik.errors.service}
               </div>
             ) : null}
-            {/* <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              {...formik.getFieldProps("lastName")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
-              //   placeholder="Last name"
-            /> */}
           </div>
         </div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -194,7 +210,6 @@ const ContactUsForm = () => {
             <div className="text-red-500 text-sm">{formik.errors.message}</div>
           ) : null}
         </div>
-
         <div className="flex justify-end w-full">
           <button
             type="submit"

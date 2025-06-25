@@ -16,7 +16,7 @@ const CreateYourMobileApp = () => {
         ref={ctaRef}
         className="w-full h-[410px] rounded-lg bg-[#212121] relative border group overflow-x-hidden overflow-y-hidden flex items-center justify-end"
       >
-        <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] pl-4 lg:px-16 relative">
+        <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] px-4 lg:px-16 relative">
           <Image
             src={"/create-your-mobile-app-map.png"}
             alt="map image"

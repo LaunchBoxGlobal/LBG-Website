@@ -40,7 +40,7 @@ const Research = () => {
           return (
             <div key={i} className="w-full">
               <div className="w-full flex items-start gap-2 p-4 lg:p-6 rounded-2xl hover:shadow-lg transition-all duration-300">
-                <div className="w-[6%] mt-1">
+                <div className="w-[10%] lg:w-[6%] mt-1">
                   <div className="w-6 h-6 bloomBgColor rounded-lg" />
                 </div>
                 <p className="text-lg leading-6 m-0 p-0">{p?.title}</p>

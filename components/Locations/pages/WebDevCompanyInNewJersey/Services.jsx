@@ -10,19 +10,16 @@ const Services = () => {
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <h2 className="section-heading lg:w-[90%] mx-auto">
-            Advanced Development Solutions for New Jersey Businesses PWA
-            <span className="red-text">Development Services</span>
+            Advanced Development Solutions for
+            <span className="red-text">New Jersey Businesses</span>
           </h2>
         </AnimatedText>
         <AnimatedText>
           <p className="section-paragraph lg:w-[90%] mx-auto">
-            Our progressive{" "}
-            <Link href={`/services/web-app-development-services`}>
-              web app development services
-            </Link>{" "}
-            create quick and reliable applications that engage users across all
-            devices. We focus on delivering an exceptional experience that keeps
-            your business competitive in today’s digital landscape.
+            We build reliable, easy-to-use web apps that solve real business
+            problems. From design to launch, our team delivers practical
+            solutions that help New Jersey companies work smarter and grow
+            faster.
           </p>
         </AnimatedText>
       </section>

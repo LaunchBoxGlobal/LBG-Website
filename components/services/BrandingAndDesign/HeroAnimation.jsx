@@ -43,7 +43,7 @@ const HeroAnimation = () => {
         width={244.19}
         height={441.89}
         priority
-        className="z-0 w-[160px] h-[309px] md:w-[27%] md:h-[389px] lg:w-[204px] xl:w-[224px] xl:h-[441px] absolute left-[18.1%] md:left-[30.5%] lg:left-[35.2%] midlg:left-[39%] xl:left-[39%] 2xl:left-[41.5%] md:bottom-[-9.5%] bottom-[-8%]"
+        className="z-0 w-[160px] h-[309px] md:w-[27%] md:h-[389px] lg:w-[204px] xl:w-[224px] xl:h-[441px] absolute left-[34%] md:left-[30.5%] lg:left-[35.2%] midlg:left-[39%] xl:left-[39%] 2xl:left-[41.5%] md:bottom-[-9.5%] bottom-[-8%]"
       />
       {/* center image */}
       <motion.img
@@ -75,7 +75,7 @@ const HeroAnimation = () => {
         width={244.19}
         height={441.89}
         priority
-        className="z-0 w-[160px] h-[309px] right-[-23%] md:w-[27%] md:h-[389px] lg:w-[204px] xl:w-[224px] xl:h-[441px] absolute md:right-[4%] lg:right-[16%] midlg:right-[24%] xl:right-[24%] md:bottom-[-9.5%] bottom-[-8%] 2xl:right-[30%]"
+        className="z-0 w-[160px] h-[309px] right-[-15%] md:w-[27%] md:h-[389px] lg:w-[204px] xl:w-[224px] xl:h-[441px] absolute md:right-[4%] lg:right-[16%] midlg:right-[24%] xl:right-[24%] md:bottom-[-9.5%] bottom-[-8%] 2xl:right-[30%]"
       />
 
       {/* toggler */}
