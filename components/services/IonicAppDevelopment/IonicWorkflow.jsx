@@ -28,7 +28,7 @@ const IonicWorkflow = () => {
         </p>
       </section>
 
-      {/* <div className="w-full flex justify-center mt-10">
+      <div className="w-full flex justify-center mt-10">
         <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
           <button
             type="button"
@@ -75,9 +75,9 @@ const IonicWorkflow = () => {
       )}
       {activeTab === "waterfall" && (
         <AgileWorkflow workflow={MOBILE_APP_WATERFALL_WORKFLOW} />
-      )} */}
+      )}
 
-      <div className="w-full flex justify-center mt-10 lg:mt-14">
+      {/* <div className="w-full flex justify-center mt-10 lg:mt-14">
         <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
           <button
             type="button"
@@ -134,7 +134,6 @@ const IonicWorkflow = () => {
           <span className="relative inline-flex rounded-full h-[170px] w-[170px] bg-[#E1E1E1]"></span>
         </div>
 
-        {/* Cards */}
         {activeTab === "agile" && (
           <>
             {FLORDIA_AGILE_PROCESS?.map((process, index) => (
@@ -156,7 +155,7 @@ const IonicWorkflow = () => {
             ))}
           </>
         )}
-      </div>
+      </div> */}
     </section>
   );
 };

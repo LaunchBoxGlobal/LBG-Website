@@ -120,7 +120,7 @@ const SmartPlanning = () => {
       </div>
       <div className="w-full relative py-20 lg:pb-40">
         <AnimatedLine />
-        <div className="absolute bottom-[6%] lg:right-1 midlg:right-[10%] xl:right-[17.5%] items-center justify-center hidden lg:flex">
+        <div className="absolute bottom-[6%] lg:right-0 midlg:right-[10%] xl:right-[14%] mac:right-[15%] midxl:right-[17.5%] 2xl:right-[26.2%] items-center justify-center hidden lg:flex">
           <Image
             src={"/flutter-rocket.png"}
             alt="Rocket"

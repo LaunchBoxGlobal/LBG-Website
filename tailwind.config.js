@@ -21,7 +21,9 @@ export default {
       midlg: "1366px",
       xl: "1440px",
       // => @media (min-width: 1280px) { ... }
-      // mac: "1470px",
+      mac: "1470px",
+
+      midxl: "1530px",
 
       "2xl": "1920px",
     },
