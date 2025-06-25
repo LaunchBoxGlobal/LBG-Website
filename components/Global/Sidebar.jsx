@@ -1,4 +1,4 @@
-import { sidebarlinks } from "@/constants/sidebar/sidebar-links";
+import { locationLinks, sidebarlinks } from "@/constants/sidebar/sidebar-links";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -9,6 +9,17 @@ import { IoClose } from "react-icons/io5";
 const Sidebar = ({ onclose }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useRouter();
+  const [locationsDropdown, setLocationsDropdown] = useState(false);
+
+  const toggleLocationsDropdown = () => {
+    setLocationsDropdown((prev) => !prev);
+  };
+
+  const handleNavigateToLocationPage = (url) => {
+    navigate.push(url);
+    toggleLocationsDropdown();
+    onclose();
+  };
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
@@ -92,7 +103,43 @@ const Sidebar = ({ onclose }) => {
                         type="button"
                         onClick={() => handleNavigate(l?.url)}
                         // href={`/services/mobile-app-development-services`}
-                        className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                        className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                      >
+                        {l?.title}
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+        </li>
+        <li className="w-full relative">
+          <button
+            type={`button`}
+            onClick={toggleLocationsDropdown}
+            className={`font-normal w-full text-[16px] 2xl:text-[22px] flex items-center justify-between gap-1 group ${
+              locationsDropdown && "red-text"
+            }`}
+          >
+            Locations{" "}
+            <IoIosArrowDown
+              className={`transition-all duration-300 text-lg mt-0.5 ${
+                locationsDropdown ? "rotate-180" : "rotate-0"
+              }`}
+            />
+          </button>
+          {locationsDropdown && (
+            <div className="bg-white px-2 from-blue-50 mt-4 z-50">
+              <ul className="space-y-1 flex flex-col items-start">
+                {locationLinks?.map((l, i) => {
+                  return (
+                    <li className="" key={i}>
+                      <button
+                        type="button"
+                        onClick={() => handleNavigate(l?.pageUrl)}
+                        // href={`/services/mobile-app-development-services`}
+                        className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start text-start gap-1 group`}
                       >
                         {l?.title}
                       </button>

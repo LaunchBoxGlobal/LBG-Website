@@ -56,3 +56,42 @@ export const sidebarlinks = [
     url: "/off-shore-software-development",
   },
 ];
+
+export const locationLinks = [
+  {
+    title: "Mobile App Development in Florida",
+    pageUrl: "/mobile-app-developer-in-florida",
+  },
+  {
+    title: "Software Development Company in Florida",
+    pageUrl: "/software-development-company-in-florida",
+  },
+  {
+    title: "Software Development Company in New Jersey",
+    pageUrl: "/software-development-company-in-new-jersey",
+  },
+  {
+    title: "Web Development Company in New Jersey",
+    pageUrl: "/web-development-company-in-new-jersey",
+  },
+  {
+    title: "Mobile App Development in Houston",
+    pageUrl: "/mobile-app-developers-in-houston",
+  },
+  {
+    title: "Custom Software Development Company in Houston",
+    pageUrl: "/custom-software-development-company-in-houston",
+  },
+  {
+    title: "Mobile App Development Company in Texas",
+    pageUrl: "/mobile-app-development-company-in-texas",
+  },
+  {
+    title: "Digital Marketing Company in wyoming",
+    pageUrl: "/wyoming-digital-company",
+  },
+  {
+    title: "Seo Company in Cheyenne",
+    pageUrl: "/cheyenne-seo-company",
+  },
+];
