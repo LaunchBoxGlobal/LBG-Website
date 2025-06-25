@@ -23,15 +23,35 @@ export async function POST(request) {
       subject: body?.emailSubject
         ? body?.emailSubject
         : "New Contact Form Website",
+      // html: `
+      //   <p><strong>Name:</strong> ${body?.firstName}</p>
+      //   <p><strong>Email:</strong> ${body?.email}</p>
+      //   <p><strong>Phone No:</strong> ${body?.phoneNumber}</p>
+      //   <p><strong>Service:</strong> ${body?.service}</p>
+      //   <p><strong>Message:</strong></p>
+      //   <p>${body?.message}</p>
+      //    <p><strong>Submitted from:</strong> ${body?.pageUrl}</p>
+      // `,
       html: `
-        <p><strong>Name:</strong> ${body?.firstName}</p>
-        <p><strong>Email:</strong> ${body?.email}</p>
-        <p><strong>Phone No:</strong> ${body?.phoneNumber}</p>
-        <p><strong>Service:</strong> ${body?.service}</p>
-        <p><strong>Message:</strong></p>
-        <p>${body?.message}</p>
-         <p><strong>Submitted from:</strong> ${body?.pageUrl}</p>
-      `,
+  ${body?.firstName ? `<p><strong>Name:</strong> ${body.firstName}</p>` : ""}
+  ${body?.email ? `<p><strong>Email:</strong> ${body.email}</p>` : ""}
+  ${
+    body?.phoneNumber
+      ? `<p><strong>Phone No:</strong> ${body.phoneNumber}</p>`
+      : ""
+  }
+  ${body?.service ? `<p><strong>Service:</strong> ${body.service}</p>` : ""}
+  ${
+    body?.message
+      ? `<p><strong>Message:</strong></p><p>${body.message}</p>`
+      : ""
+  }
+  ${
+    body?.pageUrl
+      ? `<p><strong>Submitted from:</strong> ${body.pageUrl}</p>`
+      : ""
+  }
+`,
     });
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
