@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className="font-extrabold z-10 text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1.1] w-full">
             <span>IT Staff Augmentation Your Shortcut To</span>{" "}
             <Image
-              src={"/staff-augmentation/hero-profiles.png"}
+              src={"/staff-augmentation/profile-icons-hero.png"}
               alt="hero profiles"
               width={175}
               height={65}
