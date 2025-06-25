@@ -54,7 +54,7 @@ const CTA = () => {
                   href={`/contact-us`}
                   className="bg-[#F40E00] text-white z-10 rounded-full px-5 py-3 lg:px-10 lg:py-5 text-base lg:text-[22px] font-medium"
                 >
-                  See How It Works
+                  Speak with us
                 </Link>
               </div>
             </AnimatedText>
