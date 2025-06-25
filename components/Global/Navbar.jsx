@@ -72,11 +72,11 @@ const Navbar = () => {
         </span>
       </Link>
 
-      <ul className="hidden lg:flex items-center justify-center gap-5 xl:gap-x-10 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
+      <ul className="hidden lg:flex items-center justify-center gap-5 xl:gap-x-7 mac:gap-x-8 bg-[#fff] px-8 rounded-[17px] border border-[#CECEEA] h-[50px] 2xl:h-[62px]">
         <li>
           <Link
             href={`/`}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Home{" "}
           </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
           <button
             type="button"
             name="services menu button"
-            className="font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group"
+            className="font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group"
           >
             Services{" "}
             <IoIosArrowDown
@@ -118,19 +118,18 @@ const Navbar = () => {
         <li>
           <Link
             href={`/case-studies`}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group whitespace-nowrap`}
+            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group whitespace-nowrap`}
           >
             Case Studies{" "}
           </Link>
         </li>
-        <li
+        {/* <li
           className="z-50 h-full flex items-center"
           onMouseEnter={() => toggleAugmentationDropdown()}
           onMouseLeave={() => toggleAugmentationDropdown()}
         >
           <Link
             href={"/staff-augmentation"}
-            // onClick={() => handleNavClick("testimonials")}
             className={`font-normal text-sm xl:text-[14px] 2xl:text-[20px] whitespace-nowrap`}
           >
             Team Augmentation
@@ -145,7 +144,6 @@ const Navbar = () => {
               onMouseLeave={() => toggleDropdown()}
               className="bg-transparent absolute right-[13%] mt-0 z-40 top-16 2xl:top-20 padding-x"
             >
-              {/* <NavbarDropdown closeDropdown={closeDropdown} /> */}
               <div className="bg-white min-w-[300px] max-w-[350px] mx-auto mt-6 flex items-start justify-center gap-10 rounded-[17px] border border-[#CECEEA] p-6">
                 <div className="w-full flex flex-col items-start gap-2">
                   {augmentationLinks?.map((p, i) => {
@@ -164,20 +162,28 @@ const Navbar = () => {
               </div>
             </motion.div>
           )}
-        </li>
+        </li> */}
         <li>
           <Link
             href={`/blogs`}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Blogs{" "}
           </Link>
+        </li>
+        <li>
+          <button
+            onClick={() => handleNavClick("testimonials")}
+            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px]`}
+          >
+            Testimonials
+          </button>
         </li>
 
         <li>
           <button
             onClick={() => handleNavClick("faqs")}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px]`}
+            className={`font-normal text-sm xl:text-[18px] 2xl:text-[22px]`}
           >
             FAQs
           </button>

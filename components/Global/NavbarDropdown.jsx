@@ -98,8 +98,23 @@ const Services = ({ closeDropdown }) => {
       pageUrl: "branding-and-design",
     },
   ];
+
+  const teamAugmentation = [
+    {
+      title: "Staff Augmentation",
+      pageUrl: "staff-augmentation",
+    },
+    {
+      title: "On-Demand Talent",
+      pageUrl: "on-demand-talent",
+    },
+    {
+      title: "Off-Shore Software Development",
+      pageUrl: "off-shore-software-development",
+    },
+  ];
   return (
-    <div className="w-full flex items-start">
+    <div className="w-full flex flex-col items-start">
       <div className="">
         <p className="text-lg font-medium">Services</p>
         <ul className="space-y-1 mt-3 flex flex-col items-start">
@@ -117,7 +132,23 @@ const Services = ({ closeDropdown }) => {
           })}
         </ul>
       </div>
-      <div></div>
+      <div className="mt-6">
+        <p className="text-lg font-medium">Team Augmentation</p>
+        <ul className="space-y-1 mt-3 flex flex-col items-start">
+          {teamAugmentation?.map((p, i) => {
+            return (
+              <Link
+                href={`/${p?.pageUrl}`}
+                key={i}
+                onClick={() => closeDropdown()}
+                className="text-lg underline text-gray-600 hover:text-black"
+              >
+                {p?.title}
+              </Link>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };
