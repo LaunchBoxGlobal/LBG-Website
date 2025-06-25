@@ -288,7 +288,7 @@ const Location = ({ selectedTab, closeDropdown }) => {
                 href={`${p?.pageUrl}`}
                 key={i}
                 onClick={closeDropdown}
-                className="text-lg underline text-gray-600 hover:text-black"
+                className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
               >
                 {p?.title}
               </Link>
