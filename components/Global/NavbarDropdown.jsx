@@ -24,7 +24,7 @@ const tabs = [
 const NavbarDropdown = ({ closeDropdown }) => {
   const [selectedTab, setSelectedTab] = useState("Services");
   return (
-    <div className="bg-white w-[80%] mx-auto min-h-[420px] mt-6 flex items-start justify-center gap-10 rounded-[17px] border border-[#CECEEA] p-6">
+    <div className="bg-white w-full mx-auto min-h-[420px] mt-6 flex items-start justify-center gap-0 rounded-[17px] border border-[#CECEEA] p-6">
       {/* <div className="min-w-[231px] flex flex-col items-start gap-2">
         {tabs?.map((tab, i) => {
           return (
