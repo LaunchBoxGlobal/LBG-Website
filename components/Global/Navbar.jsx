@@ -60,7 +60,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`/`}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group`}
           >
             Home{" "}
           </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
           <button
             type="button"
             name="services menu button"
-            className="font-normal text-sm xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group"
+            className="font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group"
           >
             Services{" "}
             <IoIosArrowDown
@@ -90,115 +90,11 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              // onMouseLeave={() => setIsHovered(false)}
               onMouseEnter={() => toggleDropdown()}
               onMouseLeave={() => toggleDropdown()}
               className="bg-transparent absolute inset-x-0 mt-0 z-40 top-16 padding-x"
             >
               <NavbarDropdown closeDropdown={closeDropdown} />
-              {/* <div className="bg-white border border-[#CECEEA] mx-auto rounded-[17px] p-6 mt-1 w-[280px] max-w-[300px]">
-                <ul className="space-y-2 2xl:space-y-4">
-                  <li>
-                    <Link
-                      href="/services/mobile-app-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Mobile App Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/web-app-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Web App Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/custom-software-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Custom Software Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/ecommerce-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Ecommerce Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/digital-marketing"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Digital Marketing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/branding-and-design"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Branding and Design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/flutter-app-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Flutter App Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/react-native-app-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      React Native App Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/swift-app-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Swift App Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/kotlin-app-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Kotlin App Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/services/ionic-app-development"
-                      onClick={() => toggleDropdown()}
-                      className="font-normal text-xs xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group hover:text-[#F40E00]"
-                    >
-                      Ionic App Development
-                    </Link>
-                  </li>
-                </ul>
-              </div> */}
             </motion.div>
           )}
         </li>
@@ -206,7 +102,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`/case-studies`}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group`}
           >
             Case Studies{" "}
           </Link>
@@ -214,7 +110,7 @@ const Navbar = () => {
         <li>
           <Link
             href={`/blogs`}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px] flex items-center justify-start gap-1 group`}
           >
             Blogs{" "}
           </Link>
@@ -222,7 +118,7 @@ const Navbar = () => {
         <li>
           <button
             onClick={() => handleNavClick("testimonials")}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[22px]`}
+            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px]`}
           >
             Testimonials
           </button>
@@ -230,7 +126,7 @@ const Navbar = () => {
         <li>
           <button
             onClick={() => handleNavClick("faqs")}
-            className={`font-normal text-sm xl:text-[16px] 2xl:text-[22px]`}
+            className={`font-normal text-sm xl:text-[16px] 2xl:text-[20px]`}
           >
             FAQs
           </button>
