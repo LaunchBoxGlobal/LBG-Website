@@ -12,7 +12,7 @@ const OnDemandBenefits = () => {
       <div className="w-full flex flex-col items-center gap-5">
         <AnimatedText>
           <h2 className="section-heading text-center mx-auto">
-            Why Smart Teams Choose{" "}
+            Why Smart Teams Choose <br />
             <span className="red-text">On-Demand Talent</span>
           </h2>
         </AnimatedText>

@@ -12,21 +12,21 @@ export const IDEAL_DEVELOPMENT_MODEL = [
   {
     icon: "/off-shore/nearshore-development-icon.png",
     title: "Nearshore Development",
-    description: "Balanced cost & collaboration",
+    description: "Slow Progress & High Involvement",
     benefits: [
-      "Similar working hours",
-      "Cultural affinity",
-      "Faster response times",
+      "No Overnight Progress",
+      "No Fresh Perspective",
+      "High Involvement Needed",
     ],
   },
   {
     icon: "/off-shore/onshore-development-icon.png",
     title: "Onshore Development",
-    description: "Maximum control & speed",
+    description: "Higher Cost & Limited Reach",
     benefits: [
-      "Same-country teams",
-      "Instant communication",
-      "Higher cost, premium quality",
+      "Higher Labor Cost",
+      "Limited Access to Global Talent",
+      "No Time Zone Benefit",
     ],
   },
 ];

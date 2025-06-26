@@ -83,7 +83,7 @@ const OffShoreAugmentation = () => {
               </Link>
 
               {/* Description */}
-              <p className="text-sm md:text-base lg:text-lg font-semibold group-hover:text-white transition-all duration-300 underline">
+              <p className="text-sm md:text-base lg:text-lg font-semibold group-hover:text-white transition-all duration-300 ">
                 {plan?.phrase}
               </p>
             </div>

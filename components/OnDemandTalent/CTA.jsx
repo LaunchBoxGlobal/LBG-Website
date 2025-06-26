@@ -38,11 +38,11 @@ const CTA = () => {
           <div className="w-full mt-32 z-10 flex flex-col items-center justify-end gap-4 lg:gap-6 px-4 pt-20">
             <AnimatedText>
               <h2 className="text-[25px] md:text-[30px] lg:text-[30px] xl:text-[40px] font-bold text-center leading-[1.1] lg:w-[60%] mx-auto z-10">
-                Get Skilled Developers in 48 Hours - Book Your Free Match Now.
+                Get Skilled Developers in 48 Hours Book Your Free Call Now.
               </h2>
             </AnimatedText>
             <AnimatedText>
-              <p className="mx-auto text-base lg:text-[22px] text-gray-500 lg:w-[60%] text-center z-10">
+              <p className="mx-auto text-base lg:text-[22px] text-gray-500 lg:w-[70%] text-center z-10">
                 Let's help you augment talent quickly with the right tech
                 professionals - available immediately and perfectly matched to
                 your needs.

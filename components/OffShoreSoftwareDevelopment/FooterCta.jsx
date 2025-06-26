@@ -10,7 +10,8 @@ const FooterCta = () => {
         <div className="w-full relative bg-[#000] text-white rounded-[17px] flex items-start">
           <div className="w-full lg:w-[60%] flex flex-col items-start justify-center gap-5 p-10 midlg:p-20">
             <h2 className="text-[25px] md:text-[35px] lg:text-[50px] font-bold leading-[1.1]">
-              Claim Your Free Offshore Software Development Strategy Call
+              Claim Your Free Offshore Software Development Strategy Call (Worth
+              $1000)
             </h2>
             <p className="text-lg font-normal leading-[1.2]">
               Scale your development with our global talent pool and
@@ -22,7 +23,7 @@ const FooterCta = () => {
                 href={"/contact-us"}
                 className="text-base lg:text-lg font-bold text-white red-bg px-10 py-3.5 rounded-[7px]"
               >
-                Speak With an Expert
+                Book Your Session
               </Link>
             </div>
           </div>
