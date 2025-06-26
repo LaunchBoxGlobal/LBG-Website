@@ -11,7 +11,7 @@ const FooterLocations = () => {
   return (
     <section className="w-full flex items-start flex-col lg:flex-row gap-x-10 gap-y-6 padding-x mt-10">
       <div className="w-full lg:w-[45%]">
-        <h3 className="mb-5 text-[28px] md:text-[60px] xl:text-[81px] leading-[1] text-center lg:text-start font-bold uppercase">
+        <h3 className="mb-5 text-[28px] md:text-[40px] lg:text-[60px] leading-[1] text-center lg:text-start font-bold uppercase">
           serving businesses worldwide
         </h3>
 

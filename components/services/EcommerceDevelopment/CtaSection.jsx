@@ -20,13 +20,13 @@ const CtaSection = () => {
       >
         {/* Text Section */}
         <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] px-4 lg:px-16 relative">
-          <Image
+          {/* <Image
             src={"/create-your-mobile-app-map.webp"}
             alt="map image"
             width={600}
             height={410}
             className="w-[100%] h-full absolute inset-0 opacity-10 z-0 object-cover"
-          />
+          /> */}
           <h2 className="font-bold text-[36px] lg:text-[50px] leading-[2.7rem] lg:leading-[52px]">
             Let’s Build Something That Sells
           </h2>
@@ -51,10 +51,11 @@ const CtaSection = () => {
           className="w-[45%] h-full z-10 relative hidden lg:flex justify-end"
         >
           <Image
-            src={"/ecommerce-cta-image.webp"}
+            src={"/ecommerce-cta-mockup.png"}
             alt="ecommerce-cta-image"
-            width={454}
-            height={464}
+            width={579}
+            height={622}
+            className="object-contain"
           />
         </motion.div>
       </section>

@@ -10,6 +10,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { WYOMING_DIGITAL_MARKETING_PROCESS } from "@/constants/locations/wyoming-digital-marketing/wyoming-digital-marketing-process";
 import ProcessCard from "@/components/StaffAugmentation/ProcessCard";
+import { DIGITAL_MARKETING_SERVICE_PROCESS } from "@/constants/digital-marketing/digital-marketing-process";
 
 const Workflow = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -73,7 +74,7 @@ const Workflow = () => {
         <AnimatedLine />
 
         {/* Cards */}
-        {WYOMING_DIGITAL_MARKETING_PROCESS?.map((process, index) => (
+        {DIGITAL_MARKETING_SERVICE_PROCESS?.map((process, index) => (
           <ProcessCard process={process} key={index} index={index} />
         ))}
       </div>
