@@ -31,12 +31,12 @@ export const points = [
     icon1: "/on-demand-talent/fees-icon.png",
     title1: "We manage contracts and payments",
     icon2: "/on-demand-talent/high-recruitment-icon.png",
-    title2: "Employment contracts and taxes handled",
+    title2: "Contracts and taxes handled",
   },
   //
   {
     icon1: "/on-demand-talent/fees-icon.png",
-    title1: "Remote pros use their own workspace",
+    title1: "Remote pros provide own workspace",
     icon2: "/on-demand-talent/high-recruitment-icon.png",
     title2: "Office space costs add up",
   },
