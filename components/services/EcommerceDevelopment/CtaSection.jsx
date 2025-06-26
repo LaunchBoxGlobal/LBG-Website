@@ -13,21 +13,13 @@ const CtaSection = () => {
   });
 
   return (
-    <section className="w-full padding-x py-10 lg:py-28 mt-6">
+    <section className="w-full padding-x py-10 lg:py-40 lg:pt-60 mt-6">
       <section
         ref={ctaRef}
-        className="w-full h-[410px] rounded-lg bg-[#212121] relative border group overflow-x-hidden overflow-y-hidden flex items-center justify-end"
+        className="w-full min-h-[410px] max-h-[430px] rounded-lg bg-[#212121] relative border group flex items-center justify-end"
       >
-        {/* Text Section */}
         <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] px-4 lg:px-16 relative">
-          {/* <Image
-            src={"/create-your-mobile-app-map.webp"}
-            alt="map image"
-            width={600}
-            height={410}
-            className="w-[100%] h-full absolute inset-0 opacity-10 z-0 object-cover"
-          /> */}
-          <h2 className="font-bold text-[36px] lg:text-[50px] leading-[2.7rem] lg:leading-[52px]">
+          <h2 className="font-bold text-[36px] lg:text-[40px] midlg:text-[50px] leading-[1.1]">
             Let’s Build Something That Sells
           </h2>
           <p className="text-lg lg:text-[22px] font-light">
@@ -43,19 +35,18 @@ const CtaSection = () => {
           </Link>
         </section>
 
-        {/* Image with animation */}
         <motion.div
           initial={{ x: "100%" }}
           animate={inView ? { x: 0 } : { x: "100%" }} // Reset when out of view
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-[45%] h-full z-10 relative hidden lg:flex justify-end"
+          className="w-[45%] z-10 relative bottom-16 hidden lg:flex justify-end"
         >
           <Image
-            src={"/ecommerce-cta-mockup.png"}
+            src={"/ecommerce-cta-new-mockup.png"}
             alt="ecommerce-cta-image"
-            width={579}
-            height={622}
-            className="object-contain"
+            width={479}
+            height={522}
+            className=""
           />
         </motion.div>
       </section>

@@ -29,22 +29,22 @@ export const points = [
   },
   {
     icon1: "/on-demand-talent/fees-icon.png",
-    title1: "No employment laws we handle contracts and payments",
+    title1: "We manage contracts and payments",
     icon2: "/on-demand-talent/high-recruitment-icon.png",
-    title2: "Employment contracts, taxes, compliance headaches",
+    title2: "Employment contracts and taxes handled",
   },
   //
   {
     icon1: "/on-demand-talent/fees-icon.png",
-    title1: "Remote pros use their own tools and workspace",
+    title1: "Remote pros use their own workspace",
     icon2: "/on-demand-talent/high-recruitment-icon.png",
-    title2: "Office space, equipment, and software licenses add up",
+    title2: "Office space costs add up",
   },
   {
     icon1: "/on-demand-talent/fees-icon.png",
     title1: "Talent uses their own equipment",
     icon2: "/on-demand-talent/high-recruitment-icon.png",
-    title2: "You provide laptops, phones, and IT support",
+    title2: "You provide IT and tools",
   },
 ];
 
