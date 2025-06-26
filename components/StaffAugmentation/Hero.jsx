@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import HeroSearchInput from "./HeroSearchInput";
 import AnimatedText from "./AnimatedText";
 import HeroAnimation from "./HeroAnimation";
 
@@ -10,7 +9,9 @@ const Hero = () => {
       <section className="w-full min-h-[87vh] relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden">
         <AnimatedText direction="left">
           <h1 className="font-extrabold z-10 text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1.1] w-full">
-            <span>IT Staff Augmentation Your Shortcut To</span>{" "}
+            <span>
+              <strong>IT Staff Augmentation</strong> Your Shortcut To
+            </span>{" "}
             <Image
               src={"/staff-augmentation/profile-icons-hero.png"}
               alt="hero profiles"

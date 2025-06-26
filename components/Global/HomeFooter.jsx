@@ -10,6 +10,7 @@ import {
   FOOTER_STAFF_AUGMENTATION_LINKS,
   FOOTER_TECH_LINKS,
 } from "@/constants/footer/footerLinks";
+import { FaInstagram } from "react-icons/fa";
 
 const HomeFooter = () => {
   return (
@@ -199,7 +200,7 @@ const HomeFooter = () => {
 
         <div className="flex items-center justify-end gap-3 z-10 relative top-3">
           <Link
-            href={"/https://www.facebook.com/"}
+            href={"https://www.facebook.com/LaunchboxGlobal"}
             target="_blank"
             aria-label="launchbox global facebook page link"
             className="w-[35px] h-[35px] md:w-[45px] md:h-[45px] flex items-center justify-center rounded-full bg-[#F40E00]"
@@ -207,18 +208,20 @@ const HomeFooter = () => {
             <RiFacebookFill className="text-white w-[16.96px] h-[21.35px]" />
           </Link>
           <Link
-            href={"/"}
+            href={"https://www.linkedin.com/company/launchboxglobal/"}
+            target="_blank"
             aria-label="launchbox global linkedin page link"
             className="w-[35px] h-[35px] md:w-[45px] md:h-[45px] flex items-center justify-center rounded-full bg-[#F40E00]"
           >
             <RiLinkedinFill className="text-white w-[19.93px] h-[19.93px]" />
           </Link>
           <Link
-            href={"/"}
-            aria-label="launchbox global twitter page link"
+            href={"https://www.instagram.com/launchboxglobal/"}
+            target="_blank"
+            aria-label="launchbox global instagram page link"
             className="w-[35px] h-[35px] md:w-[45px] md:h-[45px] flex items-center justify-center rounded-full bg-[#F40E00]"
           >
-            <RiTwitterXFill className="text-white w-[18.5px] h-[15.66px]" />
+            <FaInstagram className="text-white w-[18px] h-[18px]" />
           </Link>
         </div>
       </section>
