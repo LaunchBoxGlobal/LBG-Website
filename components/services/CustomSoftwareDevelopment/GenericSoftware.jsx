@@ -8,18 +8,15 @@ const GenericSoftware = () => {
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
-        <h2 className="red-text font-semibold text-lg lg:text-[25px] text-center">
+        {/* <h2 className="red-text font-semibold text-lg lg:text-[25px] text-center">
           Why you should have Customized Software?
+        </h2> */}
+        <h2 className="section-heading text-center">
+          Software That Works <span className="red-text">For You</span>
         </h2>
-        <h3 className="section-heading text-center">
-          Get Exactly What Your <br className="hidden lg:block" />{" "}
-          <span className="red-text">Business Needs</span>
-        </h3>
         <p className="section-paragraph text-center mx-auto lg:w-[90%]">
-          Off-the-shelf software often has unnecessary features, hidden costs,
-          and limitations that don’t align with your goals. As a custom software
-          development company, we build tailored solutions that fit your
-          business perfectly, helping you work smarter and grow faster.
+          We specialize in custom software development for startups that need
+          solutions, not complications.
         </p>
       </div>
 

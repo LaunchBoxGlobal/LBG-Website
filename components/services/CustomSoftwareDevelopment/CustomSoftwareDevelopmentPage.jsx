@@ -29,10 +29,10 @@ const CustomSoftwareDevelopmentPage = () => {
       <CreateYourMobileApp />
       <SmartPlanning />
       <TeckStack
-        heading={"Built with the Best"}
-        redText={"Technologies"}
+        heading={"Built With Modern"}
+        redText={"Technology"}
         description={
-          "We leverage a modern tech stack to create scalable, secure, and high-performance custom software. From intuitive front-end frameworks to powerful back-end systems, our technologies ensure seamless functionality and future-ready solutions."
+          "We leverage proven custom software development solutions using Flutter, React Native, and Firebase to create fast, scalable applications tailored to your business needs."
         }
       />
       <CustomDevelopmentJourney />

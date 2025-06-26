@@ -1,36 +1,42 @@
 export const CUSTOM_SOFTWARE_FAQS = [
   {
-    question:
-      "How do you ensure data security in your healthcare software solutions?",
+    question: "What is custom software development?",
     answer:
-      "We ensure data security through HIPAA-compliant architectures, end-to-end encryption, secure authentication, regular audits, and strict access controls, protecting patient information at every stage of the software lifecycle.",
+      "Custom software development means building applications specifically for your business needs. Unlike off-the-shelf software, it’s designed to fit your workflows, scale with growth, and solve your unique challenges.",
   },
   {
-    question:
-      "Why we choose your Custom Software Development company, Why Custom Software Development Services is important?",
+    question: "How much does custom software development cost?",
     answer:
-      "Choose us for tailored, scalable, and secure solutions that fit your exact business needs. Custom software boosts efficiency, supports unique workflows, and grows with your company, unlike off-the-shelf alternatives.",
+      "Costs vary based on features, complexity, and timeline. A basic MVP might start around $25K, while enterprise solutions can go higher. We’ll provide a clear estimate after discussing your requirements.",
   },
   {
-    question: "What do your Custom Programming Services include?",
+    question: "How do I choose a custom software development company?",
     answer:
-      "Look for agencies with proven expertise in your industry, transparent workflows (e.g., Agile/Scrum), and post-launch support. Check portfolios for similar projects, read client reviews, and verify technical certifications. The best agencies prioritize communication, offer flexible pricing, and align with your long-term goals.",
+      "Look for experience in your industry, clear communication, and a portfolio of working solutions. Ask about their development process, support options, and client references before committing.",
   },
   {
-    question:
-      "How to identify the best Software Development Agency for my project?",
+    question: "Why is custom software development important?",
     answer:
-      "Look for agencies with proven expertise in your industry, transparent workflows (e.g., Agile/Scrum), and post-launch support. Check portfolios for similar projects, read client reviews, and verify technical certifications. The best agencies prioritize communication, offer flexible pricing, and align with your long-term goals.",
+      "Ready-made tools often force you to adapt your business to them. Custom software does the opposite—it adapts to you, improving efficiency, security, and long-term ROI.",
   },
   {
-    question: "How can your Custom Programming Services benefit my business?",
+    question: "What platforms do you develop for?",
     answer:
-      "Our custom programming services streamline operations, enhance user experience, and deliver scalable solutions tailored to your goals, helping you reduce costs and gain a competitive edge.",
+      "We build for all major platforms: web (React, Django), mobile (iOS, Android, Flutter), and cloud (AWS, Firebase). The right choice depends on your users and goals.",
   },
   {
-    question:
-      "How does your Software Agency ensure transparency throughout the development process?",
+    question: "What’s included in post-launch support?",
     answer:
-      "We prioritize transparency via daily updates, open communication channels, and collaborative tools (e.g., Jira, Trello). Clients access real-time progress dashboards, participate in sprint reviews, and approve milestones. Clear documentation, no hidden costs, and iterative feedback loops ensure alignment with your goals, building trust and accountability at every stage.",
+      "We handle bug fixes, updates, and feature additions after launch. Support plans range from on-demand troubleshooting to scheduled maintenance—you choose what fits best.",
+  },
+  {
+    question: "How long does development usually take?",
+    answer:
+      "A simple MVP takes 8–12 weeks. Complex projects may need 6+ months. We’ll outline a timeline after scoping your requirements to avoid surprises.",
+  },
+  {
+    question: "Can you integrate with our existing tools?",
+    answer:
+      "Yes. We regularly connect custom software with CRMs, payment gateways, and internal systems via APIs. Just share what you use, and we’ll ensure seamless integration.",
   },
 ];

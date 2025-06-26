@@ -15,14 +15,14 @@ const MobileAppDevContactForm = () => {
         />
         <div className="text-white w-full flex flex-col items-center text-center lg:text-start lg:items-start justify-center">
           <h2 className="text-[36px] lg:text-[70px] font-medium leading-10 lg:leading-[68px] z-10">
-            Frustrated with Limitations?
+            Build Software That Works For You
           </h2>
-          <h3 className="text-[20px] font-medium leading-10 lg:leading-[38px] my-8 z-10">
+          {/* <h3 className="text-[20px] font-medium leading-10 lg:leading-[38px] my-8 z-10">
             Let’s Build the Perfect Solution for You
-          </h3>
-          <p className="text-lg lg:text-[20px] font-medium z-10">
-            We build customized solutions that adapt to your workflow, eliminate
-            inefficiencies, and give you complete control over your operations.
+          </h3> */}
+          <p className="text-lg lg:text-[20px] font-medium z-10 mt-5">
+            Get a free app plan with clear costs and timelines, no surprises,
+            just results.
           </p>
         </div>
         <div className="w-full z-10">

@@ -25,18 +25,17 @@ const CreateYourMobileApp = () => {
             className="w-[70%] h-full absolute inset-0 opacity-10 z-0 object-cover lg:object-none"
           />
           <h2 className="font-bold text-[36px] lg:text-[50px] leading-[2.7rem] lg:leading-[52px]">
-            Software That Fits. Finally.
+            Your Software, Built Right
           </h2>
           <p className="text-lg lg:text-[22px] font-light">
-            Generic software comes with limitations. Custom software development
-            gives you a solution built around your exact needs, efficient and
-            scalable.
+            Let’s discuss your custom software development process in a free
+            strategy call.
           </p>
           <Link
             href={"/contact-us"}
-            className="w-[242px] h-[47px] mt-3 bg-white text-black flex items-center justify-center rounded-[11px] text-lg font-medium z-30 hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+            className="w-full max-w-[310px] h-[47px] mt-3 bg-white text-black flex items-center justify-center rounded-[11px] text-lg font-medium z-30 hover:bg-[#F40E00] hover:text-white transition-all duration-300"
           >
-            Start Your Custom Build
+            Request a Free App Strategy Call
           </Link>
         </section>
 

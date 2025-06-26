@@ -20,13 +20,13 @@ const SmartPlanning = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading w-full">
-          Choosing the Right Path to <span className="red-text">Success</span>
+          Building What You Actually <span className="red-text">Need</span>
         </h2>
         <p className="section-paragraph lg:w-[85%]">
-          Successful custom software development solutions start with the right
-          approach. Agile keeps things flexible, Waterfall provides a clear
-          roadmap, and our Functionality-First Approach ensures every feature is
-          built with a clear purpose and maximum impact.
+          We follow a proven custom software development process designed to
+          eliminate guesswork. From initial planning to final delivery, we keep
+          things simple, efficient, and focused on solving your specific
+          business challenges.
         </p>
       </section>
 

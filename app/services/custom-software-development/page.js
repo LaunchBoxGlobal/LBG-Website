@@ -2,9 +2,9 @@ import CustomSoftwareDevelopmentPage from "@/components/services/CustomSoftwareD
 import React from "react";
 
 export const metadata = {
-  title: "Custom Software Development | That Solves Your Business Challenges",
+  title: "Custom Software Development | Solutions for Your Business",
   description:
-    "Our custom software development company builds tailored solutions for your unique needs. Whether you need specialized tools or scalable systems, we create customized software that works smarter for your business.",
+    "Need software built for your needs? Our custom software development delivers scalable, secure solutions designed for your workflow. Get a free consultation.",
   alternates: {
     canonical:
       "https://launchboxglobal.com/services/custom-software-development",
