@@ -118,20 +118,6 @@ const Workflow = () => {
       </div>
       <div className="w-full relative py-20 lg:pb-40">
         <AnimatedLine />
-        <div className="absolute bottom-[6%] lg:right-0 midlg:right-[10%] xl:right-[14%] mac:right-[15%] midxl:right-[17.5%] 2xl:right-[26.2%] items-center justify-center hidden lg:flex">
-          <Image
-            src={"/kotlin-rocket.png"}
-            alt="Rocket"
-            width={119}
-            height={274}
-            className="absolute z-20 left-1/2 -translate-x-1/2"
-            priority
-          />
-          <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-75"></span>
-          <span className="animate-ping absolute inline-flex h-[150px] w-[150px] rounded-full bg-[#E1E1E1] opacity-50"></span>
-          <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-25"></span>
-          <span className="relative inline-flex rounded-full h-[170px] w-[170px] bg-[#E1E1E1]"></span>
-        </div>
 
         {/* Cards */}
         {activeTab === "agile" && (
@@ -175,14 +161,14 @@ const AnimatedLine = () => {
   return (
     <div
       ref={ref}
-      className="absolute top-20 h-[2960px] w-full hidden lg:block pb-40"
+      className="absolute top-20 left-[20%] h-[2960px] w-[759px] hidden lg:block pb-40"
     >
       <svg
         width="759"
         height="2660"
         viewBox="0 0 759 2660"
         fill="none"
-        className="absolute left-[20%] top-32"
+        className="absolute top-32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.path
@@ -193,6 +179,21 @@ const AnimatedLine = () => {
           style={{ pathLength }}
         />
       </svg>
+
+      <div className="absolute bottom-[14%] right-[-1%] items-center justify-center hidden lg:flex">
+        <Image
+          src={"/kotlin-rocket.png"}
+          alt="Rocket"
+          width={119}
+          height={274}
+          className="absolute z-20 left-1/2 -translate-x-1/2"
+          priority
+        />
+        <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-75"></span>
+        <span className="animate-ping absolute inline-flex h-[150px] w-[150px] rounded-full bg-[#E1E1E1] opacity-50"></span>
+        <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-25"></span>
+        <span className="relative inline-flex rounded-full h-[170px] w-[170px] bg-[#E1E1E1]"></span>
+      </div>
     </div>
   );
 };

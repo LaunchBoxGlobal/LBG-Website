@@ -24,7 +24,7 @@ const WhenToChooseOffshore = () => {
       <section className="w-full mt-10 lg:mt-14 flex items-start flex-wrap justify-center gap-5">
         {WHEN_TO_CHOOSE_OFFSHORE?.map((model, index) => {
           return (
-            <div key={index} className="w-full max-w-[380px]">
+            <div key={index} className="w-full max-w-[360px]">
               <AnimatedText>
                 <div className="w-full min-h-[319px] offshore-card bg-white border hover:border-white border-[#D9D9D9] rounded-[17px] p-7 lg:p-10 flex flex-col items-start gap-4">
                   <Image

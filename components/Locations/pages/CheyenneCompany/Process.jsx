@@ -29,19 +29,6 @@ const Process = () => {
       </section>
       <div className="w-full relative  py-20">
         <AnimatedLine />
-        <div className="absolute bottom-[7%] lg:left-[11%] midlg:left-[12.2%] xl:left-[13%] items-center justify-center hidden lg:flex">
-          <Image
-            src={"/staff-augmentation/Rocket.png"}
-            alt="Rocket"
-            width={110}
-            height={267}
-            className="object-contain absolute z-20 left-1/2 -translate-x-1/2"
-          />
-          <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-75"></span>
-          <span className="animate-ping absolute inline-flex h-[150px] w-[150px] rounded-full bg-[#E1E1E1] opacity-50"></span>
-          <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-25"></span>
-          <span className="relative inline-flex rounded-full h-[170px] w-[170px] bg-[#E1E1E1]"></span>
-        </div>
 
         {/* Cards */}
         {WYOMING_DIGITAL_MARKETING_PROCESS?.map((process, index) => (
@@ -67,14 +54,14 @@ const AnimatedLine = () => {
   return (
     <div
       ref={ref}
-      className="absolute left-[20%] top-28 h-[2654px] hidden lg:block"
+      className="absolute left-[20%] top-28 h-[2654px] w-[613px] hidden lg:block"
     >
       <svg
         width="613"
         height="2654"
         viewBox="0 0 613 2654"
         fill="none"
-        className="absolute left-[20%] top-32"
+        className="absolute top-32"
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.path
@@ -85,6 +72,20 @@ const AnimatedLine = () => {
           style={{ pathLength }}
         />
       </svg>
+
+      <div className="absolute bottom-[21%] left-[-14%] items-center justify-center hidden lg:flex">
+        <Image
+          src={"/staff-augmentation/Rocket.png"}
+          alt="Rocket"
+          width={110}
+          height={267}
+          className="object-contain absolute z-20 left-1/2 -translate-x-1/2"
+        />
+        <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-75"></span>
+        <span className="animate-ping absolute inline-flex h-[150px] w-[150px] rounded-full bg-[#E1E1E1] opacity-50"></span>
+        <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-25"></span>
+        <span className="relative inline-flex rounded-full h-[170px] w-[170px] bg-[#E1E1E1]"></span>
+      </div>
     </div>
   );
 };
