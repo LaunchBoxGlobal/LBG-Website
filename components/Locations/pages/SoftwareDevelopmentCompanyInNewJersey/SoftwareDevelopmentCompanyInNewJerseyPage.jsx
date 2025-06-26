@@ -34,8 +34,8 @@ const SoftwareDevelopmentCompanyInNewJerseyPage = () => {
       <AboutSection />
       <Services />
       <LocationProcess
-        heading={"Agile, Waterfall & Functionality-First  Built for"}
-        redText={"Florida"}
+        heading={"Our Development"}
+        redText={"Methodology"}
         agileDescription={`Our Agile approach is ideal for fast-paced New Jersey startups looking for iterative development and early MVPs. This methodology emphasizes collaboration and flexibility, allowing teams to respond quickly to changes and feedback. As a leading custom software development company in New Jersey, we ensure that your project evolves in alignment with your vision, maximizing the potential for success while minimizing risks.`}
         waterfallDescription={`For established enterprises in New Jersey that require a structured and sequential development process, our Waterfall methodology is the perfect fit. This approach allows for thorough planning and documentation, ensuring every phase is completed before moving on to the next. As one of the top software development companies in New Jersey, We use this approach to provide consistent and dependable results, making it ideal for projects with well-defined requirements.`}
         recommendedDescription={`Our Functionality-First methodology focuses on delivering core features that provide immediate value to your business. This approach is particularly beneficial for New Jersey companies looking to enhance their existing systems or launch new products efficiently. By prioritizing essential functionalities, we ensure your project remains aligned with your strategic goals, making us a trusted partner among custom software development companies in New Jersey.`}

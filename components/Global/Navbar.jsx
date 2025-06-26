@@ -106,8 +106,8 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              onMouseEnter={() => toggleDropdown()}
-              onMouseLeave={() => toggleDropdown()}
+              // onMouseEnter={() => toggleDropdown()}
+              // onMouseLeave={() => toggleDropdown()}
               className="bg-transparent absolute inset-x-0 mt-0 z-40 top-16 2xl:top-20 padding-x"
             >
               <NavbarDropdown closeDropdown={closeDropdown} />
