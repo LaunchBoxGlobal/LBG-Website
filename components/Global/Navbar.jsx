@@ -101,15 +101,15 @@ const Navbar = () => {
             />
           </button>
           {isHovered && (
-            <motion.div
+            <motion.span
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="bg-transparent w-auto absolute inset-x-0 mt-0 z-40 top-16 2xl:top-20 padding-x"
+              className="bg-transparent lg:w-[90%] midlg:w-[80%] 2xl:w-[74%] mx-auto absolute inset-x-0 mt-0 z-40 top-16 2xl:top-20"
             >
               <NavbarDropdown closeDropdown={closeDropdown} />
-            </motion.div>
+            </motion.span>
           )}
         </li>
 
