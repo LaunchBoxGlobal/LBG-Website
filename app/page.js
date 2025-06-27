@@ -34,7 +34,7 @@ export default function Home() {
     <>
       {/* Structured Data Scripts */}
       <head>
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredDataCorporation),
@@ -44,6 +44,36 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredDataWebsite),
+          }}
+        /> */}
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Corporation",
+              name: "LaunchBox Global",
+              url: "https://launchboxglobal.com",
+              logo: "https://launchboxglobal.com/_next/image?url=%2Flogo02.png&w=256&q=75",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              name: "LaunchBox Global",
+              url: "https://launchboxglobal.com/",
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://launchboxglobal.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
           }}
         />
       </head>

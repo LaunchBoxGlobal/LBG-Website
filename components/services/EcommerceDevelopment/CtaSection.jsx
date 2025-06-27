@@ -43,7 +43,7 @@ const CtaSection = () => {
         >
           <Image
             src={"/ecommerce-cta-new-mockup.png"}
-            alt="ecommerce-cta-image"
+            alt="Ecommerce development platform showcasing responsive product pages and seamless checkout interface"
             width={479}
             height={522}
             className=""

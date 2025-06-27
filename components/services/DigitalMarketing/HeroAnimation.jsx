@@ -24,7 +24,7 @@ const HeroAnimation = () => {
           width={275}
           height={180}
           priority
-          alt="digital marketing service image"
+          alt="Digital marketing services dashboard displaying campaign performance metrics and audience engagement analytics"
           className="-rotate-[8deg]"
         />
       </motion.div>
@@ -40,7 +40,7 @@ const HeroAnimation = () => {
           width={400}
           height={262}
           priority
-          alt="digital marketing service image"
+          alt="Digital marketing services dashboard displaying campaign analytics and real-time performance tracking metrics"
           className="-rotate-[8deg]"
         />
       </motion.div>
@@ -56,7 +56,7 @@ const HeroAnimation = () => {
           width={334}
           height={219}
           priority
-          alt="digital marketing service image"
+          alt="Digital marketing services dashboard displaying campaign analytics and real-time performance tracking tools"
           className="-rotate-[5deg] h-[120px] w-[200px] md:w-[334px] md:h-[219px]"
         />
       </motion.div>
@@ -72,7 +72,7 @@ const HeroAnimation = () => {
           width={429}
           height={280}
           priority
-          alt="digital marketing service image"
+          alt="Digital marketing services interface displaying campaign analytics and real-time performance tracking metrics"
           className="rotate-[5deg] md:w-[350px] lg:w-[429px]"
         />
       </motion.div>
@@ -88,7 +88,7 @@ const HeroAnimation = () => {
           width={275}
           height={380}
           priority
-          alt="digital marketing service image"
+          alt="Digital marketing services dashboard showing campaign analytics and audience engagement performance metrics"
           className="rotate-2"
         />
       </motion.div>
@@ -104,7 +104,7 @@ const HeroAnimation = () => {
           width={275}
           height={380}
           priority
-          alt="digital marketing service image"
+          alt="Digital marketing services dashboard displaying campaign analytics and real-time performance tracking metrics"
           className="rotate-[20deg] w-[175px] h-[280px]"
         />
       </motion.div>
@@ -113,7 +113,7 @@ const HeroAnimation = () => {
         width={425}
         height={278}
         priority
-        alt="digital marketing service image"
+        alt="Digital marketing services dashboard showing campaign performance analytics and conversion rate metrics."
         className="absolute left-1/2 -translate-x-1/2 z-40 bottom-[-5%] md:bottom-[-15%] lg:bottom-[-5%] rotate-3 w-[60%] md:w-[50%] lg:w-[425px]"
       />
     </section>

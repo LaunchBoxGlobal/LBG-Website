@@ -32,7 +32,7 @@ const HomeServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           src={service?.image}
           width={service?.img_width}
           height={service?.img_height}
-          alt={service?.title}
+          alt={service?.alt_tag}
           loading="lazy"
           className={`2xl:left-[9%] ${
             index === 4

@@ -55,7 +55,7 @@ const Hero = () => {
               }
               width={1331}
               height={589}
-              alt="mobile-app-developers-in-houston-hero-mockup"
+              alt="Mobile App Developers in Houston showcasing fitness tracking app with workout analytics dashboard"
               className="mx-auto h-full object-contain z-10 relative -bottom-4"
             />
           </motion.div>

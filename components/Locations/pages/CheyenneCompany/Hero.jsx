@@ -50,7 +50,7 @@ const Hero = () => {
             src={"/locations/cheyenne-seo-company/hero-mockup.png"}
             width={1596}
             height={698}
-            alt="hero-image"
+            alt="Cheyenne SEO company dashboard showing keyword rankings and organic traffic analytics"
             className="mx-auto h-full object-contain z-10 relative"
           />
         </motion.div>

@@ -36,7 +36,7 @@ const CTA = () => {
         <section className="w-[45%] h-[410px] z-10 relative hidden lg:block">
           <Image
             src={"/branding-and-design-cta-image-1.webp"}
-            alt="branding-and-design-cta-image-1"
+            alt="Branding and design mockup displaying logo concepts and visual identity style tiles"
             width={566}
             height={382}
             loading="lazy"
@@ -44,7 +44,7 @@ const CTA = () => {
           />
           <Image
             src={"/branding-and-design-cta-image-2.webp"}
-            alt="branding-and-design-cta-image-1"
+            alt="Branding and design mockup showing final logo application on business collateral materials"
             width={566}
             height={382}
             loading="lazy"
@@ -52,7 +52,7 @@ const CTA = () => {
           />
           <Image
             src={"/branding-and-design-cta-image-3.webp"}
-            alt="branding-and-design-cta-image-1"
+            alt="Branding and design mockup displaying packaging concepts and product label variations"
             width={566}
             height={382}
             loading="lazy"

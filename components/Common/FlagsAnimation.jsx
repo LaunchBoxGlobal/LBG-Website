@@ -3,16 +3,43 @@ import React, { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
 import Image from "next/image";
 
-const flags = [
-  "/flag-01.webp",
-  "/flag-02.webp",
-  "/flag-03.webp",
-  "/flag-04.webp",
-  "/flag-05.webp",
-  "/flag-06.webp",
-  "/flag-09.webp",
-  "/flag-07.webp",
-  "/flag-08.webp",
+const countries = [
+  {
+    image: "/flag-01.webp",
+    alt_tag: "Flag of Oman",
+  },
+  {
+    image: "/flag-02.webp",
+    alt_tag: "Flag of Saudi Arabia",
+  },
+  {
+    image: "/flag-03.webp",
+    alt_tag: "Flag of Qatar",
+  },
+  {
+    image: "/flag-04.webp",
+    alt_tag: "Flag of UAE",
+  },
+  {
+    image: "/flag-05.webp",
+    alt_tag: "Flag of Pakistan",
+  },
+  {
+    image: "/flag-06.webp",
+    alt_tag: "Flag of Canada",
+  },
+  {
+    image: "/flag-09.webp",
+    alt_tag: "Flag of America",
+  },
+  {
+    image: "/flag-07.webp",
+    alt_tag: "Flag of Australia",
+  },
+  {
+    image: "/flag-08.webp",
+    alt_tag: "Flag of United Kingdom",
+  },
 ];
 
 const FlagsAnimation = () => {
@@ -39,12 +66,12 @@ const FlagsAnimation = () => {
           style={{ width: flagsContainerWidth, transformOrigin: "left" }}
           className="h-[69px] lg:h-[152px] rounded-r-full bg-white flex items-center justify-end gap-1 md:gap-3 p-1"
         >
-          {flags?.map((image, i) => (
+          {countries?.map((country, i) => (
             <motion.img
               style={{ rotate: rotate }}
-              src={image}
+              src={country?.image}
               key={i}
-              alt="launchbox global presence country flag image"
+              alt={country?.alt_tag}
               width={149}
               height={149}
               loading="lazy"

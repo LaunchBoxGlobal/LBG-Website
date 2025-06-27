@@ -19,7 +19,7 @@ const HeroAnimation = () => {
           src={"/flutter/flutter-app-mobile-app-mockup.png"}
           width={313}
           height={813}
-          alt="flutter-app-mobile-app-mockup"
+          alt="Flutter app development company showcasing cross-platform mobile UI with responsive widgets"
           className="z-10 relative top-[20%] md:top-[10%] lg:top-[15%] right-[5%] w-auto h-[400px] md:h-[713px] md:w-auto lg:h-[813px] moveUpDownMockup"
         />
         {/* ORBITING IMAGE 1 */}
@@ -71,7 +71,7 @@ const HeroAnimation = () => {
             src="/flutter/flutter-app-hero-mockup-4.png"
             width={196}
             height={196}
-            alt="flutter-app-hero-mockup-4"
+            alt="Flutter app development company displaying cross-platform mobile app UI with smooth animations"
             className="absolute top-[20%] left-[10%] z-20 scaleUpDown"
           />
         </div>
@@ -80,7 +80,7 @@ const HeroAnimation = () => {
           src={"/flutter/flutter-app-hero-mockup-5.png"}
           width={244}
           height={187}
-          alt="flutter-app-hero-mockup-1"
+          alt="Flutter app development company demoing shopping app interface with product carousel"
           className="absolute top-[50%] right-[5%] z-20 hidden md:block moveUpDown"
         />
       </div>

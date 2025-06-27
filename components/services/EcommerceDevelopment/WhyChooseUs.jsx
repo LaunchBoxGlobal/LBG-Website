@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
         {ECOMMERCE_WHY_CHOOSE_US_1?.map((c, i) => {
           return (
             <div
-              className={`w-full flex flex-col items-center justify-start text-center gap-6 p-5 xl:px-6 xl:py-8 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
+              className={`w-full group flex flex-col items-center justify-start text-center gap-6 p-5 xl:px-6 xl:py-8 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
                 i === 0
                   ? "lg:border-r lg:border-b "
                   : i === 1
@@ -49,10 +49,11 @@ const WhyChooseUs = () => {
                 {c?.title}
               </h3>
               <Image
-                src={i === isHovered ? c?.whiteIcon : c?.icon}
+                src={c?.icon}
                 width={c?.iconWidth}
                 height={c?.iconHeight}
                 alt={c?.title}
+                className="transition duration-300 group-hover:invert group-hover:brightness-0"
               />
               <p className="text-lg">{c?.description}</p>
             </div>
@@ -61,7 +62,7 @@ const WhyChooseUs = () => {
         {ECOMMERCE_WHY_CHOOSE_US2?.map((c, i) => {
           return (
             <div
-              className={`w-full flex flex-col items-center justify-start text-center gap-6 p-5 xl:px-6 xl:py-8 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
+              className={`w-full group flex flex-col items-center justify-start text-center gap-6 p-5 xl:px-6 xl:py-8 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
                 i === 0
                   ? "lg:border-r"
                   : i === 1
@@ -78,10 +79,11 @@ const WhyChooseUs = () => {
                 {c?.title}
               </h3>
               <Image
-                src={i === isCardHovered ? c?.whiteIcon : c?.icon}
+                src={c?.icon}
                 width={c?.iconWidth}
                 height={c?.iconHeight}
                 alt={c?.title}
+                className="transition duration-300 group-hover:invert group-hover:brightness-0"
               />
               <p className="text-lg">{c?.description}</p>
             </div>

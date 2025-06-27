@@ -7,6 +7,8 @@ export const WEB_APP_PROJECTS = [
     link: "/services/web-app-development",
     color: "#88A28D",
     image: "/carveeps-portfolio.webp",
+    alt_tag:
+      "Carveeps mobile app screen displaying user profile features and social networking interaction tools.",
   },
   {
     title: "Sittner Trucking LLC",
@@ -16,6 +18,8 @@ export const WEB_APP_PROJECTS = [
     link: "/services/web-app-development",
     color: "#BBACAF",
     image: "/sittner-trucking-portfolio.webp",
+    alt_tag:
+      "Sittner Trucking LLC mobile app interface displaying freight tracking and logistics management features.",
   },
   {
     title: "Markettoll",
@@ -25,5 +29,7 @@ export const WEB_APP_PROJECTS = [
     link: "/services/web-app-development",
     color: "#977F6D",
     image: "/markettoll-portfolio.webp",
+    alt_tag:
+      "Markettoll mobile app interface showing digital marketplace and e-commerce transaction features.",
   },
 ];

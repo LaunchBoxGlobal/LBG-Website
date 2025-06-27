@@ -8,15 +8,35 @@ const ImageSlider = () => {
   const [exitingIndex, setExitingIndex] = useState(null);
   const galleryRef = useRef(null);
 
-  const images = [
-    "/web-app-01.webp",
-    "/web-app-02.webp",
-    "/web-app-03.webp",
-    "/web-app-04.webp",
-    "/web-app-05.webp",
+  const mockups = [
+    {
+      image: "/web-app-01.webp",
+      alt_tag:
+        "Web app development services interface displaying responsive design elements and user workflow analytic",
+    },
+    {
+      image: "/web-app-02.webp",
+      alt_tag:
+        "Web app development services dashboard showing responsive interface design with live user analytics",
+    },
+    {
+      image: "/web-app-03.webp",
+      alt_tag:
+        "Web app development services interface displaying responsive design elements and real-time user analytics dashboard",
+    },
+    {
+      image: "/web-app-04.webp",
+      alt_tag:
+        "Web app development services dashboard showing responsive interface design with live performance analytics metrics",
+    },
+    {
+      image: "/web-app-05.webp",
+      alt_tag:
+        "Web app development services dashboard displaying responsive UI components with live user interaction analytics.",
+    },
   ];
 
-  const totalItems = images.length;
+  const totalItems = mockups.length;
 
   // Get class with exit logic
   const getItemClass = (index) => {
@@ -79,14 +99,14 @@ const ImageSlider = () => {
           priority
         />
         <div className="web-gallery-container" ref={galleryRef}>
-          {images.map((src, index) => (
+          {mockups.map((src, index) => (
             <Image
               key={index}
-              src={src}
+              src={src?.image}
               width={599}
               height={389}
               priority
-              alt={`Gallery ${index + 1}`}
+              alt={src?.alt_tag}
               className={getItemClass(index)}
               data-index={index + 1}
             />

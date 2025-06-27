@@ -50,7 +50,7 @@ const Hero = () => {
             src={"/locations/digital-marketing/hero-mockup.png"}
             width={1052}
             height={573}
-            alt="hero-image"
+            alt="Wyoming digital marketing dashboard displaying campaign analytics and audience engagement metrics"
             className="mx-auto h-full object-contain z-10 relative"
           />
         </motion.div>

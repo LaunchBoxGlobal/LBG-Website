@@ -52,7 +52,7 @@ const Hero = () => {
               src={"/locations/software-dev-company-new-jersey/hero-mockup.png"}
               width={1428}
               height={592}
-              alt="hero-image"
+              alt="Software Development Company in New Jersey demonstrating enterprise web application with responsive UI"
               className="mx-auto h-full object-contain z-10 relative -bottom-4"
             />
           </motion.div>

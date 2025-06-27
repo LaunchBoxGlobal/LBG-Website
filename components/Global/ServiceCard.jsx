@@ -32,7 +32,7 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           src={service?.image}
           width={300}
           height={220}
-          alt={service?.title}
+          alt={service?.alt_tag}
           loading="lazy"
           className={`2xl:left-[9%] -top-[46%] w-[279px] h-[220px] xl:w-[290px] 2xl:h-[230px] hidden lg:block absolute lg:left-[9%] xl:left-[7%] z-10 ${
             openFaq === index

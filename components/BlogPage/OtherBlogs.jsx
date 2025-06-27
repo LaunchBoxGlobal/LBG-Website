@@ -1,10 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import BlogCard from "../Blogs/BlogCard";
+import { useParams } from "next/navigation";
 
-const OtherBlogs = () => {
+const OtherBlogs = ({ currentSlug }) => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { slug } = useParams();
+  // console.log("slug >>>", slug);
 
   const fetchBlogs = async () => {
     setLoading(true);
@@ -12,10 +15,13 @@ const OtherBlogs = () => {
       const res = await fetch(
         "https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts"
       );
-      const blogs = await res.json();
-      setBlogs(blogs);
+      const data = await res.json();
+
+      // Filter out current blog and take only 3
+      const filtered = data.filter((blog) => blog.slug !== slug).slice(0, 3);
+      setBlogs(filtered);
     } catch (error) {
-      console.log("an error occurre while fetching blogs >>>>", error);
+      console.log("An error occurred while fetching blogs >>>>", error);
     } finally {
       setLoading(false);
     }
@@ -23,7 +29,8 @@ const OtherBlogs = () => {
 
   useEffect(() => {
     fetchBlogs();
-  }, []);
+    console.log("useffect called");
+  }, [slug]);
 
   return (
     <div className="w-full">
@@ -33,9 +40,9 @@ const OtherBlogs = () => {
         </h2>
       </div>
       <div className="w-full mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10">
-        {blogs?.map((blog, i) => {
-          return <BlogCard key={i} content={blog} />;
-        })}
+        {blogs?.map((blog, i) => (
+          <BlogCard key={i} content={blog} />
+        ))}
       </div>
     </div>
   );

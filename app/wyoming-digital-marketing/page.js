@@ -5,6 +5,9 @@ export const metadata = {
   title: "Wyoming Digital Marketing Agency | Grow Your Business Online",
   description:
     "Boost leads & sales with Wyoming digital marketing services for healthcare, real estate & ecommerce. Local experts deliver measurable results. Free strategy session!",
+  alternates: {
+    canonical: "https://launchboxglobal.com/wyoming-digital-marketing",
+  },
 };
 
 const page = () => {

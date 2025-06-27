@@ -14,4 +14,9 @@ export const BLOGS_METADATA = {
     description:
       "Compare React framework vs Angular - pros, cons & best use cases. Learn which framework fits your project needs for optimal performance & development.",
   },
+  "the-best-offline-games-to-play-when-your-wifi-dies": {
+    title: "Top 10 Best Offline Games to Play Without WiFi in 2025",
+    description:
+      "Looking for the best offline games when your WiFi dies? Explore top mobile games that work with no internet from puzzles to action adventures. For Android & iOS.",
+  },
 };

@@ -51,7 +51,7 @@ const Services = () => {
                 src={service?.image}
                 width={270}
                 height={190}
-                alt={service?.title}
+                alt={service?.alt_tag}
                 loading="lazy"
                 className={`2xl:left-[9%] -top-[46%] lg:w-[220px] xl:w-[260px] hidden lg:block absolute lg:left-[9%] xl:left-[7%] z-10 ${
                   openFaq === index
@@ -159,7 +159,9 @@ const ServiceCard2 = ({ heading, description, index, openFaq, toggleFaq }) => {
           src={`/enterprise-software-development-image.jpg`}
           width={270}
           height={190}
-          alt={heading}
+          alt={
+            "Enterprise software development dashboard displaying business process automation and data analytics modules"
+          }
           loading="lazy"
           className={`2xl:left-[9%] -top-[46%] w-[279px] lg:w-[220px] xl:w-[260px] hidden lg:block absolute lg:left-[9%] xl:left-[7%] z-10 ${
             openFaq === index

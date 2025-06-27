@@ -35,7 +35,7 @@ const CTA = () => {
         <section className="w-[45%] h-[410px] z-10 relative hidden lg:block">
           <motion.img
             src={"/digital-marketing-cta-mockup.webp"}
-            alt="digital-marketing-cta-mockup"
+            alt="Digital marketing services mockup showing campaign analytics dashboard and performance tracking tools"
             width={249}
             height={474}
             loading="lazy"

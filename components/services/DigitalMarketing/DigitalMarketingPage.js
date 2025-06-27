@@ -7,8 +7,6 @@ import Industries from "./Industries";
 import Reasons from "./Reasons";
 import WhyChooseUs from "./WhyChooseUs";
 import Workflow from "./Workflow";
-import FAQs from "@/components/Common/FAQs";
-import { DIGITAL_MARKETING_FAQS } from "@/constants/digital-marketing/DigitalMarketingFaqs";
 import DigitalMarketingContactForm from "./DigitalMarketingContactForm";
 import DigitalMarketingFaqs from "./DigitalMarketingFaqs";
 

@@ -39,7 +39,7 @@ const HeroAnimation = () => {
             ? "/branding-and-design-mockup-2-dark.png"
             : "/branding-and-design-mockup-2-light.png"
         }
-        alt="branding and design image"
+        alt="Branding and design mockup displaying logo variations and visual identity exploration concepts"
         width={244.19}
         height={441.89}
         priority
@@ -55,7 +55,7 @@ const HeroAnimation = () => {
             ? "/branding-and-design-hero-mockup-dark-1.webp"
             : "/branding-and-design-hero-mockup-1.webp"
         }
-        alt="branding-and-design-hero-mockup-1"
+        alt="Branding and design mockup displaying logo concepts and visual identity development process"
         width={244.19}
         height={441.89}
         priority
@@ -71,7 +71,7 @@ const HeroAnimation = () => {
             ? "/branding-and-design-hero-mockup-dark-3.webp"
             : "/branding-and-design-hero-mockup-3.webp"
         }
-        alt="branding-and-design-hero-mockup-3"
+        alt="Branding and design mockup showing final logo application on packaging and merchandise"
         width={244.19}
         height={441.89}
         priority

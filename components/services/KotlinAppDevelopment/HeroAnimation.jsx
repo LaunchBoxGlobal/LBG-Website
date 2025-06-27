@@ -30,7 +30,7 @@ const HeroAnimation = () => {
       >
         <Image
           src={"/kotlin/mobile-mockup.png"}
-          alt="mobile-mockup"
+          alt="Kotlin development company showcasing Android app interface with modern UI components"
           width={383}
           height={563}
           className="object-contain h-auto md:max-h-[400px] lg:h-[463px] migld:h-[583px] z-10"

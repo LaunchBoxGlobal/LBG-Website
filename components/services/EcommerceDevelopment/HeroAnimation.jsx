@@ -36,7 +36,7 @@ const HeroAnimation = () => {
         animate={isInView ? { opacity: 1, y: 0, x: "-50%" } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
         src={"/ecommerce-page-hero-mobile-mockup.webp"}
-        alt="ecommerce-page-hero-mobile-mockup"
+        alt="Ecommerce development mobile mockup showing product catalog and shopping cart interface"
         width={415}
         height={609.23}
         priority

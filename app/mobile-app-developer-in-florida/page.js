@@ -5,6 +5,9 @@ export const metadata = {
   title: "Top Mobile App Developer in Florida | LaunchBox Global",
   description:
     "LaunchBox Global is a trusted mobile app developer in Florida. Get custom apps built fast with 24-hour proposals & 98% client satisfaction. Start now!",
+  alternates: {
+    canonical: "https://launchboxglobal.com/mobile-app-developer-in-florida",
+  },
 };
 
 const page = () => {

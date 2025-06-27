@@ -7,6 +7,8 @@ export const projects = [
     link: "/case-studies/bloom",
     color: "#88A28D",
     image: "/mobile-app-dev-portfolio-01.webp",
+    alt_tag:
+      "Bloom by Brittany floral app interface showing bouquet customization and checkout process screens",
   },
   {
     title: "Now you Know Nashville",
@@ -16,6 +18,8 @@ export const projects = [
     link: "/case-studies/now-you-know-nashville",
     color: "#BBACAF",
     image: "/mobile-app-dev-portfolio-02.webp",
+    alt_tag:
+      "Now You Know Nashville app interface displaying local events and city guide features",
   },
   {
     title: "Fitness by Faith",
@@ -25,6 +29,8 @@ export const projects = [
     link: "/case-studies/fitness-by-faith",
     color: "#977F6D",
     image: "/mobile-app-dev-portfolio-03.webp",
+    alt_tag:
+      "Fitness by Faith Laken workout app interface showing exercise routines and progress tracking",
   },
   {
     title: "My Garage Outlet",
@@ -34,6 +40,8 @@ export const projects = [
     link: "/case-studies/my-garage-outlet",
     color: "#C2491D",
     image: "/mobile-app-dev-portfolio-04.webp",
+    alt_tag:
+      "My Garage Outlet mobile app interface showing vehicle listings and dealership search features",
   },
   // {
   //   title: "USubz",

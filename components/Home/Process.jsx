@@ -10,6 +10,11 @@ import {
   FLORDIA_RECOMMENDED_PROCESS,
   FLORDIA_WATERFALL_PROCESS,
 } from "@/constants/locations/mobile-app-developer/agile-process-florida";
+import {
+  HOME_PAGE_AGILE_PROCESS,
+  HOME_PAGE_RECOMMENDED_PROCESS,
+  HOME_PAGE_WATERFALL_PROCESS,
+} from "@/constants/home-page-process";
 
 const Process = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -39,9 +44,9 @@ const Process = () => {
       </section>
 
       <HomeNewProcess
-        agileProcess={FLORDIA_AGILE_PROCESS}
-        recommendedProcess={FLORDIA_RECOMMENDED_PROCESS}
-        waterfallProcess={FLORDIA_WATERFALL_PROCESS}
+        agileProcess={HOME_PAGE_AGILE_PROCESS}
+        recommendedProcess={HOME_PAGE_RECOMMENDED_PROCESS}
+        waterfallProcess={HOME_PAGE_WATERFALL_PROCESS}
       />
 
       {/* <section className="w-full mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10">

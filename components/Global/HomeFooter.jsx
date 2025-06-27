@@ -223,6 +223,14 @@ const HomeFooter = () => {
           >
             <FaInstagram className="text-white w-[18px] h-[18px]" />
           </Link>
+          <Link
+            href={"https://x.com/launchboxglobal/"}
+            target="_blank"
+            aria-label="launchbox global twitter page link"
+            className="w-[35px] h-[35px] md:w-[45px] md:h-[45px] flex items-center justify-center rounded-full bg-[#F40E00]"
+          >
+            <RiTwitterXFill className="text-white w-[16px] h-[16px]" />
+          </Link>
         </div>
       </section>
     </footer>

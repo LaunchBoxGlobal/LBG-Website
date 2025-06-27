@@ -24,6 +24,7 @@ const HeroAnimation = () => {
           width={1274}
           height={432}
           className=""
+          alt="Ionic outlined text"
         />
       </motion.div>
       <div className="h-full w-full md:w-[70%] xl:w-[776px] lg:h-[457px] midlg:h-[557px] relative flex justify-center items-end">
@@ -35,7 +36,7 @@ const HeroAnimation = () => {
         >
           <Image
             src={"/ionic-app-development/hero-mockup-2.png"}
-            alt="hero-mockup-2"
+            alt="Ionic company showcasing hybrid mobile app with cross-platform UI components"
             width={264}
             height={587}
             className="object-contain h-[307px] lg:h-[407px] midlg:h-auto float-start"
@@ -50,7 +51,7 @@ const HeroAnimation = () => {
         >
           <Image
             src={"/ionic-app-development/hero-mockup-1.png"}
-            alt="hero-mockup-1"
+            alt="Ionic company displaying hybrid mobile app interface with responsive design elements"
             width={326}
             height={661}
             className="object-contain h-[357px] lg:h-[457px] midlg:h-auto"
@@ -65,7 +66,7 @@ const HeroAnimation = () => {
         >
           <Image
             src={"/ionic-app-development/hero-mockup-3.png"}
-            alt="hero-mockup-3"
+            alt="Ionic company demonstrating cross-platform mobile app with interactive UI components"
             width={264}
             height={587}
             className="object-contain h-[307px] lg:h-[407px] midlg:h-auto"

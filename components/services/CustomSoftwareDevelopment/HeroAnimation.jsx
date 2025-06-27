@@ -15,7 +15,7 @@ const HeroAnimation = () => {
       />
       <Image
         src={"/custom-software-hero-dashboard.webp"}
-        alt="custom software development services"
+        alt="Custom software development dashboard interface showing analytics and workflow management tools"
         width={853}
         height={595}
         className="w-[90%] md:w-[80%] lg:w-[60%] h-full xl:h-[505px] hero-img z-0 custom-shadow"

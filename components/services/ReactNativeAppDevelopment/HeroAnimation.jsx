@@ -26,7 +26,7 @@ const HeroAnimation = () => {
             src={"/react-native/hero-mockup.png"}
             width={761}
             height={653}
-            alt="hero-mockup"
+            alt="React Native app development company showcasing cross-platform mobile application interface and features"
             priority
             className="z-10"
           />

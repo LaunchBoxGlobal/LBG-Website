@@ -5,6 +5,10 @@ export const metadata = {
   title: "IT Staff Augmentation Services | Hire Skilled Tech Talent",
   description:
     "Scale your team fast with expert IT staff augmentation services. Get skilled developers in your timezone at flexible rates. Hire today & build smarter!",
+
+  alternates: {
+    canonical: "https://launchboxglobal.com/staff-augmentation",
+  },
 };
 
 const page = () => {

@@ -10,11 +10,11 @@ export const CHEYENNE_WHY_CHOOSE_US_1 = [
   },
   {
     title: "Transparent Reporting",
-    icon: "/locations/software-development-company/transparent-pricing-icon.png",
+    icon: "/transparent-reporting-icon.png",
     whiteIcon: "/industry-specific-expertise-white-icon.webp",
     description:
       "Get monthly reports showing exactly how your Wyoming digital marketing performs keyword rankings, traffic sources, and conversion rates. See sample.",
-    iconWidth: "70",
+    iconWidth: "56",
     iconHeight: "70",
   },
   {

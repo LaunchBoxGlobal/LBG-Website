@@ -21,7 +21,7 @@ const HeroAnimation = () => {
             src={"/locations/web-dev-company-new-jersey/hero-mockup-1.png"}
             width={710}
             height={679}
-            alt="hero-image"
+            alt="Web development company in New Jersey showcasing responsive e-commerce site interface"
             className="mx-auto md:h-[300px] lg:h-auto object-contain z-20"
           />
         </motion.div>
@@ -33,7 +33,7 @@ const HeroAnimation = () => {
         >
           <Image
             src={`/locations/web-dev-company-new-jersey/hero-mockup-2.png`}
-            alt="hero-mockup-2"
+            alt="Web development company in New Jersey displaying responsive business website with modern UI"
             width={636}
             height={909}
             className="z-10"
@@ -47,7 +47,7 @@ const HeroAnimation = () => {
         >
           <Image
             src={`/locations/web-dev-company-new-jersey/hero-mockup-3.png`}
-            alt="hero-mockup-3"
+            alt="Web development company in New Jersey showcasing responsive dashboard with analytics interface"
             width={466}
             height={529}
             className=""

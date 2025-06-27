@@ -31,7 +31,7 @@ export const SOFTWARE_DEV_FLORIDA_WHY_CHOOSE_US_1 = [
 export const SOFTWARE_DEV_FLORIDA_WHY_CHOOSE_US_2 = [
   {
     title: "Transparent Pricing",
-    icon: "/locations/software-development-company/transparent-pricing-icon.png",
+    icon: "/transparent-pricing-icon.png",
     whiteIcon: "/fast-development-white-icon.webp",
     description:
       "Fixed quotes with no hidden fees, unlike agencies that bill for endless revisions.",

@@ -5,6 +5,9 @@ export const metadata = {
   title: "Mobile App Developers in Houston | Custom Solutions",
   description:
     "Leading mobile app developers in Houston building custom iOS/Android apps for healthcare, real estate & fintech. Get your free consultation today.",
+  alternates: {
+    canonical: "https://launchboxglobal.com/mobile-app-developers-in-houston",
+  },
 };
 
 const page = () => {

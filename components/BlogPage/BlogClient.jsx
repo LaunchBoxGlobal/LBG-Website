@@ -157,7 +157,6 @@ const BlogClient = () => {
 
       <div className="w-full border my-10 lg:my-20" />
 
-      {/* <BlogsContactForm /> */}
       <OtherBlogs />
     </main>
   );

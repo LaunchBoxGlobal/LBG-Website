@@ -62,7 +62,7 @@ const CreateYourMobileApp = () => {
           >
             <Image
               src={"/create-your-mobile-app-mockup-03.png"}
-              alt="create-your-software-mobile-mockup"
+              alt="Custom software development mobile mockup showing app wireframes and prototype testing interface"
               width={148}
               height={321}
               className="w-[228px] h-[371px]"
@@ -106,7 +106,7 @@ const CreateYourMobileApp = () => {
               src={"/create-your-software-dashboard-mockup.webp"}
               width={552}
               height={446}
-              alt="custom-software-create-your-software"
+              alt="Custom software development dashboard mockup displaying analytics panels and workflow management tools"
               className="w-[500px] h-[312px]"
             />
           </motion.div>

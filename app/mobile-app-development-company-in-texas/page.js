@@ -5,6 +5,10 @@ export const metadata = {
   title: "Expert Mobile App Development Services in Texas | LaunchBox Global",
   description:
     "Transform your business with top-notch mobile app development in Texas. LaunchBox Global builds custom iOS and Android apps. Book your free consultation today!",
+  alternates: {
+    canonical:
+      "https://launchboxglobal.com/mobile-app-development-company-in-texas",
+  },
 };
 
 const page = () => {

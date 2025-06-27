@@ -61,7 +61,7 @@ const Hero = () => {
               src={"/locations/mobile-app-developer/hero-mockup.png"}
               width={844}
               height={609}
-              alt="hero-image"
+              alt="Mobile App Developer in Florida showcasing responsive iOS/Android application with intuitive UI"
               className="mx-auto h-full object-contain z-10 relative -bottom-4"
             />
           </motion.div>

@@ -18,7 +18,8 @@ export const HOME_SERVICES = [
       "GraphQL",
       "Next.js",
     ],
-    alt_tag: "mobile app development image",
+    alt_tag:
+      "Mobile app development company showcasing fitness alarm app with login and signup features.",
     pageUrl: "/services/mobile-app-development",
   },
   {
@@ -38,7 +39,8 @@ export const HOME_SERVICES = [
       "Node.js",
       "MongoDB",
     ],
-    alt_tag: "web app development image",
+    alt_tag:
+      "Web app development company's banking interface showing $1.5 cash transaction screen example.",
     pageUrl: "/services/web-app-development",
   },
   {
@@ -57,7 +59,8 @@ export const HOME_SERVICES = [
       "Ai",
       "Social Media Setup",
     ],
-    alt_tag: "software development image",
+    alt_tag:
+      "Custom Software development banking application interface displaying $1.50 cash transaction with Western Bank Limited",
     pageUrl: "/services/custom-software-development",
   },
   {
@@ -79,7 +82,8 @@ export const HOME_SERVICES = [
       "Wordpress",
       "Shopify",
     ],
-    alt_tag: "ecommerce development image",
+    alt_tag:
+      "E-Commerce development platform displaying Western Bank Limited's $1.50 cash transaction processing screen interface.",
     pageUrl: "/services/ecommerce-development",
   },
   // {
@@ -112,7 +116,8 @@ export const HOME_SERVICES = [
     img_width: 291,
     img_height: 190,
     tags: ["SEO", "SMM", "Paid Campaigns", "ORM", "Content Creation"],
-    alt_tag: "digital marketing image",
+    alt_tag:
+      "Digital Marketing services banking app interface showing Western Bank Limited $1.50 cash transaction processing",
     pageUrl: "/services/digital-marketing",
   },
   {
@@ -130,7 +135,8 @@ export const HOME_SERVICES = [
       "Optimization",
       "Advisory",
     ],
-    alt_tag: "branding & design image",
+    alt_tag:
+      "Branding and design showcase for AURLEN featuring minimalist logo presentation and visual identity elements.",
     pageUrl: "/services/branding-and-design",
   },
   // {
