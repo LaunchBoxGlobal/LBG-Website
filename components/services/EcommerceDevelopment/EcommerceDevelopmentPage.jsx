@@ -12,6 +12,8 @@ import TeckStack from "@/components/Common/TechStack";
 import Workflow from "./Workflow";
 import Platforms from "@/components/Common/Platforms";
 import Portfolio from "./Portfolio";
+import AboutSection from "./AboutSection";
+import GlobalReach from "./GlobalReach";
 
 const EcommerceDevelopmentPage = () => {
   return (
@@ -20,17 +22,19 @@ const EcommerceDevelopmentPage = () => {
       <section className="w-full">
         <Platforms />
       </section>
+      <AboutSection />
       <Services />
       <Portfolio />
       <ReasonsSection />
       <TeckStack
-        heading={"Platforms and Technologies We Use for"}
-        redText={"Ecommerce Development"}
+        heading={"Our Technology"}
+        redText={"Stack"}
         description={
-          "As a top ecommerce development company, we use the best platforms and technologies to build secure, scalable, and high-performance online stores. Our ecommerce development services cover everything from web to mobile, ensuring a seamless shopping experience."
+          "As a trusted ecommerce development company, we utilize a carefully selected tech stack that ensures performance, security, and scalability. Our ecommerce development services are powered by modern tools that meet global standards, enabling us to deliver enterprise-grade solutions as a leading ecommerce web development company."
         }
         headingWidth={""}
       />
+      <GlobalReach />
       <EcommerceIndustries />
       <HomeStats />
       <CtaSection />

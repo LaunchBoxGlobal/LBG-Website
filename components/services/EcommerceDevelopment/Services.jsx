@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ServiceCard from "@/components/Global/ServiceCard";
+import ServiceCard from "./ServiceCard";
 import { ECOMMERCE_DEVELOPMENT_SERVICES } from "@/constants/ecommerce-develpment/ecommerceDevelopmentServices";
 
 const Services = () => {
@@ -14,13 +14,16 @@ const Services = () => {
     <section className="w-full py-10 lg:pb-20 lg:pt-32 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[80%]">
-          Ecommerce Development that Drives
-          <span className="red-text"> Sales</span>
+          Expert Ecommerce Development
+          <span className="red-text"> Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          We create online stores that customers enjoy using. Quick loading,
-          easy browsing and safe payments. Our Ecommerce Website Development
-          Company builds shops that increase sales from the start.
+          <strong className="font-light">
+            As a trusted ecommerce development company, we deliver exceptional
+            ecommerce development services. Our ecommerce web development
+            company focuses on creating customized solutions to enhance your
+            online presence.
+          </strong>
         </p>
       </section>
 

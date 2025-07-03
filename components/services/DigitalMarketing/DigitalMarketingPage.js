@@ -9,12 +9,14 @@ import WhyChooseUs from "./WhyChooseUs";
 import Workflow from "./Workflow";
 import DigitalMarketingContactForm from "./DigitalMarketingContactForm";
 import DigitalMarketingFaqs from "./DigitalMarketingFaqs";
+import AboutSection from "./AboutSection";
 
 const DigitalMarketingPage = () => {
   return (
     <main className="w-full overflow-x-hidden">
       <Hero />
       <Platforms />
+      <AboutSection />
       <Services />
       <CTA />
       <Industries />

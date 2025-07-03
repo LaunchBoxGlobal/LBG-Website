@@ -5,15 +5,15 @@ export const ECOMMERCE_DEVELOPMENT_SERVICES = [
     alt_tag:
       "Ecommerce website development services dashboard showing store management and sales analytics tools",
     pageUrl: "/",
-    desc: "We provide complete ecommerce website development services to build your online store. Using platforms like Shopify, Magento, and WooCommerce, we create fast, mobile-friendly stores optimized for conversions. Our headless commerce solutions offer flexibility, while UX/UI best practices ensure smooth shopping experiences. We develop solutions that help your business grow from dropshipping sites to custom stores.",
+    desc: "We provide ecommerce website development services to create customized platforms that enhance user experience and drive sales. Our emphasis on responsive design and strong functionality ensures your online store excels in the market.",
   },
   {
-    title: "Ecommerce App Development",
+    title: "E-commerce Mobile Application Development",
     image: "/ecommerce-app-development-service-image.webp",
     alt_tag:
       "E-commerce mobile application development interface showing product browsing and secure checkout features.",
     pageUrl: "/",
-    desc: "We specialize in e-commerce integrated customer service, creating fast, user-friendly apps for iOS, Android, and PWAs. Our solutions include multi-vendor marketplace apps, custom Shopify/WooCommerce integrations, and in-app chat support, all designed to boost sales and enhance customer experience.",
+    desc: "Our ecommerce mobile application development expertise allows us to create user-friendly apps that provide a smooth shopping experience. These solutions increase accessibility, allowing customers to shop anytime and enhancing sales potential.",
   },
   {
     title: "Dropshipping Store Development",
@@ -21,7 +21,7 @@ export const ECOMMERCE_DEVELOPMENT_SERVICES = [
     alt_tag:
       "Dropshipping website developer interface displaying supplier connections and automated order processing.",
     pageUrl: "/",
-    desc: "We specialize in dropshipping website development creating ready-to-sell Shopify stores with AliExpress/CJ integrations. Our service includes product sourcing via Oberlo/Spocket, print-on-demand setups Printful, Teespring, and sales funnel optimization to boost conversions. We build automated stores that run smoothly so you can focus on growing sales from day one.",
+    desc: "As a leading dropshipping website developer, we offer solutions that minimize inventory risks while maximizing profits. Our efficient systems connect suppliers and customers, ensuring smooth transactions and timely deliveries for your business.",
   },
   {
     title: "Ecommerce Features Integration",
@@ -29,7 +29,15 @@ export const ECOMMERCE_DEVELOPMENT_SERVICES = [
     alt_tag:
       "E-commerce integrated customer service dashboard showing live chat and ticket management tools.",
     pageUrl: "/",
-    desc: "Our ecommerce website development services include smart product searches that learn from shoppers, custom checkout flows with popular payment options, and support for global sales (multi-currency/language). We automate inventory/orders and connect your store to business tools (ERP/CRM) to save time and boost sales, all built to fit your unique needs.",
+    desc: "We specialize in integrating essential features to enhance your online store's performance. Our ecommerce website development services include payment gateways and inventory management, simplifying operations, and improving customer satisfaction.",
+  },
+  {
+    title: "E-commerce Integrated Customer Service",
+    image: "/ecommerce-integrated-customer-service-image.png",
+    alt_tag:
+      "E-commerce integrated customer service dashboard showing live chat and ticket management tools.",
+    pageUrl: "/",
+    desc: "We offer e-commerce integrated customer service solutions that significantly enhance user satisfaction. Our systems ensure prompt responses and support, fostering loyalty and trust while effectively addressing customer inquiries.",
   },
   {
     title: "Marketing & Sales Optimization",
@@ -37,7 +45,7 @@ export const ECOMMERCE_DEVELOPMENT_SERVICES = [
     alt_tag:
       "Marketing analytics dashboard displaying campaign performance metrics and sales conversion data visualization.",
     pageUrl: "/",
-    desc: "Our Ecommerce website development services boost your sales with SEO-friendly stores, high-converting landing pages, and cart recovery tools. We set up automated email/SMS campaigns and build loyalty programs to keep customers coming back from abandoned cart solutions to affiliate systems. We help turn browsers into repeat buyers.",
+    desc: "We enhance your online presence through targeted marketing strategies. Analyzing market trends, we optimize sales funnels, driving traffic and conversions for your e-commerce website.",
   },
   {
     title: "Maintenance and Support",
@@ -45,6 +53,6 @@ export const ECOMMERCE_DEVELOPMENT_SERVICES = [
     alt_tag:
       "Maintenance services dashboard for ecommerce apps showing performance metrics and update status.",
     pageUrl: "/",
-    desc: "We provide complete ecommerce website development services to keep your store running smoothly. Our team handles performance tuning to speed up your site, applies security patches to protect customer data, fixes bugs quickly, and upgrades older systems without downtime. Whether you need minor tweaks or significant changes. We ensure your store stays fast, secure, and ready for sale.",
+    desc: "Our maintenance services ensure your e-commerce platform operates smoothly. Our dedicated team monitors performance, implements updates, and resolves issues quickly, allowing you to concentrate on expanding your business.",
   },
 ];

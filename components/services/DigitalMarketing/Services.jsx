@@ -14,13 +14,12 @@ const Services = () => {
     <section className="w-full pb-10 pt-14 lg:pb-20 lg:pt-32 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Best Digital Marketing Services{" "}
-          <span className="red-text">Guaranteed</span>
+          What We Can Do <span className="red-text">For You</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Need the best Digital Marketing Services? We help small businesses
-          grow online with smart, affordable strategies. Get the Expert Advice
-          and the real result.
+          Certainly, we are not just good at words and promises; we've got what
+          you need. Launchbox Global offers a variety of digital marketing
+          services for all kinds of businesses. Let's review them.
         </p>
       </section>
 

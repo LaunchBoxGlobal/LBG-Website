@@ -9,8 +9,8 @@ const ReasonsSection = () => {
     <section className="w-full py-10 lg:pb-20 lg:pt-40 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
         <h2 className="section-heading text-center">
-          Why Ecommerce Development is Essential for{" "}
-          <span className="red-text">Your Business?</span>
+          The Clear Advantage of Working with{" "}
+          <span className="red-text">LaunchBox Global</span>
         </h2>
         <p className="section-paragraph text-center mx-auto lg:w-[90%]">
           As a top ecommerce development company, we build high-performance

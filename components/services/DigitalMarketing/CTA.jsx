@@ -6,7 +6,7 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <section className="w-full padding-x py-10 lg:py-20">
+    <section className="w-full padding-x py-20 lg:py-40">
       <section className="w-full h-[410px] rounded-lg bg-[#212121]  overflow-y-visible relative border group flex items-center justify-end">
         <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] p-4 lg:px-16 relative">
           <Image
@@ -18,11 +18,10 @@ const CTA = () => {
             className="w-[100%] h-full absolute inset-0 opacity-10 z-0 object-cover"
           />
           <h2 className="font-bold text-[36px] lg:text-[50px] leading-[2.7rem] lg:leading-[52px]">
-            Your Audience is Out There — Let’s Reach Them.
+            Schedule A Free 30-Minute Consultation Session
           </h2>
           <p className="text-lg lg:text-[22px] font-light">
-            Struggling to get noticed? Our digital marketing services are built
-            to drive real growth — more traffic, better leads, and higher ROI.
+            Contact us before we run out of spots for you!
           </p>
           <Link
             href={"/contact-us"}

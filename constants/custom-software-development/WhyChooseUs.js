@@ -29,7 +29,7 @@ export const WHY_CHOOSE_US_1 = [
 
 export const WHY_CHOOSE_US2 = [
   {
-    title: "Flexible & Fast Campaign Execution",
+    title: "Flexible & Fast Development (Agile Sprints)",
     icon: "/fast-development.webp",
     whiteIcon: "/fast-development-white-icon.webp",
     description:
@@ -38,7 +38,7 @@ export const WHY_CHOOSE_US2 = [
     iconHeight: "70",
   },
   {
-    title: "World-Class Marketing Expertise",
+    title: "World-Class Tech Talent",
     icon: "/tech-talent.webp",
     whiteIcon: "/tech-talent-white-icon.webp",
     description:
@@ -47,7 +47,7 @@ export const WHY_CHOOSE_US2 = [
     iconHeight: "70",
   },
   {
-    title: "Future-Proof Solutions",
+    title: "Scalable & Future-Proof Solutions",
     icon: "/future-proof-solution.webp",
     whiteIcon: "/future-proof-solution-white-icon.webp",
     description:

@@ -15,18 +15,17 @@ const ContactForm = () => {
           className="w-[70%] h-[90%] max-w-full object-cover lg:object-none opacity-10 absolute inset-0"
         />
         <div className="text-white w-full flex flex-col items-center text-center lg:text-start lg:items-start justify-center">
-          <h2 className="text-[36px] lg:text-[70px] font-medium leading-10 lg:leading-[68px] z-10">
-            Your Perfect Ecommerce Store is Just a Step Away!
+          <h2 className="text-[36px] lg:text-[65px] font-medium leading-[1] z-10">
+            Maximize Growth with E-commerce Development Strategies
           </h2>
 
           <p className="text-lg lg:text-[20px] font-medium z-10 mt-6">
-            A successful online store needs the right foundation. As a leading
-            ecommerce web development company, we craft tailored solutions that
-            boost sales and enhance customer experience.
+            Whether you're starting fresh or expanding, we're here to build it
+            right. Let's plan your next move.
           </p>
         </div>
         <div className="w-full z-10">
-          <LeadForm buttonTitle={"Claim Your Free Consultation Now!"} />
+          <LeadForm buttonTitle={"Contact the Team"} />
         </div>
       </section>
     </section>

@@ -16,15 +16,14 @@ const DigitalMarketingContactForm = () => {
         />
         <div className="text-white w-full flex flex-col items-center text-center lg:text-start lg:items-start justify-center">
           <h2 className="text-[36px] lg:text-[70px] font-medium leading-10 lg:leading-[68px] z-10">
-            Big Goals? You Need a Smart Plan.
+            Time's up - Let's Talk About Your Idea Now!
           </h2>
           <p className="text-lg lg:text-[20px] font-medium z-10 lg:mt-5">
-            Our experts are ready to guide you with proven digital marketing
-            solutions. Just fill out the form to get started.
+            Drop us a message, and let's start working on your goal!
           </p>
         </div>
         <div className="w-full z-10">
-          <LeadForm buttonTitle={"Talk to a Growth Expert Today"} />
+          <LeadForm buttonTitle={"Contact Now"} />
         </div>
       </section>
     </section>

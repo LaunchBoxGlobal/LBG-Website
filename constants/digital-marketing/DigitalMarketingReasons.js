@@ -1,62 +1,60 @@
 export const DIGITAL_MARKETING_REASONS = [
   {
-    title: "Your Website Isn’t Bringing Enough Customers",
+    title: "Easier To Create A Brand Voice",
     titleBg: "#F40E00",
-    description:
-      "If your site gets visits but no sales, something’s wrong. We fix leaks in your marketing funnel better ads, smarter landing pages, and clear calls to action. No more guessing why visitors leave without buying.",
+    description: `You shouldn't say, "Let's see," about your business. You need the best digital marketing services to target the right people and build an effective online presence.`,
     descriptionBg: "#F99C99",
     icon: "/storefront-icon.webp",
     iconWidth: "38",
     iconHeight: "32",
   },
   {
-    title: "Competitors Are Stealing Your Customers",
+    title: "You Can See What's Working",
     titleBg: "#F6564D",
-    description:
-      "They’re ranking higher on Google, running slick Facebook ads, and pulling buyers away. We help you fight back with sharp SEO and targeted ads so you don’t lose business to rivals.",
+    description: `It's way easier to track what's working and what's not. You can check who clicked, so you no longer need to spend money on something that doesn't work.`,
     descriptionBg: "#FBBFBE",
     icon: "/mobile-commerce-icon.webp",
     iconWidth: "37",
     iconHeight: "32",
   },
   {
-    title: "You’re Wasting Money on Ads That Don’t Work",
+    title: "You Never Disappear From Minds",
     titleBg: "#FE8761",
     description:
-      "Throwing cash at random ads? We cut the waste and focus on what converts. Track every dollar, tweak underperforming campaigns, and get real sales not just clicks.",
+      "People don't have to pass by your store to remember you exist. You're always on feeds without spending a hefty amount on advertisements.",
     descriptionBg: "#FFC3A5",
     icon: "/global-reach-icon.webp",
     iconWidth: "33",
     iconHeight: "32",
   },
   {
-    title: "Your Social Media Feels Like a Ghost Town",
+    title: "Works 24/7",
     titleBg: "#F1A17E",
     description:
-      "Posting but getting no likes, shares, or leads? We turn your profiles into lead magnets with engaging content and smart paid promotions so people notice and buy from you.",
+      "You don't need to stay active 24/7. You can schedule everything. Even while you're away, the emails keep sending and the ads keep running.",
     descriptionBg: "#F7C0A8",
     icon: "/customer-experience.webp",
     iconWidth: "36",
     iconHeight: "32",
   },
   {
-    title: "Google Doesn’t Show Your Business When People Search",
+    title: "Pretty Affordable",
     titleBg: "#A6A6A6",
     description:
-      "If you’re stuck on page 3, customers won’t find you. We optimize your site with local SEO, keywords, and backlinks so you appear when buyers are ready to purchase.",
+      "Traditional marketing is comparatively more expensive than digital marketing. Digital marketing doesn't require breaking the bank.",
     descriptionBg: "#BFBFBF",
     icon: "/data-driven-growth.webp",
     iconWidth: "28",
     iconHeight: "32",
   },
-  {
-    title: "You Want Predictable, Repeatable Growth",
-    titleBg: "#212121",
-    description:
-      "Relying on word-of-mouth is risky. We set up automated email flows, retargeting ads, and lead systems so fresh customers keep coming without you hustling 24/7.",
-    descriptionBg: "#4E4D4F",
-    icon: "/secure-solutions-icon.webp",
-    iconWidth: "30",
-    iconHeight: "32",
-  },
+  // {
+  //   title: "You Want Predictable, Repeatable Growth",
+  //   titleBg: "#212121",
+  //   description:
+  //     "Relying on word-of-mouth is risky. We set up automated email flows, retargeting ads, and lead systems so fresh customers keep coming without you hustling 24/7.",
+  //   descriptionBg: "#4E4D4F",
+  //   icon: "/secure-solutions-icon.webp",
+  //   iconWidth: "30",
+  //   iconHeight: "32",
+  // },
 ];

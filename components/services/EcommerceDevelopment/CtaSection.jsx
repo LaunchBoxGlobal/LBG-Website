@@ -20,12 +20,10 @@ const CtaSection = () => {
       >
         <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] px-4 lg:px-16 relative">
           <h2 className="font-bold text-[36px] lg:text-[40px] midlg:text-[50px] leading-[1.1]">
-            Let’s Build Something That Sells
+            Claim Your Free E-commerce Strategy Session
           </h2>
           <p className="text-lg lg:text-[22px] font-light">
-            From custom ecommerce websites to mobile apps, our ecommerce web
-            development company helps businesses grow with tailored,
-            high-performance solutions.
+            Don't wait—Take action now to enhance your online presence!
           </p>
           <Link
             href={"/contact-us"}

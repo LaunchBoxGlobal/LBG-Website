@@ -1,30 +1,28 @@
 export const DIGITAL_MARKETING_FAQS = [
   {
-    question:
-      "Why should I invest in professional Digital Marketing services instead of doing it myself?",
+    question: "What's Digital Marketing and how does it work?",
     answer:
-      "Professional digital marketing services ensure your campaigns are data-driven, targeted, and optimized for the best return on investment (ROI). With experts handling your strategy, you’ll save time and see better results than if you managed it on your own.",
+      "It's nothing complicated. Just marketing that's online. You might have heard about terms like ads, SEO, content, and emails. The tools and work that get you land on the first page when people search for your industry or services.",
   },
   {
-    question: "How long does it take to see results from Digital Marketing?",
+    question: "How much does Digital Marketing cost?",
     answer:
-      "Some strategies, like paid ads, can show results quickly—within days or weeks. Others, like SEO or content marketing, take longer to build momentum, usually around 3–6 months. We aim for both short- and long-term wins.",
+      "It depends on your business size, goals, and what you need. It requires a whole plan that aligns with your goals and business, but it can be done within a budget.",
   },
   {
-    question: "Can I track the performance of my campaigns?",
+    question: "How long does it take to get results?",
     answer:
-      "Yes, we provide robust tracking and analytics tools to monitor the performance of your campaigns. You can easily analyze key metrics like traffic, conversions, ROI, and customer engagement, helping you optimize your strategies for better results.",
+      "It's subjective to what service you are getting. If you're going for paid advertising, you might get the results within weeks. It takes around 2 or 3 months to finish the job if you're going for SEO and Content. Whatever time it takes, we keep you informed.",
   },
   {
-    question:
-      "How can Social Media Marketing increase my brand visibility and customer loyalty?",
+    question: "Do I need digital marketing for a small business?",
     answer:
-      "Social media allows you to engage with your audience directly, creating a community around your brand. By posting valuable content and interacting with followers, you can increase visibility, build trust, and foster long-term customer loyalty.",
+      "You need Digital Marketing, especially if you have a small business. If you're just getting started, it's easier to get noticed through digital marketing, as you can appear in searches more frequently and capture the online market.",
   },
   {
     question:
-      "How does Social Media Marketing help improve customer loyalty and engagement?",
+      "Do I need digital marketing even if my business is already doing fine?",
     answer:
-      "Social media marketing builds relationships by creating a two-way conversation with your audience. By posting relevant content, responding to comments, and engaging with followers, you create a community around your brand, fostering trust and encouraging repeat business.",
+      "If your business is doing well, that's great, but digital can help you take it further. You may be missing out on customers online. So why keep your brand local when it can go global?",
   },
 ];

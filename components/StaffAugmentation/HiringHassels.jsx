@@ -35,7 +35,7 @@ const HiringHassels = () => {
         <div className="w-full hidden lg:block lg:min-w-[490px] lg:max-w-[500px]">
           <AnimatedText>
             <Image
-              src={"/staff-augmentation/hiring-hassles-red-mockup.png"}
+              src={"/staff-augmentation/hiring-hassles-mockup.png"}
               width={490}
               height={825}
               alt="hiring-hassles-red-mockup"

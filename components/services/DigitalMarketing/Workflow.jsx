@@ -1,14 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
-import AgileWorkflow from "./AgileWorkflow";
-import RecommendedWorkflow from "./RecommendedWorkflow";
-import WaterfallWorkflow from "./WaterfallWorkflow";
-import { DIGITAL_MARKETING_AGILE_WORKFLOW } from "@/constants/digital-marketing/DigitalMarketingAgileWorkflow";
-import { DIGITAL_MARKETING_RECOMMENDED_WORKFLOW } from "@/constants/digital-marketing/DigitalMarketingRecommendedWorkflow";
-import { DIGITAL_MARKETING_WATERFALL_WORKFLOW } from "@/constants/digital-marketing/DigitalMarketingWaterfallWorkflow";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { WYOMING_DIGITAL_MARKETING_PROCESS } from "@/constants/locations/wyoming-digital-marketing/wyoming-digital-marketing-process";
 import ProcessCard from "@/components/StaffAugmentation/ProcessCard";
 import { DIGITAL_MARKETING_SERVICE_PROCESS } from "@/constants/digital-marketing/digital-marketing-process";
 
@@ -19,13 +12,11 @@ const Workflow = () => {
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading w-full">
-          Boost Your Reach with Smart Digital{" "}
-          <span className="red-text">Marketing Moves</span>
+          How We Get <span className="red-text">Things Done</span>
         </h2>
         <p className="section-paragraph lg:w-[85%]">
-          Our digital marketing agency crafts tailored strategies to grow your
-          brand online. From SEO to social media, we drive traffic, engagement,
-          and results fast. Let’s get your business seen.
+          We don't go through unnecessary, complicated steps. We follow
+          step-by-step approaches and stay transparent from the start.
         </p>
       </section>
 

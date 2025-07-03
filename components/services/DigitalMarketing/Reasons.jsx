@@ -9,16 +9,11 @@ const Reasons = () => {
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
         <h2 className="section-heading text-center">
-          Grow your Business with the right{" "}
-          <span className="red-text">Digital Marketing</span>
+          What You Might Be <span className="red-text">Missing Out</span>
         </h2>
-        <p className="section-paragraph text-center mx-auto lg:w-[90%]">
-          Reach more customers and get better results with our straightforward
-          digital marketing help. We create plans that work for your business,
-          whether you need a strong online presence or more sales. Our digital
-          marketing consulting services are perfect for small businesses looking
-          to grow without the hassle. Let’s make your brand shine and attract
-          the right buyers, no complicated tricks, just real progress.
+        <p className="section-paragraph text-center mx-auto lg:w-[80%]">
+          You can't just "Let's see" things when you're in business. You must do
+          whatever it takes to succeed and move at everyone's pace.
         </p>
       </div>
 
