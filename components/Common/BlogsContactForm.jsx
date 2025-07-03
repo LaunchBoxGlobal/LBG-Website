@@ -17,7 +17,7 @@ const BlogsContactForm = () => {
       firstName: "",
       email: "",
       message: "",
-      // pageUrl: window.location.href,
+      phoneNumber: "",
       emailSubject: "New Contact Form From Blogs Archive Page",
     },
     validationSchema: Yup.object({
@@ -28,6 +28,10 @@ const BlogsContactForm = () => {
       email: Yup.string()
         .email("Invalid email address")
         .required("Please enter your email address"),
+      phoneNumber: Yup.string()
+        .min(10, "Must be 10 digits")
+        .max(10, "Can not be more than 10 digits.")
+        .required("Please enter your phone number."),
       message: Yup.string()
         .min(100, "Must be 100 characters")
         .max(1000, "Can not be more than 1000 characters.")
@@ -107,6 +111,31 @@ const BlogsContactForm = () => {
             </div>
           </div>
           <div className="w-full">
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              onChange={(e) => {
+                const value = e.target.value;
+                formik.setFieldValue(
+                  "phoneNumber",
+                  value ? parseInt(value, 10) : "" // convert to number or reset to empty
+                );
+              }}
+              onBlur={formik.handleBlur}
+              value={formik.values.phoneNumber}
+              className="w-full h-[56px] bg-white block rounded-[15px] text-black placeholder:text-black outline-none px-5"
+              placeholder="(888) 868-8385"
+            />
+            <div className="w-full">
+              {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+                <span className="text-xs red-text">
+                  {formik.errors.phoneNumber}
+                </span>
+              ) : null}
+            </div>
+          </div>
+          <div className="w-full">
             <textarea
               name="message"
               id="message"
@@ -128,6 +157,7 @@ const BlogsContactForm = () => {
 
           <button
             type="submit"
+            disabled={loading}
             className="w-full h-[56px] bg-[#F40E00] block rounded-[15px] text-white text-center uppercase font-bold outline-none px-5"
           >
             {loading ? <ButtonLoader /> : "Send"}

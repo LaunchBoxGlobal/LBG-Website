@@ -4,7 +4,7 @@ export const FOOTER_SERVICES = [
     url: "/services/mobile-app-development",
   },
   {
-    title: "web App Development",
+    title: "Web App Development",
     url: "/services/web-app-development",
   },
   {
@@ -71,6 +71,10 @@ export const FOOTER_RESOURCES = [
   {
     title: "Case Studies",
     url: "/case-studies",
+  },
+  {
+    title: "Location",
+    url: "/location",
   },
 ];
 

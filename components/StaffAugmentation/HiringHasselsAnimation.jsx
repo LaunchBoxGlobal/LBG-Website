@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 const HiringHasselsAnimation = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
   });
   return (
     <div className="w-full relative overflow-hidden">
