@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
 import AnimatedText from "./AnimatedText";
+import HiringHasselsAnimation from "./HiringHasselsAnimation";
 
 const HiringHassels = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -33,15 +34,7 @@ const HiringHassels = () => {
 
       <section className="w-full mt-10 flex flex-col lg:flex-row items-start justify-start gap-3 lg:mt-14 gap-y-10">
         <div className="w-full hidden lg:block lg:min-w-[490px] lg:max-w-[500px]">
-          <AnimatedText>
-            <Image
-              src={"/staff-augmentation/hiring-hassles-mockup.png"}
-              width={490}
-              height={825}
-              alt="hiring-hassles-red-mockup"
-              className="object-contain"
-            />
-          </AnimatedText>
+          <HiringHasselsAnimation />
         </div>
         <div id="faqs" className="w-full flex flex-col items-start lg:w-[90%]">
           {HIRING_HASSLES?.map((faq, index) => (

@@ -63,7 +63,7 @@ const HomeHero = () => {
         <ContactButton text={"Get a Free Consultation"} />
       </div>
 
-      <div className="w-full flex items-center justify-center z-0">
+      <div className="w-full flex items-center justify-center z-0 overflow-x-hidden">
         <GlobeDemo />
       </div>
 
