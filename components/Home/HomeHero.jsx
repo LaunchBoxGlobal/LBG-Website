@@ -23,7 +23,7 @@ const words = [
 const HomeHero = () => {
   // text-[34px] lg:text-[64px] xl:text-[84px] 2xl:text-[100px]
   return (
-    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 sm:h-[85vh] md:h-auto lg:h-[100vh] lg:gap-[25px] overflow-hidden">
+    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-auto lg:h-[100vh] lg:gap-[25px] overflow-hidden">
       <h1 className="font-bold text-[9vw] md:text-[5.5vw] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
@@ -63,18 +63,18 @@ const HomeHero = () => {
         <ContactButton text={"Get a Free Consultation"} />
       </div>
 
-      <div className="w-full hidden lg:flex items-center justify-center z-0">
+      <div className="w-full flex items-center justify-center z-0">
         <GlobeDemo />
       </div>
 
-      <Image
+      {/* <Image
         src={"/hero-globe-02.webp"}
         width={410}
         height={239}
         alt="globe image"
         priority
         className="h-[109px] md:h-[160px] w-[95%] lg:hidden relative bottom-[-25%]"
-      />
+      /> */}
 
       <Image
         src={"/image-glow.webp"}
