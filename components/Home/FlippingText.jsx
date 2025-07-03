@@ -30,7 +30,7 @@ const FlippingText = ({ phrases }) => {
               y: 0,
               duration: 1.5,
               ease: "power2.out",
-              stagger: 0.15,
+              // stagger: 0.15,
             }
           );
         },
@@ -48,7 +48,6 @@ const FlippingText = ({ phrases }) => {
         ref={wordRef}
         className="absolute flex flex-wrap justify-center items-center gap-x-2"
         style={{
-          // fontSize: "40px",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
