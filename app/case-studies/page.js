@@ -5,6 +5,9 @@ export const metadata = {
   title: "Case Study Collection | Real Client Results & Success Stories",
   description:
     "Explore our case study portfolio featuring measurable business results. See how we've helped clients solve challenges and achieve goals through real-world examples.",
+  alternates: {
+    canonical: "https://launchboxglobal.com/case-studies",
+  },
 };
 
 const page = () => {

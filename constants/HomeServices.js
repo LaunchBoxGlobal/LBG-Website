@@ -19,7 +19,7 @@ export const HOME_SERVICES = [
       "Next.js",
     ],
     alt_tag:
-      "Mobile app development company showcasing fitness alarm app with login and signup features.",
+      "Software development agency creating mobile apps with expert coding and innovative tech solutions",
     pageUrl: "/services/mobile-app-development",
   },
   {
@@ -40,7 +40,7 @@ export const HOME_SERVICES = [
       "MongoDB",
     ],
     alt_tag:
-      "Web app development company's banking interface showing $1.5 cash transaction screen example.",
+      "Analytics dashboard mockup showcasing a software development agency’s focus on marketing and performance tools.",
     pageUrl: "/services/web-app-development",
   },
   {
@@ -60,7 +60,7 @@ export const HOME_SERVICES = [
       "Social Media Setup",
     ],
     alt_tag:
-      "Custom Software development banking application interface displaying $1.50 cash transaction with Western Bank Limited",
+      "UI mockup highlighting a software development agency's custom solutions with modern design and functionality.",
     pageUrl: "/services/custom-software-development",
   },
   {
@@ -83,7 +83,7 @@ export const HOME_SERVICES = [
       "Shopify",
     ],
     alt_tag:
-      "E-Commerce development platform displaying Western Bank Limited's $1.50 cash transaction processing screen interface.",
+      "Mobile app mockup showing custom software engineering services for smooth ecommerce experience and user interface.",
     pageUrl: "/services/ecommerce-development",
   },
   // {

@@ -7,6 +7,9 @@ export const metadata = {
   title: "Contact LaunchBox Global | Get in Touch With Our Team",
   description:
     "Reach out to LaunchBox Global for inquiries or project discussions. Our team is ready to help with your software development needs. Quick responses guaranteed.",
+  alternates: {
+    canonical: "https://launchboxglobal.com/contact-us",
+  },
 };
 
 const page = () => {

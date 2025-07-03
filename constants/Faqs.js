@@ -40,4 +40,9 @@ export const FAQS = [
     answer:
       "We protect your data with strong encryption, regular security checks, and secure coding. We follow strict privacy rules to prevent breaches and keep your information safe from hackers.",
   },
+  {
+    question: "What services does your software development agency offer?",
+    answer:
+      "We offer everything from mobile and web app development to custom software, ecommerce solutions, digital marketing, and branding and design. Basically, all you need to build and grow your business.",
+  },
 ];

@@ -6,7 +6,8 @@ export const metadata = {
   description:
     "Expert Swift app development services for fast, reliable iOS apps. From concept to launch, we build apps that users love. Get started with your project today!",
   alternates: {
-    canonical: "https://launchboxglobal.com/services/swift-app-development",
+    canonical:
+      "https://launchboxglobal.com/development-technologies/swift-app-development",
   },
 };
 

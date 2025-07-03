@@ -6,7 +6,8 @@ export const metadata = {
   description:
     "Top Flutter app development company crafting high-performance iOS & Android apps with a single codebase. Save time & costs with our expert solutions. Get started today!",
   alternates: {
-    canonical: "https://launchboxglobal.com/services/flutter-app-development",
+    canonical:
+      "https://launchboxglobal.com/development-technologies/flutter-app-development",
   },
 };
 
