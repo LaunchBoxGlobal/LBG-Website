@@ -77,7 +77,7 @@ const PortfolioCard = ({
             loading="lazy"
             className="w-full h-full object-cover lg:object-contain mx-auto rounded-3xl group-hover:brightness-50 transition-all duration-300"
           />
-          <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-14 py-6 lg:py-14 transition-all duration-300">
+          <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-20 py-6 lg:py-20 transition-all duration-300">
             <h3 className="text-2xl lg:text-[30px] font-bold text-white">
               {title}
             </h3>
