@@ -56,7 +56,7 @@ const PortfolioCard = ({
         onMouseEnter={() => setIsHovering((prev) => !prev)}
         onMouseLeave={() => setIsHovering((prev) => !prev)}
         className={
-          "group w-full h-[50vh] md:h-[80vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-0 cardContainer"
+          "group w-full h-[50vh] md:h-[80vh] flex flex-col gap-10 text-white items-center justify-center sticky top-0 z-0 mx-auto cardContainer"
         }
       >
         <motion.div
@@ -66,7 +66,7 @@ const PortfolioCard = ({
             transformOrigin: "top",
           }}
           className={
-            "w-full h-[50vh] md:h-[80vh] flex flex-col relative top-[-25%] rounded-3xl bg-white"
+            "w-full h-[50vh] md:h-[80vh] flex flex-col relative top-[-25%] rounded-3xl bg-transparent"
           }
         >
           <Image
@@ -75,7 +75,7 @@ const PortfolioCard = ({
             width={1100}
             height={727}
             loading="lazy"
-            className="w-full h-full object-cover rounded-3xl group-hover:brightness-50 transition-all duration-300"
+            className="w-full h-full object-cover lg:object-contain mx-auto rounded-3xl group-hover:brightness-50 transition-all duration-300"
           />
           <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-14 py-6 lg:py-14 transition-all duration-300">
             <h3 className="text-2xl lg:text-[30px] font-bold text-white">

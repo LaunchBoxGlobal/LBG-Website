@@ -17,16 +17,16 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: "/services/mobile-app-development-service",
-        destination: "/services/mobile-app-development",
-        permanent: true,
-      },
-      {
-        source: "/services/mobile-app-development-services",
-        destination: "/services/mobile-app-development",
-        permanent: true,
-      },
+      // {
+      //   source: "/services/mobile-app-development-service",
+      //   destination: "/services/mobile-app-development",
+      //   permanent: true,
+      // },
+      // {
+      //   source: "/services/mobile-app-development-services",
+      //   destination: "/services/mobile-app-development",
+      //   permanent: true,
+      // },
       {
         source: "/services/web-app-development-service",
         destination: "/services/web-app-development",
