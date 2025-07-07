@@ -11,10 +11,9 @@ const Services = () => {
           <span className="blueText">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          Reliable mobile apps using Flutter. As a trusted Flutter development
-          company, we create custom solutions for businesses. Our team delivers
-          top-quality Flutter app development services tailored to your needs.
-          Let's bring your app idea to life.
+          As a trusted Flutter development company, we create custom solutions
+          for businesses. Our team delivers top-quality Flutter app development
+          services, tailored to your needs. Let's bring your app idea to life.
         </p>
       </section>
 

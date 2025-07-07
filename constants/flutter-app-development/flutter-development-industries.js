@@ -43,7 +43,7 @@ export const IFLUTTER_NDUSTRIES = [
     title: "Sports",
     icon: "/sports-icon.svg",
     description:
-      "Build the apps for the fans, athletes or sports clubs. We focus on lives scores, training schedules and event bookings. Our mobile app development services ensure your app keeps users engaged and connected with their favorite sports.",
+      "Build apps for the fans, athletes or sports clubs. We focus on live scores, training schedules and event bookings.",
     redIcon: "/react-native/sports-blue-icon.png",
     whiteIcon: "/sports-white-icon.webp",
   },

@@ -24,7 +24,7 @@ export const FLUTTER_APP_DEVELOPMENT_SERVICES = [
       "Your Flutter app needs regular care just like any business tool. As a Flutter app development company, we provide ongoing support to fix issues, update features, and keep performance sharp. Our maintenance plans mean your app always works right, no surprises, just reliable operation.",
   },
   {
-    title: "Ui | UX Design for Flutter App",
+    title: "UI | UX Design for Flutter App",
     image: "/flutter/uiux-design-icon.svg",
     width: 51,
     height: 50,

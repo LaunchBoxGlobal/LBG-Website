@@ -4,7 +4,7 @@ export const REACT_NATIVE_WHY_CHOOSE_US_1 = [
     icon: "/react-native/why-choose-icon-1.png",
     whiteIcon: "/functionality-first-approach-white-icon.webp",
     description:
-      "Our developers live and breathe React Native. We know how to build apps that run smoothly, load fast, and keep users happy, no guesswork, just solid react native app development services.",
+      "Our developers live and breathe React Native. We build apps that run smoothly, load fast, and keep users happy — no guesswork. Just expert development that delivers.",
     iconWidth: "70",
     iconHeight: "70",
   },
@@ -22,7 +22,7 @@ export const REACT_NATIVE_WHY_CHOOSE_US_1 = [
     icon: "/react-native/why-choose-icon-3.png",
     whiteIcon: "/transparent-pricing-white-icon.webp",
     description:
-      "We keep things simple and transparent. From the first chat to launch, you’ll always know what’s happening with your develop React Native app project.",
+      "We keep things simple and transparent. From the first chat to launch, you’ll always know what’s happening with your React Native mobile app development.",
     iconWidth: "74",
     iconHeight: "70",
   },
@@ -43,7 +43,7 @@ export const REACT_NATIVE_WHY_CHOOSE_US_2 = [
     icon: "/react-native/why-choose-icon-5.png",
     whiteIcon: "/tech-talent-white-icon.webp",
     description:
-      "Deadlines matter. We plan smart, work efficiently, and deliver your React Native mobile app when promised no last-minute delays.",
+      "Deadlines matter. We plan smart, work efficiently, and deliver your React Native mobile app when promised, no last-minute delays.",
     iconWidth: "66",
     iconHeight: "70",
   },

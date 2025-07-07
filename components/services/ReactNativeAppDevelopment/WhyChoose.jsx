@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
         </h2>
         <p className="section-paragraph text-center mx-auto">
           At Launchbox Global, we build fast, reliable React Native apps that
-          people love to use. Our team knows the ins and outs of react native
+          people love to use. Our team knows the ins and outs of React Native
           mobile app development, delivering top-quality apps on time, every
           time. Work with us, and get an app that truly works for you.
         </p>
