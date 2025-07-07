@@ -15,7 +15,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -44,7 +44,6 @@ const page = () => {
           }}
         />
 
-        {/* Custom Software Development FAQ Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -96,7 +95,7 @@ const page = () => {
             }),
           }}
         />
-      </Head>
+      </Head> */}
       <CustomSoftwareDevelopmentPage />
     </>
   );
