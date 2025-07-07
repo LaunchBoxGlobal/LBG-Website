@@ -3,7 +3,7 @@ export const GENERIC_SOLUTIONS = [
     title: "One Code, Two Platforms",
     titleBg: "#5290F1",
     description:
-      "Build for iOS and Android simultaneously no double work. Our Flutter app developers write once, deploy everywhere, saving you months of extra development time.",
+      "Build for iOS and Android simultaneously, no double work. Our Flutter app developers write once, deploy everywhere, saving you months of extra development time.",
     descriptionBg: "#99B1F9",
     icon: "/strong-customer-engagement-icon.png",
     iconWidth: "38",

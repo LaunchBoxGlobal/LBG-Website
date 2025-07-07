@@ -1,7 +1,7 @@
 export const FITNESS_BY_FAITH_SOLUTIONS = [
   {
     problemIcon: "/case-studies/fitness-by-faith/problem-icon.png",
-    problemTitle: "Freemium Upgrades That Felt Forced",
+    problemTitle: "Frictionless Subscription Upgrades",
     problemDescription:
       "The app needed trial periods to smoothly switch to paid plans, but Stripe’s system sometimes lagged or acted differently across devices.",
     solutionIcon: "/case-studies/fitness-by-faith/solution-1.png",

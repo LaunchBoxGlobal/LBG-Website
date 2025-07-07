@@ -12,9 +12,9 @@ const Hero = () => {
           <span className="orangeText">iOS Success</span>
         </h1>
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-7">
-          We engineer high-performance iOS apps using Swift app development
-          services that optimize process, enhance engagement, and deliver
-          reliable operation with your business needs.
+          We engineer high-performance iOS apps using Swift, optimizing
+          processes, boosting engagement, and delivering reliable performance
+          aligned with your business needs.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1 mb-8">
           <Link

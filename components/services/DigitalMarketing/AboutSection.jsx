@@ -14,20 +14,9 @@ const AboutSection = () => {
           money or time. And don't hold back if you're a small business; we
           gladly offer our digital marketing services for small business as
           well, We are not just another company promising the impossible; we
-          ensure you achieve what you've been planning for.
-        </p>
-        <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
-          Many of our clients don't know how to start or where to start. Some
-          are worried about limited budgets, but that's no big problem.
-        </p>
-        <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
-          Let's discuss everything: Launchbox Global also offers digital
-          marketing consulting services.
-        </p>
-        <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
-          You can book a free 30-minute consultation session with our team. We
-          offer the best digital marketing services, so whether it's an idea or
-          a problem, we've got your back! Let's discuss what's on your mind!
+          ensure you achieve what you've been planning for. Many founders and
+          busines owners don't know how to start or where to start. Some are
+          worried about limited budgets, but that's not a big problem.
         </p>
       </section>
     </section>

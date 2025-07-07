@@ -26,9 +26,9 @@ const Services = () => {
       </section>
 
       <section className="w-full flex items-start justify-center flex-wrap mt-14 gap-5 mx-auto">
-        <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
+        <div className="w-full md:w-[45%] lg:w-[32%]">
           <AnimatedText>
-            <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
+            <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
               <Image
                 src={`/locations/digital-marketing/content-marketing-service-icon.png`}
                 width={`66`}
@@ -41,7 +41,7 @@ const Services = () => {
               </h3>
               <p className="text-lg leading-[1.3]">
                 <Link href={`/services/digital-marketing`} className="red-text">
-                  Content Marketing
+                  Content Marketing{" "}
                 </Link>
                 creates valuable content that attracts Wyoming customers and
                 builds trust. Our strategies boost engagement and organic
@@ -50,9 +50,9 @@ const Services = () => {
             </div>
           </AnimatedText>
         </div>
-        <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
+        <div className="w-full md:w-[45%] lg:w-[32%]">
           <AnimatedText>
-            <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
+            <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
               <Image
                 src={`/locations/digital-marketing/email-marketing-service-icon.png`}
                 width={`59`}
@@ -76,10 +76,10 @@ const Services = () => {
         </div>
         {WYOMING_DIGITAL_MARKETING_SERVICES?.map((s, i) => {
           return (
-            <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
+            <div className="w-full md:w-[45%] lg:w-[32%]">
               <AnimatedText>
                 <div
-                  className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
+                  className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
                   key={i}
                 >
                   <Image

@@ -10,11 +10,14 @@ const BrandIdentity = () => {
     <section className="w-full padding-x flex flex-col items-center">
       <h2 className="section-heading">Brand Identity</h2>
       <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
-        Now You Know Nashville bursts with honky-tonk energy - think vintage
-        neon signs meets modern app simplicity. The mobile app development team
-        crafted a look that feels authentically Music City, from
-        guitar-pick-shaped buttons to warm Southern color tones that welcome
-        every visitor like local regulars.
+        Now You Know Nashville provides an advanced online platform that
+        encapsulates the entertainment district's cultural character. Through
+        the integration of contemporary functionality and traditional design
+        features, the program offers a user-friendly interface. The development
+        team included sophisticated musical themes, stylish navigation, and a
+        carefully chosen color palette that was influenced by the local style.
+        With this strategy, a unique interface that appeals to both residents
+        and tourists is created while preserving a high-end brand experience.
       </p>
       <div className="w-full mt-10 lg:mt-14">
         <Image

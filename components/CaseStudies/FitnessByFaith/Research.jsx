@@ -12,6 +12,12 @@ const Research = () => {
   return (
     <section className="w-full padding-x flex flex-col items-center relative">
       <h2 className="section-heading text-center z-10">Research</h2>
+      <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
+        Through testing, questionnaires, and data tracking, our research
+        approach examined user behavior to maximize Fitness by Faith with
+        Laken's mobile experience in terms of engagement, preferences, and
+        conversions.
+      </p>
 
       <div
         ref={ref}

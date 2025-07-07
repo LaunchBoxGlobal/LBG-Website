@@ -12,6 +12,12 @@ const Research = () => {
   return (
     <section className="w-full padding-x flex flex-col items-center pb-20 midlg:pb-28">
       <h2 className="section-heading">Research</h2>
+      <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
+        We analyzed visitor behavior, tried splash screens, polled residents to
+        determine the best free categories, examined Stripe for safe payments,
+        and mapped out navigation patterns in order to create Now You Know
+        Nashville, making sure every feature was data-validated.
+      </p>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 lg:mt-14">
         {RESEARCH_POINTS?.map((p, i) => {

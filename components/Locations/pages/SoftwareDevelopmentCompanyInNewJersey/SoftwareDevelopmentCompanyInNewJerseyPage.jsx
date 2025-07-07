@@ -46,10 +46,10 @@ const SoftwareDevelopmentCompanyInNewJerseyPage = () => {
         setActiveTab={setActiveTab}
       />
       <CaseStudies
-        heading={"Florida-Tested Software"}
+        heading={"New Jersey-Tested Software"}
         redText={"Solutions"}
         description={
-          "As a leading software development company in Florida, we deliver real results. Here’s how we’ve helped businesses like yours:"
+          "As a leading software development company in New Jersey, we deliver real results. Here’s how we’ve helped businesses like yours:"
         }
         child={
           <PortfolioParallexCards projects={CUSTOM_SOFTWARE_CASE_STUDIES} />

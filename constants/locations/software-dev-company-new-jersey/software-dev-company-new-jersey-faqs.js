@@ -2,66 +2,63 @@ export const SOFTWARE_DEV_NEW_JERSEY_FAQS = [
   {
     question: "Do you build custom mobile apps for businesses in New Jersey?",
     answer:
-      "Yes, we specialize in creating custom mobile applications tailored to New Jersey businesses. Whether you're a startup or an established brand, our team builds apps that fulfill your business needs and work smoothly across devices.",
+      "Yes! We specialize in custom software for New Jersey businesses, big or small, new or established. Whatever your needs, we’ll build a solution that works for you.",
     list: null,
     text: null,
   },
   {
-    question: "Do you offer app development for iOS and Android platforms?",
+    question: "Do you develop software for both web and desktop?",
     answer:
-      "We develop apps for both iOS and Android. Whether you need a native app or something that works across platforms, we handle everything in house right here in New Jersey.",
+      "Yep! Whether you need a web-based tool or a desktop application, we’ve got you covered. We’ll make sure it runs smoothly, no matter where you use it.",
     list: null,
     text: null,
   },
   {
-    question: "How do you handle mobile app security?",
+    question: "How do you keep the software secure?",
     answer:
-      "We follow secure coding practices and use trusted frameworks to protect user data. From login systems to data encryption, our New Jersey developers make sure your app meets modern security standards.",
+      "Security is a top priority. We use strong protections like encryption and secure logins to keep your data safe. You can trust that your information won’t fall into the wrong hands",
     list: null,
     text: null,
   },
   {
-    question: "Can you upgrade or fix an existing app?",
+    question: "Can you fix or upgrade my current software?",
     answer:
-      "Yes, we provide app improvement services in New Jersey. Whether your current app needs a redesign, bug fixes, or added features, our team can immediately step in and help.",
+      "Absolutely. Whether it needs small tweaks, major upgrades, or a full rebuild, we can improve your software to make it faster, easier to use, and more reliable.",
     list: null,
     text: null,
   },
   {
-    question:
-      "What industries do you serve with your app development services?",
+    question: "What types of industries do you work with?",
     answer:
-      "We work with various industries, including healthcare, real estate, education, and local retail businesses. Our New Jersey clients come from diverse sectors, and we tailor each app to fit the industry's requirements.",
+      "We’ve worked with all kinds of businesses, including healthcare, real estate, schools, stores, and more. No matter your industry, we’ll build something that fits your unique needs.",
     list: null,
     text: null,
   },
   {
-    question: "Will I be involved during the app development process?",
+    question: "Will I be part of the development process?",
     answer:
-      "Yes, we work closely with our New Jersey clients throughout the project. You'll be updated regularly, give feedback, and participate in important decisions from planning to launch.",
+      "Of course! We keep you in the loop every step of the way. You’ll get updates, give feedback, and help shape the final product so it’s exactly what you want.",
     list: null,
     text: null,
   },
   {
-    question:
-      "Do you help with app publishing on the App Store and Google Play?",
+    question: "Do you help with launching the software?",
     answer:
-      "Yes, we take care of the whole app submission process. From preparing screenshots to setting up descriptions, our New Jersey team handles everything needed for smooth app store listings.",
+      "Yes. We’ll ensure it’s done correctly. From setup to launch day, we’ll guide you through every step, ensuring your software starts strong.",
     list: null,
     text: null,
   },
   {
-    question: "Is your mobile app development done locally in New Jersey?",
+    question: "Is your team located in New Jersey?",
     answer:
-      "Yes, our development and project management teams are based in New Jersey. This local approach means faster communication, a better understanding of local businesses, and reliable support.",
+      "Yep, we’re local! Our developers and project managers are based right here in NJ, so we’re always nearby when you need us.",
     list: null,
     text: null,
   },
   {
-    question:
-      "Can you build apps that connect with existing software or websites?",
+    question: "Can the software connect with my existing tools or systems?",
     answer:
-      "We can definitely combine your app with existing systems, websites, or business tools. Our team ensures everything connects smoothly to give your users a seamless experience.",
+      "Definitely. We’ll make sure your new software works seamlessly with your current systems whether it’s your website, database, or other tools.",
     list: null,
     text: null,
   },

@@ -26,7 +26,7 @@ const Hero = () => {
           </p>
         </AnimatedText>
         <AnimatedText>
-          <section className="w-full mt-5 z-10">
+          <section className="w-full mt-5 z-10 mb-10">
             <Link
               href={`/contact-us`}
               className="max-w-[220px] bg-[#F40E00] hover:bg-black h-[56px] rounded-[9px] text-center flex items-center justify-center text-lg font-bold text-white mx-auto z-10"

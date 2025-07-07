@@ -16,10 +16,10 @@ const Services = () => {
         </AnimatedText>
         <AnimatedText>
           <p className="section-paragraph lg:w-[90%] mx-auto">
-            Here's a polished App Development Services section tailored for your
-            Florida-based software development brand, incorporating your
-            keywords naturally while maintaining readability and local
-            relevance:
+            We’re one of the top software development companies in Florida
+            helping businesses build useful, reliable tools. Our Florida
+            software team creates simple solutions that work for your daily
+            needs.
           </p>
         </AnimatedText>
       </section>

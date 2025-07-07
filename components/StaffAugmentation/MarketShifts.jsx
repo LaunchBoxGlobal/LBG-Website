@@ -49,8 +49,8 @@ const MarketShifts = () => {
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <AnimatedText>
           <h2 className="section-heading lg:w-[90%] mx-auto">
-            IT Staff Augmentation{" "}
-            <span className="red-text">Market Shifts</span>
+            Challenges in Finding Qualified Talent{" "}
+            <span className="red-text">for Projects</span>
           </h2>
         </AnimatedText>
         <AnimatedText>

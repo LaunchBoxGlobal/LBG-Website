@@ -18,14 +18,16 @@ const About = () => {
               href={`https://developers.google.com/search/docs/fundamentals/seo-starter-guide`}
               rel="nofollow"
               target="_blank"
+              className="red-text"
             >
               SEO company
             </Link>{" "}
             in Cheyenne, Wyoming, helping local businesses dominate search
             rankings. While we excel at technical SEO and content marketing, our
             roots in software development give us unique insights into website
-            performance. We’ve helped 50+ Cheyenne clients grow through:
-            marketing with technical excellence to deliver measurable results.
+            performance. We’ve helped 50+ Cheyenne clients grow by combining
+            marketing expertise with technical excellence to deliver measurable
+            results.
           </p>
         </AnimatedText>
       </section>

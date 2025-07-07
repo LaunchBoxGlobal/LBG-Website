@@ -93,7 +93,7 @@ const Services = () => {
               <p className="text-lg leading-[1.3]">
                 User-friendly designs that engage and convert. Our Houston team
                 creates intuitive interfaces tailored to your audience’s
-                preferences. Explore our
+                preferences. Explore our{" "}
                 <Link
                   href={`/services/branding-and-design`}
                   className="red-text"

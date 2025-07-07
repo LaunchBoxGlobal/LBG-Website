@@ -39,7 +39,7 @@ const MobileAppDevelopmentCompanyInHoustonPage = () => {
       <Platforms />
       <AboutSection
         heading={`About LaunchBox Global – Your Houston Mobile App Development Partner`}
-        description={`LaunchBox Global is a full-service mobile app development company in Houston, specializing in custom web and eCommerce solutions. We help Texas businesses turn ideas into revenue-generating apps with agile development and scalable technology. From startups to enterprises, our Houston-based team delivers user-friendly digital products designed for local market needs combining technical expertise with genuine understanding of what works in our community.`}
+        description={`LaunchBox Global is a full-service mobile app development company in Houston, specializing in custom web and eCommerce solutions. We help Texas businesses turn ideas into revenue-generating apps with agile development and scalable technology. From startups to enterprises, our Houston-based team delivers user-friendly digital products designed for local market needs. We combine technical expertise with genuine understanding of what works in our community.`}
       />
       <Services />
       <LocationProcess

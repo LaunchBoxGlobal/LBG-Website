@@ -7,8 +7,8 @@ const Userflow = () => {
       <h2 className="section-heading">Userflow</h2>
       <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
         We mapped how real users move through Fitness by Faith with Laken - from
-        signing up to booking live sessions. Our mobile app development focused
-        on making every tap feel natural, whether logging workouts or chatting
+        Onboarding to booking live sessions. Our mobile app development focused
+        on making intuitive interactions, whether logging workouts or chatting
         with trainers.
       </p>
       <div className="w-full overflow-x-auto userflow-container mt-12 pb-5">

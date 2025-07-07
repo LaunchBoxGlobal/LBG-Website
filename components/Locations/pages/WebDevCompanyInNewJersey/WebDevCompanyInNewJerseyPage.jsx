@@ -78,7 +78,7 @@ const WebDevCompanyInNewJerseyPage = () => {
       <LocationStats
         heading={`Global Presence &`}
         redText={`Stats`}
-        description={`No description provided`}
+        description={`Here’s a quick look at the work we’re proud of and the people we’ve helped.`}
       />
       <LocationFaqs faqs={WEB_DEV_NEW_JERSEY_FAQS} />
       <LocationContactForm

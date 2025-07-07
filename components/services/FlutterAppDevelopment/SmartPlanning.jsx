@@ -24,8 +24,8 @@ const SmartPlanning = () => {
         </h2>
         <p className="section-paragraph lg:w-[85%]">
           We keep it simple: listen, design, build, refine. Our Flutter app
-          development services turn ideas into smooth-running apps, step by step
-          no surprises, just great results tailored to what you need.
+          development services turn ideas into smooth-running apps, step by
+          step, no surprises. Just great results tailored to what you need.
         </p>
       </section>
 

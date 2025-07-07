@@ -104,7 +104,7 @@ const DigitalMarketingFaqs = () => {
               across platforms. From ad creatives to landing pages, consistency
               in visual identity drives higher engagement and conversion rates.
               At Launchbox Global, we tightly align digital strategies with our{" "}
-              <Link href={`/services/digital-marketing`} className="red-text">
+              <Link href={`/services/branding-and-design`} className="red-text">
                 Branding & Designing services
               </Link>{" "}
               to help brands stand out and stay memorable in crowded markets.
