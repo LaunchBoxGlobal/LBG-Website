@@ -10,43 +10,9 @@ export const metadata = {
 };
 
 export default function Home() {
-  const structuredDataCorporation = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    name: "LaunchBox Global",
-    url: "https://launchboxglobal.com",
-    logo: "https://launchboxglobal.com/_next/image?url=%2Flogo02.png&w=256&q=75",
-  };
-
-  const structuredDataWebsite = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "LaunchBox Global",
-    url: "https://launchboxglobal.com/",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://launchboxglobal.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
-  };
-
   return (
     <>
-      {/* Structured Data Scripts */}
       <head>
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredDataCorporation),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredDataWebsite),
-          }}
-        /> */}
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

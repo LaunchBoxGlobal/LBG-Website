@@ -14,7 +14,7 @@ export const MOBILE_APP_DEVELOPMENT_SERVICES = [
     image: "/android-mobile-app-development-service-image.png",
     alt_tag:
       "Android app development services dashboard showing mobile application testing and performance optimization metrics",
-    desc: "Our Android app development services build apps that work seamlessly on all Android devices. These apps help your business connect with more customers, enhance user experience, and drive growth. We focus on intuitive designs, efficient coding, and rigorous testing to make your app stand out. Whether you’re a startup or an established business, we create apps that are fast, dependable, and built to scale. Let’s build an app that truly supports your goals.",
+    desc: "Our Android app development services create solutions that work seamlessly across all Android devices. They help your business connect with more customers, enhance user experience, and drive growth. We focus on intuitive designs, efficient coding, and rigorous testing to ensure your product stands out. Whether you’re a startup or an established business, we deliver mobile experiences that are fast, dependable, and built to scale. Let’s build something that truly supports your goals.",
     pageUrl: "/",
   },
   {

@@ -11,33 +11,9 @@ export const metadata = {
 };
 
 const page = () => {
-  const productSchema = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    name: "digital marketing services",
-    image: "", // Add a real image URL if available
-    description:
-      "Launchbox helps brands grow online with smart marketing strategies.",
-    brand: {
-      "@type": "Brand",
-      name: "LaunchBox Global",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      bestRating: "5",
-      worstRating: "0",
-      ratingCount: "5",
-    },
-  };
   return (
     <>
       <head>
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-        /> */}
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -8,9 +8,9 @@ const Hero = () => {
     <section className="w-full relative mb-20 lg:mb-40 overflow-x-hidden pt-36 2xl:pt-52 padding-x">
       <section className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden">
         <p className="text-xl font-bold red-text">Your Reliable Partner</p>
-        <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-10 md:leading-[54px] lg:leading-[84px] xl:leading-[104px] 2xl:leading-[104px] w-full">
+        <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-[1] w-full">
           Mobile App Development Company that{" "}
-          <span className="red-text">Fuels Growth</span>
+          <span className="red-text">Business Growth</span>
         </h1>
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-7">
           Expert Mobile App Development services tailored to create

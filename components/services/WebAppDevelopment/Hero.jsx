@@ -18,7 +18,7 @@ const Hero = () => {
           Web App Development Services that drive real results.
         </p>
         <div className="flex items-center justify-center gap-4 mt-3 mb-8">
-          <ContactButton text={"Get A Free Consultation"} />
+          <ContactButton text={"Get a Free Consultation"} />
         </div>
       </section>
       <div className="w-full bg-white">
