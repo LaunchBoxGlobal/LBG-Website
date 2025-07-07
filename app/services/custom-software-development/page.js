@@ -1,4 +1,5 @@
 import CustomSoftwareDevelopmentPage from "@/components/services/CustomSoftwareDevelopment/CustomSoftwareDevelopmentPage";
+import Head from "next/head";
 import React from "react";
 
 export const metadata = {
@@ -14,7 +15,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <head>
+      <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -95,7 +96,7 @@ const page = () => {
             }),
           }}
         />
-      </head>
+      </Head>
       <CustomSoftwareDevelopmentPage />
     </>
   );
