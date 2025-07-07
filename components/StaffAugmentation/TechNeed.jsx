@@ -68,7 +68,7 @@ const TechNeed = () => {
               <p className="text-lg text-[#212121] leading-[1.2]">
                 Access top talent for{" "}
                 <Link
-                  href={`/services/mobile-app-development`}
+                  href={`/services/web-app-development`}
                   className="red-text"
                 >
                   web app development services,
@@ -95,10 +95,10 @@ const TechNeed = () => {
               <p className="text-lg text-[#212121] leading-[1.2]">
                 Get specialized developers for{" "}
                 <Link
-                  href={`/services/mobile-app-development`}
+                  href={`/services/custom-software-development`}
                   className="red-text"
                 >
-                  custom software development
+                  custom software development{" "}
                 </Link>
                 tailored to your unique business requirements.
               </p>
@@ -125,7 +125,7 @@ const TechNeed = () => {
                   href={`/services/ecommerce-development`}
                   className="red-text"
                 >
-                  ecommerce development
+                  ecommerce development{" "}
                 </Link>
                 experts skilled in all major platforms.
               </p>
@@ -149,7 +149,7 @@ const TechNeed = () => {
               <p className="text-lg text-[#212121] leading-[1.2]">
                 Complement your tech team with our{" "}
                 <Link href={`/services/digital-marketing`} className="red-text">
-                  digital marketing services
+                  digital marketing services{" "}
                 </Link>
                 professionals for full-project support.
               </p>
@@ -172,7 +172,10 @@ const TechNeed = () => {
               </h3>
               <p className="text-lg text-[#212121] leading-[1.2]">
                 Enhance your products with creative experts in{" "}
-                <Link href={`/services/digital-marketing`} className="red-text">
+                <Link
+                  href={`/services/branding-and-design`}
+                  className="red-text"
+                >
                   branding and design
                 </Link>{" "}
                 for cohesive user experiences.
