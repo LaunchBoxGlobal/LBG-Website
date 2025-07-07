@@ -12,14 +12,14 @@ export default function RootLayout({ children }) {
         <GoogleAnalytics />
         {children}
         {/* <Footer /> */}
-        <Script
+        {/* <Script
           id="tawkto"
           strategy="afterInteractive"
           src="https://embed.tawk.to/686b6c9988f6eb190d36058e/1ivhq0e5m"
           async
           charSet="UTF-8"
           crossOrigin="*"
-        />
+        /> */}
         <HomeFooter />
       </body>
     </html>
