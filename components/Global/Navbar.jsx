@@ -57,7 +57,7 @@ const Navbar = () => {
         className="rounded-[17px] bg-white lg:border border-[#CECEEA] h-[50px] 2xl:h-[60px] flex items-center justify-center gap-3 lg:px-2.5 xl:px-3.5"
       >
         <Image
-          src={`/logo02.png`}
+          src={`/new-logo.svg`}
           width={180}
           height={45.73}
           alt="launchbox global logo"
