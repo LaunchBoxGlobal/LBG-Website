@@ -18,11 +18,12 @@ export async function POST(request) {
 
     // Send the email
     await transporter.sendMail({
-      from: `${body?.firstName} <${process.env.SMTP_USER}>`,
+      // from: `${body?.firstName} <${process.env.SMTP_USER}>`,
+      from: `Leads`,
       to: process.env.TO_EMAIL, // where the form gets sent
       subject: body?.emailSubject
         ? body?.emailSubject
-        : "New Contact Form Website",
+        : "New Contact Form From Website",
       html: `
   ${body?.firstName ? `<p><strong>Name:</strong> ${body.firstName}</p>` : ""}
   ${body?.email ? `<p><strong>Email:</strong> ${body.email}</p>` : ""}
