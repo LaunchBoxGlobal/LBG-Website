@@ -3,7 +3,7 @@
   line-height: 1.1;
   margin: 0 auto 1.5rem 0;
   text-align: left;
-  font-weight: 700;
+  font-weight: 800 !important;
 }
 
 #author-details {
@@ -14,7 +14,7 @@
   font-size: clamp(26px, 30px, 35px);
   line-height: 1.35;
   margin: 50px 0 10px 0;
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .blogContent > h3 {

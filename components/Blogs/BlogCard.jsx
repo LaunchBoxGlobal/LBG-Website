@@ -53,7 +53,7 @@ const BlogCard = ({ content }) => {
       <div className="w-full relative flex flex-col items-start gap-3 border-b lg:border-none pb-10 blog-card">
         {imageUrl && (
           <div
-            className="w-full relative"
+            className="w-full relative blog-card-image"
             onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
             onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
           >
@@ -62,7 +62,7 @@ const BlogCard = ({ content }) => {
               alt="blog image"
               width={416}
               height={286}
-              className="w-full h-[196px] lg:h-[256px] object-cover rounded-[12px]"
+              className="w-full blog-card-img rounded-[12px]"
             />
             <div className="w-full absolute flex items-center gap-2 bottom-4 inset-x-0 px-4">
               {content?.date && (
@@ -78,7 +78,7 @@ const BlogCard = ({ content }) => {
                   </span>
                 </div>
               )}
-              <div className="w-[95px] bg-white h-[36px] rounded-[20px] flex items-center justify-center gap-2 px-1">
+              {/* <div className="w-[95px] bg-white h-[36px] rounded-[20px] flex items-center justify-center gap-2 px-1">
                 <Image
                   src={"/blog-card-blog-icon.png"}
                   width={15}
@@ -86,7 +86,7 @@ const BlogCard = ({ content }) => {
                   alt="blog-card-blog-icon"
                 />
                 <span className="text-base lg:text-lg font-semibold">Blog</span>
-              </div>
+              </div> */}
             </div>
           </div>
         )}
