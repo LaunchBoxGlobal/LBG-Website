@@ -19,4 +19,9 @@ export const BLOGS_METADATA = {
     description:
       "Looking for the best offline games when your WiFi dies? Explore top mobile games that work with no internet from puzzles to action adventures. For Android & iOS.",
   },
+  "top-10-free-apps-for-music-on-android-highest-rated-in-2025": {
+    title: "Top Free Apps for Music on Android in 2025",
+    description:
+      "Looking for the best free music apps for Android in 2025? Here are 10 great options with high ratings and solid features, perfect for streaming your favorite songs at any time.",
+  },
 };
