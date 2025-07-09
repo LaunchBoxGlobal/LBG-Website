@@ -1,6 +1,6 @@
 export const WHEN_TO_CHOOSE_OFFSHORE = [
   {
-    icon: "/off-shore/product-development-icon.png",
+    icon: "/off-shore/product-development-icon.webp",
     iconWidth: 59,
     iconHeight: 53,
     title: "New Product Development",
@@ -8,7 +8,7 @@ export const WHEN_TO_CHOOSE_OFFSHORE = [
       "Perfect for startups building from scratch. Our offshore software development company services provide full-cycle creation without local hiring costs.",
   },
   {
-    icon: "/off-shore/specialized-tech-needs-icon.png",
+    icon: "/off-shore/specialized-tech-needs-icon.webp",
     iconWidth: 51,
     iconHeight: 53,
     title: "Specialized Tech Needs",
@@ -16,7 +16,7 @@ export const WHEN_TO_CHOOSE_OFFSHORE = [
       "Add niche expertise fast. Access global talent through our offshore development center for skills your local market lacks.",
   },
   {
-    icon: "/off-shore/rapid-team-scaling-icon.png",
+    icon: "/off-shore/rapid-team-scaling-icon.webp",
     iconWidth: 59,
     iconHeight: 53,
     title: "Rapid Team Scaling",
@@ -24,7 +24,7 @@ export const WHEN_TO_CHOOSE_OFFSHORE = [
       "Grow your capacity overnight. Software offshore staffing lets you add developers within days, not months.",
   },
   {
-    icon: "/off-shore/productivity-icon.png",
+    icon: "/off-shore/productivity-icon.webp",
     iconWidth: 49,
     iconHeight: 53,
     title: "24/7 Productivity",
@@ -32,7 +32,7 @@ export const WHEN_TO_CHOOSE_OFFSHORE = [
       "Beat deadlines with time zone advantages. Offshore outsourcing keeps projects moving while your local team sleeps.",
   },
   {
-    icon: "/off-shore/budget-friendly-quality-icon.png",
+    icon: "/off-shore/budget-friendly-quality-icon.webp",
     iconWidth: 68,
     iconHeight: 53,
     title: "Budget-Friendly Quality",

@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import AnimatedText from "../StaffAugmentation/AnimatedText";
 
 const stats = [
   {
@@ -37,12 +36,10 @@ const Stats = () => {
       className="w-full py-20 lg:py-28 xl:py-40 bg-[#F9F9F9] flex flex-col items-center gap-6"
     >
       <section className="w-full flex flex-col items-center justify-center gap-5 text-center lg:text-start padding-x">
-        <AnimatedText>
-          <h2 className="section-heading mx-auto text-center">
-            The Launchbox Global{" "}
-            <span className="text-[#F40E00]">Advantages</span>
-          </h2>
-        </AnimatedText>
+        <h2 className="section-heading mx-auto text-center">
+          The Launchbox Global{" "}
+          <span className="text-[#F40E00]">Advantages</span>
+        </h2>
       </section>
 
       <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-16 lg:gap-10 mt-8 padding-x py-20">

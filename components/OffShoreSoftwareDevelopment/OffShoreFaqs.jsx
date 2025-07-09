@@ -36,7 +36,7 @@ const OffShoreFaqs = () => {
               </h5>
 
               <Image
-                src={"/faq-arrow-icon.png"}
+                src={"/faq-arrow-icon.webp"}
                 width={24}
                 height={20}
                 alt="arrow icon"

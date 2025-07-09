@@ -54,7 +54,7 @@ const AnimatedLine = () => {
 
       <div className="absolute lg:bottom-[10%] right-[-11%] items-center justify-center hidden lg:flex">
         <Image
-          src={"/staff-augmentation/Rocket.png"}
+          src={"/staff-augmentation/Rocket.webp"}
           alt="Rocket"
           width={110}
           height={267}
