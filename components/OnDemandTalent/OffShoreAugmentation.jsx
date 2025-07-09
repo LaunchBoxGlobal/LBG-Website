@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import AnimatedText from "../StaffAugmentation/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { OFFSHORE_STAFF_AUGMENTATION } from "@/constants/on-demand-talent-content/offshore-staff-augmentation";
@@ -10,18 +9,14 @@ const OffShoreAugmentation = () => {
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#F9F9F9] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <AnimatedText>
-          <h2 className="section-heading lg:w-[90%] mx-auto">
-            Scale Faster with Offshore{" "}
-            <span className="red-text">Staff Augmentation</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph lg:w-[90%] mx-auto">
-            Scale your team exactly when needed with talent augmentation. Choose
-            hourly, weekly, or monthly engagements that adapt to your workflow.
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          Scale Faster with Offshore{" "}
+          <span className="red-text">Staff Augmentation</span>
+        </h2>
+        <p className="section-paragraph lg:w-[90%] mx-auto">
+          Scale your team exactly when needed with talent augmentation. Choose
+          hourly, weekly, or monthly engagements that adapt to your workflow.
+        </p>
       </section>
 
       <section className="w-full my-10 lg:mt-20 lg:mb-28 flex flex-col lg:flex-row gap-y-10 items-center justify-center">

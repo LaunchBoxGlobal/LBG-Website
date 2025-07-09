@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { MARKET_SHIFTS } from "@/constants/StaffAugmentation/market-shifts";
 import Image from "next/image";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -83,6 +84,7 @@ const MarketShifts = () => {
               </SwiperSlide>
             );
           })}
+          <SwiperButtons />
         </Swiper>
       </section>
     </section>
@@ -90,3 +92,25 @@ const MarketShifts = () => {
 };
 
 export default MarketShifts;
+
+export const SwiperButtons = () => {
+  const swiper = useSwiper();
+  return (
+    <div className="w-full flex items-center justify-center gap-2 mt-10">
+      <button
+        type="button"
+        onClick={() => swiper.slidePrev()}
+        className="bg-black w-12 h-12 rounded-full flex items-center justify-center"
+      >
+        <FiArrowLeft className="text-white text-2xl" />
+      </button>
+      <button
+        type="button"
+        onClick={() => swiper.slideNext()}
+        className="red-bg w-12 h-12 rounded-full flex items-center justify-center"
+      >
+        <FiArrowRight className="text-white text-2xl" />
+      </button>
+    </div>
+  );
+};

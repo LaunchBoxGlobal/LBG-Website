@@ -5,7 +5,7 @@ export const ON_DEMAND_BENEFITS = [
     description:
       "Go from search to productivity in days, not months. Our talent augmentation model delivers professionals when you need them.",
     descriptionBg: "#F99C99",
-    icon: "/staff-augmentation/significant-cost-saving-icon.png",
+    icon: "/staff-augmentation/significant-cost-saving-icon.webp",
     iconWidth: "38",
     iconHeight: "32",
   },
@@ -15,7 +15,7 @@ export const ON_DEMAND_BENEFITS = [
     description:
       "Scale your team up or down without long-term contracts. Pay only for the talent and time you use.",
     descriptionBg: "#FBC7BE",
-    icon: "/staff-augmentation/specialized-skills-icon.png",
+    icon: "/staff-augmentation/specialized-skills-icon.webp",
     iconWidth: "30",
     iconHeight: "32",
   },
@@ -25,7 +25,7 @@ export const ON_DEMAND_BENEFITS = [
     description:
       "Avoid the high costs of traditional hiring. Talent augmentation provides skilled professionals without recruitment fees or onboarding expenses.",
     descriptionBg: "#FFB5A5",
-    icon: "/staff-augmentation/fast-project-delivery-icon.png",
+    icon: "/staff-augmentation/fast-project-delivery-icon.webp",
     iconWidth: "33",
     iconHeight: "32",
   },
@@ -35,7 +35,7 @@ export const ON_DEMAND_BENEFITS = [
     description:
       "Skip the lengthy interview process. We handle screening and vetting so you get production-ready talent immediately.",
     descriptionBg: "#F7C8A8",
-    icon: "/staff-augmentation/zer-infrastructure-icon.png",
+    icon: "/staff-augmentation/zer-infrastructure-icon.webp",
     iconWidth: "36",
     iconHeight: "32",
   },
@@ -45,7 +45,7 @@ export const ON_DEMAND_BENEFITS = [
     description:
       "Work across time zones with professionals who align with your schedule. Our talent augmentation spans all major tech hubs worldwide.",
     descriptionBg: "#BFBFBF",
-    icon: "/staff-augmentation/flexibile-scaling-icon.png",
+    icon: "/staff-augmentation/flexibile-scaling-icon.webp",
     iconWidth: "42",
     iconHeight: "32",
   },
@@ -55,7 +55,7 @@ export const ON_DEMAND_BENEFITS = [
     description:
       "Access specialized skills for short-term needs. From blockchain to AI, we connect you with experts for any project requirement.",
     descriptionBg: "#4E4D4F",
-    icon: "/staff-augmentation/flexibile-scaling-icon.png",
+    icon: "/staff-augmentation/flexibile-scaling-icon.webp",
     iconWidth: "42",
     iconHeight: "32",
   },

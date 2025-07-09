@@ -1,49 +1,48 @@
 import React from "react";
-import AnimatedText from "../StaffAugmentation/AnimatedText";
 import Image from "next/image";
 
 export const points = [
   {
-    icon1: "/on-demand-talent/get-started-icon.png",
+    icon1: "/on-demand-talent/get-started-icon.webp",
     title1: "Get started in 48 hours or less",
-    icon2: "/on-demand-talent/calendar-icon.png",
+    icon2: "/on-demand-talent/calendar-icon.webp",
     title2: "Weeks to months to hire",
   },
   {
-    icon1: "/on-demand-talent/clock-icon.png",
+    icon1: "/on-demand-talent/clock-icon.webp",
     title1: "Pay only for hours worked",
-    icon2: "/on-demand-talent/fixed-salaries-icon.png",
+    icon2: "/on-demand-talent/fixed-salaries-icon.webp",
     title2: "Fixed salaries + benefits",
   },
   {
-    icon1: "/on-demand-talent/long-term-contracts-icon.png",
+    icon1: "/on-demand-talent/long-term-contracts-icon.webp",
     title1: "Flexible, no long-term contracts",
-    icon2: "/on-demand-talent/lon-term-commitment-icon.png",
+    icon2: "/on-demand-talent/lon-term-commitment-icon.webp",
     title2: "Long-term commitment required",
   },
   {
-    icon1: "/on-demand-talent/easily-scales-icon.png",
+    icon1: "/on-demand-talent/easily-scales-icon.webp",
     title1: "Easily scale skills up or down",
-    icon2: "/on-demand-talent/limited-skills-adjustment-icon.png",
+    icon2: "/on-demand-talent/limited-skills-adjustment-icon.webp",
     title2: "Limited skill adjustments",
   },
   {
-    icon1: "/on-demand-talent/fees-icon.png",
+    icon1: "/on-demand-talent/fees-icon.webp",
     title1: "We manage contracts and payments",
-    icon2: "/on-demand-talent/high-recruitment-icon.png",
+    icon2: "/on-demand-talent/high-recruitment-icon.webp",
     title2: "Contracts and taxes handled",
   },
   //
   {
-    icon1: "/on-demand-talent/fees-icon.png",
+    icon1: "/on-demand-talent/fees-icon.webp",
     title1: "Remote pros provide own workspace",
-    icon2: "/on-demand-talent/high-recruitment-icon.png",
+    icon2: "/on-demand-talent/high-recruitment-icon.webp",
     title2: "Office space costs add up",
   },
   {
-    icon1: "/on-demand-talent/fees-icon.png",
+    icon1: "/on-demand-talent/fees-icon.webp",
     title1: "Talent uses their own equipment",
-    icon2: "/on-demand-talent/high-recruitment-icon.png",
+    icon2: "/on-demand-talent/high-recruitment-icon.webp",
     title2: "You provide IT and tools",
   },
 ];
@@ -52,22 +51,17 @@ const SpecializedTalent = () => {
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <AnimatedText>
-          <h2 className="section-heading lg:w-[90%] mx-auto">
-            Specialized Talent Without The{" "}
-            <span className="red-text">Wait</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph lg:w-[90%] mx-auto">
-            Traditional hiring means weeks of interviews and onboarding delays.
-            With on-demand talent augmentation, you get pre-vetted software
-            development professionals who integrate directly into your workflow
-            saving time and cutting overhead. Whether you need offshore staff
-            augmentation or local experts, scale your team instantly without
-            long-term commitments.
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          Specialized Talent Without The <span className="red-text">Wait</span>
+        </h2>
+        <p className="section-paragraph lg:w-[90%] mx-auto">
+          Traditional hiring means weeks of interviews and onboarding delays.
+          With on-demand talent augmentation, you get pre-vetted software
+          development professionals who integrate directly into your workflow
+          saving time and cutting overhead. Whether you need offshore staff
+          augmentation or local experts, scale your team instantly without
+          long-term commitments.
+        </p>
       </section>
 
       <section className="w-full mt-10 lg:mt-14 flex flex-col items-start gap-5">

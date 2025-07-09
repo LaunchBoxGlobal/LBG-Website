@@ -4,25 +4,20 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 import ProcessCard from "../StaffAugmentation/ProcessCard";
-import AnimatedText from "../StaffAugmentation/AnimatedText";
 import { ON_DEMAND_PROCESS } from "@/constants/on-demand-talent-content/on-demand-process";
 
 const OnDemandProcess = () => {
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <AnimatedText>
-          <h2 className="section-heading lg:w-[90%] mx-auto">
-            We Augment Talent with Accuracy in{" "}
-            <span className="red-text">48 Hours</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph lg:w-[90%] mx-auto">
-            Our proven process delivers the right offshore staff augmentation
-            professionals quickly, without compromising on quality or fit.
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          We Augment Talent with Accuracy in{" "}
+          <span className="red-text">48 Hours</span>
+        </h2>
+        <p className="section-paragraph lg:w-[90%] mx-auto">
+          Our proven process delivers the right offshore staff augmentation
+          professionals quickly, without compromising on quality or fit.
+        </p>
       </section>
       <div className="w-full relative mt-10 pt-20 pb-24">
         <AnimatedLine />
@@ -72,7 +67,7 @@ const AnimatedLine = () => {
 
       <div className="absolute bottom-[6%] left-[-13.6%] items-center justify-center hidden lg:flex">
         <Image
-          src={"/staff-augmentation/Rocket.png"}
+          src={"/staff-augmentation/Rocket.webp"}
           alt="Rocket"
           width={110}
           height={267}
