@@ -77,7 +77,7 @@ const HomeHero = () => {
       /> */}
 
       <Image
-        src={"/image-glow.webp"}
+        src={"/image-glow-optimized.webp"}
         width={1710}
         height={359}
         alt="globe shadow image"
