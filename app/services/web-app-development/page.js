@@ -14,7 +14,6 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      {/* <head> */}
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -43,7 +42,6 @@ const page = () => {
         }}
       />
 
-      {/* FAQ Schema */}
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -87,7 +85,6 @@ const page = () => {
           }),
         }}
       />
-      {/* </head> */}
       <WebAppDevelopmentPage />
     </>
   );
