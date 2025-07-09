@@ -11,7 +11,7 @@ const HiringHasselsAnimation = () => {
   return (
     <div className="w-full relative overflow-hidden">
       <Image
-        src={"/staff-augmentation/hiring-hassles-bg-mockup.png"}
+        src={"/staff-augmentation/hiring-hassles-bg-mockup.webp"}
         width={490}
         height={825}
         alt="hiring-hassles-red-mockup"
@@ -48,7 +48,7 @@ const HiringHasselsAnimation = () => {
           className="absolute inline-flex  z-20"
         >
           <Image
-            src={"/staff-augmentation/exclamation-mark-image.png"}
+            src={"/staff-augmentation/exclamation-mark-image.webp"}
             alt="exclamation-mark-image"
             width={266}
             height={266}
@@ -64,7 +64,7 @@ const HiringHasselsAnimation = () => {
           className="absolute left-[30%] top-[-5%]"
         >
           <Image
-            src={"/staff-augmentation/hiring-hassels-icon-1.png"}
+            src={"/staff-augmentation/hiring-hassels-icon-1.webp"}
             alt="hiring-hassels-icon-1"
             width={82}
             height={86}
@@ -78,7 +78,7 @@ const HiringHasselsAnimation = () => {
           className="absolute left-[10%] top-[15%]"
         >
           <Image
-            src={"/staff-augmentation/hiring-hassels-icon-2.png"}
+            src={"/staff-augmentation/hiring-hassels-icon-2.webp"}
             alt="hiring-hassels-icon-2"
             width={62}
             height={72}
@@ -92,7 +92,7 @@ const HiringHasselsAnimation = () => {
           className="absolute top-[25%] right-[10%] z-10"
         >
           <Image
-            src={"/staff-augmentation/hiring-hassels-icon-3.png"}
+            src={"/staff-augmentation/hiring-hassels-icon-3.webp"}
             alt="hiring-hassels-icon-3"
             width={131}
             height={143}
@@ -106,7 +106,7 @@ const HiringHasselsAnimation = () => {
           className="absolute bottom-[20%] right-[5%] z-10"
         >
           <Image
-            src={"/staff-augmentation/hiring-hassels-icon-4.png"}
+            src={"/staff-augmentation/hiring-hassels-icon-4.webp"}
             alt="hiring-hassels-icon-4"
             width={79}
             height={75}
@@ -120,7 +120,7 @@ const HiringHasselsAnimation = () => {
           className="absolute bottom-[-4%] left-1/2 -translate-x-1/2 z-10"
         >
           <Image
-            src={"/staff-augmentation/hiring-hassels-icon-5.png"}
+            src={"/staff-augmentation/hiring-hassels-icon-5.webp"}
             alt="hiring-hassels-icon-5"
             width={79}
             height={75}
@@ -134,7 +134,7 @@ const HiringHasselsAnimation = () => {
           className="absolute bottom-[22%] left-[12%] z-10"
         >
           <Image
-            src={"/staff-augmentation/hiring-hassels-icon-6.png"}
+            src={"/staff-augmentation/hiring-hassels-icon-6.webp"}
             alt="hiring-hassels-icon-6"
             width={153}
             height={153}

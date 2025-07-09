@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import AnimatedText from "./AnimatedText";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -17,29 +16,22 @@ const CTA = () => {
         className="w-full bg-[#F9F9F9] h-[543px] cta-container rounded-3xl flex items-end justify-between"
       >
         <div className="w-full lg:w-[60%] h-full flex flex-col items-start justify-center gap-5 p-7 lg:p-14">
-          <AnimatedText>
-            <h2 className="text-3xl lg:text-[55px] font-bold leading-[1.1] tracking-tight">
-              Build Your Dream Team In{" "}
-              <span className="red-text"> Minutes!</span>
-            </h2>
-          </AnimatedText>
-          <AnimatedText>
-            <p className="text-lg leading-[1.2]">
-              Answer 8 quick questions about your project needs, and we'll match
-              you with the perfect IT staff augmentation services solution. Get
-              your custom team proposal within 24 hours.
-            </p>
-          </AnimatedText>
-          <AnimatedText>
-            <div className="mt-5">
-              <Link
-                href={`/contact-us`}
-                className="red-bg rounded-[7px] text-white text-xs midlg:text-lg font-bold py-4 px-5"
-              >
-                Get Your Custom Team Plan in 24 Hours
-              </Link>
-            </div>
-          </AnimatedText>
+          <h2 className="text-3xl lg:text-[55px] font-bold leading-[1.1] tracking-tight">
+            Build Your Dream Team In <span className="red-text"> Minutes!</span>
+          </h2>
+          <p className="text-lg leading-[1.2]">
+            Answer 8 quick questions about your project needs, and we'll match
+            you with the perfect IT staff augmentation services solution. Get
+            your custom team proposal within 24 hours.
+          </p>
+          <div className="mt-5">
+            <Link
+              href={`/contact-us`}
+              className="red-bg rounded-[7px] text-white text-xs midlg:text-lg font-bold py-4 px-5"
+            >
+              Get Your Custom Team Plan in 24 Hours
+            </Link>
+          </div>
         </div>
         <div className="hidden lg:block overflow-hidden">
           <motion.div
@@ -48,7 +40,7 @@ const CTA = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
             <Image
-              src={"/staff-augmentation/cta-mobile-mockup.png"}
+              src={"/staff-augmentation/cta-mobile-mockup.webp"}
               alt="cta-mobile-mockup"
               width={620}
               height={787}

@@ -1,7 +1,7 @@
 export const HIRING_HASSLES = [
   {
-    icon: "/staff-augmentation/slow-hiring-process-gray-icon.png",
-    whiteIcon: "/staff-augmentation/slow-hiring-process-white-icon.png",
+    icon: "/staff-augmentation/slow-hiring-process-gray-icon.webp",
+    whiteIcon: "/staff-augmentation/slow-hiring-process-white-icon.webp",
     height: 37,
     width: 40,
     title: "Slow Hiring Process",
@@ -9,8 +9,8 @@ export const HIRING_HASSLES = [
       "Cut long recruitment cycles - get pre-vetted developers in days with our software development staff augmentation.",
   },
   {
-    icon: "/staff-augmentation/expensive-full-time-hires-icon.png",
-    whiteIcon: "/staff-augmentation/expensive-full-time-hires-white-icon.png",
+    icon: "/staff-augmentation/expensive-full-time-hires-icon.webp",
+    whiteIcon: "/staff-augmentation/expensive-full-time-hires-white-icon.webp",
     height: 42,
     width: 40,
     title: "Expensive Full-Time Hires",
@@ -19,7 +19,7 @@ export const HIRING_HASSLES = [
   },
   {
     icon: "/staff-augmentation/missing-tech-expertise-icon.svg",
-    whiteIcon: "/staff-augmentation/missing-tech-expertise-white-icon.png",
+    whiteIcon: "/staff-augmentation/missing-tech-expertise-white-icon.webp",
     height: 17,
     width: 23,
     title: "Missing Tech Expertise",
@@ -28,7 +28,7 @@ export const HIRING_HASSLES = [
   },
   {
     icon: "/staff-augmentation/unreliable-freelancers-icon.svg",
-    whiteIcon: "/staff-augmentation/unreliable-freelancers-white-icon.png",
+    whiteIcon: "/staff-augmentation/unreliable-freelancers-white-icon.webp",
     height: 36,
     width: 40,
     title: "Unreliable Freelancers",
@@ -37,7 +37,7 @@ export const HIRING_HASSLES = [
   },
   {
     icon: "/staff-augmentation/missed-deadlines-icon.svg",
-    whiteIcon: "/staff-augmentation/missed-deadlines-white-icon.png",
+    whiteIcon: "/staff-augmentation/missed-deadlines-white-icon.webp",
     height: 41,
     width: 40,
     title: "Missed Deadlines",
@@ -45,8 +45,8 @@ export const HIRING_HASSLES = [
       "Keep projects on track with accountable developers who deliver on time, every time.",
   },
   {
-    icon: "/staff-augmentation/availability-icon.png",
-    whiteIcon: "/staff-augmentation/availability-white-icon.png",
+    icon: "/staff-augmentation/availability-icon.webp",
+    whiteIcon: "/staff-augmentation/availability-white-icon.webp",
     height: 40,
     width: 40,
     title: "Availability At Your Time",
@@ -54,8 +54,8 @@ export const HIRING_HASSLES = [
       "Get talent that works in your time zone so you can work at times that work best for you.",
   },
   {
-    icon: "/staff-augmentation/talent-sourcing-icon.png",
-    whiteIcon: "/staff-augmentation/talent-sourcing-white-icon.png",
+    icon: "/staff-augmentation/talent-sourcing-icon.webp",
+    whiteIcon: "/staff-augmentation/talent-sourcing-white-icon.webp",
     height: 36,
     width: 40,
     title: "Cost-Effective Talent Sourcing",

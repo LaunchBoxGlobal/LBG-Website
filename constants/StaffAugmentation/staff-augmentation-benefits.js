@@ -5,7 +5,7 @@ export const STAFF_AUGMENTATION_BENEFITS = [
     description:
       "Reduce expenses by paying only for the skills you need, when you need them—no full-time hiring costs.",
     descriptionBg: "#F99C99",
-    icon: "/staff-augmentation/significant-cost-saving-icon.png",
+    icon: "/staff-augmentation/significant-cost-saving-icon.webp",
     iconWidth: "38",
     iconHeight: "32",
   },
@@ -15,7 +15,7 @@ export const STAFF_AUGMENTATION_BENEFITS = [
     description:
       "Access hard-to-find tech talent immediately through our IT staff augmentation services, exactly matched to your project.",
     descriptionBg: "#FBBFBE",
-    icon: "/staff-augmentation/specialized-skills-icon.png",
+    icon: "/staff-augmentation/specialized-skills-icon.webp",
     iconWidth: "30",
     iconHeight: "32",
   },
@@ -25,7 +25,7 @@ export const STAFF_AUGMENTATION_BENEFITS = [
     description:
       "Cut development timelines by quickly adding experienced professionals to your team without long hiring delays.",
     descriptionBg: "#FFC3A5",
-    icon: "/staff-augmentation/fast-project-delivery-icon.png",
+    icon: "/staff-augmentation/fast-project-delivery-icon.webp",
     iconWidth: "33",
     iconHeight: "32",
   },
@@ -35,7 +35,7 @@ export const STAFF_AUGMENTATION_BENEFITS = [
     description:
       "Get productive team members who work with your tools—no additional office space or equipment required.",
     descriptionBg: "#BFBFBF",
-    icon: "/staff-augmentation/zer-infrastructure-icon.png",
+    icon: "/staff-augmentation/zer-infrastructure-icon.webp",
     iconWidth: "36",
     iconHeight: "32",
   },
@@ -45,7 +45,7 @@ export const STAFF_AUGMENTATION_BENEFITS = [
     description:
       "Easily adjust team size up or down as project demands change, maintaining optimal efficiency.",
     descriptionBg: "#4E4D4F",
-    icon: "/staff-augmentation/flexibile-scaling-icon.png",
+    icon: "/staff-augmentation/flexibile-scaling-icon.webp",
     iconWidth: "42",
     iconHeight: "32",
   },

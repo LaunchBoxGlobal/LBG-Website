@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Hero from "./Hero";
 import Platforms from "../Common/Platforms";
 import HowItWorks from "./HowItWorks";
@@ -16,31 +15,8 @@ import FooterCta from "./FooterCta";
 import WhyStaffAugmentation from "./WhyStaffAugmentation";
 import AugmentationProcess from "./AugmentationProcess";
 import StaffAugmentationFaqs from "./StaffAugmentationFaqs";
-import Lenis from "@studio-freight/lenis";
 
 const StaffAugmentationPage = () => {
-  useEffect(() => {
-    const lenis = new Lenis({
-      duration: 2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      direction: "vertical",
-      gestureDirection: "vertical",
-      smooth: true,
-      smoothTouch: true,
-      touchMultiplier: 1.5,
-      infinite: false,
-    });
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-
   return (
     <main className="w-full relative">
       <Hero />

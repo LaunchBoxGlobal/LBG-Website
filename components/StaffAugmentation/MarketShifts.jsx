@@ -6,7 +6,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { MARKET_SHIFTS } from "@/constants/StaffAugmentation/market-shifts";
 import Image from "next/image";
-import AnimatedText from "./AnimatedText";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -47,19 +46,15 @@ const MarketShifts = () => {
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#F9F9F9] overflow-hidden padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <AnimatedText>
-          <h2 className="section-heading lg:w-[90%] mx-auto">
-            Challenges in Finding Qualified Talent{" "}
-            <span className="red-text">for Projects</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph lg:w-[90%] mx-auto">
-            Our IT staff augmentation company provides the right tech talent
-            when you need it skilled, affordable, and ready to work on your
-            schedule.
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          Challenges in Finding Qualified Talent{" "}
+          <span className="red-text">for Projects</span>
+        </h2>
+
+        <p className="section-paragraph lg:w-[90%] mx-auto">
+          Our IT staff augmentation company provides the right tech talent when
+          you need it skilled, affordable, and ready to work on your schedule.
+        </p>
       </section>
 
       <section className={`w-full relative overflow-hidden mt-10 lg:mt-14`}>
@@ -70,23 +65,21 @@ const MarketShifts = () => {
           {MARKET_SHIFTS?.map((value, index) => {
             return (
               <SwiperSlide key={index} className="mx-4">
-                <AnimatedText direction="left">
-                  <div className="w-[95%] rounded-xl p-6 bg-white h-[386px] lg:w-[320px] flex flex-col items-start justify-start gap-2 mx-2">
-                    <Image
-                      src={value?.image}
-                      width={value?.width}
-                      height={value?.height}
-                      alt={value?.title}
-                      className="object-contain"
-                    />
-                    <h3 className="text-[18px] lg:text-[22px] tracking-tight mt-3 font-medium">
-                      {value?.title}
-                    </h3>
-                    <p className="text-base lg:text-[18px] lg:leading-[24px] text-start font-light text-[#212121]">
-                      {value?.description}
-                    </p>
-                  </div>
-                </AnimatedText>
+                <div className="w-[95%] rounded-xl p-6 bg-white h-[386px] lg:w-[320px] flex flex-col items-start justify-start gap-2 mx-2">
+                  <Image
+                    src={value?.image}
+                    width={value?.width}
+                    height={value?.height}
+                    alt={value?.title}
+                    className="object-contain"
+                  />
+                  <h3 className="text-[18px] lg:text-[22px] tracking-tight mt-3 font-medium">
+                    {value?.title}
+                  </h3>
+                  <p className="text-base lg:text-[18px] lg:leading-[24px] text-start font-light text-[#212121]">
+                    {value?.description}
+                  </p>
+                </div>
               </SwiperSlide>
             );
           })}

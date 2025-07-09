@@ -1,6 +1,6 @@
 export const MARKET_SHIFTS = [
   {
-    image: "/staff-augmentation/market-shifts-icon-1.png",
+    image: "/staff-augmentation/market-shifts-icon-1.webp",
     width: 140,
     height: 115,
     title: "Developer Shortages",
@@ -8,7 +8,7 @@ export const MARKET_SHIFTS = [
       "Skilled tech talent is hard to find. Staff augmentation services bridge the gap by providing vetted experts when you need them.",
   },
   {
-    image: "/staff-augmentation/market-shifts-icon-2.png",
+    image: "/staff-augmentation/market-shifts-icon-2.webp",
     width: 140,
     height: 115,
     title: "Rising In-House Costs",
@@ -16,7 +16,7 @@ export const MARKET_SHIFTS = [
       "Hiring full-time is expensive. Our IT staff augmentation company offers flexible talent at lower costs and no long-term commitments.",
   },
   {
-    image: "/staff-augmentation/market-shifts-icon-3.png",
+    image: "/staff-augmentation/market-shifts-icon-3.webp",
     width: 140,
     height: 115,
     title: "Remote Collaboration Shift",
@@ -24,7 +24,7 @@ export const MARKET_SHIFTS = [
       "Teams now work globally. Resource augmentation services help you onboard remote-ready professionals who integrate seamlessly.",
   },
   {
-    image: "/staff-augmentation/market-shifts-icon-4.png",
+    image: "/staff-augmentation/market-shifts-icon-4.webp",
     width: 140,
     height: 115,
     title: "Speed to Market Needs",
@@ -32,7 +32,7 @@ export const MARKET_SHIFTS = [
       "Projects can't wait for long hiring cycles. Get specialized developers in days, not months, and launch faster.",
   },
   {
-    image: "/staff-augmentation/post-covid-digital-icon.png",
+    image: "/staff-augmentation/post-covid-digital-icon.webp",
     width: 140,
     height: 115,
     title: "Post-COVID Digital Acceleration",

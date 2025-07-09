@@ -3,50 +3,50 @@ import TechStackCard from "./TechStackCard";
 
 const platforms = [
   {
-    icon: "/staff-augmentation/aws-icon.png",
+    icon: "/staff-augmentation/aws-icon.webp",
     width: 59,
     height: 47,
     title: "AWS",
   },
   {
-    icon: "/staff-augmentation/azure-icon.png",
+    icon: "/staff-augmentation/azure-icon.webp",
     width: 55,
     height: 51,
     title: "Azure",
   },
   {
-    icon: "/staff-augmentation/gcp-icon.png",
+    icon: "/staff-augmentation/gcp-icon.webp",
     width: 67,
     height: 57,
     title: "GCP",
   },
   {
-    icon: "/staff-augmentation/digital-ocean.png",
+    icon: "/staff-augmentation/digital-ocean.webp",
     width: 57,
     height: 57,
     title: "Digital Ocean",
   },
   // google-cloud-icon
   {
-    icon: "/staff-augmentation/google-cloud-icon.png",
+    icon: "/staff-augmentation/google-cloud-icon.webp",
     width: 61,
     height: 47,
     title: "Google Cloud",
   },
   {
-    icon: "/staff-augmentation/cloudinary-icon.png",
+    icon: "/staff-augmentation/cloudinary-icon.webp",
     width: 87,
     height: 57,
     title: "Cloudinary",
   },
   {
-    icon: "/staff-augmentation/datadog-icon.png",
+    icon: "/staff-augmentation/datadog-icon.webp",
     width: 53,
     height: 57,
     title: "Datadog",
   },
   {
-    icon: "/staff-augmentation/grafana-icon.png",
+    icon: "/staff-augmentation/grafana-icon.webp",
     width: 53,
     height: 57,
     title: "Grafana",

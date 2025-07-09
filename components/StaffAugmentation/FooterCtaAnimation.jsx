@@ -10,7 +10,7 @@ const FooterCtaAnimation = () => {
 
       <div className="w-full h-full absolute inset-0">
         <Image
-          src={"/staff-augmentation/final-cta-mockup.png"}
+          src={"/staff-augmentation/final-cta-mockup.webp"}
           alt="final cta icons image"
           width={391}
           height={377}

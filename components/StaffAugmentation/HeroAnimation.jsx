@@ -11,7 +11,7 @@ const HeroAnimation = () => {
       </div>
 
       <Image
-        src={"/staff-augmentation/hero-mockup-01.png"}
+        src={"/staff-augmentation/hero-mockup-01.webp"}
         alt="hero-mockup"
         width={1270}
         height={578}

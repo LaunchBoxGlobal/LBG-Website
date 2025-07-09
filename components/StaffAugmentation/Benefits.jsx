@@ -9,18 +9,15 @@ const Benefits = () => {
   return (
     <section className="w-full py-32 xl:py-40 bg-[#F9F9F9] padding-x overflow-hidden">
       <div className="w-full flex flex-col items-center gap-5">
-        <AnimatedText>
-          <h2 className="section-heading text-center mx-auto">
-            Key Benefits of IT Staff{" "}
-            <span className="red-text">Augmentation Services</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph text-center mx-auto lg:w-[50%]">
-            Discover how staff augmentation gives your business the competitive
-            edge with these powerful advantages:
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading text-center mx-auto">
+          Key Benefits of IT Staff{" "}
+          <span className="red-text">Augmentation Services</span>
+        </h2>
+
+        <p className="section-paragraph text-center mx-auto lg:w-[50%]">
+          Discover how staff augmentation gives your business the competitive
+          edge with these powerful advantages:
+        </p>
       </div>
 
       <div className="w-full bg-[#F9F9F9] lg:px-16 mt-10 xl:mt-12 hidden lg:flex flex-col items-center mx-auto relative left-[-4.3%]">
@@ -55,19 +52,15 @@ const Benefits = () => {
                 }}
                 className={`absolute top-0 bg-red-400 rounded-2xl z-20 p-10 flex flex-col items-start justify-center gap-4 h-[220px] overflow-hidden`}
               >
-                <AnimatedText delay={0.2}>
-                  <Image
-                    src={solution?.icon}
-                    width={solution?.iconWidth}
-                    height={solution?.iconHeight}
-                    alt={solution?.title}
-                  />
-                </AnimatedText>
-                <AnimatedText delay={0.2}>
-                  <h3 className="text-white text-[24px] md:text-[2.5vw] font-medium leading-10">
-                    {solution?.title}
-                  </h3>
-                </AnimatedText>
+                <Image
+                  src={solution?.icon}
+                  width={solution?.iconWidth}
+                  height={solution?.iconHeight}
+                  alt={solution?.title}
+                />
+                <h3 className="text-white text-[24px] md:text-[2.5vw] font-medium leading-10">
+                  {solution?.title}
+                </h3>
               </motion.div>
 
               <motion.div
@@ -79,11 +72,9 @@ const Benefits = () => {
                 className={`absolute top-0 h-full bg-red-600 rounded-2xl flex justify-end items-center z-10 p-10 overflow-hidden`}
               >
                 <div className="w-full lg:w-[80%]">
-                  <AnimatedText delay={0.2}>
-                    <p className="text-white text-center text-base xl:text-xl">
-                      {solution?.description}
-                    </p>
-                  </AnimatedText>
+                  <p className="text-white text-center text-base xl:text-xl">
+                    {solution?.description}
+                  </p>
                 </div>
               </motion.div>
             </div>
