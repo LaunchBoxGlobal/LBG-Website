@@ -6,7 +6,7 @@ import React from "react";
 export const metadata = {
   title: "Custom Software Development | Solutions for Your Business",
   description:
-    "Need software built for your needs? Our custom software development delivers scalable, secure solutions designed for your workflow. Get a free consultation.",
+    "Custom software made for your business. We build practical tools that improve your workflow and fit your exact needs. Let’s talk about your project today.",
   alternates: {
     canonical:
       "https://launchboxglobal.com/services/custom-software-development",

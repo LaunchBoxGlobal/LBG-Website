@@ -5,7 +5,7 @@ import React from "react";
 export const metadata = {
   title: "Ecommerce Development That Boosts Sales, Not Just Traffic",
   description:
-    "Our ecommerce development company builds fast, sales-focused online stores. From seamless checkout to mobile-friendly designs, our ecommerce development services turn browsers into buyers. Let’s grow your store.",
+    "Our software development agency builds custom applications and tailored software solutions to help your business grow. Get expert development done right.",
   alternates: {
     canonical: "https://launchboxglobal.com/services/ecommerce-development",
   },

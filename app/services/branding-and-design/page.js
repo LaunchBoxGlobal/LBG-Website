@@ -5,7 +5,7 @@ import React from "react";
 export const metadata = {
   title: "Expert Branding & Design Services | Build an Identity",
   description:
-    "Our branding & design team develops reliable visuals that tell your story. From logos to full brand guidelines we create assets that resonate with your audience.",
+    "Branding that tells your story. We create logos, visuals, and brand guidelines that truly connect with your audience. Let’s build your brand together.",
   alternates: {
     canonical: "https://launchboxglobal.com/services/branding-and-design",
   },

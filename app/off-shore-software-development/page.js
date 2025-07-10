@@ -4,7 +4,7 @@ import React from "react";
 export const metadata = {
   title: "Offshore Software Development | Cost- Efficient Global Teams",
   description:
-    "Scale your tech team with our offshore software development services. Access top talent, reduce costs by 40%, and accelerate delivery. Get a free consultation.",
+    "Cut software costs by 40% with our offshore developers. Get your skilled tech talent to scale your team faster and start with a free consultation today.",
   alternates: {
     canonical: "https://launchboxglobal.com/off-shore-software-development",
   },

@@ -2,9 +2,9 @@ import HomePage from "@/components/Home/HomePage";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Top Software Development Agency | Custom App & Software Solutions",
+  title: "Top Software Development Agency | Custom Software Solutions",
   description:
-    "Leading software development agency delivering expert software development services. We specialize in custom application development and tailored software engineering solutions for your business growth.",
+    "Leading software development agency delivering custom app development and software engineering solutions to drive your business growth and digital success.",
   alternates: {
     canonical: "https://launchboxglobal.com",
   },

@@ -3,9 +3,9 @@ import Script from "next/script";
 import React from "react";
 
 export const metadata = {
-  title: "Trusted Mobile App Development Company | Custom Apps Built Right",
+  title: "Mobile App Development Company | Reliable Custom Builds",
   description:
-    "We’re a hands-on mobile app development company crafting custom apps that users love. Our mobile app development services cover iOS & Android—turning ideas into high-performing apps. ",
+    "Leading mobile app development company building custom iOS and Android applications. We build high-performing, user-friendly apps for business growth.",
   alternates: {
     canonical: "https://launchboxglobal.com/services/mobile-app-development",
   },
