@@ -5,6 +5,10 @@ export const metadata = {
   title: "Web Development in New Jersey | Launchbox Global",
   description:
     "Need web development services in New Jersey? We build custom websites for businesses. Reach out to Launchbox Global for a complimentary consultation!",
+  alternates: {
+    canonical:
+      "https://launchboxglobal.com/web-development-company-in-new-jersey",
+  },
 };
 
 const page = () => {
