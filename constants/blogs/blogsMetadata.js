@@ -24,4 +24,14 @@ export const BLOGS_METADATA = {
     description:
       "Looking for the best free music apps for Android in 2025? Here are 10 great options with high ratings and solid features, perfect for streaming your favorite songs at any time.",
   },
+  "ios-emulators-in-2025-a-smarter-way-to-use-iphone-apps-without-the-iphone": {
+    title: "Best iOS Emulators in 2025: Run iPhone Apps Easily",
+    description:
+      "Learn how iOS emulators in 2025 let you run iPhone apps without the device—a practical guide for developers and users exploring iOS on non-Apple platforms.",
+  },
+  "top-10-innovative-tech-firms-in-san-francisco-leading-the-ai-boom": {
+    title: "San Francisco's Top Tech Firms: AI Innovation Leaders",
+    description:
+      "Explore the leading tech firms in San Francisco shaping AI's future. Discover How these different innovators have transform industries with AI solutions.",
+  },
 };
