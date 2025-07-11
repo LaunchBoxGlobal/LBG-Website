@@ -17,7 +17,7 @@ const Hero = () => {
         className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-10"
       >
         <AnimatedText direction="left">
-          <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1.1] w-full z-10 flex flex-col items-center gap-4">
+          <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1] w-full z-10 flex flex-col items-center gap-4">
             <span>Top Custom Software Development Company In</span>{" "}
             <span className="red-bg block py-4 px-10 text-white rounded-[17px]">
               Houston

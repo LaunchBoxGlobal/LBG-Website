@@ -5,7 +5,7 @@ const ContactUsHero = () => {
     <section
       className={`w-full pt-40 pb-20 lg:pt-44 flex flex-col items-center justify-center gap-6 padding-x`}
     >
-      <h1 className="font-bold text-4xl lg:text-[64px] mb-1 text-center tracking-normal lg:leading-[78px]">
+      <h1 className="font-bold text-4xl lg:text-[64px] mb-1 text-center tracking-normal leading-[1]">
         Great Things Start <br /> With a{" "}
         <span className="red-text">Conversation!</span>
       </h1>

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="w-full relative overflow-hidden bg-white min-h-[95vh]">
       <section className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-10">
-        <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1.1] w-full z-10">
+        <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1] w-full z-10">
           <strong className="font-extrabold">
             Talent Augmentation – The Right Skills, Exactly When You
           </strong>{" "}
