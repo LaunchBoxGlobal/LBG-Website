@@ -7,8 +7,10 @@ const Hero = () => {
     <section className="w-full relative overflow-hidden bg-white min-h-[95vh]">
       <section className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-10">
         <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1.1] w-full z-10">
-          <span>Talent Augmentation – The Right Skills, Exactly When You</span>{" "}
-          <span className="red-text">Need Them</span>
+          <strong className="font-extrabold">
+            Talent Augmentation – The Right Skills, Exactly When You
+          </strong>{" "}
+          <strong className="red-text font-extrabold">Need Them</strong>
         </h1>
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto z-10">
           Grow your team instantly with our talent augmentation and add skilled
@@ -25,6 +27,7 @@ const Hero = () => {
           alt="dots"
           width={252}
           height={406}
+          priority
         />
 
         {/* Group A */}
@@ -34,6 +37,7 @@ const Hero = () => {
             alt="icon-1"
             width={54}
             height={56}
+            priority
             className="absolute right-[35%] top-0 group-a-icon-1"
           />
           <Image

@@ -23,7 +23,7 @@ const augment = [
     title: "Skill Gaps",
     description:
       "Fill temporary expertise shortages without long-term hires, whether you need niche tech skills or extra hands.",
-    image1: "/on-demand-talent/skills-gap-bg-1.webp",
+    image1: "/on-demand-talent/skills-gap-image.webp",
     image2: "/on-demand-talent/skills-gap-bg-2.webp",
     width1: 419,
     height1: 269,
