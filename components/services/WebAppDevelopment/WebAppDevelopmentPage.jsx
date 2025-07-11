@@ -13,6 +13,7 @@ import GenericSoftware from "./GenericSoftware";
 import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import TechStack from "@/components/Common/TechStack";
 import Platforms from "@/components/Common/Platforms";
+import WhyChooseUs from "./WhyChooseUs";
 
 const WebAppDevelopmentPage = () => {
   return (
@@ -25,6 +26,7 @@ const WebAppDevelopmentPage = () => {
       <Industries />
       <GenericSoftware />
       <CreateYourMobileApp />
+      <WhyChooseUs />
       <Benefits />
       <SmartPlanning />
       <TechStack
