@@ -5,17 +5,17 @@ import "./Styles.css";
 import Character from "@/components/Common/ServicesAboutSection";
 
 const paragraph =
-  "We are a trusted web application service agency, building web apps that solve real problems. From startups to businesses, we create apps that are simple, reliable, and ready to grow. Our web app development services include clear planning, clean coding, and thorough testing. We stay to fix bugs, add features, and keep your app running well. Let’s build something that truly works for your business.";
+  "Need a reliable team to handle your web projects? We are a leading web application development agency dedicated to empowering businesses worldwide. Our web application development services expertise enables us to develop effective solutions for your challenges. We care about making apps people actually enjoy using. By partnering with leading web app development companies, we create solutions that help businesses grow. What makes us different? We listen with concentration, then build with the right technology. Our team brings worldwide experience to every project and always stays focused on delivering more than you expect.";
 
 const About = () => {
   return (
-    <section className="w-full padding-x py-10 lg:pt-32 lg:pb-20 flex flex-col items-center gap-6">
+    <section className="w-full padding-x py-20 lg:py-32 flex flex-col items-center gap-6">
       <h2
         className={
           "text-xl lg:text-[25px] text-[#f40e00] font-semibold text-center"
         }
       >
-        Your Trusted Web App Development Services Partner
+        Launchbox Global: Building Digital Futures
       </h2>
       <Character value={paragraph} />
       {/* <TextMaskEffect /> */}

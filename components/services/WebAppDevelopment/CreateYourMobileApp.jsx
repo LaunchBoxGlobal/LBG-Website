@@ -25,17 +25,16 @@ const CreateYourMobileApp = () => {
           />
 
           <h2 className="font-bold text-[36px] lg:text-[50px] lg:leading-[52px] z-10">
-            Let's Engineer Your Web App!
+            Get Started on Your Web Application Today
           </h2>
           <p className="text-lg lg:text-[22px] font-light z-10">
-            We follow a transparent, agile-driven process to build scalable and
-            high-performing web applications that solve real business problems.
+            Get insights on creating a successful web application.
           </p>
           <Link
             href={"/contact-us"}
-            className="w-[242px] h-[47px] mt-3 bg-white text-black flex items-center justify-center rounded-[11px] text-lg font-medium z-30 hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+            className="w-[262px] h-[47px] mt-3 bg-white text-black flex items-center justify-center rounded-[11px] text-lg font-medium z-30 hover:bg-[#F40E00] hover:text-white transition-all duration-300"
           >
-            Start Your Web App Today!
+            Schedule Your Consultation
           </Link>
         </section>
 
