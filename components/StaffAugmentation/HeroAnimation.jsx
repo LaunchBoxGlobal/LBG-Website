@@ -11,10 +11,12 @@ const HeroAnimation = () => {
       </div>
 
       <Image
-        src={"/staff-augmentation/hero-mockup-01.webp"}
-        alt="hero-mockup"
+        src={"/staff-augmentation/hero-mockup-image-01.webp"}
+        alt="hero mockup image"
         width={1270}
         height={578}
+        priority
+        sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 1270px"
         className="object-contain relative -bottom-1.5 lg:-bottom-4"
       />
     </div>

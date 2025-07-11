@@ -33,13 +33,15 @@ const Hero = () => {
           alt="hero-mask-1"
           width={467}
           height={138}
+          priority
           className="absolute object-contain right-0 top-24 z-0"
         />
         <Image
-          src={"/staff-augmentation/hero-mask-2.webp"}
-          alt="hero-mask-2"
+          src={"/staff-augmentation/hero-mask-image-left.webp"}
+          alt="hero mask image left"
           width={653}
           height={366}
+          priority
           className="absolute object-contain left-0 bottom-0 z-0"
         />
       </section>
