@@ -7,7 +7,7 @@ const CTA = () => {
     <section className="w-full py-20 md:pb-40 midlg:py-32 xl:py-40 px-6 md:px-8 midlg:px-[10%] 2xl:px-[13%] overflow-hidden">
       <div className="w-full h-[504px] md:h-auto lg:min-h-[619px] relative flex items-end justify-center pb-10">
         <Image
-          src={"/on-demand-talent/on-demand-cta-image.webp"}
+          src={"/on-demand-talent/on-demand-cta-image.png"}
           alt="cta-icons"
           width={918}
           height={289}
@@ -16,14 +16,14 @@ const CTA = () => {
         {/* cta-icons-and-border-image */}
         <section className="w-full max-h-[504px] absolute md:h-auto inset-x-0 top-14 md:top-0 block lg:hidden">
           <Image
-            src={"/on-demand-talent/cta-icons-and-border-image.webp"}
+            src={"/on-demand-talent/cta-icons-and-border-image.png"}
             alt="cta-mobile-image"
             width={758}
             height={424}
             className="w-[500px] md:w-full md:h-auto md:max-h-[400px] inset-0 z-0 md:hidden"
           />
           <Image
-            src={`/on-demand-talent/cta-image-tablet-version-01.webp`}
+            src={`/on-demand-talent/cta-image-tablet-version-01.png`}
             width={855}
             height={504}
             alt="on-demand-cta-image-tablet-version"

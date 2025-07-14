@@ -14,7 +14,7 @@ const Hero = () => {
             </strong>
           </h1>
           {/* <Image
-            src={"/staff-augmentation/profile-icons-hero.webp"}
+            src={"/staff-augmentation/profile-icons-hero.png"}
             alt="hero profiles"
             width={175}
             height={65}
@@ -31,7 +31,7 @@ const Hero = () => {
         <HeroAnimation />
 
         <Image
-          src={"/staff-augmentation/hero-mask-1.webp"}
+          src={"/staff-augmentation/hero-mask-1.png"}
           alt="hero-mask-1"
           width={467}
           height={138}
@@ -39,7 +39,7 @@ const Hero = () => {
           className="absolute object-contain right-0 top-24 z-0"
         />
         <Image
-          src={"/staff-augmentation/hero-mask-image-left.webp"}
+          src={"/staff-augmentation/hero-mask-image-left.png"}
           alt="hero mask image left"
           width={653}
           height={366}

@@ -26,7 +26,7 @@ const Hero = () => {
         </section>
 
         <Image
-          src={"/off-shore/hero-image.webp"}
+          src={"/off-shore/hero-image.png"}
           width={1541}
           height={260}
           alt="hero-image"
@@ -35,14 +35,14 @@ const Hero = () => {
         {/*  */}
 
         <Image
-          src={"/off-shore/offshore-hero-right-image.webp"}
+          src={"/off-shore/offshore-hero-right-image.png"}
           width={292}
           height={603}
           alt="hero-image"
           className="absolute -right-16 top-20 w-[292px] h-[603px] object-contain z-0 hidden lg:block"
         />
         <Image
-          src={"/off-shore/offshore-hero-left-image.webp"}
+          src={"/off-shore/offshore-hero-left-image.png"}
           width={292}
           height={603}
           alt="hero-image"

@@ -22,7 +22,7 @@ const HeroAnimation = () => {
       className="w-full h-[330px] md:h-[429px] xl:h-[529.23px] relative mx-auto flex justify-center items-end overflow-hidden"
     >
       <Image
-        src={"/ecommerce-page-hero-borders-image.webp"}
+        src={"/ecommerce-page-hero-borders-image.png"}
         alt="ecommerce-page-hero-borders-image"
         width={980.18}
         height={509}
@@ -52,8 +52,8 @@ const HeroAnimation = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         src={
           isDarkMode
-            ? "/branding-and-design-hero-mockup-dark-1.webp"
-            : "/branding-and-design-hero-mockup-1.webp"
+            ? "/branding-and-design-hero-mockup-dark-1.png"
+            : "/branding-and-design-hero-mockup-1.png"
         }
         alt="Branding and design mockup displaying logo concepts and visual identity development process"
         width={244.19}
@@ -68,8 +68,8 @@ const HeroAnimation = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         src={
           isDarkMode
-            ? "/branding-and-design-hero-mockup-dark-3.webp"
-            : "/branding-and-design-hero-mockup-3.webp"
+            ? "/branding-and-design-hero-mockup-dark-3.png"
+            : "/branding-and-design-hero-mockup-3.png"
         }
         alt="Branding and design mockup showing final logo application on packaging and merchandise"
         width={244.19}
@@ -97,7 +97,7 @@ const HeroAnimation = () => {
       </div>
 
       <Image
-        src={"/branding-and-design-right-card-1.webp"}
+        src={"/branding-and-design-right-card-1.png"}
         alt="branding-and-design-right-card-1"
         width={203}
         height={139}
@@ -105,7 +105,7 @@ const HeroAnimation = () => {
       />
 
       <Image
-        src={"/branding-and-design-leaderboard-card.webp"}
+        src={"/branding-and-design-leaderboard-card.png"}
         alt="branding-and-design-leaderboard-card"
         width={203}
         height={139}
@@ -114,7 +114,7 @@ const HeroAnimation = () => {
 
       {/* rating card */}
       <Image
-        src={"/branding-and-design-hero-rating-card.webp"}
+        src={"/branding-and-design-hero-rating-card.png"}
         alt="branding-and-design-hero-rating-card"
         width={309}
         height={88}
@@ -123,7 +123,7 @@ const HeroAnimation = () => {
 
       <div className="w-[165px] h-[115px] absolute right-[7%] xl:right-[13%] bottom-[15%] hidden lg:flex items-center justify-center">
         <Image
-          src={"/branding-and-design-tool-card.webp"}
+          src={"/branding-and-design-tool-card.png"}
           alt="branding-and-design-tool-card"
           width={109}
           height={54}
@@ -131,7 +131,7 @@ const HeroAnimation = () => {
         />
         {/* branding-and-design-cursor-image */}
         <Image
-          src={"/branding-and-design-cursor-image.webp"}
+          src={"/branding-and-design-cursor-image.png"}
           alt="branding-and-design-cursor-image"
           width={29}
           height={30}

@@ -8,7 +8,7 @@ const CtaAnimation = () => {
       <span className="animate-ping transition-all duration-500 absolute inline-flex h-[180px] w-[180px] rounded-full bg-[#E1E1E1] opacity-50 z-0"></span>
       <span className="animate-ping transition-all duration-500 absolute inline-flex h-[220px] w-[220px] rounded-full bg-[#E1E1E1] opacity-35 z-0"></span>
       <Image
-        src={"/off-shore/lbg-logo.webp"}
+        src={"/off-shore/lbg-logo.png"}
         alt="footer-cta-image"
         width={100}
         height={100}
@@ -17,7 +17,7 @@ const CtaAnimation = () => {
 
       <div className="w-full h-full absolute inset-0">
         <Image
-          src={"/off-shore/footer-cta-icons.webp"}
+          src={"/off-shore/footer-cta-icons.png"}
           alt="off shore cta icons"
           width={408}
           height={296}

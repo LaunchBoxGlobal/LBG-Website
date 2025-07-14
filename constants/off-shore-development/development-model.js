@@ -1,6 +1,6 @@
 export const IDEAL_DEVELOPMENT_MODEL = [
   {
-    icon: "/off-shore/off-shore-software-development-icon.webp",
+    icon: "/off-shore/off-shore-software-development-icon.png",
     title: "Offshore Software Development",
     description: "Best for cost-sensitive projects",
     benefits: [
@@ -10,7 +10,7 @@ export const IDEAL_DEVELOPMENT_MODEL = [
     ],
   },
   {
-    icon: "/off-shore/nearshore-development-icon.webp",
+    icon: "/off-shore/nearshore-development-icon.png",
     title: "Nearshore Development",
     description: "Slow Progress & High Involvement",
     benefits: [
@@ -20,7 +20,7 @@ export const IDEAL_DEVELOPMENT_MODEL = [
     ],
   },
   {
-    icon: "/off-shore/onshore-development-icon.webp",
+    icon: "/off-shore/onshore-development-icon.png",
     title: "Onshore Development",
     description: "Higher Cost & Limited Reach",
     benefits: [

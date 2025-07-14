@@ -1,6 +1,6 @@
 export const ON_DEMAND_PROCESS = [
   {
-    icon: "/on-demand-talent/submit-brief-icon.webp",
+    icon: "/on-demand-talent/submit-brief-icon.png",
     iconWidth: 27,
     iconHeight: 34,
     title: "Submit Brief",
@@ -8,7 +8,7 @@ export const ON_DEMAND_PROCESS = [
       "Tell us your project needs, tech stack, and ideal candidate profile. We'll translate requirements into actionable search criteria.",
   },
   {
-    icon: "/on-demand-talent/expert-vetting-icon.webp",
+    icon: "/on-demand-talent/expert-vetting-icon.png",
     iconWidth: 38,
     iconHeight: 34,
     title: "Expert Vetting",
@@ -16,7 +16,7 @@ export const ON_DEMAND_PROCESS = [
       "Our software development staff augmentation specialists review candidates through technical assessments, portfolio checks, and cultural fit evaluation.",
   },
   {
-    icon: "/staff-augmentation/interviews-icon.webp",
+    icon: "/staff-augmentation/interviews-icon.png",
     iconWidth: 34,
     iconHeight: 34,
     title: "Seamless Onboarding",
@@ -24,7 +24,7 @@ export const ON_DEMAND_PROCESS = [
       "No hiring delays. We allocate project-ready experts who match your needs—fully vetted and briefed to integrate smoothly.",
   },
   {
-    icon: "/on-demand-talent/start-working-icon.webp",
+    icon: "/on-demand-talent/start-working-icon.png",
     iconWidth: 33,
     iconHeight: 34,
     title: "Start Working",
