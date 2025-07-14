@@ -39,7 +39,7 @@ const Hero = () => {
           className="absolute object-contain right-0 top-24 z-0"
         />
         <img
-          src={"/staff-augmentation/hero-mask-image-left.png"}
+          src={"/staff-augmentation/hero-mask-image-left.webp"}
           alt="hero mask image left"
           width={653}
           height={366}
