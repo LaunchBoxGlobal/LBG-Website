@@ -27,7 +27,7 @@ const HomeHero = () => {
       <h1 className="font-bold text-[9vw] md:text-[5.5vw] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
-          <Image
+          <img
             src={"/home-hero-heading-icon.webp"}
             width={80}
             height={80}
@@ -36,7 +36,7 @@ const HomeHero = () => {
             priority
           />{" "}
           Build{" "}
-          <Image
+          <img
             src={"/home-hero-heading-icon.webp"}
             width={80}
             height={80}

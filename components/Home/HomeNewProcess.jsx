@@ -94,7 +94,7 @@ const AnimatedLine = () => {
     >
       {/* Rocket positioned near path end */}
       <div className="absolute bottom-[12%] right-[-9%] items-center justify-center hidden lg:flex">
-        <Image
+        <img
           src={"/staff-augmentation/Rocket.png"}
           alt="Rocket"
           width={110}

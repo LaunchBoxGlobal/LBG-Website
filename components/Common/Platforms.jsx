@@ -131,13 +131,15 @@ const Platforms = () => {
                 key={index}
                 className="flex w-[400px] mr-4 items-center justify-start gap-2"
               >
-                <Image
+                <img
                   key={index}
                   src={platform?.icon}
                   width={platform?.width}
                   height={platform?.height}
                   alt={platform?.title}
-                  className={`w-[20px] h-[18px] object-contain`}
+                  className={`w-[${platform?.width}] h-[${
+                    platform?.height - 4
+                  }] object-contain`}
                 />
                 <strong className="uppercase font-bold text-[#545454] text-xs lg:text-[20px] opacity-60 whitespace-nowrap">
                   {platform?.title}
