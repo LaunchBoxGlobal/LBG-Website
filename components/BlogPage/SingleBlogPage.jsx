@@ -47,7 +47,14 @@ const SingleBlogPage = ({ blog, author, date }) => {
 
   return (
     <div className="w-full">
-      <div className="blogContent">{modifiedContent}</div>
+      {/* <BlogAuthorDetails author={author} date={date} readTime={readTime} /> */}
+      <div className="w-full blog-page">
+        <div
+          className="w-full flex flex-col items-start mt-6 gap-0 blogContent"
+          dangerouslySetInnerHTML={{ __html: blog?.content?.rendered }}
+        />
+      </div>
+      {/* <div className="blogContent">{modifiedContent}</div> */}
     </div>
   );
 };
