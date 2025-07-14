@@ -28,7 +28,7 @@ const HomeHero = () => {
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
           <Image
-            src={"/hero-heading-icon.png"}
+            src={"/home-hero-heading-icon.webp"}
             width={80}
             height={80}
             alt={"arrow icon"}
@@ -37,7 +37,7 @@ const HomeHero = () => {
           />{" "}
           Build{" "}
           <Image
-            src={"/hero-heading-icon.png"}
+            src={"/home-hero-heading-icon.webp"}
             width={80}
             height={80}
             alt={"arrow icon"}
