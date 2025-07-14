@@ -45,7 +45,7 @@ const BenefitsTable = () => {
         </div>
         <div className="w-[300px] lg:w-[15%]">
           <div className="w-[110px] px-3 lg:w-[219px] h-[62px] bg-[#F40E00] flex items-center justify-center rounded-t-2xl">
-            <Image
+            <img
               src={"/lb-white-logo.png"}
               width={188}
               height={33}

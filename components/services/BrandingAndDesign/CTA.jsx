@@ -9,7 +9,7 @@ const CTA = () => {
     <section className="w-full padding-x py-10 lg:py-20">
       <section className="w-full h-[410px] rounded-lg bg-[#212121]  overflow-hidden relative border group flex items-center justify-end">
         <section className="h-full text-white z-20 flex flex-col items-center text-center lg:items-start lg:text-start justify-center gap-5 w-full lg:w-[55%] p-4 lg:px-16 relative">
-          <Image
+          <img
             src={"/create-your-mobile-app-map.png"}
             alt="map image"
             width={600}
@@ -34,7 +34,7 @@ const CTA = () => {
         </section>
 
         <section className="w-[45%] h-[410px] z-10 relative hidden lg:block">
-          <Image
+          <img
             src={"/branding-and-design-cta-image-1.png"}
             alt="Branding and design mockup displaying logo concepts and visual identity style tiles"
             width={566}
@@ -42,7 +42,7 @@ const CTA = () => {
             loading="lazy"
             className="absolute right-[-6%] bottom-[-30%] w-[556px] h-[382px] z-20"
           />
-          <Image
+          <img
             src={"/branding-and-design-cta-image-2.png"}
             alt="Branding and design mockup showing final logo application on business collateral materials"
             width={566}
@@ -50,7 +50,7 @@ const CTA = () => {
             loading="lazy"
             className="absolute right-[-12%] bottom-[-15%] w-[556px] h-[382px] z-10 rotate-[8deg]"
           />
-          <Image
+          <img
             src={"/branding-and-design-cta-image-3.png"}
             alt="Branding and design mockup displaying packaging concepts and product label variations"
             width={566}

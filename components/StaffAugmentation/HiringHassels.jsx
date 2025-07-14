@@ -49,7 +49,7 @@ const HiringHassels = () => {
                     openFaq === index ? "red-bg" : "bg-white border"
                   } transition-all duration-300`}
                 >
-                  <Image
+                  <img
                     src={openFaq === index ? faq?.whiteIcon : faq?.icon}
                     width={faq?.width}
                     height={faq?.height}
@@ -60,7 +60,7 @@ const HiringHassels = () => {
                   {faq?.title}
                 </h5>
 
-                <Image
+                <img
                   src={"/staff-augmentation/arrow.png"}
                   width={23}
                   height={13}

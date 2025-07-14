@@ -181,7 +181,7 @@ const AnimatedLine = () => {
       </svg>
 
       <div className="absolute bottom-[14%] right-[-1%] items-center justify-center hidden lg:flex">
-        <Image
+        <img
           src={"/kotlin-rocket.png"}
           alt="Rocket"
           width={119}
@@ -224,7 +224,7 @@ const ProcessCard = ({ process, index }) => {
         }`}
       >
         <div className="w-full h-full bg-[#00AEFF] rounded-full flex items-center justify-center">
-          <Image
+          <img
             src={process?.icon}
             alt={process?.title}
             width={process?.iconWidth || 41}

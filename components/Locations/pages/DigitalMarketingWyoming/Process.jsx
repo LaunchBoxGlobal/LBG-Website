@@ -74,7 +74,7 @@ const AnimatedLine = () => {
         />
       </svg>
       <div className="absolute bottom-[22%] left-[-13.5%] items-center justify-center hidden lg:flex">
-        <Image
+        <img
           src={"/staff-augmentation/Rocket.png"}
           alt="Rocket"
           width={110}

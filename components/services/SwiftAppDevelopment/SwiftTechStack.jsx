@@ -24,7 +24,7 @@ const SwiftTechStack = () => {
               className="px-[16px] py-[14px] lg:py-[24px] rounded-[10px] flex items-center justify-center gap-2 group tech-stack-card"
               key={i}
             >
-              <Image
+              <img
                 src={t?.icon}
                 width={t?.width}
                 height={t?.height}

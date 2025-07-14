@@ -21,7 +21,7 @@ const HeroAnimation = () => {
       ref={ref}
       className="w-full h-[330px] md:h-[429px] xl:h-[529.23px] relative mx-auto flex justify-center items-end overflow-hidden"
     >
-      <Image
+      <img
         src={"/ecommerce-page-hero-borders-image.png"}
         alt="ecommerce-page-hero-borders-image"
         width={980.18}
@@ -96,7 +96,7 @@ const HeroAnimation = () => {
         </label>
       </div>
 
-      <Image
+      <img
         src={"/branding-and-design-right-card-1.png"}
         alt="branding-and-design-right-card-1"
         width={203}
@@ -104,7 +104,7 @@ const HeroAnimation = () => {
         className="absolute left-[5%] top-[10%] hidden lg:block w-[15%]"
       />
 
-      <Image
+      <img
         src={"/branding-and-design-leaderboard-card.png"}
         alt="branding-and-design-leaderboard-card"
         width={203}
@@ -113,7 +113,7 @@ const HeroAnimation = () => {
       />
 
       {/* rating card */}
-      <Image
+      <img
         src={"/branding-and-design-hero-rating-card.png"}
         alt="branding-and-design-hero-rating-card"
         width={309}
@@ -122,7 +122,7 @@ const HeroAnimation = () => {
       />
 
       <div className="w-[165px] h-[115px] absolute right-[7%] xl:right-[13%] bottom-[15%] hidden lg:flex items-center justify-center">
-        <Image
+        <img
           src={"/branding-and-design-tool-card.png"}
           alt="branding-and-design-tool-card"
           width={109}
@@ -130,7 +130,7 @@ const HeroAnimation = () => {
           className="w-[109px] h-[54px]"
         />
         {/* branding-and-design-cursor-image */}
-        <Image
+        <img
           src={"/branding-and-design-cursor-image.png"}
           alt="branding-and-design-cursor-image"
           width={29}

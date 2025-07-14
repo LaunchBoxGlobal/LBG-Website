@@ -57,7 +57,7 @@ const BlogCard = ({ content }) => {
             onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
             onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
           >
-            <Image
+            <img
               src={imageUrl}
               alt="blog image"
               width={416}

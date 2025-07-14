@@ -226,7 +226,7 @@ const ProcessCard = ({ process, index }) => {
         }`}
       >
         <div className="w-full h-full bg-[#5290F1] rounded-full flex items-center justify-center">
-          <Image
+          <img
             src={process?.icon}
             alt={process?.title}
             width={process?.iconWidth || 41}

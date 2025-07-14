@@ -182,7 +182,7 @@ const AnimatedLine = () => {
         />
       </svg>
       <div className="absolute bottom-[13%] lg:right-[-1%] items-center justify-center hidden lg:flex">
-        <Image
+        <img
           src={"/swift-rocket.png"}
           alt="Rocket"
           width={119}
@@ -225,7 +225,7 @@ const ProcessCard = ({ process, index }) => {
         }`}
       >
         <div className="w-full h-full bg-[#FF5034] rounded-full flex items-center justify-center">
-          <Image
+          <img
             src={process?.icon}
             alt={process?.title}
             width={process?.iconWidth || 41}

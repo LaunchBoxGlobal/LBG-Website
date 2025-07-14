@@ -13,7 +13,7 @@ const TechStackCard = ({ tech, index }) => {
         <div
           className={`w-[88px] h-[88px] bg-[#F40E00] rounded-full flex items-center justify-center z-10`}
         >
-          <Image
+          <img
             src={tech?.icon}
             alt={tech?.title}
             width={tech?.width}

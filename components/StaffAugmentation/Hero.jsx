@@ -30,7 +30,7 @@ const Hero = () => {
         {/* <HeroSearchInput /> */}
         <HeroAnimation />
 
-        <Image
+        <img
           src={"/staff-augmentation/hero-mask-1.png"}
           alt="hero-mask-1"
           width={467}
@@ -38,7 +38,7 @@ const Hero = () => {
           priority
           className="absolute object-contain right-0 top-24 z-0"
         />
-        <Image
+        <img
           src={"/staff-augmentation/hero-mask-image-left.png"}
           alt="hero mask image left"
           width={653}

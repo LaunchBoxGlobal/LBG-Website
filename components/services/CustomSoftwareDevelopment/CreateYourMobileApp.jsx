@@ -46,7 +46,7 @@ const CreateYourMobileApp = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="w-[188px] h-[371px] absolute right-[24%] top-[9%]"
           >
-            <Image
+            <img
               src={"/create-your-software-mobile-mockup.webp"}
               alt="create-your-software-mobile-mockup"
               width={148}
@@ -60,7 +60,7 @@ const CreateYourMobileApp = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="w-[228px] h-[371px] absolute left-[-6%] top-[-10%]"
           >
-            <Image
+            <img
               src={"/create-your-mobile-app-mockup-03.png"}
               alt="Custom software development mobile mockup showing app wireframes and prototype testing interface"
               width={148}
@@ -74,7 +74,7 @@ const CreateYourMobileApp = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="w-[121px] h-[38px] absolute right-[-3%] top-[14%]"
           >
-            <Image
+            <img
               src={"/create-your-software-icon-01.webp"}
               alt="create-your-software-icon-01"
               width={121}
@@ -88,7 +88,7 @@ const CreateYourMobileApp = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="w-[132px] h-[68px] absolute left-[2%] bottom-[8%]"
           >
-            <Image
+            <img
               src={"/create-your-software-icon-03.png"}
               alt="create-your-software-icon-01"
               width={121}
@@ -102,7 +102,7 @@ const CreateYourMobileApp = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="absolute right-[-8%] bottom-[-1.5%] w-[500px] h-[312px] hidden lg:block"
           >
-            <Image
+            <img
               src={"/create-your-software-dashboard-mockup.webp"}
               width={552}
               height={446}

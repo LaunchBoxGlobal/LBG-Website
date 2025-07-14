@@ -24,7 +24,7 @@ const IonicTechStack = () => {
               className="border px-4 py-4 rounded-lg flex items-center justify-center gap-2 group hover:border-[#00AEFF] hover:shadow-xl shadow-[#00AEFF40] transition-all duration-300"
               key={i}
             >
-              <Image
+              <img
                 src={t?.icon}
                 width={t?.iconWidth}
                 height={t?.iconHeight}
