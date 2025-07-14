@@ -77,7 +77,7 @@ export const BlogAuthorDetails = ({ author, date, readTime }) => {
       {author?.name && (
         <div className="flex items-center gap-2">
           <Image
-            src={author?.avatar_urls?.[96]}
+            src={author?.avatar_urls?.[96] || "/author-profile.jpg"}
             width={54}
             height={54}
             alt="author profile picture"
