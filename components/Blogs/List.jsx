@@ -13,7 +13,12 @@ const List = () => {
     setLoading(true);
     try {
       const res = await fetch(
-        "https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts"
+        "https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?_embed=author",
+        {
+          headers: {
+            Authorization: `Bearer DWK4UhkW*^@OACYDrZTCGF%nwYs!zk*Im3z0h1jVTllrTWh%92PHXq6OCCIKeJy2`,
+          },
+        }
       );
       const blogs = await res.json();
       setBlogs(blogs);

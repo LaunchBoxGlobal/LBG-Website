@@ -6,6 +6,7 @@ const nextConfig = {
       "assets.aceternity.com",
       "images.unsplash.com",
       "aceternity.com",
+      "secure.gravatar.com",
     ],
     remotePatterns: [
       {

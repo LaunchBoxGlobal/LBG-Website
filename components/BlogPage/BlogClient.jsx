@@ -23,6 +23,8 @@ const BlogClient = () => {
   const [blog, setBlog] = useState(null);
   const [headings, setHeadings] = useState([]);
   const [categories, setCategories] = useState(null);
+  const [author, setAuthor] = useState(null);
+  const [blogDate, setBlogDate] = useState(null);
 
   const fetchBlog = async () => {
     try {
@@ -34,8 +36,13 @@ const BlogClient = () => {
       }
 
       const res = await fetch(
-        `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?slug=${params.slug}`,
-        { cache: "no-store" }
+        `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?slug=${params.slug}&_embed=author`,
+        {
+          cache: "no-store",
+          headers: {
+            Authorization: `Bearer DWK4UhkW*^@OACYDrZTCGF%nwYs!zk*Im3z0h1jVTllrTWh%92PHXq6OCCIKeJy2`,
+          },
+        }
       );
 
       if (!res.ok) {
@@ -47,6 +54,9 @@ const BlogClient = () => {
       if (data && data.length > 0) {
         const blogData = data[0];
         setBlog(blogData);
+        console.log("blog date >>>>", data);
+        setAuthor(data[0]?._embedded?.author[0]);
+        setBlogDate(data[0]?.date);
 
         // Extract headings from HTML content
         const htmlString = blogData.content?.rendered || "";
@@ -143,7 +153,12 @@ const BlogClient = () => {
               {headings[0]}
             </Link>
           </div>
-          <SingleBlogPage blog={blog} headings={headings} />
+          <SingleBlogPage
+            blog={blog}
+            headings={headings}
+            author={author}
+            date={blogDate}
+          />
         </div>
         <div className="w-full col-span-1 relative pt-6">
           <div className="w-full sticky top-20 flex flex-col items-start gap-5 ">
