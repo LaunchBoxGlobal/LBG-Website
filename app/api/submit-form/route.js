@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export async function POST(request) {
   try {
     const body = await request.json();
-    // console.log("body >>", body);
+    console.log("body >>", body);
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
@@ -41,6 +41,16 @@ export async function POST(request) {
   ${
     body?.pageUrl
       ? `<p><strong>Submitted from:</strong> ${body.pageUrl}</p>`
+      : ""
+  } 
+  ${
+    body?.textMessagesCheckbox
+      ? `<p><strong>Recieve text messages:</strong> ${body.textMessagesCheckbox}</p>`
+      : ""
+  }
+  ${
+    body?.agreeToTermsConditions
+      ? `<p><strong>Agreed to terms & conditions:</strong> ${body.agreeToTermsConditions}</p>`
       : ""
   }
 `,

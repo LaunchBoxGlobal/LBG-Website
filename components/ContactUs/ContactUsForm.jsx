@@ -38,6 +38,8 @@ const ContactUsForm = () => {
       message: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form Website",
+      textMessagesCheckbox: false, // Added
+      agreeToTermsConditions: false, // Added
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -55,6 +57,14 @@ const ContactUsForm = () => {
         .min(100, "Message must be at least 100 characters")
         .max(500, "Message cannot exceed 500 characters")
         .required("Message is required"),
+      textMessagesCheckbox: Yup.boolean().oneOf(
+        [true],
+        "You must agree to receive texts"
+      ), // Required checked
+      agreeToTermsConditions: Yup.boolean().oneOf(
+        [true],
+        "You must agree to terms and conditions"
+      ),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
@@ -131,16 +141,6 @@ const ContactUsForm = () => {
                   </option>
                 );
               })}
-              {/* <option value="mobileAppDevelopment">
-                Mobile App Development
-              </option>
-              <option value="webAppDevelopment">Web App Development</option>
-              <option value="softwareDevelopment">Software Development</option>
-              <option value="ecommerceDevelopment">
-                E-Commerce Development
-              </option>
-              <option value="digitalMarketing">Digital Marketing</option>
-              <option value="brandingAndDesign">Branding & Designing</option> */}
             </select>
             {formik.touched.service && formik.errors.service ? (
               <div className="text-red-500 text-sm">
@@ -210,10 +210,58 @@ const ContactUsForm = () => {
             <div className="text-red-500 text-sm">{formik.errors.message}</div>
           ) : null}
         </div>
-        <div className="flex justify-end w-full">
+        <div className="flex flex-col gap-y-5 lg:flex-row justify-between w-full">
+          <div className="w-full md:max-w-[73%]">
+            <div className="w-full">
+              <div className="flex items-start gap-2">
+                <input
+                  type="checkbox"
+                  name="textMessagesCheckbox"
+                  id="textMessagesCheckbox"
+                  {...formik.getFieldProps("textMessagesCheckbox")}
+                />
+                <label
+                  htmlFor="textMessagesCheckbox"
+                  className="leading-[1] text-sm"
+                >
+                  By submitting your phone number, you agree to receiving texts
+                  from LaunchBox Global.
+                </label>
+              </div>
+              {formik.touched.textMessagesCheckbox &&
+              formik.errors.textMessagesCheckbox ? (
+                <div className="text-red-500 text-xs mt-1">
+                  {formik.errors.textMessagesCheckbox}
+                </div>
+              ) : null}
+            </div>
+            <div className="w-full">
+              <div className="flex items-start gap-2 mt-2">
+                <input
+                  type="checkbox"
+                  name="agreeToTermsConditions"
+                  id="agreeToTermsConditions"
+                  {...formik.getFieldProps("agreeToTermsConditions")}
+                />
+                <label
+                  htmlFor="agreeToTermsConditions"
+                  className="leading-[1] text-sm"
+                >
+                  By submitting , you agree to Privacy & Policy and Terms and
+                  Conditions from LaunchBox Global.
+                </label>
+              </div>
+              {formik.touched.agreeToTermsConditions &&
+              formik.errors.agreeToTermsConditions ? (
+                <div className="text-red-500 text-xs mt-1">
+                  {formik.errors.agreeToTermsConditions}
+                </div>
+              ) : null}
+            </div>
+          </div>
           <button
             type="submit"
-            className="bg-[#F40E00] text-white px-5 min-w-[220px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
+            className="bg-[#F40E00] text-white px-5 min-w-[223px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
           >
             {loading ? <ButtonLoader /> : "Schedule A Meeting"}
           </button>
