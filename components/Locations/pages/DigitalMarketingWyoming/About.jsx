@@ -14,7 +14,7 @@ const About = () => {
         <AnimatedText>
           <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
             LaunchBox Global is a full-service{" "}
-            <Link href={`digital marketing`} className="red-text">
+            <Link href={`/services/digital-marketing`} className="red-text">
               digital marketing
             </Link>{" "}
             and software development partner helping Wyoming businesses succeed

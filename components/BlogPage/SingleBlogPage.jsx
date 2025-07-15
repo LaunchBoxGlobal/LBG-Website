@@ -34,6 +34,7 @@ const SingleBlogPage = ({ blog, author, date }) => {
               author={author}
               date={date}
               readTime={readTime}
+              blog={blog}
             />
           </>
         );

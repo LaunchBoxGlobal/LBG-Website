@@ -61,7 +61,9 @@ const Services = () => {
               </h3>
               <p className="text-lg leading-[1.3]">
                 We deliver intuitive{" "}
-                <Link href={`/services/ui-ux-design`}>UI and UX design</Link>{" "}
+                <Link href={`/services/branding-and-design`}>
+                  UI and UX design
+                </Link>{" "}
                 that resonates with Florida users, prioritizing accessibility
                 and engagement through wireframes and interactive prototypes.
               </p>

@@ -54,7 +54,7 @@ const BlogClient = () => {
       if (data && data.length > 0) {
         const blogData = data[0];
         setBlog(blogData);
-        console.log("blog date >>>>", data);
+        // console.log("blog date >>>>", data);
         setAuthor(data[0]?._embedded?.author[0]);
         setBlogDate(data[0]?.date);
 

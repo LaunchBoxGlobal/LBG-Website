@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { useRef, useState } from "react";
 
-const BlogAuthorDetails = ({ author, date, readTime }) => {
+const BlogAuthorDetails = ({ author, date, readTime, blog }) => {
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const synthRef = useRef(null);
+
   function formatDate(dateString) {
     const date = new Date(dateString);
 
@@ -8,6 +12,56 @@ const BlogAuthorDetails = ({ author, date, readTime }) => {
 
     return date.toLocaleDateString("en-US", options);
   }
+
+  const handleSpeak = () => {
+    if (!blog?.content?.rendered) return;
+
+    // Stop any ongoing speech
+    window.speechSynthesis.cancel();
+
+    const plainText = blog.content.rendered.replace(/<[^>]+>/g, " ");
+    const utterance = new SpeechSynthesisUtterance(plainText);
+
+    utterance.rate = 1; // Normal speed
+    utterance.pitch = 1; // Normal pitch
+    utterance.volume = 1; // Max volume
+
+    // Start speaking
+    window.speechSynthesis.speak(utterance);
+    synthRef.current = utterance;
+
+    setIsSpeaking(true);
+
+    utterance.onend = () => {
+      setIsSpeaking(false);
+    };
+  };
+
+  const handlePause = () => {
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.pause();
+      setIsSpeaking(false);
+    }
+  };
+
+  const handleResume = () => {
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+      setIsSpeaking(true);
+    }
+  };
+
+  const toggleSpeech = () => {
+    if (isSpeaking) {
+      handlePause();
+    } else {
+      if (window.speechSynthesis.paused) {
+        handleResume();
+      } else {
+        handleSpeak();
+      }
+    }
+  };
 
   return (
     <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-5 my-10">
@@ -60,6 +114,9 @@ const BlogAuthorDetails = ({ author, date, readTime }) => {
           </div>
         </div>
       )}
+      {/* <button className="listen-btn" onClick={() => toggleSpeech()}>
+        {isSpeaking ? "⏸ Pause" : "▶️ Listen to Blog"}
+      </button> */}
     </div>
   );
 };
