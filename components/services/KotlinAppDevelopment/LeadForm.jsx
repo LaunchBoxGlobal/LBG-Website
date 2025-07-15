@@ -19,6 +19,8 @@ const LeadForm = ({ title, buttonTitle, colorfulText }) => {
       phoneNumber: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Service Page",
+      textMessagesCheckbox: false,
+      agreeToTermsConditions: false,
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -32,6 +34,8 @@ const LeadForm = ({ title, buttonTitle, colorfulText }) => {
         .min(10, "Must be 10 digits")
         .max(10, "Must be 10 digits")
         .required("Please enter your phone number"),
+      textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
+      agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
@@ -142,6 +146,51 @@ const LeadForm = ({ title, buttonTitle, colorfulText }) => {
                 {formik.errors.phoneNumber}
               </span>
             ) : null}
+          </div>
+        </div>
+        <div className="w-full">
+          <div className="w-full flex items-start gap-2">
+            <input
+              type="checkbox"
+              name="textMessagesCheckbox"
+              id="textMessagesCheckbox"
+              {...formik.getFieldProps("textMessagesCheckbox")}
+            />
+            <label
+              htmlFor="textMessagesCheckbox"
+              className="leading-[1.2] text-sm relative -top-0.5"
+            >
+              By submitting your phone number, you agree to receiving texts from
+              LaunchBox Global.
+              {formik.touched.textMessagesCheckbox &&
+                formik.errors.textMessagesCheckbox && (
+                  <span className="text-red-500 text-xl ml-1 relative -top-[2px]">
+                    *
+                  </span>
+                )}
+            </label>
+          </div>
+
+          <div className="w-full flex items-start gap-2 mt-2">
+            <input
+              type="checkbox"
+              name="agreeToTermsConditions"
+              id="agreeToTermsConditions"
+              {...formik.getFieldProps("agreeToTermsConditions")}
+            />
+            <label
+              htmlFor="agreeToTermsConditions"
+              className="leading-[1.2] text-sm relative -top-0.5"
+            >
+              By submitting, you agree to Privacy & Policy and Terms and
+              Conditions from LaunchBox Global.{" "}
+              {formik.touched.agreeToTermsConditions &&
+              formik.errors.agreeToTermsConditions ? (
+                <span className="text-red-500 text-xl relative leading-none">
+                  *
+                </span>
+              ) : null}
+            </label>
           </div>
         </div>
         <div className="w-full">

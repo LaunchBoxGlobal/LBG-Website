@@ -19,6 +19,8 @@ const BlogsContactForm = () => {
       message: "",
       phoneNumber: "",
       emailSubject: "New Contact Form From Blogs Archive Page",
+      textMessagesCheckbox: false,
+      agreeToTermsConditions: false,
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -36,6 +38,8 @@ const BlogsContactForm = () => {
         .min(100, "Must be 100 characters")
         .max(1000, "Can not be more than 1000 characters.")
         .required("Please enter your message."),
+      textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
+      agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
@@ -152,6 +156,56 @@ const BlogsContactForm = () => {
                   {formik.errors.message}
                 </span>
               ) : null}
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="w-full">
+              <div className="flex items-start gap-2">
+                <input
+                  type="checkbox"
+                  name="textMessagesCheckbox"
+                  id="textMessagesCheckbox"
+                  {...formik.getFieldProps("textMessagesCheckbox")}
+                />
+                <label
+                  htmlFor="textMessagesCheckbox"
+                  className="leading-[1] text-sm flex items-start relative"
+                >
+                  <span className="flex-1">
+                    By submitting your phone number, you agree to receiving
+                    texts from LaunchBox Global.
+                  </span>
+                  {formik.touched.textMessagesCheckbox &&
+                    formik.errors.textMessagesCheckbox && (
+                      <span className="text-red-500 text-2xl relative -top-2.5 leading-none">
+                        *
+                      </span>
+                    )}
+                </label>
+              </div>
+            </div>
+            <div className="w-full">
+              <div className="flex items-start gap-2 mt-2">
+                <input
+                  type="checkbox"
+                  name="agreeToTermsConditions"
+                  id="agreeToTermsConditions"
+                  {...formik.getFieldProps("agreeToTermsConditions")}
+                />
+                <label
+                  htmlFor="agreeToTermsConditions"
+                  className="leading-[1] text-sm flex items-start relative"
+                >
+                  By submitting , you agree to Privacy & Policy and Terms and
+                  Conditions from LaunchBox Global.{" "}
+                  {formik.touched.agreeToTermsConditions &&
+                  formik.errors.agreeToTermsConditions ? (
+                    <span className="text-red-500 text-2xl relative -top-2 leading-none">
+                      *
+                    </span>
+                  ) : null}
+                </label>
+              </div>
             </div>
           </div>
 

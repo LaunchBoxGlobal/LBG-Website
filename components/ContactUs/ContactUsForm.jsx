@@ -57,14 +57,8 @@ const ContactUsForm = () => {
         .min(100, "Message must be at least 100 characters")
         .max(500, "Message cannot exceed 500 characters")
         .required("Message is required"),
-      textMessagesCheckbox: Yup.boolean().oneOf(
-        [true],
-        "You must agree to receive texts"
-      ), // Required checked
-      agreeToTermsConditions: Yup.boolean().oneOf(
-        [true],
-        "You must agree to terms and conditions"
-      ),
+      textMessagesCheckbox: Yup.boolean().oneOf([true], "*"), // Required checked
+      agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
@@ -222,18 +216,20 @@ const ContactUsForm = () => {
                 />
                 <label
                   htmlFor="textMessagesCheckbox"
-                  className="leading-[1] text-sm"
+                  className="leading-[1] text-sm flex items-start relative"
                 >
-                  By submitting your phone number, you agree to receiving texts
-                  from LaunchBox Global.
+                  <span className="flex-1">
+                    By submitting your phone number, you agree to receiving
+                    texts from LaunchBox Global.
+                  </span>
+                  {formik.touched.textMessagesCheckbox &&
+                    formik.errors.textMessagesCheckbox && (
+                      <span className="text-red-500 text-2xl relative -top-2.5">
+                        *
+                      </span>
+                    )}
                 </label>
               </div>
-              {formik.touched.textMessagesCheckbox &&
-              formik.errors.textMessagesCheckbox ? (
-                <div className="text-red-500 text-xs mt-1">
-                  {formik.errors.textMessagesCheckbox}
-                </div>
-              ) : null}
             </div>
             <div className="w-full">
               <div className="flex items-start gap-2 mt-2">
@@ -245,18 +241,18 @@ const ContactUsForm = () => {
                 />
                 <label
                   htmlFor="agreeToTermsConditions"
-                  className="leading-[1] text-sm"
+                  className="leading-[1] text-sm flex items-start relative"
                 >
                   By submitting , you agree to Privacy & Policy and Terms and
-                  Conditions from LaunchBox Global.
+                  Conditions from LaunchBox Global.{" "}
+                  {formik.touched.agreeToTermsConditions &&
+                  formik.errors.agreeToTermsConditions ? (
+                    <span className="text-red-500 text-2xl relative -top-2">
+                      *
+                    </span>
+                  ) : null}
                 </label>
               </div>
-              {formik.touched.agreeToTermsConditions &&
-              formik.errors.agreeToTermsConditions ? (
-                <div className="text-red-500 text-xs mt-1">
-                  {formik.errors.agreeToTermsConditions}
-                </div>
-              ) : null}
             </div>
           </div>
           <button
