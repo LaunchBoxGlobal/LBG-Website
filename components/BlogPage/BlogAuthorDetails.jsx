@@ -67,7 +67,7 @@ const BlogAuthorDetails = ({ author, date, readTime, blog }) => {
     <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-y-5 my-10">
       {author?.name && (
         <div className="flex items-center gap-2">
-          <Image
+          <img
             src={author?.avatar_urls?.[96] || "/author-profile.jpg"}
             width={54}
             height={54}
@@ -84,7 +84,7 @@ const BlogAuthorDetails = ({ author, date, readTime, blog }) => {
       )}
       {date && (
         <div className="flex items-center gap-2">
-          <Image
+          <img
             src={"/blog-calendar-image.png"}
             alt="blog-calendar-image"
             width={54}
@@ -101,7 +101,7 @@ const BlogAuthorDetails = ({ author, date, readTime, blog }) => {
       )}
       {readTime && (
         <div className="flex items-center gap-2">
-          <Image
+          <img
             src={"/blog-estimated-read-time-image.png"}
             alt="blog testimated read time image"
             width={54}
