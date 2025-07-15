@@ -1,5 +1,3 @@
-// import BlogClient from "./BlogClient";
-
 import BlogClient from "@/components/BlogPage/BlogClient";
 import { BLOGS_METADATA } from "@/constants/blogs/blogsMetadata";
 import he from "he";

@@ -34,4 +34,10 @@ export const BLOGS_METADATA = {
     description:
       "Explore the leading tech firms in San Francisco shaping AI's future. Discover How these different innovators have transform industries with AI solutions.",
   },
+  "exploring-airbnb-like-apps-in-2025-top-suggestions-for-stress-free-vacation":
+    {
+      title: "Find Apps Like Airbnb: Book Rentals & Trips in 2025",
+      description:
+        "Discover the best similar to Airbnb apps in 2025 for convenient travel stays. Find warm homes, unique homes, and smooth bookings for your future travel.",
+    },
 };

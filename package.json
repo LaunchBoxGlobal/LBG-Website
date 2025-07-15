@@ -23,6 +23,7 @@
     "framer-motion": "^11.3.31",
     "gsap": "^3.12.7",
     "he": "^1.2.0",
+    "html-react-parser": "^5.2.5",
     "isomorphic-dompurify": "^2.23.0",
     "lenis": "^1.2.3",
     "next": "^14.2.24",
