@@ -3,6 +3,7 @@ import Navbar from "@/components/Global/Navbar";
 import HomeFooter from "@/components/Global/HomeFooter";
 import GoogleAnalytics from "@/lib/GoogleAnalytics";
 import Script from "next/script";
+import WhatsappButton from "@/components/Common/WhatsappButton";
 
 export default function RootLayout({ children }) {
   return (
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
           charSet="UTF-8"
           crossOrigin="*"
         />
+        {/* <WhatsappButton /> */}
         <HomeFooter />
       </body>
     </html>

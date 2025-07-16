@@ -45,4 +45,9 @@ export const BLOGS_METADATA = {
     description:
       "Don’t let a half-built mobile app hold you back. Here’s how to fix it, avoid costly setbacks, and get your product in users’ hands without any headaches.",
   },
+  "the-ultimate-guide-to-choosing-the-best-ui-kits-for-designers": {
+    title: "Best UI Kits for Designers: Top Picks & How to Choose",
+    description:
+      "Discover the best UI kits for designers in 2024 - compare free vs premium options, key features, and pro tips for selecting the perfect kit for your projects.",
+  },
 };
