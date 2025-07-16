@@ -234,17 +234,33 @@ summary::marker {
 }
 
 .blogGrayCta {
-  padding: clamp(12px, 2rem, 2rem);
+  padding: clamp(12px, 2.5rem, 2.5rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(233, 232, 232);
+  border-radius: 16px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.blogGrayCta div {
+  max-width: 80%;
+  /* border: 1px solid black; */
 }
 
 .blogGrayCta div h3 {
   font-weight: 600;
   font-size: clamp(25px, 1.8rem, 2.3rem);
   margin-bottom: 10px;
+  @apply tracking-tight leading-[1];
+}
+
+.blogGrayCta div p {
+  font-weight: 400;
+  font-size: clamp(16px, 18px, 20px);
+  /* margin-bottom: 10px; */
+  @apply tracking-tight leading-[1];
 }
 
 .blogGrayCta a {
@@ -253,6 +269,7 @@ summary::marker {
   font-weight: 700;
   padding: 1rem 1.5rem;
   border-radius: 8px;
+  min-width: 200px;
 }
 
 .blogBlackCta {
