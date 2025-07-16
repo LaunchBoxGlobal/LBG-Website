@@ -308,3 +308,7 @@ summary::marker {
   max-width: max-content;
   margin-top: 1rem;
 }
+
+.blogContent nav {
+  display: none !important;
+}
