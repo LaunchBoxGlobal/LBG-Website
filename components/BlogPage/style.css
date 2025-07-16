@@ -270,6 +270,7 @@ summary::marker {
   padding: 1rem 1.5rem;
   border-radius: 8px;
   min-width: 200px;
+  text-align: center;
 }
 
 .blogBlackCta {
@@ -313,6 +314,7 @@ summary::marker {
   font-weight: 700;
   padding: 1rem 1.5rem;
   border-radius: 8px;
+  text-align: center;
 }
 
 .blogRedButton {
