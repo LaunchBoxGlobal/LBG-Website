@@ -63,9 +63,9 @@ const HomeHero = () => {
         <ContactButton text={"Get a Free Consultation"} />
       </div>
 
-      <div className="w-full flex items-center justify-center z-0">
+      {/* <div className="w-full flex items-center justify-center z-0">
         <GlobeDemo />
-      </div>
+      </div> */}
 
       {/* <Image
         src={"/hero-globe-02.webp"}
@@ -76,14 +76,14 @@ const HomeHero = () => {
         className="h-[109px] md:h-[160px] w-[95%] lg:hidden relative bottom-[-25%]"
       /> */}
 
-      <Image
+      {/* <Image
         src={"/image-glow-optimized.webp"}
         width={1710}
         height={359}
         alt="globe shadow image"
         loading="lazy"
         className="w-[100%] h-[109px] lg:h-[359px] 2xl:h-[409px] absolute -bottom-16 md:-bottom-14 lg:bottom-[-33%] xl:bottom-[-25%] 2xl:-bottom-[22%] z-30 opacity-100"
-      />
+      /> */}
     </section>
   );
 };

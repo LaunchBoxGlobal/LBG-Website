@@ -6,7 +6,7 @@
 
 * {
   font-family: "Outfit", serif !important;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 html {
