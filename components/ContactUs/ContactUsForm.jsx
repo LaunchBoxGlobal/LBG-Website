@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import ButtonLoader from "../Global/ButtonLoader";
+import Link from "next/link";
 
 const serviceLinks = [
   "Mobile App Development",
@@ -243,8 +244,18 @@ const ContactUsForm = () => {
                   htmlFor="agreeToTermsConditions"
                   className="leading-[1] text-sm flex items-start relative"
                 >
-                  By submitting , you agree to Privacy & Policy and Terms and
-                  Conditions from LaunchBox Global.{" "}
+                  By submitting , you agree to{" "}
+                  <Link href={`/privacy-policy`} className="underline mx-1">
+                    Privacy & Policy
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    href={`/terms-and-conditions`}
+                    className="underline mx-1"
+                  >
+                    Terms and Conditions
+                  </Link>{" "}
+                  from LaunchBox Global.{" "}
                   {formik.touched.agreeToTermsConditions &&
                   formik.errors.agreeToTermsConditions ? (
                     <span className="text-red-500 text-2xl relative -top-2">

@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import ButtonLoader from "@/components/Global/ButtonLoader";
+import Link from "next/link";
 
 const LeadForm = ({ title, buttonTitle, colorfulText }) => {
   const [loading, setLoading] = useState(false);
@@ -182,8 +183,14 @@ const LeadForm = ({ title, buttonTitle, colorfulText }) => {
               htmlFor="agreeToTermsConditions"
               className="leading-[1.2] text-sm relative -top-0.5"
             >
-              By submitting, you agree to Privacy & Policy and Terms and
-              Conditions from LaunchBox Global.{" "}
+              By submitting, you agree to{" "}
+              <Link href={`/privacy-policy`} className="underline">
+                Privacy & Policy
+              </Link>{" "}
+              and{" "}
+              <Link href={`/terms-and-conditions`} className="underline">
+                Terms and Conditions
+              </Link>{" "}
               {formik.touched.agreeToTermsConditions &&
               formik.errors.agreeToTermsConditions ? (
                 <span className="text-red-500 text-xl relative leading-none">

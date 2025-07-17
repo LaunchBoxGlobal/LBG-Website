@@ -128,7 +128,7 @@ const HomeFooter = () => {
       <div className="w-full padding-x">
         <div className="w-full my-16 border border-neutral-800" />
       </div>
-      <FooterBadges />
+      {/* <FooterBadges /> */}
 
       <section className="w-full flex flex-col items-center gap-5 justify-center mt-10 lg:mt-20 relative">
         <Image
