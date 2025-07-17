@@ -50,4 +50,9 @@ export const BLOGS_METADATA = {
     description:
       "Discover the best UI kits for designers in 2024 - compare free vs premium options, key features, and pro tips for selecting the perfect kit for your projects.",
   },
+  "your-development-team-disappeared-mid-project-it-happens-heres-what-to-do": {
+    title: "Development Team Vanished? How to Recover Your Project Fast",
+    description:
+      "Your development team disappeared mid-project? Learn proven strategies to recover quickly, prevent future risks, and keep your software project on track.",
+  },
 };
