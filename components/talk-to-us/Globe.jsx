@@ -91,7 +91,7 @@ function Globe({ globeConfig, data }) {
         .hexPolygonsData(countries.features)
         .hexPolygonResolution(3)
         .hexPolygonMargin(0.8)
-        .showAtmosphere(defaultProps.showAtmosphere)
+        // .showAtmosphere(defaultProps.showAtmosphere)
         .atmosphereColor(defaultProps.atmosphereColor)
         .atmosphereAltitude(defaultProps.atmosphereAltitude)
         .hexPolygonColor((e) => {
@@ -134,15 +134,15 @@ function Globe({ globeConfig, data }) {
       .pointAltitude(0.0)
       .pointRadius(2);
 
-    globeRef.current
-      .ringsData([])
-      .ringColor((e) => (t) => e.color(t))
-      .ringMaxRadius(defaultProps.maxRings)
-      .ringPropagationSpeed(RING_PROPAGATION_SPEED)
-      .ringRepeatPeriod(
-        (defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings
-      );
-    animationFrameId = requestAnimationFrame(startAnimation);
+    // globeRef.current
+    //   .ringsData([])
+    //   .ringColor((e) => (t) => e.color(t))
+    //   .ringMaxRadius(defaultProps.maxRings)
+    //   .ringPropagationSpeed(RING_PROPAGATION_SPEED)
+    //   .ringRepeatPeriod(
+    //     (defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings
+    //   );
+    // animationFrameId = requestAnimationFrame(startAnimation);
   };
 
   useEffect(() => {
