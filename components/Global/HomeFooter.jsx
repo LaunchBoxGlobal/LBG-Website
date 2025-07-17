@@ -130,7 +130,25 @@ const HomeFooter = () => {
       </div>
       {/* <FooterBadges /> */}
 
-      <section className="w-full flex flex-col items-center gap-5 justify-center mt-10 lg:mt-20 relative">
+      <div className="w-full flex items-center justify-center gap-3">
+        <Link
+          href={`/privacy-policy`}
+          className="text-sm md:text-base font-semibold opacity-70 z-10 relative top-5"
+        >
+          Privacy Policy
+        </Link>
+        <span className="text-sm md:text-base font-medium opacity-70 z-10 relative top-5">
+          |
+        </span>
+        <Link
+          href={`/terms-and-conditions`}
+          className="text-sm md:text-base font-medium opacity-70 z-10 relative top-5"
+        >
+          Terms & Conditions
+        </Link>
+      </div>
+
+      <section className="w-full flex flex-col items-center gap-5 justify-center mt-7 relative">
         <Image
           src={"/footer-lb-image.png"}
           alt="footer-lb-image"
