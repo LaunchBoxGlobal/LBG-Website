@@ -28,7 +28,7 @@ const HomeServiceCard = ({ service, index, openFaq, toggleFaq }) => {
             }`}
           >{`(${index + 1 === 10 ? index + 1 : `0${index + 1}`})`}</span>
         </div>
-        <Image
+        <img
           src={service?.image}
           width={service?.img_width}
           height={service?.img_height}
