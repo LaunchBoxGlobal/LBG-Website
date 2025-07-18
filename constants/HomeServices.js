@@ -49,8 +49,8 @@ export const HOME_SERVICES = [
     image: "/home-software-development-service-image.png",
     title: "Software Development",
     desc: "Your business is unique, and your software should be too. With custom software development services, get tailored solutions that could fix your exact needs. Whether it’s automating tasks, improving efficiency, or scaling operations, the correct software could make a difference. There are no unnecessary features, just the tools that are used perfectly and built specifically for your business requirements.",
-    img_width: 332,
-    img_height: 363,
+    img_width: 312,
+    img_height: 343,
     tags: [
       "Research",
       "Logo Designing",
@@ -126,8 +126,8 @@ export const HOME_SERVICES = [
     image: "/home-branding-and-design-service-mockup.png",
     title: "Branding & Designing",
     desc: "Your brand is how people remember you. With branding & designing services, create a strong identity that connects with the customers. From the logos to the entire brand strategy, every small detail matters. Clear, creative, and eye-catching designs that helps build trust, and make you stand out from the competition.",
-    img_width: 330,
-    img_height: 304,
+    img_width: 310,
+    img_height: 284,
     tags: [
       "Audit",
       "Planning",

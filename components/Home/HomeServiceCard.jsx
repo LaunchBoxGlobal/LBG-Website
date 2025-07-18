@@ -46,7 +46,7 @@ const HomeServiceCard = ({ service, index, openFaq, toggleFaq }) => {
               : "lg:left-[9%] xl:left-[7%]"
           } z-10 ${
             openFaq === index
-              ? "lg:top-[5%] top-[10%] rotate-0 visible"
+              ? "lg:top-[10%] top-[10%] rotate-0 visible"
               : `invisible group-hover:visible`
           }`}
         />
