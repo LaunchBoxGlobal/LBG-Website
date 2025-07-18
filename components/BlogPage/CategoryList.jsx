@@ -18,7 +18,10 @@ const CategoryList = ({ categories }) => {
                   className="font-normal underline text-lg flex items-start gap-2 leading-[1.3]"
                 >
                   <div className="min-w-[14px] min-h-[14px] h-[14px] w-[14px] bg-[#F40E00] mt-1.5" />
-                  <span className="text-[#434343]">{h?.name}</span>
+                  <span
+                    className="text-[#434343]"
+                    dangerouslySetInnerHTML={{ __html: h?.name }}
+                  ></span>
                 </Link>
               );
             })}

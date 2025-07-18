@@ -55,4 +55,9 @@ export const BLOGS_METADATA = {
     description:
       "Your development team disappeared mid-project? Learn proven strategies to recover quickly, prevent future risks, and keep your software project on track.",
   },
+  "outsourcing-vs-offshoring-the-key-differences": {
+    title: "Outsourcing vs Offshoring: Key Differences & How to Choose",
+    description:
+      "Outsourcing vs offshoring: Compare cost, control & scalability. Learn which model fits your business needs with real-world examples & expert insights.",
+  },
 };
