@@ -1,7 +1,8 @@
 export const HOME_SERVICES = [
   {
     // image: "/mobile-app-development-service.webp",
-    image: "/home-page-mobile-app-development-service-image.png",
+    // image: "/home-page-mobile-app-development-service-image.png",
+    image: "/home-mobile-app-development-service-image.png",
     img_width: 191,
     img_height: 325,
     title: "Mobile App Development",
