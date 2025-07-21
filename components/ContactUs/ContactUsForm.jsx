@@ -39,7 +39,7 @@ const ContactUsForm = () => {
       message: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form Website",
-      textMessagesCheckbox: false, // Added
+      // textMessagesCheckbox: false, // Added
       agreeToTermsConditions: false, // Added
     },
     validationSchema: Yup.object({
@@ -58,7 +58,7 @@ const ContactUsForm = () => {
         .min(100, "Message must be at least 100 characters")
         .max(500, "Message cannot exceed 500 characters")
         .required("Message is required"),
-      textMessagesCheckbox: Yup.boolean().oneOf([true], "*"), // Required checked
+      // textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
       agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
     }),
     onSubmit: async (values, { resetForm }) => {
@@ -205,8 +205,8 @@ const ContactUsForm = () => {
             <div className="text-red-500 text-sm">{formik.errors.message}</div>
           ) : null}
         </div>
-        <div className="flex flex-col gap-y-5 lg:flex-row justify-between w-full">
-          <div className="w-full md:max-w-[73%]">
+        {/* <div className="flex flex-col gap-y-5 lg:flex-row justify-between w-full"> */}
+        {/* <div className="w-full md:max-w-[73%]">
             <div className="w-full">
               <div className="flex items-start gap-2">
                 <input
@@ -242,30 +242,62 @@ const ContactUsForm = () => {
                 />
                 <label
                   htmlFor="agreeToTermsConditions"
-                  className="leading-[1] text-sm flex items-start relative"
+                  className="leading-[1.3] text-sm relative -top-0.5"
                 >
-                  By submitting , you agree to{" "}
+                  By checking this box, I agree to receive SMS from LaunchBox
+                  Global at the phone number provided. Msg & data rates may
+                  apply. Msg frequency varies. For help, reply HELP or email us
+                  at hello@launchboxglobal.com. You can opt out at any time by
+                  replying STOP.{" "}
                   <Link href={`/privacy-policy`} className="underline mx-1">
                     Privacy & Policy
                   </Link>{" "}
-                  and{" "}
+                  &{" "}
                   <Link
                     href={`/terms-and-conditions`}
                     className="underline mx-1"
                   >
                     Terms and Conditions
                   </Link>{" "}
-                  from LaunchBox Global.{" "}
+                  from LaunchBox Global.
                   {formik.touched.agreeToTermsConditions &&
                   formik.errors.agreeToTermsConditions ? (
-                    <span className="text-red-500 text-2xl relative -top-2">
-                      *
-                    </span>
+                    <span className="text-red-500 text-2xl absolute">*</span>
                   ) : null}
                 </label>
               </div>
             </div>
-          </div>
+          </div> */}
+        <div className="flex items-start gap-2">
+          <input
+            type="checkbox"
+            name="agreeToTermsConditions"
+            id="agreeToTermsConditions"
+            {...formik.getFieldProps("agreeToTermsConditions")}
+          />
+          <label
+            htmlFor="agreeToTermsConditions"
+            className="leading-[1.3] text-sm relative -top-0.5"
+          >
+            By checking this box, I agree to receive SMS from LaunchBox Global
+            at the phone number provided. Msg & data rates may apply. Msg
+            frequency varies. For help, reply HELP or email us at
+            hello@launchboxglobal.com. You can opt out at any time by replying
+            STOP.{" "}
+            <Link href={`/privacy-policy`} className="underline mx-1">
+              Privacy & Policy
+            </Link>{" "}
+            &{" "}
+            <Link href={`/terms-and-conditions`} className="underline mx-1">
+              Terms and Conditions.
+            </Link>{" "}
+            {formik.touched.agreeToTermsConditions &&
+            formik.errors.agreeToTermsConditions ? (
+              <span className="text-red-500 text-2xl absolute">*</span>
+            ) : null}
+          </label>
+        </div>
+        <div className="w-full flex justify-end mt-3">
           <button
             type="submit"
             className="bg-[#F40E00] text-white px-5 min-w-[223px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
@@ -273,6 +305,7 @@ const ContactUsForm = () => {
             {loading ? <ButtonLoader /> : "Schedule A Meeting"}
           </button>
         </div>
+        {/* </div> */}
       </form>
     </section>
   );

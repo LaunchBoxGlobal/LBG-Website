@@ -20,7 +20,7 @@ const LeadForm = ({ title, buttonTitle }) => {
       phoneNumber: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Service Page",
-      textMessagesCheckbox: false,
+      // textMessagesCheckbox: false,
       agreeToTermsConditions: false,
     },
     validationSchema: Yup.object({
@@ -35,7 +35,7 @@ const LeadForm = ({ title, buttonTitle }) => {
         .min(10, "Must be 10 digits")
         .max(10, "Must be 10 digits")
         .required("Please enter your phone number"),
-      textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
+      // textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
       agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
     }),
     onSubmit: async (values, { resetForm }) => {
@@ -149,58 +149,36 @@ const LeadForm = ({ title, buttonTitle }) => {
             ) : null}
           </div>
         </div>
-        <div className="w-full">
-          <div className="w-full flex items-start gap-2">
-            <input
-              type="checkbox"
-              name="textMessagesCheckbox"
-              id="textMessagesCheckbox"
-              {...formik.getFieldProps("textMessagesCheckbox")}
-            />
-            <label
-              htmlFor="textMessagesCheckbox"
-              className="leading-[1.2] text-sm relative -top-0.5"
-            >
-              By submitting your phone number, you agree to receiving texts from
-              LaunchBox Global.
-              {formik.touched.textMessagesCheckbox &&
-                formik.errors.textMessagesCheckbox && (
-                  <span className="text-red-500 text-xl ml-1 relative -top-[2px]">
-                    *
-                  </span>
-                )}
-            </label>
-          </div>
-
-          <div className="w-full flex items-start gap-2 mt-2">
-            <input
-              type="checkbox"
-              name="agreeToTermsConditions"
-              id="agreeToTermsConditions"
-              {...formik.getFieldProps("agreeToTermsConditions")}
-            />
-            <label
-              htmlFor="agreeToTermsConditions"
-              className="leading-[1.2] text-sm relative -top-0.5"
-            >
-              By submitting, you agree to{" "}
-              <Link href={`/privacy-policy`} className="underline">
-                Privacy & Policy
-              </Link>{" "}
-              and{" "}
-              <Link href={`/terms-and-conditions`} className="underline">
-                Terms and Conditions
-              </Link>{" "}
-              from LaunchBox Global.{" "}
-              {formik.touched.agreeToTermsConditions &&
-              formik.errors.agreeToTermsConditions ? (
-                <span className="text-red-500 text-xl relative leading-none">
-                  *
-                </span>
-              ) : null}
-            </label>
-          </div>
+        <div className="flex items-start gap-2">
+          <input
+            type="checkbox"
+            name="agreeToTermsConditions"
+            id="agreeToTermsConditions"
+            {...formik.getFieldProps("agreeToTermsConditions")}
+          />
+          <label
+            htmlFor="agreeToTermsConditions"
+            className="leading-[1.3] text-sm relative -top-0.5"
+          >
+            By checking this box, I agree to receive SMS from LaunchBox Global
+            at the phone number provided. Msg & data rates may apply. Msg
+            frequency varies. For help, reply HELP or email us at
+            hello@launchboxglobal.com. You can opt out at any time by replying
+            STOP.{" "}
+            <Link href={`/privacy-policy`} className="underline mx-1">
+              Privacy & Policy
+            </Link>{" "}
+            &{" "}
+            <Link href={`/terms-and-conditions`} className="underline mx-1">
+              Terms and Conditions.
+            </Link>{" "}
+            {formik.touched.agreeToTermsConditions &&
+            formik.errors.agreeToTermsConditions ? (
+              <span className="text-red-500 text-2xl absolute">*</span>
+            ) : null}
+          </label>
         </div>
+
         <div className="w-full">
           <button
             type="submit"

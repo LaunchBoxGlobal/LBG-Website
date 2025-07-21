@@ -67,6 +67,10 @@ const HomeHero = () => {
         <GlobeDemo />
       </div>
 
+      {/* <div className="w-full h-[300px] border border-black relative">
+        <Image src={`/globe.gif`} alt="globe.gif" width={1920} height={1080} />
+      </div> */}
+
       {/* <Image
         src={"/hero-globe-02.webp"}
         width={410}

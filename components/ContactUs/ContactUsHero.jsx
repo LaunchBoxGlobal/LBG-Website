@@ -9,7 +9,7 @@ const ContactUsHero = () => {
         Great Things Start <br /> With a{" "}
         <span className="red-text">Conversation!</span>
       </h1>
-      <p className="text-base lg:text-[24px] md:w-2/3 text-center 2xl:text-[30px] font-light lg:leading-[36px] text-gray-400 lg:w-[70%] xl:w-1/2">
+      <p className="text-base lg:text-[24px] md:w-2/3 text-center 2xl:text-[30px] font-light leading-[1.1] text-gray-400 lg:w-[70%] xl:w-1/2">
         Let's start with a simple action. Share your idea with us, and we’ll
         help you make it amazing.
       </p>

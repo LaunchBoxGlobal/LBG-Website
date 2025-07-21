@@ -44,11 +44,6 @@ export async function POST(request) {
       : ""
   } 
   ${
-    body?.textMessagesCheckbox
-      ? `<p><strong>Recieve text messages:</strong> ${body.textMessagesCheckbox}</p>`
-      : ""
-  }
-  ${
     body?.agreeToTermsConditions
       ? `<p><strong>Agreed to terms & conditions:</strong> ${body.agreeToTermsConditions}</p>`
       : ""
