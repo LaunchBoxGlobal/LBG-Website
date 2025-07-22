@@ -1,7 +1,5 @@
 export const HOME_SERVICES = [
   {
-    // image: "/mobile-app-development-service.webp",
-    // image: "/home-page-mobile-app-development-service-image.png",
     image: "/home-mobile-app-development-image.png",
     img_width: 191,
     img_height: 325,
@@ -24,7 +22,6 @@ export const HOME_SERVICES = [
     pageUrl: "/services/mobile-app-development",
   },
   {
-    // image: "/home-web-app-development-service-image.png",
     image: "/home-web-app-development-service-image.png",
     title: "Web App Development",
     desc: "Strong web app development keeps your business running efficiently. With web app development services, you get custom-built fast, secure, and user-friendly solutions for customers or internal teams. A well-designed web app improves workflows, boosts engagement, and delivers user experience.",
@@ -45,7 +42,6 @@ export const HOME_SERVICES = [
     pageUrl: "/services/web-app-development",
   },
   {
-    // image: "/software-development.png",
     image: "/home-software-development-service-image.png",
     title: "Software Development",
     desc: "Your business is unique, and your software should be too. With custom software development services, get tailored solutions that could fix your exact needs. Whether it’s automating tasks, improving efficiency, or scaling operations, the correct software could make a difference. There are no unnecessary features, just the tools that are used perfectly and built specifically for your business requirements.",
@@ -65,7 +61,6 @@ export const HOME_SERVICES = [
     pageUrl: "/services/custom-software-development",
   },
   {
-    // image: "/ecommerce-development-service.png",
     image: "/home-ecommerce-app-development-service-image.png",
     title: "E-Commerce Development",
     desc: "Selling online should be simple and effective with e-commerce app development services. Create an easy-to-use store that helps customers find, buy, and return with confidence. Create a secure and fast mobile-friendly platform that ensures smooth shopping experiences. Build an online store that grows your business and keeps customers coming back.",
@@ -87,30 +82,7 @@ export const HOME_SERVICES = [
       "Mobile app mockup showing custom software engineering services for smooth ecommerce experience and user interface.",
     pageUrl: "/services/ecommerce-development",
   },
-  // {
-  //   image: "/uiux-design-service.png",
-  //   title: "UI/UX Design",
-  //   desc: "Good design makes things easier to use. UI/UX design services create smooth and appealing experiences for websites or apps. Easy navigation, clear layouts, engaging designs keep users happy and make them want to experience again. A great interface improves satisfaction and boosts conversions.",
-  //   img_width: "34.17",
-  //   img_height: "28",
-  //   tags: [
-  //     "HTML",
-  //     "CSS",
-  //     "JavaScript",
-  //     "Angular",
-  //     "Tailwind CSS",
-  //     "PHP",
-  //     "Express.js",
-  //     "Django",
-  //     "Laravel",
-  //     "AWS",
-  //   ],
-  //   alt_tag: "ui ux design image",
-  //   pageUrl: "/",
-  // },
-
   {
-    // image: "/home-page-digital-marketing-service-image.png",
     image: "/home-digital-marketing-service-mockup.png",
     title: "Digital Marketing",
     desc: "Reaching the right online audience takes approach and ability. With digital marketing services, visibility can be boosted through SEO, paid ads, and social media. Also, drive traffic and lead generation and turn your visitors into loyal customers. A strong digital presence that helps your business grow and stay ahead in a competitive online world.",
@@ -122,7 +94,6 @@ export const HOME_SERVICES = [
     pageUrl: "/services/digital-marketing",
   },
   {
-    // image: "/branding-and-design-service.png",
     image: "/home-branding-and-design-service-mockup.png",
     title: "Branding & Designing",
     desc: "Your brand is how people remember you. With branding & designing services, create a strong identity that connects with the customers. From the logos to the entire brand strategy, every small detail matters. Clear, creative, and eye-catching designs that helps build trust, and make you stand out from the competition.",
@@ -140,21 +111,4 @@ export const HOME_SERVICES = [
       "Branding and design showcase for AURLEN featuring minimalist logo presentation and visual identity elements.",
     pageUrl: "/services/branding-and-design",
   },
-  // {
-  //   image: "/maintenance-and-consutling-service.png",
-  //   title: "Maintenance & Support ",
-  //   desc: "It is essential to keep your software up to date. With maintenance and consulting services, you can get expert support, daily updates, and security fixes to make sure everything runs smoothly. Do you need expert guidance regarding tech strategy? Get clear advice to make well-informed choices and improve performance without any technical issues.",
-  //   img_width: "36",
-  //   img_height: "26.31",
-  //   tags: [
-  //     "Figma",
-  //     "Wireframes",
-  //     "Prototyping",
-  //     "Brand Guide Lines",
-  //     "Color Scheme",
-  //     "Sketches",
-  //   ],
-  //   alt_tag: "maintenance & consulting image",
-  //   pageUrl: "/",
-  // },
 ];
