@@ -4,7 +4,7 @@ import React from "react";
 const CategoryList = ({ categories }) => {
   return (
     categories && (
-      <div className="w-full bg-[#fafafa] border border-[#E9E9E9] p-5 lg:p-7 rounded-[15px]">
+      <div className="w-full bg-[#fafafa] border border-[#E9E9E9] p-5 lg:p-7 rounded-[15px] hidden lg:block">
         <h3 className="font-bold text-lg border-b-2 border-[#F40E00] pb-2 w-1/2">
           All Categories
         </h3>

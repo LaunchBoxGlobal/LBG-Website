@@ -60,4 +60,9 @@ export const BLOGS_METADATA = {
     description:
       "Outsourcing vs offshoring: Compare cost, control & scalability. Learn which model fits your business needs with real-world examples & expert insights.",
   },
+  "want-to-hire-developers-heres-what-you-must-know-first": {
+    title: "Hire Developers Right: What Every Founder Should Know",
+    description:
+      "Ready to hire developers? Learn how to pick the right team, avoid costly mistakes, and build your app with confidence. Must-know tips for founders inside.",
+  },
 };

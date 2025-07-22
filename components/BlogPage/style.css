@@ -235,32 +235,34 @@ summary::marker {
 
 .blogGrayCta {
   padding: clamp(12px, 2.5rem, 2.5rem);
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   background-color: rgb(233, 232, 232);
   border-radius: 16px;
   margin-top: 2rem;
   flex-wrap: wrap;
+  @apply flex flex-col lg:flex-row items-center justify-between;
 }
 
 .blogGrayCta div {
-  max-width: 80%;
-  /* border: 1px solid black; */
+  /* max-width: 80%; */
+  @apply w-full lg:max-w-[65%]
+  /* border: 1px solid black; */;
 }
 
 .blogGrayCta div h3 {
   font-weight: 600;
   font-size: clamp(25px, 1.8rem, 2.3rem);
   margin-bottom: 10px;
-  @apply tracking-tight leading-[1];
+  @apply tracking-tight leading-[1] text-center lg:text-start;
 }
 
 .blogGrayCta div p {
   font-weight: 400;
   font-size: clamp(16px, 18px, 20px);
   /* margin-bottom: 10px; */
-  @apply tracking-tight leading-[1];
+  @apply tracking-tight leading-[1] text-center lg:text-start;
 }
 
 .blogGrayCta a {
@@ -296,9 +298,9 @@ summary::marker {
 
 .blogBlackCta h3 {
   font-weight: 700;
-  font-size: clamp(25px, 2.8rem, 2.8rem);
+  /* font-size: clamp(25px, 2.8rem, 2.8rem); */
   margin-bottom: 10px;
-  @apply leading-[0.9] max-w-[90%] text-center mx-auto;
+  @apply leading-[1] max-w-[90%] text-center mx-auto text-2xl md:text-3xl lg:text-4xl midlg:text-5xl;
 }
 
 .blogBlackCta p {

@@ -162,7 +162,6 @@ const BlogClient = () => {
         </div>
         <div className="w-full col-span-1 relative pt-6">
           <div className="w-full sticky top-20 flex flex-col items-start gap-5 ">
-            {/* <RecentBlogList blogs={blogs} blog={blog} /> */}
             <SubscribeNewLetterForm />
             <TableOfContent headings={headings} />
             <CategoryList headings={headings} categories={categories} />
