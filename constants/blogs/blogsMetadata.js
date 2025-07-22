@@ -65,4 +65,10 @@ export const BLOGS_METADATA = {
     description:
       "Ready to hire developers? Learn how to pick the right team, avoid costly mistakes, and build your app with confidence. Must-know tips for founders inside.",
   },
+  "7-reasons-to-choose-launchbox-global-for-digital-marketing-and-software-development-services":
+    {
+      title: "Software Development Services | LaunchBox Global Solutions",
+      description:
+        "LaunchBox Global delivers top-tier Software Development Services with custom solutions for startups & enterprises. Get scalable, secure apps + integrated digital marketing.",
+    },
 };
