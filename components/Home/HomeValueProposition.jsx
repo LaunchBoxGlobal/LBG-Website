@@ -98,7 +98,7 @@ export default HomeValueProposition;
 function SwiperButtons() {
   const swiper = useSwiper();
   return (
-    <section className="w-max flex items-center justify-center gap-3 lg:gap-1 absolute bottom-[0px] left-[43%] mx-auto z-40">
+    <section className="w-max flex items-center justify-center gap-3 lg:gap-1 absolute bottom-[0px] left-1/2 -translate-x-1/2 mx-auto z-40">
       <button
         type="button"
         name="swipe left button"
