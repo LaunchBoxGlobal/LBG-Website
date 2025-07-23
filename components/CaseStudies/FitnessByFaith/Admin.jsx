@@ -6,14 +6,12 @@ const Admin = () => {
     <section className="w-full padding-x flex flex-col items-center">
       <h2 className="section-heading">Admin Dashboard</h2>
       <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
-        BlooM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
+        For trainers and admins, we built a dashboard that feels like a personal
+        command center. Updating workouts? Drag, drop, done. Adding new meal
+        plans? It takes minutes, not emails to developers. Even managing live
+        session schedules or answering user questions happens in one place. It
+        gave the team freedom to keep content fresh and respond fast. All
+        without slowing down their day or touching a single line of code.
       </p>
 
       <Image

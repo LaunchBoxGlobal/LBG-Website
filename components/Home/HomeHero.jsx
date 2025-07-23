@@ -23,7 +23,7 @@ const words = [
 const HomeHero = () => {
   // text-[34px] lg:text-[64px] xl:text-[84px] 2xl:text-[100px]
   return (
-    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 lg:gap-[25px] overflow-hidden">
+    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-[85vh] md:h-auto lg:h-[100vh] lg:gap-[25px] overflow-hidden">
       <h1 className="font-bold text-[9vw] md:text-[5.5vw] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
@@ -63,33 +63,13 @@ const HomeHero = () => {
         <ContactButton text={"Get a Free Consultation"} />
       </div>
 
-      {/* <div className="w-full flex items-center justify-center z-0">
+      <div className="w-full flex items-center justify-center z-0">
         <GlobeDemo />
-      </div> */}
-
-      <div className="w-full max-h-[250px] lg:max-h-[250px] overflow-hidden relative flex items-start justify-center">
-        <video
-          width="880"
-          height="468"
-          autoPlay
-          muted
-          loop
-          controls={false}
-          className="w-[85%] lg:w-[65%]"
-        >
-          <source src="/rotating-globe.mp4" type="video/mp4" />
-          {/* <source src="movie.ogg" type="video/ogg"/> */}
-        </video>
-
-        <Image
-          src={"/image-glow-optimized.webp"}
-          width={1710}
-          height={359}
-          alt="globe shadow image"
-          priority
-          className="w-[100%] h-[109px] md:h-[259px] lg:h-[359px] absolute bottom-[-40%] md:bottom-[-60%] lg:bottom-[-85%] left-1/2 -translate-x-1/2 z-30 opacity-100"
-        />
       </div>
+
+      {/* <div className="w-full h-[300px] border border-black relative">
+        <Image src={`/globe.gif`} alt="globe.gif" width={1920} height={1080} />
+      </div> */}
 
       {/* <Image
         src={"/hero-globe-02.webp"}
@@ -99,6 +79,15 @@ const HomeHero = () => {
         priority
         className="h-[109px] md:h-[160px] w-[95%] lg:hidden relative bottom-[-25%]"
       /> */}
+
+      <Image
+        src={"/image-glow-optimized.webp"}
+        width={1710}
+        height={359}
+        alt="globe shadow image"
+        loading="lazy"
+        className="w-[100%] h-[109px] lg:h-[359px] 2xl:h-[409px] absolute -bottom-16 md:-bottom-14 lg:bottom-[-33%] xl:bottom-[-25%] 2xl:-bottom-[22%] z-30 opacity-100"
+      />
     </section>
   );
 };
