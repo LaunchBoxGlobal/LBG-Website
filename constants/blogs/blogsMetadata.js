@@ -71,7 +71,7 @@ export const BLOGS_METADATA = {
       description:
         "LaunchBox Global delivers top-tier Software Development Services with custom solutions for startups & enterprises. Get scalable, secure apps + integrated digital marketing.",
     },
-  "you-paid-$10k-and-still-do’t-have-an-mvp-here’s-why": {
+  "you-paid-10k-and-still-dot-have-an-mvp-heres-why": {
     title: "MVP Development Cost Guide| Avoid Overpaying & Build Smart",
     description:
       "Wasted $10k+ on MVP development? Learn key factors affecting MVP cost, hidden fees, & how to build a lean product for 30-50% less. Get expert strategies now.",
