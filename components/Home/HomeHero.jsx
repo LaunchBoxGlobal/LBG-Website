@@ -67,15 +67,15 @@ const HomeHero = () => {
         <GlobeDemo />
       </div> */}
 
-      <div className="w-full max-h-[250px] lg:max-h-[300px] overflow-hidden relative flex items-start justify-center">
+      <div className="w-full max-h-[250px] lg:max-h-[250px] overflow-hidden relative flex items-start justify-center border border-black">
         <video
-          width="1080"
-          height="768"
+          width="880"
+          height="468"
           autoPlay
           muted
           loop
           controls={false}
-          className="w-[85%]"
+          className="w-[85%] lg:w-[65%]"
         >
           <source src="/rotating-globe.mp4" type="video/mp4" />
           {/* <source src="movie.ogg" type="video/ogg"/> */}
@@ -87,7 +87,7 @@ const HomeHero = () => {
           height={359}
           alt="globe shadow image"
           priority
-          className="w-[100%] h-[109px] md:h-[259px] lg:h-[359px] absolute bottom-[-40%] md:bottom-[-60%] lg:bottom-[-75%] left-1/2 -translate-x-1/2 z-30 opacity-100"
+          className="w-[100%] h-[109px] md:h-[259px] lg:h-[359px] absolute bottom-[-40%] md:bottom-[-60%] lg:bottom-[-85%] left-1/2 -translate-x-1/2 z-30 opacity-100"
         />
       </div>
 
