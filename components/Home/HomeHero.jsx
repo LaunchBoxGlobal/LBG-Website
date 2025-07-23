@@ -67,7 +67,7 @@ const HomeHero = () => {
         <GlobeDemo />
       </div> */}
 
-      <div className="w-full max-h-[250px] lg:max-h-[250px] overflow-hidden relative flex items-start justify-center border border-black">
+      <div className="w-full max-h-[250px] lg:max-h-[250px] overflow-hidden relative flex items-start justify-center">
         <video
           width="880"
           height="468"
