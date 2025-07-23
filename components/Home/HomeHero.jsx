@@ -67,19 +67,6 @@ const HomeHero = () => {
         <GlobeDemo />
       </div>
 
-      {/* <div className="w-full h-[300px] border border-black relative">
-        <Image src={`/globe.gif`} alt="globe.gif" width={1920} height={1080} />
-      </div> */}
-
-      {/* <Image
-        src={"/hero-globe-02.webp"}
-        width={410}
-        height={239}
-        alt="globe image"
-        priority
-        className="h-[109px] md:h-[160px] w-[95%] lg:hidden relative bottom-[-25%]"
-      /> */}
-
       <Image
         src={"/image-glow-optimized.webp"}
         width={1710}
