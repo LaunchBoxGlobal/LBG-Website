@@ -13,6 +13,7 @@ import CTA from "./CTA";
 import OtherCaseStudies from "./OtherCaseStudies";
 import "./style.css";
 import BloomCta from "./BloomCta";
+import Admin from "./Admin";
 
 const BloomCaseStudyPage = () => {
   return (
@@ -117,6 +118,10 @@ const BloomCaseStudyPage = () => {
         <div className="w-full border" />
       </div>
       <BrandIdentity />
+      <div className="w-full padding-x">
+        <div className="w-full border" />
+      </div>
+      <Admin />
       <div className="w-full padding-x">
         <div className="w-full border" />
       </div>

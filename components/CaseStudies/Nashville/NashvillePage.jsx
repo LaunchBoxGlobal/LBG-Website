@@ -11,6 +11,7 @@ import Image from "next/image";
 import Outcomes from "./Outcomes";
 import "./style.css";
 import Banner2 from "./Banner2";
+import Admin from "./Admin";
 
 const NashvillePage = () => {
   return (
@@ -43,7 +44,13 @@ const NashvillePage = () => {
 
       <TechAndTools />
       <Banner2 />
-
+      <div className="w-full padding-x">
+        <div className="w-full border" />
+      </div>
+      <Admin />
+      <div className="w-full padding-x">
+        <div className="w-full border" />
+      </div>
       <Outcomes />
     </main>
   );

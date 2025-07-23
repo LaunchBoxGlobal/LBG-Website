@@ -13,6 +13,7 @@ import GenericSoftware from "./GenericSoftware";
 import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import TechStack from "@/components/Common/TechStack";
 import Platforms from "@/components/Common/Platforms";
+import ServicePageForm from "@/components/Common/ServicePageForm";
 
 const MobileAppDevelopmentPage = () => {
   return (
@@ -37,6 +38,7 @@ const MobileAppDevelopmentPage = () => {
       <FlagsAnimation />
       <MobileAppDevFaqs />
       <MobileAppDevContactForm />
+      {/* <ServicePageForm /> */}
     </main>
   );
 };

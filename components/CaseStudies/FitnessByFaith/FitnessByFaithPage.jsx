@@ -11,6 +11,7 @@ import Outcome from "./Outcome";
 import CTA from "./CTA";
 import OtherCaseStudies from "../Bloom/OtherCaseStudies";
 import Banner2 from "./Banner2";
+import Admin from "./Admin";
 
 const FitnessByFaithPage = () => {
   return (
@@ -40,6 +41,13 @@ const FitnessByFaithPage = () => {
         <div className="w-full border" />
       </div>
       <Banner2 />
+      <div className="w-full padding-x">
+        <div className="w-full border" />
+      </div>
+      <Admin />
+      <div className="w-full padding-x">
+        <div className="w-full border" />
+      </div>
       <Outcome />
       <CTA />
       <OtherCaseStudies />
