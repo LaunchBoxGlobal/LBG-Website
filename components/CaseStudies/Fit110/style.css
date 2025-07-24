@@ -29,3 +29,7 @@
   @apply bg-black text-white px-10 lg:px-16 py-3 rounded-[9px] text-center text-[22px] font-bold;
   box-shadow: rgba(10, 8, 8, 0.2) 12px 12px 29px 10px;
 }
+
+.fit110-marketing {
+  box-shadow: rgba(210, 39, 53, 0.2) 7px 20px 29px 10px;
+}

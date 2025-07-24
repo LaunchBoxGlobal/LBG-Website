@@ -5,7 +5,7 @@ const MarketingSection = () => {
   return (
     <section className="w-full relative">
       <section className="w-full relative padding-x max-w-[1270px] mx-auto min-h-[523px]">
-        <div className="fit110-red-bg w-full lg:w-[422px] h-[121px] rounded-[19px]  mx-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2 z-10 flex items-center justify-center">
+        <div className="fit110-red-bg w-full lg:w-[422px] h-[121px] rounded-[19px]  mx-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2 z-10 flex items-center justify-center fit110-marketing">
           <h2 className="text-[22px] lg:text-[30px] font-bold text-center text-white leading-[1]">
             When Marketing Meets Structure
           </h2>
