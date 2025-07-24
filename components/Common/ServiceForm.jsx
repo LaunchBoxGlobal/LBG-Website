@@ -18,6 +18,7 @@ const ServiceForm = ({ title, buttonTitle }) => {
       firstName: "",
       email: "",
       phoneNumber: "",
+      description: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Service Page",
       // textMessagesCheckbox: false,
@@ -37,6 +38,10 @@ const ServiceForm = ({ title, buttonTitle }) => {
         .required("Please enter your phone number"),
       // textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
       agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
+      description: Yup.string()
+        .min(3, "Description can not be less than 3 characters")
+        .max(250, "Description can not be more than 250 characters")
+        .required("Please enter description"),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
@@ -130,6 +135,32 @@ const ServiceForm = ({ title, buttonTitle }) => {
             value={formik.values.phoneNumber}
             className="pb-2 pt-1 block w-full border-b border-gray-300 bg-transparent lg:text-lg outline-none"
           />
+          <div className="w-full">
+            {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+              <span className="text-xs red-text">
+                {formik.errors.phoneNumber}
+              </span>
+            ) : null}
+          </div>
+        </div>
+        <div className="w-full">
+          <label
+            htmlFor="description"
+            className="block text-sm font-normal text-gray-300"
+          >
+            Description
+          </label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="3"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.description}
+            className="pb-2 pt-1 block w-full border-b border-gray-300 bg-transparent lg:text-lg outline-none"
+          ></textarea>
+
           <div className="w-full">
             {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
               <span className="text-xs red-text">

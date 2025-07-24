@@ -64,7 +64,7 @@ const BlogCard = ({ content }) => {
               height={286}
               className="w-full blog-card-img rounded-[12px]"
             />
-            <div className="w-full absolute flex items-center gap-2 bottom-4 inset-x-0 px-4">
+            {/* <div className="w-full absolute flex items-center gap-2 bottom-4 inset-x-0 px-4">
               {content?.date && (
                 <div className="w-[145px] bg-white h-[36px] rounded-[20px] flex items-center justify-center gap-2 px-1">
                   <Image
@@ -78,16 +78,7 @@ const BlogCard = ({ content }) => {
                   </span>
                 </div>
               )}
-              {/* <div className="w-[95px] bg-white h-[36px] rounded-[20px] flex items-center justify-center gap-2 px-1">
-                <Image
-                  src={"/blog-card-blog-icon.png"}
-                  width={15}
-                  height={18}
-                  alt="blog-card-blog-icon"
-                />
-                <span className="text-base lg:text-lg font-semibold">Blog</span>
-              </div> */}
-            </div>
+            </div> */}
           </div>
         )}
         {blogTitle && (

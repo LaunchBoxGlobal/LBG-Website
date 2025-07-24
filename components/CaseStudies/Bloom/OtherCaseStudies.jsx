@@ -50,7 +50,7 @@ const OtherCaseStudies = () => {
                   width={403}
                   height={380}
                   alt={`${c?.title}-featured-image`}
-                  className="h-[380px] object-cover"
+                  className="h-[380px] object-cover rounded-3xl"
                 />
                 <h3 className="text-lg md:text-xl lg:text-2xl">{c?.title}</h3>
               </div>
