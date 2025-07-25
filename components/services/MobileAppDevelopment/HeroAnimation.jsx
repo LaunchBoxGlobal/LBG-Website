@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import HeroSlidingMobileMockups from "./HeroSlidingMobileMockups";
 
 const HeroAnimation = () => {
   return (
@@ -165,37 +166,7 @@ const HeroAnimation = () => {
         </div>
       </div>
 
-      {/* mobile app mockup */}
-      <div className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 z-10 flex items-end justify-center h-[446px] lg:h-[646px] mockup-container">
-        <img
-          src="/mobile-app-mockup-mobile-app-development-1.png"
-          alt="mobile-app-mockup-mobile-app-development"
-          width={318}
-          height={646}
-        />
-        <img
-          src="/mobile-app-mockup-mobile-app-development-2.png"
-          alt="mobile-app-mockup-mobile-app-development"
-          width={318}
-          height={646}
-        />
-        <img
-          src="/mobile-app-mockup-mobile-app-development-3.png"
-          alt="mobile-app-mockup-mobile-app-development"
-          width={318}
-          height={646}
-        />
-        <img
-          src="/mobile-app-mockup-mobile-app-development-4.png"
-          alt="mobile-app-mockup-mobile-app-development"
-          width={318}
-          height={646}
-        />
-        {/* mobile-app-mockup-mobile-app-development-2
-        mobile-app-mockup-mobile-app-development-3
-        mobile-app-mockup-mobile-app-development-4
-         */}
-      </div>
+      <HeroSlidingMobileMockups />
     </div>
   );
 };

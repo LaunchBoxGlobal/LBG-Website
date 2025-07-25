@@ -1,23 +1,39 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 
 const floatingText = [
-  "right workflow, ",
-  "smart execution, ",
-  "long-term value, ",
-  "winning strategy, ",
+  "right workflow,",
+  "smart execution,",
+  "long-term value,",
+  "winning strategy,",
 ];
 
 const SlidingFormText = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
+  const itemRefs = useRef([]);
+  const [offsets, setOffsets] = useState([]);
 
+  // Calculate offsets to center each phrase
+  useEffect(() => {
+    if (containerRef.current && itemRefs.current.length) {
+      const containerWidth = containerRef.current.offsetWidth;
+      const newOffsets = itemRefs.current.map((el) => {
+        const itemWidth = el.offsetWidth;
+        return (containerWidth - itemWidth) / 2; // Centering offset
+      });
+      setOffsets(newOffsets);
+    }
+  }, []);
+
+  // Auto-change current phrase
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) =>
         prev === floatingText.length - 1 ? 0 : prev + 1
       );
-    }, 3000); // Change every 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -28,12 +44,20 @@ const SlidingFormText = () => {
         Your app idea deserves
       </h2>
 
-      {/* Animated heading */}
-      <div className="relative w-full h-[60px] lg:h-[80px] overflow-hidden">
+      {/* Sliding text container */}
+      <div
+        ref={containerRef}
+        className="relative w-full h-[60px] lg:h-[80px] max-w-[555px] overflow-hidden"
+      >
         <motion.div
-          className="flex"
+          className="flex gap-2"
           animate={{
-            x: `-${currentIndex * 100}%`,
+            x: offsets.length
+              ? -itemRefs.current
+                  .slice(0, currentIndex)
+                  .reduce((acc, el, i) => acc + el.offsetWidth + 24, 0) +
+                offsets[currentIndex]
+              : 0,
           }}
           transition={{
             x: { type: "spring", stiffness: 70, damping: 20 },
@@ -42,11 +66,10 @@ const SlidingFormText = () => {
           {floatingText.map((text, index) => (
             <span
               key={index}
-              className={`min-w-full text-start whitespace-nowrap text-[36px] lg:text-[60px] font-semibold leading-[1] z-10 transition-colors duration-300 ${
-                index === currentIndex
-                  ? "text-white" // Center one is white
-                  : "text-gray-400" // Sides are gray
-              }`}
+              ref={(el) => (itemRefs.current[index] = el)}
+              className={`whitespace-nowrap text-[36px] lg:text-[60px] font-semibold leading-[1] z-10 transition-colors duration-300 ${
+                index === 3 && index === currentIndex && "pl-5"
+              } ${index === currentIndex ? "text-white" : "text-gray-400"}`}
             >
               {text}
             </span>
