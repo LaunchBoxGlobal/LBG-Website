@@ -43,8 +43,8 @@ export default {
         },
       },
       animation: {
-        "spin-slow": "spinSlowReverse 40s linear infinite",
-        "spin-slower": "spinSlow 40s linear infinite",
+        "spin-slow": "spinSlowReverse 30s linear infinite",
+        "spin-slower": "spinSlow 30s linear infinite",
       },
     },
   },

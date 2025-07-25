@@ -6,7 +6,7 @@ import HeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
-    <section className="w-full relative overflow-x-hidden pt-36 2xl:pt-52">
+    <section className="w-full relative overflow-hidden pt-36 2xl:pt-52">
       <section className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden padding-x">
         <p className="text-xl font-bold red-text">Your Reliable Partner</p>
         <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-[1] w-full">

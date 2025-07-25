@@ -298,7 +298,7 @@ const Location = ({ selectedTab, closeDropdown }) => {
       pageUrl: "/wyoming-digital-marketing",
     },
     {
-      title: "Seo Company in Cheyenne",
+      title: "SEO Company in Cheyenne",
       pageUrl: "/cheyenne-seo-company",
     },
   ];
