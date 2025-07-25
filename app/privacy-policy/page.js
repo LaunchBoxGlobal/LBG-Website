@@ -3,7 +3,7 @@ import React from "react";
 import "../terms-and-conditions/style.css";
 
 export const metadata = {
-  title: "Terms & Conditions | LaunchBox Global",
+  title: "Privacy Policy | LaunchBox Global",
   description: "",
 };
 

@@ -35,7 +35,7 @@ const CTA = () => {
 
         <section className="w-[45%] h-[410px] z-10 relative hidden lg:block">
           <img
-            src={"/branding-and-design-cta-image-1.png"}
+            src={"/branding-and-design-cta-image-1.webp"}
             alt="Branding and design mockup displaying logo concepts and visual identity style tiles"
             width={566}
             height={382}
