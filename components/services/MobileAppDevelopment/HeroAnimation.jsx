@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroAnimation = () => {
   return (
-    <div className="w-full h-[546px] relative flex items-center justify-center overflow-hidden">
+    <div className="w-full h-[380px] lg:h-[546px] relative flex items-center justify-center overflow-hidden">
       <div className="w-full absolute z-20 h-2 mobile-app-dev-glow top-0 inset-x-0"></div>
       <div className="lg:w-[800px] lg:h-[800px] xl:w-[1013px] xl:h-[1013px] rounded-full border-[6px] border-gray-100 absolute -bottom-[10%] left-1/2 -translate-x-1/2 hidden lg:block">
         {/* Angular icon wrapper animate-spin-slow*/}
@@ -76,7 +76,7 @@ const HeroAnimation = () => {
       </div>
 
       {/* mobile app mockup */}
-      <div className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 z-10 flex items-end justify-center mockup-container">
+      <div className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 z-10 flex items-end justify-center h-[446px] lg:h-[646px] mockup-container">
         <img
           src="/mobile-app-mockup-mobile-app-development-1.png"
           alt="mobile-app-mockup-mobile-app-development"

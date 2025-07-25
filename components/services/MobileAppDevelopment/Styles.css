@@ -341,8 +341,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 318px; /* width of the mockup */
-  height: 646px; /* height of the mockup */
+  width: 318px;
+  /* height: 646px; */
   margin: 0 auto;
 }
 
