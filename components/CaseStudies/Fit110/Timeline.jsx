@@ -17,7 +17,7 @@ const Timeline = () => {
           <div className="flex flex-col items-start gap-1">
             <p className="text-lg text-gray-500">The Milestones</p>
             <p className="text-[18px] lg:text-[20px] font-bold">
-              4 Months of Daily Momentum
+              Built in 672 Dedicated Hours
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Timeline = () => {
           <div className="flex flex-col items-start gap-1">
             <p className="text-lg text-gray-500">The Sector</p>
             <p className="text-[18px] lg:text-[20px] font-bold">
-              Health, Fitness & Nutrition
+              E-commerce Development
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Timeline = () => {
           <div className="flex flex-col items-start gap-1">
             <p className="text-lg text-gray-500">What We Did</p>
             <p className="text-[18px] lg:text-[20px] font-bold">
-              Mobile App Development
+              E-Commerce, Branding & Digital Marketing
             </p>
           </div>
         </div>

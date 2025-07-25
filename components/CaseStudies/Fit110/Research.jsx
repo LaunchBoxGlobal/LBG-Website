@@ -12,9 +12,9 @@ const Research = () => {
           The First Step: Research
         </h2>
         <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
-          We followed a clear agile workflow. The plan was not to overcomplicate
-          things; we planned to keep it simple. We made fast decisions, kept
-          moving, and built without getting stuck in the usual mess.
+          Before we started coding, we made sure that we understood the market.
+          Who is going to buy and why do they need to buy it? Here’s how we
+          started working on Fit 110.
         </p>
       </section>
 

@@ -21,29 +21,29 @@ const MarketingSection = () => {
 
         <div className="w-full flex flex-col lg:flex-row items-start justify-center lg:gap-4 mt-10 lg:mt-20 midlg:mt-20">
           <div className="w-full lg:w-[240px] midlg:w-[284px] xl:w-[304px] p-5 rounded-[17px] h-[188px] border-[4px] border-white flex items-center justify-center bg-gray-100 lg:bg-transparent z-20">
-            <p className="text-base xl:text-[20px] leading-[1.2] text-center">
+            <p className="text-base xl:text-[18px] leading-[1.2] text-center">
               We didn’t overlook marketing in the process. We set the foundation
               of fitness marketing for long-term visibility.
             </p>
           </div>
           <div className="w-full lg:w-[240px] midlg:w-[284px] xl:w-[304px] p-5 rounded-[17px] h-[188px] border-[4px] border-white flex items-center justify-center bg-gray-100 lg:bg-transparent z-20">
-            <p className="text-base xl:text-[20px] leading-[1.2] text-center">
-              We didn’t overlook marketing in the process. We set the foundation
-              of fitness marketing for long-term visibility.
+            <p className="text-base xl:text-[18px] leading-[1.2] text-center">
+              We started with keyword research to make sure Fit 110 appears
+              where it matters in the functional fitness equipment market.
             </p>
           </div>
         </div>
         {/* card 01 */}
         <div className="w-full lg:w-[240px] midlg:w-[284px] xl:w-[304px] p-5 rounded-[17px] h-[188px] border-[4px] border-white flex items-center justify-center bg-gray-100 lg:bg-transparent z-20 lg:absolute top-[180px] left-0 2xl:top-[160px]">
-          <p className="text-base xl:text-[20px] leading-[1.2] text-center">
-            We didn’t overlook marketing in the process. We set the foundation
-            of fitness marketing for long-term visibility.
+          <p className="text-base xl:text-[18px] leading-[1.2] text-center">
+            Then came product sourcing, spotlighting the right health gadgets
+            and medical gadgets for the audience.
           </p>
         </div>
         <div className="w-full lg:w-[240px] midlg:w-[284px] xl:w-[304px] p-5 rounded-[17px] h-[188px] border-[4px] border-white flex items-center justify-center bg-gray-100 lg:bg-transparent z-20 lg:absolute top-[180px] right-0 2xl:top-[160px]">
-          <p className="text-base xl:text-[20px] leading-[1.2] text-center">
-            We didn’t overlook marketing in the process. We set the foundation
-            of fitness marketing for long-term visibility.
+          <p className="text-base xl:text-[18px] leading-[1.2] text-center">
+            Our initial SEO setup handled all the essentials. Covering the
+            basics like metadata and setting up Health and wellness SEO.
           </p>
         </div>
       </section>

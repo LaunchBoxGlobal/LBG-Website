@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import MobileImageSlider from "./MobileImageSlider";
 import ContactButton from "@/components/Global/ContactButton";
+import HeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
@@ -23,6 +24,7 @@ const Hero = () => {
       <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
         <MobileImageSlider />
       </div>
+      {/* <HeroAnimation /> */}
       <Image
         src={"/mobile-app-dev-mobile-mockups-min.webp"}
         className="w-full object-contain h-[220px] lg:hidden"

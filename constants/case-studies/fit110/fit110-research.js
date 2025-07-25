@@ -2,7 +2,7 @@ export const FIT110_RESEARCH_STEPS = [
   {
     title: "Studied the Fitness Market",
     description:
-      "Before we started coding, we made sure that we understood the market. Who is going to buy and why do they need to buy it? Here’s how we started working on Fit 110. ",
+      "We learned about the functional fitness equipment market to understand what buyers care about so we can build a website that checks all the boxes.",
   },
   {
     title: "Looked at Competitor Stores",
@@ -22,7 +22,7 @@ export const FIT110_RESEARCH_STEPS = [
   {
     title: "Analyzed High-Converting Sites",
     description:
-      "Looking at the structure of strong marketing websites and top digital media company stores gave us ideas on what converts. From CTA placement to how product benefits are framed.",
+      "Looking at the structure of strong marketing websites and top digital media company stores gave us ideas on what converts from CTA placement to how product benefits are framed.",
   },
   {
     title: "Set Up the SEO + Tech Foundation",

@@ -25,7 +25,7 @@ const Tech = () => {
         <h2 className="section-heading">Powered to Perform</h2>
         <p className="text-center lg:w-[85%] text-base lg:text-xl mt-7">
           We selected tools that made it possible for the website to perform
-          well, load fast, be easy to  manage. Just a clean, smart setup that
+          well, load fast, be easy to manage. Just a clean, smart setup that
           runs like it should.
         </p>
       </section>

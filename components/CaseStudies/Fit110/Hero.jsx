@@ -24,10 +24,10 @@ const Hero = () => {
           that does everything at once. DEKO manufactures reliable tools &
           equipment, and they needed a website that felt just as solid. We built
           Fit 110 with expert tips for great fitness marketing because smart web
-          design and digital marketing make all the difference. 
+          design and digital marketing make all the difference.
         </p>
         <p className="text-xl text-center lg:w-[90%]">
-          The final site? Useful and high performing. 
+          The final site? Useful and high performing.
         </p>
 
         <div className="w-full flex justify-center mt-5">
