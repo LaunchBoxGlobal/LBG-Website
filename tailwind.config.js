@@ -32,6 +32,20 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        spinSlow: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        spinSlowReverse: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg)" },
+        },
+      },
+      animation: {
+        "spin-slow": "spinSlowReverse 40s linear infinite",
+        "spin-slower": "spinSlow 40s linear infinite",
+      },
     },
   },
   plugins: [],

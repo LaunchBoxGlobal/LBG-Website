@@ -34,7 +34,7 @@
   font-size: clamp(14px, 18px, 20px);
   line-height: 1.35;
   color: #434343 !important;
-  /* text-align: justify; */
+  text-align: justify;
 }
 
 .blogContent ol {

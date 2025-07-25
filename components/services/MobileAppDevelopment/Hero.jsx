@@ -21,11 +21,11 @@ const Hero = () => {
           <ContactButton text={"Get a Free Consultation"} />
         </div>
       </section>
-      <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
+      {/* <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
         <MobileImageSlider />
-      </div>
-      {/* <HeroAnimation /> */}
-      <Image
+      </div> */}
+      <HeroAnimation />
+      {/* <Image
         src={"/mobile-app-dev-mobile-mockups-min.webp"}
         className="w-full object-contain h-[220px] lg:hidden"
         alt="mobile-app-dev-mobile-mockups"
@@ -33,7 +33,7 @@ const Hero = () => {
         height={280}
         priority
         style={{ width: "100%" }}
-      />
+      /> */}
     </section>
   );
 };

@@ -337,3 +337,82 @@
 }
 
 /* orbitting animation */
+.mockup-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 318px; /* width of the mockup */
+  height: 646px; /* height of the mockup */
+  margin: 0 auto;
+}
+
+.mockup-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  animation: fadeCycle 16s linear infinite;
+}
+
+/* Stagger each image by 4s */
+.mockup-container img:nth-child(1) {
+  animation-delay: 0s;
+}
+.mockup-container img:nth-child(2) {
+  animation-delay: 4s;
+}
+.mockup-container img:nth-child(3) {
+  animation-delay: 8s;
+}
+.mockup-container img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+/* Keyframes for fading */
+@keyframes fadeCycle {
+  0%,
+  5% {
+    opacity: 0;
+  }
+  5%,
+  25% {
+    opacity: 1;
+  }
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.red-shadow {
+  box-shadow: #f40e00 0px 0px 30px 0px;
+}
+
+.mobile-app-dev-glow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 8px; /* Thickness of the glow line */
+  background: transparent;
+}
+
+.mobile-app-dev-glow::after {
+  content: "";
+  position: absolute;
+  top: -30px; /* How far the glow spreads above the line */
+  left: 0;
+  width: 100%;
+  height: 60px; /* Height of glow effect */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0)
+  );
+  filter: blur(15px);
+  opacity: 1;
+  pointer-events: none;
+}
