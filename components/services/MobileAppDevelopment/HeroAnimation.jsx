@@ -31,7 +31,7 @@ const HeroAnimation = () => {
               alt="mobile-app-dev-github-icon"
               width={35}
               height={35}
-              className="object-contain w-[40px]"
+              className="object-contain w-[40px] -rotate-[75deg]"
             />
           </div>
         </div>
@@ -43,7 +43,7 @@ const HeroAnimation = () => {
               alt="ios-icon"
               width={35}
               height={35}
-              className="object-contain w-[40px]"
+              className="object-contain w-[40px] rotate-90"
             />
           </div>
         </div>
