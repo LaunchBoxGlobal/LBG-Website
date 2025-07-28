@@ -5,7 +5,7 @@ import HeroSlidingMobileMockups from "./HeroSlidingMobileMockups";
 const HeroAnimation = () => {
   return (
     <div className="w-full h-[300px] md:h-[496px] lg:h-[596px] relative flex items-center justify-center overflow-hidden">
-      {/* shadow/glow image on top */}
+      {/* shadow/glow image on */}
       <img
         src="/white-glow.png"
         alt="white-glow"

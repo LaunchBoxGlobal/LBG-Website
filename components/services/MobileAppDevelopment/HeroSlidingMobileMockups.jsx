@@ -5,7 +5,7 @@ const HeroSlidingMobileMockups = () => {
     <div className="absolute bottom-[-40%] lg:bottom-[-25%] left-1/2 -translate-x-1/2 z-10 flex items-end justify-center h-auto lg:h-[646px]">
       {/* Blank Mobile Mockup */}
       <img
-        src="/mobile-app-development-mobile-mockup.png"
+        src="/mobile-app-mockup-mobile-app-development-1.png"
         alt="blank-mobile-mockup"
         width={308}
         height={646}
@@ -17,6 +17,7 @@ const HeroSlidingMobileMockups = () => {
         <img
           src="/screen-1.png"
           alt="mockup-1"
+          loading="eager"
           className="z-20 rounded-t-[25px] md:rounded-t-[42px]"
         />
         <img
