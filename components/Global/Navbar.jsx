@@ -163,7 +163,7 @@ const Navbar = () => {
         </li> */}
         <li>
           <Link
-            href={`/blogs`}
+            href={`/blog`}
             className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Blogs{" "}

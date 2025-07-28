@@ -66,7 +66,7 @@ export const FOOTER_STAFF_AUGMENTATION_LINKS = [
 export const FOOTER_RESOURCES = [
   {
     title: "Blogs",
-    url: "/blogs",
+    url: "/blog",
   },
   {
     title: "Case Studies",

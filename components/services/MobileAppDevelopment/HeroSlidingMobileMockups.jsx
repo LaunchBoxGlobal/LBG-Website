@@ -7,13 +7,13 @@ const HeroSlidingMobileMockups = () => {
       <img
         src="/mobile-app-development-mobile-mockup.png"
         alt="blank-mobile-mockup"
-        width={318}
+        width={308}
         height={646}
         className="relative z-0"
       />
 
       {/* Sliding Mockups */}
-      <div className="mt-3 mockup-slider border-2 border-red-600 overflow-hidden z-20 absolute inset-x-0 bottom-[0%] md:bottom-[-1%] midlg:bottom-[-2%] max-w-[278px] md:max-w-[310px] px-2 lg:max-w-[310px] midlg:max-w-[298px] mx-auto">
+      <div className="mt-3 overflow-hidden absolute inset-x-0 bottom-[0%] md:bottom-[-4%] lg:bottom-[-2.7%] midlg:bottom-[0%] max-w-[278px] md:max-w-[310px] px-2 lg:max-w-[310px] midlg:max-w-[298px] mx-auto z-50">
         <img
           src="/screen-1.png"
           alt="mockup-1"

@@ -162,7 +162,7 @@ const Sidebar = ({ onclose }) => {
         <li>
           <button
             type="button"
-            onClick={() => navigator("/blogs")}
+            onClick={() => navigator("/blog")}
             className={`font-normal text-[16px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Blogs
