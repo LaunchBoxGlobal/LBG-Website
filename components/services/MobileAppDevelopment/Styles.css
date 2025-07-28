@@ -337,14 +337,7 @@
 }
 
 /* orbitting animation */
-/* .mockup-slider {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  width: 298px;
-  height: 646px;
-  overflow: hidden;
-  z-index: 5;
+.mockup-slider {
   border-top-left-radius: 40px !important;
   border-top-right-radius: 40px !important;
 }
@@ -353,36 +346,20 @@
   position: absolute;
   top: 0;
   left: 100%;
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
   animation: slideInOut 16s infinite;
 }
 
 .mockup-slider img:nth-child(1) {
   animation-delay: 0s;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  margin-left: 1px;
 }
 .mockup-slider img:nth-child(2) {
   animation-delay: 4s;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  margin-left: 1px;
 }
 .mockup-slider img:nth-child(3) {
   animation-delay: 8s;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  margin-left: 1px;
 }
 .mockup-slider img:nth-child(4) {
   animation-delay: 12s;
-  border-top-left-radius: 40px !important;
-  border-top-right-radius: 40px !important;
-  margin-left: 1px;
 }
 
 @keyframes slideInOut {
@@ -401,8 +378,7 @@
   100% {
     transform: translateX(-100%);
   }
-} */
-
+}
 /* slding mockups animation end */
 
 .red-shadow {
