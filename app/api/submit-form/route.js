@@ -39,6 +39,11 @@ export async function POST(request) {
       : ""
   }
   ${
+    body?.description
+      ? `<p><strong>Description:</strong></p><p>${body.description}</p>`
+      : ""
+  }
+  ${
     body?.pageUrl
       ? `<p><strong>Submitted from:</strong> ${body.pageUrl}</p>`
       : ""

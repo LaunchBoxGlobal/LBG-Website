@@ -81,4 +81,9 @@ export const BLOGS_METADATA = {
     description:
       "Discover how MVP development services help startups verify ideas quickly, reduce costs & speed market entry. Partner with experts for lean product success.",
   },
+  "web-app-vs-website-a-practical-comparison": {
+    title: "Web App vs Website: Differences, Benefits & What to Build",
+    description:
+      "Explore the differences between a web app and a website. Compare features, costs, and scalability, and find out what fits your business and users best.",
+  },
 };
