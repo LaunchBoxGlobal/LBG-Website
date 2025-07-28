@@ -15,4 +15,5 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
+
 Sitemap: https://launchboxglobal.com/sitemap.xml
