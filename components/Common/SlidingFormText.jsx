@@ -1,6 +1,6 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const floatingText = [
   "right workflow,",
@@ -14,62 +14,85 @@ const SlidingFormText = () => {
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
   const [offsets, setOffsets] = useState([]);
+  const controls = useAnimation();
 
-  // Calculate offsets to center each phrase
+  const extendedText = [...floatingText, ...floatingText]; // duplicated array
+
+  // Calculate offsets
   useEffect(() => {
     if (containerRef.current && itemRefs.current.length) {
       const containerWidth = containerRef.current.offsetWidth;
       const newOffsets = itemRefs.current.map((el) => {
         const itemWidth = el.offsetWidth;
-        return (containerWidth - itemWidth) / 2; // Centering offset
+        return (containerWidth - itemWidth) / 2;
       });
       setOffsets(newOffsets);
     }
   }, []);
 
-  // Auto-change current phrase
+  // Animation logic
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) =>
-        prev === floatingText.length - 1 ? 0 : prev + 1
-      );
+      setCurrentIndex((prev) => prev + 1);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
+  // Animate scroll
+  useEffect(() => {
+    if (!offsets.length || !itemRefs.current.length) return;
+
+    const fullOffset =
+      itemRefs.current
+        .slice(0, currentIndex)
+        .reduce((acc, el, i) => acc + (el?.offsetWidth || 0) + 24, 0) -
+      (offsets[currentIndex % floatingText.length] || 0);
+
+    controls.start({
+      x: -fullOffset,
+      transition: { type: "spring", stiffness: 70, damping: 20 },
+    });
+
+    // Reset if we've reached the end of duplicated items
+    if (currentIndex === floatingText.length * 2 - 1) {
+      setTimeout(() => {
+        setCurrentIndex(floatingText.length); // jump back to middle
+        controls.set({
+          x:
+            -itemRefs.current
+              .slice(0, floatingText.length)
+              .reduce((acc, el, i) => acc + (el?.offsetWidth || 0) + 24, 0) +
+            (offsets[0] || 0),
+        });
+      }, 500); // slight delay to finish transition
+    }
+  }, [currentIndex, offsets]);
+
   return (
     <div className="text-white w-full lg:w-[50%] flex flex-col items-center text-center lg:text-start lg:items-start justify-center">
-      {/* Static heading */}
       <h2 className="text-[36px] lg:text-[60px] font-semibold leading-[1] z-10">
         Your app idea deserves
       </h2>
 
-      {/* Sliding text container */}
       <div
         ref={containerRef}
         className="relative w-full h-[60px] lg:h-[80px] max-w-[555px] overflow-hidden"
       >
         <motion.div
-          className="flex gap-2"
-          animate={{
-            x: offsets.length
-              ? -itemRefs.current
-                  .slice(0, currentIndex)
-                  .reduce((acc, el, i) => acc + el.offsetWidth + 24, 0) +
-                offsets[currentIndex]
-              : 0,
-          }}
-          transition={{
-            x: { type: "spring", stiffness: 70, damping: 20 },
-          }}
+          className="flex gap-6"
+          animate={controls}
+          initial={{ x: 0 }}
         >
-          {floatingText.map((text, index) => (
+          {extendedText.map((text, index) => (
             <span
               key={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className={`whitespace-nowrap text-[36px] lg:text-[60px] font-semibold leading-[1] z-10 transition-colors duration-300 ${
-                index === 3 && index === currentIndex && "pl-5"
-              } ${index === currentIndex ? "text-white" : "text-gray-400"}`}
+              className={`whitespace-nowrap text-[36px] lg:text-[60px] font-semibold leading-[1] z-10 ${
+                index % floatingText.length ===
+                currentIndex % floatingText.length
+                  ? "text-white"
+                  : "text-gray-400"
+              }`}
             >
               {text}
             </span>
