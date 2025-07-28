@@ -75,6 +75,8 @@ const PortfolioCard = ({
             width={1100}
             height={727}
             loading="lazy"
+            quality={75}
+            sizes="(max-width: 768px) 100vw, 911px"
             className="w-full h-full object-cover mx-auto rounded-3xl group-hover:brightness-50 transition-all duration-300"
           />
           <div className="w-full h-full absolute inset-0 hidden group-hover:flex flex-col items-start justify-end gap-4 px-5 lg:px-20 py-6 lg:py-20 transition-all duration-300">

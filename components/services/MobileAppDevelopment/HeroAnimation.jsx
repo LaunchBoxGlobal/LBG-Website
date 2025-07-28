@@ -9,7 +9,7 @@ const HeroAnimation = () => {
       <img
         src="/white-glow.png"
         alt="white-glow"
-        className="w-[110%] -top-[10%] absolute inset-x-0 z-20 hidden lg:block 2xl:top-[-17%]"
+        className="w-[110%] -top-[6%] xl:-top-[10%] absolute inset-x-0 z-20 hidden lg:block 2xl:top-[-17%]"
       />
       {/* inner circle */}
       <div className="lg:w-[800px] lg:h-[800px] xl:w-[1013px] xl:h-[1013px] rounded-full border-[6px] border-gray-100 absolute -bottom-[10%] left-1/2 -translate-x-1/2 hidden lg:block">

@@ -1,3 +1,4 @@
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Global/Navbar";
 import HomeFooter from "@/components/Global/HomeFooter";
@@ -5,10 +6,17 @@ import GoogleAnalytics from "@/lib/GoogleAnalytics";
 import Script from "next/script";
 import WhatsappButton from "@/components/Common/WhatsappButton";
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // add the weights you actually need
+  display: "swap", // avoid flash of invisible text
+  variable: "--font-outfit", // allows usage in CSS
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`overflow-x-hidden`}>
+      <body className={`overflow-x-hidden ${outfit.variable}`}>
         <Navbar />
         <GoogleAnalytics />
         {children}
