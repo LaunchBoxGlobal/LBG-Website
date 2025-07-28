@@ -7,7 +7,7 @@ import SlidingFormText from "./SlidingFormText";
 const ServicePageForm = () => {
   return (
     <section className="w-full padding-x py-10 mb-5 lg:mb-14 relative overflow-hidden">
-      <section className="w-full z-10 bg-[#212121] rounded-2xl p-8 lg:p-20 flex items-center justify-between gap-10 relative">
+      <section className="w-full z-10 bg-[#212121] rounded-2xl p-8 lg:p-20 flex flex-col lg:flex-row items-center justify-between gap-10 relative">
         <SlidingFormText />
         <div className="w-full z-10 lg:w-[45%]">
           <ServiceForm
