@@ -5,7 +5,7 @@ import Script from "next/script";
 
 export const footer_badges = [
   {
-    image: "/designrush-logo.svg",
+    image: "/designrush-logo.png",
     width: 146,
     height: 155,
     alt_tag: "designrush logo",
