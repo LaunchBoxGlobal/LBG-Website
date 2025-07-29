@@ -16,6 +16,54 @@ const mockups = [
   "/case-studies/fitness-by-faith/outcomes-mockup-9.png",
 ];
 
+const mockups_with_alt_tags = [
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-1.png",
+    alt_tag:
+      "Fitness by Faith by Laken logo with bold inspirational fitness branding text",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-2.png",
+    alt_tag:
+      "Fitness by Faith by Laken: Motivational fitness banner promoting healthy lifestyle transformation journey",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-3.png",
+    alt_tag:
+      "Fitness by Faith by Laken: User login screen with email, password fields and sign-in options",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-4.png",
+    alt_tag:
+      "Fitness by Faith by Laken: Profile setup for tracking gender, age, weight and measurements",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-5.png",
+    alt_tag:
+      "Fitness by Faith by Laken: Shane's workout dashboard with yoga, cardio, and lifting options",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-6.png",
+    alt_tag:
+      "Fitness by Faith by Laken: High-protein meal plans including Grilled Chicken Salad recipes",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-7.png",
+    alt_tag:
+      "Fitness by Faith by Laken: Yoga workout dashboard with exercise options and sessions",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-8.png",
+    alt_tag:
+      "Fitness by Faith by Laken: 20-minute biceps workout with swipe-up instructions",
+  },
+  {
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-9.png",
+    alt_tag:
+      "Fitness by Faith by Laken: Grilled Chicken Salad nutrition facts and ingredients list",
+  },
+];
+
 const Outcome = () => {
   return (
     <section className="w-full padding-x flex flex-col items-center">
@@ -39,8 +87,10 @@ const Outcome = () => {
       </p>
 
       <div className="w-full mt-10 lg:mt-20 flex flex-wrap items-start justify-center gap-10">
-        {mockups?.map((m, i) => {
-          return <ImageMockup m={m} key={i} i={i} />;
+        {mockups_with_alt_tags?.map((m, i) => {
+          return (
+            <ImageMockup m={m?.image} key={i} i={i} alt_tag={m?.alt_tag} />
+          );
         })}
       </div>
     </section>
@@ -49,7 +99,7 @@ const Outcome = () => {
 
 export default Outcome;
 
-const ImageMockup = ({ m, i }) => {
+const ImageMockup = ({ m, i, alt_tag }) => {
   const { ref, inView } = useInView({ triggerOnce: false });
   return (
     <motion.div
@@ -62,6 +112,7 @@ const ImageMockup = ({ m, i }) => {
         src={m}
         width={348}
         height={522}
+        alt={alt_tag}
         className={`${
           i === 0 || i === 2
             ? "lg:mt-32"

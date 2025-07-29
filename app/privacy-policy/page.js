@@ -3,8 +3,9 @@ import React from "react";
 import "../terms-and-conditions/style.css";
 
 export const metadata = {
-  title: "Privacy Policy | LaunchBox Global",
-  description: "",
+  title: "Launchbox Global Privacy Policy | Data Protection",
+  description:
+    "Learn how Launchbox Global protects your data. Our Privacy Policy explains collection use and security of personal information for website and mobile services.",
 };
 
 const page = () => {

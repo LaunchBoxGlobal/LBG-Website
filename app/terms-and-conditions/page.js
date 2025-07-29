@@ -3,8 +3,9 @@ import React from "react";
 import "./style.css";
 
 export const metadata = {
-  title: "Terms & Conditions | LaunchBox Global",
-  description: "",
+  title: "Launchbox Global Terms & Conditions | Service Agreement",
+  description:
+    "Review Launchbox Global's Terms & Conditions governing service use, messaging policies, refunds, and user needs. Your access implies agreement to these terms.",
 };
 
 const page = () => {

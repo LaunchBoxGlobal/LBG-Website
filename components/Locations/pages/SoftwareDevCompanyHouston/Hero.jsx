@@ -45,6 +45,7 @@ const Hero = () => {
           src={"/locations/software-dev-company-houston/hero-left-dots.png"}
           width={28}
           height={95}
+          alt="Custom Software Development Company in Houston: Equation ½x + ⅓ = 0 displayed"
           className="absolute left-[5%] top-[13%] hidden lg:block"
         />
 
