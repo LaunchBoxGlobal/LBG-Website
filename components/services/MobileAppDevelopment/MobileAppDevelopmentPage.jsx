@@ -37,8 +37,8 @@ const MobileAppDevelopmentPage = () => {
       />
       <FlagsAnimation />
       <MobileAppDevFaqs />
-      <MobileAppDevContactForm />
-      {/* <ServicePageForm /> */}
+      {/* <MobileAppDevContactForm /> */}
+      <ServicePageForm />
     </main>
   );
 };
