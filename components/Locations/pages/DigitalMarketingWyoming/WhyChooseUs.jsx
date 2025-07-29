@@ -1,4 +1,3 @@
-import AnimatedText from "@/components/StaffAugmentation/AnimatedText";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,18 +6,14 @@ const WhyChooseUs = () => {
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
-        <AnimatedText>
-          <h2 className="section-heading text-center mx-auto">
-            Why Wyoming Businesses Choose Our{" "}
-            <span className="red-text">Digital Marketing</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph text-center mx-auto lg:w-[70%]">
-            We're not just another agency. Here's what makes us different for
-            Wyoming digital marketing success:
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading text-center mx-auto">
+          Why Wyoming Businesses Choose Our{" "}
+          <span className="red-text">Digital Marketing</span>
+        </h2>
+        <p className="section-paragraph text-center mx-auto lg:w-[70%]">
+          We're not just another agency. Here's what makes us different for
+          Wyoming digital marketing success:
+        </p>
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14">

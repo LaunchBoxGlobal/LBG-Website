@@ -1,5 +1,4 @@
 "use client";
-import AnimatedText from "@/components/StaffAugmentation/AnimatedText";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -18,16 +17,12 @@ const LocationsWhyChooseUs = ({
         {/* <h2 className="blueText font-semibold text-[25px] lg:w-[60%] text-center">
           Partner with LaunchBox Global
         </h2> */}
-        <AnimatedText>
-          <h2 className="section-heading text-center mx-auto">
-            {heading} <span className="red-text">{redText}</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph text-center mx-auto lg:w-[70%]">
-            {description}
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading text-center mx-auto">
+          {heading} <span className="red-text">{redText}</span>
+        </h2>
+        <p className="section-paragraph text-center mx-auto lg:w-[70%]">
+          {description}
+        </p>
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14">

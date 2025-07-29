@@ -1,5 +1,4 @@
 "use client";
-import AnimatedText from "@/components/StaffAugmentation/AnimatedText";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,31 +15,27 @@ const Hero = () => {
         ref={ref}
         className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-10"
       >
-        <AnimatedText direction="left">
-          <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1] w-full z-10 flex flex-wrap justify-center items-center gap-4">
-            Mobile App Development Company in{" "}
-            <span className="red-bg inline-block py-4 px-10 text-white rounded-[17px]">
-              Texas
-            </span>{" "}
-            for Your Business Needs
-          </h1>
-        </AnimatedText>
-        <AnimatedText direction="right">
-          <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto z-10">
-            Build high-performance apps with a trusted partner in Dallas,
-            specializing in mobile app development in Texas.
-          </p>
-        </AnimatedText>
-        <AnimatedText>
-          <section className="w-full mt-5 z-10">
-            <Link
-              href={`/contact-us`}
-              className="max-w-[220px] bg-[#F40E00] hover:bg-black h-[56px] rounded-[9px] text-center flex items-center justify-center text-lg font-bold text-white mx-auto z-10"
-            >
-              Get Started Today
-            </Link>
-          </section>
-        </AnimatedText>
+        <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1] w-full z-10 flex flex-wrap justify-center items-center gap-4">
+          Mobile App Development Company in{" "}
+          <span className="red-bg inline-block py-4 px-10 text-white rounded-[17px]">
+            Texas
+          </span>{" "}
+          for Your Business Needs
+        </h1>
+
+        <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto z-10">
+          Build high-performance apps with a trusted partner in Dallas,
+          specializing in mobile app development in Texas.
+        </p>
+
+        <section className="w-full mt-5 z-10">
+          <Link
+            href={`/contact-us`}
+            className="max-w-[220px] bg-[#F40E00] hover:bg-black h-[56px] rounded-[9px] text-center flex items-center justify-center text-lg font-bold text-white mx-auto z-10"
+          >
+            Get Started Today
+          </Link>
+        </section>
       </section>
       <section className="lg:h-[609px] w-full flex justify-center relative items-end mt-10">
         <motion.div

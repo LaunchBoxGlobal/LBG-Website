@@ -2,9 +2,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
 import ProcessCard from "@/components/StaffAugmentation/ProcessCard";
-import AnimatedText from "@/components/StaffAugmentation/AnimatedText";
 
 const LocationProcess = ({
   heading,
@@ -22,29 +20,26 @@ const LocationProcess = ({
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <AnimatedText>
-          <h2 className="section-heading lg:w-[90%] mx-auto">
-            {heading} <span className="red-text">{redText}</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph lg:w-[90%] mx-auto">{description}</p>
-          {activeTab === "agile" && (
-            <p className="section-paragraph lg:w-[90%] mx-auto">
-              {agileDescription}
-            </p>
-          )}
-          {activeTab === "recommended" && (
-            <p className="section-paragraph lg:w-[90%] mx-auto">
-              {recommendedDescription}
-            </p>
-          )}
-          {activeTab === "waterfall" && (
-            <p className="section-paragraph lg:w-[90%] mx-auto">
-              {waterfallDescription}
-            </p>
-          )}
-        </AnimatedText>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          {heading} <span className="red-text">{redText}</span>
+        </h2>
+
+        <p className="section-paragraph lg:w-[90%] mx-auto">{description}</p>
+        {activeTab === "agile" && (
+          <p className="section-paragraph lg:w-[90%] mx-auto">
+            {agileDescription}
+          </p>
+        )}
+        {activeTab === "recommended" && (
+          <p className="section-paragraph lg:w-[90%] mx-auto">
+            {recommendedDescription}
+          </p>
+        )}
+        {activeTab === "waterfall" && (
+          <p className="section-paragraph lg:w-[90%] mx-auto">
+            {waterfallDescription}
+          </p>
+        )}
       </section>
       <div className="w-full flex justify-center mt-10 lg:mt-14">
         <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">

@@ -13,20 +13,17 @@ const Process = () => {
   return (
     <section className="w-full padding-x py-20 midlg:py-28 overflow-hidden relative">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <AnimatedText>
-          <h2 className="section-heading lg:w-[90%] mx-auto">
-            Agile, Waterfall & Hybrid — Built for{" "}
-            <span className="red-text">Wyoming Businesses</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          <p className="section-paragraph lg:w-[90%] mx-auto">
-            We tailor our approach to fit your needs. As one of the leading
-            software companies in Houston, we bring proven methodologies to
-            Wyoming businesses—whether you're a Cheyenne startup or statewide
-            enterprise.
-          </p>
-        </AnimatedText>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          Agile, Waterfall & Hybrid — Built for{" "}
+          <span className="red-text">Wyoming Businesses</span>
+        </h2>
+
+        <p className="section-paragraph lg:w-[90%] mx-auto">
+          We tailor our approach to fit your needs. As one of the leading
+          software companies in Houston, we bring proven methodologies to
+          Wyoming businesses—whether you're a Cheyenne startup or statewide
+          enterprise.
+        </p>
       </section>
       <div className="w-full relative  py-20">
         <AnimatedLine />

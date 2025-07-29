@@ -17,19 +17,12 @@ import { projects } from "@/constants/mobile-app-development/Projects";
 import TechAndTools from "../../LocationComponents/TechAndTools";
 import Technologies from "../MobileAppDeveloper/Technologies";
 import LocationsWhyChooseUs from "../../LocationComponents/LocationsWhyChooseUs";
-import {
-  FLORIDA_WHY_CHOOSE_US_1,
-  FLORIDA_WHY_CHOOSE_US_2,
-} from "@/constants/locations/mobile-app-developer/florida-why-choose-us";
 import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import {
   TEXAS_WHY_CHOOSE_US_1,
   TEXAS_WHY_CHOOSE_US_2,
 } from "@/constants/locations/mobile-app-dev-company-texas/texas-why-choose-us";
 import LocationStats from "../../LocationComponents/LocationStats";
-import { FLORIDA_FAQS } from "@/constants/locations/mobile-app-developer/florida-faqs";
-import LocationFaqs from "../../LocationComponents/LocationFaqs";
-import { TEXAS_FAQS } from "@/constants/locations/mobile-app-dev-company-texas/texas-faqs";
 import TexasFaqs from "./TexasFaqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
 

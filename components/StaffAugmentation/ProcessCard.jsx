@@ -1,12 +1,7 @@
-"use client";
-import Image from "next/image";
 import React from "react";
-import { useRef } from "react";
-import { useInView, motion } from "framer-motion";
 
 const ProcessCard = ({ process, index }) => {
   return (
-    // <AnimatedText direction={index % 2 === 0 ? "right" : "left"} delay={0.2}>
     <div
       className={`w-full lg:w-[608px] h-[312px] bg-white rounded-[25px] custom-shadow ${
         index % 2 === 0 ? "px-10 py-10" : "py-10 px-14 ml-auto"
@@ -41,39 +36,7 @@ const ProcessCard = ({ process, index }) => {
         </div>
       </div>
     </div>
-    // </AnimatedText>
   );
 };
 
 export default ProcessCard;
-
-function AnimatedText({ children, direction = "up", delay = 0.5 }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
-
-  const variants = {
-    hidden: {
-      // opacity: 0,
-      y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
-      x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      x: 0,
-    },
-  };
-
-  return (
-    <motion.div
-      ref={ref}
-      variants={variants}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
-      transition={{ duration: 0.8, delay }}
-      className="w-full"
-    >
-      {children}
-    </motion.div>
-  );
-}

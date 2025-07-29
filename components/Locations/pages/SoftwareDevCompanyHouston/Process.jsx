@@ -17,48 +17,43 @@ const Process = () => {
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <AnimatedText>
-          <h2 className="section-heading lg:w-[90%] mx-auto">
-            Agile, Waterfall & Functionality-First — Built for{" "}
-            <span className="red-text">Houston Businesses</span>
-          </h2>
-        </AnimatedText>
-        <AnimatedText>
-          {activeTab === "agile" && (
-            <p className="section-paragraph lg:w-[90%] mx-auto">
-              Perfect for Houston's fast-moving tech startups and healthcare
-              innovators, our{" "}
-              <Link
-                href={`https://agilealliance.org/agile101/`}
-                className="red-text"
-                rel="nofollow"
-              >
-                Agile process
-              </Link>{" "}
-              delivers working features every 2-3 weeks. We help Texas
-              businesses test ideas quickly, gather user feedback, and adapt,
-              saving time and budget while building what customers actually
-              want.
-            </p>
-          )}
-          {activeTab === "recommended" && (
-            <p className="section-paragraph lg:w-[90%] mx-auto">
-              We help Houston restaurants, retailers, and small businesses
-              launch core features fast, then scale. This cost-effective method
-              focuses on must-have functions first perfect for local businesses
-              needing quick digital solutions without unnecessary features.
-            </p>
-          )}
-          {activeTab === "waterfall" && (
-            <p className="section-paragraph lg:w-[90%] mx-auto">
-              For Houston energy firms, financial institutions, and government
-              projects with fixed requirements, our structured Waterfall
-              approach ensures thorough planning, clear documentation, and
-              predictable results. This method works especially well for complex
-              systems needing strict compliance with Texas regulations.
-            </p>
-          )}
-        </AnimatedText>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          Agile, Waterfall & Functionality-First — Built for{" "}
+          <span className="red-text">Houston Businesses</span>
+        </h2>
+        {activeTab === "agile" && (
+          <p className="section-paragraph lg:w-[90%] mx-auto">
+            Perfect for Houston's fast-moving tech startups and healthcare
+            innovators, our{" "}
+            <Link
+              href={`https://agilealliance.org/agile101/`}
+              className="red-text"
+              rel="nofollow"
+            >
+              Agile process
+            </Link>{" "}
+            delivers working features every 2-3 weeks. We help Texas businesses
+            test ideas quickly, gather user feedback, and adapt, saving time and
+            budget while building what customers actually want.
+          </p>
+        )}
+        {activeTab === "recommended" && (
+          <p className="section-paragraph lg:w-[90%] mx-auto">
+            We help Houston restaurants, retailers, and small businesses launch
+            core features fast, then scale. This cost-effective method focuses
+            on must-have functions first perfect for local businesses needing
+            quick digital solutions without unnecessary features.
+          </p>
+        )}
+        {activeTab === "waterfall" && (
+          <p className="section-paragraph lg:w-[90%] mx-auto">
+            For Houston energy firms, financial institutions, and government
+            projects with fixed requirements, our structured Waterfall approach
+            ensures thorough planning, clear documentation, and predictable
+            results. This method works especially well for complex systems
+            needing strict compliance with Texas regulations.
+          </p>
+        )}
       </section>
       <div className="w-full flex justify-center mt-10 lg:mt-14">
         <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
@@ -180,9 +175,3 @@ const AnimatedLine = () => {
     </div>
   );
 };
-
-{
-  /* <svg width="682" height="2634" viewBox="0 0 682 2634" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M332 2.00122H528C555.5 1.8399 610.5 17.5847 610.5 81.8546V299.151V360.13H91.5C49 360.13 1.5 366.325 1.5 447.243V742.943H528C555.5 742.297 610.5 757.365 610.5 822.796V1090.43V1135H91.5C61.5 1133.83 1.5 1145.6 1.5 1202V1485.5L550.5 1486.41C578 1485.5 610.5 1492.84 610.5 1533.13C610.5 1573.43 610.5 1768.5 610.5 1861H91.5C55 1860.6 1.5 1869.5 1.5 1945.5L4.28717 2579.18C5.78719 2596.5 1.5 2632.46 69.9 2632.46H598C665.5 2632.46 680.5 2630.9 680.5 2566.5V2454.5" stroke="#F40E00" stroke-width="2.5"/>
-</svg> */
-}
