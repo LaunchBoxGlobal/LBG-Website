@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
         <MobileImageSlider />
       </div>
-      <HeroAnimation />
+      {/* <HeroAnimation /> */}
       <Image
         src={"/mobile-app-dev-mobile-mockups-min.webp"}
         className="w-full object-contain h-[220px] lg:hidden"
