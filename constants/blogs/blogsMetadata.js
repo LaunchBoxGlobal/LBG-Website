@@ -86,4 +86,9 @@ export const BLOGS_METADATA = {
     description:
       "Explore the differences between a web app and a website. Compare features, costs, and scalability, and find out what fits your business and users best.",
   },
+  "stop-wasting-time-money-on-the-wrong-dev-partners": {
+    title: "Stop Wasting Time (and Money) on Wrong Dev Partners",
+    description:
+      "Stop wasting your time and money on the wrong Dev Partners. Learn how to choose reliable developers who deliver outcomes and lead your project forward.",
+  },
 };
