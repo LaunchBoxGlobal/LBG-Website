@@ -91,4 +91,9 @@ export const BLOGS_METADATA = {
     description:
       "Stop wasting your time and money on the wrong Dev Partners. Learn how to choose reliable developers who deliver outcomes and lead your project forward.",
   },
+  "why-1-in-3-startup-founders-regret-their-first-development-hire": {
+    title: "Why Many Founders Regret Their First Development Hire",
+    description:
+      "1 in 3 startup founders regret their first development hire. Learn why it happens, the costly mistakes behind it, and how to make smarter hiring decisions.",
+  },
 };
