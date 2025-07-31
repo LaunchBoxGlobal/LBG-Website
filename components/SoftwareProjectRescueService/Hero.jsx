@@ -31,13 +31,13 @@ const Hero = () => {
             className="mx-auto lg:hidden"
           />
           <Image
-            src={"/new-project/hero-section-image.png"}
+            src={"/new-project/hero-section-icons-image.png"}
             alt="hero-section-image"
             width={1081}
             height={402}
             className="mx-auto z-0 hidden lg:block"
           />
-          <div className="bg-white border border-[#F40E0073] rounded-[7px] w-[352px] h-[98px] absolute left-[33%] top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center lbg-shadow">
+          <div className="bg-white border border-[#F40E0073] rounded-[7px] w-[352px] h-[98px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center lbg-shadow">
             <img
               src="/new-logo.svg"
               alt="launchbox global logo"
