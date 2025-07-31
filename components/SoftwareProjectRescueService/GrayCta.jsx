@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const GrayCta = () => {
@@ -46,6 +47,15 @@ const GrayCta = () => {
           <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[13.8%] lg:left-[14.8%] top-[22%] lg:top-[14%]"></div>
           <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[7%] top-[55.7%] lg:top-[59%]"></div>
           <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[21%] lg:left-[22%] bottom-[19%] md:bottom-[17%] lg:bottom-[11%]"></div>
+        </div>
+
+        <div className="w-full flex justify-center mt-6">
+          <Link
+            href={`/contact-us`}
+            className="bg-[#F40E00] rounded-[11px] text-white py-3 px-6 text-base lg:text-[20px] font-medium hover:bg-black transition-all duration-300"
+          >
+            Let’s Make It Real
+          </Link>
         </div>
       </div>
     </section>

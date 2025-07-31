@@ -96,4 +96,9 @@ export const BLOGS_METADATA = {
     description:
       "1 in 3 startup founders regret their first development hire. Learn why it happens, the costly mistakes behind it, and how to make smarter hiring decisions.",
   },
+  "freelancers-promised-a-full-app-you-got-a-landing-page-now-what": {
+    title: "Incomplete Website? How to Fix Your Broken Project",
+    description:
+      "Got an incomplete website except for app? Learn how to recover from unfinished projects, assess damage, and find developers to fix your broken website.",
+  },
 };

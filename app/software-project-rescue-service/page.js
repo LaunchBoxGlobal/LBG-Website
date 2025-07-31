@@ -1,8 +1,8 @@
-import NewPage from "@/components/NewPage/NewPage";
+import NewPage from "@/components/SoftwareProjectRescueService/NewPage";
 import React from "react";
 
 export const metadata = {
-  title: "New Page | LaunchBox Global",
+  title: "Software Project Rescue Service | LaunchBox Global",
   description: "",
 };
 

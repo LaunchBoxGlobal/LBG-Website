@@ -6,10 +6,13 @@ const Hero = () => {
   return (
     <section className="w-full relative pt-36 2xl:pt-52 padding-x">
       <section className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white">
-        <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-tight leading-[1] w-full">
+        <h1 className="red-text text-[22px] font-semibold">
+          Software Project Rescue Service
+        </h1>
+        <h2 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-tight leading-[1] w-full">
           Revive Your Project With Our Software Project{" "}
           <span className="red-text">Rescue Service</span>
-        </h1>
+        </h2>
 
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-[1.1] mt-4">
           Our branding and design approach crafts memorable identities, logos,
