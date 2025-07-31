@@ -31,8 +31,8 @@ const Hero = () => {
             className="mx-auto lg:hidden"
           />
           <Image
-            src={"/new-project/hero-section-icons.png"}
-            alt="hero-section-icons"
+            src={"/new-project/hero-section-image.png"}
+            alt="hero-section-image"
             width={1081}
             height={402}
             className="mx-auto z-0 hidden lg:block"

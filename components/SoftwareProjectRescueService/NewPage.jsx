@@ -14,6 +14,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import EngagementModels from "./EngagementModels";
 import FAQs from "./FAQs";
 import { AI_BASED_PROJECT_FAQS } from "@/constants/ai-based-projects-content/ai-based-project-faqs";
+import Contact from "../services/BrandingAndDesign/Contact";
 
 const NewPage = () => {
   return (
@@ -31,6 +32,7 @@ const NewPage = () => {
       <GrayCta />
       <EngagementModels />
       <FAQs faqs={AI_BASED_PROJECT_FAQS} />
+      <Contact />
     </main>
   );
 };
