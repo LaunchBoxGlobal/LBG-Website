@@ -19,7 +19,7 @@ const Hero = () => {
           Let’s create software that works for you.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1">
-          <ContactButton text={"Get Your App Plan"} />
+          <ContactButton text={"Get Free Consultation"} />
         </div>
         <HeroAnimation />
       </div>

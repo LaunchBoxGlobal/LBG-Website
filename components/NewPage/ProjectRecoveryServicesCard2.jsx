@@ -1,0 +1,71 @@
+import React from "react";
+
+const ProjectRecoveryServicesCard2 = () => {
+  return (
+    <div className="w-full max-w-[631px] bg-[#F6F6F6] rounded-[26px] flex items-start justify-between overflow-hidden">
+      <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 pl-8 pr-8 lg:pr-4">
+        <div className="w-[54px] h-[54px] bg-red rounded-full bg-[#F40E00] flex items-center justify-center">
+          <img
+            src="/new-project/mvp-icon.png"
+            alt="heart-icon"
+            width={25}
+            height={25}
+          />
+        </div>
+        <h3 className="font-semibold text-[26px] leading-[1]">
+          MVPs & Early-Stage Builds
+        </h3>
+        <p className="text-lg" style={{ lineHeight: "1.5rem" }}>
+          Started your MVP with low code or no code tools? You’ve made a great
+          start. We help you refine, strengthen with our detailed code audit and
+          convert early‑stage builds into stable products ready for market.
+        </p>
+        <div className="flex items-center justify-start gap-2 flex-wrap">
+          {[
+            "SaaS Platforms",
+            "AI-Powered Apps",
+            "Productivity Tools",
+            "Marketplace MVPs",
+            "On-Demand Service Apps",
+          ]?.map((p, i) => {
+            return (
+              <p
+                className="bg-[#E9E9E9] rounded-full font-medium text-sm lg:text-base px-3 py-1.5 whitespace-nowrap"
+                key={i}
+              >
+                {p}
+              </p>
+            );
+          })}
+        </div>
+      </div>
+      <div className="w-full lg:w-[40%] relative h-full hidden lg:block">
+        <div className="w-full h-full absolute inset-0 rounded-r-[26px]">
+          <img
+            src="/new-project/mvp-builds-cursor-icon.png"
+            alt="mvp-builds-cursor-icon"
+            width={73}
+            height={62}
+            className="absolute top-[15%] z-10 left-[10%]"
+          />
+          <img
+            src="/new-project/mvp-dashboard-image.png"
+            alt="mvp-dashboard-image"
+            width={467}
+            height={432}
+            className="absolute top-[118px] z-10 right-0 bottom-0"
+          />
+          <img
+            src="/new-project/mvp-builds-orange-cursor-icon.png"
+            alt="mvp-builds-orange-cursor-icon"
+            width={118}
+            height={66}
+            className="object-contain absolute left-[-33%] bottom-[5%] z-10"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectRecoveryServicesCard2;
