@@ -1,13 +1,13 @@
 export const AI_BASED_PROJECT_BENEFITS = [
   {
-    title: "Experienced Technical team",
+    title: "Vibe Coding Project Recovery",
     titleBg: "#F40E00",
     description:
-      "Our experienced technical team helps you get the most out of your AI‑based projects. The team conducts a thorough code audit and smart refinements, which include fixing structural issues and optimizing performance.",
+      "Your Vibe coding project is already an incredible start. Our Project Recovery services carefully refine, strengthen, and upgrade it, preserving your creative spark while turning it into a polished, reliable, and market‑ready product you’ll be proud of.",
     descriptionBg: "#F99C99",
-    icon: "/new-project/experienced-technical-team-icon.png",
-    iconWidth: "38",
-    iconHeight: "32",
+    icon: "/new-project/vibe-coding-project-recovery-icon.png",
+    iconWidth: "36",
+    iconHeight: "40",
   },
   {
     title: "Handover with Full Ownership",

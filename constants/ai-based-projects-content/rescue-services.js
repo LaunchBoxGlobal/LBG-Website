@@ -5,7 +5,7 @@ export const RESCUE_SERVICES = [
     height: 297,
     title: "App Architecture & Tech Stack Planning",
     description:
-      "We review your app’s foundation, including tech stack and low-code elements. Through project recovery services, we make smart decisions to set up your recovered project. ",
+      "We review your app’s foundation, including tech stack and low-code elements. Through project recovery services, we make smart decisions to set up your recovered project.",
   },
   {
     image: "/new-project/database-design-and-backend-logic-image.png",
@@ -29,7 +29,7 @@ export const RESCUE_SERVICES = [
     height: 297,
     title: "API Configuration",
     description:
-      "APIs giving you trouble? Our webapp and software project rescue process configures broken endpoints correctly, so there are no more hidden errors.",
+      "APIs giving you trouble? Our web app and software project rescue process configures broken endpoints correctly, so there are no more hidden errors.",
   },
   {
     image: "/new-project/cloud-hosting-and-deployement-image.png",
@@ -53,7 +53,7 @@ export const RESCUE_SERVICES = [
     height: 297,
     title: "Payment Systems & User Auth",
     description:
-      "Facing checkout or login issues in your AI‑built app? The Project Rescue services repair payment flows and authentication, ensuring your software keeps revenue on track. ",
+      "Facing checkout or login issues in your AI‑built app? The Project Rescue services repair payment flows and authentication, ensuring your software keeps revenue on track.",
   },
   {
     image: "/new-project/performance-optimization-image.png",

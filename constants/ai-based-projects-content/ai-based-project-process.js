@@ -5,7 +5,7 @@ export const AI_BASED_PROJECT_PROCESS = [
     width: 34,
     height: 34,
     description:
-      "We start with a free consultation where we want you to share your vision and the amazing project you built through AI assisted coding. This conversation helps us understand exactly what you need before beginning project rescue.",
+      "We start with a free consultation where we want you to share your vision and the amazing project you built through AI assisted coding. This conversation helps us understand exactly what you need before beginning the project rescue.",
   },
   {
     icon: "/new-project/technical-audit-icon.png",

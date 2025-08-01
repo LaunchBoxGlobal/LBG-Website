@@ -5,6 +5,10 @@ import {
   ON_DEMAND_WHY_CHOOSE_US_1,
   ON_DEMAND_WHY_CHOOSE_US_2,
 } from "@/constants/on-demand-talent-content/on-demand-why-choose-us";
+import {
+  AI_BASED_PROJECT_WHY_CHOOSE_US_1,
+  AI_BASED_PROJECT_WHY_CHOOSE_US_2,
+} from "@/constants/ai-based-projects-content/ai-based-project-why-choose-us";
 
 const WhyChooseUs = () => {
   const [isHovered, setIsHovered] = useState(null);
@@ -24,7 +28,7 @@ const WhyChooseUs = () => {
       </section>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14">
-        {ON_DEMAND_WHY_CHOOSE_US_1?.map((c, i) => {
+        {AI_BASED_PROJECT_WHY_CHOOSE_US_1?.map((c, i) => {
           return (
             <div
               className={`w-full group py-8 px-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
@@ -56,7 +60,7 @@ const WhyChooseUs = () => {
             </div>
           );
         })}
-        {ON_DEMAND_WHY_CHOOSE_US_2?.map((c, i) => {
+        {AI_BASED_PROJECT_WHY_CHOOSE_US_2?.map((c, i) => {
           return (
             <div
               className={`w-full group py-8 px-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${

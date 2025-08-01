@@ -1,6 +1,7 @@
 import React from "react";
 import ContactButton from "@/components/Global/ContactButton";
-import Image from "next/image";
+import HeroAnimation from "./HeroAnimation";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -10,42 +11,51 @@ const Hero = () => {
           Software Project Rescue Service
         </h1>
         <h2 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-tight leading-[1] w-full">
-          Revive Your Project With Our Software Project{" "}
-          <span className="red-text">Rescue Service</span>
+          Built a Proud Creation? Let’s Make it{" "}
+          <span className="red-text">Truly Shine</span>
         </h2>
 
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-[1.1] mt-4">
-          Our branding and design approach crafts memorable identities, logos,
-          colors, and styles that stick in customers' minds and build trust.
+          Built something cool with AI tools like{" "}
+          <Link
+            href={`https://cursor.com/`}
+            target="_blank"
+            className="underline"
+          >
+            Cursor
+          </Link>
+          ,{" "}
+          <Link
+            href={`https://bolt.new/`}
+            target="_blank"
+            className="underline"
+          >
+            Bolt.new
+          </Link>
+          ,{" "}
+          <Link
+            href={`https://grok.com/`}
+            target="_blank"
+            className="underline"
+          >
+            Grok
+          </Link>
+          , or{" "}
+          <Link
+            href={`https://lovable.dev/`}
+            target="_blank"
+            className="underline"
+          >
+            Lovable
+          </Link>
+          ? Great start. We help you refine and fix your half‑built prototypes
+          through our project recovery services.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1 mb-10">
-          <ContactButton text={"Get A Free Consultation"} />
+          <ContactButton text={"Get Professional Support"} />
         </div>
 
-        <div className="w-full relative flex items-center justify-center mb-10">
-          <Image
-            src={"/new-project/hero-section-icons-mobile.png"}
-            alt="hero-section-icons-mobile"
-            width={1081}
-            height={402}
-            className="mx-auto lg:hidden"
-          />
-          <Image
-            src={"/new-project/hero-section-icons-image.png"}
-            alt="hero-section-image"
-            width={1081}
-            height={402}
-            className="mx-auto z-0 hidden lg:block"
-          />
-          <div className="bg-white border border-[#F40E0073] rounded-[7px] w-[352px] h-[98px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center lbg-shadow">
-            <img
-              src="/new-logo.svg"
-              alt="launchbox global logo"
-              width={277}
-              height={58}
-            />
-          </div>
-        </div>
+        <HeroAnimation />
       </section>
     </section>
   );

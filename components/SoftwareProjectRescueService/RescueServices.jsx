@@ -1,6 +1,7 @@
 import { RESCUE_SERVICES } from "@/constants/ai-based-projects-content/rescue-services";
 import Image from "next/image";
 import React from "react";
+import AnimatedText from "../StaffAugmentation/AnimatedText";
 
 const RescueServices = () => {
   return (
@@ -13,7 +14,7 @@ const RescueServices = () => {
         <p className="section-paragraph lg:w-[90%] mx-auto">
           With our project recovery services, you get a thorough code audit and
           expert code rescue to refine apps, web apps, and software built using
-          AI‑based coding. Here are the core capabilities we offer:
+          AI-based coding. Here are the core capabilities we offer:
         </p>
       </section>
 
@@ -27,13 +28,15 @@ const RescueServices = () => {
               <h3 className="text-[22px] px-8 font-semibold leading-[1] min-h-[80px]">
                 {r?.title}
               </h3>
-              <Image
-                src={r?.image}
-                width={r?.width}
-                height={r?.height}
-                className=""
-                alt={`${r?.title}`}
-              />
+              <AnimatedText direction="right">
+                <Image
+                  src={r?.image}
+                  width={r?.width}
+                  height={r?.height}
+                  className=""
+                  alt={`${r?.title}`}
+                />
+              </AnimatedText>
               <p className="text-lg pb-3 px-5 leading-[1.2]">
                 {r?.description}
               </p>

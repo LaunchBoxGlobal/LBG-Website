@@ -13,9 +13,9 @@ const ProjectRescue = () => {
           <span className="red-text">Project Rescue</span>
         </h2>
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          Through vibe coding project recovery, you get your envisioned final
-          product that’s now ready for a launch. Here’s the breakdown of the
-          benefits you’ll receive when you work with Launchbox Global.
+          Through the vibe coding project recovery, you get your envisioned
+          final product that’s now ready for a launch. Here’s the breakdown of
+          the benefits you’ll receive when you work with Launchbox Global.
         </p>
       </section>
       <div className="w-full bg-[#fff] lg:px-16 mt-10 xl:mt-12 hidden lg:flex flex-col items-center mx-auto relative left-[-4.3%]">

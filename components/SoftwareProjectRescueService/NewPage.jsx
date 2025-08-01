@@ -15,10 +15,12 @@ import EngagementModels from "./EngagementModels";
 import FAQs from "./FAQs";
 import { AI_BASED_PROJECT_FAQS } from "@/constants/ai-based-projects-content/ai-based-project-faqs";
 import Contact from "../services/BrandingAndDesign/Contact";
+import ProjectRecovery from "./ProjectRecovery";
+import ProjectRecoverySection from "./ProjectRecoverySection";
 
 const NewPage = () => {
   return (
-    <main className="w-full relative overflow-hidden">
+    <main className="w-full overflow-hidden relative">
       <Hero />
       <Platforms />
       <WhyFoundersNeedProjectDiscovery />
@@ -28,6 +30,8 @@ const NewPage = () => {
       <FlagsAnimation />
       <ProjectRescue />
       <Process />
+      {/* <ProjectRecovery /> */}
+      <ProjectRecoverySection />
       <WhyChooseUs />
       <GrayCta />
       <EngagementModels />

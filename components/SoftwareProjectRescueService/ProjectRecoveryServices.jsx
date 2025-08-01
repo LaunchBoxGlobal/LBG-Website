@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectRecoveryServicesCard1 from "./ProjectRecoveryServicesCard1";
 import ProjectRecoveryServicesCard2 from "./ProjectRecoveryServicesCard2";
+import Link from "next/link";
 
 const ProjectRecoveryServices = () => {
   // bg-[#F9F9F9]
@@ -8,15 +9,18 @@ const ProjectRecoveryServices = () => {
     <section className="w-full py-20 midlg:py-32 xl:py-40 padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[90%] mx-auto">
-          Projects We Manage Through Project{" "}
+          Projects We Can Rescue with{" "}
           <span className="red-text">Recovery Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          If you’re stuck with software that’s half-built, broken, or dealing
-          with an abandoned prototype, we've got it covered. Our software
-          project rescue service is designed to handle it all. At Launchbox
-          Global, our software project rescue service uses thorough code audit
-          and proven project recovery services to restore functionality.
+          Built a project that reflects exactly what you envisioned, but it is
+          not quite ready for the market?{" "}
+          <Link href={`https://launchboxglobal.com/`} className="underline">
+            Launchbox Global
+          </Link>
+          ’s project recovery services are designed to handle it all. We help
+          refine no‑code builds and recovered projects, turning them into
+          market‑ready products.
         </p>
       </section>
 
