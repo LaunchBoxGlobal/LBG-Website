@@ -24,7 +24,7 @@ const HeroAnimation = () => {
           width={1274}
           height={432}
           alt="Ionic outlined text"
-          loading="lazy"
+          priority
           sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 1274px"
           className=""
         />
@@ -42,7 +42,7 @@ const HeroAnimation = () => {
             alt="Ionic company showcasing hybrid mobile app with cross-platform UI components"
             width={264}
             height={587}
-            loading="lazy"
+            priority
             sizes="(max-width: 768px) 40vw, (max-width: 1200px) 25vw, 264px"
             className="object-contain h-[307px] lg:h-[407px] midlg:h-auto float-start"
           />
@@ -76,7 +76,7 @@ const HeroAnimation = () => {
             alt="Ionic company demonstrating cross-platform mobile app with interactive UI components"
             width={264}
             height={587}
-            loading="lazy"
+            priority
             sizes="(max-width: 768px) 40vw, (max-width: 1200px) 25vw, 264px"
             className="object-contain h-[307px] lg:h-[407px] midlg:h-auto"
           />
