@@ -11,7 +11,7 @@ const HeroAnimation = () => {
   return (
     <div
       ref={ref}
-      className="w-full lg:h-[457px] midlg:h-[557px] relative flex  items-end justify-center xl:mt-10"
+      className="w-full lg:h-[457px] midlg:h-[557px] relative flex items-end justify-center xl:mt-10"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -19,14 +19,17 @@ const HeroAnimation = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="absolute bottom-0 z-0 left-1/2 -translate-x-1/2 w-full"
       >
-        <img
-          src={"/ionic-app-development/ionic-outlined-text.png"}
+        <Image
+          src="/ionic-app-development/ionic-outlined-text.webp"
           width={1274}
           height={432}
-          className=""
           alt="Ionic outlined text"
+          loading="lazy"
+          sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 1274px"
+          className=""
         />
       </motion.div>
+
       <div className="h-full w-full md:w-[70%] xl:w-[776px] lg:h-[457px] midlg:h-[557px] relative flex justify-center items-end">
         <motion.div
           initial={{ y: 450 }}
@@ -34,11 +37,13 @@ const HeroAnimation = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="z-10 absolute -left-12 md:-left-10 lg:left-0 max-w-[264px] flex justify-start bottom-0"
         >
-          <img
-            src={"/ionic-app-development/hero-mockup-2.png"}
+          <Image
+            src="/ionic-app-development/hero-mockup-2.webp"
             alt="Ionic company showcasing hybrid mobile app with cross-platform UI components"
             width={264}
             height={587}
+            loading="lazy"
+            sizes="(max-width: 768px) 40vw, (max-width: 1200px) 25vw, 264px"
             className="object-contain h-[307px] lg:h-[407px] midlg:h-auto float-start"
           />
         </motion.div>
@@ -49,11 +54,13 @@ const HeroAnimation = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="z-20"
         >
-          <img
-            src={"/ionic-app-development/hero-mockup-1.png"}
+          <Image
+            src="/ionic-app-development/hero-mockup-1.webp"
             alt="Ionic company displaying hybrid mobile app interface with responsive design elements"
             width={326}
             height={661}
+            priority // main hero image → LCP
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 326px"
             className="object-contain h-[357px] lg:h-[457px] midlg:h-auto"
           />
         </motion.div>
@@ -64,11 +71,13 @@ const HeroAnimation = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="z-10 absolute -right-12 md:-right-10 lg:right-0"
         >
-          <img
-            src={"/ionic-app-development/hero-mockup-3.png"}
+          <Image
+            src="/ionic-app-development/hero-mockup-3.webp"
             alt="Ionic company demonstrating cross-platform mobile app with interactive UI components"
             width={264}
             height={587}
+            loading="lazy"
+            sizes="(max-width: 768px) 40vw, (max-width: 1200px) 25vw, 264px"
             className="object-contain h-[307px] lg:h-[407px] midlg:h-auto"
           />
         </motion.div>
