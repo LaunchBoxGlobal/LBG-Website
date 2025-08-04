@@ -28,54 +28,6 @@ const Workflow = () => {
         </p>
       </section>
 
-      {/* <div className="w-full flex justify-center mt-10">
-        <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
-          <button
-            type="button"
-            name="agile methodology button"
-            onClick={() => setActiveTab("agile")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "agile"
-                ? "kotin-bg text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            AGILE
-          </button>
-          <button
-            type="button"
-            name="recommended workflow button"
-            onClick={() => setActiveTab("recommended")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "recommended"
-                ? "kotin-bg text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            recommended
-          </button>
-          <button
-            type="button"
-            name="waterfall methodology button"
-            onClick={() => setActiveTab("waterfall")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "waterfall"
-                ? "kotin-bg text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            Waterfall
-          </button>
-        </div>
-      </div>
-
-      {activeTab === "agile" && <AgileWorkflow workflow={SMART_PLANNING} />}
-      {activeTab === "recommended" && (
-        <AgileWorkflow workflow={MOBILE_APP_RECOMMENDED_WORKFLOW} />
-      )}
-      {activeTab === "waterfall" && (
-        <AgileWorkflow workflow={MOBILE_APP_WATERFALL_WORKFLOW} />
-      )} */}
       <div className="w-full flex justify-center mt-10 lg:mt-14">
         <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
           <button
@@ -182,12 +134,12 @@ const AnimatedLine = () => {
 
       <div className="absolute bottom-[14%] right-[-1%] items-center justify-center hidden lg:flex">
         <img
-          src={"/kotlin-rocket.png"}
+          src={"/kotlin/kotlin-rocket.webp"}
           alt="Rocket"
           width={119}
           height={274}
           className="absolute z-20 left-1/2 -translate-x-1/2"
-          priority
+          loading="lazy"
         />
         <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-75"></span>
         <span className="animate-ping absolute inline-flex h-[150px] w-[150px] rounded-full bg-[#E1E1E1] opacity-50"></span>
