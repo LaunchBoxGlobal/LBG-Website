@@ -26,26 +26,29 @@ const Hero = () => {
         </section>
 
         <Image
-          src={"/off-shore/hero-image.png"}
+          src={"/off-shore/hero-image.webp"}
           width={1541}
           height={260}
           alt="hero-image"
+          priority
           className="w-full mx-auto object-contain z-10"
         />
         {/*  */}
 
         <Image
-          src={"/off-shore/offshore-hero-right-image.png"}
+          src={"/off-shore/offshore-hero-right-image.webp"}
           width={292}
           height={603}
           alt="hero-image"
+          priority
           className="absolute -right-16 top-20 w-[292px] h-[603px] object-contain z-0 hidden lg:block"
         />
         <Image
-          src={"/off-shore/offshore-hero-left-image.png"}
+          src={"/off-shore/offshore-hero-left-image.webp"}
           width={292}
           height={603}
           alt="hero-image"
+          priority
           className="absolute -left-16 top-20 w-[292px] h-[603px] object-contain z-0 hidden lg:block"
         />
       </section>

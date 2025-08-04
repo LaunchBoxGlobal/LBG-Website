@@ -23,7 +23,7 @@ const HeroAnimation = () => {
           className="absolute z-20 top-[20%] md:top-[20%] lg:top-[16%] lg:right-[8%] w-full md:w-[88%] lg:w-[88%]"
         >
           <Image
-            src={"/react-native/hero-mockup.png"}
+            src={"/react-native/hero-mockup.webp"}
             width={761}
             height={653}
             alt="React Native app development company showcasing cross-platform mobile application interface and features"
@@ -41,7 +41,7 @@ const HeroAnimation = () => {
             className="absolute top-[0%] right-[2%]"
           >
             <Image
-              src={"/react-native/hero-card-1.png"}
+              src={"/react-native/hero-card-1.webp"}
               width={223}
               height={65}
               alt="hero-card-1"
@@ -55,7 +55,7 @@ const HeroAnimation = () => {
             className="absolute top-[25%] right-[-20%] hidden md:block"
           >
             <Image
-              src={"/react-native/hero-card-2.png"}
+              src={"/react-native/hero-card-2.webp"}
               width={197}
               height={97}
               alt="react-native-app-hero-mockup-1"
@@ -69,7 +69,7 @@ const HeroAnimation = () => {
             className="absolute top-[8%] left-[2%] z-20 hidden md:block"
           >
             <Image
-              src={"/react-native/hero-card-3.png"}
+              src={"/react-native/hero-card-3.webp"}
               width={245}
               height={40}
               alt="react-native-app-hero-mockup-1"

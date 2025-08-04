@@ -16,6 +16,13 @@ const nextConfig = {
       },
     ],
   },
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  experimental: {
+    esmExternals: true, // prefer native ESM
+  },
 
   async redirects() {
     return [
