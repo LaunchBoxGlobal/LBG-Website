@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^14.2.15",
     "@next/third-parties": "^14.2.13",
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.7",
@@ -44,5 +43,11 @@
   "devDependencies": {
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "browserslist": [
+    "last 3 Chrome versions",
+    "last 3 Firefox versions",
+    "last 3 Edge versions",
+    "last 3 Safari versions"
+  ]
 }

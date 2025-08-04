@@ -121,46 +121,7 @@ const Navbar = () => {
             Case Studies{" "}
           </Link>
         </li>
-        {/* <li
-          className="z-50 h-full flex items-center"
-          onMouseEnter={() => toggleAugmentationDropdown()}
-          onMouseLeave={() => toggleAugmentationDropdown()}
-        >
-          <Link
-            href={"/staff-augmentation"}
-            className={`font-normal text-sm xl:text-[14px] 2xl:text-[20px] whitespace-nowrap`}
-          >
-            Team Augmentation
-          </Link>
-          {augmentationDropdown && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4 }}
-              onMouseEnter={() => toggleDropdown()}
-              onMouseLeave={() => toggleDropdown()}
-              className="bg-transparent absolute right-[13%] mt-0 z-40 top-16 2xl:top-20 padding-x"
-            >
-              <div className="bg-white min-w-[300px] max-w-[350px] mx-auto mt-6 flex items-start justify-center gap-10 rounded-[17px] border border-[#CECEEA] p-6">
-                <div className="w-full flex flex-col items-start gap-2">
-                  {augmentationLinks?.map((p, i) => {
-                    return (
-                      <Link
-                        href={`/${p?.pageUrl}`}
-                        key={i}
-                        onClick={() => closeDropdown()}
-                        className="text-lg underline text-gray-600 hover:text-black"
-                      >
-                        {p?.title}
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </li> */}
+
         <li>
           <Link
             href={`/blog`}
@@ -200,10 +161,12 @@ const Navbar = () => {
       <button
         type="button"
         name="sidebar menu button"
+        aria-expanded={openSidebar}
+        aria-label={openSidebar ? "Close mobile menu" : "Open mobile menu"}
         onClick={toggleSidebar}
         className="lg:hidden mr-1"
       >
-        <TbMenu2 className="text-2xl text-[#F40E00]" />
+        <TbMenu2 className="text-2xl text-[#F40E00]" aria-hidden="true" />
       </button>
       <div
         className={`w-full h-screen bg-transparent z-50 fixed inset-0 ${

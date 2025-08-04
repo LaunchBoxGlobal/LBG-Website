@@ -10,7 +10,7 @@ const HeroAnimation = () => {
         <span className="animate-ping absolute inline-flex h-[100px] w-[100px] md:w-[180px] md:h-[180px] lg:h-[150px] lg:w-[150px] rounded-full bg-[#F40E0059] opacity-25"></span>
       </div>
 
-      <img
+      <Image
         src={"/staff-augmentation/hero-mockup-image-01.webp"}
         alt="hero mockup image"
         width={1270}

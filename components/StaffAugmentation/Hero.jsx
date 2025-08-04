@@ -30,21 +30,26 @@ const Hero = () => {
         {/* <HeroSearchInput /> */}
         <HeroAnimation />
 
-        <img
-          src={"/staff-augmentation/hero-mask-1.png"}
-          alt="hero-mask-1"
+        <Image
+          src="/staff-augmentation/hero-mask-1.png"
+          alt="white borders & textured image used on the background"
           width={467}
           height={138}
-          priority
+          loading="lazy"
+          sizes="(max-width: 768px) 40vw, (max-width: 1200px) 25vw, 467px"
           className="absolute object-contain right-0 top-24 z-0"
+          aria-hidden="true"
         />
-        <img
-          src={"/staff-augmentation/hero-mask-image-left.webp"}
-          alt="hero mask image left"
+
+        <Image
+          src="/staff-augmentation/hero-mask-image-left.webp"
+          alt="white textured image used on the background"
           width={653}
           height={366}
-          priority
+          loading="lazy"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 35vw, 653px"
           className="absolute object-contain left-0 bottom-0 z-0"
+          aria-hidden="true"
         />
       </section>
     </section>
