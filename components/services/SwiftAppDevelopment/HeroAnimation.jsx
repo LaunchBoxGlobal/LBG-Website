@@ -13,10 +13,12 @@ const HeroAnimation = () => {
   return (
     <div ref={ref} className="w-full relative mt-0 mb-10 md:my-10">
       <Image
-        src={"/swift/hero-bg-image.png"}
+        src="/swift/hero-bg-image.webp"
         width={1266}
         height={834}
-        alt="swift hero bg image"
+        alt="Swift hero bg image"
+        priority
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1266px"
         className="z-0 h-[60vh] md:h-auto object-cover"
       />
 
@@ -32,26 +34,28 @@ const HeroAnimation = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <Image
-            src={"/swift/swift-hero-mobile-mockups.png"}
-            alt="Swift app development services showcasing native iOS application with polished interface elements"
+            src="/swift/swift-hero-mobile-mockups.webp"
             width={648}
             height={714}
+            priority
+            alt="Swift app development services showcasing native iOS application with polished interface elements"
+            sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 648px"
             className="relative -right-4"
           />
         </motion.div>
       </div>
 
-      <div className="absolute left-[-2%] z-20 bottom-[20%] hidden lg:flex items-center justify-center w-[330px] h-[280px] rotate-12">
+      <div className="absolute left-[2%] z-20 bottom-[20%] hidden lg:flex items-center justify-center w-[330px] h-[280px] rotate-12">
         {/* card-1 */}
         <Image
-          src={"/swift/swift-hero-cursor-1.png"}
+          src={"/swift/swift-hero-cursor-1.webp"}
           alt="swift-hero-cursor-1"
           width={58}
           height={56}
           className="swift-orbiting-cursor"
         />
         <Image
-          src={"/swift/hero-card-1.png"}
+          src={"/swift/hero-card-1.webp"}
           alt="Swift app development services displaying iOS mobile banking app interface with secure login"
           width={224}
           height={161}
@@ -61,7 +65,7 @@ const HeroAnimation = () => {
 
       {/* card-2 */}
       <Image
-        src={"/swift/card-2.png"}
+        src={"/swift/card-2.webp"}
         alt="card-1"
         width={98}
         height={98}
@@ -70,7 +74,7 @@ const HeroAnimation = () => {
 
       {/* card-3 */}
       <Image
-        src={"/swift/card-3.png"}
+        src={"/swift/card-3.webp"}
         alt="card-1"
         width={138}
         height={138}
@@ -79,7 +83,7 @@ const HeroAnimation = () => {
 
       {/* card-4 */}
       <Image
-        src={"/swift/card-4.png"}
+        src={"/swift/card-4.webp"}
         alt="card-1"
         width={128}
         height={128}
@@ -88,7 +92,7 @@ const HeroAnimation = () => {
 
       {/* card-5 */}
       <Image
-        src={"/swift/card-5.png"}
+        src={"/swift/card-5.webp"}
         alt="card-1"
         width={108}
         height={108}
@@ -98,14 +102,14 @@ const HeroAnimation = () => {
       {/* card-6 */}
       <div className="absolute right-[1%] z-20 bottom-[20%] hidden lg:flex items-center justify-center w-[280px] h-[180px]">
         <Image
-          src={"/swift/swift-cursor-2.png"}
+          src={"/swift/swift-cursor-2.webp"}
           alt="Swift app development services showcasing fitness app UI with workout tracking dashboard"
           width={58}
           height={56}
           className="swift-orbiting-cursor-right"
         />
         <Image
-          src={"/swift/swift-card-6.png"}
+          src={"/swift/swift-card-6.webp"}
           alt="card-1"
           width={220}
           height={125}
