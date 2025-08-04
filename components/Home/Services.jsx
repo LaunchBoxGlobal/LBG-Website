@@ -45,7 +45,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 (01)
               </span>
               <img
-                src="/home-mobile-app-development-image.png"
+                src="/home-mobile-app-development-image.webp"
                 width={191}
                 height={325}
                 alt="Software development agency creating mobile apps with expert coding and innovative tech solutions"
@@ -123,7 +123,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 (02)
               </span>
               <img
-                src="/home-web-app-development-service-image.png"
+                src="/home-web-app-development-service-image.webp"
                 width={313}
                 height={339}
                 alt="Analytics dashboard mockup showcasing a software development agency’s focus on marketing and performance tools."
@@ -201,7 +201,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 (03)
               </span>
               <img
-                src="/home-software-development-service-image.png"
+                src="/home-software-development-service-image.webp"
                 width={313}
                 height={339}
                 alt="UI mockup highlighting a software development agency's custom solutions with modern design and functionality."
@@ -281,7 +281,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 (04)
               </span>
               <img
-                src="/home-ecommerce-app-development-service-image.png"
+                src="/home-ecommerce-app-development-service-image.webp"
                 width={210}
                 height={339}
                 alt="Mobile app mockup showing custom software engineering services for smooth ecommerce experience and user interface."
@@ -359,7 +359,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 (05)
               </span>
               <img
-                src="/home-digital-marketing-service-mockup.png"
+                src="/home-digital-marketing-service-mockup.webp"
                 width={291}
                 height={190}
                 alt="Digital Marketing services banking app interface showing Western Bank Limited $1.50 cash transaction processing"
@@ -438,7 +438,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 (06)
               </span>
               <img
-                src="/home-branding-and-design-service-mockup.png"
+                src="/home-branding-and-design-service-mockup.webp"
                 width={310}
                 height={284}
                 alt="Branding and design showcase for AURLEN featuring minimalist logo presentation and visual identity elements."

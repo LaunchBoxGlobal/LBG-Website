@@ -80,6 +80,7 @@ const FooterBadges = () => {
                 width={badge.width}
                 height={badge.height}
                 alt={badge.alt_tag}
+                loading="lazy"
               />
             ) : (
               // </Link>
@@ -89,6 +90,7 @@ const FooterBadges = () => {
                   width={badge.width}
                   height={badge.height}
                   alt={badge.alt_tag}
+                  loading="lazy"
                 />
               </Link>
             )}

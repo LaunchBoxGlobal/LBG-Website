@@ -1,6 +1,6 @@
 export const HOME_SERVICES = [
   {
-    image: "/home-mobile-app-development-image.png",
+    image: "/home-mobile-app-development-image.webp",
     img_width: 191,
     img_height: 325,
     title: "Mobile App Development",
@@ -22,7 +22,7 @@ export const HOME_SERVICES = [
     pageUrl: "/services/mobile-app-development",
   },
   {
-    image: "/home-web-app-development-service-image.png",
+    image: "/home-web-app-development-service-image.webp",
     title: "Web App Development",
     desc: "Strong web app development keeps your business running efficiently. With web app development services, you get custom-built fast, secure, and user-friendly solutions for customers or internal teams. A well-designed web app improves workflows, boosts engagement, and delivers user experience.",
     img_width: 313,
@@ -42,7 +42,7 @@ export const HOME_SERVICES = [
     pageUrl: "/services/web-app-development",
   },
   {
-    image: "/home-software-development-service-image.png",
+    image: "/home-software-development-service-image.webp",
     title: "Software Development",
     desc: "Your business is unique, and your software should be too. With custom software development services, get tailored solutions that could fix your exact needs. Whether it’s automating tasks, improving efficiency, or scaling operations, the correct software could make a difference. There are no unnecessary features, just the tools that are used perfectly and built specifically for your business requirements.",
     img_width: 312,
@@ -61,7 +61,7 @@ export const HOME_SERVICES = [
     pageUrl: "/services/custom-software-development",
   },
   {
-    image: "/home-ecommerce-app-development-service-image.png",
+    image: "/home-ecommerce-app-development-service-image.webp",
     title: "E-Commerce Development",
     desc: "Selling online should be simple and effective with e-commerce app development services. Create an easy-to-use store that helps customers find, buy, and return with confidence. Create a secure and fast mobile-friendly platform that ensures smooth shopping experiences. Build an online store that grows your business and keeps customers coming back.",
     img_width: 210,
@@ -83,7 +83,7 @@ export const HOME_SERVICES = [
     pageUrl: "/services/ecommerce-development",
   },
   {
-    image: "/home-digital-marketing-service-mockup.png",
+    image: "/home-digital-marketing-service-mockup.webp",
     title: "Digital Marketing",
     desc: "Reaching the right online audience takes approach and ability. With digital marketing services, visibility can be boosted through SEO, paid ads, and social media. Also, drive traffic and lead generation and turn your visitors into loyal customers. A strong digital presence that helps your business grow and stay ahead in a competitive online world.",
     img_width: 291,
@@ -94,7 +94,7 @@ export const HOME_SERVICES = [
     pageUrl: "/services/digital-marketing",
   },
   {
-    image: "/home-branding-and-design-service-mockup.png",
+    image: "/home-branding-and-design-service-mockup.webp",
     title: "Branding & Designing",
     desc: "Your brand is how people remember you. With branding & designing services, create a strong identity that connects with the customers. From the logos to the entire brand strategy, every small detail matters. Clear, creative, and eye-catching designs that helps build trust, and make you stand out from the competition.",
     img_width: 310,

@@ -32,6 +32,7 @@ const ProcessCard = ({ process, index }) => {
             width={process?.iconWidth || 41}
             height={process?.iconHeight || 43}
             className="object-contain"
+            loading="lazy"
           />
         </div>
       </div>

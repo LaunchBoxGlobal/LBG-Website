@@ -72,7 +72,7 @@ const HomeHero = () => {
         width={1710}
         height={359}
         alt="globe shadow image"
-        loading="lazy"
+        priority
         className="w-[100%] h-[109px] lg:h-[359px] 2xl:h-[409px] absolute -bottom-16 md:-bottom-14 lg:bottom-[-33%] xl:bottom-[-25%] 2xl:-bottom-[22%] z-30 opacity-100"
       />
     </section>

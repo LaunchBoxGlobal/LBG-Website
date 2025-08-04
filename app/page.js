@@ -25,6 +25,7 @@ export default function Home() {
             logo: "https://launchboxglobal.com/_next/image?url=%2Flogo02.png&w=256&q=75",
           }),
         }}
+        strategy="lazyOnload"
       />
       <Script
         type="application/ld+json"
@@ -42,6 +43,7 @@ export default function Home() {
             },
           }),
         }}
+        strategy="lazyOnload"
       />
       {/* </head> */}
 
