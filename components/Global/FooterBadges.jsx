@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Script from "next/script";
+import Link from "next/link";
 
 export const footer_badges = [
   {
@@ -9,24 +10,28 @@ export const footer_badges = [
     width: 146,
     height: 155,
     alt_tag: "designrush logo",
+    link: "https://www.designrush.com/agency/mobile-app-design-development/florida",
   },
   {
     image: "/sitejabber-logo-vector.svg",
     width: 146,
     height: 140,
     alt_tag: "sitejabber logo",
+    link: null,
   },
   {
     image: "/trustpilot-icon.svg",
     width: 159,
     height: 40,
     alt_tag: "trustpilot logo",
+    link: null,
   },
   {
     image: "/clutch-icon.png",
     width: 161,
     height: 81,
     alt_tag: "clutch logo",
+    link: null,
   },
 ];
 
@@ -64,13 +69,29 @@ const FooterBadges = () => {
     <div className="flex items-center justify-center flex-wrap gap-6 mb-10">
       {footer_badges?.map((badge, i) => {
         return (
-          <div className="w-[181px] h-[171px] bg-white flex items-center justify-center p-4">
-            <img
-              src={badge.image}
-              width={badge.width}
-              height={badge.height}
-              alt={badge.alt_tag}
-            />
+          <div
+            key={i}
+            className="w-[181px] h-[171px] bg-white flex items-center justify-center p-4"
+          >
+            {badge?.link === null ? (
+              // <Link href={badge?.link}>
+              <img
+                src={badge.image}
+                width={badge.width}
+                height={badge.height}
+                alt={badge.alt_tag}
+              />
+            ) : (
+              // </Link>
+              <Link href={badge?.link} target="_blank">
+                <img
+                  src={badge.image}
+                  width={badge.width}
+                  height={badge.height}
+                  alt={badge.alt_tag}
+                />
+              </Link>
+            )}
           </div>
         );
       })}
