@@ -58,6 +58,7 @@ const HomeStats = () => {
                 height={45}
                 alt={`${stat.label} icon`}
                 loading="lazy"
+                priority={false}
                 className="w-full h-full object-contain"
               />
             </div>

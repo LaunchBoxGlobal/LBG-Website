@@ -1,15 +1,5 @@
-"use client";
-import { PROCESS } from "@/constants/Process";
-import Image from "next/image";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
 import "./ProcessAnimations.css";
 import HomeNewProcess from "./HomeNewProcess";
-import {
-  FLORDIA_AGILE_PROCESS,
-  FLORDIA_RECOMMENDED_PROCESS,
-  FLORDIA_WATERFALL_PROCESS,
-} from "@/constants/locations/mobile-app-developer/agile-process-florida";
 import {
   HOME_PAGE_AGILE_PROCESS,
   HOME_PAGE_RECOMMENDED_PROCESS,
@@ -17,14 +7,6 @@ import {
 } from "@/constants/home-page-process";
 
 const Process = () => {
-  const [openFaq, setOpenFaq] = useState(0);
-  const [imageIndex, setImageIndex] = useState(0);
-
-  const toggleFaq = (index) => {
-    setOpenFaq(openFaq === index ? null : index);
-    setImageIndex(index);
-  };
-
   return (
     <section
       className="w-full padding-x py-12 lg:py-28 bg-[#F9F9F9]"
@@ -48,137 +30,6 @@ const Process = () => {
         recommendedProcess={HOME_PAGE_RECOMMENDED_PROCESS}
         waterfallProcess={HOME_PAGE_WATERFALL_PROCESS}
       />
-
-      {/* <section className="w-full mt-14 grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <section className="w-full">
-          {PROCESS?.map((process, index) => {
-            return (
-              <button
-                type="button"
-                name={process?.title}
-                className={`w-full flex flex-col md:flex-row items-center md:items-start md:gap-10 mb-5 outline-none`}
-                key={index}
-                onClick={() => toggleFaq(index)}
-              >
-                <div
-                  className={`flex flex-col items-center justify-start gap-1 relative`}
-                >
-                  <p
-                    className={`text-[25px] xl:text-[30px] font-bold ${
-                      openFaq === index ? "text-[#F40E00]" : "text-gray-400"
-                    } transition-all duration-1000`}
-                  >
-                    {index + 1}
-                  </p>
-                  <div
-                    className={`w-1 ${
-                      openFaq === index
-                        ? "h-14 bg-[#F40E00]"
-                        : "h-0 bg-gray-400"
-                    } transition-all duration-1000 rounded-full hidden md:block`}
-                  ></div>
-                </div>
-                <div className="flex flex-col items-center md:items-start justify-start text-center md:text-start w-full">
-                  <h3
-                    className={`text-[22px] text-center lg:text-start xl:text-[30px] ${
-                      openFaq === index
-                        ? "font-bold text-[#F40E00]"
-                        : "font-semibold text-gray-400"
-                    }`}
-                  >
-                    {process?.title}
-                  </h3>
-                  <motion.div
-                    initial={false}
-                    animate={{
-                      height: openFaq === index ? "auto" : 0,
-                      opacity: openFaq === index ? 1 : 0,
-                    }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                    className="overflow-hidden mt-4 lg:mt-2 mx-auto lg:ml-0"
-                  >
-                    <p className="text-base lg:text-[20px] font-normal text-center mx-auto md:ml-0 md:text-start lg:ml-0 leading-[24px] tracking-tight text-gray-900 w-[90%]">
-                      {process?.text}
-                    </p>
-                  </motion.div>
-                  {index < 6 && (
-                    <div
-                      className={`w-1 ${
-                        openFaq === index
-                          ? "h-14 bg-[#F40E00] mt-3"
-                          : "h-14 bg-gray-400"
-                      } transition-all duration-1000 rounded-full md:hidden`}
-                    ></div>
-                  )}
-                </div>
-              </button>
-            );
-          })}
-        </section>
-        <section className="w-full hidden lg:flex items-start justify-center">
-          {imageIndex === 0 && <ProjectDiscoveryImage />}
-          {imageIndex === 1 && (
-            <Image
-              src={PROCESS[imageIndex]?.image}
-              alt={PROCESS[imageIndex]?.title}
-              width={380}
-              height={410}
-              loading="lazy"
-              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
-            />
-          )}
-          {imageIndex === 2 && (
-            <Image
-              src={PROCESS[imageIndex]?.image}
-              alt={PROCESS[imageIndex]?.title}
-              width={380}
-              height={410}
-              loading="lazy"
-              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
-            />
-          )}
-          {imageIndex === 3 && (
-            <Image
-              src={PROCESS[imageIndex]?.image}
-              alt={PROCESS[imageIndex]?.title}
-              width={380}
-              height={410}
-              loading="lazy"
-              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
-            />
-          )}
-          {imageIndex === 4 && (
-            <Image
-              src={PROCESS[imageIndex]?.image}
-              alt={PROCESS[imageIndex]?.title}
-              width={380}
-              height={410}
-              loading="lazy"
-              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
-            />
-          )}
-          {imageIndex === 5 && (
-            <Image
-              src={PROCESS[imageIndex]?.image}
-              alt={PROCESS[imageIndex]?.title}
-              width={380}
-              height={410}
-              loading="lazy"
-              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
-            />
-          )}
-          {imageIndex === 6 && (
-            <Image
-              src={PROCESS[imageIndex]?.image}
-              alt={PROCESS[imageIndex]?.title}
-              width={380}
-              height={410}
-              loading="lazy"
-              className="transition-all duration-1000 object-contain h-[300px] lg:w-[300px] xl:w-[400px] lg:h-[470px] workFlowImage"
-            />
-          )}
-        </section>
-      </section> */}
     </section>
   );
 };

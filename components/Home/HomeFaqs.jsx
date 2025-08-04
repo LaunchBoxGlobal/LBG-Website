@@ -45,6 +45,7 @@ const HomeFaqs = () => {
                 height={20}
                 alt="faq arrow icon"
                 loading="lazy"
+                priority={false}
                 className={`${
                   openFaq === index ? "scale-y-[-1]" : "scale-y-[1]"
                 } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px]`}

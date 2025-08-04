@@ -38,6 +38,7 @@ const TechSliderReverse = () => {
                 height={20}
                 alt={platform?.title}
                 loading="lazy"
+                priority={false}
                 className="w-auto h-full object-contain"
               />
             </div>

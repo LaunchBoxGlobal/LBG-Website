@@ -50,6 +50,8 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 height={325}
                 alt="Software development agency creating mobile apps with expert coding and innovative tech solutions"
                 loading="lazy"
+                priority={false}
+                sizes="(max-width: 768px) 120px, (max-width: 1024px) 150px, (max-width: 1440px) 180px, 200px"
                 className={`2xl:left-[9%] -top-[40%] object-contain hidden lg:block absolute lg:left-[12%] xl:left-[10%] z-10 ${
                   openFaq === 0
                     ? "lg:top-[10%] top-[10%] rotate-0 visible"
@@ -126,8 +128,13 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 src="/home-web-app-development-service-image.webp"
                 width={313}
                 height={339}
-                alt="Analytics dashboard mockup showcasing a software development agency’s focus on marketing and performance tools."
                 loading="lazy"
+                alt="Analytics dashboard mockup showcasing a software development agency’s focus on marketing and performance tools."
+                sizes="(max-width: 768px) 160px,
+               (max-width: 1024px) 200px,
+               (max-width: 1440px) 240px,
+               280px"
+                priority={false}
                 className={`2xl:left-[9%] -top-[40%] object-contain hidden lg:block absolute lg:left-[12%] xl:left-[7%] z-10 ${
                   openFaq === 1
                     ? "lg:top-[10%] top-[10%] rotate-0 visible"
@@ -205,7 +212,12 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 width={313}
                 height={339}
                 alt="UI mockup highlighting a software development agency's custom solutions with modern design and functionality."
+                sizes="(max-width: 768px) 160px,
+               (max-width: 1024px) 200px,
+               (max-width: 1440px) 240px,
+               280px"
                 loading="lazy"
+                priority={false}
                 className={`2xl:left-[9%] -top-[40%] object-contain hidden lg:block absolute lg:left-[12%] xl:left-[7%] z-10 ${
                   openFaq === 2
                     ? "lg:top-[10%] top-[10%] rotate-0 visible"
@@ -285,6 +297,11 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 width={210}
                 height={339}
                 alt="Mobile app mockup showing custom software engineering services for smooth ecommerce experience and user interface."
+                sizes="(max-width: 768px) 150px,
+               (max-width: 1024px) 200px,
+               (max-width: 1440px) 220px,
+               250px"
+                priority={false}
                 loading="lazy"
                 className={`2xl:left-[9%] -top-[40%] object-contain hidden lg:block absolute lg:left-[12%] xl:left-[7%] z-10 ${
                   openFaq === 3
@@ -363,7 +380,12 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 width={291}
                 height={190}
                 alt="Digital Marketing services banking app interface showing Western Bank Limited $1.50 cash transaction processing"
+                sizes="(max-width: 768px) 160px,
+               (max-width: 1024px) 220px,
+               (max-width: 1440px) 260px,
+               280px"
                 loading="lazy"
+                priority={false}
                 className={`2xl:left-[9%] -top-[40%] object-contain hidden lg:block absolute lg:left-[12%] xl:left-[7%] z-10 ${
                   openFaq === 4
                     ? "lg:top-[10%] top-[10%] rotate-0 visible"
@@ -442,7 +464,12 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                 width={310}
                 height={284}
                 alt="Branding and design showcase for AURLEN featuring minimalist logo presentation and visual identity elements."
+                sizes="(max-width: 768px) 160px,
+               (max-width: 1024px) 220px,
+               (max-width: 1440px) 260px,
+               300px"
                 loading="lazy"
+                priority={false}
                 className={`2xl:left-[9%] -top-[40%] object-contain hidden lg:block absolute lg:left-[12%] xl:left-[7%] z-10 ${
                   openFaq === 5
                     ? "lg:top-[10%] top-[10%] rotate-0 visible"
@@ -498,10 +525,6 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
               </div>
             </div>
           </button>
-
-          {/* Repeat same pattern for Service 2, Service 3, ..., Service 6 */}
-          {/* Use toggleFaq(1), openFaq === 1 for Service 2, etc. */}
-          {/* Change images, titles, descriptions, and links accordingly */}
         </section>
       </section>
     </section>

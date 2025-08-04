@@ -13,6 +13,7 @@ const CustomerReviewCard = ({ text }) => {
           width={60}
           height={60}
           loading="lazy"
+          priority={false}
           alt={text?.author}
           className="w-[60px] h-[60px] rounded-full object-cover"
         />
