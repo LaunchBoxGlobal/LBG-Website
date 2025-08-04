@@ -23,12 +23,15 @@ const HeroAnimation = () => {
           className="absolute z-20 top-[20%] md:top-[20%] lg:top-[16%] lg:right-[8%] w-full md:w-[88%] lg:w-[88%]"
         >
           <Image
-            src={"/react-native/hero-mockup.webp"}
+            src="/react-native/hero-mockup.webp"
+            alt="React Native app development company showcasing cross-platform mobile application interface and features"
             width={761}
             height={653}
-            alt="React Native app development company showcasing cross-platform mobile application interface and features"
             priority
-            className="z-10"
+            sizes="(max-width: 768px) 90vw,
+         (max-width: 1200px) 70vw,
+         761px"
+            className="z-10 object-contain"
           />
         </motion.div>
         <div className="w-[95%] h-[300px] md:w-[550px] md:h-[550px] lg:w-[632px] lg:h-[632px] border relative flex items-center justify-center rounded-full border-[#00A7D4] overflow-visible">
