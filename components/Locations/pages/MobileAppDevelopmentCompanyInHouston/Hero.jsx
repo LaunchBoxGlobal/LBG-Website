@@ -46,11 +46,13 @@ const Hero = () => {
           >
             <Image
               src={
-                "/locations/mobile-app-developers-in-houston/mobile-app-developers-in-houston-hero-mockup.png"
+                "/locations/mobile-app-developers-in-houston/mobile-app-developers-in-houston-hero-mockup.webp"
               }
               width={1331}
               height={589}
+              priority
               alt="Mobile App Developers in Houston showcasing fitness tracking app with workout analytics dashboard"
+              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 1331px"
               className="mx-auto h-full object-contain z-10 relative -bottom-4"
             />
           </motion.div>

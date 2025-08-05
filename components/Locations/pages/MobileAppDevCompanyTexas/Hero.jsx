@@ -45,10 +45,12 @@ const Hero = () => {
           className="mx-auto"
         >
           <Image
-            src={"/locations/mobile-app-dev-company-texas/mobile-mockup.png"}
+            src={"/locations/mobile-app-dev-company-texas/mobile-mockup.webp"}
             width={1472}
             height={614}
+            priority
             alt="Mobile App Development Company in Texas showcasing cross-platform banking app interface"
+            sizes="(max-width: 768px) 95vw, (max-width: 1200px) 80vw, 1472px"
             className="mx-auto h-full object-contain z-10 relative"
           />
         </motion.div>

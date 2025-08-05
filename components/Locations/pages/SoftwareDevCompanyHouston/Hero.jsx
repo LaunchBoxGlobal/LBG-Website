@@ -37,10 +37,12 @@ const Hero = () => {
         </section>
 
         <Image
-          src={"/locations/software-dev-company-houston/hero-left-dots.png"}
+          src={"/locations/software-dev-company-houston/hero-left-dots.webp"}
           width={28}
           height={95}
+          priority
           alt="Custom Software Development Company in Houston: Equation ½x + ⅓ = 0 displayed"
+          sizes="(max-width: 768px) 10vw, 28px"
           className="absolute left-[5%] top-[13%] hidden lg:block"
         />
 
@@ -52,26 +54,32 @@ const Hero = () => {
             className="mx-auto"
           >
             <Image
-              src={"/locations/software-dev-company-houston/hero-mockup.png"}
+              src={"/locations/software-dev-company-houston/hero-mockup.webp"}
               width={1172}
               height={609}
+              priority
               alt="Custom Software Development Company in Houston showcasing enterprise application with intuitive dashboard"
+              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 1172px"
               className="mx-auto h-full object-contain z-10 relative -bottom-4"
             />
           </motion.div>
 
           <Image
-            src={`/locations/software-dev-company-houston/hero-mockup-2.png`}
+            src={`/locations/software-dev-company-houston/hero-mockup-2.webp`}
             width={194}
             height={191}
+            priority
             alt="hero-mockup-2"
+            sizes="(max-width: 768px) 20vw, 194px"
             className="absolute -right-20 bottom-32 hidden lg:block"
           />
           <Image
-            src={"/locations/software-dev-company-houston/hero-dots.png"}
+            src={"/locations/software-dev-company-houston/hero-dots.webp"}
             width={88}
             height={131}
+            priority
             alt="hero-dots"
+            sizes="(max-width: 768px) 15vw, 88px"
             className="absolute bottom-80 -right-36 hidden lg:block"
           />
         </section>

@@ -15,10 +15,6 @@ import PortfolioParallexCards from "@/components/Common/PortfolioParallexCards";
 import { projects } from "@/constants/mobile-app-development/Projects";
 import TechAndTools from "../../LocationComponents/TechAndTools";
 import LocationsWhyChooseUs from "../../LocationComponents/LocationsWhyChooseUs";
-import {
-  FLORIDA_WHY_CHOOSE_US_1,
-  FLORIDA_WHY_CHOOSE_US_2,
-} from "@/constants/locations/mobile-app-developer/florida-why-choose-us";
 import Technologies from "../MobileAppDeveloper/Technologies";
 import {
   MOBILE_APP_DEVS_HOUSTON_WHY_CHOOSE_US_1,
@@ -27,7 +23,6 @@ import {
 import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import LocationStats from "../../LocationComponents/LocationStats";
 import LocationFaqs from "../../LocationComponents/LocationFaqs";
-import { FLORIDA_FAQS } from "@/constants/locations/mobile-app-developer/florida-faqs";
 import { MOBILE_APP_DEVS_HOUSTON_FAQS } from "@/constants/locations/mobile-app-devs-in-houston/mobile-app-devs-in-houston-faqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
 

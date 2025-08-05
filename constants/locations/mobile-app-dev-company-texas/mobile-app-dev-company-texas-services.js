@@ -1,6 +1,6 @@
 export const MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES = [
   {
-    icon: "/locations/mobile-app-developer/cross-platform-app-development-icon.png",
+    icon: "/locations/mobile-app-developer/cross-platform-app-development-icon.webp",
     iconWidth: 60,
     iconHeight: 53,
     title: "Cross-Platform App Development",
@@ -8,7 +8,7 @@ export const MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES = [
       "We offer cross-platform app development services that assure your application operates smoothly on iOS and Android devices. This approach maximizes your reach while minimizing development costs and time, providing a great user experience.",
   },
   {
-    icon: "/locations/mobile-app-developer/android-app-development-icon.png",
+    icon: "/locations/mobile-app-developer/android-app-development-icon.webp",
     iconWidth: 42,
     iconHeight: 53,
     title: "Android App Development",
@@ -16,7 +16,7 @@ export const MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES = [
       "Our Android app development services concentrate on building high-performance applications customized to your business needs. We prioritize user experience and functionality, ensuring your app effectively engages your audience and fosters customer loyalty.",
   },
   {
-    icon: "/locations/mobile-app-developer/ios-app-development-icon.png",
+    icon: "/locations/mobile-app-developer/ios-app-development-icon.webp",
     iconWidth: 43,
     iconHeight: 53,
     title: "iOS App Development",
@@ -24,7 +24,7 @@ export const MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES = [
       "With our iOS app development services, we design and build apps that meet Apple's high standards. Our team assures that your app is user-friendly and efficient and delivers a smooth user experience across all devices.",
   },
   {
-    icon: "/locations/mobile-app-developer/ui-ux-design-service-icon.png",
+    icon: "/locations/mobile-app-developer/ui-ux-design-service-icon.webp",
     iconWidth: 53,
     iconHeight: 53,
     title: "UI/UX Design Services",
@@ -32,7 +32,7 @@ export const MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES = [
       "Our UI/UX design services enhance user interaction with your applications. We design visually appealing and user-friendly designs that keep your audience engaged and ensure a satisfying experience while using your products.",
   },
   {
-    icon: "/locations/mobile-app-developer/web-app-development-service-icon.png",
+    icon: "/locations/mobile-app-developer/web-app-development-service-icon.webp",
     iconWidth: 56,
     iconHeight: 53,
     title: "Web Development",
@@ -40,7 +40,7 @@ export const MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES = [
       "We provide extensive web development services, including responsive design and strong functionality. Our websites are prepared to reflect your brand identity and effectively engage your target audience, increasing traffic and conversions for your business.",
   },
   {
-    icon: "/locations/mobile-app-dev-company-texas/ecommerce-app-development-service-icon.png",
+    icon: "/locations/mobile-app-dev-company-texas/ecommerce-app-development-service-icon.webp",
     iconWidth: 48,
     iconHeight: 50,
     title: "eCommerce Development Services",

@@ -1,6 +1,6 @@
 export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
   {
-    icon: "/locations/web-dev-company-new-jersey/planning-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/planning-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Discovery & Planning",
@@ -9,7 +9,7 @@ export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
       "Understand client requirements & business goals, define the project scope & user stories, prioritize features using a product backlog, and form the development roadmap.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/design-and-prototyping-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/design-and-prototyping-icon.webp",
     iconWidth: 39,
     iconHeight: 26,
     title: "Design & Prototyping",
@@ -18,7 +18,7 @@ export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
       "Wireframing & UI/UX design, creating interactive prototypes, and gathering client feedback for early refinements to ensure a seamless user experience.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/agile-development-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/agile-development-icon.webp",
     iconWidth: 38,
     iconHeight: 34,
     title: "Agile Development",
@@ -27,7 +27,7 @@ export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
       "Break work into short sprints, develop, test, and refine features in each sprint, conduct daily stand-ups for progress tracking, and ensure continuous integration & deployment (CI/CD).",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/quality-assurance-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/quality-assurance-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Quality Assurance",
@@ -36,7 +36,7 @@ export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
       "Perform unit testing, integration testing & bug fixes, conduct usability testing for smooth interactions, and optimize performance & security.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/sprint-demo-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/sprint-demo-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Sprint Demos",
@@ -45,7 +45,7 @@ export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
       "Present sprint outcomes for client validation, incorporate feedback into the next sprint, and adjust features based on market/user needs.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/deployement-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/deployement-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Deployment & Launch",
@@ -54,7 +54,7 @@ export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
       "Conduct final testing & approval, publish on App Store / Play Store, and monitor app performance post-launch for smooth operation.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/post-launch-support-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/post-launch-support-icon.webp",
     iconWidth: 41,
     iconHeight: 34,
     title: "Post-Launch Support",
@@ -65,7 +65,7 @@ export const WEB_DEV_NEW_JERSEY_AGILE_PROCESS = [
 ];
 export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
   {
-    icon: "/locations/web-dev-company-new-jersey/build-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/build-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Essential Features Before Extras",
@@ -74,7 +74,7 @@ export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
       "We don’t waste time designing every pixel upfront. Instead, we develop the most critical functionality first, ensuring the foundation is strong before moving forward.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/real-time-validation-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/real-time-validation-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Real-Time Validation & Refinement",
@@ -83,7 +83,7 @@ export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
       "Instead of waiting until the end to test, we validate functionality as it's developed. This approach helps us identify and fix issues early, saving time and effort later.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/design-around-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/design-around-icon.webp",
     iconWidth: 39,
     iconHeight: 34,
     tag_line: "Practical UI/UX Enhancements",
@@ -92,7 +92,7 @@ export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
       "Once core features are working smoothly, we refine the user experience, designing interfaces that complement functionality rather than just looking good.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/iterate-based-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/iterate-based-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Data-Driven Improvements",
@@ -101,7 +101,7 @@ export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
       "With a working version in hand, we gather real feedback from users or stakeholders, making adjustments based on actual needs instead of assumptions.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/deploy-in-phases-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/deploy-in-phases-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Agile & Impact-Driven Releases",
@@ -110,7 +110,7 @@ export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
       "Instead of waiting months for a perfect launch, we release working versions incrementally—getting value to users faster and allowing continuous improvements.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/scale-and-optimize-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/scale-and-optimize-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Evolving with Your Business Needs",
@@ -119,7 +119,7 @@ export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
       "After launch, we focus on scaling, refining, and enhancing based on real-world usage, ensuring your software grows alongside your business.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/system-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/system-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Extensibility & Long-Term Adaptability",
@@ -130,7 +130,7 @@ export const WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS = [
 ];
 export const WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS = [
   {
-    icon: "/locations/web-dev-company-new-jersey/waterfall-planning-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/waterfall-planning-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Requirements Gathering",
@@ -139,7 +139,7 @@ export const WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS = [
       "We start by understanding your needs, defining project goals, and outlining every feature—ensuring a clear roadmap from day one.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/design-the-system-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/design-the-system-icon.webp",
     iconWidth: 39,
     iconHeight: 26,
     tag_line: "System Design",
@@ -148,7 +148,7 @@ export const WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS = [
       "Before development begins, we create the software’s structure, including UI/UX design and technical planning, so everything is mapped out in advance.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/development-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/development-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Development",
@@ -157,7 +157,7 @@ export const WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS = [
       "With a solid plan, our developers start building exactly as designed, ensuring a smooth and organized process.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/testing-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/testing-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Quality Assurance",
@@ -166,7 +166,7 @@ export const WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS = [
       "Once development is complete, we test everything thoroughly to catch bugs, improve performance, and ensure a seamless user experience.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/validating-users-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/validating-users-icon.webp",
     iconWidth: 32,
     iconHeight: 34,
     tag_line: "User Acceptance & Refinements",
@@ -175,7 +175,7 @@ export const WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS = [
       "We involve key stakeholders or end-users to test the software in real-world scenarios, making refinements based on feedback before the final launch.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/launch-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/launch-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Deployment",
@@ -184,7 +184,7 @@ export const WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS = [
       "After final testing, we launch your software smoothly, making sure everything works perfectly from the start.",
   },
   {
-    icon: "/locations/web-dev-company-new-jersey/ongoing-support-icon.png",
+    icon: "/locations/web-dev-company-new-jersey/ongoing-support-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Maintenance & Updates",

@@ -101,4 +101,9 @@ export const BLOGS_METADATA = {
     description:
       "Got an incomplete website except for app? Learn how to recover from unfinished projects, assess damage, and find developers to fix your broken website.",
   },
+  "the-hidden-risks-behind-a-low-software-development-cost": {
+    title: "Hidden Costs of Low Software Development Cost",
+    description:
+      "Explore why cheap software development costs lead to costly fixes. Learn the budget for good quality, easy solutions & budget friendly. Get expert advice today.",
+  },
 };

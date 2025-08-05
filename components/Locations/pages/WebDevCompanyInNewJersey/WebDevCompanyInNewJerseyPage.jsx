@@ -6,11 +6,6 @@ import AboutSection from "./AboutSection";
 import Services from "./Services";
 import LocationProcess from "../../LocationComponents/LocationProcess";
 import {
-  SOFTWARE_DEV_FLORIDA_AGILE_PROCESS,
-  SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS,
-  SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS,
-} from "@/constants/locations/software-dev-company-florida/software-dev-florida-process";
-import {
   WEB_DEV_NEW_JERSEY_AGILE_PROCESS,
   WEB_DEV_NEW_JERSEY_RECOMMENDED_PROCESS,
   WEB_DEV_NEW_JERSEY_WATERFALL_PROCESS,

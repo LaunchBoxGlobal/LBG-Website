@@ -25,9 +25,10 @@ const Services = () => {
         <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
           <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
             <Image
-              src={`/locations/mobile-app-developer/cross-platform-app-development-icon.png`}
+              src={`/locations/mobile-app-developer/cross-platform-app-development-icon.webp`}
               width={`50`}
               height={`53`}
+              loading="lazy"
               alt={`cross-platform-app-development-service-icon`}
               className=""
             />
