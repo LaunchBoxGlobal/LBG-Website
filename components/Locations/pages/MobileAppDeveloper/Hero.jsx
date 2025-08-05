@@ -39,12 +39,15 @@ const Hero = () => {
         <div className="h-[609px] w-full flex justify-center relative items-end mt-10">
           {/* border-grid */}
           <Image
-            src={"/locations/mobile-app-developer/border-grid.png"}
+            src="/locations/mobile-app-developer/border-grid.webp"
             width={1427}
             height={887}
             alt="border-grid"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1427px"
             className="mx-auto absolute inset-0 z-0 object-contain"
           />
+
           <motion.div
             initial={{ y: 600 }}
             animate={inView ? { y: 0 } : { y: 600 }}
@@ -52,10 +55,12 @@ const Hero = () => {
             className="mx-auto"
           >
             <Image
-              src={"/locations/mobile-app-developer/hero-mockup.png"}
+              src="/locations/mobile-app-developer/hero-mockup.webp"
               width={844}
               height={609}
               alt="Mobile App Developer in Florida showcasing responsive iOS/Android application with intuitive UI"
+              priority
+              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 844px"
               className="mx-auto h-full object-contain z-10 relative -bottom-4"
             />
           </motion.div>

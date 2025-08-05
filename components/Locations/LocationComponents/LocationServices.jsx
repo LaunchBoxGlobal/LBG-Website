@@ -25,6 +25,7 @@ const LocationServices = ({ heading, redText, description, services }) => {
                   width={s?.iconWidth}
                   height={s?.iconHeight}
                   alt={s?.title}
+                  loading="lazy"
                   className=""
                 />
                 <h3 className="font-bold service-heading leading-[1.2]">

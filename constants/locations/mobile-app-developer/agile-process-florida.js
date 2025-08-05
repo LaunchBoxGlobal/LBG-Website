@@ -1,6 +1,6 @@
 export const FLORDIA_AGILE_PROCESS = [
   {
-    icon: "/locations/mobile-app-developer/discovery-and-planning-icon.png",
+    icon: "/locations/mobile-app-developer/discovery-and-planning-icon.webp",
     iconWidth: 40,
     iconHeight: 34,
     title: "Discovery & Planning",
@@ -9,7 +9,7 @@ export const FLORDIA_AGILE_PROCESS = [
       "Understand client requirements & business goals, define the project scope & user stories, prioritize features using a product backlog, and form the development roadmap.",
   },
   {
-    icon: "/locations/mobile-app-developer/designing-and-prototyping-icon.png",
+    icon: "/locations/mobile-app-developer/designing-and-prototyping-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Design & Prototyping",
@@ -18,7 +18,7 @@ export const FLORDIA_AGILE_PROCESS = [
       "Wireframing & UI/UX design, creating interactive prototypes, and gathering client feedback for early refinements to ensure a seamless user experience.",
   },
   {
-    icon: "/locations/mobile-app-developer/agile-development-icon.png",
+    icon: "/locations/mobile-app-developer/agile-development-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Agile Development",
@@ -27,7 +27,7 @@ export const FLORDIA_AGILE_PROCESS = [
       "Break work into short sprints, develop, test, and refine features in each sprint, conduct daily stand-ups for progress tracking, and ensure continuous integration & deployment (CI/CD).",
   },
   {
-    icon: "/locations/mobile-app-developer/quality-assurance-icon.png",
+    icon: "/locations/mobile-app-developer/quality-assurance-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Quality Assurance",
@@ -36,7 +36,7 @@ export const FLORDIA_AGILE_PROCESS = [
       "Perform unit testing, integration testing & bug fixes, conduct usability testing for smooth interactions, and optimize performance & security.",
   },
   {
-    icon: "/locations/mobile-app-developer/sprint-demos-icon.png",
+    icon: "/locations/mobile-app-developer/sprint-demos-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Sprint Demos",
@@ -45,7 +45,7 @@ export const FLORDIA_AGILE_PROCESS = [
       "Present sprint outcomes for client validation, incorporate feedback into the next sprint, and adjust features based on market/user needs.",
   },
   {
-    icon: "/locations/mobile-app-developer/deployement-and-launch-icon.png",
+    icon: "/locations/mobile-app-developer/deployement-and-launch-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Deployment & Launch",
@@ -54,7 +54,7 @@ export const FLORDIA_AGILE_PROCESS = [
       "Conduct final testing & approval, publish on App Store / Play Store, and monitor app performance post-launch for smooth operation.",
   },
   {
-    icon: "/locations/mobile-app-developer/post-launch-support-icon.png",
+    icon: "/locations/mobile-app-developer/post-launch-support-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     title: "Post-Launch Support",
@@ -65,7 +65,7 @@ export const FLORDIA_AGILE_PROCESS = [
 ];
 export const FLORDIA_RECOMMENDED_PROCESS = [
   {
-    icon: "/locations/mobile-app-developer/features-icon.png",
+    icon: "/locations/mobile-app-developer/features-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Essential Features Before Extras",
@@ -74,7 +74,7 @@ export const FLORDIA_RECOMMENDED_PROCESS = [
       "We don’t waste time designing every pixel upfront. Instead, we develop the most critical functionality first, ensuring the foundation is strong before moving forward.",
   },
   {
-    icon: "/locations/mobile-app-developer/validation-icon.png",
+    icon: "/locations/mobile-app-developer/validation-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Real-Time Validation & Refinement",
@@ -83,7 +83,7 @@ export const FLORDIA_RECOMMENDED_PROCESS = [
       "Instead of waiting until the end to test, we validate functionality as it's developed. This approach helps us identify and fix issues early, saving time and effort later.",
   },
   {
-    icon: "/locations/mobile-app-developer/practical-enhancement-icon.png",
+    icon: "/locations/mobile-app-developer/practical-enhancement-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Practical UI/UX Enhancements",
@@ -92,7 +92,7 @@ export const FLORDIA_RECOMMENDED_PROCESS = [
       "Once core features are working smoothly, we refine the user experience, designing interfaces that complement functionality rather than just looking good.",
   },
   {
-    icon: "/locations/mobile-app-developer/data-driven-improvement-icon.png",
+    icon: "/locations/mobile-app-developer/data-driven-improvement-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Data-Driven Improvements",
@@ -101,7 +101,7 @@ export const FLORDIA_RECOMMENDED_PROCESS = [
       "With a working version in hand, we gather real feedback from users or stakeholders, making adjustments based on actual needs instead of assumptions.",
   },
   {
-    icon: "/locations/mobile-app-developer/impact-drive-impact-icon.png",
+    icon: "/locations/mobile-app-developer/impact-drive-impact-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Agile & Impact-Driven Releases",
@@ -110,7 +110,7 @@ export const FLORDIA_RECOMMENDED_PROCESS = [
       "Instead of waiting months for a perfect launch, we release working versions incrementally—getting value to users faster and allowing continuous improvements.",
   },
   {
-    icon: "/locations/mobile-app-developer/evolving-business-needs-icon.png",
+    icon: "/locations/mobile-app-developer/evolving-business-needs-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Evolving with Your Business Needs",
@@ -119,7 +119,7 @@ export const FLORDIA_RECOMMENDED_PROCESS = [
       "After launch, we focus on scaling, refining, and enhancing based on real-world usage, ensuring your software grows alongside your business.",
   },
   {
-    icon: "/locations/mobile-app-developer/long-term-adaptability-icon.png",
+    icon: "/locations/mobile-app-developer/long-term-adaptability-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Extensibility & Long-Term Adaptability",
@@ -130,7 +130,7 @@ export const FLORDIA_RECOMMENDED_PROCESS = [
 ];
 export const FLORDIA_WATERFALL_PROCESS = [
   {
-    icon: "/locations/mobile-app-developer/planning-icon.png",
+    icon: "/locations/mobile-app-developer/planning-icon.webp",
     iconWidth: 27,
     iconHeight: 34,
     tag_line: "Requirements Gathering",
@@ -139,7 +139,7 @@ export const FLORDIA_WATERFALL_PROCESS = [
       "We start by understanding your needs, defining project goals, and outlining every feature—ensuring a clear roadmap from day one.",
   },
   {
-    icon: "/locations/mobile-app-developer/design-and-prototyping-icon.png",
+    icon: "/locations/mobile-app-developer/design-and-prototyping-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "System Design",
@@ -148,7 +148,7 @@ export const FLORDIA_WATERFALL_PROCESS = [
       "Before development begins, we create the software’s structure, including UI/UX design and technical planning, so everything is mapped out in advance.",
   },
   {
-    icon: "/locations/mobile-app-developer/development-with-precision-icon.png",
+    icon: "/locations/mobile-app-developer/development-with-precision-icon.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Development",
@@ -157,7 +157,7 @@ export const FLORDIA_WATERFALL_PROCESS = [
       "With a solid plan, our developers start building exactly as designed, ensuring a smooth and organized process.",
   },
   {
-    icon: "/locations/mobile-app-developer/quality-assurance-icon-2.png",
+    icon: "/locations/mobile-app-developer/quality-assurance-icon-2.webp",
     iconWidth: 34,
     iconHeight: 34,
     tag_line: "Quality Assurance",
@@ -166,7 +166,7 @@ export const FLORDIA_WATERFALL_PROCESS = [
       "Once development is complete, we test everything thoroughly to catch bugs, improve performance, and ensure a seamless user experience.",
   },
   {
-    icon: "/locations/mobile-app-developer/user-validation-icon.png",
+    icon: "/locations/mobile-app-developer/user-validation-icon.webp",
     iconWidth: 32,
     iconHeight: 34,
     tag_line: "User Acceptance & Refinements",
@@ -175,7 +175,7 @@ export const FLORDIA_WATERFALL_PROCESS = [
       "We involve key stakeholders or end-users to test the software in real-world scenarios, making refinements based on feedback before the final launch.",
   },
   {
-    icon: "/locations/mobile-app-developer/deployment-icon.png",
+    icon: "/locations/mobile-app-developer/deployment-icon.webp",
     iconWidth: 46,
     iconHeight: 34,
     tag_line: "Deployment",
@@ -184,7 +184,7 @@ export const FLORDIA_WATERFALL_PROCESS = [
       "After final testing, we launch your mobile app smoothly, making sure everything works perfectly from the start.",
   },
   {
-    icon: "/locations/mobile-app-developer/maintenance-and-support-icon.png",
+    icon: "/locations/mobile-app-developer/maintenance-and-support-icon.webp",
     iconWidth: 41,
     iconHeight: 34,
     tag_line: "Maintenance & Updates",

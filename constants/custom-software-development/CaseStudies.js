@@ -6,7 +6,7 @@ export const CUSTOM_SOFTWARE_CASE_STUDIES = [
     src: "cactus.jpg",
     link: "/case-studies/bloom",
     color: "#88A28D",
-    image: "/case-studies/bloom-admin-dashboard-mockup.png",
+    image: "/case-studies/bloom-admin-dashboard-mockup.webp",
   },
   {
     title: "Now You Know Nashville",
@@ -16,7 +16,7 @@ export const CUSTOM_SOFTWARE_CASE_STUDIES = [
     link: "/case-studies/now-you-know-nashville",
     color: "#BBACAF",
     image:
-      "/case-studies/nashville/now-you-know-nashville-admin-dashboard-mockup.png",
+      "/case-studies/nashville/now-you-know-nashville-admin-dashboard-mockup.webp",
   },
   {
     title: "Fitness By Faith",
@@ -26,7 +26,7 @@ export const CUSTOM_SOFTWARE_CASE_STUDIES = [
     link: "/case-studies/fitness-by-faith",
     color: "#977F6D",
     image:
-      "/case-studies/fitness-by-faith/fitness-by-faith-admin-dashboard-mockup.png",
+      "/case-studies/fitness-by-faith/fitness-by-faith-admin-dashboard-mockup.webp",
   },
   {
     title: "Fit 110",
@@ -35,6 +35,6 @@ export const CUSTOM_SOFTWARE_CASE_STUDIES = [
     src: "tree.jpg",
     link: "/case-studies/fit110",
     color: "#977F6D",
-    image: "/case-studies/fit110/fit110-case-study-mockup.png",
+    image: "/case-studies/fit110/fit110-case-study-mockup.webp",
   },
 ];

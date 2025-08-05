@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ProcessCard = ({ process, index }) => {
@@ -26,7 +27,7 @@ const ProcessCard = ({ process, index }) => {
         }`}
       >
         <div className="w-full h-full red-bg rounded-full flex items-center justify-center">
-          <img
+          <Image
             src={process?.icon}
             alt={process?.title}
             width={process?.iconWidth || 41}
