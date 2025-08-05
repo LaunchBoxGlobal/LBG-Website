@@ -24,9 +24,10 @@ const WhyChooseUs = () => {
             Wyoming Market Experts
           </h3>
           <Image
-            src={`/locations/digital-marketing/marketing-experts-icon.png`}
+            src={`/locations/digital-marketing/marketing-experts-icon.webp`}
             width={71}
             height={70}
+            loading="lazy"
             alt={` Wyoming Market Experts icon`}
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
@@ -50,9 +51,10 @@ const WhyChooseUs = () => {
             Real Campaign Results
           </h3>
           <Image
-            src={`/locations/digital-marketing/campaign-icon-why-choose-us.png`}
+            src={`/locations/digital-marketing/campaign-icon-why-choose-us.webp`}
             width={75}
             height={70}
+            loading="lazy"
             alt={`Real Campaign Results icon`}
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
@@ -69,9 +71,10 @@ const WhyChooseUs = () => {
             Transparent Pricing
           </h3>
           <Image
-            src={`/locations/digital-marketing/transparent-pricing-icon.png`}
+            src={`/locations/digital-marketing/transparent-pricing-icon.webp`}
             width={74}
             height={70}
+            loading="lazy"
             alt={`Transparent Pricing icon`}
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
@@ -87,9 +90,10 @@ const WhyChooseUs = () => {
             Fast Local Support
           </h3>
           <Image
-            src={`/locations/digital-marketing/fast-local-support-icon.png`}
+            src={`/locations/digital-marketing/fast-local-support-icon.webp`}
             width={50}
             height={70}
+            loading="lazy"
             alt={` Fast Local Support icon`}
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
@@ -105,10 +109,11 @@ const WhyChooseUs = () => {
             Content That Converts
           </h3>
           <Image
-            src={`/locations/digital-marketing/content-that-converts-icon.png`}
+            src={`/locations/digital-marketing/content-that-converts-icon.webp`}
             width={78}
             height={70}
             alt={`Content That Converts icon`}
+            loading="lazy"
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
           <p className="text-lg">
@@ -123,9 +128,10 @@ const WhyChooseUs = () => {
             Dual Expertise
           </h3>
           <Image
-            src={`/locations/digital-marketing/dual-expertise-icon.png`}
+            src={`/locations/digital-marketing/dual-expertise-icon.webp`}
             width={70}
             height={70}
+            loading="lazy"
             alt={`dual-expertise-icon`}
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />

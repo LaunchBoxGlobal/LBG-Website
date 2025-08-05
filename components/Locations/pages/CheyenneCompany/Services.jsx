@@ -42,6 +42,7 @@ const Services = () => {
                   height={s?.iconHeight}
                   alt={s?.title}
                   className=""
+                  loading="lazy"
                 />
                 <h3 className="font-bold service-heading leading-[1.2]">
                   {s?.title}

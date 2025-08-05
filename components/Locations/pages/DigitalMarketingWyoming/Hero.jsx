@@ -11,10 +11,7 @@ const Hero = () => {
   });
   return (
     <section className="w-full relative overflow-hidden bg-white min-h-[100vh]">
-      <section
-        ref={ref}
-        className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-10"
-      >
+      <section className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-10">
         <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1] w-full z-10 f">
           Wyoming Digital Marketing That Drives{" "}
           <span className="red-text">Real Results</span>
@@ -34,7 +31,10 @@ const Hero = () => {
           </Link>
         </section>
       </section>
-      <section className="lg:h-[609px] w-full flex justify-center relative items-end mt-10">
+      <section
+        ref={ref}
+        className="lg:h-[609px] w-full flex justify-center relative items-end mt-10"
+      >
         <motion.div
           initial={{ y: 600 }}
           animate={inView ? { y: 0 } : { y: 600 }}
@@ -42,11 +42,16 @@ const Hero = () => {
           className="mx-auto"
         >
           <Image
-            src={"/locations/digital-marketing/hero-mockup.png"}
+            src="/locations/digital-marketing/hero-mockup.webp"
+            alt="Wyoming digital marketing dashboard displaying campaign analytics and audience engagement metrics"
             width={1052}
             height={573}
-            alt="Wyoming digital marketing dashboard displaying campaign analytics and audience engagement metrics"
-            className="mx-auto h-full object-contain z-10 relative"
+            priority
+            quality={85}
+            sizes="(max-width: 768px) 100vw, 
+         (max-width: 1200px) 80vw, 
+         1052px"
+            className="mx-auto h-auto object-contain z-10 relative"
           />
         </motion.div>
       </section>

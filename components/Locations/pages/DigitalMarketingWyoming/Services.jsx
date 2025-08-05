@@ -24,11 +24,12 @@ const Services = () => {
         <div className="w-full md:w-[45%] lg:w-[32%]">
           <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
             <Image
-              src={`/locations/digital-marketing/content-marketing-service-icon.png`}
+              src={`/locations/digital-marketing/content-marketing-service-icon.webp`}
               width={`66`}
               height={`53`}
               alt={`cross-platform-app-development-service-icon`}
               className=""
+              loading="lazy"
             />
             <h3 className="font-bold service-heading leading-[1.2]">
               Content Marketing
@@ -45,11 +46,12 @@ const Services = () => {
         <div className="w-full md:w-[45%] lg:w-[32%]">
           <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
             <Image
-              src={`/locations/digital-marketing/email-marketing-service-icon.png`}
+              src={`/locations/digital-marketing/email-marketing-service-icon.webp`}
               width={`59`}
               height={`53`}
               alt={`cross-platform-app-development-service-icon`}
               className=""
+              loading="lazy"
             />
             <h3 className="font-bold service-heading leading-[1.2]">
               Email Marketing
@@ -77,6 +79,7 @@ const Services = () => {
                   height={s?.iconHeight}
                   alt={s?.title}
                   className=""
+                  loading="lazy"
                 />
                 <h3 className="font-bold service-heading leading-[1.2]">
                   {s?.title}

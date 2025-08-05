@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
-import { STAFF_AUGMENTATION_AGILE_PROCESS } from "@/constants/StaffAugmentation/staff-augmentation-process";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 import ProcessCard from "@/components/StaffAugmentation/ProcessCard";
-import AnimatedText from "@/components/StaffAugmentation/AnimatedText";
 import { WYOMING_DIGITAL_MARKETING_PROCESS } from "@/constants/locations/wyoming-digital-marketing/wyoming-digital-marketing-process";
-import { DIGITAL_MARKETING_AGILE_WORKFLOW } from "@/constants/digital-marketing/DigitalMarketingAgileWorkflow";
 
 const Process = () => {
   return (
@@ -71,11 +68,12 @@ const AnimatedLine = () => {
         />
       </svg>
       <div className="absolute bottom-[22%] left-[-13.5%] items-center justify-center hidden lg:flex">
-        <img
-          src={"/staff-augmentation/Rocket.png"}
+        <Image
+          src={"/staff-augmentation/Rocket.webp"}
           alt="Rocket"
           width={110}
           height={267}
+          loading="lazy"
           className="object-contain absolute z-20 left-1/2 -translate-x-1/2"
         />
         <span className="animate-ping absolute inline-flex h-[130px] w-[130px] rounded-full bg-[#E1E1E1] opacity-75"></span>

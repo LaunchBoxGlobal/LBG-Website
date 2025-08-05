@@ -1,6 +1,6 @@
 export const WYOMING_DIGITAL_MARKETING_SERVICES = [
   {
-    icon: "/locations/digital-marketing/seo-service-icon.png",
+    icon: "/locations/digital-marketing/seo-service-icon.webp",
     iconWidth: 53,
     iconHeight: 53,
     title: "SEO Services",
@@ -8,7 +8,7 @@ export const WYOMING_DIGITAL_MARKETING_SERVICES = [
       "Improve your search rankings for Wyoming-specific keywords. We optimize sites for local visibility and national reach.",
   },
   {
-    icon: "/locations/digital-marketing/social-media-marketing-icon.png",
+    icon: "/locations/digital-marketing/social-media-marketing-icon.webp",
     iconWidth: 59,
     iconHeight: 53,
     title: "Social Media Marketing",
@@ -16,7 +16,7 @@ export const WYOMING_DIGITAL_MARKETING_SERVICES = [
       "Build authentic connections with Wyoming audiences through strategic platform campaigns and community engagement.",
   },
   {
-    icon: "/locations/digital-marketing/paid-advertising-service-icon.png",
+    icon: "/locations/digital-marketing/paid-advertising-service-icon.webp",
     iconWidth: 47,
     iconHeight: 53,
     title: "Paid Advertising",
@@ -24,7 +24,7 @@ export const WYOMING_DIGITAL_MARKETING_SERVICES = [
       "Launch high-converting ads targeting Wyoming customers on Google, Meta, and LinkedIn. We maximize ROI.",
   },
   {
-    icon: "/locations/digital-marketing/analytics-and-reporting-service-icon.png",
+    icon: "/locations/digital-marketing/analytics-and-reporting-service-icon.webp",
     iconWidth: 53,
     iconHeight: 53,
     title: "Analytics & Reporting",

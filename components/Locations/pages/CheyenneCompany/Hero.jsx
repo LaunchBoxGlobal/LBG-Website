@@ -41,11 +41,18 @@ const Hero = () => {
           className="mx-auto"
         >
           <Image
-            src={"/locations/cheyenne-seo-company/hero-mockup.png"}
+            src="/locations/cheyenne-seo-company/hero-mockup.webp"
+            alt="Cheyenne SEO company dashboard showing keyword rankings and organic traffic analytics"
             width={1596}
             height={698}
-            alt="Cheyenne SEO company dashboard showing keyword rankings and organic traffic analytics"
-            className="mx-auto h-full object-contain z-10 relative"
+            priority
+            quality={85}
+            sizes="(max-width: 768px) 100vw,
+         (max-width: 1200px) 90vw,
+         1596px"
+            // placeholder="blur"
+            // blurDataURL="/locations/cheyenne-seo-company/hero-mockup-blur.jpg"
+            className="mx-auto h-auto object-contain z-10 relative"
           />
         </motion.div>
       </section>
