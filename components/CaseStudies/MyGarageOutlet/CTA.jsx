@@ -18,19 +18,21 @@ const CTA = () => {
           className="w-[56px] lg:w-[96px] h-[56px] lg:h-[96px] rounded-full bg-[#847B6F] flex items-center justify-center lg:absolute right-10 z-10 bottom-10"
         >
           <Image
-            src={"/case-studies/my-garage-outlet/cta-button-icon.png"}
+            src={"/case-studies/my-garage-outlet/cta-button-icon.webp"}
             alt="cta-button-icon"
             width={16}
             height={35}
+            loading="lazy"
             className="object-contain w-[16px]"
           />
         </Link>
 
         <Image
-          src={"/case-studies/my-garage-outlet/cta-glow.png"}
+          src={"/case-studies/my-garage-outlet/cta-glow.webp"}
           alt="cta glow"
           width={400}
           height={400}
+          loading="lazy"
           className="z-0 w-[736px] h-[736px] absolute right-0 -bottom-20"
         />
       </div>

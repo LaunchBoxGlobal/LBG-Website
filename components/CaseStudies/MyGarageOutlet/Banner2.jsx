@@ -17,11 +17,16 @@ const Banner2 = () => {
         className="w-full"
       >
         <Image
-          src={"/case-studies/my-garage-outlet/my-garage-outlet-banner-1.png"}
-          alt="nashville-banner-1"
+          src="/case-studies/my-garage-outlet/my-garage-outlet-banner-1.webp"
+          alt="My Garage Outlet case study banner"
+          quality={85}
           width={1270}
           height={593}
-          className=""
+          loading="lazy"
+          sizes="(max-width: 640px) 100vw,
+           (max-width: 1024px) 90vw,
+           1270px"
+          className="object-cover"
         />
       </motion.div>
     </div>

@@ -5,7 +5,6 @@ import WorkApproach from "./WorkApproach";
 import ChallengesAndSolutions from "./ChallengesAndSolutions";
 import Research from "./Research";
 import BrandIdentity from "./BrandIdentity";
-import Image from "next/image";
 import FinalOutcome from "./FinalOutcome";
 import CTA from "./CTA";
 import Banner2 from "./Banner2";

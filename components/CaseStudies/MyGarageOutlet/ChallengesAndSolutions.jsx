@@ -22,9 +22,10 @@ const ChallengesAndSolutions = () => {
       <div className="w-full mt-10 padding-x">
         <div className="flex items-center gap-2">
           <Image
-            src={"/case-studies/my-garage-outlet/problem-icon.png"}
+            src={"/case-studies/my-garage-outlet/problem-icon.webp"}
             width={38}
             height={36}
+            loading="lazy"
             alt="problem-icon"
           />
           <h3 className="text-[#F40E00] font-normal text-[30px] md:text-[40px] lg:text-[50px]">
@@ -43,9 +44,10 @@ const ChallengesAndSolutions = () => {
 
         <div className="flex items-center gap-2 justify-end mt-10">
           <Image
-            src={"/case-studies/my-garage-outlet/solutions-icon.png"}
+            src={"/case-studies/my-garage-outlet/solutions-icon.webp"}
             width={38}
             height={36}
+            loading="lazy"
             alt="problem-icon"
           />
           <h3 className="text-[#F7BE56] font-normal text-[35px] md:text-[40px] lg:text-[50px]">

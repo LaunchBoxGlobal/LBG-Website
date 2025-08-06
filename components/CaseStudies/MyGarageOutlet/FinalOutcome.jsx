@@ -56,10 +56,11 @@ const FinalOutcome = () => {
           className="w-full lg:pl-28 mt-20"
         >
           <Image
-            src={"/case-studies/my-garage-outlet/outcomes-mockup-1.png"}
+            src={"/case-studies/my-garage-outlet/outcomes-mockup-1.webp"}
             alt="outcomes-mockup-1"
             width={605}
             height={796}
+            loading="lazy"
             className="object-contain"
           />
         </motion.div>
@@ -79,10 +80,11 @@ const FinalOutcome = () => {
           className="w-full mt-10 lg:mt-20"
         >
           <Image
-            src={"/case-studies/my-garage-outlet/outcomes-mockup-2.png"}
+            src={"/case-studies/my-garage-outlet/outcomes-mockup-2.webp"}
             alt="outcomes-mockup-2"
             width={1477}
             height={812}
+            loading="lazy"
             className="object-contain"
           />
         </motion.div>
@@ -102,10 +104,11 @@ const FinalOutcome = () => {
           className="w-full mt-10 lg:mt-20"
         >
           <Image
-            src={"/case-studies/my-garage-outlet/outcomes-mockup-3.png"}
+            src={"/case-studies/my-garage-outlet/outcomes-mockup-3.webp"}
             alt="outcomes-mockup-3"
             width={1477}
             height={812}
+            loading="lazy"
             className="object-contain"
           />
         </motion.div>

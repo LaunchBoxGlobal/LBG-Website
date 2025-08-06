@@ -25,19 +25,21 @@ const BrandIdentity = () => {
         <div className="w-full p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <Image
-              src={"/case-studies/my-garage-outlet/brand-identity-fonts.png"}
+              src={"/case-studies/my-garage-outlet/brand-identity-fonts.webp"}
               alt="fonts"
               width={553}
               height={262}
+              loading="lazy"
               className="object-contain max-h-[260px]"
             />
           </div>
           <div>
             <Image
-              src={"/case-studies/my-garage-outlet/brand-identity-colors.png"}
+              src={"/case-studies/my-garage-outlet/brand-identity-colors.webp"}
               alt="fonts"
               width={560}
               height={248}
+              loading="lazy"
               className="object-contain max-h-[260px]"
             />
           </div>
@@ -51,11 +53,12 @@ const BrandIdentity = () => {
           >
             <Image
               src={
-                "/case-studies/my-garage-outlet/brand-identity-mobile-mockup-1.png"
+                "/case-studies/my-garage-outlet/brand-identity-mobile-mockup-1.webp"
               }
               alt="brand-identity-mobile-mockup-1"
               width={427}
               height={881}
+              loading="lazy"
               className="object-contain w-[157px] md:w-[327px] midlg:w-[427px]"
             />
           </motion.div>
@@ -67,11 +70,12 @@ const BrandIdentity = () => {
           >
             <Image
               src={
-                "/case-studies/my-garage-outlet/brand-identity-mobile-mockup-2.png"
+                "/case-studies/my-garage-outlet/brand-identity-mobile-mockup-2.webp"
               }
               alt="brand-identity-mobile-mockup-2"
               width={427}
               height={881}
+              loading="lazy"
               className="object-contain w-[157px] md:w-[327px] midlg:w-[427px]"
             />
           </motion.div>

@@ -11,10 +11,11 @@ const Research = () => {
   return (
     <section className="w-full padding-x flex flex-col items-center relative overflow-hidden">
       <Image
-        src={"/case-studies/my-garage-outlet/brown-shadow.png"}
+        src={"/case-studies/my-garage-outlet/brown-shadow.webp"}
         alt="brown-shadow"
         width={736}
         height={736}
+        loading="lazy"
         className="absolute left-[-20%] top-0 z-0"
       />
       <h2 className="section-heading z-10">Research</h2>
@@ -29,8 +30,9 @@ const Research = () => {
           className="w-full"
         >
           <Image
-            src={"/case-studies/my-garage-outlet/research-image.png"}
+            src={"/case-studies/my-garage-outlet/research-image.webp"}
             width={1271}
+            loading="lazy"
             height={766}
             alt="research-image"
             className="object-contain z-20"

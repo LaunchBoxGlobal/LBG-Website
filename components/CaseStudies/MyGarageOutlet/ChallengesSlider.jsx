@@ -76,6 +76,7 @@ const ChallengesSlider = ({
                     src={"/case-studies/my-garage-outlet/problem-red-icon.png"}
                     width={65}
                     height={60}
+                    loading="lazy"
                     alt="problem-red-icon"
                   />
                 </div>

@@ -77,10 +77,11 @@ const SolutionsSlider = ({
                 >
                   <Image
                     src={
-                      "/case-studies/my-garage-outlet/solutions-check-icon.png"
+                      "/case-studies/my-garage-outlet/solutions-check-icon.webp"
                     }
                     width={80}
                     height={80}
+                    loading="lazy"
                     alt="solutions-check-icon"
                   />
                 </div>

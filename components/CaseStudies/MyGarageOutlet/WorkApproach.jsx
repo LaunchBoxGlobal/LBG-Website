@@ -6,27 +6,27 @@ import { useInView } from "react-intersection-observer";
 
 const approach = [
   {
-    icon: "/case-studies/my-garage-outlet/work-approach-1.png",
+    icon: "/case-studies/my-garage-outlet/work-approach-1.webp",
     title: "Foundation & UX",
   },
   {
-    icon: "/case-studies/my-garage-outlet/work-approach-2.png",
+    icon: "/case-studies/my-garage-outlet/work-approach-2.webp",
     title: "Planning & Research",
   },
   {
-    icon: "/case-studies/my-garage-outlet/work-approach-3.png",
+    icon: "/case-studies/my-garage-outlet/work-approach-3.webp",
     title: "UI Design",
   },
   {
-    icon: "/case-studies/my-garage-outlet/work-approach-4.png",
+    icon: "/case-studies/my-garage-outlet/work-approach-4.webp",
     title: "Development & Coding",
   },
   {
-    icon: "/case-studies/my-garage-outlet/work-approach-5.png",
+    icon: "/case-studies/my-garage-outlet/work-approach-5.webp",
     title: "Deployment - Go Live!",
   },
   {
-    icon: "/case-studies/my-garage-outlet/work-approach-6.png",
+    icon: "/case-studies/my-garage-outlet/work-approach-6.webp",
     title: "Testing & Evaluation",
   },
 ];
@@ -74,6 +74,7 @@ const WorkApproach = () => {
                   width={29}
                   height={28}
                   alt={`${ap?.icon}-icon`}
+                  loading="lazy"
                   className="object-contain"
                 />
               </div>
@@ -130,6 +131,7 @@ const WorkApproach = () => {
                   width={29}
                   height={28}
                   alt={`${ap?.icon}-icon`}
+                  loading="lazy"
                   className="object-contain"
                 />
               </div>

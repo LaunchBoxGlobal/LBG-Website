@@ -1,5 +1,4 @@
 "use client";
-import PageBreadcrumb from "@/components/Common/PageBreadcrumb";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,17 +11,14 @@ const Hero = () => {
   });
   return (
     <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-5 overflow-hidden padding-x">
-      {/* <PageBreadcrumb
-        pageLink={"/case-studies/my-garage-outlet"}
-        pageTitle={"My Garage Outlet"}
-        primaryLink={"/case-studies"}
-        primaryPageTitle={"Case Studies"}
-      /> */}
       <Image
-        src={"/case-studies/my-garage-outlet/my-garage-outlet-logo.png"}
+        src="/case-studies/my-garage-outlet/my-garage-outlet-logo.webp"
+        alt="My Garage Outlet logo"
         width={109}
         height={109}
-        alt="my garage outlet logo"
+        quality={90}
+        priority
+        className="h-auto w-[109px]"
       />
       <h1 className="font-bold text-[40px] lg:text-[80px] leading-[1.1] text-center">
         My Garage <span className="my-garage-outlet-text">Outlet</span>
@@ -37,20 +33,33 @@ const Hero = () => {
         smoothly. No more driving around now the best deals come to you.
       </p>
       <div className="flex items-center justify-center gap-2">
-        <Link href={"/"}>
+        <Link href="/" aria-label="Download on the App Store">
           <Image
-            src={"/app-store-button-image.png"}
+            src="/app-store-button-image.webp"
+            alt="Download on the App Store"
             width={239}
             height={57}
-            alt="app-store-button-image"
+            loading="lazy"
+            quality={90}
+            sizes="(max-width: 640px) 45vw, 
+             (max-width: 1024px) 30vw, 
+             239px"
+            className="h-auto w-full max-w-[239px]"
           />
         </Link>
-        <Link href={"/"}>
+
+        <Link href="/" aria-label="Get it on Google Play">
           <Image
-            src={"/google-play-button-image.png"}
+            src="/google-play-button-image.webp"
+            alt="Get it on Google Play"
             width={239}
             height={57}
-            alt="google-play-button-image"
+            loading="lazy"
+            quality={90}
+            sizes="(max-width: 640px) 45vw, 
+             (max-width: 1024px) 30vw, 
+             239px"
+            className="h-auto w-full max-w-[239px]"
           />
         </Link>
       </div>
@@ -59,7 +68,7 @@ const Hero = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#a07439] rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/time-icon.png"}
+              src={"/case-studies/time-icon.webp"}
               alt="time-icon"
               width={40}
               height={40}
@@ -75,7 +84,7 @@ const Hero = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#a07439] rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/globe-icon.png"}
+              src={"/case-studies/globe-icon.webp"}
               alt="time-icon"
               width={40}
               height={40}
@@ -91,7 +100,7 @@ const Hero = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#a07439] rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/constribution-icon.png"}
+              src={"/case-studies/constribution-icon.webp"}
               alt="time-icon"
               width={44}
               height={40}
@@ -113,11 +122,14 @@ const Hero = () => {
           className="w-full"
         >
           <Image
-            src={"/case-studies/my-garage-outlet/my-garage-outlet-banner-1.png"}
+            src={
+              "/case-studies/my-garage-outlet/my-garage-outlet-banner-1.webp"
+            }
             alt="nashville-banner-1"
             width={1270}
             height={593}
             className=""
+            loading="lazy"
           />
         </motion.div>
       </div>
