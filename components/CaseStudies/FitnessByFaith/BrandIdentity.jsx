@@ -102,9 +102,10 @@ const BrandIdentity = () => {
       </div>
 
       <Image
-        src={"/case-studies/fitness-by-faith/shadow-solutions.png"}
+        src={"/case-studies/fitness-by-faith/shadow-solutions.webp"}
         alt="brand-identity-fonts"
         width={736}
+        loading="lazy"
         height={736}
         className="absolute left-0 top-[20%] z-0"
       />
@@ -160,11 +161,12 @@ export const FontsImage = () => {
         <span className="text-white text-xl">Bold</span>
       </motion.div>
       <Image
-        src={"/case-studies/fitness-by-faith/brand-identity-fonts.png"}
+        src={"/case-studies/fitness-by-faith/brand-identity-fonts.webp"}
         alt="brand-identity-fonts"
         width={1263}
         height={539}
         className="z-10"
+        loading="lazy"
       />
     </div>
   );
@@ -174,16 +176,18 @@ export const Icons = () => {
   return (
     <div className="w-full mt-10 lg:mt-14 h-[280px] md:h-[340px] lg:h-[634px] bg-[#F5F5F5] rounded-[26px] flex justify-center overflow-hidden relative">
       <Image
-        src={"/case-studies/fitness-by-faith/icons-1.png"}
+        src={"/case-studies/fitness-by-faith/icons-1.webp"}
         alt="brand-identity-icons"
         width={513}
         height={785}
+        loading="lazy"
         className="h-[280px] md:h-[340px] lg:h-[634px] w-auto absolute -left-10 md:left-0 top-0 z-0 hover:scale-110 transition-all duration-500"
       />
       <Image
-        src={"/case-studies/fitness-by-faith/icons-2.png"}
+        src={"/case-studies/fitness-by-faith/icons-2.webp"}
         alt="brand-identity-icons"
         width={513}
+        loading="lazy"
         height={785}
         className="h-[280px] md:h-[340px] lg:h-[634px] w-auto absolute z-10 -right-10 md:right-0 top-0 hover:scale-110 transition-all duration-500"
       />

@@ -4,61 +4,49 @@ import Image from "next/image";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-const mockups = [
-  "/case-studies/fitness-by-faith/outcomes-mockup-1.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-2.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-3.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-4.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-5.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-6.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-7.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-8.png",
-  "/case-studies/fitness-by-faith/outcomes-mockup-9.png",
-];
-
 const mockups_with_alt_tags = [
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-1.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-1.webp",
     alt_tag:
       "Fitness by Faith by Laken logo with bold inspirational fitness branding text",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-2.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-2.webp",
     alt_tag:
       "Fitness by Faith by Laken: Motivational fitness banner promoting healthy lifestyle transformation journey",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-3.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-3.webp",
     alt_tag:
       "Fitness by Faith by Laken: User login screen with email, password fields and sign-in options",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-4.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-4.webp",
     alt_tag:
       "Fitness by Faith by Laken: Profile setup for tracking gender, age, weight and measurements",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-5.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-5.webp",
     alt_tag:
       "Fitness by Faith by Laken: Shane's workout dashboard with yoga, cardio, and lifting options",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-6.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-6.webp",
     alt_tag:
       "Fitness by Faith by Laken: High-protein meal plans including Grilled Chicken Salad recipes",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-7.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-7.webp",
     alt_tag:
       "Fitness by Faith by Laken: Yoga workout dashboard with exercise options and sessions",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-8.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-8.webp",
     alt_tag:
       "Fitness by Faith by Laken: 20-minute biceps workout with swipe-up instructions",
   },
   {
-    image: "/case-studies/fitness-by-faith/outcomes-mockup-9.png",
+    image: "/case-studies/fitness-by-faith/outcomes-mockup-9.webp",
     alt_tag:
       "Fitness by Faith by Laken: Grilled Chicken Salad nutrition facts and ingredients list",
   },
@@ -113,6 +101,7 @@ const ImageMockup = ({ m, i, alt_tag }) => {
         width={348}
         height={522}
         alt={alt_tag}
+        loading="lazy"
         className={`${
           i === 0 || i === 2
             ? "lg:mt-32"

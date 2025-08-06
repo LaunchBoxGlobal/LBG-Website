@@ -15,13 +15,16 @@ const Admin = () => {
       </p>
 
       <Image
-        src={
-          "/case-studies/fitness-by-faith/fitness-by-faith-admin-dashboard-mockup.png"
-        }
-        alt="fitness-by-faith-admin-dashboard-mockup"
+        src="/case-studies/fitness-by-faith/fitness-by-faith-admin-dashboard-mockup.webp"
+        alt="Fitness by Faith admin dashboard mockup"
         width={1270}
         height={770}
-        className="w-full mx-auto mt-10"
+        quality={85}
+        loading="lazy"
+        sizes="(max-width: 640px) 100vw, 
+         (max-width: 1024px) 90vw, 
+         1270px"
+        className="w-full h-auto mx-auto mt-10 rounded-xl"
       />
     </section>
   );

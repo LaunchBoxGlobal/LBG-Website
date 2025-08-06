@@ -13,10 +13,11 @@ const Userflow = () => {
       </p>
       <div className="w-full overflow-x-auto userflow-container mt-12 pb-5">
         <Image
-          src="/case-studies/fitness-by-faith/userflow-image.png"
+          src="/case-studies/fitness-by-faith/userflow-image.webp"
           alt="fitness by faith userflow"
           width={4341}
           height={877}
+          loading="lazy"
           className="min-w-[2441px] h-auto"
         />
       </div>

@@ -17,10 +17,15 @@ const Banner2 = () => {
       className="w-full padding-x"
     >
       <Image
-        src={"/case-studies/fitness-by-faith/banner-2.png"}
+        src={"/case-studies/fitness-by-faith/banner-2.webp"}
         alt="fitness by faith banner image"
         width={1270}
         height={807}
+        quality={85}
+        loading="lazy"
+        sizes="(max-width: 640px) 100vw,
+               (max-width: 1024px) 90vw,
+               1270px"
       />
     </motion.div>
   );

@@ -45,6 +45,7 @@ const Research = () => {
                   }
                   alt="research-border-line"
                   width={270}
+                  loading="lazy"
                   height={500}
                   className="absolute left-[-8%] hidden lg:block top-8 midlg:top-0"
                 />
@@ -57,6 +58,7 @@ const Research = () => {
                   alt="research-border-line"
                   width={270}
                   height={500}
+                  loading="lazy"
                   className="absolute left-[-8%] hidden lg:block top-8 midlg:top-0"
                 />
               )}
@@ -64,6 +66,7 @@ const Research = () => {
                 src={s?.image}
                 width={s?.imageWidth}
                 height={s?.imageWidth}
+                loading="lazy"
                 alt={`${s?.title} icon`}
               />
               <h3 className="font-bold text-[24px]">{s?.title}</h3>
@@ -74,9 +77,10 @@ const Research = () => {
       </div>
 
       <Image
-        src={"/case-studies/fitness-by-faith/glow-right.png"}
+        src={"/case-studies/fitness-by-faith/glow-right.webp"}
         alt="shadow-solutions"
         width={736}
+        loading="lazy"
         height={736}
         className="absolute right-0 -top-60 z-0"
       />

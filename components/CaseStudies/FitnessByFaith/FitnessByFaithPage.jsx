@@ -6,7 +6,6 @@ import Solutions from "./Solutions";
 import Research from "./Research";
 import Userflow from "./Userflow";
 import BrandIdentity from "./BrandIdentity";
-import Image from "next/image";
 import Outcome from "./Outcome";
 import CTA from "./CTA";
 import OtherCaseStudies from "../Bloom/OtherCaseStudies";

@@ -6,32 +6,32 @@ import { useInView } from "react-intersection-observer";
 
 const approach = [
   {
-    icon: "/case-studies/fitness-by-faith/work-approach-icon-1.png",
+    icon: "/case-studies/fitness-by-faith/work-approach-icon-1.webp",
     title: "Foundation & UX",
     subtitle: "Structure",
   },
   {
-    icon: "/case-studies/fitness-by-faith/work-approach-icon-2.png",
+    icon: "/case-studies/fitness-by-faith/work-approach-icon-2.webp",
     title: "Planning & Research",
     subtitle: "think tank",
   },
   {
-    icon: "/case-studies/fitness-by-faith/work-approach-icon-3.png",
+    icon: "/case-studies/fitness-by-faith/work-approach-icon-3.webp",
     title: "UI Design",
     subtitle: "aesthetics",
   },
   {
-    icon: "/case-studies/fitness-by-faith/work-approach-icon-4.png",
+    icon: "/case-studies/fitness-by-faith/work-approach-icon-4.webp",
     title: "Development & Coding",
     subtitle: "techy part",
   },
   {
-    icon: "/case-studies/fitness-by-faith/work-approach-icon-5.png",
+    icon: "/case-studies/fitness-by-faith/work-approach-icon-5.webp",
     title: "Deployment & Go Live!",
     subtitle: "jackpot",
   },
   {
-    icon: "/case-studies/fitness-by-faith/work-approach-icon-6.png",
+    icon: "/case-studies/fitness-by-faith/work-approach-icon-6.webp",
     title: "Testing & Evaluation",
     subtitle: "the excitement",
   },
@@ -51,21 +51,15 @@ const WorkApproach = () => {
         behind the scenes.
       </p>
 
-      {/* <Image
-        src={"/case-studies/fitness-by-faith/work-approach-image.png"}
-        alt="fitness by faith work approach image"
-        width={1268}
-        height={438}
-        className="z-10 hidden md:block"
-      /> */}
       <div
         ref={ref}
         className="w-full grid grid-cols-2 md:grid-cols-6 gap-8 mt-10 lg:mt-16 md:h-[400px] relative"
       >
         <Image
-          src={"/case-studies/fitness-by-faith/work-approach-lines.png"}
+          src={"/case-studies/fitness-by-faith/work-approach-lines.webp"}
           alt="work-approach-lines"
           width={1277}
+          loading="lazy"
           height={495}
           className="absolute z-0 right-0 -left-4 -top-[16%] h-[435px] hidden lg:block"
         />
@@ -95,6 +89,7 @@ const WorkApproach = () => {
                   width={72}
                   height={68}
                   className="object-contain h-[38px]"
+                  loading="lazy"
                 />
                 <p className="uppercase fitnessText text-xs font-semibold">
                   {a?.subtitle}

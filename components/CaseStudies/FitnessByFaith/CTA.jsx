@@ -15,7 +15,7 @@ const CTA = () => {
         ref={ref}
         className="w-full border border-[#64B5AC73] cta-shadow relative rounded-[80px] flex items-center justify-start flex-col gap-5 min-h-[450px] lg:h-[540px]"
         style={{
-          backgroundImage: "url('/case-studies/fitness-by-faith/cta-bg.png')",
+          backgroundImage: "url('/case-studies/fitness-by-faith/cta-bg.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -31,6 +31,7 @@ const CTA = () => {
             alt="fitness-by-faith-cta-logo"
             width={129}
             height={119}
+            loading="lazy"
             className=""
           />
         </motion.div>
@@ -69,10 +70,11 @@ const CTA = () => {
           className="absolute -right-[10%] -rotate-0 h-[625px] top-[-7%] z-20"
         >
           <Image
-            src={"/case-studies/fitness-by-faith/cta-mobile-mockup.png"}
+            src={"/case-studies/fitness-by-faith/cta-mobile-mockup.webp"}
             alt="cta-mobile-mockup"
             width={280}
             height={585}
+            loading="lazy"
             className="h-[625px] z-20 w-auto hidden midlg:block"
           />
         </motion.div>

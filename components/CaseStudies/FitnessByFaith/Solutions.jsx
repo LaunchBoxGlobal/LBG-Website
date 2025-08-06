@@ -47,6 +47,7 @@ const Solutions = () => {
                     src={"/case-studies/fitness-by-faith/problem-icon.svg"}
                     alt="problem icon"
                     width={35}
+                    loading="lazy"
                     height={32}
                   />
                 </motion.div>
@@ -112,6 +113,7 @@ const Solutions = () => {
                     alt="problem icon"
                     width={35}
                     height={32}
+                    loading="lazy"
                   />
                 </motion.div>
                 <motion.h3
@@ -145,17 +147,19 @@ const Solutions = () => {
       </div>
 
       <Image
-        src={"/case-studies/fitness-by-faith/shadow-solutions.png"}
+        src={"/case-studies/fitness-by-faith/shadow-solutions.webp"}
         alt="shadow-solutions"
         width={736}
         height={736}
         className="absolute left-0 top-0 z-0"
+        loading="lazy"
       />
       <Image
-        src={"/case-studies/fitness-by-faith/glow-right.png"}
+        src={"/case-studies/fitness-by-faith/glow-right.webp"}
         alt="shadow-solutions"
         width={736}
         height={736}
+        loading="lazy"
         className="absolute right-0 -top-[80%] z-0"
       />
     </section>
