@@ -56,13 +56,17 @@ const WorkApproach = () => {
         className="w-full grid grid-cols-2 md:grid-cols-6 gap-8 mt-10 lg:mt-16 md:h-[400px] relative"
       >
         <Image
-          src={"/case-studies/fitness-by-faith/work-approach-lines.webp"}
-          alt="work-approach-lines"
+          src="/case-studies/fitness-by-faith/work-approach-lines.webp"
+          alt="Decorative background lines for Fitness by Faith work approach section"
           width={1277}
-          loading="lazy"
           height={495}
-          className="absolute z-0 right-0 -left-4 -top-[16%] h-[435px] hidden lg:block"
+          quality={80}
+          loading="lazy"
+          sizes="(max-width: 1024px) 0vw, 1277px"
+          className="absolute z-0 right-0 -left-4 -top-[16%] h-auto hidden lg:block"
+          priority={false}
         />
+
         {approach?.map((a, i) => {
           return (
             <motion.div

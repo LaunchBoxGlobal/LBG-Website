@@ -32,7 +32,7 @@ const Hero = () => {
         check tomorrow’s workout.
       </p>
       <div className="flex items-center justify-center gap-2">
-        <div className="flex flex-wrap gap-3">
+        <div className="flex gap-3">
           <Link href="/" aria-label="Download on the App Store">
             <Image
               src="/app-store-button-image.webp"

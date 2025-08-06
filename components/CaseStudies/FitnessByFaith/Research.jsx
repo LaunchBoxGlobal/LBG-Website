@@ -45,8 +45,8 @@ const Research = () => {
                   }
                   alt="research-border-line"
                   width={270}
-                  loading="lazy"
                   height={500}
+                  loading="lazy"
                   className="absolute left-[-8%] hidden lg:block top-8 midlg:top-0"
                 />
               )}
@@ -77,12 +77,17 @@ const Research = () => {
       </div>
 
       <Image
-        src={"/case-studies/fitness-by-faith/glow-right.webp"}
-        alt="shadow-solutions"
+        src="/case-studies/fitness-by-faith/glow-right.webp"
+        alt=""
+        role="presentation"
         width={736}
-        loading="lazy"
         height={736}
-        className="absolute right-0 -top-60 z-0"
+        quality={70}
+        loading="lazy"
+        sizes="(max-width: 768px) 40vw,
+         (max-width: 1280px) 30vw,
+         736px"
+        className="absolute right-0 -top-60 z-0 w-auto h-auto max-w-[736px]"
       />
     </section>
   );

@@ -147,20 +147,27 @@ const Solutions = () => {
       </div>
 
       <Image
-        src={"/case-studies/fitness-by-faith/shadow-solutions.webp"}
-        alt="shadow-solutions"
+        src="/case-studies/fitness-by-faith/shadow-solutions.webp"
+        alt=""
+        role="presentation"
         width={736}
         height={736}
-        className="absolute left-0 top-0 z-0"
+        quality={70}
         loading="lazy"
+        sizes="(max-width: 768px) 40vw, (max-width: 1280px) 30vw, 736px"
+        className="absolute left-0 top-0 z-0 w-auto h-auto max-w-[736px]"
       />
+
       <Image
-        src={"/case-studies/fitness-by-faith/glow-right.webp"}
-        alt="shadow-solutions"
+        src="/case-studies/fitness-by-faith/glow-right.webp"
+        alt=""
+        role="presentation"
         width={736}
         height={736}
+        quality={70}
         loading="lazy"
-        className="absolute right-0 -top-[80%] z-0"
+        sizes="(max-width: 768px) 40vw, (max-width: 1280px) 30vw, 736px"
+        className="absolute right-0 -top-[80%] z-0 w-auto h-auto max-w-[736px]"
       />
     </section>
   );
