@@ -12,6 +12,7 @@ const Hero = () => {
           src={"/case-studies/fit110/fit110-logo.svg"}
           width={116}
           height={116}
+          priority
           alt="fit110 logo"
         />
         <h1 className="font-bold text-[40px] lg:text-[80px] leading-[1.1] text-center tracking-tight">

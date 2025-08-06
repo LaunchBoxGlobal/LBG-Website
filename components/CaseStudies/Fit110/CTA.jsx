@@ -24,10 +24,11 @@ const CTA = () => {
               className="flex items-center gap-2 bg-[#FE0000] py-2 pl-2 pr-5 rounded-full w-fit"
             >
               <Image
-                src={`/case-studies/fit110/cta-icon.png`}
+                src={`/case-studies/fit110/cta-icon.webp`}
                 alt="cta-icon"
                 width={61}
                 height={61}
+                loading="lazy"
                 className="w-[41px] h-[41px] lg:w-[61px] lg:h-[61px]"
               />
               <span className="font-semibold text-lg lg:text-[26px] leading-[1]">
@@ -45,10 +46,11 @@ const CTA = () => {
             className="w-full"
           >
             <Image
-              src={"/case-studies/fit110/cta-laptops-mockup.png"}
+              src={"/case-studies/fit110/cta-laptops-mockup.webp"}
               alt="cta-laptops-mockup"
               width={749}
               height={544}
+              loading="lazy"
               className="scale-125"
             />
           </motion.div>

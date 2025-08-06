@@ -35,18 +35,20 @@ const Fit100InAction = () => {
           className="w-full"
         >
           <Image
-            src={`/case-studies/fit110/fit110-in-action-new-mockup.png`}
+            src={`/case-studies/fit110/fit110-in-action-new-mockup.webp`}
             alt="fit110-in-action-mockup"
             width={1644}
             height={1057}
+            loading="lazy"
             className="mx-auto"
           />
         </motion.div>
         <Image
-          src={"/case-studies/fit110/fit110-in-action-blur.png"}
+          src={"/case-studies/fit110/fit110-in-action-blur.webp"}
           alt="fit110-in-action-blur"
           width={1644}
           height={348}
+          loading="lazy"
           className="absolute bottom-[-30%] z-10 left-1/2 -translate-x-1/2"
         />
       </section>

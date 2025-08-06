@@ -27,10 +27,11 @@ const Branding = () => {
           className="w-full"
         >
           <Image
-            src={"/case-studies/fit110/branding-fonts-image.png"}
+            src={"/case-studies/fit110/branding-fonts-image.webp"}
             alt="branding-fonts-image"
             width={1280}
             height={881}
+            loading="lazy"
             className="mx-auto"
           />
         </motion.div>
@@ -42,10 +43,11 @@ const Branding = () => {
           className="w-full"
         >
           <Image
-            src={"/case-studies/fit110/fit110-branding-colors.png"}
+            src={"/case-studies/fit110/fit110-branding-colors.webp"}
             alt="fit110-branding-colors"
             width={1225}
             height={767}
+            loading="lazy"
             className="mx-auto mt-28"
           />
         </motion.div>

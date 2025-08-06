@@ -29,7 +29,7 @@ export const Card = ({ b, i }) => {
       ref={ref}
       className={`w-full relative flex mt-10 md:mt-0 ${
         i % 2 === 1 ? "lg:flex-row-reverse flex-col" : "lg:flex-row flex-col"
-      } items-center`}
+      } items-center border border-black`}
     >
       {/* mockup */}
       <div className="w-full md:w-[36%] h-[416px] lg:h-[496px] relative my-10 lg:mb-0 overflow-hidden flex items-end justify-center">
@@ -101,7 +101,7 @@ export const Card = ({ b, i }) => {
             >
               <div className="flex items-center justify-center gap-3">
                 <Image
-                  src={"/case-studies/problem-icon.webp"}
+                  src={"/case-studies/problem-icon.png"}
                   alt="problem icon"
                   width={35}
                   height={32}
@@ -160,7 +160,7 @@ export const Card = ({ b, i }) => {
             >
               <div className="flex items-center justify-center gap-3">
                 <Image
-                  src={"/case-studies/solution-bulb-icon.webp"}
+                  src={"/case-studies/solution-bulb-icon.png"}
                   alt="solution icon"
                   width={47}
                   height={43}

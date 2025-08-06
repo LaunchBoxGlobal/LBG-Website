@@ -48,6 +48,7 @@ const Tech = () => {
               width={tech?.iconWidth}
               height={tech?.iconHeight}
               alt={`${tech?.title} icon`}
+              loading="lazy"
             />
             <h3 className="font-semibold text-lg text-center leading-[1.2]">
               {tech?.title}

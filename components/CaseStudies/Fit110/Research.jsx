@@ -59,47 +59,53 @@ const Research = () => {
       </section>
 
       <Image
-        src={"/case-studies/fit110/fit110-glow-left.png"}
+        src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-0 top-[-20%] z-0 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-left.png"}
+        src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-0 top-[-40%] z-0 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-left.png"}
+        src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-0 bottom-[-10%] z-0 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-left.png"}
+        src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-0 bottom-[-40%] z-0 h-[40vw] w-[50vw]"
       />
 
       {/* right */}
       <Image
-        src={"/case-studies/fit110/fit110-glow-right.png"}
+        src={"/case-studies/fit110/fit110-glow-right.webp"}
         alt="fit110-glow-right"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute right-0 top-[10%] z-0 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-right.png"}
+        src={"/case-studies/fit110/fit110-glow-right.webp"}
         alt="fit110-glow-right"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute right-0 bottom-[0%] z-0 h-[40vw] w-[50vw]"
       />
     </section>

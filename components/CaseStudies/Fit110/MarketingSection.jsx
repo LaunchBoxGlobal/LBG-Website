@@ -11,10 +11,11 @@ const MarketingSection = () => {
           </h2>
         </div>
         <Image
-          src={"/case-studies/fit110/marketing-section-lines.png"}
+          src={"/case-studies/fit110/marketing-section-lines.webp"}
           alt="marketing-section-lines"
           width={996}
           height={249}
+          loading="lazy"
           className="mx-auto z-0 relative top-[80px] hidden lg:block"
         />
         {/* <div className="h-[220px] hidden lg:block midlg:hidden"></div> */}
@@ -48,66 +49,75 @@ const MarketingSection = () => {
         </div>
       </section>
       <Image
-        src={"/case-studies/fit110/glow-circle.png"}
+        src={"/case-studies/fit110/glow-circle.webp"}
         alt="glow-circle"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute right-[10%] bottom-[-40%] z-0 h-[40vw] w-[50vw] rotate-90"
       />
       <Image
-        src={"/case-studies/fit110/glow-circle.png"}
+        src={"/case-studies/fit110/glow-circle.webp"}
         alt="glow-circle"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-1/2 -translate-x-1/2 bottom-[-30%] z-0 h-[40vw] w-[50vw] rotate-90"
       />
       <Image
-        src={"/case-studies/fit110/glow-circle.png"}
+        src={"/case-studies/fit110/glow-circle.webp"}
         alt="glow-circle"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-[10%] bottom-[-30%] z-0 h-[40vw] w-[50vw] rotate-90"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-right.png"}
+        src={"/case-studies/fit110/fit110-glow-right.webp"}
         alt="fit110-glow-right"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute right-0 top-[-50%] z-0 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-right.png"}
+        src={"/case-studies/fit110/fit110-glow-right.webp"}
         alt="fit110-glow-right"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute right-0 -bottom-40 z-0 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-left.png"}
+        src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-0 -bottom-40 z-10 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-left.png"}
+        src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-0 top-[-50%] z-10 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-left.png"}
+        src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute left-0 top-[0%] z-10 h-[40vw] w-[50vw]"
       />
       <Image
-        src={"/case-studies/fit110/fit110-glow-right.png"}
+        src={"/case-studies/fit110/fit110-glow-right.webp"}
         alt="fit110-glow-left"
         width={536}
         height={563}
+        loading="lazy"
         className="absolute right-0 top-[0%] z-10 h-[40vw] w-[50vw]"
       />
     </section>

@@ -8,10 +8,11 @@ const Timeline = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] fit110-red-bg rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/time-icon.png"}
+              src={"/case-studies/time-icon.webp"}
               alt="time-icon"
               width={40}
               height={40}
+              priority
             />
           </div>
           <div className="flex flex-col items-start gap-1">
@@ -24,10 +25,11 @@ const Timeline = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] fit110-red-bg rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/globe-icon.png"}
+              src={"/case-studies/globe-icon.webp"}
               alt="time-icon"
               width={40}
               height={40}
+              priority
             />
           </div>
           <div className="flex flex-col items-start gap-1">
@@ -40,10 +42,11 @@ const Timeline = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] fit110-red-bg rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/constribution-icon.png"}
+              src={"/case-studies/constribution-icon.webp"}
               alt="time-icon"
               width={44}
               height={40}
+              priority
             />
           </div>
           <div className="flex flex-col items-start gap-1">
