@@ -1,10 +1,8 @@
 "use client";
-import Image from "next/image";
 import "./style.css";
 import React, { useEffect, useState } from "react";
 import parse, { domToReact } from "html-react-parser";
 import BlogAuthorDetails from "./BlogAuthorDetails";
-import Link from "next/link";
 
 const SingleBlogPage = ({ blog, author, date }) => {
   const [readTime, setReadTime] = useState(null);
@@ -36,6 +34,7 @@ const SingleBlogPage = ({ blog, author, date }) => {
               date={date}
               readTime={readTime}
               blog={blog}
+              plainText={blog?.content?.rendered.replace(/<[^>]+>/g, " ")}
             />
           </>
         );
@@ -45,20 +44,6 @@ const SingleBlogPage = ({ blog, author, date }) => {
 
   return (
     <div className="w-full">
-      {/* <div className="w-full rounded-xl p-5 blogGrayCta">
-        <div className="">
-          <h3 className="">Need Expert Guidance?</h3>
-          <p>Explore Our App Development Services</p>
-        </div>
-        <Link href={"/contact-us"}>Book Free Consultation</Link>
-      </div>
-      <div className="w-full rounded-xl p-5 blogBlackCta">
-        <div className="">
-          <h3 className="">Need Expert Guidance?</h3>
-          <p>Explore Our App Development Services</p>
-        </div>
-        <Link href={"/contact-us"}>Book Free Consultation</Link>
-      </div> */}
       <div className="w-full blog-page">
         <div className="w-full blogContent">{modifiedContent}</div>
       </div>
