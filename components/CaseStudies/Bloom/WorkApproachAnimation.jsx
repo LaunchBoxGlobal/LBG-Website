@@ -30,7 +30,7 @@ const WorkApproachAnimation = () => {
             inView ? { scale: 1, opacity: 1 } : { scale: 0.3, opacity: 0 }
           }
           transition={{ duration: 0.9, ease: "easeOut" }}
-          src={"/case-studies/purpleglowcircle.png"}
+          src={"/case-studies/purpleglowcircle.webp"}
           alt="purple-glow-circle"
           width={31}
           height={31}
@@ -42,7 +42,7 @@ const WorkApproachAnimation = () => {
             inView ? { scale: 1, opacity: 1 } : { scale: 0.3, opacity: 0 }
           }
           transition={{ duration: 1.2, ease: "easeOut" }}
-          src={"/case-studies/purpleglowcircle.png"}
+          src={"/case-studies/purpleglowcircle.webp"}
           alt="purple-glow-circle"
           width={31}
           height={31}
@@ -54,7 +54,7 @@ const WorkApproachAnimation = () => {
             inView ? { scale: 1, opacity: 1 } : { scale: 0.3, opacity: 0 }
           }
           transition={{ duration: 1.5, ease: "easeOut" }}
-          src={"/case-studies/purpleglowcircle.png"}
+          src={"/case-studies/purpleglowcircle.webp"}
           alt="purple-glow-circle"
           width={31}
           height={31}
@@ -66,7 +66,7 @@ const WorkApproachAnimation = () => {
             inView ? { scale: 1, opacity: 1 } : { scale: 0.3, opacity: 0 }
           }
           transition={{ duration: 1.5, ease: "easeOut" }}
-          src={"/case-studies/purpleglowcircle.png"}
+          src={"/case-studies/purpleglowcircle.webp"}
           alt="purple-glow-circle"
           width={31}
           height={31}
@@ -78,7 +78,7 @@ const WorkApproachAnimation = () => {
             inView ? { scale: 1, opacity: 1 } : { scale: 0.3, opacity: 0 }
           }
           transition={{ duration: 1.2, ease: "easeOut" }}
-          src={"/case-studies/purpleglowcircle.png"}
+          src={"/case-studies/purpleglowcircle.webp"}
           alt="purple-glow-circle"
           width={31}
           height={31}
@@ -90,17 +90,17 @@ const WorkApproachAnimation = () => {
             inView ? { scale: 1, opacity: 1 } : { scale: 0.3, opacity: 0 }
           }
           transition={{ duration: 1.2, ease: "easeOut" }}
-          src={"/case-studies/purpleglowcircle.png"}
+          src={"/case-studies/purpleglowcircle.webp"}
           alt="purple-glow-circle"
           width={31}
           height={31}
           className="hidden lg:block absolute left-[17%] bottom-[-7%] w-28 h-28"
         />
         <Image
-          src={"/case-studies/outer-alf-circle-purple.png"}
+          src={"/case-studies/outer-alf-circle-purple.webp"}
           width={504}
           height={375}
-          alt="outer-alf-circle.png"
+          alt="outer-alf-circle.webp"
           className="w-[232px] h-[162px] mx-auto md:w-[404px] md:h-[404px] lg:w-[504px] lg:h-[375px] hidden lg:block"
         />
       </div>

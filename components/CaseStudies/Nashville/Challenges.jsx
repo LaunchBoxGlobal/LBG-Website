@@ -51,6 +51,7 @@ export const Card = ({ c, i, isEven }) => {
           width={324}
           height={572}
           alt={c?.title}
+          loading="lazy"
           className="h-[320px] lg:h-[572px] object-contain z-20 relative"
         />
         <div
@@ -66,6 +67,7 @@ export const Card = ({ c, i, isEven }) => {
             alt="challenges left arrow"
             width={162}
             height={172}
+            loading="lazy"
             className={`absolute right-[5%] top-1/2 -translate-y-1/2 h-[172px] ${
               isEven ? "-rotate-6" : "-rotate-6"
             }`}

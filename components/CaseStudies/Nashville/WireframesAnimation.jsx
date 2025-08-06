@@ -31,6 +31,7 @@ const WireframesAnimation = () => {
             src={platform}
             width={297}
             height={612}
+            loading="lazy"
             alt={"nashville wireframes mockup"}
             className="h-[612px] object-contain"
           />

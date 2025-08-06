@@ -17,11 +17,16 @@ const Banner2 = () => {
         className="w-full padding-x"
       >
         <Image
-          src={"/case-studies/nashville/nashville-banner-2.png"}
-          alt="nashville-banner-2"
+          src="/case-studies/nashville/nashville-banner-2.webp"
+          alt="Nashville case study banner highlighting creative project design"
           width={1270}
           height={707}
-          className="h-[707px] object-cover rounded-[40px] w-full"
+          quality={85}
+          loading="lazy"
+          sizes="(max-width: 640px) 100vw,
+         (max-width: 1024px) 90vw,
+         1270px"
+          className="w-full h-auto rounded-[40px] object-cover"
         />
       </motion.div>
     </div>

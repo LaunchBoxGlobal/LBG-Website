@@ -36,8 +36,8 @@ export const Card = ({ b, i }) => {
         <Image
           src={
             i % 2 === 0
-              ? "/case-studies/solutions-mockup-background.png"
-              : "/case-studies/solutions-mockup-background-2.png"
+              ? "/case-studies/solutions-mockup-background.webp"
+              : "/case-studies/solutions-mockup-background-2.webp"
           }
           alt="solutions-mockup-background"
           width={453}
@@ -52,7 +52,7 @@ export const Card = ({ b, i }) => {
         >
           <Image
             src={b?.image}
-            alt="solutions-mobile-mockup-1.png"
+            alt="solutions-mobile-mockup-1.webp"
             width={338}
             height={496}
             className="z-20 object-contain w-[80%] h-auto xl:h-[496px] xl:w-full absolute bottom-0 left-1/2 -translate-x-1/2"
@@ -101,7 +101,7 @@ export const Card = ({ b, i }) => {
             >
               <div className="flex items-center justify-center gap-3">
                 <Image
-                  src={"/case-studies/problem-icon.png"}
+                  src={"/case-studies/problem-icon.webp"}
                   alt="problem icon"
                   width={35}
                   height={32}
@@ -160,7 +160,7 @@ export const Card = ({ b, i }) => {
             >
               <div className="flex items-center justify-center gap-3">
                 <Image
-                  src={"/case-studies/solution-bulb-icon.png"}
+                  src={"/case-studies/solution-bulb-icon.webp"}
                   alt="solution icon"
                   width={47}
                   height={43}

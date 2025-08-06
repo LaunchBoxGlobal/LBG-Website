@@ -15,11 +15,15 @@ const Admin = () => {
 
       <Image
         src={
-          "/case-studies/nashville/now-you-know-nashville-admin-dashboard-mockup.png"
+          "/case-studies/nashville/now-you-know-nashville-admin-dashboard-mockup.webp"
         }
         alt="now-you-know-nashville-admin-dashboard-mockup"
         width={1270}
         height={770}
+        sizes="(max-width: 640px) 100vw,
+         (max-width: 1024px) 90vw,
+         1270px"
+        loading="lazy"
         className="w-full mx-auto mt-10"
       />
     </section>

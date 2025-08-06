@@ -1,30 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import WorkApproachAnimation from "./WorkApproachAnimation";
-
-const WORK_APPROACH = [
-  {
-    title: "Project Study",
-    description: "Research, User Persona, & User Flow",
-    image: "/case-studies/project-study-image.png",
-    width: 47,
-    height: 42,
-  },
-  {
-    title: "Product Design",
-    description: "Research, User Persona, & User Flow",
-    image: "/case-studies/product-design.png",
-    width: 51,
-    height: 50,
-  },
-  {
-    title: "Development",
-    description: "Research, User Persona, & User Flow",
-    image: "/case-studies/development-icon.png",
-    width: 56,
-    height: 50,
-  },
-];
 
 const WorkApproach = () => {
   return (

@@ -24,10 +24,11 @@ const BloomCaseStudyPage = () => {
           <div className="flex items-center gap-3">
             <div className="min-w-[66px] h-[66px] bloomBgColor rounded-full flex items-center justify-center">
               <Image
-                src={"/case-studies/time-icon.png"}
+                src={"/case-studies/time-icon.webp"}
                 alt="time-icon"
                 width={40}
                 height={40}
+                priority
               />
             </div>
             <div className="flex flex-col items-start gap-1">
@@ -40,10 +41,11 @@ const BloomCaseStudyPage = () => {
           <div className="flex items-center gap-3">
             <div className="min-w-[66px] h-[66px] bloomBgColor rounded-full flex items-center justify-center">
               <Image
-                src={"/case-studies/globe-icon.png"}
+                src={"/case-studies/globe-icon.webp"}
                 alt="time-icon"
                 width={40}
                 height={40}
+                priority
               />
             </div>
             <div className="flex flex-col items-start gap-1">
@@ -56,10 +58,11 @@ const BloomCaseStudyPage = () => {
           <div className="flex items-center gap-3">
             <div className="min-w-[66px] h-[66px] bloomBgColor rounded-full flex items-center justify-center">
               <Image
-                src={"/case-studies/constribution-icon.png"}
+                src={"/case-studies/constribution-icon.webp"}
                 alt="time-icon"
                 width={44}
                 height={40}
+                priority
               />
             </div>
             <div className="flex flex-col items-start gap-1">
@@ -73,11 +76,16 @@ const BloomCaseStudyPage = () => {
       </section>
       <section className="w-full padding-x">
         <Image
-          src={"/case-studies/bloom-banner-1.png"}
-          alt="bloom-banner"
+          src="/case-studies/bloom-banner-1.webp"
+          alt="Bloom case study banner showing project highlights"
           width={1270}
           height={593}
-          className=""
+          quality={85}
+          priority // keep if above-the-fold
+          sizes="(max-width: 768px) 100vw, 
+         (max-width: 1200px) 90vw, 
+         1270px"
+          className="w-full h-auto"
         />
       </section>
       <div className="w-full padding-x">
@@ -99,7 +107,7 @@ const BloomCaseStudyPage = () => {
       </div>
       <div className="w-full padding-x">
         <Image
-          src={"/case-studies/bloom-banner-02.png"}
+          src={"/case-studies/bloom-banner-02.webp"}
           alt="bloom-banner-02"
           width={1270}
           height={593}
@@ -131,7 +139,7 @@ const BloomCaseStudyPage = () => {
       </div>
       <div className="w-full padding-x">
         <Image
-          src={"/case-studies/bloom_banner_04.png"}
+          src={"/case-studies/bloom_banner_04.webp"}
           alt="bloom-banner-02"
           width={1270}
           height={593}

@@ -1,17 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import PageBreadcrumb from "@/components/Common/PageBreadcrumb";
 
 const Hero = () => {
   return (
     <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-5 overflow-hidden padding-x">
-      {/* <PageBreadcrumb
-        pageLink={"/case-studies/now-you-know-nashville"}
-        pageTitle={"Now You Know Nashville"}
-        primaryLink={"/case-studies"}
-        primaryPageTitle={"Case Studies"}
-      /> */}
       <Image
         src={"/case-studies/nashville/nashville-logo.png"}
         width={109}
@@ -33,20 +26,33 @@ const Hero = () => {
         Nashville’s true vibe.
       </p>
       <div className="flex items-center justify-center gap-2">
-        <Link href={"/"}>
+        <Link href="/" aria-label="Download on the App Store">
           <Image
-            src={"/app-store-button-image.png"}
+            src="/app-store-button-image.webp"
+            alt="Download on the App Store"
             width={239}
             height={57}
-            alt="app-store-button-image"
+            quality={90}
+            sizes="(max-width: 640px) 45vw, 
+             (max-width: 1024px) 30vw, 
+             239px"
+            className="h-auto w-full max-w-[239px]"
+            priority
           />
         </Link>
-        <Link href={"/"}>
+
+        <Link href="/" aria-label="Get it on Google Play">
           <Image
-            src={"/google-play-button-image.png"}
+            src="/google-play-button-image.webp"
+            alt="Get it on Google Play"
             width={239}
             height={57}
-            alt="google-play-button-image"
+            quality={90}
+            sizes="(max-width: 640px) 45vw, 
+             (max-width: 1024px) 30vw, 
+             239px"
+            className="h-auto w-full max-w-[239px]"
+            priority
           />
         </Link>
       </div>
@@ -55,10 +61,11 @@ const Hero = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#407BA7] rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/time-icon.png"}
+              src={"/case-studies/time-icon.webp"}
               alt="time-icon"
               width={40}
               height={40}
+              priority
             />
           </div>
           <div className="flex flex-col items-start gap-1">
@@ -71,10 +78,11 @@ const Hero = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#407BA7] rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/globe-icon.png"}
+              src={"/case-studies/globe-icon.webp"}
               alt="time-icon"
               width={40}
               height={40}
+              priority
             />
           </div>
           <div className="flex flex-col items-start gap-1">
@@ -87,10 +95,11 @@ const Hero = () => {
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#407BA7] rounded-full flex items-center justify-center">
             <Image
-              src={"/case-studies/constribution-icon.png"}
+              src={"/case-studies/constribution-icon.webp"}
               alt="time-icon"
               width={44}
               height={40}
+              priority
             />
           </div>
           <div className="flex flex-col items-start gap-1">
@@ -102,11 +111,16 @@ const Hero = () => {
         </div>
       </div>
       <Image
-        src={"/case-studies/nashville-banner-1.png"}
-        alt="nashville-banner-1"
+        src="/case-studies/nashville-banner-1.webp"
+        alt="Nashville case study banner showcasing project details"
         width={1270}
         height={593}
-        className=""
+        quality={85}
+        priority
+        sizes="(max-width: 640px) 100vw, 
+         (max-width: 1024px) 90vw, 
+         1270px"
+        className="w-full h-auto"
       />
     </section>
   );

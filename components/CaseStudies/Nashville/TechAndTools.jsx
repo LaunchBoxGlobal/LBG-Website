@@ -49,7 +49,7 @@ const TechAndTools = () => {
       <div className="w-full h-[700px] overflow-y-visible py-10 relative flex flex-col items-center justify-between">
         <div className="absolute -inset-5 z-10 blur-2xl bg-[#407BA7]/30 rounded-full w-1/2 h-1/2 opacity-50 left-1/2 -translate-x-1/2 top-0"></div>
         <Image
-          src={"/case-studies/nashville/tech-lines.png"}
+          src={"/case-studies/nashville/tech-lines.webp"}
           width={846}
           height={527}
           alt="tech-and-tools-image"

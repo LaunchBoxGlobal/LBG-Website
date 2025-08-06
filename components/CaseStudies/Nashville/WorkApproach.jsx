@@ -22,6 +22,7 @@ const WorkApproach = () => {
           alt="work-approach-border-line"
           width={1000}
           height={99}
+          loading="lazy"
           className="absolute z-0 top-[5%] left-1/2 -translate-x-1/2 hidden midlg:block midlg:w-[900px] xl:w-[1000px]"
         />
         {NASHVILLE_WORK_APPROACH?.map((w, i) => {
