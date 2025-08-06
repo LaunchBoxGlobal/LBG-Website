@@ -29,7 +29,7 @@ export const Card = ({ b, i }) => {
       ref={ref}
       className={`w-full relative flex mt-10 md:mt-0 ${
         i % 2 === 1 ? "lg:flex-row-reverse flex-col" : "lg:flex-row flex-col"
-      } items-center border border-black`}
+      } items-center`}
     >
       {/* mockup */}
       <div className="w-full md:w-[36%] h-[416px] lg:h-[496px] relative my-10 lg:mb-0 overflow-hidden flex items-end justify-center">
