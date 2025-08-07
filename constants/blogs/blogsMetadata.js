@@ -106,4 +106,9 @@ export const BLOGS_METADATA = {
     description:
       "Explore why cheap software development costs lead to costly fixes. Learn the budget for good quality, easy solutions & budget friendly. Get expert advice today.",
   },
+  "ar-zone-app-features-benefits-and-how-to-download-for-android": {
+    title: "AR Zone App| Features, Downloading & Android Benefits 2025",
+    description:
+      "Discover what the AR Zone app offers, its benefits, and Guide to download it on Android. Explore AR effects, games, and more in this detailed guide further",
+  },
 };
