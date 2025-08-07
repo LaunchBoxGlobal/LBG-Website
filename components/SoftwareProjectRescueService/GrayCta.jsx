@@ -5,14 +5,14 @@ import React from "react";
 const GrayCta = () => {
   return (
     <section className="w-full relative padding-x py-20">
-      <div className="w-full bg-[#F6F6F6] rounded-[17px] px-10 py-20 flex flex-col items-center gap-4">
+      <div className="w-full bg-[#fff] rounded-[17px] flex flex-col items-center gap-4">
         <h2 className="font-semibold text-[33px] lg:text-[50px] leading-[1] text-center">
-          Built something with vibe coding or <br className="hidden lg:block" />
-          <span className="red-text">no code</span>
+          Your No Code Build Worked, Let's <br className="hidden lg:block" />{" "}
+          Make it <span className="red-text">Fully Functional</span>
         </h2>
         <p className="text-center text-base lg:text-[20px] leading-[1.2]">
-          You made a smart move, so let’s turn your AI assisted coding into real
-          software
+          We appreciate the effort behind your creation and are excited to help
+          it reach its full potential.
         </p>
 
         <div className="w-full max-w-[830px] h-[203px] md:h-[473px] md:mt-10 relative">
@@ -71,13 +71,16 @@ const GrayCta = () => {
           <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[21%] lg:left-[22%] bottom-[19%] md:bottom-[17%] lg:bottom-[11%]"></div>
         </div>
 
-        <div className="w-full flex justify-center mt-6">
+        <div className="w-full flex flex-col items-center gap-3 justify-center mt-6">
           <Link
             href={`/contact-us`}
             className="bg-[#F40E00] rounded-[11px] text-white py-3 px-6 text-base lg:text-[20px] font-medium hover:bg-black transition-all duration-300"
           >
-            Let’s Make It Real
+            Connect With Experts
           </Link>
+          <p className="lg:text-lg text-center">
+            You focus on your next build, and we’ll take care of this one.
+          </p>
         </div>
       </div>
     </section>

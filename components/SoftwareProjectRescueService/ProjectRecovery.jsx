@@ -1,45 +1,79 @@
-"use client";
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import React from "react";
+
+export const recovery_content = [
+  {
+    title:
+      "We got the demo with low code, but we don’t have the final product.",
+    icon: "/new-project/project-recovery-icon-1.png",
+    width: 33,
+    height: 30,
+  },
+  {
+    title: "We launched but users are dropping.",
+    icon: "/new-project/project-recovery-icon-2.png",
+    width: 27,
+    height: 28,
+  },
+  {
+    title: "The devs disappeared. Now we’re stuck.",
+    icon: "/new-project/project-recovery-icon-3.png",
+    width: 25,
+    height: 25,
+  },
+  {
+    title: "We used Webflow/FlutterFlow, but now can’t scale.",
+    icon: "/new-project/project-recovery-icon-4.png",
+    width: 25,
+    height: 25,
+  },
+  {
+    title: "The backend is a mess and we don’t know where to begin.",
+    icon: "/new-project/project-recovery-icon-5.png",
+    width: 30,
+    height: 25,
+  },
+];
 
 const ProjectRecovery = () => {
-  const scrollRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: scrollRef,
-    offset: ["start start", "end end"],
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
-
   return (
-    <section ref={scrollRef} className="relative h-[200vh] bg-white w-full">
-      <div className="sticky top-0 h-screen flex flex-col items-center justify-center px-6 py-16">
-        <h2 className="text-6xl md:text-8xl leading-[1] font-bold text-center">
-          Website Development Services
+    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
+      <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          What Founders Need for Software{" "}
+          <span className="red-text">Project Recovery</span>
         </h2>
-        <p className="text-center max-w-[80%] mx-auto text-lg leading-[1.4] mt-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-          eligendi ab, aspernatur velit, explicabo saepe magni cupiditate
-          assumenda facere libero hic doloremque vel eius. Fugit.
-        </p>
 
-        <div className="w-full overflow-hidden flex items-center justify-start mt-12">
-          <motion.div style={{ x }} className="flex gap-6 px-20">
-            {[...Array(10)].map((_, index) => (
-              <div
-                className="min-w-80 max-w-[320px] bg-gray-100 p-5 rounded-xl shadow-md"
-                key={index}
-              >
-                <p className="text-sm">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Itaque accusantium ipsum, mollitia numquam cupiditate fugiat!
-                </p>
+        <p className="section-paragraph lg:w-[90%] mx-auto">
+          Ai based coding has been fascinating for a lot of startups, since it
+          feels possible to build what once felt out of reach. However, it’s
+          common to pause with a half-built product, that’s simply part of the
+          journey. A lot of founders and startups come to us with:
+        </p>
+      </section>
+
+      <section className="w-full flex items-center justify-center flex-wrap gap-5 mt-10 lg:mt-16">
+        {recovery_content?.map((r, i) => {
+          return (
+            <div
+              key={i}
+              className="w-full md:w-[45%] lg:w-[32%] bg-[#F6F6F6] rounded-[17px] p-5 lg:p-7 flex flex-col items-start justify-start gap-2 min-h-[200px]"
+            >
+              <div className="w-[54px] h-[54px] bg-[#F40E00] rounded-full flex items-center justify-center">
+                <Image
+                  src={r?.icon}
+                  width={r?.width}
+                  height={r?.height}
+                  alt={r?.title}
+                />
               </div>
-            ))}
-          </motion.div>
-        </div>
-      </div>
+              <h3 className="font-semibold text-[22px] midlg:text-[26px] leading-[1]">
+                {r?.title}
+              </h3>
+            </div>
+          );
+        })}
+      </section>
     </section>
   );
 };

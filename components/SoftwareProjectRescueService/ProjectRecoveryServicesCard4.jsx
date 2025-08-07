@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-const ProjectRecoveryServicesCard1 = () => {
+const ProjectRecoveryServicesCard4 = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
   });
@@ -15,20 +15,19 @@ const ProjectRecoveryServicesCard1 = () => {
       <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 pl-8 pr-8 lg:pr-0">
         <div className="w-[54px] h-[54px] bg-red rounded-full bg-[#F40E00] flex items-center justify-center">
           <img
-            src="/new-project/heart-icon.png"
-            alt="heart-icon"
-            width={29}
+            src="/new-project/transitioning-projects-icon.png"
+            alt="transitioning projects icon"
+            width={24}
             height={25}
           />
         </div>
         <h3 className="font-semibold text-[26px] leading-[1]">
-          AI Assisted Coding, Vibe Projects
+          Transitioning Projects 
         </h3>
         <p className="text-lg" style={{ lineHeight: "1.5rem" }}>
-          You created projects that reflect your vision through AI based coding,
-          Loveable, and vibe coding. Our Project Recovery Services enhance your
-          projects, keeping their design and purpose intact while making them
-          fully functional.
+          Some AI tools start as no code but end up requiring proper tech
+          knowledge in the end. We help transition those projects, integrating
+          custom development to make them stable and truly launch‑ready.
         </p>
       </div>
       <div className="w-full lg:w-[40%] relative h-full hidden lg:block">
@@ -78,4 +77,4 @@ const ProjectRecoveryServicesCard1 = () => {
   );
 };
 
-export default ProjectRecoveryServicesCard1;
+export default ProjectRecoveryServicesCard4;

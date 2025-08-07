@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-const ProjectRecoveryServicesCard2 = () => {
+const ProjectRecoveryServicesCard3 = () => {
   const { ref, inView } = useInView({
     triggerOnce: false, // change to true if you want it only the first time
   });
@@ -46,8 +46,8 @@ const ProjectRecoveryServicesCard2 = () => {
       <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 lg pl-8 pr-8 lg:pr-4">
         <div className="w-[54px] h-[54px] rounded-full bg-[#F40E00] flex items-center justify-center">
           <img
-            src="/new-project/mvp-icon.png"
-            alt="heart-icon"
+            src="/new-project/development-icon.png"
+            alt="development-icon"
             width={25}
             height={25}
           />
@@ -65,39 +65,21 @@ const ProjectRecoveryServicesCard2 = () => {
       {/* Right Images with Animation */}
       <div className="w-full lg:w-[40%] relative h-full hidden lg:block">
         <motion.div
-          className="w-full h-full absolute inset-0 rounded-r-[26px]"
+          className="w-full h-full absolute inset-0 rounded-r-[26px] rotate-12"
           variants={parentVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
           {/* Cursor */}
-          <motion.img
-            src="/new-project/mvp-builds-cursor-icon.png"
-            alt="mvp-builds-cursor-icon"
-            width={73}
-            height={62}
-            className="absolute top-[15%] left-[10%] z-10"
-            variants={slideRight}
-          />
 
           {/* Dashboard */}
           <motion.img
-            src="/new-project/mvp-dashboard-image.png"
-            alt="mvp-dashboard-image"
-            width={467}
-            height={432}
-            className="absolute top-[118px] right-0 bottom-0 z-10"
+            src="/new-project/mockup-3.png"
+            alt="mockup-3"
+            width={487}
+            height={472}
+            className="absolute top-[118px] right-[-10%] w-[687px] bottom-0 z-10 rotate-12"
             variants={slideRight}
-          />
-
-          {/* Orange Cursor */}
-          <motion.img
-            src="/new-project/mvp-builds-orange-cursor-icon.png"
-            alt="mvp-builds-orange-cursor-icon"
-            width={118}
-            height={66}
-            className="absolute left-[-33%] bottom-[5%] z-10 object-contain"
-            variants={slideDown}
           />
         </motion.div>
       </div>
@@ -105,4 +87,4 @@ const ProjectRecoveryServicesCard2 = () => {
   );
 };
 
-export default ProjectRecoveryServicesCard2;
+export default ProjectRecoveryServicesCard3;

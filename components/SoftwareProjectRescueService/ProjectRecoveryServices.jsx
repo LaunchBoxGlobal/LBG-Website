@@ -2,6 +2,8 @@ import React from "react";
 import ProjectRecoveryServicesCard1 from "./ProjectRecoveryServicesCard1";
 import ProjectRecoveryServicesCard2 from "./ProjectRecoveryServicesCard2";
 import Link from "next/link";
+import ProjectRecoveryServicesCard4 from "./ProjectRecoveryServicesCard4";
+import ProjectRecoveryServicesCard3 from "./ProjectRecoveryServicesCard3";
 
 const ProjectRecoveryServices = () => {
   // bg-[#F9F9F9]
@@ -27,6 +29,8 @@ const ProjectRecoveryServices = () => {
       <section className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10 lg:mt-16">
         <ProjectRecoveryServicesCard1 />
         <ProjectRecoveryServicesCard2 />
+        <ProjectRecoveryServicesCard3 />
+        <ProjectRecoveryServicesCard4 />
       </section>
     </section>
   );

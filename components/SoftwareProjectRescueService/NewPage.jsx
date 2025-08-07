@@ -14,15 +14,19 @@ import WhyChooseUs from "./WhyChooseUs";
 import EngagementModels from "./EngagementModels";
 import FAQs from "./FAQs";
 import { AI_BASED_PROJECT_FAQS } from "@/constants/ai-based-projects-content/ai-based-project-faqs";
-import Contact from "../services/BrandingAndDesign/Contact";
+import Contact from "./Contact";
 import ProjectRecovery from "./ProjectRecovery";
 import ProjectRecoverySection from "./ProjectRecoverySection";
+import WhatIsNotWorking from "./WhatIsNotWorking";
 
 const NewPage = () => {
   return (
     <main className="w-full overflow-hidden relative">
       <Hero />
       <Platforms />
+      <ProjectRecovery />
+      <WhatIsNotWorking />
+      <GrayCta />
       <WhyFoundersNeedProjectDiscovery />
       <ProjectRecoveryServices />
       <BlackCta />
@@ -30,10 +34,8 @@ const NewPage = () => {
       <FlagsAnimation />
       <ProjectRescue />
       <Process />
-      {/* <ProjectRecovery /> */}
-      <ProjectRecoverySection />
       <WhyChooseUs />
-      <GrayCta />
+
       <EngagementModels />
       <FAQs faqs={AI_BASED_PROJECT_FAQS} />
       <Contact />
