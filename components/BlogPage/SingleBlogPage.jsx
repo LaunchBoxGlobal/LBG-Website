@@ -6,17 +6,36 @@ import BlogAuthorDetails from "./BlogAuthorDetails";
 
 const SingleBlogPage = ({ blog, author, date }) => {
   const [readTime, setReadTime] = useState(null);
+  const [numericReadTime, setNumericReadTime] = useState(null);
 
   useEffect(() => {
     getReadTime();
+    getNumericReadTime();
   }, []);
 
-  function getReadTime(wordsPerMinute = 200) {
+  function getReadTime(wordsPerMinute = 125) {
     const plainText = blog?.content?.rendered.replace(/<[^>]+>/g, " ");
     const wordCount = plainText?.trim()?.split(/\s+/)?.length;
     const time = Math.ceil(wordCount / wordsPerMinute);
     setReadTime(time);
     return `${time} min read`;
+  }
+
+  function getNumericReadTime(wordsPerMinute = 125) {
+    const plainText = blog?.content?.rendered.replace(/<[^>]+>/g, " ");
+    const wordCount = plainText?.trim()?.split(/\s+/)?.length || 0;
+
+    const totalSeconds = Math.ceil((wordCount / wordsPerMinute) * 60);
+
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+
+    const formattedTime = `${String(minutes).padStart(2, "0")}:${String(
+      seconds
+    ).padStart(2, "0")}`;
+
+    setNumericReadTime(formattedTime);
+    return formattedTime;
   }
 
   const modifiedContent = parse(blog?.content?.rendered || "", {
@@ -32,7 +51,8 @@ const SingleBlogPage = ({ blog, author, date }) => {
             <BlogAuthorDetails
               author={author}
               date={date}
-              readTime={readTime}
+              readTime={numericReadTime}
+              numericReadTime={numericReadTime}
               blog={blog}
               plainText={blog?.content?.rendered.replace(/<[^>]+>/g, " ")}
             />

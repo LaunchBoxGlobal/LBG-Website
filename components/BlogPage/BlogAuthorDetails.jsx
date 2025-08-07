@@ -1,6 +1,12 @@
 import BlogAudioPlayer from "./BlogAudioPlayer";
 
-const BlogAuthorDetails = ({ author, date, readTime, blog, plainText }) => {
+const BlogAuthorDetails = ({
+  author,
+  date,
+  readTime,
+  plainText,
+  numericReadTime,
+}) => {
   function formatDate(dateString) {
     const date = new Date(dateString);
 
@@ -67,7 +73,7 @@ const BlogAuthorDetails = ({ author, date, readTime, blog, plainText }) => {
         )}
       </div>
       <div className="mt-6">
-        <BlogAudioPlayer text={plainText} />
+        <BlogAudioPlayer text={plainText} readTime={numericReadTime} />
       </div>
     </div>
   );
