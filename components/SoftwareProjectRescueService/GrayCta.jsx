@@ -40,7 +40,7 @@ const GrayCta = () => {
             className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 w-[70px] md:w-[170px] lg:w-[210px]"
           />
           {/* animated svgs right*/}
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[12%] lg:right-[14%] top-[20%] lg:top-[12%] flex items-center justify-center">
+          <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[12%] lg:right-[14%] top-[20%] md:top-[17%] lg:top-[12%] flex items-center justify-center">
             <img
               src="/new-project/animated-check-icon.gif"
               alt="animated-tick-icon"
@@ -48,7 +48,7 @@ const GrayCta = () => {
               height={35}
             />
           </div>
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[7%] top-[53.6%] lg:top-[56.5%] flex items-center justify-center">
+          <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[7%] top-[53.6%] lg:top-[56.5%] flex items-center justify-center">
             <img
               src="/new-project/animated-settings-icon.gif"
               alt="animated-settings-icon"
@@ -56,7 +56,7 @@ const GrayCta = () => {
               height={45}
             />
           </div>
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[18%] lg:right-[20%] bottom-[19%] lg:bottom-[11%] flex items-center justify-center">
+          <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[20%] lg:right-[20%] bottom-[15%] lg:bottom-[11%] flex items-center justify-center">
             <img
               src="/new-project/animated-shaking-hands.gif"
               alt="animated-shaking-hands"
@@ -65,7 +65,7 @@ const GrayCta = () => {
             />
           </div>
           {/* animated svgs left*/}
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[13.8%] lg:left-[14.8%] top-[22%] lg:top-[14%] flex items-center justify-center">
+          <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[13.8%] lg:left-[14.8%] top-[22%] lg:top-[14%] flex items-center justify-center">
             <img
               src="/new-project/bolt-ai-icon.png"
               alt="bolt ai icon"
@@ -74,7 +74,7 @@ const GrayCta = () => {
             />
           </div>
           {/* animated-settings-icon */}
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[7%] top-[55.7%] lg:top-[59%] flex items-center justify-center">
+          <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[7%] top-[55.7%] lg:top-[59%] flex items-center justify-center">
             <img
               src="/new-project/lovable-icon.png"
               alt="lovale icon"
@@ -82,7 +82,7 @@ const GrayCta = () => {
               height={35}
             />
           </div>
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[21%] lg:left-[22%] bottom-[19%] md:bottom-[17%] lg:bottom-[11%] flex items-center justify-center">
+          <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[21%] lg:left-[22%] bottom-[19%] md:bottom-[17%] lg:bottom-[11%] flex items-center justify-center">
             <img
               src="/new-project/google-firebase-icon.png"
               alt="google firebase icon"

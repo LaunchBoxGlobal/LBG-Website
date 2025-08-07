@@ -72,7 +72,7 @@ const ContactForm = ({ buttonTitle }) => {
       onSubmit={formik.handleSubmit}
       className="w-full bg-transparent text-white"
     >
-      <h2 className="text-[30px] lg:text-[45px] xl:text-[50px] leading-[1] font-medium">
+      <h2 className="text-[30px] md:text-[45px] xl:text-[50px] leading-[1] font-medium">
         <span className="text-[#FFE0C7]">Got</span> the Idea{" "}
         <span className="text-[#FE8761]">Working?</span> Let’s Take It{" "}
         <span className="text-[#F40E00] font-extrabold">Further</span>

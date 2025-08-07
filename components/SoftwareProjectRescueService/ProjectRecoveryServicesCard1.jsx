@@ -10,7 +10,7 @@ const ProjectRecoveryServicesCard1 = () => {
   return (
     <div
       ref={ref}
-      className="w-full max-w-[631px] min-h-[493px] bg-[#F6F6F6] rounded-[26px] flex items-start justify-between overflow-hidden"
+      className="w-full max-w-[631px] lg:min-h-[493px] bg-[#F6F6F6] rounded-[26px] flex items-start justify-between overflow-hidden mx-auto"
     >
       <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 pl-8 pr-8 lg:pr-0">
         <div className="w-[54px] h-[54px] bg-red rounded-full bg-[#F40E00] flex items-center justify-center">

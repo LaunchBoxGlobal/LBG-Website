@@ -26,7 +26,7 @@ const ProcessCard = ({ process, index }) => {
             : "-top-7 -left-4 lg:-top-8 lg:-left-8"
         }`}
       >
-        <div className="w-full h-full red-bg rounded-full flex items-center justify-center">
+        <div className="w-full h-full red-bg rounded-full flex items-center justify-center p-3 lg:p-0">
           <Image
             src={process?.icon}
             alt={process?.title}

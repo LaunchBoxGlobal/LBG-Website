@@ -40,7 +40,7 @@ const ProjectRecoveryServicesCard3 = () => {
   return (
     <div
       ref={ref}
-      className="w-full max-w-[631px] min-h-[493px] bg-[#F6F6F6] rounded-[26px] flex items-start justify-between overflow-hidden"
+      className="w-full max-w-[631px] lg:min-h-[493px] bg-[#F6F6F6] rounded-[26px] flex items-start justify-between overflow-hidden mx-auto"
     >
       {/* Left Content */}
       <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 lg pl-8 pr-8 lg:pr-4">

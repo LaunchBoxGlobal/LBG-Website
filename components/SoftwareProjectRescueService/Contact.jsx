@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="w-full z-10">
           <ContactForm buttonTitle={"Make My Brand Unforgettable"} />
         </div>
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center pb-10">
           <div className="relative flex items-center justify-center">
             {/* Animated Pulsing Circles */}
             <span className="absolute animate-ping h-[120px] w-[120px] rounded-full bg-[#E1E1E1] opacity-75 z-0"></span>

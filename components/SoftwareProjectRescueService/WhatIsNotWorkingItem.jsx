@@ -17,9 +17,9 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
         onClick={() => toggleFaq(index)}
         className="w-full text-start flex items-center justify-between outline-none"
       >
-        <div className="w-full flex items-center">
+        <div className="w-full flex items-center gap-3">
           <div className="min-w-[10%]">
-            <p className="text-[25px] font-medium leading-none">{`(0${
+            <p className="text-lg lg:text-[25px] font-medium leading-none">{`(0${
               index + 1
             })`}</p>
           </div>
@@ -64,7 +64,7 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
         {content?.problems_and_solutions?.map((p, i) => {
           return (
             <div
-              className="w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5 border p-5 rounded-[11px]"
+              className="w-full lg:w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5 border p-5 rounded-[11px]"
               key={i}
             >
               <div className="flex items-center gap-4">
