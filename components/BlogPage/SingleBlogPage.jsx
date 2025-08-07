@@ -27,7 +27,7 @@ const SingleBlogPage = ({ blog, author, date }) => {
 
     const totalSeconds = Math.ceil((wordCount / wordsPerMinute) * 60);
 
-    const minutes = Math.floor(totalSeconds / 60);
+    const minutes = Math.ceil(totalSeconds / 60);
     const seconds = totalSeconds % 60;
 
     const formattedTime = `${String(minutes).padStart(2, "0")}:${String(
