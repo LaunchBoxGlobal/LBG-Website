@@ -65,14 +65,26 @@ const ProjectRecoveryServicesCard4 = () => {
       {/* Right Images with Animation */}
       <div className="w-full lg:w-[40%] relative h-full hidden lg:flex items-end">
         <motion.div
-          className="h-full absolute inset-x-0 rounded-r-[26px] bottom-0"
+          className="h-full absolute inset-x-0 rounded-r-[26px] bottom-[-15%]"
           variants={parentVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
+          <motion.img
+            src="/new-project/_input-field.png"
+            alt="_input-field"
+            className="absolute right-2 top-0 w-[308px] h-[29px]"
+            variants={slideRight}
+          />
+          <motion.img
+            src="/new-project/Arrow 1.png"
+            alt="Arrow 1"
+            className="absolute top-10 left-10 h-[70px]"
+            variants={slideRight}
+          />
           {/* Dashboard */}
           <motion.img
-            src="/new-project/transitioning-projects-mockup.png"
+            src="/new-project/Property-list.png"
             alt="transitioning-projects-icon"
             // width={467}
             // height={576}

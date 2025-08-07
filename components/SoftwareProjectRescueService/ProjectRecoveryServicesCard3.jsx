@@ -65,15 +65,21 @@ const ProjectRecoveryServicesCard3 = () => {
       {/* Right Images with Animation */}
       <div className="w-full lg:w-[40%] relative h-full hidden lg:block">
         <motion.div
-          className="w-full h-full absolute inset-0 rounded-r-[26px] rotate-12"
+          className="w-full h-full absolute inset-x-0 rounded-r-[26px] bottom-[-25%]"
           variants={parentVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
           <motion.img
-            src="/new-project/mockup-3.png"
+            src="/new-project/border-lines.png"
+            alt="border-lines"
+            className="absolute top-[12%] right-0 z-0"
+            variants={slideRight}
+          />
+          <motion.img
+            src="/new-project/half-built-products-mockup-1.png"
             alt="mockup-3"
-            className="absolute top-[118px] right-[-10%] w-[687px] h-auto bottom-0 z-10 rotate-12"
+            className="absolute top-[118px] right-0 w-[640px] h-auto bottom-0 z-10"
             variants={slideRight}
           />
         </motion.div>
