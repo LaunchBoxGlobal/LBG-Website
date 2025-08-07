@@ -11,8 +11,8 @@ const Hero = () => {
           Software Project Rescue Service
         </h1>
         <h2 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-tight leading-[1] w-full">
-          Built a Proud Creation? Let’s Make it{" "}
-          <span className="red-text">Truly Shine</span>
+          Built something great? <br /> Let’s{" "}
+          <span className="red-text">make it Shine.</span>
         </h2>
 
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-[1.1] mt-4">
