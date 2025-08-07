@@ -51,7 +51,7 @@ const SingleBlogPage = ({ blog, author, date }) => {
             <BlogAuthorDetails
               author={author}
               date={date}
-              readTime={numericReadTime}
+              readTime={readTime}
               numericReadTime={numericReadTime}
               blog={blog}
               plainText={blog?.content?.rendered.replace(/<[^>]+>/g, " ")}
