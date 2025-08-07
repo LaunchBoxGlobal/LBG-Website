@@ -70,15 +70,10 @@ const ProjectRecoveryServicesCard3 = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          {/* Cursor */}
-
-          {/* Dashboard */}
           <motion.img
             src="/new-project/mockup-3.png"
             alt="mockup-3"
-            width={487}
-            height={472}
-            className="absolute top-[118px] right-[-10%] w-[687px] bottom-0 z-10 rotate-12"
+            className="absolute top-[118px] right-[-10%] w-[687px] h-auto bottom-0 z-10 rotate-12"
             variants={slideRight}
           />
         </motion.div>

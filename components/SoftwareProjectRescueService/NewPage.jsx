@@ -27,13 +27,13 @@ const NewPage = () => {
       <ProjectRecovery />
       <WhatIsNotWorking />
       <GrayCta />
-      <WhyFoundersNeedProjectDiscovery />
+      {/* <WhyFoundersNeedProjectDiscovery /> */}
       <ProjectRecoveryServices />
-      <BlackCta />
       <RescueServices />
+      {/* <BlackCta /> */}
       <FlagsAnimation />
-      <ProjectRescue />
       <Process />
+      <ProjectRescue />
       <WhyChooseUs />
 
       <EngagementModels />

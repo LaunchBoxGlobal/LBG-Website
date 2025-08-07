@@ -18,6 +18,7 @@ const ContactForm = ({ buttonTitle }) => {
       firstName: "",
       email: "",
       phoneNumber: "",
+      description: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Service Page",
       // textMessagesCheckbox: false,
@@ -37,6 +38,10 @@ const ContactForm = ({ buttonTitle }) => {
         .required("Please enter your phone number"),
       // textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
       agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
+      description: Yup.string()
+        .min(100, "Description can not be less than 100 characters")
+        .max(600, "Description can not be more than 600 characters")
+        .required("Please enter the description"),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
@@ -144,6 +149,32 @@ const ContactForm = ({ buttonTitle }) => {
             {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
               <span className="text-xs red-text">
                 {formik.errors.phoneNumber}
+              </span>
+            ) : null}
+          </div>
+        </div>
+        <div className="w-full">
+          <label
+            htmlFor="description"
+            className="block text-lg font-medium text-gray-300"
+          >
+            Description
+          </label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="3"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.firstName}
+            className="pb-2 pt-1 block w-full border-b border-gray-200 bg-transparent lg:text-lg outline-none"
+          ></textarea>
+
+          <div className="w-full">
+            {formik.touched.description && formik.errors.description ? (
+              <span className="text-xs red-text">
+                {formik.errors.description}
               </span>
             ) : null}
           </div>

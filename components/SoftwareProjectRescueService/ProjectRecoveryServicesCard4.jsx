@@ -5,19 +5,50 @@ import { useInView } from "react-intersection-observer";
 
 const ProjectRecoveryServicesCard4 = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: false, // change to true if you want it only the first time
   });
+
+  // Parent container animation
+  const parentVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2, // delay between child animations
+      },
+    },
+  };
+
+  // Child animations (fade + slide)
+  const slideRight = {
+    hidden: { x: 200, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const slideDown = {
+    hidden: { y: 200, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
     <div
       ref={ref}
       className="w-full max-w-[631px] min-h-[493px] bg-[#F6F6F6] rounded-[26px] flex items-start justify-between overflow-hidden"
     >
-      <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 pl-8 pr-8 lg:pr-0">
-        <div className="w-[54px] h-[54px] bg-red rounded-full bg-[#F40E00] flex items-center justify-center">
+      {/* Left Content */}
+      <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 lg pl-8 pr-8 lg:pr-4">
+        <div className="w-[54px] h-[54px] rounded-full bg-[#F40E00] flex items-center justify-center">
           <img
             src="/new-project/transitioning-projects-icon.png"
-            alt="transitioning projects icon"
-            width={24}
+            alt="transitioning-projects-icon.png"
+            width={25}
             height={25}
           />
         </div>
@@ -30,48 +61,25 @@ const ProjectRecoveryServicesCard4 = () => {
           custom development to make them stable and truly launch‑ready.
         </p>
       </div>
-      <div className="w-full lg:w-[40%] relative h-full hidden lg:block">
-        <div className="w-full h-full absolute right-0 top-[10%]">
-          <motion.div
-            initial={{ x: 200 }}
-            animate={inView ? { x: 0 } : { x: 200 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            <img
-              src="/new-project/design-and-vibe-focused-projects-image-1.png"
-              alt="design-and-vibe-focused-projects-image-1"
-              width={250}
-              height={158}
-              className="absolute top-0 z-10 right-4"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ x: 200 }}
-            animate={inView ? { x: 0 } : { x: 200 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <img
-              src="/new-project/design-and-vibe-focused-projects-image-2.png"
-              alt="design-and-vibe-focused-projects-image-2"
-              width={280}
-              height={209}
-              className="absolute top-[118px] z-20 right-0"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ x: 200 }}
-            animate={inView ? { x: 0 } : { x: 200 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-          >
-            <img
-              src="/new-project/design-and-vibe-focused-projects-image-3.png"
-              alt="design-and-vibe-focused-projects-image-3"
-              width={180}
-              height={139}
-              className="w-full h-full max-w-[200px] object-contain rounded-[26px] absolute right-[-8%] bottom-[2%] z-0"
-            />
-          </motion.div>
-        </div>
+
+      {/* Right Images with Animation */}
+      <div className="w-full lg:w-[40%] relative h-full hidden lg:flex items-end">
+        <motion.div
+          className="h-full absolute inset-x-0 rounded-r-[26px] bottom-0"
+          variants={parentVariants}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+        >
+          {/* Dashboard */}
+          <motion.img
+            src="/new-project/transitioning-projects-mockup.png"
+            alt="transitioning-projects-icon"
+            // width={467}
+            // height={576}
+            className="absolute top-[118px] right-0 bottom-0 z-10 w-[467px]"
+            variants={slideRight}
+          />
+        </motion.div>
       </div>
     </div>
   );

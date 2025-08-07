@@ -65,10 +65,31 @@ const GrayCta = () => {
             />
           </div>
           {/* animated svgs left*/}
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[13.8%] lg:left-[14.8%] top-[22%] lg:top-[14%]"></div>
+          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[13.8%] lg:left-[14.8%] top-[22%] lg:top-[14%] flex items-center justify-center">
+            <img
+              src="/new-project/bolt-ai-icon.png"
+              alt="bolt ai icon"
+              width={35}
+              height={35}
+            />
+          </div>
           {/* animated-settings-icon */}
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[7%] top-[55.7%] lg:top-[59%]"></div>
-          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[21%] lg:left-[22%] bottom-[19%] md:bottom-[17%] lg:bottom-[11%]"></div>
+          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[7%] top-[55.7%] lg:top-[59%] flex items-center justify-center">
+            <img
+              src="/new-project/lovable-icon.png"
+              alt="lovale icon"
+              width={35}
+              height={35}
+            />
+          </div>
+          <div className="w-[20px] md:w-[50px] h-[20px] lg:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[21%] lg:left-[22%] bottom-[19%] md:bottom-[17%] lg:bottom-[11%] flex items-center justify-center">
+            <img
+              src="/new-project/google-firebase-icon.png"
+              alt="google firebase icon"
+              width={30}
+              height={30}
+            />
+          </div>
         </div>
 
         <div className="w-full flex flex-col items-center gap-3 justify-center mt-6">
