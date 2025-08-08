@@ -40,7 +40,7 @@ const HeroAnimation = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="border-2 border-black absolute left-1/2 -translate-x-1/2"
       >
-        <div className="bg-white rounded-[7px] w-[352px] h-[98px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center lbg-shadow overflow-hidden">
+        <div className="bg-white border border-[#F40E0073] rounded-[7px] w-[352px] h-[98px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center lbg-shadow overflow-hidden">
           {/* <div class="animated-border-box-glow"></div> */}
           {/* <div class="animated-border-box"> */}
           <img
