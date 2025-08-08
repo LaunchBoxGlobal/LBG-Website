@@ -41,7 +41,7 @@ const HeroAnimation = () => {
         className="border-2 border-black absolute left-1/2 -translate-x-1/2"
       >
         <div className="rounded-[7px] w-[352px] h-[98px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center lbg-shadow overflow-hidden">
-          <div class="animated-border-box-glow"></div>
+          {/* <div class="animated-border-box-glow"></div> */}
           <div class="animated-border-box">
             <img
               src="/new-logo.svg"

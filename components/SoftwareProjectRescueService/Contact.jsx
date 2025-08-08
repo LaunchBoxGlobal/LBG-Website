@@ -11,9 +11,9 @@ const Contact = () => {
         <div className="w-full flex items-center justify-center pb-10">
           <div className="relative flex items-center justify-center w-full">
             {/* Animated Pulsing Circles */}
-            <span className="absolute animate-ping h-[140px] w-[140px] rounded-full bg-[#E1E1E1] opacity-75 z-0"></span>
-            <span className="absolute animate-ping h-[180px] w-[180px] rounded-full bg-[#E1E1E1] opacity-50 z-0"></span>
-            <span className="absolute animate-ping h-[220px] w-[220px] rounded-full bg-[#E1E1E1] opacity-35 z-0"></span>
+            <span className="absolute animate-ping h-[100px] w-[100px] lg:h-[140px] lg:w-[140px] rounded-full bg-[#E1E1E1] opacity-75 z-0"></span>
+            <span className="absolute animate-ping h-[140px] w-[140px] lg:h-[180px] lg:w-[180px] rounded-full bg-[#E1E1E1] opacity-50 z-0"></span>
+            <span className="absolute animate-ping h-[180px] w-[180px] lg:h-[220px] lg:w-[220px] rounded-full bg-[#E1E1E1] opacity-35 z-0"></span>
 
             {/* Center Image */}
             <img
