@@ -1,6 +1,8 @@
 .lbg-shadow {
   background-color: white !important;
   box-shadow: #f40e0040 0px 0px 30px 0px;
+  border: 2px solid #b4221a40;
+  /* transition: all 0.3s; */
 }
 
 .projectRecoveryIcon {
@@ -23,7 +25,7 @@
 }
 
 /* animated border */
-.animated-border-box,
+/* .animated-border-box,
 .animated-border-box-glow {
   max-height: 100px;
   max-width: 352px;
@@ -81,4 +83,4 @@
   100% {
     transform: translate(-50%, -50%) rotate(-1turn);
   }
-}
+} */
