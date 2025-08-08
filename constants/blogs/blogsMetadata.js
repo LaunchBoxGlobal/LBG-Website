@@ -109,6 +109,11 @@ export const BLOGS_METADATA = {
   "ar-zone-app-features-benefits-and-how-to-download-for-android": {
     title: "AR Zone App| Features, Downloading & Android Benefits 2025",
     description:
-      "Discover what the AR Zone app offers, its benefits, and Guide to download it on Android. Explore AR effects, games, and more in this detailed guide further",
+      "Discover what the AR Zone app offers, its benefits, and Guide to download it on Android. Explore AR effects, games, and more in this detailed guide further.",
+  },
+  "built-with-low-code-here’s-how-to-take-to-launch-ready": {
+    title: "Built with Low Code? How to Make It Ready to Launch",
+    description:
+      "Convert low-code prototypes into production-ready apps through professional testing, optimization and scaling for successful launches.",
   },
 };
