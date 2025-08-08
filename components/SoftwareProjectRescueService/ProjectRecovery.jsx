@@ -37,7 +37,7 @@ export const recovery_content = [
 
 const ProjectRecovery = () => {
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x overflow-hidden">
+    <section className="w-full py-20 midlg:py-32 xl:pt-40 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[90%] mx-auto">
           What Founders Need for Software{" "}
@@ -57,9 +57,9 @@ const ProjectRecovery = () => {
           return (
             <div
               key={i}
-              className="w-full md:w-[45%] lg:w-[32%] bg-[#F6F6F6] rounded-[17px] p-5 lg:p-7 flex flex-col items-start justify-start gap-2 min-h-[200px]"
+              className="w-full md:w-[45%] lg:w-[32%] bg-[#F6F6F6] rounded-[17px] p-5 lg:p-7 flex flex-col items-start justify-start gap-6 min-h-[210px]"
             >
-              <div className="w-[54px] h-[54px] bg-[#F40E00] rounded-full flex items-center justify-center">
+              <div className="w-[54px] h-[54px] bg-[#F40E00] rounded-full flex items-center justify-center projectRecoveryIcon">
                 <Image
                   src={r?.icon}
                   width={r?.width}

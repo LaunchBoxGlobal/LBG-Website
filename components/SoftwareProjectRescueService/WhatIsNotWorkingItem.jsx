@@ -11,7 +11,7 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
   };
   return (
     <div
-      className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black mb-5`}
+      className={`w-full rounded-3xl px-5 py-5 lg:px-10 bg-[#F9F9F9] text-black mb-5 group`}
     >
       <button
         onClick={() => toggleFaq(index)}
@@ -26,10 +26,13 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
           <div className="flex items-center justify-start gap-5">
             <div>
               <Image
-                src={content?.icon}
+                src={content?.colorfulIcon}
                 width={content?.width}
                 height={content?.height}
                 alt={content?.title}
+                className={`grayscale group-hover:grayscale-0 transition-all duration-200 ${
+                  openFaq === index && "grayscale-0"
+                }`}
               />
             </div>
             <h5 className="font-medium text-[20px] md:text-2xl lg:text-[35px] midlg:text-[50px] w-[90%]">
@@ -56,15 +59,17 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
         animate={{
           height: openFaq === index ? "auto" : 0,
           opacity: openFaq === index ? 1 : 0,
-          marginTop: openFaq === index ? "18px" : 0,
+          marginTop: openFaq === index ? "0px" : 0,
         }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="overflow-hidden w-full mt-10 flex flex-col items-end"
+        className="overflow-hidden w-full flex flex-col items-end"
       >
         {content?.problems_and_solutions?.map((p, i) => {
           return (
             <div
-              className="w-full lg:w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5 border p-5 rounded-[11px]"
+              className={`w-full lg:w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-5 border p-5 rounded-[11px] hover:shadow-xl transition-all duration-300 ${
+                i === 2 ? "mb-10" : "mb-5"
+              } ${i === 0 && "mt-5"}`}
               key={i}
             >
               <div className="flex items-center gap-4">

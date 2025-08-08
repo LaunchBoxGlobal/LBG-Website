@@ -1,20 +1,12 @@
-"use client";
-import Image from "next/image";
-import React, { useState } from "react";
-import {
-  ON_DEMAND_WHY_CHOOSE_US_1,
-  ON_DEMAND_WHY_CHOOSE_US_2,
-} from "@/constants/on-demand-talent-content/on-demand-why-choose-us";
+import React from "react";
 import {
   AI_BASED_PROJECT_WHY_CHOOSE_US_1,
   AI_BASED_PROJECT_WHY_CHOOSE_US_2,
 } from "@/constants/ai-based-projects-content/ai-based-project-why-choose-us";
 
 const WhyChooseUs = () => {
-  const [isHovered, setIsHovered] = useState(null);
-  const [isCardHovered, setIsCardHovered] = useState(null);
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 padding-x bg-[#fff] overflow-hidden">
+    <section className="w-full py-20 midlg:py-28 padding-x bg-[#fff] overflow-hidden">
       <section className="w-full flex flex-col items-center gap-5">
         <h2 className="section-heading text-center mx-auto">
           Why We’re the Right Team for{" "}

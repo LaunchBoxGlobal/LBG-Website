@@ -5,7 +5,7 @@ import AnimatedText from "../StaffAugmentation/AnimatedText";
 
 const RescueServices = () => {
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 padding-x overflow-hidden">
+    <section className="w-full py-20 midlg:py-24 padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[90%] mx-auto">
           Core Capabilities Of Our Project{" "}
