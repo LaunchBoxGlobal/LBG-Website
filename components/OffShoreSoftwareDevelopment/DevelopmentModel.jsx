@@ -7,11 +7,12 @@ const DevelopmentModel = () => {
   return (
     <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#F9F9F9] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <p className="text-[#F40E00] text-lg lg:text-[25px] font-semibold">
+        {/* <p className="text-[#F40E00] text-lg lg:text-[25px] font-semibold">
           Offshore vs Nearshore vs Onshore: What’s Best?
-        </p>
+        </p> */}
         <h2 className="section-heading lg:w-[90%] mx-auto">
-          When On-Demand Talent Works <span className="red-text">Best</span>
+          Offshore vs Nearshore vs Onshore:{" "}
+          <span className="red-text">What’s Best?</span>
         </h2>
         <p className="section-paragraph lg:w-[60%] mx-auto">
           Select between offshore, nearshore, or onshore based on your budget,

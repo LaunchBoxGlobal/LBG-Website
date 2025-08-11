@@ -13,7 +13,7 @@ const CategoryList = ({ categories }) => {
             categories?.map((h, i) => {
               return (
                 <Link
-                  href={`/blogs/${h?.id}`}
+                  href={`/blogs/${h?.id}/${h?.name}`}
                   key={i}
                   className="font-normal underline text-lg flex items-start gap-2 leading-[1.3]"
                 >

@@ -1,8 +1,6 @@
 import BlogClient from "@/components/BlogPage/BlogClient";
 import { BLOGS_METADATA } from "@/constants/blogs/blogsMetadata";
-import he from "he";
 
-// `params` gets passed automatically by Next.js for dynamic routes
 export async function generateMetadata({ params }) {
   const res = await fetch(
     `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?slug=${params.slug}`,
@@ -11,7 +9,7 @@ export async function generateMetadata({ params }) {
 
   const meta = BLOGS_METADATA[params?.slug] || {};
 
-  const data = await res.json();
+  const data = await res?.json();
   const blog = data?.[0];
 
   if (!blog) {
@@ -24,6 +22,9 @@ export async function generateMetadata({ params }) {
   return {
     title: meta?.title,
     description: meta?.description,
+    alternates: {
+      canonical: meta?.canonical,
+    },
   };
 }
 

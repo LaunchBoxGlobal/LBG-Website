@@ -131,8 +131,8 @@ const BlogClient = () => {
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-10">
         <div className="w-full col-span-2 blog-page">
           <div className="w-full flex items-center justify-start gap-1 flex-wrap mb-5">
-            <Link href="/blogs" className="text-[#434343] text-sm lg:text-base">
-              Blogs
+            <Link href="/blog" className="text-[#434343] text-sm lg:text-base">
+              Blog
             </Link>
             <MdKeyboardArrowRight className="text-lg" />
             {matchedCategories && (
@@ -141,7 +141,11 @@ const BlogClient = () => {
                   href={`/blogs/${matchedCategories[0]?.id}`}
                   className="text-[#434343] text-sm lg:text-base"
                 >
-                  {matchedCategories[0]?.name}
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: matchedCategories[0]?.name || "",
+                    }}
+                  />
                 </Link>
                 <MdKeyboardArrowRight className="text-lg" />
               </div>

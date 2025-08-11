@@ -4,16 +4,18 @@ import BlogCard from "./BlogCard";
 import BlogsContactForm from "../Common/BlogsContactForm";
 import Loader from "../Common/Loader";
 import PageBreadcrumb from "../Common/PageBreadcrumb";
+import { BLOGS_METADATA } from "@/constants/blogs/blogsMetadata";
 
 const List = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const count = Object.keys(BLOGS_METADATA)?.length || 100;
 
   const fetchBlogs = async () => {
     setLoading(true);
     try {
       const res = await fetch(
-        "https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?_embed=author&per_page=23",
+        `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?_embed=author&per_page=${count}`,
         {
           headers: {
             Authorization: `Bearer DWK4UhkW*^@OACYDrZTCGF%nwYs!zk*Im3z0h1jVTllrTWh%92PHXq6OCCIKeJy2`,

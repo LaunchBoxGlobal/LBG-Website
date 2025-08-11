@@ -3,117 +3,146 @@ export const BLOGS_METADATA = {
     title: "Top 6 Apps like TikTok to try in 2025",
     description:
       "Discover the best TikTok alternatives! From Instagram Reels to YouTube Shorts, Explore 10 top apps like TikTok with better features for creators & adults in 2025",
+    canonical: `href="https://launchboxglobal.com/blog/top-6-apps-like-tiktok-you-should-try-in-2025"`,
   },
   "top-10-travel-websites-you-should-use-in-2025": {
     title: "Top 10 Travel Websites for Best 2025 Trip Deals",
     description:
       "Find the best travel sites for 2025 trips - flights, hotels & deals compared. Get honest reviews & smart booking tips. Plan your perfect getaway now!",
+    canonical: `href="https://launchboxglobal.com/blog/top-10-travel-websites-you-should-use-in-2025"`,
   },
   "react-framework-vs-angular-pros-cons-and-key-differences": {
     title: "React Framework vs Angular: Key Differences & Best Choice",
     description:
       "Compare React framework vs Angular - pros, cons & best use cases. Learn which framework fits your project needs for optimal performance & development.",
+    canonical: `href="https://launchboxglobal.com/blog/react-framework-vs-angular-pros-cons-and-key-differences"`,
   },
   "the-best-offline-games-to-play-when-your-wifi-dies": {
     title: "Top 10 Best Offline Games to Play Without WiFi in 2025",
     description:
       "Looking for the best offline games when your WiFi dies? Explore top mobile games that work with no internet from puzzles to action adventures. For Android & iOS.",
+    canonical: `href="https://launchboxglobal.com/blog/the-best-offline-games-to-play-when-your-wifi-dies"`,
   },
   "top-10-free-apps-for-music-on-android-highest-rated-in-2025": {
     title: "Top Free Apps for Music on Android in 2025",
     description:
       "Looking for the best free music apps for Android in 2025? Here are 10 great options with high ratings and solid features, perfect for streaming your favorite songs at any time.",
+    canonical: `href="https://launchboxglobal.com/blog/top-10-free-apps-for-music-on-android-highest-rated-in-2025`,
   },
   "ios-emulators-in-2025-a-smarter-way-to-use-iphone-apps-without-the-iphone": {
     title: "Best iOS Emulators in 2025: Run iPhone Apps Easily",
     description:
       "Learn how iOS emulators in 2025 let you run iPhone apps without the device—a practical guide for developers and users exploring iOS on non-Apple platforms.",
+    canonical: `href="https://launchboxglobal.com/blog/ios-emulators-in-2025-a-smarter-way-to-use-iphone-apps-without-the-iphone`,
   },
   "top-10-innovative-tech-firms-in-san-francisco-leading-the-ai-boom": {
     title: "San Francisco's Top Tech Firms: AI Innovation Leaders",
     description:
       "Explore the leading tech firms in San Francisco shaping AI's future. Discover How these different innovators have transform industries with AI solutions.",
+    canonical: `href="https://launchboxglobal.com/blog/top-10-innovative-tech-firms-in-san-francisco-leading-the-ai-boom`,
   },
   "exploring-airbnb-like-apps-in-2025-top-suggestions-for-stress-free-vacation":
     {
       title: "Find Apps Like Airbnb: Book Rentals & Trips in 2025",
       description:
         "Discover the best similar to Airbnb apps in 2025 for convenient travel stays. Find warm homes, unique homes, and smooth bookings for your future travel.",
+      canonical: `href="https://launchboxglobal.com/blog/exploring-airbnb-like-apps-in-2025-top-suggestions-for-stress-free-vacation"`,
     },
   "stuck-with-a-half-built-mobile-app-heres-how-to-rescue-it": {
     title: "Fix Your Half-Built Mobile App Without Any Hassle",
     description:
       "Don’t let a half-built mobile app hold you back. Here’s how to fix it, avoid costly setbacks, and get your product in users’ hands without any headaches.",
+    canonical: `href="https://launchboxglobal.com/blog/stuck-with-a-half-built-mobile-app-heres-how-to-rescue-it"`,
   },
   "the-ultimate-guide-to-choosing-the-best-ui-kits-for-designers": {
     title: "Best UI Kits for Designers: Top Picks & How to Choose",
     description:
       "Discover the best UI kits for designers in 2024 - compare free vs premium options, key features, and pro tips for selecting the perfect kit for your projects.",
+    canonical: `href="https://launchboxglobal.com/blog/the-ultimate-guide-to-choosing-the-best-ui-kits-for-designers"`,
   },
   "your-development-team-disappeared-mid-project-it-happens-heres-what-to-do": {
     title: "Development Team Vanished? How to Recover Your Project Fast",
     description:
       "Your development team disappeared mid-project? Learn proven strategies to recover quickly, prevent future risks, and keep your software project on track.",
+    canonical: `href="https://launchboxglobal.com/blog/your-development-team-disappeared-mid-project-it-happens-heres-what-to-do"`,
   },
   "outsourcing-vs-offshoring-the-key-differences": {
     title: "Outsourcing vs Offshoring: Key Differences & How to Choose",
     description:
       "Outsourcing vs offshoring: Compare cost, control & scalability. Learn which model fits your business needs with real-world examples & expert insights.",
+    canonical: `href="https://launchboxglobal.com/blog/outsourcing-vs-offshoring-the-key-differences"`,
   },
   "want-to-hire-developers-heres-what-you-must-know-first": {
     title: "Hire Developers Right: What Every Founder Should Know",
     description:
       "Ready to hire developers? Learn how to pick the right team, avoid costly mistakes, and build your app with confidence. Must-know tips for founders inside.",
+    canonical: `href="https://launchboxglobal.com/blog/want-to-hire-developers-heres-what-you-must-know-first"`,
   },
   "7-reasons-to-choose-launchbox-global-for-digital-marketing-and-software-development-services":
     {
       title: "Software Development Services | LaunchBox Global Solutions",
       description:
         "LaunchBox Global delivers top-tier Software Development Services with custom solutions for startups & enterprises. Get scalable, secure apps + integrated digital marketing.",
+      canonical: `href="https://launchboxglobal.com/blog/7-reasons-to-choose-launchbox-global-for-digital-marketing-and-software-development-services" `,
     },
   "you-paid-10k-and-still-dot-have-an-mvp-heres-why": {
     title: "MVP Development Cost Guide| Avoid Overpaying & Build Smart",
     description:
       "Wasted $10k+ on MVP development? Learn key factors affecting MVP cost, hidden fees, & how to build a lean product for 30-50% less. Get expert strategies now.",
+    canonical: `href="https://launchboxglobal.com/blog/you-paid-10k-and-still-dot-have-an-mvp-heres-why"`,
   },
   "how-mvp-development-services-can-save-your-startup-and-money": {
     title: "MVP Development Services | Launch Faster & Save Costs",
     description:
       "Discover how MVP development services help startups verify ideas quickly, reduce costs & speed market entry. Partner with experts for lean product success.",
+    canonical: `href="https://launchboxglobal.com/blog/how-mvp-development-services-can-save-your-startup-and-money"`,
   },
   "web-app-vs-website-a-practical-comparison": {
     title: "Web App vs Website: Differences, Benefits & What to Build",
     description:
       "Explore the differences between a web app and a website. Compare features, costs, and scalability, and find out what fits your business and users best.",
+    canonical: `href="https://launchboxglobal.com/blog/web-app-vs-website-a-practical-comparison"`,
   },
   "stop-wasting-time-money-on-the-wrong-dev-partners": {
     title: "Stop Wasting Time (and Money) on Wrong Dev Partners",
     description:
       "Stop wasting your time and money on the wrong Dev Partners. Learn how to choose reliable developers who deliver outcomes and lead your project forward.",
+    canonical: `href="https://launchboxglobal.com/blog/stop-wasting-time-money-on-the-wrong-dev-partners"`,
   },
   "why-1-in-3-startup-founders-regret-their-first-development-hire": {
     title: "Why Many Founders Regret Their First Development Hire",
     description:
       "1 in 3 startup founders regret their first development hire. Learn why it happens, the costly mistakes behind it, and how to make smarter hiring decisions.",
+    canonical: `href="https://launchboxglobal.com/blog/why-1-in-3-startup-founders-regret-their-first-development-hire"`,
   },
   "freelancers-promised-a-full-app-you-got-a-landing-page-now-what": {
     title: "Incomplete Website? How to Fix Your Broken Project",
     description:
       "Got an incomplete website except for app? Learn how to recover from unfinished projects, assess damage, and find developers to fix your broken website.",
+    canonical: `href="https://launchboxglobal.com/blog/freelancers-promised-a-full-app-you-got-a-landing-page-now-what"`,
   },
   "the-hidden-risks-behind-a-low-software-development-cost": {
     title: "Hidden Costs of Low Software Development Cost",
     description:
       "Explore why cheap software development costs lead to costly fixes. Learn the budget for good quality, easy solutions & budget friendly. Get expert advice today.",
+    canonical: `href="https://launchboxglobal.com/blog/the-hidden-risks-behind-a-low-software-development-cost"`,
   },
   "ar-zone-app-features-benefits-and-how-to-download-for-android": {
     title: "AR Zone App| Features, Downloading & Android Benefits 2025",
     description:
       "Discover what the AR Zone app offers, its benefits, and Guide to download it on Android. Explore AR effects, games, and more in this detailed guide further.",
+    canonical: `href="https://launchboxglobal.com/blog/ar-zone-app-features-benefits-and-how-to-download-for-android`,
   },
   "built-with-low-code-here’s-how-to-take-to-launch-ready": {
     title: "Built with Low Code? How to Make It Ready to Launch",
     description:
       "Convert low-code prototypes into production-ready apps through professional testing, optimization and scaling for successful launches.",
+    canonical: ``,
+  },
+  "trending-mobile-games-that-dont-need-wifi-download-play-anywhere": {
+    title: "Trending Mobile Games: No WiFi Needed, Play Anywhere",
+    description:
+      "Discover top mobile games that don’t need WiFi. Enjoy endless fun anywhere, offline or on the go, with these must-have picks for every gamer’s playlist.",
+    canonical: `href="https://launchboxglobal.com/blog/trending-mobile-games-that-dont-need-wifi-download-play-anywhere"`,
   },
 };

@@ -8,8 +8,9 @@ export const metadata = {
 };
 
 const page = ({ params }) => {
-  const { category } = params;
-  return <CategoryBlogs category={category} />;
+  const { id, category } = params;
+  console.log("category >>>", category);
+  return <CategoryBlogs category={category} id={id} />;
 };
 
 export default page;

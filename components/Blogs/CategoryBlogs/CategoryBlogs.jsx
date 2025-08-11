@@ -4,7 +4,7 @@ import BlogCard from "../BlogCard";
 import BlogsContactForm from "@/components/Common/BlogsContactForm";
 import Loader from "@/components/Common/Loader";
 
-const CategoryBlogs = ({ category }) => {
+const CategoryBlogs = ({ category, id }) => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -12,7 +12,7 @@ const CategoryBlogs = ({ category }) => {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?categories=${category}`
+        `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?categories=${id}`
       );
       const blogs = await res.json();
       setBlogs(blogs);
