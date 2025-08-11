@@ -338,7 +338,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                   <div className="w-full lg:w-[90%] border-t py-4 flex flex-col items-start gap-2">
                     <p className="text-white text-start leading-5 text-base lg:text-lg font-light">
                       Selling online should be simple and effective with{" "}
-                      <Link href={`/services-ecommerce-development`}>
+                      <Link href={`/services/ecommerce-development`}>
                         e-commerce app development services
                       </Link>
                       . Create an easy-to-use store that helps customers find,
