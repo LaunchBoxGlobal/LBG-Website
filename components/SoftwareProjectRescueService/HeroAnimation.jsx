@@ -28,12 +28,15 @@ const HeroAnimation = () => {
         className="w-full"
       >
         <Image
-          src={"/new-project/hero-section-icons-image.webp"}
-          alt="hero-section-image"
+          src="/new-project/hero-section-icons-image.webp"
+          alt="Hero section icons"
           width={1081}
           height={402}
           priority
+          sizes="(max-width: 1024px) 100vw, 1081px"
           className="mx-auto z-0 hidden lg:block"
+          style={{ height: "auto" }}
+          quality={80}
         />
       </motion.div>
       <motion.div

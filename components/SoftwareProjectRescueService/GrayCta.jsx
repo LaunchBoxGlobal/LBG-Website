@@ -17,21 +17,27 @@ const GrayCta = () => {
 
         <div className="w-full max-w-[830px] h-[203px] md:h-[473px] md:mt-10 relative">
           <Image
-            src={`/new-project/cta-image.webp`}
-            alt="cta-image"
+            src="/new-project/cta-image.webp"
+            alt="Call to action illustration"
             width={830}
             height={472}
             loading="lazy"
+            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 830px"
+            quality={80}
             className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-0"
+            style={{ height: "auto" }}
           />
+
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 spin-tire">
             <Image
-              src={`/new-project/cta-rotating-circle.webp`}
-              alt="cta-rotating-circle"
+              src="/new-project/cta-rotating-circle.webp"
+              alt="Rotating circle decoration"
               width={383}
               height={383}
               loading="lazy"
-              className=""
+              sizes="(max-width: 768px) 50vw, 383px"
+              quality={80}
+              style={{ height: "auto" }}
             />
           </div>
           <Image
@@ -44,19 +50,29 @@ const GrayCta = () => {
           />
           {/* animated svgs right*/}
           <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[12%] lg:right-[14%] top-[20%] md:top-[17%] lg:top-[12%] flex items-center justify-center">
-            <img
+            <Image
               src="/new-project/animated-check-icon.gif"
               alt="animated-tick-icon"
               width={35}
               height={35}
+              sizes="35px"
+              quality={80}
+              priority={false}
+              style={{ height: "auto" }}
+              loading="lazy"
             />
           </div>
           <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[7%] top-[53.6%] lg:top-[56.5%] flex items-center justify-center">
-            <img
+            <Image
               src="/new-project/animated-settings-icon.gif"
               alt="animated-settings-icon"
               width={45}
               height={45}
+              sizes="45px"
+              quality={80}
+              priority={false}
+              style={{ height: "auto" }}
+              loading="lazy"
             />
           </div>
           <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[20%] lg:right-[20%] bottom-[15%] lg:bottom-[11%] flex items-center justify-center">
@@ -65,6 +81,10 @@ const GrayCta = () => {
               alt="animated-shaking-hands"
               width={35}
               height={35}
+              sizes="35px"
+              quality={80}
+              priority={false}
+              style={{ height: "auto" }}
               loading="lazy"
             />
           </div>
