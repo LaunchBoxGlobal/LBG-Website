@@ -1,6 +1,6 @@
 export const RESCUE_SERVICES = [
   {
-    image: "/new-project/app-architecture-and-planning-image.png",
+    image: "/new-project/app-architecture-and-planning-image.webp",
     width: 412,
     height: 297,
     title: "App Architecture & Tech Stack Planning",
@@ -8,7 +8,7 @@ export const RESCUE_SERVICES = [
       "We review your app’s foundation, including tech stack and low-code elements. Through project recovery services, we make smart decisions to set up your recovered project.",
   },
   {
-    image: "/new-project/database-design-and-backend-logic-image.png",
+    image: "/new-project/database-design-and-backend-logic-image.webp",
     width: 412,
     height: 297,
     title: "Database Design & Backend Logic",
@@ -16,7 +16,7 @@ export const RESCUE_SERVICES = [
       "With code audit and our project rescue expertise, we fix backends and optimize databases in Vibe coding projects, ensuring your recovered project runs smoothly.",
   },
   {
-    image: "/new-project/third-party-integrations-image.png",
+    image: "/new-project/third-party-integrations-image.webp",
     width: 412,
     height: 297,
     title: "Third-Party Integrations",
@@ -24,7 +24,7 @@ export const RESCUE_SERVICES = [
       "Broken integrations slowing you down? We repair third‑party tools in AI‑based coding projects, making your recovered product fully functional and ready for growth.",
   },
   {
-    image: "/new-project/api-configuration-image.png",
+    image: "/new-project/api-configuration-image.webp",
     width: 412,
     height: 297,
     title: "API Configuration",
@@ -32,7 +32,7 @@ export const RESCUE_SERVICES = [
       "APIs giving you trouble? Our web app and software project rescue process configures broken endpoints correctly, so there are no more hidden errors.",
   },
   {
-    image: "/new-project/cloud-hosting-and-deployement-image.png",
+    image: "/new-project/cloud-hosting-and-deployement-image.webp",
     width: 412,
     height: 297,
     title: "Cloud Hosting & Deployment",
@@ -40,7 +40,7 @@ export const RESCUE_SERVICES = [
       "We resolve deployment challenges in no code builds through our project recovery services, ensuring your software is secure and fully prepared for production.",
   },
   {
-    image: "/new-project/admin-panels-and-dashboards-image.png",
+    image: "/new-project/admin-panels-and-dashboards-image.webp",
     width: 412,
     height: 297,
     title: "Admin Panels & Dashboards",
@@ -48,7 +48,7 @@ export const RESCUE_SERVICES = [
       "Need dashboards that work for you? We redesign admin panels for AI assisted coding projects, giving you easy‑to‑manage tools that simplify handling your product effortlessly.",
   },
   {
-    image: "/new-project/payment-systems-and-user-auth-image.png",
+    image: "/new-project/payment-systems-and-user-auth-image.webp",
     width: 412,
     height: 297,
     title: "Payment Systems & User Auth",
@@ -56,7 +56,7 @@ export const RESCUE_SERVICES = [
       "Facing checkout or login issues in your AI‑built app? The Project Rescue services repair payment flows and authentication, ensuring your software keeps revenue on track.",
   },
   {
-    image: "/new-project/performance-optimization-image.png",
+    image: "/new-project/performance-optimization-image.webp",
     width: 412,
     height: 297,
     title: "Performance Optimization",

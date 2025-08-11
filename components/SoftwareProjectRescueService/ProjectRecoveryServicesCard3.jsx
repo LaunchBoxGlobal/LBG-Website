@@ -46,10 +46,11 @@ const ProjectRecoveryServicesCard3 = () => {
       <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 lg pl-8 pr-8 lg:pr-4">
         <div className="w-[54px] h-[54px] rounded-full bg-[#F40E00] flex items-center justify-center">
           <img
-            src="/new-project/development-icon.png"
+            src="/new-project/development-icon.webp"
             alt="development-icon"
             width={25}
             height={25}
+            loading="lazy"
           />
         </div>
         <h3 className="font-semibold text-[26px] leading-[1]">
@@ -71,13 +72,13 @@ const ProjectRecoveryServicesCard3 = () => {
           animate={inView ? "visible" : "hidden"}
         >
           <motion.img
-            src="/new-project/border-lines.png"
+            src="/new-project/border-lines.webp"
             alt="border-lines"
             className="absolute top-[12%] right-0 z-0"
             variants={slideRight}
           />
           <motion.img
-            src="/new-project/half-built-products-mockup-1.png"
+            src="/new-project/half-built-products-mockup-1.webp"
             alt="mockup-3"
             className="absolute top-[118px] right-0 w-[640px] h-auto bottom-0 z-10"
             variants={slideRight}

@@ -46,10 +46,11 @@ const ProjectRecoveryServicesCard2 = () => {
       <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 lg pl-8 pr-8 lg:pr-4">
         <div className="w-[54px] h-[54px] rounded-full bg-[#F40E00] flex items-center justify-center">
           <img
-            src="/new-project/mvp-icon.png"
+            src="/new-project/mvp-icon.webp"
             alt="heart-icon"
             width={25}
             height={25}
+            loading="lazy"
           />
         </div>
         <h3 className="font-semibold text-[26px] leading-[1]">
@@ -72,30 +73,33 @@ const ProjectRecoveryServicesCard2 = () => {
         >
           {/* Cursor */}
           <motion.img
-            src="/new-project/mvp-builds-cursor-icon.png"
+            src="/new-project/mvp-builds-cursor-icon.webp"
             alt="mvp-builds-cursor-icon"
             width={73}
             height={62}
+            loading="lazy"
             className="absolute top-[15%] left-[10%] z-10"
             variants={slideRight}
           />
 
           {/* Dashboard */}
           <motion.img
-            src="/new-project/mvp-dashboard-image.png"
+            src="/new-project/mvp-dashboard-image.webp"
             alt="mvp-dashboard-image"
             width={467}
             height={432}
+            loading="lazy"
             className="absolute top-[118px] right-0 bottom-0 z-10"
             variants={slideRight}
           />
 
           {/* Orange Cursor */}
           <motion.img
-            src="/new-project/mvp-builds-orange-cursor-icon.png"
+            src="/new-project/mvp-builds-orange-cursor-icon.webp"
             alt="mvp-builds-orange-cursor-icon"
             width={118}
             height={66}
+            loading="lazy"
             className="absolute left-[-33%] bottom-[5%] z-10 object-contain"
             variants={slideDown}
           />

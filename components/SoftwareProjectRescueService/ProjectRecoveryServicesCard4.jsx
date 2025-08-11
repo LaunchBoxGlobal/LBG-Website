@@ -46,8 +46,8 @@ const ProjectRecoveryServicesCard4 = () => {
       <div className="w-full lg:w-[60%] flex flex-col items-start gap-4 py-8 lg:pt-24 lg pl-8 pr-8 lg:pr-4">
         <div className="w-[54px] h-[54px] rounded-full bg-[#F40E00] flex items-center justify-center">
           <img
-            src="/new-project/transitioning-projects-icon.png"
-            alt="transitioning-projects-icon.png"
+            src="/new-project/transitioning-projects-icon.webp"
+            alt="transitioning-projects-icon.webp"
             width={25}
             height={25}
           />
@@ -71,20 +71,20 @@ const ProjectRecoveryServicesCard4 = () => {
           animate={inView ? "visible" : "hidden"}
         >
           <motion.img
-            src="/new-project/_input-field.png"
+            src="/new-project/_input-field.webp"
             alt="_input-field"
             className="absolute right-2 top-0 w-[308px] h-[29px]"
             variants={slideRight}
           />
           <motion.img
-            src="/new-project/Arrow 1.png"
+            src="/new-project/Arrow 1.webp"
             alt="Arrow 1"
             className="absolute top-10 left-10 h-[70px]"
             variants={slideRight}
           />
           {/* Dashboard */}
           <motion.img
-            src="/new-project/Property-list.png"
+            src="/new-project/Property-list.webp"
             alt="transitioning-projects-icon"
             // width={467}
             // height={576}

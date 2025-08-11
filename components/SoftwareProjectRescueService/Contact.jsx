@@ -17,7 +17,7 @@ const Contact = () => {
 
             {/* Center Image */}
             <img
-              src="/new-project/contact-form-icons.png"
+              src="/new-project/contact-form-icons.webp"
               alt="contact-form-icons"
               width={473}
               height={560}

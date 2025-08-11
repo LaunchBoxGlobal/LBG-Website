@@ -1,8 +1,8 @@
 export const WHAT_IS_NOT_WORKING_CONTENT = [
   {
     title: "Cursor",
-    icon: "/new-project/cursor-icon.png",
-    colorfulIcon: "/new-project/cursor-icon.png",
+    icon: "/new-project/cursor-icon.webp",
+    colorfulIcon: "/new-project/cursor-icon.webp",
     width: 37,
     height: 37,
     problems_and_solutions: [
@@ -26,8 +26,8 @@ export const WHAT_IS_NOT_WORKING_CONTENT = [
   },
   {
     title: "Bolt.new",
-    icon: "/new-project/bolt-ai-icon.png",
-    colorfulIcon: "/new-project/bolt-ai-icon.png",
+    icon: "/new-project/bolt-ai-icon.webp",
+    colorfulIcon: "/new-project/bolt-ai-icon.webp",
     width: 40,
     height: 37,
     problems_and_solutions: [
@@ -53,8 +53,8 @@ export const WHAT_IS_NOT_WORKING_CONTENT = [
   },
   {
     title: "Webflow",
-    icon: "/new-project/webflow-icon.png",
-    colorfulIcon: "/new-project/webflow-colorful-icon.png",
+    icon: "/new-project/webflow-icon.webp",
+    colorfulIcon: "/new-project/webflow-colorful-icon.webp",
     width: 52,
     height: 37,
     problems_and_solutions: [
@@ -80,8 +80,8 @@ export const WHAT_IS_NOT_WORKING_CONTENT = [
   },
   {
     title: "FlutterFlow",
-    icon: "/new-project/flutter-flow-icon.png",
-    colorfulIcon: "/new-project/flutter-flow-colorful-icon.png",
+    icon: "/new-project/flutter-flow-icon.webp",
+    colorfulIcon: "/new-project/flutter-flow-colorful-icon.webp",
     width: 30,
     height: 37,
     problems_and_solutions: [
@@ -106,8 +106,8 @@ export const WHAT_IS_NOT_WORKING_CONTENT = [
   },
   {
     title: "Google Firebase",
-    icon: "/new-project/google-firebase-icon.png",
-    colorfulIcon: "/new-project/google-firebase-colorful-icon.png",
+    icon: "/new-project/google-firebase-icon.webp",
+    colorfulIcon: "/new-project/google-firebase-colorful-icon.webp",
     width: 32,
     height: 37,
     problems_and_solutions: [

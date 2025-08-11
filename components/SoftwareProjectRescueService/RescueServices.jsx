@@ -34,6 +34,7 @@ const RescueServices = () => {
                   width={r?.width}
                   height={r?.height}
                   className=""
+                  loading="lazy"
                   alt={`${r?.title}`}
                 />
               </AnimatedText>

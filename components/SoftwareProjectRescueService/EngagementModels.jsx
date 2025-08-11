@@ -2,6 +2,7 @@ import { AI_BASED_ENGAGEMENT_MODELS } from "@/constants/ai-based-projects-conten
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import AnimatedText from "../StaffAugmentation/AnimatedText";
 
 const EngagementModels = () => {
   return (
@@ -23,13 +24,16 @@ const EngagementModels = () => {
               className={`w-full max-w-[380px] bg-[${model?.bgColor}] p-3 rounded-[47px]`}
             >
               <div className="w-full h-[366px] bg-white rounded-[47px] flex items-center justify-center px-4 overflow-hidden">
-                <Image
-                  src={model?.image}
-                  alt={model?.title}
-                  width={model?.width}
-                  height={model?.height}
-                  className=""
-                />
+                <AnimatedText direction="right">
+                  <Image
+                    src={model?.image}
+                    alt={model?.title}
+                    width={model?.width}
+                    height={model?.height}
+                    className="mx-auto"
+                    loading="lazy"
+                  />
+                </AnimatedText>
               </div>
               <div className="w-full flex items-center justify-between gap-5 pb-8 mt-6 px-2">
                 <h3 className="text-[32px] font-bold leading-[1] text-white">
@@ -40,6 +44,7 @@ const EngagementModels = () => {
                     src={model?.arrowIcon}
                     width={63}
                     height={55}
+                    loading="lazy"
                     alt="arrow icon"
                     className=""
                   />

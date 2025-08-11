@@ -14,10 +14,11 @@ const HeroAnimation = () => {
       className="w-full relative flex items-center justify-center mb-10"
     >
       <Image
-        src={"/new-project/hero-section-icons-mobile.png"}
+        src={"/new-project/hero-section-icons-mobile.webp"}
         alt="hero-section-icons-mobile"
         width={1081}
         height={402}
+        priority
         className="mx-auto lg:hidden"
       />
       <motion.div
@@ -27,10 +28,11 @@ const HeroAnimation = () => {
         className="w-full"
       >
         <Image
-          src={"/new-project/hero-section-icons-image.png"}
+          src={"/new-project/hero-section-icons-image.webp"}
           alt="hero-section-image"
           width={1081}
           height={402}
+          priority
           className="mx-auto z-0 hidden lg:block"
         />
       </motion.div>
@@ -43,11 +45,12 @@ const HeroAnimation = () => {
         <div className="bg-white border border-[#F40E0073] rounded-[7px] w-[352px] h-[98px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden lg:flex items-center justify-center lbg-shadow overflow-hidden">
           {/* <div class="animated-border-box-glow"></div> */}
           {/* <div class="animated-border-box"> */}
-          <img
+          <Image
             src="/new-logo.svg"
             alt="launchbox global logo"
             width={277}
             height={58}
+            priority
             className="z-20 relative"
           />
           {/* </div> */}

@@ -5,31 +5,31 @@ export const recovery_content = [
   {
     title:
       "We got the demo with low code, but we don’t have the final product.",
-    icon: "/new-project/project-recovery-icon-1.png",
+    icon: "/new-project/project-recovery-icon-1.webp",
     width: 33,
     height: 30,
   },
   {
     title: "We launched but users are dropping.",
-    icon: "/new-project/project-recovery-icon-2.png",
+    icon: "/new-project/project-recovery-icon-2.webp",
     width: 27,
     height: 28,
   },
   {
     title: "The devs disappeared. Now we’re stuck.",
-    icon: "/new-project/project-recovery-icon-3.png",
+    icon: "/new-project/project-recovery-icon-3.webp",
     width: 25,
     height: 25,
   },
   {
     title: "We used Webflow/FlutterFlow, but now can’t scale.",
-    icon: "/new-project/project-recovery-icon-4.png",
+    icon: "/new-project/project-recovery-icon-4.webp",
     width: 25,
     height: 25,
   },
   {
     title: "The backend is a mess and we don’t know where to begin.",
-    icon: "/new-project/project-recovery-icon-5.png",
+    icon: "/new-project/project-recovery-icon-5.webp",
     width: 30,
     height: 25,
   },
@@ -57,7 +57,7 @@ const ProjectRecovery = () => {
           return (
             <div
               key={i}
-              className="w-full md:w-[45%] lg:w-[32%] bg-[#F6F6F6] rounded-[17px] p-5 lg:p-7 flex flex-col items-start justify-start gap-6 min-h-[210px]"
+              className="w-full md:w-[45%] lg:w-[32%] bg-[#F6F6F6] rounded-[17px] p-5 lg:p-7 flex flex-col items-start justify-start gap-6 min-h-[210px] hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] transition-all duration-300"
             >
               <div className="w-[54px] h-[54px] bg-[#F40E00] rounded-full flex items-center justify-center projectRecoveryIcon">
                 <Image
@@ -65,6 +65,7 @@ const ProjectRecovery = () => {
                   width={r?.width}
                   height={r?.height}
                   alt={r?.title}
+                  loading="lazy"
                 />
               </div>
               <h3 className="font-semibold text-[22px] midlg:text-[26px] leading-[1]">

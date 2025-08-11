@@ -30,6 +30,7 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
                 width={content?.width}
                 height={content?.height}
                 alt={content?.title}
+                loading="lazy"
                 className={`grayscale group-hover:grayscale-0 transition-all duration-200 ${
                   openFaq === index && "grayscale-0"
                 }`}
@@ -48,6 +49,7 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
           width={24}
           height={20}
           alt="arrow icon"
+          loading="lazy"
           className={`${
             openFaq === index ? "scale-y-[-1]" : "scale-y-[1]"
           } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
@@ -78,6 +80,7 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
                     src={"/new-project/caution-icon.png"}
                     width={29}
                     height={26}
+                    loading="lazy"
                     alt="caution icon"
                   />
                 </div>
@@ -97,6 +100,7 @@ const WhatIsNotWorkingItem = ({ content, index, openFaq, setOpenFaq }) => {
                     width={29}
                     height={30}
                     alt="bulb icon"
+                    loading="lazy"
                   />
                 </div>
                 <div>

@@ -17,26 +17,29 @@ const GrayCta = () => {
 
         <div className="w-full max-w-[830px] h-[203px] md:h-[473px] md:mt-10 relative">
           <Image
-            src={`/new-project/cta-image.png`}
+            src={`/new-project/cta-image.webp`}
             alt="cta-image"
             width={830}
             height={472}
+            loading="lazy"
             className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-0"
           />
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 spin-tire">
             <Image
-              src={`/new-project/cta-rotating-circle.png`}
+              src={`/new-project/cta-rotating-circle.webp`}
               alt="cta-rotating-circle"
               width={383}
               height={383}
+              loading="lazy"
               className=""
             />
           </div>
           <Image
-            src={`/new-project/launchboxgbloal-logo-cta.png`}
+            src={`/new-project/launchboxgbloal-logo-cta.webp`}
             alt="launchboxgbloal-logo-cta"
             width={233}
             height={233}
+            loading="lazy"
             className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 w-[70px] md:w-[170px] lg:w-[210px]"
           />
           {/* animated svgs right*/}
@@ -57,37 +60,41 @@ const GrayCta = () => {
             />
           </div>
           <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute right-[20%] lg:right-[20%] bottom-[15%] lg:bottom-[11%] flex items-center justify-center">
-            <img
+            <Image
               src="/new-project/animated-shaking-hands.gif"
               alt="animated-shaking-hands"
               width={35}
               height={35}
+              loading="lazy"
             />
           </div>
           {/* animated svgs left*/}
           <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[13.8%] lg:left-[14.8%] top-[22%] lg:top-[14%] flex items-center justify-center">
-            <img
-              src="/new-project/bolt-ai-icon.png"
+            <Image
+              src="/new-project/bolt-ai-icon.webp"
               alt="bolt ai icon"
               width={35}
               height={35}
+              loading="lazy"
             />
           </div>
           {/* animated-settings-icon */}
           <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[7%] top-[55.7%] lg:top-[59%] flex items-center justify-center">
-            <img
-              src="/new-project/lovable-icon.png"
+            <Image
+              src="/new-project/lovable-icon.webp"
               alt="lovale icon"
               width={35}
               height={35}
+              loading="lazy"
             />
           </div>
           <div className="w-[20px] md:w-[50px] h-[20px] md:h-[50px] bg-white border-2 border-gray-300 rounded-xl absolute left-[21%] lg:left-[22%] bottom-[19%] md:bottom-[17%] lg:bottom-[11%] flex items-center justify-center">
-            <img
-              src="/new-project/google-firebase-icon.png"
+            <Image
+              src="/new-project/google-firebase-icon.webp"
               alt="google firebase icon"
               width={30}
               height={30}
+              loading="lazy"
             />
           </div>
         </div>
