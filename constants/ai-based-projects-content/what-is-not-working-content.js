@@ -52,29 +52,29 @@ export const WHAT_IS_NOT_WORKING_CONTENT = [
     ],
   },
   {
-    title: "Webflow",
-    icon: "/new-project/webflow-icon.webp",
-    colorfulIcon: "/new-project/webflow-colorful-icon.webp",
+    title: "Loveable",
+    icon: "/new-project/lovable-icon.webp",
+    colorfulIcon: "/new-project/lovable-colorful-icon.webp",
     width: 52,
     height: 37,
     problems_and_solutions: [
       {
         problem:
-          "Some features in WebFlow, like advanced forms and memberships, require external tools or custom code.",
+          "Lovable works fine for small MVPs, but breaks when projects get bigger or more advanced.",
         solution:
-          "We extend Webflow’s capabilities with custom development and integrate advanced features.",
+          "We restructure the architecture with our project recovery services for stable performance.",
       },
       {
         problem:
-          "Advanced SEO settings can feel restrictive in WebFlow, compared to custom-built platforms.",
+          "It generates bloated or inconsistent code, which often needs manual cleanup.",
         solution:
-          "We enhance Webflow sites with custom SEO optimizations, bridging the gap between no code limits and full‑scale flexibility.",
+          "We perform a thorough code audit and then code rescue to clean and optimize.",
       },
       {
         problem:
-          "You can export code in Webflow, but dynamic CMS content doesn’t export well, making migrations tricky.",
+          "Frequent bug fixes and retries make Loveable costly for bigger projects.",
         solution:
-          "Migrations are handled by our team through rebuilding CMS‑driven elements and optimizing exported code.",
+          "We resolve underlying issues, preventing repeated fixes and lowering overall project costs.",
       },
     ],
   },
