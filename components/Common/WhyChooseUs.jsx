@@ -62,6 +62,7 @@ const WhyChooseUs = ({
                 width={c?.iconWidth}
                 height={c?.iconHeight}
                 alt={c?.title}
+                loading="lazy"
                 className="transition duration-300 group-hover:invert group-hover:brightness-0"
               />
               <p className="text-lg">{c?.description}</p>
@@ -99,6 +100,7 @@ const WhyChooseUs = ({
                 width={c?.iconWidth}
                 height={c?.iconHeight}
                 alt={c?.title}
+                loading="lazy"
                 className="transition duration-300 group-hover:invert group-hover:brightness-0"
               />
               <p className="text-lg">{c?.description}</p>

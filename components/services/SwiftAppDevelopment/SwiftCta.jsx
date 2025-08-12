@@ -21,12 +21,21 @@ const SwiftCta = () => {
           Get Expert Swift Developers
         </Link>
 
-        <Image
+        {/* <Image
           src={"/swift/cta-map-image.png"}
           width={1330}
           height={677}
+          loading="lazy"
           alt="cta-map-image"
           className="w-full h-full object-cover absolute inset-0 z-0"
+        /> */}
+        <Image
+          src="/swift/cta-map-image.png"
+          alt="Map showing Swift CTA"
+          fill
+          // priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1330px"
+          className="object-cover absolute inset-0 z-0"
         />
       </div>
     </section>

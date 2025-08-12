@@ -37,6 +37,7 @@ const TechnologyServices = ({
                 width={s?.width}
                 height={s?.height}
                 alt={s?.title}
+                loading="lazy"
                 className="transition-all duration-300 group-hover:brightness-0 group-hover:invert"
               />
               <h3 className="font-bold service-heading leading-[1.2]">

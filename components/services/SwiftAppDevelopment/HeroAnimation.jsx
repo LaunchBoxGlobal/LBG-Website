@@ -24,7 +24,6 @@ const HeroAnimation = () => {
 
       <div className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[698px] xl:h-[698px] orangeBorder p-10 rounded-full border-dashed absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
         <div className="w-[90%] h-[90%] orangeBg rounded-full absolute inset-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" />
-        {/* swift-hero-mobile-mockups */}
         <motion.div
           className="w-full relative"
           initial={{ opacity: 0.4, scale: 0.4 }}
@@ -52,6 +51,7 @@ const HeroAnimation = () => {
           alt="swift-hero-cursor-1"
           width={58}
           height={56}
+          priority
           className="swift-orbiting-cursor"
         />
         <Image
@@ -59,6 +59,7 @@ const HeroAnimation = () => {
           alt="Swift app development services displaying iOS mobile banking app interface with secure login"
           width={224}
           height={161}
+          priority
           className=""
         />
       </div>
@@ -69,6 +70,7 @@ const HeroAnimation = () => {
         alt="card-1"
         width={98}
         height={98}
+        priority
         className="absolute left-[16%] z-20 top-[22%] hidden lg:block floatUpImage"
       />
 
@@ -78,6 +80,7 @@ const HeroAnimation = () => {
         alt="card-1"
         width={138}
         height={138}
+        priority
         className="absolute left-1/2 -translate-x-1/2 z-20 top-[-1.8%] hidden lg:block floatDownImage"
       />
 
@@ -87,6 +90,7 @@ const HeroAnimation = () => {
         alt="card-1"
         width={128}
         height={128}
+        priority
         className="absolute right-[15%] z-20 top-[15%] hidden lg:block floatUpImage"
       />
 
@@ -96,6 +100,7 @@ const HeroAnimation = () => {
         alt="card-1"
         width={108}
         height={108}
+        priority
         className="absolute right-[8.5%] z-20 top-[42%] hidden lg:block floatDownImage"
       />
 
@@ -106,6 +111,7 @@ const HeroAnimation = () => {
           alt="Swift app development services showcasing fitness app UI with workout tracking dashboard"
           width={58}
           height={56}
+          priority
           className="swift-orbiting-cursor-right"
         />
         <Image
@@ -113,6 +119,7 @@ const HeroAnimation = () => {
           alt="card-1"
           width={220}
           height={125}
+          priority
           className=""
         />
       </div>

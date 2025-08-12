@@ -131,7 +131,7 @@ const Platforms = () => {
                 key={index}
                 className="flex w-[400px] mr-4 items-center justify-start gap-2"
               >
-                <img
+                <Image
                   key={index}
                   src={platform?.icon}
                   width={platform?.width}

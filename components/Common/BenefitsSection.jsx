@@ -62,6 +62,7 @@ const BenefitsSection = ({
                   width={solution?.iconWidth}
                   height={solution?.iconHeight}
                   alt={solution?.title}
+                  loading="lazy"
                 />
                 <h3 className="text-white text-[24px] md:text-[2.5vw] font-medium leading-10">
                   {solution?.title}
@@ -101,6 +102,7 @@ const BenefitsSection = ({
                   width={solution?.iconWidth}
                   height={solution?.iconHeight}
                   alt={solution?.title}
+                  loading="lazy"
                 />
                 <h3 className="text-white text-[24px] md:text-[28px] lg:text-[40px] font-medium leading-8 lg:leading-10">
                   {solution?.title}
