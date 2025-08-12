@@ -28,6 +28,20 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function BlogPage() {
-  return <BlogClient />;
+export default function BlogPage({ params }) {
+  const meta = BLOGS_METADATA[params?.slug] || {};
+  return (
+    <>
+      {meta.schemas?.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
+      ))}
+      <BlogClient />
+    </>
+  );
 }

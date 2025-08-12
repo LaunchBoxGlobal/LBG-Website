@@ -18,11 +18,10 @@ const Services = () => {
           <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          We build apps that solve real-world problems and keep users coming
-          back. Our mobile app development services focus on simple designs,
-          fast performance, and updates that make sense. We work with you to
-          create apps that grow as you do. Let’s make an app that truly works
-          for your goals.
+          We shape how people see your business. From logos to colors and
+          messaging, our design and branding work makes your company
+          recognizable and trusted. Whether starting fresh or refreshing your
+          look, we help your brand make the right impression every time.
         </p>
       </section>
 
