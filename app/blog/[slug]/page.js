@@ -1,5 +1,6 @@
 import BlogClient from "@/components/BlogPage/BlogClient";
 import { BLOGS_METADATA } from "@/constants/blogs/blogsMetadata";
+import Script from "next/script";
 
 export async function generateMetadata({ params }) {
   const res = await fetch(
@@ -33,9 +34,18 @@ export default function BlogPage({ params }) {
   return (
     <>
       {meta.schemas?.map((schema, i) => (
-        <script
+        // <script
+        //   key={i}
+        //   type="application/ld+json"
+        //   dangerouslySetInnerHTML={{
+        //     __html: JSON.stringify(schema),
+        //   }}
+        // />
+        <Script
           key={i}
+          id={`schema-${i}`}
           type="application/ld+json"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schema),
           }}

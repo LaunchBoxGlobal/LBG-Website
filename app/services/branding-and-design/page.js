@@ -1,4 +1,5 @@
 import BrandAndDesignPage from "@/components/services/BrandingAndDesign/BrandAndDesignPage";
+import Script from "next/script";
 import React from "react";
 
 export const metadata = {
@@ -116,13 +117,13 @@ const Page = () => {
   return (
     <>
       {/* JSON-LD for Service */}
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
       {/* JSON-LD for FAQ */}
-      <script
+      <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
