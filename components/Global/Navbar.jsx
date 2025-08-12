@@ -54,14 +54,14 @@ const Navbar = () => {
     >
       <Link
         href={"/"}
-        className="rounded-[17px] bg-white lg:border border-[#CECEEA] h-[50px] 2xl:h-[60px] flex items-center justify-center gap-3 lg:px-2.5 xl:px-3.5"
+        className="rounded-[17px] bg-white lg:border border-[#CECEEA] outline-none h-[50px] 2xl:h-[60px] flex items-center justify-center gap-3 lg:px-2.5 xl:px-3.5"
       >
         <Image
           src={`/new-logo.svg`}
           width={180}
-          height={45.73}
+          height={45}
           alt="launchbox global logo"
-          className="w-[188px] lg:w-[152px] lg:h-auto xl:w-[182px] 2xl:w-[220px] h-[35px] 2xl:h-[40px] block"
+          className="block"
         />
 
         <div className="border border-[#CECEEA] w-[0.5px] h-[27px] opacity-50 hidden lg:block" />
