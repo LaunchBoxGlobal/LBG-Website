@@ -30,7 +30,7 @@ const Industries = () => {
             </h3>
             <div className="flex items-start justify-between gap-2 relative flex-1 mt-5">
               <div className="max-w-[85%]">
-                <p className="text-lg font-normal text-justify leading-[1.2] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm lg:text-base xl:text-lg font-normal lg:text-justify leading-[1] xl:leading-[1.2] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {industry?.description}
                 </p>
               </div>
