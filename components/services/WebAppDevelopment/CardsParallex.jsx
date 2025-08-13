@@ -10,10 +10,13 @@ export default function CardsParallex() {
           Successful Web Applications We've{" "}
           <span className="red-text">Developed</span>
         </h2>
-        <p className="section-paragraph md:w-2/3 lg:w-[60%] text-center">
-          Explore real-world examples where focused web strategies improved
-          processes, increased engagement, and produced excellent results that
-          keep businesses moving forward with confidence.
+        <p className="section-paragraph md:w-2/3 lg:w-[80%] text-center">
+          See how our custom web app development has transformed businesses like
+          yours. Each case study demonstrates our ability to deliver measurable
+          results through strategic development to improve processes, increase
+          engagement, and deliver measurable success. Through web application
+          development services, we help businesses achieve results that truly
+          make an impact.
         </p>
       </section>
       <PortfolioParallexCards projects={WEB_APP_PROJECTS} />

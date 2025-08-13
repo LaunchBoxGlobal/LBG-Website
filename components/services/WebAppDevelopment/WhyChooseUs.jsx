@@ -22,9 +22,10 @@ const WhyChooseUs = () => {
           <span className="red-text">Smart Choice</span>
         </h2>
         <p className="section-paragraph text-center mx-auto">
-          We're the smart choice because we focus on what actually works for
-          you. No flashy promises - just straightforward solutions, hands-on
-          expertise, and a commitment to your success.
+          We’re the smart choice because we are one of the leading web app
+          development companies that focus on what actually works for you: just
+          straightforward solutions, hands-on expertise, and a commitment to
+          your success.
         </p>
       </div>
 

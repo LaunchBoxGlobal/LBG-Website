@@ -1,28 +1,28 @@
 export const WEB_APP_WHY_CHOOSE_US_1 = [
   {
-    title: "Functionality-First Approach",
+    title: "Focused On Function",
     icon: "/functionality-first-approach.webp",
     whiteIcon: "/functionality-first-approach-white-icon.webp",
     description:
-      "We focus on practical use to make sure your software brings true value where it matters most.",
+      "We emphasize practical results to make sure your web app delivers long-term value and strong performance.",
     iconWidth: "70",
     iconHeight: "70",
   },
   {
-    title: " Expertise That Fits Your Industry",
+    title: "Industry Focused Approach",
     icon: "/industry-specific-expertise.webp",
     whiteIcon: "/industry-specific-expertise-white-icon.webp",
     description:
-      "The team knows the challenges unique to your field and creates solutions tailored to meet them.",
+      "Our team recognizes the specific demands of your industry and develops web apps according to your needs.",
     iconWidth: "68",
     iconHeight: "70",
   },
   {
-    title: "Transparent Cost",
+    title: "No Hidden Cost",
     icon: "/transparent-pricing.webp",
     whiteIcon: "/transparent-pricing-white-icon.webp",
     description:
-      "Know exactly what you’ll pay from the start, with clear costs and zero surprise fees.",
+      "We keep our pricing transparent. We make sure there are no hidden charges, so you are aware of the cost from the start.",
     iconWidth: "74",
     iconHeight: "70",
   },
@@ -30,29 +30,29 @@ export const WEB_APP_WHY_CHOOSE_US_1 = [
 
 export const WEB_APP_WHY_CHOOSE_US2 = [
   {
-    title: "Fast, Flexible Development",
+    title: "Quick and Custom Adjustment",
     icon: "/fast-development.webp",
     whiteIcon: "/fast-development-white-icon.webp",
     description:
-      "Quick updates and steady improvements keep your project on track and moving without delays.",
+      "We make quick adjustments and continuous improvements to keep your web app efficient and user-friendly.",
     iconWidth: "79",
     iconHeight: "70",
   },
   {
-    title: "Top-Tier Development Team",
+    title: "Trusted Web App Specialists",
     icon: "/tech-talent.webp",
     whiteIcon: "/tech-talent-white-icon.webp",
     description:
-      "We utilize agile practices to adapt quickly and deliver projects on schedule.",
+      "Our team of expert developers brings their global expertise to build practical, high-quality web applications.",
     iconWidth: "66",
     iconHeight: "70",
   },
   {
-    title: "Built to Grow and Last",
+    title: "Designed for Growth",
     icon: "/future-proof-solution.webp",
     whiteIcon: "/future-proof-solution-white-icon.webp",
     description:
-      "Software designed to expand alongside your business, staying adaptable for the long term.",
+      "We build web applications that grow with your business and have the potential to adapt and support expansion.",
     iconWidth: "65",
     iconHeight: "70",
   },

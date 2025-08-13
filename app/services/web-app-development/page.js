@@ -3,9 +3,9 @@ import Script from "next/script";
 import React from "react";
 
 export const metadata = {
-  title: "Web App Development Services | Expert Custom Solutions",
+  title: "Expert Web App Development Services for Your Business",
   description:
-    "Web app development services for businesses. We build custom, fast, and secure applications tailored to your goals. Book your consultation and let's talk!",
+    "Get top-quality web app development services from expert developers. We build custom, fast, and secure web applications tailored to your business needs.",
   alternates: {
     canonical: "https://launchboxglobal.com/services/web-app-development",
   },

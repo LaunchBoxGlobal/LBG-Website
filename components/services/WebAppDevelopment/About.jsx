@@ -3,9 +3,10 @@ import React from "react";
 import { TextMaskEffect } from "./ScrollOpacityText";
 import "./Styles.css";
 import Character from "@/components/Common/ServicesAboutSection";
+import Link from "next/link";
 
 const paragraph =
-  "Need a reliable team to handle your web projects? We are a leading web application development agency dedicated to empowering businesses worldwide. Our web application development services expertise enables us to develop effective solutions for your challenges. We care about making apps people actually enjoy using. By partnering with leading web app development companies, we create solutions that help businesses grow. What makes us different? We listen with concentration, then build with the right technology. Our team brings worldwide experience to every project and always stays focused on delivering more than you expect.";
+  "We are one of the leading web app development companies that builds powerful digital solutions for all kinds of businesses. We combine technical expertise with clear communication. Instead of overpromising, we deliver exactly what you need according to your requirements. Our team understands your goals before crafting customized solutions. Whether you need smooth web APIs, scalable web applications, or straightforward web app development services, we’ve got you covered.";
 
 const About = () => {
   return (
@@ -15,10 +16,18 @@ const About = () => {
           "text-xl lg:text-[25px] text-[#f40e00] font-semibold text-center"
         }
       >
-        Launchbox Global: Building Digital Futures
+        The People You’ll Work With
       </h2>
       <Character value={paragraph} />
       {/* <TextMaskEffect /> */}
+      <div className="w-full flex justify-center mt-4">
+        <Link
+          href={"/contact-us"}
+          className="bg-[#F40E00] text-white px-5 lg:px-6 py-4 lg:py-4 2xl:py-6 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[18px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300"
+        >
+          Share Your Idea – Let’s Talk
+        </Link>
+      </div>
     </section>
   );
 };

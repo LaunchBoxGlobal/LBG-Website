@@ -1354,4 +1354,12 @@ export const BLOGS_METADATA = {
       },
     ],
   },
+  "top-platforms-like-reddit-in-2025-Discover-the-best-sites-like-reddit-for-community-discussions":
+    {
+      title: "Best Sites Like Reddit in 2025 for Discussions",
+      description:
+        "Discover the best sites like Reddit in 2025 for niche communities, privacy, and engaging discussions beyond the original platform.",
+      canonical:
+        "https://launchboxglobal.com/blog/top-platforms-like-reddit-in-2025-Discover-the-best-sites-like-reddit-for-community-discussions",
+    },
 };
