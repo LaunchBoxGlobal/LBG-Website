@@ -1,10 +1,48 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Image from "next/image";
+import {
+  MdOutlineKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 import { WEB_APP_DEVELOPMENT_INDUSTRIES } from "@/constants/web-app-dvelopment/WebAppIndustries";
-import { FiMinus } from "react-icons/fi";
-import { LuPlus } from "react-icons/lu";
+
+export const sliderSettings = {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  centeredSlides: false,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  loop: true,
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+
+    750: {
+      slidesPerView: 2,
+    },
+
+    900: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,
+    },
+  },
+};
 
 const Industries = () => {
+  const [state, setState] = useState(false);
   return (
     <section className="w-full padding-x pb-10 pt-20 lg:pb-20 lg:pt-36 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
@@ -19,35 +57,75 @@ const Industries = () => {
         </p>
       </section>
 
-      <section className="industries-wrapper w-full mt-10 lg:mt-16 flex flex-wrap gap-2">
-        {WEB_APP_DEVELOPMENT_INDUSTRIES?.map((industry, index) => (
-          <div
-            className="industry-card bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden"
-            key={index}
-          >
-            <h3 className="text-[26px] font-semibold leading-[1]">
-              {industry?.title}
-            </h3>
-            <div className="flex items-start justify-between gap-2 relative flex-1 mt-5">
-              <div className="max-w-[85%]">
-                <p className="text-sm lg:text-base xl:text-lg font-normal lg:text-justify leading-[1] xl:leading-[1.2] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  {industry?.description}
-                </p>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              className="min-w-[30px] min-h-[30px] max-w-[30px] max-h-[30px] bg-[#f40e00] group-hover:bg-white transition-all duration-300 rounded flex items-center justify-center absolute right-5 bottom-5"
-            >
-              <LuPlus className="text-white group-hover:hidden block transition-all duration-300" />
-              <FiMinus className="text-black group-hover:block hidden transition-all duration-300" />
-            </button>
-          </div>
-        ))}
+      <section
+        className={`w-full relative overflow-hidden mt-10 lg:mt-16 h-[447px]`}
+      >
+        <Swiper
+          {...sliderSettings}
+          modules={[Autoplay]}
+          className="overflow-hidden h-[447px] w-full"
+          style={{ width: "100%", height: "100%" }}
+        >
+          {WEB_APP_DEVELOPMENT_INDUSTRIES?.map((value, index) => {
+            const [isHovered, setIsHovered] = useState(false);
+            return (
+              <SwiperSlide
+                key={index}
+                className="w-full h-[360px]"
+                style={{ width: "100%" }}
+              >
+                <div
+                  className="w-full rounded-xl p-6 bg-white min-h-[360px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  <Image
+                    src={isHovered ? value?.whiteIcon : value?.redIcon}
+                    alt={value?.title}
+                    width={29}
+                    height={29}
+                    className={`object-contain transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:filter group-hover:contrast-200 ${
+                      index === 3 && "w-[23px] h-[27px]"
+                    }`}
+                    loading="lazy"
+                  />
+                  <h3 className="text-[22px] lg:text-[26px] font-semibold tracking-tight">
+                    {value?.title}
+                  </h3>
+                  <p className="text-lg lg:text-[19px] lg:leading-[24px] text-start font-light text-gray-400 group-hover:text-white">
+                    {value?.description}
+                  </p>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+          <SwiperButtons />
+        </Swiper>
       </section>
     </section>
   );
 };
 
 export default Industries;
+
+function SwiperButtons() {
+  const swiper = useSwiper();
+  return (
+    <section className="w-full flex items-center justify-center gap-3 lg:gap-1 absolute bottom-1 left-0 z-40">
+      <button
+        type="button"
+        onClick={() => swiper.slidePrev()}
+        className="w-[40px] h-[40px] lg:w-[59px] lg:h-[59px] bg-black flex items-center justify-center rounded-full"
+      >
+        <MdOutlineKeyboardArrowLeft className="text-white text-3xl" />
+      </button>
+      <button
+        type="button"
+        onClick={() => swiper.slideNext()}
+        className="w-[40px] h-[40px] lg:w-[59px] lg:h-[59px] bg-[#F40E00] flex items-center justify-center rounded-full"
+      >
+        <MdOutlineKeyboardArrowRight className="text-white text-3xl" />
+      </button>
+    </section>
+  );
+}

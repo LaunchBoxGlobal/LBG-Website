@@ -33,7 +33,7 @@ const WebAppDevelopmentPage = () => {
         heading={"Tools We Use for"}
         redText={"Web Apps"}
         description={
-          "You get carefully selected tools, whether it’s front-end or backend. We ensure your web apps run smoothly, stay secure, and deliver top performance for your business."
+          "From front-end frameworks to back-end solutions and databases, our carefully selected tech stack ensures seamless functionality, security, and efficiency for your business."
         }
       />
       <FlagsAnimation />
