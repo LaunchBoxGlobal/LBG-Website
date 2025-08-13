@@ -1,7 +1,6 @@
 import React from "react";
 import ImageSlider from "./ImageSlider";
 import ContactButton from "@/components/Global/ContactButton";
-import PageBreadcrumb from "@/components/Common/PageBreadcrumb";
 
 const Hero = () => {
   return (
@@ -14,8 +13,8 @@ const Hero = () => {
         </h1>
 
         <p className="text-base md:text-lg lg:text-[22px] 2xl:text-[26px] font-medium text-gray-500 text-center lg:w-[75%] leading-8 my-2">
-          Tackle challenges and enhance user engagement and satisfaction with
-          our top-tier web app development services.
+          As a leading web app development company, we provide top‑tier scalable
+          web applications that ensure functionality and reliability.
         </p>
         <div className="flex items-center justify-center gap-4 mt-3 mb-8">
           <ContactButton text={"Talk to Our Experts Today"} />
