@@ -72,9 +72,9 @@ const BlogAuthorDetails = ({
           </div>
         )}
       </div>
-      {/* <div className="mt-6">
+      <div className="mt-6">
         <BlogAudioPlayer text={plainText} readTime={numericReadTime} />
-      </div> */}
+      </div>
     </div>
   );
 };

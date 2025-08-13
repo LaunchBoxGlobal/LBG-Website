@@ -6,7 +6,7 @@ import HeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
-    <section className="w-full relative overflow-hidden pt-36 2xl:pt-52 pb-20 lg:pb-40">
+    <section className="w-full relative overflow-hidden pt-36 2xl:pt-52">
       <section className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden padding-x">
         <p className="text-xl font-bold red-text">Your Reliable Partner</p>
         <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-[1] w-full">
@@ -21,10 +21,10 @@ const Hero = () => {
           <ContactButton text={"Get a Free Consultation"} />
         </div>
       </section>
-      <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
+      {/* <div className="w-full bg-white mt-0 lg:mt-5 hidden lg:block">
         <MobileImageSlider />
-      </div>
-      {/* <HeroAnimation /> */}
+      </div> */}
+      <HeroAnimation />
       <Image
         src={"/mobile-app-dev-mobile-mockups-min.webp"}
         className="w-full object-contain h-[220px] lg:hidden"
