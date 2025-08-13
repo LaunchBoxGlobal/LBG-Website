@@ -9,7 +9,7 @@ const SwiftCta = () => {
         <h3 className="text-[30px] md:text-[40px] lg:text-[50px] font-bold leading-[1.3] z-10">
           Your Fast Track to Powerful iOS Apps
         </h3>
-        <p className="lg:text-xl text-center lg:w-2/3">
+        <p className="lg:text-xl text-center lg:w-2/3 z-20">
           Partner with us for swift development services that combine technical
           excellence and industry best practices to deliver secure high-quality
           iOS apps designed to scale with your business needs.
@@ -21,19 +21,11 @@ const SwiftCta = () => {
           Get Expert Swift Developers
         </Link>
 
-        {/* <Image
-          src={"/swift/cta-map-image.png"}
-          width={1330}
-          height={677}
-          loading="lazy"
-          alt="cta-map-image"
-          className="w-full h-full object-cover absolute inset-0 z-0"
-        /> */}
         <Image
           src="/swift/cta-map-image.png"
           alt="Map showing Swift CTA"
           fill
-          // priority
+          loading="lazy"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1330px"
           className="object-cover absolute inset-0 z-0"
         />

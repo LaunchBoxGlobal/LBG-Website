@@ -11,7 +11,10 @@ const HeroAnimation = () => {
     // margin: "-30% 0px -30% -40px",
   });
   return (
-    <div ref={ref} className="w-full relative mt-0 mb-10 md:my-10">
+    <div
+      ref={ref}
+      className="w-full relative aspect-[1920/1080] mt-0 mb-10 md:my-10"
+    >
       <Image
         src="/swift/hero-bg-image.webp"
         width={1266}

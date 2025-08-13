@@ -359,6 +359,85 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
             </div>
           </button>
 
+          {/* Service 6 */}
+          <button
+            type="button"
+            className={`w-full px-4 pb-0 pt-4 lg:pt-10 lg:px-7 rounded-xl flex flex-col items-start justify-between gap-x-4 group lg:hover:bg-black ${
+              openFaq === 6 ? "bg-[#000] lg:pb-[60px]" : "bg-white lg:pb-[50px]"
+            } transition-all duration-300 h-auto relative overflow-visible mb-0 outline-none`}
+            onClick={() => toggleFaq(6)}
+          >
+            <div className="w-full flex items-start justify-between">
+              <span
+                className={`text-[12px] lg:text-[20px] font-medium text-gray-400 lg:group-hover:text-white transition-all duration-300 ${
+                  openFaq === 6 && "text-white"
+                }`}
+              >
+                (05)
+              </span>
+              <img
+                src="/software-project-rescue-service-image.webp"
+                width={368}
+                height={352}
+                alt="software project rescue service image"
+                sizes="(max-width: 768px) 160px,
+               (max-width: 1024px) 220px,
+               (max-width: 1440px) 368px,
+               300px"
+                loading="lazy"
+                priority={false}
+                className={`2xl:left-[9%] -top-[40%] object-contain hidden lg:block absolute lg:left-[2%] midlg:left-[4%] xl:left-[3%] z-10 ${
+                  openFaq === 6
+                    ? "lg:top-[10%] top-[10%] rotate-0 visible"
+                    : "invisible group-hover:visible"
+                }`}
+              />
+              <div className="flex flex-col items-center w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">
+                <div className="w-full flex items-center lg:items-start justify-between mb-0 gap-5 py-0">
+                  <h3
+                    className={`text-[20px] text-start md:text-[3vw] leading-7 lg:leading-10 xl:leading-[50px] tracking-tight font-light ${
+                      openFaq === 6 ? "text-white" : "text-gray-400"
+                    } font-normal transition-all duration-300`}
+                  >
+                    Software Project Rescue
+                  </h3>
+                  <IoMdArrowDown
+                    className={`w-[15px] block lg:mt-1 lg:w-[31px] h-[15px] lg:h-[31px] ${
+                      openFaq === 6
+                        ? "text-[#fff] opacity-100 scale-y-[-1]"
+                        : "text-[#F40E00] opacity-60 scale-y-[1]"
+                    } transition-all duration-300`}
+                  />
+                </div>
+                <motion.div
+                  initial={false}
+                  animate={{
+                    height: openFaq === 6 ? "auto" : 0,
+                    opacity: openFaq === 6 ? 1 : 0,
+                  }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="relative flex items-start justify-start overflow-hidden w-full pl-0.5 mt-2 md:mt-4"
+                >
+                  <div className="w-full lg:w-[90%] border-t py-4 flex flex-col items-start gap-2">
+                    <p className="text-white text-start leading-5 text-base lg:text-lg font-light">
+                      Vibe Coding’s software project rescue service specializes
+                      in fixing AI-generated projects. We refine code, enhance
+                      features, and turn rapid prototypes into secure,
+                      market-ready products, bringing the expert touch your
+                      AI-powered vision truly deserves.
+                    </p>
+                    <Link
+                      href="/software-project-rescue-service"
+                      className="text-white block border px-4 py-2 rounded-2xl text-sm mt-3 hover:bg-white hover:text-black transition-all duration-300"
+                    >
+                      View More
+                    </Link>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </button>
+
           {/* Service 5 */}
           <button
             type="button"
@@ -373,7 +452,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                   openFaq === 4 && "text-white"
                 }`}
               >
-                (05)
+                (06)
               </span>
               <img
                 src="/home-digital-marketing-service-mockup.webp"
@@ -457,7 +536,7 @@ const Services = ({ heading, redText, description, descriptionWidth }) => {
                   openFaq === 5 && "text-white"
                 }`}
               >
-                (06)
+                (07)
               </span>
               <img
                 src="/home-branding-and-design-service-mockup.webp"

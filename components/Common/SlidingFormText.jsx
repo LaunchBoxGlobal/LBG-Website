@@ -106,7 +106,7 @@ const SlidingFormText = () => {
             <span
               key={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className={`whitespace-nowrap text-[36px] lg:text-[45px] xl:text-[55px] font-semibold leading-[1] z-10 transition-colors duration-300 ${
+              className={`whitespace-nowrap text-[26px] md:text-[36px] lg:text-[45px] xl:text-[55px] font-semibold leading-[1] z-10 transition-colors duration-300 ${
                 index % floatingText.length ===
                 currentIndex % floatingText.length
                   ? "text-white"

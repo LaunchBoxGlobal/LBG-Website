@@ -8,9 +8,9 @@ import WhatsappButton from "@/components/Common/WhatsappButton";
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // add the weights you actually need
-  display: "swap", // avoid flash of invisible text
-  variable: "--font-outfit", // allows usage in CSS
+  // weight: ["400", "500", "700"],
+  display: "swap",
+  variable: "--font-outfit",
 });
 
 export default function RootLayout({ children }) {

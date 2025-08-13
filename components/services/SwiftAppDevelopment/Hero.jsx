@@ -1,7 +1,7 @@
+// Hero.jsx
 import React from "react";
 import Link from "next/link";
 import HeroAnimation from "./HeroAnimation";
-import PageBreadcrumb from "@/components/Common/PageBreadcrumb";
 
 const Hero = () => {
   return (
