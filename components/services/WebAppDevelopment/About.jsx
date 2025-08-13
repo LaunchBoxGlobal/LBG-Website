@@ -18,7 +18,10 @@ const About = () => {
       >
         The People You’ll Work With
       </h2>
-      <Character value={paragraph} />
+      <p className="text-[22px] lg:text-[2.8vw] text-center lg:leading-[56px] text-gray-400 tracking-tight">
+        {paragraph}
+      </p>
+      {/* <Character value={paragraph} /> */}
       {/* <TextMaskEffect /> */}
       <div className="w-full flex justify-center mt-4">
         <Link
