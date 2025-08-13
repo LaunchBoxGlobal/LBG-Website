@@ -25,43 +25,6 @@ const NavbarDropdown = ({ closeDropdown }) => {
   const [selectedTab, setSelectedTab] = useState("Services");
   return (
     <div className="bg-white w-full mx-auto min-h-[420px] mt-6 flex items-start justify-center gap-0 rounded-[17px] border border-[#CECEEA] p-6">
-      {/* <div className="min-w-[231px] flex flex-col items-start gap-2">
-        {tabs?.map((tab, i) => {
-          return (
-            <button
-              type="button"
-              key={i}
-              onClick={() => setSelectedTab(tab?.title)}
-              className={`w-full flex items-center justify-between p-3 rounded-[7px] ${
-                tab?.title === selectedTab ? "bg-[#F9F1F1]" : "bg-white"
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                <Image
-                  src={tab?.icon}
-                  alt="navbar-services-icon"
-                  width={20}
-                  height={20}
-                  className="w-[18px] object-contain"
-                />
-                <span className="text-lg font-medium">{tab?.title}</span>
-              </div>
-              <Image
-                src={"/navbar-dropdown-right-arrow-icon.png"}
-                alt="navbar-dropdown-right-arrow-icon"
-                width={14}
-                height={4}
-                className="w-[8px] object-contain"
-              />
-            </button>
-          );
-        })}
-      </div> */}
-      {/* {selectedTab === "Services" ? (
-        <Services closeDropdown={closeDropdown} selectedTab={selectedTab} />
-      ) : (
-        <Technology closeDropdown={closeDropdown} selectedTab={selectedTab} />
-      )} */}
       <Services closeDropdown={closeDropdown} selectedTab={selectedTab} />
       <Technology closeDropdown={closeDropdown} selectedTab={selectedTab} />
       <Location closeDropdown={closeDropdown} selectedTab={selectedTab} />
@@ -75,27 +38,31 @@ const Services = ({ closeDropdown }) => {
   const pages = [
     {
       title: "Mobile App Development",
-      pageUrl: "mobile-app-development",
+      pageUrl: "services/mobile-app-development",
     },
     {
       title: "Web App Development",
-      pageUrl: "web-app-development",
+      pageUrl: "services/web-app-development",
     },
     {
       title: "Custom Software Development",
-      pageUrl: "custom-software-development",
+      pageUrl: "services/custom-software-development",
     },
     {
       title: "E-commerce Development",
-      pageUrl: "ecommerce-development",
+      pageUrl: "services/ecommerce-development",
+    },
+    {
+      title: "Software Project Rescue Service",
+      pageUrl: "software-project-rescue-service",
     },
     {
       title: "Digital Marketing",
-      pageUrl: "digital-marketing",
+      pageUrl: "services/digital-marketing",
     },
     {
       title: "Branding & Design",
-      pageUrl: "branding-and-design",
+      pageUrl: "services/branding-and-design",
     },
   ];
 
@@ -121,7 +88,7 @@ const Services = ({ closeDropdown }) => {
           {pages?.map((p, i) => {
             return (
               <Link
-                href={`/services/${p?.pageUrl}`}
+                href={`/${p?.pageUrl}`}
                 key={i}
                 onClick={() => closeDropdown()}
                 className="text-lg underline text-gray-600 hover:text-black"

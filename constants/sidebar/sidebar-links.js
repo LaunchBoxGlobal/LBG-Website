@@ -16,6 +16,10 @@ export const sidebarlinks = [
     url: "/services/ecommerce-development",
   },
   {
+    title: "Software Project Rescue Service",
+    url: "/software-project-rescue-service",
+  },
+  {
     title: "Digital Marketing",
     url: "/services/digital-marketing",
   },
