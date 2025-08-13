@@ -2,7 +2,7 @@ export const WEB_APP_PROJECTS = [
   {
     title: "Carveeps",
     description:
-      "Carveeps is where car dealerships hit the fast lane. Built entirely from scratch by our skilled web app developers, this powerful platform shows what great web app development services can do. It delivers a sleek, personalized dashboard designed to turbocharge dealership operations, including tracking inventory, facilitating sales, and enhancing customer interactions. As one of the forward‑thinking web app development companies, we focused on creating web apps that balance functionality with simplicity. Carveeps packs smart tools to keep everything running smoothly and efficiently. Designed for dealers who mean business, it’s all about working smarter, not harder.",
+      "Carveeps is where car dealerships hit the fast lane. Built from scratch by our team, this web app delivers a sleek, personalized dashboard to turbocharge dealership operations. From tracking inventory and streamlining sales to boosting customer chats, Carveeps packs smart tools to keep everything running smooth and sharp. Designed for dealers who mean business, it’s all about working smarter, not harder.",
     src: "cactus.jpg",
     link: "/services/web-app-development",
     color: "#88A28D",
@@ -13,7 +13,7 @@ export const WEB_APP_PROJECTS = [
   {
     title: "Sittner Trucking LLC",
     description:
-      "Sittner Trucking LLC is all about tackling big jobs with the right tools and a no‑nonsense approach. To bring their brand online, our web app developers crafted a powerful platform that highlights their tough‑as‑nails trucks and hands‑on services. From carrying heavy loads to operating cranes and handling precise excavation with GPS technology. As a trusted web application development firm, we provided end‑to‑end web app development services and tailored web app development solutions to make their capabilities shine. Whether it’s moving massive rigs or setting up wind turbines, Sittner’s crew and now their platform get it done.",
+      "Sittner Trucking LLC is all about tackling big jobs with the right tools. our team built this platform to show off their tough-as-nails trucks and hands-on services—like hauling heavy stuff, running cranes, and digging dirt with GPS smarts. Whether it’s moving huge rigs or setting up wind turbines, Sittner’s crew gets it done.",
     src: "rock.jpg",
     link: "/services/web-app-development",
     color: "#BBACAF",
@@ -24,7 +24,7 @@ export const WEB_APP_PROJECTS = [
   {
     title: "Markettoll",
     description:
-      "Market Toll is an eCommerce platform that we designed to make buying and selling easier for everyone. Built by our experienced web application development team, this platform combines simplicity with functionality, providing a clean, intuitive interface that enhances user interactions and makes transactions fast and accessible. As a forward‑thinking web application development company, we integrated powerful web APIs to ensure better connectivity and performance across devices. The Android application adds another layer of convenience, allowing users to manage purchases, list products, and connect with buyers or sellers on the go. Through custom web application development, Market Toll truly redefines eCommerce ease.",
+      "Market Toll is an eCommerce platform designed to simplify buying and selling. Built by our team, this platform provides a straightforward interface to enhance user interactions, making transactions efficient and accessible. The Android application extends its convenience, enabling users to manage purchases, list products, and connect with buyers or sellers seamlessly—whether at home or on mobile devices.",
     src: "tree.jpg",
     link: "/services/web-app-development",
     color: "#977F6D",
