@@ -23,7 +23,7 @@ const words = [
 const HomeHero = () => {
   // text-[34px] lg:text-[64px] xl:text-[84px] 2xl:text-[100px]
   return (
-    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 h-[85vh] md:h-auto lg:h-[100vh] lg:gap-[25px] overflow-hidden">
+    <section className="w-full bg-white relative pt-36 2xl:pt-52 flex flex-col items-center justify-start gap-0 lg:gap-[25px] overflow-hidden">
       <h1 className="font-bold text-[9vw] md:text-[5.5vw] mb-1 text-center tracking-normal lg:leading-[78px] w-[100%]">
         <span className="flex items-center justify-center gap-2 lg:gap-6">
           Plan{" "}
@@ -63,18 +63,32 @@ const HomeHero = () => {
         <ContactButton text={"Get a Free Consultation"} />
       </div>
 
-      <div className="w-full flex items-center justify-center z-0">
+      {/* <div className="w-full flex items-center justify-center z-0">
         <GlobeDemo />
-      </div>
+      </div> */}
 
-      <Image
-        src={"/image-glow-optimized.webp"}
-        width={1710}
-        height={359}
-        alt="globe shadow image"
-        priority
-        className="w-[100%] h-[109px] lg:h-[359px] 2xl:h-[409px] absolute -bottom-16 md:-bottom-14 lg:bottom-[-33%] xl:bottom-[-25%] 2xl:-bottom-[22%] z-30 opacity-100"
-      />
+      <div className="w-full h-[100px] md:h-[150px] lg:h-[200px] xl:h-[250px] overflow-hidden relative bg-white flex justify-center items-start">
+        {/* <div className="globe-bg-fix bg-white w-full inset-0 z-0 absolute"></div> */}
+        <video
+          width="1920"
+          height="299"
+          muted
+          loop
+          autoPlay
+          playsInline
+          className="w-full h-auto bg-white md:max-w-[70%] relative z-0"
+        >
+          <source src="/Globe_02_mp4.mp4" type="video/mp4" />
+        </video>
+        <Image
+          src={"/image-glow-optimized.webp"}
+          width={1710}
+          height={359}
+          alt="globe shadow image"
+          priority
+          className="w-[100%] h-[109px] lg:h-[190px] xl:h-[259px] absolute -bottom-[50%] xl:-bottom-[60%] z-30 opacity-100"
+        />
+      </div>
     </section>
   );
 };

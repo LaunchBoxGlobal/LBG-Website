@@ -138,7 +138,7 @@ const BlogClient = () => {
             {matchedCategories && (
               <div className="flex items-center gap-1">
                 <Link
-                  href={`/blogs/${matchedCategories[0]?.id}`}
+                  href={`/blogs/${matchedCategories[0]?.id}/${matchedCategories[0]?.name}`}
                   className="text-[#434343] text-sm lg:text-base"
                 >
                   <span
