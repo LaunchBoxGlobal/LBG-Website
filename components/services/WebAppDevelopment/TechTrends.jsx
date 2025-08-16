@@ -10,7 +10,7 @@ const TechTrends = () => {
         </h2>
       </section>
 
-      <section className="w-full grid grid-cols-5 gap-7 mt-10 lg:mt-16">
+      <section className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 midlg:grid-cols-5 gap-7 mt-10 lg:mt-16">
         {TECH_TRENDS?.map((t, i) => {
           return <TechTrendsCard key={i} tech={t} />;
         })}
@@ -23,9 +23,9 @@ export default TechTrends;
 
 export const TechTrendsCard = ({ tech }) => {
   return (
-    <div className="w-[230px] h-[187px] relative group">
-      <div className="w-[230px] h-[185px] bg-[#F40E00] rounded-xl z-0 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:-rotate-6 transition-all duration-300"></div>
-      <div className="w-[233px] h-[190px] bg-[#F3F3F3] rounded-xl flex flex-col items-center justify-center gap-5 z-10 relative">
+    <div className="w-full relative group">
+      <div className="w-full h-[190px] bg-white group-hover:bg-[#F40E00] rounded-xl z-0 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:-rotate-6 transition-all duration-300"></div>
+      <div className="w-full h-[190px] bg-[#F3F3F3] rounded-xl flex flex-col items-center justify-center gap-5 z-10 relative">
         <img
           src={tech?.icon}
           width={tech?.width}

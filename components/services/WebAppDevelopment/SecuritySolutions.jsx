@@ -23,7 +23,7 @@ const SecuritySolutions = () => {
         {SECURITY_SOLUTIONS?.map((model, index) => {
           return (
             <div key={index} className="w-full">
-              <div className="w-full min-h-[405px] lg:min-h-[370px] bg-[#F3F3F3] rounded-[17px] p-7 midlg:p-10 flex flex-col items-center gap-4">
+              <div className="w-full lg:min-h-[380px] midlg:h-[400px] bg-[#F3F3F3] rounded-[17px] p-7 midlg:p-10 flex flex-col items-center gap-4">
                 <img
                   src={model?.icon}
                   width={114}
