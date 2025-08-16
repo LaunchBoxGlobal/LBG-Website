@@ -6,8 +6,10 @@
   background: #02ea4c;
 }
 
-.sittner-hover:hover {
-  box-shadow: #5ef68e 0px 0px 24px;
+@media (min-width: 1200px) {
+  .sittner-hover:hover {
+    box-shadow: #5ef68e 0px 0px 24px;
+  }
 }
 
 .sittner-glow {

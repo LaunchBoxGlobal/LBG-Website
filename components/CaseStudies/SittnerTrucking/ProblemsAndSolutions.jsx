@@ -1,15 +1,17 @@
+"use client";
 import {
   SITTNER_TRUCKING_PROBLEMS,
   SITTNER_TRUCKING_SOLUTIONS,
 } from "@/constants/case-studies/sittner-trucking-content/sittner-trucking-problems-and-solutions";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { GoDotFill } from "react-icons/go";
 
 const ProblemsAndSolutions = () => {
+  const [value, setValue] = useState(0);
   return (
     <section className="w-full padding-x flex flex-col items-center">
-      <h2 className="section-heading">Roadblocks We Faced</h2>
+      <h2 className="section-heading text-center">Roadblocks We Faced</h2>
       <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
         JB Sittner Trucking faced delayed dispatches and unreliable
         communication. Traditional methods like calls and emails led to missed
@@ -41,8 +43,9 @@ const ProblemsAndSolutions = () => {
                   return (
                     <li
                       key={index}
+                      onMouseEnter={() => setValue(index)}
                       className={`text-xl font-medium leading-[1.2] flex items-start gap-1 relative py-5 ${
-                        index === 0 &&
+                        index === value &&
                         "border-t-2 border-[#02EA4C] rounded-t-2xl"
                       }`}
                     >
@@ -76,8 +79,9 @@ const ProblemsAndSolutions = () => {
                   return (
                     <li
                       key={index}
+                      onMouseEnter={() => setValue(index)}
                       className={`text-xl font-medium leading-[1.2] flex items-start gap-1 relative py-5 text-[#212121] ${
-                        index === 0 &&
+                        index === value &&
                         "border-t-2 border-[#118B10] rounded-t-2xl"
                       }`}
                     >

@@ -127,10 +127,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// @media screen and (min-width: 1024px) {
-//   .prupleShadow:hover {
-//     box-shadow: #fce7f9 0px 0px 30px;
-//     transition: all 0.3s;
-//   }
-// }

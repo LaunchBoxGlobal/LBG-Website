@@ -6,9 +6,11 @@ import Image from "next/image";
 const Research = () => {
   return (
     <section className="w-full padding-x flex flex-col items-center relative overflow-hidden pt-10 pb-40">
-      <h2 className="section-heading z-20">Understanding the Problem</h2>
+      <h2 className="section-heading text-center z-20">
+        Understanding the Problem
+      </h2>
 
-      <div className="w-full mt-28 flex justify-around z-10 relative">
+      <div className="w-full mt-28 flex flex-col lg:flex-row justify-around z-10 relative">
         {SITTNER_TRUCKING_RESEARCH?.map((research, index) => {
           return <ResearchCard research={research} key={index} index={index} />;
         })}

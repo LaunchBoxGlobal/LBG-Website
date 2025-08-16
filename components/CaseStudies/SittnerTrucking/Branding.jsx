@@ -48,20 +48,22 @@ const Branding = () => {
         />
       </div>
 
-      <div className="w-full mt-40 flex items-center justify-center">
+      <div className="w-full mt-20 lg:mt-40 flex items-center justify-center">
         {colors?.map((c, i) => {
           return (
             <div
               key={i}
               style={{
                 background: c?.color,
-                marginLeft: i === 0 ? "0px" : "-60px", // controls overlap
-                zIndex: colors.length + i, // makes later circles appear on top
+
+                zIndex: colors.length + i,
               }}
-              className="w-[260px] h-[260px] rounded-full border-[5px] border-white relative"
+              className={`w-[70px] h-[70px] md:w-[130px] md:h-[130px] midlg:w-[260px] midlg:h-[260px] rounded-full border-[5px] border-white relative ${
+                i === 0 ? "ml-0" : "ml-[-20px] lg:ml:[-60px]"
+              }`}
             >
-              <div className="w-[93px] h-[38px] bg-black border-2 border-white absolute rounded-lg left-[-2%] bottom-[18%] flex items-center justify-center">
-                <p className="text-white">{c?.code}</p>
+              <div className="w-[45px] md:w-[93px] h-[20px] md:h-[38px] bg-black border-2 border-white absolute rounded-lg left-[-2%] bottom-[18%] flex items-center justify-center">
+                <p className="text-white text-[9px] lg:text-lg">{c?.code}</p>
               </div>
             </div>
           );
