@@ -14,6 +14,10 @@ import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import TechStack from "@/components/Common/TechStack";
 import Platforms from "@/components/Common/Platforms";
 import WhyChooseUs from "./WhyChooseUs";
+import Awards from "./Awards";
+import WebAppsForBusiness from "./WebAppsForBusiness";
+import TechTrends from "./TechTrends";
+import SecuritySolutions from "./SecuritySolutions";
 
 const WebAppDevelopmentPage = () => {
   return (
@@ -29,6 +33,10 @@ const WebAppDevelopmentPage = () => {
       <WhyChooseUs />
       <Benefits />
       <SmartPlanning />
+      <Awards />
+      <WebAppsForBusiness />
+      <SecuritySolutions />
+      <TechTrends />
       <TechStack
         heading={"Tools We Use for"}
         redText={"Web Apps"}
