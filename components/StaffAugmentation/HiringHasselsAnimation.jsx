@@ -10,7 +10,7 @@ const HiringHasselsAnimation = () => {
   });
   return (
     <div className="w-full relative overflow-hidden">
-      <Image
+      <img
         src={"/staff-augmentation/hiring-hassles-bg-mockup.webp"}
         width={490}
         height={825}
@@ -47,7 +47,7 @@ const HiringHasselsAnimation = () => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="absolute inline-flex  z-20"
         >
-          <Image
+          <img
             src={"/staff-augmentation/exclamation-mark-image.webp"}
             alt="exclamation-mark-image"
             width={266}
@@ -63,7 +63,7 @@ const HiringHasselsAnimation = () => {
           transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
           className="absolute left-[30%] top-[-5%]"
         >
-          <Image
+          <img
             src={"/staff-augmentation/hiring-hassels-icon-1.webp"}
             alt="hiring-hassels-icon-1"
             width={82}
@@ -77,7 +77,7 @@ const HiringHasselsAnimation = () => {
           transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
           className="absolute left-[10%] top-[15%]"
         >
-          <Image
+          <img
             src={"/staff-augmentation/hiring-hassels-icon-2.webp"}
             alt="hiring-hassels-icon-2"
             width={62}
@@ -91,7 +91,7 @@ const HiringHasselsAnimation = () => {
           transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
           className="absolute top-[25%] right-[10%] z-10"
         >
-          <Image
+          <img
             src={"/staff-augmentation/hiring-hassels-icon-3.webp"}
             alt="hiring-hassels-icon-3"
             width={131}
@@ -105,7 +105,7 @@ const HiringHasselsAnimation = () => {
           transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
           className="absolute bottom-[20%] right-[5%] z-10"
         >
-          <Image
+          <img
             src={"/staff-augmentation/hiring-hassels-icon-4.webp"}
             alt="hiring-hassels-icon-4"
             width={79}
@@ -119,7 +119,7 @@ const HiringHasselsAnimation = () => {
           transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
           className="absolute bottom-[-4%] left-1/2 -translate-x-1/2 z-10"
         >
-          <Image
+          <img
             src={"/staff-augmentation/hiring-hassels-icon-5.webp"}
             alt="hiring-hassels-icon-5"
             width={79}
@@ -133,7 +133,7 @@ const HiringHasselsAnimation = () => {
           transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
           className="absolute bottom-[22%] left-[12%] z-10"
         >
-          <Image
+          <img
             src={"/staff-augmentation/hiring-hassels-icon-6.webp"}
             alt="hiring-hassels-icon-6"
             width={153}

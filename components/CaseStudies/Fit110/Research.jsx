@@ -58,7 +58,7 @@ const Research = () => {
         })}
       </section>
 
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
@@ -66,7 +66,7 @@ const Research = () => {
         loading="lazy"
         className="absolute left-0 top-[-20%] z-0 h-[40vw] w-[50vw]"
       />
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
@@ -74,7 +74,7 @@ const Research = () => {
         loading="lazy"
         className="absolute left-0 top-[-40%] z-0 h-[40vw] w-[50vw]"
       />
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
@@ -82,7 +82,7 @@ const Research = () => {
         loading="lazy"
         className="absolute left-0 bottom-[-10%] z-0 h-[40vw] w-[50vw]"
       />
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-left.webp"}
         alt="fit110-glow-left"
         width={536}
@@ -92,7 +92,7 @@ const Research = () => {
       />
 
       {/* right */}
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-right.webp"}
         alt="fit110-glow-right"
         width={536}
@@ -100,7 +100,7 @@ const Research = () => {
         loading="lazy"
         className="absolute right-0 top-[10%] z-0 h-[40vw] w-[50vw]"
       />
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-right.webp"}
         alt="fit110-glow-right"
         width={536}

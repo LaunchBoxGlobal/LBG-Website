@@ -17,15 +17,15 @@ export const WEB_APP_DEVELOPMENT_INDUSTRIES = [
     whiteIcon: "/fintech-white-icon.webp",
     cardWidth: 280,
   },
-  {
-    title: "E-commerce",
-    icon: "/ecommerce-icon.svg",
-    description:
-      "We build e‑commerce web apps that simplify shopping, payments, and order tracking for you. We design e-commerce apps with smooth checkouts, real-time order updates, and frustration-free navigation. As a trusted web application development agency, we also offer E‑commerce development services separately, creating fast, reliable apps.",
-    redIcon: "/ecommerce-red-icon.webp",
-    whiteIcon: "/ecommerce-white-icon.webp",
-    cardWidth: 280,
-  },
+  // {
+  //   title: "E-commerce",
+  //   icon: "/ecommerce-icon.svg",
+  //   description:
+  //     "We build e‑commerce web apps that simplify shopping, payments, and order tracking for you. We design e-commerce apps with smooth checkouts, real-time order updates, and frustration-free navigation. As a trusted web application development agency, we also offer E‑commerce development services separately, creating fast, reliable apps.",
+  //   redIcon: "/ecommerce-red-icon.webp",
+  //   whiteIcon: "/ecommerce-white-icon.webp",
+  //   cardWidth: 280,
+  // },
   {
     title: "E-Learning",
     icon: "/real-state-icon.svg",

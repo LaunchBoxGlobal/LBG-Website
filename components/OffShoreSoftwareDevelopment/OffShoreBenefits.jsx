@@ -50,7 +50,7 @@ const OffShoreBenefits = () => {
                 }}
                 className={`absolute top-0 bg-red-400 rounded-2xl z-20 p-10 flex flex-col items-start justify-center gap-4 h-[220px] overflow-hidden`}
               >
-                <Image
+                <img
                   src={solution?.icon}
                   width={solution?.iconWidth}
                   height={solution?.iconHeight}
@@ -92,7 +92,7 @@ const OffShoreBenefits = () => {
                 className={`w-full lg:w-1/2 p-10 rounded-2xl flex flex-col items-start justify-center gap-4 static lg:absolute h-[220px] leftDiv`}
                 style={{ background: solution?.titleBg }}
               >
-                <Image
+                <img
                   src={solution?.icon}
                   width={solution?.iconWidth}
                   height={solution?.iconHeight}

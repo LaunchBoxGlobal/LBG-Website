@@ -20,7 +20,7 @@ const BrandIdentity = () => {
         and tourists is created while preserving a high-end brand experience.
       </p>
       <div className="w-full mt-10 lg:mt-14">
-        <Image
+        <img
           src="/case-studies/nashville/brand-identity-fonts-mockup.webp"
           alt="Nashville case study showing brand identity fonts mockup"
           width={1267}
@@ -37,7 +37,7 @@ const BrandIdentity = () => {
       </div>
 
       <div className="w-full mt-10 lg:my-14">
-        <Image
+        <img
           src="/case-studies/nashville/nashville-colors-mockup.webp"
           alt="Nashville case study color palette mockup"
           width={1143}
@@ -78,7 +78,7 @@ export const Card = ({ icon, i }) => {
       transition={{ duration: 0.9, ease: "easeOut" }}
       className="iconBox flex items-center justify-center p-5 rounded-xl min-h-[124px] max-h-[144px]"
     >
-      <Image
+      <img
         src={icon}
         key={i}
         width={50}

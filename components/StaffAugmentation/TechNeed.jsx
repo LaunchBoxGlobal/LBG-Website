@@ -24,7 +24,7 @@ const TechNeed = () => {
           <div
             className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#fff] flex flex-col items-start gap-4`}
           >
-            <Image
+            <img
               src={`/staff-augmentation/mobile-app-development-icon.webp`}
               alt={`Mobile App Development Service Icon`}
               width={47}
@@ -50,7 +50,7 @@ const TechNeed = () => {
           <div
             className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#fff] flex flex-col items-start gap-4`}
           >
-            <Image
+            <img
               src={`/staff-augmentation/web-app-development-icon.webp`}
               alt={`Web App Development Service Icon`}
               width={71}
@@ -75,7 +75,7 @@ const TechNeed = () => {
           <div
             className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#fff] flex flex-col items-start gap-4`}
           >
-            <Image
+            <img
               src={`/staff-augmentation/custom-software-development-icon.webp`}
               alt={`Custom Software Development Service Icon`}
               width={62}
@@ -100,7 +100,7 @@ const TechNeed = () => {
           <div
             className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#fff] flex flex-col items-start gap-4`}
           >
-            <Image
+            <img
               src={`/staff-augmentation/ecommerce-app-development-icon.webp`}
               alt={`Ecommerce App Development Service Icon`}
               width={54}
@@ -125,7 +125,7 @@ const TechNeed = () => {
           <div
             className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#fff] flex flex-col items-start gap-4`}
           >
-            <Image
+            <img
               src={`/staff-augmentation/digital-marketing-service-icon.webp`}
               alt={`Digital Marketing Service Icon`}
               width={69}
@@ -147,7 +147,7 @@ const TechNeed = () => {
           <div
             className={`w-full md:w-[318px] min-h-[330px] p-7 rounded-[16px] bg-[#fff] flex flex-col items-start gap-4`}
           >
-            <Image
+            <img
               src={`/staff-augmentation/branding-and-design-icon.webp`}
               alt={`Branding & Design Service Icon`}
               width={47}

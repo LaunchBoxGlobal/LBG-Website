@@ -9,7 +9,7 @@ const FooterCtaAnimation = () => {
       <span className="animate-ping transition-all duration-500 absolute inline-flex h-[220px] w-[220px] rounded-full bg-[#E1E1E1] opacity-35 z-0"></span>
 
       <div className="w-full h-full absolute inset-0">
-        <Image
+        <img
           src={"/staff-augmentation/final-cta-mockup.webp"}
           alt="final cta icons image"
           width={391}

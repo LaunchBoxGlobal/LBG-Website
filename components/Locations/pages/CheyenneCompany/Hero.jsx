@@ -40,7 +40,7 @@ const Hero = () => {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="mx-auto"
         >
-          <Image
+          <img
             src="/locations/cheyenne-seo-company/hero-mockup.webp"
             alt="Cheyenne SEO company dashboard showing keyword rankings and organic traffic analytics"
             width={1596}

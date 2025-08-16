@@ -6,7 +6,7 @@ import Character from "@/components/Common/ServicesAboutSection";
 import Link from "next/link";
 
 const paragraph =
-  "We are one of the leading web app development companies that builds powerful digital solutions for all kinds of businesses. We combine technical expertise with clear communication. Instead of overpromising, we deliver exactly what you need according to your requirements. Our team understands your goals before crafting customized solutions. Whether you need smooth web APIs, scalable web applications, or straightforward web app development services, we’ve got you covered.";
+  "We are one of the leading web app development companies that builds powerful digital solutions for all kinds of businesses. We combine technical expertise with clear communication. Instead of overpromising, we deliver exactly what you need according to your requirements. Our team understands your goals before crafting customized solutions. Whether you need smooth web APIs, scalable web applications, or straightforward web app development services, we’ve got you covered. ";
 
 const About = () => {
   return (

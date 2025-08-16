@@ -15,7 +15,7 @@ const CTA = () => {
         ref={ref}
         className="w-full bg-black text-white relative overflow-hidden min-h-[386px] max-h-[400px] rounded-[17px] px-6 md:px-16 flex flex-col items-start gap-4 justify-center"
       >
-        <Image
+        <img
           src={"/case-studies/nashville/nashville-cta-lines.webp"}
           alt="nashville-cta-lines"
           width={2389}
@@ -45,7 +45,7 @@ const CTA = () => {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="absolute bottom-0 right-0 w-[45%] hidden lg:block"
         >
-          <Image
+          <img
             src={"/case-studies/nashville/nashville-cta-mockup.webp"}
             alt="nashville-cta-mockup"
             width={602}

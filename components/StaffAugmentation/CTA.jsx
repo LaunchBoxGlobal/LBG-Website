@@ -39,7 +39,7 @@ const CTA = () => {
             animate={inView ? { y: 0 } : { y: 400 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
           >
-            <Image
+            <img
               src={"/staff-augmentation/cta-mobile-mockup.webp"}
               alt="cta-mobile-mockup"
               width={620}

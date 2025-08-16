@@ -95,7 +95,7 @@ const AugmentYourTeam = () => {
                 className={`w-full max-w-[390px] min-h-[270px] bg-white hover:bg-[#F40E00] transition-all duration-300 relative group rounded-[17px]`}
               >
                 <div className="w-full h-full absolute inset-0 flex flex-col items-center justify-center gap-5 group-hover:hidden transition-all duration-300">
-                  <Image
+                  <img
                     src={a?.icon}
                     alt={a?.title}
                     width={a?.width}
@@ -105,7 +105,7 @@ const AugmentYourTeam = () => {
                   <h3 className="text-xl lg:text-[32px] font-bold z-10">
                     {a?.title}
                   </h3>
-                  <Image
+                  <img
                     src={a?.image1}
                     width={a?.width1}
                     height={a?.height1}
@@ -122,7 +122,7 @@ const AugmentYourTeam = () => {
                   <p className="text-[18px] text-white leading-[1.1] z-10">
                     {a?.description}
                   </p>
-                  <Image
+                  <img
                     src={a?.image2}
                     width={a?.width2}
                     height={a?.height2}

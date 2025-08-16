@@ -19,7 +19,7 @@ const Process = () => {
       </section>
 
       <div className="w-full mt-10 lg:h-[337px] relative flex flex-col lg:flex-row items-center justify-center gap-2">
-        <Image
+        <img
           src={"/case-studies/fit110/process-background-line.png"}
           alt="process-background-line"
           width={1932}
@@ -32,14 +32,14 @@ const Process = () => {
         })}
       </div>
 
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-right.png"}
         alt="fit110-glow-right"
         width={536}
         height={563}
         className="absolute right-0 top-[-20%] z-0 h-[40vw] w-[50vw]"
       />
-      <Image
+      <img
         src={"/case-studies/fit110/fit110-glow-left.png"}
         alt="fit110-glow-left"
         width={536}

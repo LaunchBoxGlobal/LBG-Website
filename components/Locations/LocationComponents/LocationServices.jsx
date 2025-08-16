@@ -20,7 +20,7 @@ const LocationServices = ({ heading, redText, description, services }) => {
                 className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
                 key={i}
               >
-                <Image
+                <img
                   src={s?.icon}
                   width={s?.iconWidth}
                   height={s?.iconHeight}

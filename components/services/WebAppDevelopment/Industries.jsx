@@ -3,6 +3,7 @@ import React from "react";
 import { WEB_APP_DEVELOPMENT_INDUSTRIES } from "@/constants/web-app-dvelopment/WebAppIndustries";
 import { FiMinus } from "react-icons/fi";
 import { LuPlus } from "react-icons/lu";
+import Link from "next/link";
 
 const Industries = () => {
   return (
@@ -45,6 +46,35 @@ const Industries = () => {
             </button>
           </div>
         ))}
+        <div className="industry-card bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden">
+          <h3 className="text-[26px] font-semibold leading-[1]">E-commerce</h3>
+          <div className="flex items-start justify-between gap-2 relative flex-1 mt-5">
+            <div className="max-w-[85%]">
+              <p className="text-sm lg:text-base xl:text-lg font-normal lg:text-justify leading-[1] xl:leading-[1.2] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                We build e‑commerce web apps that simplify shopping, payments,
+                and order tracking for you. We design e-commerce apps with
+                smooth checkouts, real-time order updates, and frustration-free
+                navigation. As a trusted web application development agency, we
+                also offer{" "}
+                <Link
+                  href={`https://launchboxglobal.com/services/ecommerce-development`}
+                  className="underline"
+                >
+                  E‑commerce development services
+                </Link>{" "}
+                separately, creating fast, reliable apps.
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            className="min-w-[30px] min-h-[30px] max-w-[30px] max-h-[30px] bg-[#f40e00] group-hover:bg-white transition-all duration-300 rounded flex items-center justify-center absolute right-5 bottom-5"
+          >
+            <LuPlus className="text-white group-hover:hidden block transition-all duration-300" />
+            <FiMinus className="text-black group-hover:block hidden transition-all duration-300" />
+          </button>
+        </div>
       </section>
     </section>
   );

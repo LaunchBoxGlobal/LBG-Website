@@ -36,7 +36,7 @@ const Hero = () => {
           </Link>
         </section>
 
-        <Image
+        <img
           src={"/locations/software-dev-company-houston/hero-left-dots.webp"}
           width={28}
           height={95}
@@ -53,7 +53,7 @@ const Hero = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="mx-auto"
           >
-            <Image
+            <img
               src={"/locations/software-dev-company-houston/hero-mockup.webp"}
               width={1172}
               height={609}
@@ -64,7 +64,7 @@ const Hero = () => {
             />
           </motion.div>
 
-          <Image
+          <img
             src={`/locations/software-dev-company-houston/hero-mockup-2.webp`}
             width={194}
             height={191}
@@ -73,7 +73,7 @@ const Hero = () => {
             sizes="(max-width: 768px) 20vw, 194px"
             className="absolute -right-20 bottom-32 hidden lg:block"
           />
-          <Image
+          <img
             src={"/locations/software-dev-company-houston/hero-dots.webp"}
             width={88}
             height={131}

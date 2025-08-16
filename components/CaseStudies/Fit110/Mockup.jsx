@@ -19,7 +19,7 @@ const Mockup = ({ imageSrc, imgAltTag, width, height }) => {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="w-full"
       >
-        <Image
+        <img
           src={imageSrc}
           alt={imgAltTag}
           width={1270}
@@ -31,7 +31,7 @@ const Mockup = ({ imageSrc, imgAltTag, width, height }) => {
         />
       </motion.div>
 
-      <Image
+      <img
         src="/case-studies/fit110/fit110-glow-right.webp"
         alt=""
         role="presentation"
@@ -45,7 +45,7 @@ const Mockup = ({ imageSrc, imgAltTag, width, height }) => {
         className="absolute right-0 top-0 z-0 w-[50vw] h-auto max-w-[536px]"
       />
 
-      <Image
+      <img
         src="/case-studies/fit110/fit110-glow-left.webp"
         alt=""
         role="presentation"

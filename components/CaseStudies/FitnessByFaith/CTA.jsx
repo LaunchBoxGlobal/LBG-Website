@@ -26,7 +26,7 @@ const CTA = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="absolute left-[6%] top-[5%] lg:top-[25%] hidden lg:block"
         >
-          <Image
+          <img
             src={"/case-studies/fitness-by-faith/fitness-by-faith-cta-logo.svg"}
             alt="fitness-by-faith-cta-logo"
             width={129}
@@ -69,7 +69,7 @@ const CTA = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="absolute -right-[10%] -rotate-0 h-[625px] top-[-7%] z-20"
         >
-          <Image
+          <img
             src={"/case-studies/fitness-by-faith/cta-mobile-mockup.webp"}
             alt="cta-mobile-mockup"
             width={280}

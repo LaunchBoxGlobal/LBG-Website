@@ -46,7 +46,7 @@ export const Card = ({ c, i, isEven }) => {
         transition={{ duration: 0.9, ease: "easeOut" }}
         className={`relative ${isEven ? "md:order-1" : "md:order-2"} lg:px-8`}
       >
-        <Image
+        <img
           src={c?.image}
           width={324}
           height={572}
@@ -62,7 +62,7 @@ export const Card = ({ c, i, isEven }) => {
           <span className="text-[#407BA7] text-[200px] lg:text-[300px] font-bold z-0 opacity-20">
             0{i + 1}
           </span>
-          <Image
+          <img
             src={"/case-studies/nashville/challenges-left-arrow.png"}
             alt="challenges left arrow"
             width={162}

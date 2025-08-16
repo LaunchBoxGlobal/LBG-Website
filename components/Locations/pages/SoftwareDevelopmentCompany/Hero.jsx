@@ -39,7 +39,7 @@ const Hero = () => {
 
         <div className="lg:h-[609px] w-full flex justify-center relative items-end mt-10">
           {/* border-grid */}
-          <Image
+          <img
             src="/locations/mobile-app-developer/border-grid.webp"
             width={1427}
             height={887}
@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="mx-auto"
           >
-            <Image
+            <img
               src="/locations/software-development-company/hero-mockup.webp"
               width={1236}
               height={620}

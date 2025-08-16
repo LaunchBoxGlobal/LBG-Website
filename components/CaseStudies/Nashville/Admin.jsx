@@ -13,7 +13,7 @@ const Admin = () => {
         the app stays as alive and evolving as Nashville itself.
       </p>
 
-      <Image
+      <img
         src={
           "/case-studies/nashville/now-you-know-nashville-admin-dashboard-mockup.webp"
         }

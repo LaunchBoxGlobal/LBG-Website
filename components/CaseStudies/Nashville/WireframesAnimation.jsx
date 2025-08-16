@@ -26,7 +26,7 @@ const WireframesAnimation = () => {
     >
       <motion.div style={{ x }} className="flex gap-0 w-max">
         {NASHVILLE_MOCKUPS.map((platform, index) => (
-          <Image
+          <img
             key={index}
             src={platform}
             width={297}

@@ -23,7 +23,7 @@ const Services = () => {
       <section className="w-full flex items-start justify-center flex-wrap mt-14 gap-5 mx-auto">
         <div className="w-full md:w-[45%] lg:w-[32%]">
           <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <Image
+            <img
               src={`/locations/digital-marketing/content-marketing-service-icon.webp`}
               width={`66`}
               height={`53`}
@@ -45,7 +45,7 @@ const Services = () => {
         </div>
         <div className="w-full md:w-[45%] lg:w-[32%]">
           <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <Image
+            <img
               src={`/locations/digital-marketing/email-marketing-service-icon.webp`}
               width={`59`}
               height={`53`}
@@ -73,7 +73,7 @@ const Services = () => {
                 className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
                 key={i}
               >
-                <Image
+                <img
                   src={s?.icon}
                   width={s?.iconWidth}
                   height={s?.iconHeight}

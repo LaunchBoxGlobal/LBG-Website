@@ -41,7 +41,7 @@ const Hero = () => {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="mx-auto"
         >
-          <Image
+          <img
             src="/locations/digital-marketing/hero-mockup.webp"
             alt="Wyoming digital marketing dashboard displaying campaign analytics and audience engagement metrics"
             width={1052}

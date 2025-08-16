@@ -14,10 +14,9 @@ const SmartPlanning = () => {
           Powered by a Well-Defined <span className="red-text">Workflow</span>
         </h2>
         <p className="section-paragraph lg:w-[85%]">
-          Struggling with slow, hard-to-use web apps? Our web app development
-          services create fast, reliable, and easy-to-navigate apps. As a
-          dependable web application development agency, we focus on solving
-          real problems and delivering results that matter.
+          Your project is unique, so we adapt our approach to match your goals
+          and needs. You get open communication, explanation in simple language,
+          and guidance through each step so you always know what’s happening.
         </p>
       </section>
       <NewWorkflow

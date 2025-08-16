@@ -16,7 +16,7 @@ const Banner2 = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="w-full padding-x"
       >
-        <Image
+        <img
           src="/case-studies/nashville/nashville-banner-2.webp"
           alt="Nashville case study banner highlighting creative project design"
           width={1270}

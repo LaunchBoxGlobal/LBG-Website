@@ -24,7 +24,7 @@ const Services = () => {
       <section className="w-full flex items-start justify-center flex-wrap mt-14 gap-5 mx-auto">
         <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
           <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <Image
+            <img
               src={`/locations/mobile-app-developer/cross-platform-app-development-icon.webp`}
               width={`50`}
               height={`53`}
@@ -55,7 +55,7 @@ const Services = () => {
                 className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
                 key={i}
               >
-                <Image
+                <img
                   src={s?.icon}
                   width={s?.iconWidth}
                   height={s?.iconHeight}
@@ -72,7 +72,7 @@ const Services = () => {
         })}
         <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
           <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <Image
+            <img
               src={`/locations/mobile-app-developer/ui-ux-design-service-icon.png`}
               width={`51`}
               height={`53`}

@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
             Wyoming Market Experts
           </h3>
-          <Image
+          <img
             src={`/locations/digital-marketing/marketing-experts-icon.webp`}
             width={71}
             height={70}
@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
             Real Campaign Results
           </h3>
-          <Image
+          <img
             src={`/locations/digital-marketing/campaign-icon-why-choose-us.webp`}
             width={75}
             height={70}
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
             Transparent Pricing
           </h3>
-          <Image
+          <img
             src={`/locations/digital-marketing/transparent-pricing-icon.webp`}
             width={74}
             height={70}
@@ -89,7 +89,7 @@ const WhyChooseUs = () => {
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
             Fast Local Support
           </h3>
-          <Image
+          <img
             src={`/locations/digital-marketing/fast-local-support-icon.webp`}
             width={50}
             height={70}
@@ -108,7 +108,7 @@ const WhyChooseUs = () => {
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
             Content That Converts
           </h3>
-          <Image
+          <img
             src={`/locations/digital-marketing/content-that-converts-icon.webp`}
             width={78}
             height={70}
@@ -127,7 +127,7 @@ const WhyChooseUs = () => {
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
             Dual Expertise
           </h3>
-          <Image
+          <img
             src={`/locations/digital-marketing/dual-expertise-icon.webp`}
             width={70}
             height={70}

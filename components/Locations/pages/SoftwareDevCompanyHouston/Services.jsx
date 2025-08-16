@@ -27,7 +27,7 @@ const Services = () => {
                 className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
                 key={i}
               >
-                <Image
+                <img
                   src={s?.icon}
                   width={s?.iconWidth}
                   height={s?.iconHeight}
@@ -44,7 +44,7 @@ const Services = () => {
         })}
         <div className="w-full md:w-[45%] lg:w-[32%] min-h-[320px]">
           <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <Image
+            <img
               src={`/locations/software-dev-company-houston/mvp-development-service-icon.png`}
               width={68}
               height={53}

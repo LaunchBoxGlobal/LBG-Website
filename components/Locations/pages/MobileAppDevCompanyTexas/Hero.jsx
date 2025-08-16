@@ -44,7 +44,7 @@ const Hero = () => {
           transition={{ duration: 0.9, ease: "easeOut" }}
           className="mx-auto"
         >
-          <Image
+          <img
             src={"/locations/mobile-app-dev-company-texas/mobile-mockup.webp"}
             width={1472}
             height={614}

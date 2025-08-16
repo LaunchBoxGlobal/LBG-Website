@@ -68,7 +68,7 @@ const TechAndTools = () => {
               {products?.map((p, i) => {
                 return (
                   <div className="flex flex-col items-start gap-2">
-                    <Image
+                    <img
                       src={p?.image}
                       width={p?.width}
                       height={p?.height}
@@ -86,7 +86,7 @@ const TechAndTools = () => {
               {progamming?.map((p, i) => {
                 return (
                   <div className="flex flex-col items-start gap-2">
-                    <Image
+                    <img
                       src={p?.image}
                       width={p?.width}
                       height={p?.height}

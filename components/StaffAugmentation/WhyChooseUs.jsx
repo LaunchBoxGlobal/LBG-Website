@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
                 <h3 className="font-semibold text-[20px] xl:text-[22px]">
                   {c?.title}
                 </h3>
-                <Image
+                <img
                   src={c?.icon}
                   width={c?.iconWidth}
                   height={c?.iconHeight}
@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
                 <h3 className="font-semibold text-[20px] xl:text-[22px]">
                   {c?.title}
                 </h3>
-                <Image
+                <img
                   src={c?.icon}
                   width={c?.iconWidth}
                   height={c?.iconHeight}

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { WEB_APP_DEVELOPMENT_SERVICES } from "@/constants/web-app-dvelopment/WebAppDevServices";
 import ServiceCard from "@/components/Global/ServiceCard";
+import Link from "next/link";
 
 const Services = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -22,7 +23,14 @@ const Services = () => {
           team of expert web app developers has got you covered. We specialize
           in web application development services, building everything from
           custom web apps to powerful web APIs that keep your business running
-          smoothly & make 10X revenue quickly.
+          smoothly & make 10X revenue quickly. And in case you’re looking for{" "}
+          <Link
+            href={`https://launchboxglobal.com/web-development-company-in-new-jersey`}
+            className="underline"
+          >
+            web app development services in New Jersey,{" "}
+          </Link>
+          our local team is right there to support you in person.
         </p>
       </section>
 
