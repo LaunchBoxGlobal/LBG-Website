@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Banner01 from "./Banner01";
 
 const Hero = () => {
   return (
@@ -26,7 +27,10 @@ const Hero = () => {
         growing operational needs.
       </p>
       <div className="flex items-center justify-center gap-2">
-        <Link href="/" aria-label="Download on the App Store">
+        <Link
+          href="/case-studies/jb-sittner-trucking"
+          aria-label="Download on the App Store"
+        >
           <Image
             src="/app-store-button-image.webp"
             alt="Download on the App Store"
@@ -41,7 +45,10 @@ const Hero = () => {
           />
         </Link>
 
-        <Link href="/" aria-label="Get it on Google Play">
+        <Link
+          href="/case-studies/jb-sittner-trucking"
+          aria-label="Get it on Google Play"
+        >
           <Image
             src="/google-play-button-image.webp"
             alt="Get it on Google Play"
@@ -110,18 +117,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <img
-        src="/case-studies/sittner-trucking/jb-sittner-trucking-banner-01.png"
-        alt="jb-sittner-trucking-banner-01"
-        width={1270}
-        height={593}
-        quality={85}
-        priority
-        sizes="(max-width: 640px) 100vw, 
-         (max-width: 1024px) 90vw, 
-         1270px"
-        className="w-full h-auto"
-      />
+      <Banner01 />
     </section>
   );
 };

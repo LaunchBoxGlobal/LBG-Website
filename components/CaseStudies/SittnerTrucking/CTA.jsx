@@ -12,11 +12,10 @@ const CTA = () => {
       <div className="w-full bg-black p-10 lg:p-20 rounded-[68px] text-white grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
         <div>
           <h2 className="font-semibold text-[35px] lg:text-[60px] xl:text-[70px] leading-[1]">
-            Want your brand featured up next?
+            Streamline your Trucking Communication today
           </h2>
           <p className="font-medium text-lg lg:text-[26px] leading-[1.2] mt-3">
-            You’re just one call away from turning your brand into our next
-            success story. Let’s talk!
+            Boost efficiency with the real time updates fluent coordination
           </p>
           <div className="mt-5">
             <Link
@@ -32,7 +31,7 @@ const CTA = () => {
                 className="w-[41px] h-[41px] lg:w-[61px] lg:h-[61px]"
               />
               <span className="font-semibold text-lg lg:text-[26px] leading-[1]">
-                Let’s Work Together
+                Get started Now
               </span>
             </Link>
           </div>

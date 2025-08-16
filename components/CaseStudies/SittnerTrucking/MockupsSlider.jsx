@@ -16,7 +16,7 @@ const mockups = [
 const MockupsSlider = () => {
   return (
     <div className="mt-10 overflow-hidden relative w-full">
-      <div className="flex animate-slide-sittner-mockups py-10">
+      <div className="flex animate-slide-sittner-mockups py-14">
         {[...mockups, ...mockups].map((src, i) => (
           <div key={i} className="flex-shrink-0 w-[300px] lg:w-[600px] mx-4">
             <img
@@ -24,12 +24,12 @@ const MockupsSlider = () => {
               alt={`mockup-${i}`}
               width={805}
               height={503}
-              className="rounded-xl shadow-lg w-[300px] lg:w-[600px] object-contain custom-shadow"
+              className="rounded-xl shadow-lg w-[300px] lg:w-[600px] object-contain sittner-mockup"
             />
           </div>
         ))}
       </div>
-      <div className="flex animate-slide-sittner-mockups-reverse py-10">
+      <div className="flex animate-slide-sittner-mockups-reverse pb-14">
         {[...mockups, ...mockups].map((src, i) => (
           <div key={i} className="flex-shrink-0 w-[300px] lg:w-[600px] mx-4">
             <img
@@ -37,7 +37,7 @@ const MockupsSlider = () => {
               alt={`mockup-${i}`}
               width={805}
               height={503}
-              className="rounded-xl shadow-lg w-[300px] lg:w-[600px] custom-shadow"
+              className="rounded-xl shadow-lg w-[300px] lg:w-[600px] object-contain sittner-mockup"
             />
           </div>
         ))}

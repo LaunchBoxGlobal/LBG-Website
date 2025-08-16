@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/StaffAugmentation/AnimatedText";
 import { MEASURING_SUCCESS_CONTENT } from "@/constants/case-studies/sittner-trucking-content/measuring-success";
 import Image from "next/image";
 import React from "react";
@@ -16,26 +17,25 @@ const MeasuringSuccess = () => {
       <div className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {MEASURING_SUCCESS_CONTENT?.map((c, i) => {
           return (
-            <div
-              key={i}
-              className="bg-black text-white flex  items-start gap-3 rounded-xl p-5"
-            >
-              <div className="">
-                <img
-                  src={c?.icon}
-                  width={c?.width}
-                  height={c?.height}
-                  alt={`${c?.title} icon`}
-                  className="min-w-[42px] min-h-[42px]"
-                />
+            <AnimatedText key={i}>
+              <div className="bg-black text-white flex  items-start gap-3 rounded-xl p-5">
+                <div className="">
+                  <img
+                    src={c?.icon}
+                    width={c?.width}
+                    height={c?.height}
+                    alt={`${c?.title} icon`}
+                    className="min-w-[42px] min-h-[42px]"
+                  />
+                </div>
+                <div className="flex flex-col items-start gap-3">
+                  <h3 className="text-[18px] font-semibold leading-none">
+                    {c?.title}
+                  </h3>
+                  <p className="text-base leading-[1]">{c?.description}</p>
+                </div>
               </div>
-              <div className="flex flex-col items-start gap-3">
-                <h3 className="text-[18px] font-semibold leading-none">
-                  {c?.title}
-                </h3>
-                <p className="text-lg leading-[1]">{c?.description}</p>
-              </div>
-            </div>
+            </AnimatedText>
           );
         })}
       </div>

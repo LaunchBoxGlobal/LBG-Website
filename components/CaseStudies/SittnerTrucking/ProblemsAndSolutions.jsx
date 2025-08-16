@@ -44,9 +44,10 @@ const ProblemsAndSolutions = () => {
                     <li
                       key={index}
                       onMouseEnter={() => setValue(index)}
-                      className={`text-xl font-medium leading-[1.2] flex items-start gap-1 relative py-5 ${
-                        index === value &&
-                        "border-t-2 border-[#02EA4C] rounded-t-2xl"
+                      className={`text-xl font-medium leading-[1.2] flex items-start gap-1 relative py-5 rounded-t-2xl ${
+                        index === value
+                          ? "border-t-2 border-[#02EA4C]"
+                          : "border-t-2 border-black"
                       }`}
                     >
                       <GoDotFill className="sittner-primary-text min-w-6 min-h-6" />
@@ -80,9 +81,10 @@ const ProblemsAndSolutions = () => {
                     <li
                       key={index}
                       onMouseEnter={() => setValue(index)}
-                      className={`text-xl font-medium leading-[1.2] flex items-start gap-1 relative py-5 text-[#212121] ${
-                        index === value &&
-                        "border-t-2 border-[#118B10] rounded-t-2xl"
+                      className={`text-xl font-medium leading-[1.2] flex items-start gap-1 relative py-5 text-[#212121] rounded-t-2xl ${
+                        index === value
+                          ? "border-t-2 border-[#118B10]"
+                          : "border-t-2 border-[#EBF3EA]"
                       }`}
                     >
                       <GoDotFill className="text-[#118B10] min-w-6 min-h-6" />

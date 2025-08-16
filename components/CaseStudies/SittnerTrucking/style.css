@@ -75,3 +75,11 @@
   animation: slide-reverse 40s linear infinite;
   width: max-content;
 }
+
+.sittner-mockup:hover {
+  box-shadow: -154px 110px 312px -26px rgba(104, 100, 100, 0.73);
+  -webkit-box-shadow: -154px 110px 312px -26px rgba(104, 100, 100, 0.73);
+  -moz-box-shadow: -154px 110px 312px -26px rgba(104, 100, 100, 0.73);
+  transition: all 0.3s;
+  z-index: 100;
+}
