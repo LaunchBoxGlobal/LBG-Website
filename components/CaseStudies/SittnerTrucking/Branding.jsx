@@ -55,10 +55,9 @@ const Branding = () => {
               key={i}
               style={{
                 background: c?.color,
-
                 zIndex: colors.length + i,
               }}
-              className={`w-[70px] h-[70px] md:w-[130px] md:h-[130px] midlg:w-[260px] midlg:h-[260px] rounded-full border-[5px] border-white relative ${
+              className={`w-[70px] h-[70px] md:w-[130px] md:h-[130px] midlg:w-[210px] midlg:h-[210px] rounded-full border-[5px] border-white relative ${
                 i === 0 ? "ml-0" : "ml-[-20px] lg:ml:[-60px]"
               }`}
             >
