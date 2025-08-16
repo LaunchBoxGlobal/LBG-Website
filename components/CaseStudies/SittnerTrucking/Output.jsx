@@ -11,10 +11,6 @@ const Output = () => {
   const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: false });
   const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: false });
   const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: false });
-  const { ref: ref7, inView: inView7 } = useInView({ triggerOnce: false });
-  const { ref: ref8, inView: inView8 } = useInView({ triggerOnce: false });
-  const { ref: ref9, inView: inView9 } = useInView({ triggerOnce: false });
-  const { ref: ref10, inView: inView10 } = useInView({ triggerOnce: false });
   return (
     <section className="w-full overflow-hidden py-40 relative">
       <section className="w-full lg:w-[90%] 2xl:w-[80%] mx-auto relative px-6 lg:px-0">
@@ -23,7 +19,7 @@ const Output = () => {
           alt="output-section-lines"
           width={846}
           height={2100}
-          className="absolute left-1/2 -translate-x-1/2 top-[10%] midlg:top-[8%] z-10 hidden lg:block lg:w-[70%]"
+          className="absolute left-1/2 -translate-x-1/2 top-[10%] midlg:top-[10%] z-10 hidden lg:block lg:w-[70%]"
         />
         <div ref={ref1} className="flex justify-center relative">
           <img
@@ -35,8 +31,8 @@ const Output = () => {
           />
           <motion.div
             className="z-30"
-            initial={{ scale: 0.7 }}
-            animate={inView1 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView1 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -46,7 +42,7 @@ const Output = () => {
               alt="jb-sittner-trucking-login-screen-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[40%] mx-auto"
+              className="object-contain z-20 lg:w-[45%] mx-auto"
             />
           </motion.div>
         </div>
@@ -57,8 +53,8 @@ const Output = () => {
         >
           <motion.div
             className="z-30"
-            initial={{ scale: 0.7 }}
-            animate={inView2 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView2 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -66,13 +62,13 @@ const Output = () => {
               alt="jb-sittner-trucking-dashboard-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[74%]"
+              className="object-contain z-20 lg:w-[80%]"
             />
           </motion.div>
           <motion.div
             className="z-30 flex justify-center lg:justify-end"
-            initial={{ scale: 0.7 }}
-            animate={inView2 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView2 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -80,16 +76,16 @@ const Output = () => {
               alt="jb-sittner-trucking-profile-screen-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[74%]"
+              className="object-contain z-20 lg:w-[80%]"
             />
           </motion.div>
         </div>
 
-        <div ref={ref3} className="flex justify-center mt-14 midlg:mt-20 z-20">
+        <div ref={ref3} className="flex justify-center mt-14 midlg:mt-28 z-20">
           <motion.div
             className="z-30 mx-auto"
-            initial={{ scale: 0.7 }}
-            animate={inView3 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView3 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -99,7 +95,7 @@ const Output = () => {
               alt="jb-sittner-trucking-edit-profile-screen-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[40%] mx-auto"
+              className="object-contain z-20 lg:w-[45%] mx-auto"
             />
           </motion.div>
         </div>
@@ -110,8 +106,8 @@ const Output = () => {
         >
           <motion.div
             className="z-30 inline-block"
-            initial={{ scale: 0.7 }}
-            animate={inView4 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView4 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -119,13 +115,13 @@ const Output = () => {
               alt="jb-sittner-trucking-dashboard-mockup-2"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[74%]"
+              className="object-contain z-20 lg:w-[80%]"
             />
           </motion.div>
           <motion.div
             className="z-30 flex justify-center lg:justify-end"
-            initial={{ scale: 0.7 }}
-            animate={inView4 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView4 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -133,7 +129,7 @@ const Output = () => {
               alt="jb-sittner-trucking-schedule-message-screen-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[74%]"
+              className="object-contain z-20 lg:w-[80%]"
             />
           </motion.div>
           <div className="sittner-glow-2 w-[30rem] h-[30rem] absolute -left-[20%] bottom-[-40%] opacity-20" />
@@ -143,8 +139,8 @@ const Output = () => {
         <div ref={ref5} className="flex justify-center mt-14 midlg:mt-20">
           <motion.div
             className="z-30"
-            initial={{ scale: 0.7 }}
-            animate={inView5 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView5 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -154,7 +150,7 @@ const Output = () => {
               alt="jb-sittner-trucking-message-board-screen-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[40%] mx-auto"
+              className="object-contain z-20 lg:w-[45%] mx-auto"
             />
           </motion.div>
         </div>
@@ -165,8 +161,8 @@ const Output = () => {
         >
           <motion.div
             className="z-30"
-            initial={{ scale: 0.7 }}
-            animate={inView6 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView6 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -174,13 +170,13 @@ const Output = () => {
               alt="jb-sittner-trucking-employees-list-screen-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[74%]"
+              className="object-contain z-20 lg:w-[80%]"
             />
           </motion.div>
           <motion.div
             className="z-30 flex justify-center lg:justify-end"
-            initial={{ scale: 0.7 }}
-            animate={inView6 ? { scale: 1 } : { scale: 0.7 }}
+            initial={{ y: 50 }}
+            animate={inView6 ? { y: 0 } : { y: 50 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <img
@@ -188,7 +184,7 @@ const Output = () => {
               alt="jb-sittner-trucking-edit-employee-screen-mockup"
               width={496}
               height={478}
-              className="object-contain z-20 lg:w-[74%]"
+              className="object-contain z-20 lg:w-[80%]"
             />
           </motion.div>
 

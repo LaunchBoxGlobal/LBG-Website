@@ -15,7 +15,7 @@ const Technologies = () => {
                 // key={i}
                 style={{ width: t?.boxWidth }}
               >
-                <Image
+                <img
                   src={t?.icon}
                   width={t?.width}
                   height={t?.height}
@@ -37,7 +37,7 @@ const Technologies = () => {
                 // key={i}
                 // style={{ width: t?.boxWidth }}
               >
-                <Image
+                <img
                   src={t?.icon}
                   width={t?.width}
                   height={t?.height}

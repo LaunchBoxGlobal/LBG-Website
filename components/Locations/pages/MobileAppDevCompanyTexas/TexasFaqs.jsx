@@ -37,7 +37,7 @@ const TexasFaqs = ({ faqs }) => {
                 </span>
               </h5>
 
-              <Image
+              <img
                 src={"/faq-arrow-icon.png"}
                 width={24}
                 height={20}
@@ -97,7 +97,7 @@ const TexasFaqs = ({ faqs }) => {
               </span>
             </h5>
 
-            <Image
+            <img
               src={"/faq-arrow-icon.png"}
               width={24}
               height={20}

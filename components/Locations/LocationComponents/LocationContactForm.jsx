@@ -6,7 +6,7 @@ const LocationContactForm = ({ heading, description, buttonTitle }) => {
   return (
     <section className="w-full padding-x py-10 lg:py-20 mb-5 lg:mb-14 relative">
       <section className="w-full z-20 bg-[#212121] rounded-2xl p-8 lg:p-20 grid grid-cols-1 lg:grid-cols-2 gap-10 relative">
-        <Image
+        <img
           src={"/create-your-mobile-app-map.png"}
           alt="map image"
           width={600}

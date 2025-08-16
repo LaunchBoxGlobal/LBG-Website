@@ -69,7 +69,7 @@ const PortfolioCard = ({
             "w-full h-[50vh] md:h-[80vh] flex flex-col relative top-[-25%] rounded-3xl bg-transparent"
           }
         >
-          <Image
+          <img
             src={image}
             alt={title}
             width={1100}

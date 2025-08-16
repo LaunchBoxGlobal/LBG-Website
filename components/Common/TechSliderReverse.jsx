@@ -31,7 +31,7 @@ const TechSliderReverse = () => {
             className="border px-3 py-2 rounded-xl flex items-center justify-center gap-3"
           >
             <div className="bg-white custom-shadow w-[29px] h-[29px] lg:w-[53px] lg:h-[53px] flex items-center justify-center p-1 lg:p-2.5 rounded-xl">
-              <Image
+              <img
                 key={index}
                 src={platform?.image}
                 width={20}

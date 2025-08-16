@@ -52,7 +52,7 @@ const LocationStats = ({ heading, redText, description }) => {
               className="w-full flex flex-col items-center justify-center gap-0"
             >
               <div className="w-14 h-14 bg-[#F9F9F9] flex items-center justify-center rounded-xl p-3">
-                <Image
+                <img
                   src={stat.icon}
                   width={37}
                   height={45}

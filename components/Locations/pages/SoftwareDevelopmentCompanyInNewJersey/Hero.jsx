@@ -43,7 +43,7 @@ const Hero = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="mx-auto"
           >
-            <Image
+            <img
               src="/locations/software-dev-company-new-jersey/hero-mockup.webp"
               width={1428}
               height={592}

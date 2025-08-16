@@ -23,7 +23,7 @@ const Services = () => {
           return (
             <div key={i} className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
               <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-                <Image
+                <img
                   src={s?.icon}
                   width={s?.iconWidth}
                   height={s?.iconHeight}
