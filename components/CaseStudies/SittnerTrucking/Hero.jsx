@@ -110,7 +110,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <Image
+      <img
         src="/case-studies/sittner-trucking/jb-sittner-trucking-banner-01.png"
         alt="jb-sittner-trucking-banner-01"
         width={1270}

@@ -19,7 +19,7 @@ const MockupsSlider = () => {
       <div className="flex animate-slide-sittner-mockups py-10">
         {[...mockups, ...mockups].map((src, i) => (
           <div key={i} className="flex-shrink-0 w-[300px] lg:w-[600px] mx-4">
-            <Image
+            <img
               src={src}
               alt={`mockup-${i}`}
               width={805}
@@ -32,7 +32,7 @@ const MockupsSlider = () => {
       <div className="flex animate-slide-sittner-mockups-reverse py-10">
         {[...mockups, ...mockups].map((src, i) => (
           <div key={i} className="flex-shrink-0 w-[300px] lg:w-[600px] mx-4">
-            <Image
+            <img
               src={src}
               alt={`mockup-${i}`}
               width={805}

@@ -15,7 +15,7 @@ const Research = () => {
           return <ResearchCard research={research} key={index} index={index} />;
         })}
 
-        <Image
+        <img
           src={
             "/case-studies/sittner-trucking/understanding-the-problem-green-line.png"
           }

@@ -45,7 +45,7 @@ const OtherCaseStudies = () => {
           return (
             <Link key={i} href={c?.url}>
               <div className="w-full relative space-y-4">
-                <Image
+                <img
                   src={c?.image}
                   width={403}
                   height={380}

@@ -39,7 +39,7 @@ const Branding = () => {
       </p>
 
       <div className="w-full mt-20">
-        <Image
+        <img
           src={`/case-studies/sittner-trucking/branding-fonts-mockup.png`}
           alt="branding-fonts-mockup"
           width={733}

@@ -13,7 +13,7 @@ const ResearchCard = ({ research, index }) => {
       }`}
     >
       <div className="rounded-full sittner-primary-bg w-[88px] h-[88px] flex items-center justify-center">
-        <Image
+        <img
           src={research?.icon}
           width={research?.width}
           height={research?.height}

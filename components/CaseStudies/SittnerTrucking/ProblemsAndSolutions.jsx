@@ -27,7 +27,7 @@ const ProblemsAndSolutions = () => {
         <div>
           <div className="bg-black rounded-[23px] p-5 lg:p-7 xl:p-10 text-white">
             <div className="w-full flex items-center gap-2">
-              <Image
+              <img
                 src={"/case-studies/sittner-trucking/problems-icon.png"}
                 alt="problems-icon"
                 width={63}
@@ -61,7 +61,7 @@ const ProblemsAndSolutions = () => {
         <div>
           <div className="bg-[#EBF3EA] rounded-[23px] p-5 lg:p-7 xl:p-10">
             <div className="w-full flex items-center gap-2">
-              <Image
+              <img
                 src={"/case-studies/sittner-trucking/solutions-icon.png"}
                 alt="solutions icon"
                 width={63}

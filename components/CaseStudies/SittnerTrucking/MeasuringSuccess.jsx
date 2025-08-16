@@ -21,7 +21,7 @@ const MeasuringSuccess = () => {
               className="bg-black text-white flex  items-start gap-3 rounded-xl p-5"
             >
               <div className="">
-                <Image
+                <img
                   src={c?.icon}
                   width={c?.width}
                   height={c?.height}

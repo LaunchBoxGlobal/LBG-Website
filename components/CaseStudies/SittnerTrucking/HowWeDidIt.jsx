@@ -13,7 +13,7 @@ const HowWeDidIt = () => {
       </p>
 
       <div className="w-full mt-10 lg:mt-14">
-        <Image
+        <img
           src={"/case-studies/sittner-trucking/how-we-did-it-steps.png"}
           alt="how-we-did-it-steps"
           width={1280}
