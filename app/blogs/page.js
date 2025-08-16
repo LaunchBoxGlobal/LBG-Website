@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Browse our blog archive for practical advice, inspiring stories, and tips to grow your skills. Fresh content updated weekly!",
   alternates: {
-    canonical: "https://launchboxglobal.com/blogs",
+    canonical: "https://launchboxglobal.com/blog",
   },
 };
 

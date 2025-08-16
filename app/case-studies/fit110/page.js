@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Fit110 is DEKO's redesigned fitness equipment website. We created a faster shopping experience with health-focused SEO and conversion-optimized pages.",
   alternates: {
-    canonical: `href="https://launchboxglobal.com/case-studies/fit110"`,
+    canonical: `https://launchboxglobal.com/case-studies/fit110`,
   },
 };
 

@@ -9,6 +9,7 @@ export async function generateMetadata({ params }) {
   );
 
   const meta = BLOGS_METADATA[params?.slug] || {};
+  console.log("meta >> ", meta);
 
   const data = await res?.json();
   const blog = data?.[0];

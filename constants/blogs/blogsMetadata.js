@@ -1354,7 +1354,7 @@ export const BLOGS_METADATA = {
       },
     ],
   },
-  "top-platforms-like-reddit-in-2025-Discover-the-best-sites-like-reddit-for-community-discussions":
+  "top-platforms-like-reddit-in-2025-discover-the-best-sites-like-reddit-for-community-discussions":
     {
       title: "Best Sites Like Reddit in 2025 for Discussions",
       description:
