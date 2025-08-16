@@ -67,7 +67,7 @@ const Hero = () => {
       <div className="w-full flex lg:items-center gap-4 flex-col lg:flex-row items-start justify-between tracking-tight lg:border border-[#02ea4c] rounded-full md:px-8 min-h-[107px] my-20 sittner-hover">
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#02ea4c] rounded-full flex items-center justify-center">
-            <Image
+            <img
               src={"/case-studies/time-icon.webp"}
               alt="time-icon"
               width={40}
@@ -77,14 +77,14 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-start gap-1">
             <p className="text-lg text-gray-500">The Milestones</p>
-            <p className="text-[18px] lg:text-[20px] font-bold">
-              152 days of progress
+            <p className="text-[18px] xl:text-[20px] leading-[1] font-bold">
+              182.5 Days on the Road
             </p>
           </div>
         </div>
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#02ea4c] rounded-full flex items-center justify-center">
-            <Image
+            <img
               src={"/case-studies/globe-icon.webp"}
               alt="time-icon"
               width={40}
@@ -94,14 +94,14 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-start gap-1">
             <p className="text-lg text-gray-500">The Sector</p>
-            <p className="text-[18px] lg:text-[20px] font-bold">
-              Tourism & City Exploration
+            <p className="text-[18px] xl:text-[20px] leading-[1] font-bold">
+              Commercial Trucking and Logistic Tech
             </p>
           </div>
         </div>
         <div className="flex items-center gap-3">
           <div className="min-w-[66px] h-[66px] bg-[#02ea4c] rounded-full flex items-center justify-center">
-            <Image
+            <img
               src={"/case-studies/constribution-icon.webp"}
               alt="time-icon"
               width={44}
@@ -111,8 +111,8 @@ const Hero = () => {
           </div>
           <div className="flex flex-col items-start gap-1">
             <p className="text-lg text-gray-500">What We Did</p>
-            <p className="text-[18px] lg:text-[20px] font-bold">
-              Mobile App Development, Branding & UI/UX Design
+            <p className="text-[18px] xl:text-[20px] leading-[1] font-bold">
+              Web App Development & UI/UX Design
             </p>
           </div>
         </div>

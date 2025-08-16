@@ -10,12 +10,13 @@ const CTA = () => {
   return (
     <section className="w-full padding-x relative overflow-hidden">
       <div className="w-full bg-black p-10 lg:p-20 rounded-[68px] text-white grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
-        <div>
+        <div className="flex flex-col items-start justify-center gap-3">
           <h2 className="font-semibold text-[35px] lg:text-[60px] xl:text-[70px] leading-[1]">
-            Streamline your Trucking Communication today
+            Your Success Story starts here
           </h2>
           <p className="font-medium text-lg lg:text-[26px] leading-[1.2] mt-3">
-            Boost efficiency with the real time updates fluent coordination
+            Let’s turn your project into our next standout case study, proven
+            results, not just promises.
           </p>
           <div className="mt-5">
             <Link
@@ -31,7 +32,7 @@ const CTA = () => {
                 className="w-[41px] h-[41px] lg:w-[61px] lg:h-[61px]"
               />
               <span className="font-semibold text-lg lg:text-[26px] leading-[1]">
-                Get started Now
+                Start with a free call
               </span>
             </Link>
           </div>

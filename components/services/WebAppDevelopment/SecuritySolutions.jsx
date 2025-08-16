@@ -34,15 +34,19 @@ const SecuritySolutions = () => {
                   {model?.title}
                 </h3>
                 {/* <p className="text-lg text-gray-700">{model?.description}</p> */}
-                <ul className="w-full">
+                <ul className="w-full space-y-3">
                   {model?.benefits?.map((benefit, i) => {
                     return (
                       <li
                         key={i}
-                        className="flex items-center justify-start gap-2"
+                        className="flex items-start justify-start gap-2"
                       >
-                        <GoDotFill className="text-xl text-gray-700" />
-                        <span className="text-lg text-gray-700">{benefit}</span>
+                        <div className="min-w-6">
+                          <GoDotFill className="text-xl text-gray-700 relative" />
+                        </div>
+                        <span className="text-lg text-gray-700 leading-[1.1]">
+                          {benefit}
+                        </span>
                       </li>
                     );
                   })}

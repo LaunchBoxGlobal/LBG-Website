@@ -23,7 +23,7 @@ const Industries = () => {
       <section className="industries-wrapper w-full mt-10 lg:mt-16 flex flex-wrap gap-2">
         {WEB_APP_DEVELOPMENT_INDUSTRIES?.map((industry, index) => (
           <div
-            className="industry-card h-[300px] md:h-[280px] lg:h-[330px] midlg:h-[360px] xl:max-h-[340px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden"
+            className="industry-card h-[300px] md:h-[280px] lg:h-[330px] midlg:h-[340px] xl:max-h-[340px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden"
             key={index}
           >
             <h3 className="text-[26px] font-semibold leading-[1]">
@@ -46,11 +46,11 @@ const Industries = () => {
             </button>
           </div>
         ))}
-        <div className="industry-card h-[300px] md:h-[280px] lg:h-[330px] midlg:h-[360px] xl:max-h-[340px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden">
+        <div className="industry-card h-[300px] md:h-[280px] lg:h-[330px] midlg:h-[340px] xl:max-h-[340px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden">
           <h3 className="text-[26px] font-semibold leading-[1]">E-commerce</h3>
           <div className="flex items-start justify-between gap-2 relative flex-1 mt-5">
             <div className="max-w-[85%]">
-              <p className="text-sm lg:text-base xl:text-lg font-normal lg:text-justify leading-[1] xl:leading-[1.2] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="text-sm lg:text-base xl:text-lg font-normal lg:text-start leading-[1] xl:leading-[1.2] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 We build e‑commerce web apps that simplify shopping, payments,
                 and order tracking for you. We design e-commerce apps with
                 smooth checkouts, real-time order updates, and frustration-free
