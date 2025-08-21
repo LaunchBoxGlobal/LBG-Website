@@ -19,6 +19,7 @@ const PortfolioCard = ({
   targetScale,
   image,
   setIsHovering,
+  alt_tag,
 }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -71,7 +72,7 @@ const PortfolioCard = ({
         >
           <img
             src={image}
-            alt={title}
+            alt={alt_tag || ""}
             width={1100}
             height={727}
             loading="lazy"

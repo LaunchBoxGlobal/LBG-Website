@@ -3,7 +3,7 @@ import Script from "next/script";
 import React from "react";
 
 export const metadata = {
-  title: "Expert Mobile App Development Services in Texas | LaunchBox Global",
+  title: "Top Leading Mobile App Development Company in Texas",
   description:
     "Transform your business with top-notch mobile app development in Texas. LaunchBox Global builds custom iOS and Android apps. Book a free consultation!",
   alternates: {

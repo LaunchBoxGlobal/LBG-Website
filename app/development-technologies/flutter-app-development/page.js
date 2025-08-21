@@ -2,7 +2,7 @@ import FlutterAppDevelopmentPage from "@/components/services/FlutterAppDevelopme
 import React from "react";
 
 export const metadata = {
-  title: "Flutter App Development Company | Build Cross-Platform Apps Fast",
+  title: "Flutter App Development Company | LaunchBox Global",
   description:
     "Top Flutter app development company crafting high-performance iOS & Android apps with a single codebase. Save time & costs with our expert solutions. Get started today!",
   alternates: {
