@@ -21,8 +21,8 @@ const MobileAppDevContactForm = () => {
             Let’s Build the Perfect Solution for You
           </h3> */}
           <p className="text-lg lg:text-[20px] font-medium z-10 mt-5">
-            Get a free app plan with clear costs and timelines, no surprises,
-            just results.
+            Get a free software plan with transparent costs and timelines—no
+            surprises, just results.
           </p>
         </div>
         <div className="w-full z-10">

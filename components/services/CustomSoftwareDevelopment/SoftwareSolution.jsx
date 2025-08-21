@@ -41,7 +41,7 @@ const SoftwareSolution = () => {
             {CUSTOM_SOFTWARE_FOR_EVERY_BUSINESS?.map((b, i) => {
               return (
                 <div
-                  className="w-full bg-[#F6F6F6] space-y-3 p-7 rounded-[16px] space-y-2 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+                  className="w-full bg-[#F6F6F6] space-y-3 p-7 rounded-[16px] relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
                   key={i}
                 >
                   <h3 className="text-[20px] font-semibold leading-none">
