@@ -29,7 +29,7 @@ const HomeHero = () => {
   useEffect(() => {
     if (videoRef.current) {
       // Set playback speed to 1.5 (1.5x speed)
-      videoRef.current.playbackRate = 0.5;
+      videoRef.current.playbackRate = 0.9;
     }
   }, []);
   return (
