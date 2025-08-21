@@ -28,13 +28,13 @@ export const CUSTOM_SOFTWARE_CASE_STUDIES = [
     image:
       "/case-studies/fitness-by-faith/fitness-by-faith-admin-dashboard-mockup.webp",
   },
-  {
-    title: "Fit 110",
-    description:
-      "We built an e‑commerce site to sell smarter. Clear categories, fast checkout, and fitness gear that feels easy to buy.",
-    src: "tree.jpg",
-    link: "/case-studies/fit110",
-    color: "#977F6D",
-    image: "/case-studies/fit110/fit110-case-study-mockup.webp",
-  },
+  // {
+  //   title: "Fit 110",
+  //   description:
+  //     "We built an e‑commerce site to sell smarter. Clear categories, fast checkout, and fitness gear that feels easy to buy.",
+  //   src: "tree.jpg",
+  //   link: "/case-studies/fit110",
+  //   color: "#977F6D",
+  //   image: "/case-studies/fit110/fit110-case-study-mockup.webp",
+  // },
 ];

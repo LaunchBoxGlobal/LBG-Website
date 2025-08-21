@@ -161,7 +161,7 @@ const ServiceCard2 = ({ heading, description, index, openFaq, toggleFaq }) => {
             "Enterprise software development dashboard displaying business process automation and data analytics modules"
           }
           loading="lazy"
-          className={`2xl:left-[9%] -top-[46%] w-[279px] lg:w-[220px] xl:w-[260px] hidden lg:block absolute lg:left-[9%] xl:left-[7%] z-10 ${
+          className={`2xl:left-[9%] -top-[46%] w-[279px] lg:w-[220px] xl:w-[260px] rounded-lg hidden lg:block absolute lg:left-[9%] xl:left-[7%] z-10 ${
             openFaq === index
               ? "lg:top-[14%] top-[10%] rotate-0 visible"
               : "-rotate-[22deg] invisible group-hover:visible"

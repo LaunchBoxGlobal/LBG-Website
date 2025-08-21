@@ -6,25 +6,6 @@ import Link from "next/link";
 const CustomDevelopmentJourney = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  // Static content for the three cards
-  const plans = [
-    {
-      title: "Plan 1",
-      description:
-        "Looking to grow your team with the right talent? We have a model for every need.",
-    },
-    {
-      title: "Plan 2",
-      description:
-        "Our experts solve real business challenges and help you scale your business.",
-    },
-    {
-      title: "Plan 3",
-      description:
-        "Dedicated teams that integrate seamlessly into your existing operations.",
-    },
-  ];
-
   return (
     <section className="w-full padding-x pt-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
@@ -64,16 +45,16 @@ const CustomDevelopmentJourney = () => {
             height={580}
             className="w-[150%] h-[150%] absolute inset-0 z-0 opacity-[0.02]"
           />
-          <h4 className="text-[25px] font-bold leading-[1.1]">
+          <h4 className="text-[25px] font-bold leading-[1.1] z-10">
             Software Development Outsourcing
           </h4>
-          <p className="text-base">
+          <p className="text-base z-10">
             If you need to develop software but don’t want software development
             as a service, talk to our augmentation experts. Get expert
             developers through an{" "}
             <Link
               href={`/off-shore-software-development`}
-              className="underline"
+              className="underline z-10"
             >
               offshore software development
             </Link>{" "}
@@ -110,10 +91,10 @@ const CustomDevelopmentJourney = () => {
             height={580}
             className="w-[150%] h-[150%] absolute inset-0 z-0 opacity-[0.02]"
           />
-          <h4 className="text-[25px] font-bold leading-[1.1]">
+          <h4 className="text-[25px] font-bold leading-[1.1] z-10">
             Dedicated Software Development Team
           </h4>
-          <p className="text-base">
+          <p className="text-base z-10">
             Build your custom software with a dedicated team that works
             exclusively on your project. We specialize in custom software
             development services and offer{" "}
@@ -152,10 +133,10 @@ const CustomDevelopmentJourney = () => {
             height={580}
             className="w-[150%] h-[150%] absolute inset-0 z-0 opacity-[0.02]"
           />
-          <h4 className="text-[25px] font-bold leading-[1.1]">
+          <h4 className="text-[25px] font-bold leading-[1.1] z-10">
             Team Augmentation
           </h4>
-          <p className="text-base">
+          <p className="text-base z-10">
             Need extra hands on deck? We provide skilled professionals through
             flexible{" "}
             <Link href={`/staff-augmentation`} className="underline">

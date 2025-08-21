@@ -28,12 +28,14 @@ export const TechTrendsCard = ({ tech }) => {
     <div className="w-full relative group">
       <div className="w-full h-[190px] bg-white group-hover:bg-[#F40E00] rounded-xl z-0 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:-rotate-6 transition-all duration-300"></div>
       <div className="w-full h-[190px] bg-[#F3F3F3] rounded-xl flex flex-col items-center justify-center gap-5 z-10 relative">
-        <img
-          src={tech?.icon}
-          width={tech?.width}
-          height={tech?.height}
-          alt={`${tech?.title} icon`}
-        />
+        <div className="min-h-[55px] flex items-center justify-center">
+          <img
+            src={tech?.icon}
+            width={tech?.width}
+            height={tech?.height}
+            alt={`${tech?.title} icon`}
+          />
+        </div>
         <h3 className="font-medium text-xl leading-none text-center">
           {tech?.title}
         </h3>

@@ -31,7 +31,7 @@ const SecuritySolutions = () => {
                   height={114}
                   alt={model?.title}
                 />
-                <h3 className="text-center font-bold text-xl midlg:text-[28px]">
+                <h3 className="text-center font-bold text-xl midlg:text-[24px] xl:text-[28px]">
                   {model?.title}
                 </h3>
                 {/* <p className="text-lg text-gray-700">{model?.description}</p> */}
