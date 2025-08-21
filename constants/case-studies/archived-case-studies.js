@@ -27,6 +27,6 @@ export const ARCHIVED_CASE_STUDIES = [
   {
     image: "/case-studies/sittner-trucking/jb-sittner-trucking-banner-01.png",
     title: "JB Sittner Trucking",
-    url: "/case-studies/fit110",
+    url: "/case-studies/jb-sittner-trucking",
   },
 ];
