@@ -13,7 +13,6 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      {/* <head> */}
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -45,9 +44,35 @@ export default function Home() {
         }}
         strategy="lazyOnload"
       />
-      {/* </head> */}
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            name: "LaunchBox Global",
+            image: "https://launchboxglobal.com/new-logo.svg",
+            "@id": "",
+            url: "https://launchboxglobal.com/",
+            telephone: "(888) 868-8385",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "1623 Central Ave",
+              addressLocality: "Cheyenne",
+              addressRegion: "WY",
+              postalCode: "82001",
+              addressCountry: "US",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 41.1339664,
+              longitude: -104.8144098,
+            },
+          }),
+        }}
+        strategy="lazyOnload"
+      />
 
-      {/* Page Content */}
       <HomePage />
     </>
   );

@@ -15,7 +15,7 @@ export const WEB_APP_PROJECTS = [
     description:
       "Sittner Trucking LLC is all about tackling big jobs with the right tools and a no‑nonsense approach. To bring their brand online, our web app developers crafted a powerful platform that highlights their tough‑as‑nails trucks and hands‑on services. From carrying heavy loads to operating cranes and handling precise excavation with GPS technology. As a trusted web application development firm, we provided end‑to‑end web app development services and tailored web app development solutions to make their capabilities shine. Whether it’s moving massive rigs or setting up wind turbines, Sittner’s crew and now their platform get it done.",
     src: "rock.jpg",
-    link: "/services/web-app-development",
+    link: "/case-studies/jb-sittner-trucking",
     color: "#BBACAF",
     image: "/sittner-trucking-portfolio.webp",
     alt_tag:
