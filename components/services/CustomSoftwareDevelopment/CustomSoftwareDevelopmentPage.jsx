@@ -11,10 +11,12 @@ import CustomDevelopmentJourney from "./CustomDevelopmentJourney";
 import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import TeckStack from "@/components/Common/TechStack";
 import Platforms from "@/components/Common/Platforms";
-import FAQs from "@/components/Common/FAQs";
-import { CUSTOM_SOFTWARE_FAQS } from "@/constants/custom-software-development/CustomSoftwareFaqs";
 import Portfolio from "./Portfolio";
 import Faqs from "./Faqs";
+import SoftwareSolution from "./SoftwareSolution";
+import CustomSoftwareAwards from "./CustomSoftwareAwards";
+import SecuritySolutions from "./SecuritySolutions";
+import TechTrends from "./TechTrends";
 
 const CustomSoftwareDevelopmentPage = () => {
   return (
@@ -28,6 +30,10 @@ const CustomSoftwareDevelopmentPage = () => {
       <WhyChooseUs />
       <CreateYourMobileApp />
       <SmartPlanning />
+      <CustomSoftwareAwards />
+      <SoftwareSolution />
+      <SecuritySolutions />
+      <TechTrends />
       <TeckStack
         heading={"Built With Modern"}
         redText={"Technology"}

@@ -3,7 +3,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Health & Wellness",
     icon: "/health-wellness-icon.svg",
     description:
-      "Build a health and wellness app that makes staying fit and feeling good easy. From nutrition tracking to wearable-friendly features, we create secure and simple solutions that help your clients stay on top of their health while you grow your business. Let’s bring your vision to life!",
+      "You can build a health and wellness app that makes staying fit and feeling good easy with our custom healthcare software development. We can include all the required features like nutrition tracking, wearable-friendly features etc. We create secure and simple solutions that help your clients stay on top of their health while you grow your business.",
     redIcon: "/health-red-icon.webp",
     whiteIcon: "/health-white-icon.webp",
   },
@@ -11,7 +11,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Financial Services & Fintech",
     icon: "/fintech-icon.svg",
     description:
-      "Create smart and secure financial solutions built for the future. From seamless payments to powerful fintech apps, we design easy-to-use, reliable software that keeps transactions smooth and data safe.",
+      "You get smart, secure financial solutions built for the future with our software development for fintech. We include everything from smooth payments to powerful apps. We ensure your transactions work smoothly, your data stays safe, and your customers enjoy a reliable, easy-to-use experience every time.",
     redIcon: "/fintech-red-icon.webp",
     whiteIcon: "/fintech-white-icon.webp",
   },
@@ -19,7 +19,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "E-Learning",
     icon: "/real-state-icon.svg",
     description:
-      "Turn learning into an engaging and seamless experience with custom e-learning solutions. From interactive courses to virtual classrooms, we build easy-to-use, secure, and scalable platforms that make education accessible anytime, anywhere. Let’s create the future of online learning!",
+      "Learning can sound engaging with our elearning software development services. We build easy-to-use and secure platforms including interactive courses and virtual classrooms, that make education accessible anytime, anywhere.",
     redIcon: "/education-red-icon.webp",
     whiteIcon: "/education-white-icon.webp",
   },
@@ -27,7 +27,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Travel & Experiences",
     icon: "/travle-and-experience.svg",
     description:
-      "Create a travel web app that handles bookings, local tours, and trip planning with ease. Keep travelers interested, make exploring hassle-free, and help your business grow—without dealing with tech troubles.",
+      "With our custom software development for travel, you can create a softwares that manages bookings, local tours, and trip planning effortlessly. Make exploring hassle-free for travelers, keep them engaged, and grow your business. All while we handle the technical complexities for you.",
     redIcon: "/travel-red-icon.webp",
     whiteIcon: "/travel-white-icon.webp",
   },
@@ -35,7 +35,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Real Estate",
     icon: "/sports-icon.svg",
     description:
-      "Create a real estate web app for property listings, virtual tours, and client management. Make deals smoother, draw in buyers, and handle transactions without the usual complications.",
+      "With our real estate software development services, you can build software including property listings, virtual tours, and client management. Make deals smoother, attract more buyers, and handle transactions efficiently. All without the usual complications, while providing a smooth experience for your clients.",
     redIcon: "/real-estate-red-icon.webp",
     whiteIcon: "/real-estate-white-icon.webp",
   },
@@ -43,7 +43,7 @@ export const CUSTOM_SOFTWARE_INDUSTRIES = [
     title: "Saas Marketing",
     icon: "/sports-icon.svg",
     description:
-      "Build a flexible SaaS web app for subscriptions, user insights, and automation. Keep customers engaged, boost sales, and streamline management.so you can focus on growing your business.",
+      "Our team builds flexible SaaS software for you, including features like subscriptions, user insights, and automation with our saas software development company. It can keep your customers engaged, boost sales, and streamline management, so you can focus on growing your business while we handle the technical complexities.",
     redIcon: "/saas-marketing-red-icon.webp",
     whiteIcon: "/saas-marketing-white-icon.webp",
   },

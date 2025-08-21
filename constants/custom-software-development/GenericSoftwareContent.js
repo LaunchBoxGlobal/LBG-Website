@@ -3,7 +3,7 @@ export const GENERIC_SOFTWARE_CONTENT = [
     title: "Freedom from Monthly Subscription",
     titleBg: "#F40E00",
     description:
-      "Agile app development that adapts as your business grows and changes.",
+      "Experience quick app development that grows with you. We offer custom software development for startups as well, making sure your software adapts as your business evolves, ensuring flexibility, and long-term success without unnecessary complexity.",
     descriptionBg: "#F99C99",
     icon: "/generic-software-01.webp",
     iconWidth: "38",
@@ -13,7 +13,7 @@ export const GENERIC_SOFTWARE_CONTENT = [
     title: "Higher ROI in the Long Run",
     titleBg: "#F6564D",
     description:
-      "Fast MVP delivery to test your idea quickly without big upfront costs.",
+      "Before paying heavy upfront costs, you can launch your idea quickly. With our dedicated development team, you get rapid MVP delivery to test, validate, and refine your product based on honest user feedback.",
     descriptionBg: "#FBBFBE",
     icon: "/generic-software-02.webp",
     iconWidth: "37",
@@ -23,7 +23,7 @@ export const GENERIC_SOFTWARE_CONTENT = [
     title: "Automate & Optimize Your Operations",
     titleBg: "#FE8761",
     description:
-      "Real app UX problem solving - we fix what frustrates your users.",
+      "We solve app UX problems by fixing what frustrates your users. As a software company design expert, we craft intuitive, user-friendly experiences that keep people engaged, satisfied, and returning to your app.",
     descriptionBg: "#FFC3A5",
     icon: "/generic-software-03.webp",
     iconWidth: "33",
@@ -33,7 +33,7 @@ export const GENERIC_SOFTWARE_CONTENT = [
     title: "Better Security & Compliance",
     titleBg: "#F1A17E",
     description:
-      "Clear process from start to finish - no tech jargon, just results.",
+      "We keep the process transparent. We provide clarity and results instead of confusing you with jargon. Our custom software development solutions are built with open communication, so you always know what’s happening and how it drives your business forward.",
     descriptionBg: "#F7C0A8",
     icon: "/generic-software-04.webp",
     iconWidth: "36",
@@ -43,7 +43,7 @@ export const GENERIC_SOFTWARE_CONTENT = [
     title: "Seamless Integration with Your Tools",
     titleBg: "#A6A6A6",
     description:
-      "Ongoing support because software needs care after launch too.",
+      "Your custom software wouldn’t stop delivering value after launch. It needs continuous care. You keep it secure, updated, and optimized so it grows alongside your business with our ongoing support.",
     descriptionBg: "#BFBFBF",
     icon: "/generic-software-05.webp",
     iconWidth: "28",
@@ -53,7 +53,7 @@ export const GENERIC_SOFTWARE_CONTENT = [
     title: "Faster Decision-Making with Real-Time Insights",
     titleBg: "#212121",
     description:
-      "Industry-specific experience in healthcare, retail, and SaaS solutions.",
+      "You get industry-specific experts in healthcare, retail, and SaaS. Through our custom programming services, your software is built around your unique challenges. Giving you efficient, scalable solutions that deliver better business results.",
     descriptionBg: "#4E4D4F",
     icon: "/generic-software-06.webp",
     iconWidth: "30",

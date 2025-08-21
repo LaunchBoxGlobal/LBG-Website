@@ -5,7 +5,7 @@ export const CUSTOM_SOFTWARE_SERVICES = [
     alt_tag:
       "Software consultant dashboard displaying project analytics and strategic development planning tools.",
     pageUrl: "/",
-    desc: "Get expert guidance before you build. Our software consulting services help define your project goals, choose the right tech stack, and create a strategy that delivers long-term value.",
+    desc: "Get expert guidance before you start building with our software consultant. We help you understand your project goals, with the right technologies, and create a clear development strategy for you so your software runs smoothly, saves your time and delivers long-term value for your business.",
   },
   {
     title: "Custom Software Development",
@@ -13,7 +13,7 @@ export const CUSTOM_SOFTWARE_SERVICES = [
     alt_tag:
       "Custom software development services dashboard displaying tailored business solutions and workflow automation tools",
     pageUrl: "/",
-    desc: "We develop secure, scalable, and fully tailored software solutions that solve real business problems. In Custom Software Development we build exactly what you need, nothing more, nothing less.",
+    desc: "Our dedicated development team builds your fully customized software solutions that solve your business problems and run smoothly. We ensure that our custom software development services deliver results that save you time, reduce your costs and work for your business while increasing efficiency.",
   },
   {
     title: "UI/UX Design",
@@ -21,7 +21,7 @@ export const CUSTOM_SOFTWARE_SERVICES = [
     alt_tag:
       "UI and UX design process showing wireframes, prototypes, and user testing workflows.",
     pageUrl: "/",
-    desc: "First impressions matter. Our UI and UX design team creates intuitive, visually appealing interfaces that keep users engaged and coming back.",
+    desc: "First impressions matter a lot in businesses. So we ensure it leaves an impact. Our UI and UX designers can create visually appealing interfaces for you that keep users engaged, improve usability, and encourage repeat visits while capturing attention and delivering a remarkable experience.",
   },
   {
     title: "MVP Development",
@@ -29,7 +29,7 @@ export const CUSTOM_SOFTWARE_SERVICES = [
     alt_tag:
       "Minimal viable product dashboard showing core features and user feedback metrics.",
     pageUrl: "/",
-    desc: "Test your idea fast with a minimal viable product. We build functional prototypes to validate your concept before full-scale development.",
+    desc: "You can test your idea quickly with a minimal viable product (MVP). We build functional prototypes that can help you validate your concept, gather honest user feedback, and refine your solution before committing to full-scale development. It can reduce your risks, ensuring your product meets the market needs.",
   },
   {
     title: "Cloud Solutions",
@@ -39,7 +39,7 @@ export const CUSTOM_SOFTWARE_SERVICES = [
     pageUrl: "/",
     subtitle:
       "Is your business stuck with outdated systems that slow down growth?",
-    desc: "Access your data anytime, anywhere. Our cloud-based solutions ensure reliability, security, and seamless integration with your existing tools.",
+    desc: "With our cloud based solutions, accessing your data anytime, anywhere becomes easier. Our dedicated development team builds reliable and secure systems for you that work smoothly with your existing tools. You will get uninterrupted access, better collaboration, and an assurance that your information is protected.",
   },
   {
     title: "Software Maintenance & Support",
@@ -47,7 +47,7 @@ export const CUSTOM_SOFTWARE_SERVICES = [
     alt_tag:
       "Maintenance services dashboard showing system health metrics and update management tools",
     pageUrl: "/",
-    desc: "Ensure your software stays updated, secure, and efficient. We handle performance improvements, bug fixes, upgrades, and enhancements so your system evolves smoothly with your business needs.",
+    desc: "Through our maintenance service, your existing software stays updated and secure. We can handle performance improvements, bug fixes, system upgrades, and feature enhancements, making sure your software evolves with your business needs, reduces downtime, and continues to deliver value as your operations grow and change.",
   },
   {
     title: "System Testing",
@@ -55,6 +55,6 @@ export const CUSTOM_SOFTWARE_SERVICES = [
     alt_tag:
       "System integration testing dashboard displaying API connections and data validation processes.",
     pageUrl: "/",
-    desc: "Ensure flawless performance. Our system integration testing catches bugs early, so your software runs smoothly from day one.",
+    desc: "We make sure your software performs flawlessly through our system integration testing. We identify and fix bugs during the testing, verify that everything works together and ensure your software runs smoothly from day one. This approach reduces downtime and improves reliability of your software.",
   },
 ];

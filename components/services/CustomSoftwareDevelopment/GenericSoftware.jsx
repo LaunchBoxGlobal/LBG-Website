@@ -12,11 +12,13 @@ const GenericSoftware = () => {
           Why you should have Customized Software?
         </h2> */}
         <h2 className="section-heading text-center">
-          Software That Works <span className="red-text">For You</span>
+          Benefits of Our Custom Software Development
+          <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph text-center mx-auto lg:w-[90%]">
-          We specialize in custom software development for startups that need
-          solutions, not complications.
+          You get custom solutions according to your needs with our custom
+          software development services. We help you save time and cut costs
+          while giving your business a real competitive edge.
         </p>
       </div>
 
@@ -71,7 +73,7 @@ const GenericSoftware = () => {
                 }}
                 className={`absolute top-0 h-full bg-red-600 rounded-2xl flex justify-end items-center z-10 p-10`}
               >
-                <p className="text-white text-center text-base xl:text-xl w-full lg:w-[80%]">
+                <p className="text-white text-center text-base xl:text-lg leading-[1] w-full lg:w-[80%]">
                   {solution?.description}
                 </p>
               </motion.div>

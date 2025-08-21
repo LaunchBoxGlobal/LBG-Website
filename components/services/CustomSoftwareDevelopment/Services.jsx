@@ -17,13 +17,16 @@ const Services = () => {
   return (
     <section className="w-full py-10 lg:pb-20 lg:pt-32 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <h2 className="section-heading">
-          Built for Your Business <span className="red-text">Needs</span>
+        <h2 className="font-semibold text-[25px] leading-none text-center">
+          <span className="red-text">Custom Software Development Services</span>
         </h2>
+        <h3 className="section-heading">
+          Built for Your Business <span className="red-text">Needs</span>
+        </h3>
         <p className="section-paragraph lg:w-[90%]">
-          We provide custom software development solutions designed to fit your
-          workflow. From planning to launch, we ensure your software works the
-          way you do smoothly, efficiently, and hassle-free.
+          We provide custom software development solutions that are designed to
+          fit your workflow. We deal with everything from planning to launch,
+          making sure your software works smoothly and efficiently.
         </p>
       </section>
 
@@ -121,16 +124,11 @@ export default Services;
 export const LastDescription = () => {
   return (
     <p className="text-white text-start leading-5 text-base lg:text-lg font-light">
-      Scale your operations with{" "}
-      <Link
-        href={`https://blogs.embarcadero.com/what-is-enterprise-software-development/`}
-        target="_blank"
-        className="red-text"
-      >
-        enterprise software development.
-      </Link>{" "}
-      We build secure, powerful systems that streamline workflows and grow with
-      your business.
+      You can grow your business rapidly with our enterprise software
+      development. We build secure, powerful systems designed to simplify your
+      workflows and adapt as your business grows. Our solutions ensure smooth
+      operations, improved and long term productivity, helping you stay ahead of
+      the competition while supporting your evolving business needs.
     </p>
   );
 };

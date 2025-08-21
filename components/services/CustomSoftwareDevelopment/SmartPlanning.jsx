@@ -1,91 +1,32 @@
-"use client";
-import React, { useState } from "react";
-import AgileWorkflow from "./AgileWorkflow";
-import RecommendedWorkflow from "./RecommendedWorkflow";
-import WaterfallWorkflow from "./WaterfallWorkflow";
-import { CUSTOM_SOFTWARE_SMART_PLANNING } from "@/constants/custom-software-development/CustomSoftwareSmartPlanning";
-import { RECOMMENDED_WORKFLOW } from "@/constants/custom-software-development/RecommendedWorkflow";
-import { WATERFALL_WORKFLOW } from "@/constants/custom-software-development/WaterfallWorkflow";
-import NewWorkflow from "@/components/Common/NewWorkflow";
+import React from "react";
 import {
-  SOFTWARE_DEV_FLORIDA_AGILE_PROCESS,
-  SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS,
-  SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS,
-} from "@/constants/locations/software-dev-company-florida/software-dev-florida-process";
+  CUSTOM_SOFTWARE_AGILE_WORKFLOW,
+  CUSTOM_SOFTWARE_RECOMMENDED_WORKFLOW,
+  CUSTOM_SOFTWARE_WATERFALL_WORKFLOW,
+} from "@/constants/custom-software-development/CustomSoftwareSmartPlanning";
+import NewWorkflow from "@/components/Common/NewWorkflow";
 
 const SmartPlanning = () => {
-  const [activeTab, setActiveTab] = useState("recommended");
-
   return (
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading w-full">
-          Building What You Actually <span className="red-text">Need</span>
+          Our Custom Software{" "}
+          <span className="red-text">Development Process</span>
         </h2>
         <p className="section-paragraph lg:w-[85%]">
-          We follow a proven custom software development process designed to
-          eliminate guesswork. From initial planning to final delivery, we keep
-          things simple, efficient, and focused on solving your specific
-          business challenges.
+          Your project is unique, so we adapt our software development services
+          to match your goals and needs. You get open communication,
+          explanations in simple language, and guidance through each step so you
+          always know what’s happening.
         </p>
       </section>
 
       <NewWorkflow
-        agileProcess={SOFTWARE_DEV_FLORIDA_AGILE_PROCESS}
-        recommendedProcess={SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS}
-        waterfallProcess={SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS}
+        agileProcess={CUSTOM_SOFTWARE_AGILE_WORKFLOW}
+        recommendedProcess={CUSTOM_SOFTWARE_RECOMMENDED_WORKFLOW}
+        waterfallProcess={CUSTOM_SOFTWARE_WATERFALL_WORKFLOW}
       />
-
-      {/* <div className="w-full flex justify-center mt-10">
-        <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
-          <button
-            type="button"
-            name="agile methodology button"
-            onClick={() => setActiveTab("agile")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "agile"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            AGILE
-          </button>
-          <button
-            type="button"
-            name="recommended methodology button"
-            onClick={() => setActiveTab("recommended")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "recommended"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            recommended
-          </button>
-          <button
-            type="button"
-            name="waterfall methodology button"
-            onClick={() => setActiveTab("waterfall")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "waterfall"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            Waterfall
-          </button>
-        </div>
-      </div>
-
-      {activeTab === "agile" && (
-        <AgileWorkflow workflow={CUSTOM_SOFTWARE_SMART_PLANNING} />
-      )}
-      {activeTab === "recommended" && (
-        <RecommendedWorkflow workflow={RECOMMENDED_WORKFLOW} />
-      )}
-      {activeTab === "waterfall" && (
-        <WaterfallWorkflow workflow={WATERFALL_WORKFLOW} />
-      )} */}
     </section>
   );
 };
