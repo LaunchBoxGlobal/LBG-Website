@@ -13,6 +13,10 @@ const Page = async ({ params }) => {
   // Optional: validate the ID or check if it exists
   // If invalid: notFound()
 
+  if (!id || !category) {
+    notFound();
+  }
+
   return <CategoryBlogs category={category} id={id} />;
 };
 
