@@ -1,5 +1,4 @@
 import CustomSoftwareDevelopmentPage from "@/components/services/CustomSoftwareDevelopment/CustomSoftwareDevelopmentPage";
-import Head from "next/head";
 import Script from "next/script";
 import React from "react";
 
@@ -21,30 +20,24 @@ const page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Custom Software Development Services",
-            serviceType:
-              "Enterprise Software Solutions, SaaS Development, Business Automation Software",
-            provider: {
-              "@type": "Organization",
-              name: "Launchbox Global",
-              url: "https://launchboxglobal.com",
-              logo: "https://launchboxglobal.com/logo.png",
-            },
-            areaServed: [
-              { "@type": "Country", name: "United States" },
-              { "@type": "Country", name: "United Kingdom" },
-              { "@type": "Country", name: "Canada" },
-              { "@type": "Country", name: "Australia" },
-            ],
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            name: "custom software development services",
+            image: "",
             description:
-              "Launchbox Global provides tailored custom software development services including SaaS products, enterprise applications, and business automation software for clients in the USA, UK, Canada, and Australia.",
-            url: "https://launchboxglobal.com/services/custom-software-development",
+              "Tailored software designed for your business. We create smart solutions that streamline your workflow and match your unique requirements. Let’s discuss your project today.",
+            brand: {
+              "@type": "Brand",
+              name: "LaunchBox Global",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.8",
+              ratingCount: "50",
+            },
           }),
         }}
       />
-
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -54,48 +47,84 @@ const page = () => {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "How do you ensure data security in your healthcare software solutions?",
+                name: "What is the difference between Custom and SaaS?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "We ensure data security through HIPAA-compliant architectures, end-to-end encryption, secure authentication, regular audits, and strict access controls, protecting patient information at every stage of the software lifecycle.",
+                  text: `Custom software development creates tailored solutions for a business’s unique processes, offering full control, scalability, and flexibility.
+SaaS (Software-as-a-Service) provides ready-made, subscription-based applications with limited customization but quicker deployment.
+Startups often begin with SaaS, but growing businesses benefit from custom solutions to gain efficiency and competitive advantage.`,
                 },
               },
               {
                 "@type": "Question",
-                name: "Why we choose your Custom Software Development company, Why Custom Software Development Services is important?",
+                name: "Who needs custom software development services?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Choose us for tailored, scalable, and secure solutions that fit your exact business needs. Custom software boosts efficiency, supports unique workflows, and grows with your company, unlike off-the-shelf alternatives.",
+                  text: `Custom software development is ideal for startups, enterprises, and growing businesses that require solutions designed around their specific workflows rather than generic tools. It helps companies streamline operations, reduce inefficiencies, and scale with confidence. If your business needs tailor-made solutions, Book a call today to explore how we can help.`,
                 },
               },
               {
                 "@type": "Question",
-                name: "What do your Custom Programming Services include?",
+                name: "How to choose the right custom software development company?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Look for agencies with proven expertise in your industry, transparent workflows (e.g., Agile/Scrum), and post-launch support. Check portfolios for similar projects, read client reviews, and verify technical certifications. The best agencies prioritize communication, offer flexible pricing, and align with your long-term goals.",
+                  text: `Experience & Portfolio – Review case studies and past work in your industry.
+Technology Expertise – Ensure they use modern frameworks and best practices.
+Communication & Transparency – Look for clear collaboration models.
+Support & Scalability – Pick a partner who provides long-term maintenance and growth options.`,
                 },
               },
               {
                 "@type": "Question",
-                name: "How to identify the best Software Development Agency for my project?",
+                name: "Can I get custom software development services locally?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Look for agencies with proven expertise in your industry, transparent workflows (e.g., Agile/Scrum), and post-launch support. Check portfolios for similar projects, read client reviews, and verify technical certifications. The best agencies prioritize communication, offer flexible pricing, and align with your long-term goals.",
+                  text: `Yes, you can. We provide custom software development services across multiple U.S. locations, making it easier for businesses to connect with a local partner they can trust. Whether you’re looking for a Software Development Company in Florida, a Software Development Company in New Jersey, or need Custom Software Development in Houston, our team offers region-specific expertise while delivering the same high-quality, scalable solutions that help companies grow with confidence.`,
                 },
               },
               {
                 "@type": "Question",
-                name: "How does your Software Agency ensure transparency throughout the development process?",
+                name: "What technologies do you use for custom software development?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "We prioritize transparency via daily updates, open communication channels, and collaborative tools (e.g., Jira, Trello). Clients access real-time progress dashboards, participate in sprint reviews, and approve milestones. Clear documentation, no hidden costs, and iterative feedback loops ensure alignment with your goals, building trust and accountability at every stage.",
+                  text: `We use a wide range of modern technologies to deliver custom software development solutions that are scalable, secure, and user-friendly. Depending on the project, our team works with Native for high-performance solutions, Flutter for cross-platform apps, Swift and Kotlin for smooth iOS and Android experiences, and Ionic App Development for lightweight hybrid applications.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do you offer post-launch support for custom software?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `Yes, we provide complete post-launch support to ensure your custom software runs smoothly after deployment. This includes performance monitoring, security updates, bug fixes, and feature enhancements. Our goal is to keep your solution reliable, scalable, and aligned with your evolving business needs long after the initial launch. You can talk to our experts for more details.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is custom software development?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `Custom software development means building software designed around your specific business needs. Instead of using generic tools, it’s like creating a solution that fits ideally, while helping you work smarter, solve problems faster, and grow without being held back by one-size-fits-all software.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Why is custom software development important?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `Custom software development is important because it focuses on your specific business needs instead of generic solutions. It ensures you get tools that truly work for you by:
+
+                  - Simplifying processes and boosting efficiency
+- Scaling with your business growth
+- Offering stronger security and reliability
+
+If you’d like more insights, you can always talk to our experts.`,
                 },
               },
             ],
           }),
         }}
       />
+
       {/* </Head> */}
       <CustomSoftwareDevelopmentPage />
     </>
