@@ -32,7 +32,10 @@ const About = () => {
       >
         Building Apps That Work: Simple, Reliable, and User-Focused
       </h2>
-      <Character value={paragraph} />
+      {/* <Character value={paragraph} /> */}
+      <p className="text-[22px] lg:text-[2.8vw] text-center lg:leading-[56px] text-gray-400 tracking-tight">
+        {paragraph}
+      </p>
 
       {/* <section className="w-full flex items-start justify-end relative -top-10">
         <Link

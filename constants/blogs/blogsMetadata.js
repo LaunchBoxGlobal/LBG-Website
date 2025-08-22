@@ -1362,4 +1362,12 @@ export const BLOGS_METADATA = {
       canonical:
         "https://launchboxglobal.com/blog/top-platforms-like-reddit-in-2025-Discover-the-best-sites-like-reddit-for-community-discussions",
     },
+
+  "built-with-low-code-heres-how-to-take-it-to-launch-ready": {
+    title: "Built With Low Code? Take It to Launch Ready",
+    description:
+      "Learn how to transition your low code MVP into a launch-ready product with migration plans, hybrid architecture, and performance scaling strategies.",
+    canonical:
+      "https://launchboxglobal.com/blog/top-platforms-like-reddit-in-2025-Discover-the-best-sites-like-reddit-for-community-discussions",
+  },
 };

@@ -1,34 +1,22 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import BlogCard from "../BlogCard";
 import BlogsContactForm from "@/components/Common/BlogsContactForm";
-import Loader from "@/components/Common/Loader";
 
-const CategoryBlogs = ({ category, id }) => {
-  const [blogs, setBlogs] = useState([]);
-  const [loading, setLoading] = useState(true);
+const CategoryBlogs = async ({ id, category }) => {
+  let blogs = [];
 
-  const fetchBlogs = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch(
-        `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?categories=${id}`
-      );
-      const blogs = await res.json();
-      setBlogs(blogs);
-      // console.log(blogs);
-    } catch (error) {
-      console.log("an error occurre while fetching blogs >>>>", error);
-    } finally {
-      setLoading(false);
+  try {
+    const res = await fetch(
+      `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?categories=${id}`,
+      { cache: "no-store" } // or "force-cache" if you're okay with caching
+    );
+
+    if (res.ok) {
+      blogs = await res.json();
     }
-  };
-
-  useEffect(() => {
-    fetchBlogs();
-  }, []);
-
-  if (loading) return <Loader />;
+  } catch (error) {
+    console.error("Error fetching category blogs:", error);
+  }
 
   return (
     <section className="w-full relative padding-x">
@@ -39,10 +27,11 @@ const CategoryBlogs = ({ category, id }) => {
               Our Exclusive <span className="red-text">Blogs</span>
             </h1>
           </div>
+
           <div className="w-full my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10">
-            {blogs?.map((blog, i) => {
-              return <BlogCard key={i} content={blog} />;
-            })}
+            {blogs.map((blog, i) => (
+              <BlogCard key={i} content={blog} />
+            ))}
           </div>
         </>
       ) : (
