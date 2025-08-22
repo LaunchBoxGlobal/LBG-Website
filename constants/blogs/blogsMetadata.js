@@ -1370,4 +1370,11 @@ export const BLOGS_METADATA = {
     canonical:
       "https://launchboxglobal.com/blog/built-with-low-code-heres-how-to-take-it-to-launch-ready",
   },
+  "simple-project-scope-guide-to-get-you-software-built": {
+    title: "Smart Project Scope Guide for Successful Software",
+    description:
+      "Learn how a clear Project Scope prevents costly delays, controls budgets, and ensures software success through MVPs, milestones, and feasibility checks.",
+    canonical:
+      "https://launchboxglobal.com/blogs/simple-project-scope-guide-to-get-you-software-built",
+  },
 };

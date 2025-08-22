@@ -13,13 +13,13 @@ const WhyChooseUs = () => {
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
-        <h2 className="red-text font-semibold text-[25px]">
+        {/* <h2 className="red-text font-semibold text-[25px]">
           Customer-Centric Approach
-        </h2>
-        <h3 className="section-heading text-center">
+        </h2> */}
+        <h2 className="section-heading text-center">
           Why Choose LaunchBox <br className="hidden lg:block" />{" "}
           <span className="red-text">Global?</span>
-        </h3>
+        </h2>
         <p className="section-paragraph text-center mx-auto">
           Your business isn’t one-size-fits-all, so why should your software be?
           Off-the-shelf solutions come with limitations, unnecessary features,
