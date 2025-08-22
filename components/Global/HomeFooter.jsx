@@ -128,7 +128,7 @@ const HomeFooter = () => {
       <div className="w-full padding-x">
         <div className="w-full my-16 border border-neutral-800" />
       </div>
-      <FooterBadges />
+      {/* <FooterBadges /> */}
 
       <div className="w-full flex items-center justify-center gap-3">
         <Link
