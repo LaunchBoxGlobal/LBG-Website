@@ -13,7 +13,7 @@ const GenericSoftware = () => {
         </h2> */}
         <h2 className="section-heading text-center">
           Benefits of Our Custom Software Development
-          <span className="red-text">Services</span>
+          <span className="red-text"> Services</span>
         </h2>
         <p className="section-paragraph text-center mx-auto lg:w-[90%]">
           You get custom solutions according to your needs with our custom

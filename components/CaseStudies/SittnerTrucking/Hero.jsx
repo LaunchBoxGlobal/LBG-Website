@@ -26,7 +26,7 @@ const Hero = () => {
         delays, and provided a scalable solution for JB Sittner Trucking’s
         growing operational needs.
       </p>
-      <div className="flex items-center justify-center gap-2">
+      {/* <div className="flex items-center justify-center gap-2">
         <Link
           href="/case-studies/jb-sittner-trucking"
           aria-label="Download on the App Store"
@@ -62,7 +62,7 @@ const Hero = () => {
             priority
           />
         </Link>
-      </div>
+      </div> */}
 
       <div className="w-full flex lg:items-center gap-4 flex-col lg:flex-row items-start justify-between tracking-tight lg:border border-[#02ea4c] rounded-full md:px-8 min-h-[107px] my-20 sittner-hover">
         <div className="flex items-center gap-3">

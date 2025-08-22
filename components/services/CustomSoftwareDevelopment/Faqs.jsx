@@ -348,7 +348,7 @@ const Faqs = () => {
               >
                 Kotlin
               </Link>{" "}
-              for smooth iOS and Android experiences, and
+              for smooth iOS and Android experiences, and{" "}
               <Link
                 href={`/development-technologies/ionic-app-development`}
                 className="red-text"
