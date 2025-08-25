@@ -9,13 +9,13 @@ const ReasonsSection = () => {
     <section className="w-full py-10 lg:pb-20 lg:pt-40 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
         <h2 className="section-heading text-center">
-          The Clear Advantage of Working with{" "}
-          <span className="red-text">LaunchBox Global</span>
+          Reasons to have{" "}
+          <span className="red-text">Ecommerce Development</span>
         </h2>
         <p className="section-paragraph text-center mx-auto lg:w-[90%]">
-          We help you create online stores that are engaging and easy to use. As
-          a trusted ecommerce development company, we make sure your store works
-          for both you and your customers.
+          As a top ecommerce development company, we build high-performance
+          stores and apps that increase sales. Our ecommerce development
+          services ensure smooth and secure shopping experiences.
         </p>
       </div>
 

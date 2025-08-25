@@ -1,0 +1,69 @@
+@keyframes zigzag {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(20px, -20px);
+  }
+  40% {
+    transform: translate(55px, 30px);
+  }
+  60% {
+    transform: translate(110px, -50px);
+  }
+  80% {
+    transform: translate(160px, 45px);
+  }
+  100% {
+    /* transform: translate(160px, 45px); */
+    transform: translate(200px, -40px);
+  }
+}
+
+.zigzag-image {
+  width: 100px;
+  animation: zigzag 8s linear infinite alternate;
+}
+
+.bulb-inner-shadow {
+  box-shadow: rgba(197, 214, 69, 0.25) 0px 10px 60px -12px inset,
+    rgba(181, 223, 88, 0.3) 0px -10px 60px -12px inset;
+}
+
+@keyframes bulbFadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bulbFadeOutIn {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bulb-on {
+  animation: bulbFadeInOut 5s infinite linear;
+}
+
+.bulb-off {
+  animation: bulbFadeOutIn 5s infinite linear;
+}

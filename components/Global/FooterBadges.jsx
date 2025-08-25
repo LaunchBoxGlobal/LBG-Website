@@ -15,21 +15,21 @@ export const footer_badges = [
     width: 146,
     height: 140,
     alt_tag: "sitejabber logo",
-    link: null,
+    link: `https://www.sitejabber.com/reviews/launchboxglobal.com`,
   },
   {
     image: "/trustpilot-icon.svg",
     width: 159,
     height: 40,
     alt_tag: "trustpilot logo",
-    link: null,
+    link: `https://www.trustpilot.com/review/launchboxglobal.com`,
   },
   {
     image: "/clutch-icon.png",
     width: 161,
     height: 81,
     alt_tag: "clutch logo",
-    link: null,
+    link: `https://clutch.co/profile/launchbox-global`,
   },
 ];
 

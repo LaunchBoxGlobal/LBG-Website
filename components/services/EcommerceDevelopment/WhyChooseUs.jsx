@@ -1,30 +1,26 @@
-"use client";
 import ContactButton from "@/components/Global/ContactButton";
 import {
   ECOMMERCE_WHY_CHOOSE_US2,
   ECOMMERCE_WHY_CHOOSE_US_1,
 } from "@/constants/ecommerce-develpment/ecommerceWhyChooseUs";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 const WhyChooseUs = () => {
-  const [isHovered, setIsHovered] = useState(null);
-  const [isCardHovered, setIsCardHovered] = useState(null);
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
-        <h2 className="red-text font-semibold text-[25px]">
+        {/* <h2 className="red-text font-semibold text-[25px]">
           Customer-Centric Approach
+        </h2> */}
+        <h2 className="section-heading text-center">
+          The Clear Advantage of Working with{" "}
+          <span className="red-text">LaunchBox Global</span>
         </h2>
-        <h3 className="section-heading text-center">
-          Why Choose LaunchBox <br className="hidden lg:block" />{" "}
-          <span className="red-text">Global?</span>
-        </h3>
         <p className="section-paragraph text-center mx-auto lg:w-[90%]">
-          Generic ecommerce platforms slow you down. They’re packed with
-          features you’ll never use and lack the flexibility you need. Our
-          custom-built solutions are tailored to your store. Fast, functional,
-          and optimized to convert at every step.
+          We help you create online stores that are engaging and easy to use. As
+          a trusted ecommerce development company, we make sure your store works
+          for both you and your customers.
         </p>
       </div>
 
@@ -42,10 +38,8 @@ const WhyChooseUs = () => {
                   : ""
               }`}
               key={i}
-              onMouseEnter={() => setIsHovered(i)}
-              onMouseLeave={() => setIsHovered(null)}
             >
-              <h3 className="font-semibold text-[20px] xl:text-[22px]">
+              <h3 className="font-semibold text-[20px] xl:text-[22px] lg:min-h-[60px]">
                 {c?.title}
               </h3>
               <Image
@@ -72,10 +66,8 @@ const WhyChooseUs = () => {
                   : ""
               }`}
               key={i}
-              onMouseEnter={() => setIsCardHovered(i)}
-              onMouseLeave={() => setIsCardHovered(null)}
             >
-              <h3 className="font-semibold text-[20px] xl:text-[22px]">
+              <h3 className="font-semibold text-[20px] xl:text-[22px] lg:min-h-[60px]">
                 {c?.title}
               </h3>
               <Image

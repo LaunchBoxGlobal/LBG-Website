@@ -5,6 +5,7 @@ import HomeFooter from "@/components/Global/HomeFooter";
 import GoogleAnalytics from "@/lib/GoogleAnalytics";
 import Script from "next/script";
 import WhatsappButton from "@/components/Common/WhatsappButton";
+import PopupForm from "@/components/Global/PopupForm";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
           crossOrigin="*"
         />
         {/* <WhatsappButton /> */}
+        {/* <PopupForm /> */}
         <HomeFooter />
       </body>
     </html>
