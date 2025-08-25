@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
         })}
       </div>
 
-      <section className="w-full mt-10 lg:mt-16 flex justify-center lg:justify-start lg:pl-[26%] xl:pl-[32%]">
+      <section className="w-full mt-10 lg:mt-16 flex justify-center">
         <ContactButton text={"Get started - We’re Ready to build!"} />
       </section>
     </section>

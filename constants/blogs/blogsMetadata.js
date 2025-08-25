@@ -1377,4 +1377,12 @@ export const BLOGS_METADATA = {
     canonical:
       "https://launchboxglobal.com/blogs/simple-project-scope-guide-to-get-you-software-built",
   },
+  "ios-app-making-complete-guide-to-building-successful-mobile-applications-in-2025":
+    {
+      title: "iOS App Making Guide: Build Apps That Scale",
+      description:
+        "Discover how iOS app making helps businesses reach premium users. Learn strategies, MVP tips, and tools to build scalable, high-performing applications.",
+      canonical:
+        "https://launchboxglobal.com/blogs/ios-app-making-complete-guide-to-building-successful-mobile-applications-in-2025",
+    },
 };
