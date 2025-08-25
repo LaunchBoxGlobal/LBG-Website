@@ -22,7 +22,7 @@ import EcommerceTechTrends from "./EcommerceTechTrends";
 
 const EcommerceDevelopmentPage = () => {
   return (
-    <main className="w-full relative overflow-x-hidden">
+    <main className="w-full relative">
       <Hero />
       <section className="w-full">
         <Platforms />

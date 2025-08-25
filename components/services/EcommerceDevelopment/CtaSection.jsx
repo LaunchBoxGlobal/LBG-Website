@@ -13,7 +13,7 @@ const CtaSection = () => {
   });
 
   return (
-    <section className="w-full padding-x py-10 lg:py-40 lg:pt-60 mt-6">
+    <section className="w-full overflow-x-hidden padding-x py-10 lg:py-40 lg:pt-60 mt-6">
       <section
         ref={ctaRef}
         className="w-full min-h-[410px] max-h-[430px] rounded-lg bg-[#212121] relative border group flex items-center justify-end"
