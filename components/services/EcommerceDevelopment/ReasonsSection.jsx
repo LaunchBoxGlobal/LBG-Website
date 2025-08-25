@@ -13,9 +13,9 @@ const ReasonsSection = () => {
           <span className="red-text">LaunchBox Global</span>
         </h2>
         <p className="section-paragraph text-center mx-auto lg:w-[90%]">
-          As a top ecommerce development company, we build high-performance
-          stores and apps that boost sales. Our ecommerce development services
-          ensure smooth, scalable, and secure shopping experiences.
+          We help you create online stores that are engaging and easy to use. As
+          a trusted ecommerce development company, we make sure your store works
+          for both you and your customers.
         </p>
       </div>
 
@@ -70,7 +70,7 @@ const ReasonsSection = () => {
                 }}
                 className={`absolute top-0 h-full bg-red-600 rounded-2xl flex justify-end items-center z-10 p-10`}
               >
-                <p className="text-white text-center text-base xl:text-xl w-full lg:w-[80%]">
+                <p className="text-white text-center text-base xl:text-lg w-full lg:w-[80%]">
                   {solution?.description}
                 </p>
               </motion.div>

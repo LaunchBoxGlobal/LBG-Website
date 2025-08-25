@@ -1,5 +1,15 @@
 export const ECOMMERCE_CASE_STUDIES = [
   {
+    title: "Fit 110",
+    description:
+      "DEKO approached us with a clear objective: a website that highlights their high-quality products while appealing to homeowners. Through our Ecommerce development expertise, we created a platform that combines functionality, design, and user experience seamlessly. DEKO manufactures reliable tools and equipment, so the site needed to feel equally solid and trustworthy. With features that simplify product browsing, enhance engagement, and support conversions, we delivered a website built for results. Fit 110 also benefited from expert tips in fitness marketing, proving that smart Ecommerce development and strategic digital marketing drive growth and customer loyalty.",
+    src: "cactus.jpg",
+    link: "/case-studies/fit110",
+    color: "#88A28D",
+    image: "/case-studies/fit110/fit110-case-study-mockup.webp",
+    alt_tag: "Fit 110 case study mockup",
+  },
+  {
     title: "",
     description: "",
     src: "cactus.jpg",

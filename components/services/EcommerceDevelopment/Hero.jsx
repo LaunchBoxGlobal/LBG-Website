@@ -13,12 +13,12 @@ const Hero = () => {
 
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-8">
           <strong className="font-medium">
-            Improve your brand's online presence and increase revenue with our
-            expert ecommerce development services.
+            Enhance your brand’s online presence and increase your sales with
+            our ecommerce development services and powerful ecommerce tools.
           </strong>
         </p>
         <div className="flex items-center justify-center gap-4 mt-1 mb-10">
-          <ContactButton text={"Grow Your Business"} />
+          <ContactButton text={"Let’s discuss your idea!"} />
         </div>
       </div>
       <HeroAnimation />

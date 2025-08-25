@@ -1,16 +1,9 @@
 "use client";
 import React, { useRef, useState } from "react";
-import AgileWorkflow from "./AgileWorkflow";
-import RecommendedWorkflow from "./RecommendedWorkflow";
-import WaterfallWorkflow from "./WaterfallWorkflow";
-// import { ECOMMERCE_RECOMMENDED_WORKFLOW } from "@/constants/ecommerce-develpment/EcommerceRecommendedWorkflow";
 import { ECOMMERCE_AGILE_WORKFLOW } from "@/constants/ecommerce-develpment/ecommerceagileworkflow";
 import { ECOMMERCE_WATERFALL_WORKFLOW } from "@/constants/ecommerce-develpment/ecommercewaterfallworkflow";
 import { ECOMMERCE_RECOMMENDED_WORKFLOW } from "@/constants/ecommerce-develpment/ecommercerecommendedworkflow";
-import NewWorkflow from "@/components/Common/NewWorkflow";
-import Image from "next/image";
 import ProcessCard from "@/components/StaffAugmentation/ProcessCard";
-import { WYOMING_DIGITAL_MARKETING_PROCESS } from "@/constants/locations/wyoming-digital-marketing/wyoming-digital-marketing-process";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Workflow = () => {
@@ -70,63 +63,6 @@ const Workflow = () => {
           </button>
         </div>
       </div>
-
-      {/* <NewWorkflow
-        agileProcess={ECOMMERCE_AGILE_WORKFLOW}
-        recommendedProcess={ECOMMERCE_RECOMMENDED_WORKFLOW}
-        waterfallProcess={ECOMMERCE_WATERFALL_WORKFLOW}
-      /> */}
-
-      {/* <div className="w-full flex justify-center mt-10">
-        <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
-          <button
-            type="button"
-            name="agile methodology button"
-            onClick={() => setActiveTab("agile")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "agile"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            AGILE
-          </button>
-          <button
-            type="button"
-            name="recommened workflow button"
-            onClick={() => setActiveTab("recommended")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "recommended"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            recommended
-          </button>
-          <button
-            type="button"
-            name="waterfall methodology button"
-            onClick={() => setActiveTab("waterfall")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "waterfall"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            Waterfall
-          </button>
-        </div>
-      </div>
-
-      {activeTab === "agile" && (
-        <AgileWorkflow workflow={ECOMMERCE_AGILE_WORKFLOW} />
-      )}
-      {activeTab === "recommended" && (
-        <RecommendedWorkflow workflow={ECOMMERCE_RECOMMENDED_WORKFLOW} />
-      )}
-      {activeTab === "waterfall" && (
-        <WaterfallWorkflow workflow={ECOMMERCE_WATERFALL_WORKFLOW} />
-      )} */}
 
       <div className="w-full relative  py-20">
         <AnimatedLine />

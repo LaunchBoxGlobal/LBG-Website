@@ -61,15 +61,15 @@ const EcommerceFaqs = () => {
             </motion.div>
           </div>
         ))}
+
         <div className="w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black">
           <button
-            onClick={() => toggleFaq(ECOMMERCE_FAQS.length)}
+            onClick={() => toggleFaq(ECOMMERCE_FAQS.length + 1)}
             className="w-full text-start flex items-start justify-between outline-none"
           >
             <h3 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
               <span className="leading-[1.1]">
-                How does Launchbox Global ensure that eCommerce platforms are
-                optimized for digital marketing success?
+                How to make a website to sell stuff?
               </span>
             </h3>
 
@@ -79,7 +79,7 @@ const EcommerceFaqs = () => {
               height={20}
               alt="arrow icon"
               className={`${
-                openFaq === ECOMMERCE_FAQS.length
+                openFaq === ECOMMERCE_FAQS.length + 1
                   ? "scale-y-[-1]"
                   : "scale-y-[1]"
               } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] xl:mt-1.5`}
@@ -89,25 +89,169 @@ const EcommerceFaqs = () => {
           <motion.div
             initial={false}
             animate={{
-              height: openFaq === ECOMMERCE_FAQS.length ? "auto" : 0,
-              opacity: openFaq === ECOMMERCE_FAQS.length ? 1 : 0,
-              marginTop: openFaq === ECOMMERCE_FAQS.length ? "18px" : 0,
+              height: openFaq === ECOMMERCE_FAQS.length + 1 ? "auto" : 0,
+              opacity: openFaq === ECOMMERCE_FAQS.length + 1 ? 1 : 0,
+              marginTop: openFaq === ECOMMERCE_FAQS.length + 1 ? "18px" : 0,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="overflow-hidden"
           >
             <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
-              We don’t just build high-performing eCommerce platforms—we
-              engineer them to support your full digital marketing strategy from
-              day one. Our development approach includes SEO-friendly
-              architecture, fast load speeds, conversion-optimized design, and
-              integrations with tools like Google Analytics, Meta Pixel, and
-              email automation systems. To maximize your store’s visibility and
-              revenue, we recommend pairing your build with our expert{" "}
-              <Link href={`/services/digital-marketing`} className="red-text">
-                Digital Marketing services
+              Creating a website to sell items requires planning, design, and
+              the right tools. Ecommerce tools simplify product management,
+              payment, and shipping while enhancing user experience and boosting
+              sales.
+            </p>
+            <p className="text-base lg:text-[20px] font-medium lg:w-[90%] my-3">
+              Steps:
+            </p>
+            <ul className="list-disc pl-5">
+              {[
+                "Choose suitable ecommerce tools",
+                "Design clear product pages",
+                "Set up secure checkout",
+                "Manage inventory and shipping",
+              ]?.map((ele, index) => {
+                return (
+                  <li
+                    className="text-base lg:text-[20px] font-normal lg:w-[90%]"
+                    key={index}
+                  >
+                    {ele}
+                  </li>
+                );
+              })}
+            </ul>
+          </motion.div>
+        </div>
+        <div className="w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black">
+          <button
+            onClick={() => toggleFaq(ECOMMERCE_FAQS.length + 2)}
+            className="w-full text-start flex items-start justify-between outline-none"
+          >
+            <h3 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
+              <span className="leading-[1.1]">
+                How to make a website to sell products?
+              </span>
+            </h3>
+
+            <Image
+              src={"/faq-arrow-icon.png"}
+              width={24}
+              height={20}
+              alt="arrow icon"
+              className={`${
+                openFaq === ECOMMERCE_FAQS.length + 2
+                  ? "scale-y-[-1]"
+                  : "scale-y-[1]"
+              } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] xl:mt-1.5`}
+            />
+          </button>
+
+          <motion.div
+            initial={false}
+            animate={{
+              height: openFaq === ECOMMERCE_FAQS.length + 2 ? "auto" : 0,
+              opacity: openFaq === ECOMMERCE_FAQS.length + 2 ? 1 : 0,
+              marginTop: openFaq === ECOMMERCE_FAQS.length + 2 ? "18px" : 0,
+            }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
+              A website to sell products can be built using platforms like
+              Shopify. Shopify development ensures responsive design, secure
+              payments, and smooth customer experiences, making it easier to
+              launch and manage your online store.
+            </p>
+            <p className="text-base lg:text-[20px] font-medium lg:w-[90%] my-3">
+              Steps:
+            </p>
+            <ul className="list-disc pl-5">
+              {[
+                "Select Shopify for development",
+                "Create product listings and categories",
+                "Enable secure payment gateways",
+                "Optimize for mobile and speed",
+              ]?.map((ele, index) => {
+                return (
+                  <li
+                    className="text-base lg:text-[20px] font-normal lg:w-[90%]"
+                    key={index}
+                  >
+                    {ele}
+                  </li>
+                );
+              })}
+            </ul>
+          </motion.div>
+        </div>
+        <div className="w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black">
+          <button
+            onClick={() => toggleFaq(ECOMMERCE_FAQS.length + 3)}
+            className="w-full text-start flex items-start justify-between outline-none"
+          >
+            <h3 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
+              <span className="leading-[1.1]">
+                What technologies do you use for ecommerce app development?
+              </span>
+            </h3>
+
+            <Image
+              src={"/faq-arrow-icon.png"}
+              width={24}
+              height={20}
+              alt="arrow icon"
+              className={`${
+                openFaq === ECOMMERCE_FAQS.length + 3
+                  ? "scale-y-[-1]"
+                  : "scale-y-[1]"
+              } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] xl:mt-1.5`}
+            />
+          </button>
+
+          <motion.div
+            initial={false}
+            animate={{
+              height: openFaq === ECOMMERCE_FAQS.length + 3 ? "auto" : 0,
+              opacity: openFaq === ECOMMERCE_FAQS.length + 3 ? 1 : 0,
+              marginTop: openFaq === ECOMMERCE_FAQS.length + 3 ? "18px" : 0,
+            }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
+              As a leading e-commerce agency, we use a range of technologies to
+              build high-performing apps:{" "}
+              <Link
+                href={`https://launchboxglobal.com/development-technologies/react-native-app-development`}
+                className="underline"
+              >
+                Native
               </Link>
-              , which drive targeted traffic and measurable ROI
+              ,{" "}
+              <Link
+                href={`https://launchboxglobal.com/development-technologies/flutter-app-development`}
+                className="underline"
+              >
+                Flutter
+              </Link>
+              ,{" "}
+              <Link
+                href={`https://launchboxglobal.com/development-technologies/swift-app-development`}
+                className="underline"
+              >
+                Swift
+              </Link>
+              ,{" "}
+              <Link
+                href={`https://launchboxglobal.com/development-technologies/ionic-app-development`}
+                className="underline"
+              >
+                Ionic
+              </Link>{" "}
+              App Development, and more. This ensures reliable, secure, and
+              user-friendly mobile shopping experiences.
             </p>
           </motion.div>
         </div>

@@ -14,15 +14,14 @@ const Services = () => {
     <section className="w-full py-10 lg:pb-20 lg:pt-32 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[80%]">
-          Expert Ecommerce Development
+          Custom Ecommerce Development
           <span className="red-text"> Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
           <strong className="font-light">
-            As a trusted ecommerce development company, we deliver exceptional
-            ecommerce development services. Our ecommerce web development
-            company focuses on creating customized solutions to enhance your
-            online presence.
+            We simplify selling online with our ecommerce development services.
+            As a leading ecommerce agency, we focus on building stores that
+            attract customers, grow sales, and keep business stress-free.
           </strong>
         </p>
       </section>

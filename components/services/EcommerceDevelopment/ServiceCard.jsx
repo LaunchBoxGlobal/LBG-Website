@@ -34,12 +34,10 @@ const ServiceCard = ({ service, index, openFaq, toggleFaq }) => {
           height={220}
           alt={service?.alt_tag}
           loading="lazy"
-          className={`2xl:left-[9%] -top-[46%] w-[279px] h-[220px] xl:w-[290px] 2xl:h-[230px] hidden lg:block absolute lg:left-[9%] xl:left-[7%] z-10 ${
+          className={`2xl:left-[9%] -top-[16%] w-[279px] h-[220px] xl:w-[290px] 2xl:h-[230px] hidden lg:block absolute lg:left-[9%] xl:left-[7%] z-10 ${
             openFaq === index
               ? "lg:top-[14%] top-[10%] rotate-0 visible"
-              : `-rotate-[22deg] invisible group-hover:visible ${
-                  index === 1 || index === 4 ? "top-[-8%]" : ""
-                }`
+              : `-rotate-[22deg] invisible group-hover:visible`
           }`}
         />
         <div className="flex flex-col items-center w-[85%] lg:w-[60%] xl:w-[67%] 2xl:w-[67%]">

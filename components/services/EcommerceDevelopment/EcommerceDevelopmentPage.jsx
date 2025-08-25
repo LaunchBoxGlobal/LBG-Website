@@ -14,10 +14,15 @@ import Platforms from "@/components/Common/Platforms";
 import Portfolio from "./Portfolio";
 import AboutSection from "./AboutSection";
 import GlobalReach from "./GlobalReach";
+import FlexibleDevelopmentServices from "./FlexibleDevelopmentServices";
+import ShowcasingExpertise from "./ShowcasingExpertise";
+import EcommerceDevelopmentForBusinesses from "./EcommerceDevelopmentForBusinesses";
+import SecuritySolutions from "./SecuritySolutions";
+import EcommerceTechTrends from "./EcommerceTechTrends";
 
 const EcommerceDevelopmentPage = () => {
   return (
-    <main className="w-full relative">
+    <main className="w-full relative overflow-x-hidden">
       <Hero />
       <section className="w-full">
         <Platforms />
@@ -39,8 +44,14 @@ const EcommerceDevelopmentPage = () => {
       <HomeStats />
       <CtaSection />
       <Workflow />
+      <ShowcasingExpertise />
+      <EcommerceDevelopmentForBusinesses />
+      <SecuritySolutions />
+      <EcommerceTechTrends />
       <WhyChooseUs />
+      <FlexibleDevelopmentServices />
       <EcommerceFaqs />
+
       <ContactForm />
     </main>
   );

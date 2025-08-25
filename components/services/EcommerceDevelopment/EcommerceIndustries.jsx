@@ -1,42 +1,15 @@
 "use client";
 import { ECOMMERCE_INDUSTRIES } from "@/constants/ecommerce-develpment/ecommerceIndustries";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { FiMinus } from "react-icons/fi";
+import { LuPlus } from "react-icons/lu";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
-
-export const sliderSettings = {
-  slidesPerView: 1,
-  spaceBetween: 40,
-  centeredSlides: false,
-  loop: true,
-  breakpoints: {
-    480: {
-      slidesPerView: 1,
-    },
-    600: {
-      slidesPerView: 1,
-    },
-
-    750: {
-      slidesPerView: 2,
-    },
-
-    900: {
-      slidesPerView: 2,
-    },
-    1100: {
-      slidesPerView: 3,
-    },
-  },
-};
+import "./industries.css";
 
 const EcommerceIndustries = () => {
   return (
@@ -57,7 +30,35 @@ const EcommerceIndustries = () => {
         </p>
       </section>
 
-      <section
+      <section className="industries-wrapper w-full mt-10 lg:mt-16 flex flex-wrap gap-2">
+        {ECOMMERCE_INDUSTRIES?.map((industry, index) => (
+          <div
+            className="industry-card h-[300px] md:h-[340px] lg:h-[330px] midlg:h-[340px] xl:h-[370px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden"
+            key={index}
+          >
+            <h3 className="text-[26px] font-semibold leading-[1]">
+              {industry?.title}
+            </h3>
+            <div className="flex items-start justify-between gap-2 relative flex-1 mt-5 overflow-hidden">
+              <div className="max-w-[85%]">
+                <p className="text-base xl:text-lg font-normal lg:text-start leading-[1.2] xl:leading-[1.2] hidden group-hover:block transition-all duration-300">
+                  {industry?.description}
+                </p>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              className="min-w-[30px] min-h-[30px] max-w-[30px] max-h-[30px] bg-[#f40e00] group-hover:bg-white transition-all duration-300 rounded flex items-center justify-center absolute right-5 bottom-5"
+            >
+              <LuPlus className="text-white group-hover:hidden block transition-all duration-300" />
+              <FiMinus className="text-black group-hover:block hidden transition-all duration-300" />
+            </button>
+          </div>
+        ))}
+      </section>
+
+      {/* <section
         className={`w-full relative overflow-hidden mt-10 lg:mt-16 h-[490px] lg:h-[547px]`}
       >
         <Swiper
@@ -79,7 +80,6 @@ const EcommerceIndustries = () => {
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
-                  {/* Icon */}
                   <Image
                     src={isHovered ? value?.whiteIcon : value?.redIcon}
                     alt={value?.title}
@@ -90,12 +90,10 @@ const EcommerceIndustries = () => {
                     }`}
                   />
 
-                  {/* Title */}
                   <h3 className="text-[20px] lg:text-[24px] font-semibold tracking-tight">
                     {value?.title}
                   </h3>
 
-                  {/* Description */}
                   <p className="text-sm lg:text-[18px] leading-[22px] font-light text-gray-400 group-hover:text-white flex-grow">
                     {value?.description}
                   </p>
@@ -105,7 +103,7 @@ const EcommerceIndustries = () => {
           })}
           <SwiperButtons />
         </Swiper>
-      </section>
+      </section> */}
     </section>
   );
 };

@@ -6,7 +6,7 @@ export const ECOMMERCE_AGILE_WORKFLOW = [
     tag_line: "Find the Product + Build Plan",
     title: "Product Research & Backlog Creation",
     description:
-      "We work with you to find winning product ideas using data — then build a backlog of branding, development, and launch tasks.",
+      "We work with you to find winning product ideas using data, then build a backlog of branding, development, and launch tasks, including Shopify migration for a smooth transition.",
   },
   {
     icon: "/locations/digital-marketing/planning-and-timeline-icon.png",
@@ -15,7 +15,7 @@ export const ECOMMERCE_AGILE_WORKFLOW = [
     tag_line: "Define Priorities, Set Focus",
     title: "Sprint Planning",
     description:
-      "Each sprint is focused: product validation, supplier vetting, branding, store build, etc. We work in short, impact-driven bursts.",
+      "Each sprint is focused: product validation, supplier vetting, branding, store build, and more. We work in short, impact-driven bursts, leveraging our expertise in Adobe Commerce development services.",
   },
   {
     icon: "/locations/digital-marketing/development-icon.png",
@@ -24,7 +24,7 @@ export const ECOMMERCE_AGILE_WORKFLOW = [
     tag_line: "Launch a Lean Version",
     title: "MVP Build & Launch",
     description:
-      "We start by building a lean, functional version of your store — just enough to test demand and gather real customer feedback.",
+      "We start by building a lean, functional version of your store—just enough to test demand and gather real customer feedback, included in our ecommerce website packages.",
   },
   {
     icon: "/locations/digital-marketing/testing-icon.png",
@@ -33,7 +33,7 @@ export const ECOMMERCE_AGILE_WORKFLOW = [
     tag_line: "Track, Analyze, Improve",
     title: "Behavior-Based Optimization",
     description:
-      "Post-launch, we analyze what users do — and improve pages, offers, and flows based on live data.",
+      "Post-launch, we analyze what users do and improve pages, offers, and flows based on live data, ensuring effective ecommerce management.",
   },
   {
     icon: "/locations/digital-marketing/campaign-icon.png",
@@ -42,7 +42,7 @@ export const ECOMMERCE_AGILE_WORKFLOW = [
     tag_line: "Iterate Based on Insights",
     title: "Continuous Refinement",
     description:
-      "Each sprint builds on user insights. We improve UX, speed, offers, and more.",
+      "Each sprint builds on user insights. We enhance UX, speed, offers, and more, using our expertise in Magento development services.",
   },
   {
     icon: "/locations/digital-marketing/post-launch-reporting-icon.png",
@@ -51,6 +51,6 @@ export const ECOMMERCE_AGILE_WORKFLOW = [
     tag_line: "Double Down on Success",
     title: "Scale What Converts",
     description:
-      "Once we see traction, we scale — adding upsells, bundles, email automation, and other features based on proven results.",
+      "Once we see traction, we scale. Adding upsells, bundles, email automation, and other features based on proven results, leveraging our expertise in Shopify development.",
   },
 ];
