@@ -12,6 +12,7 @@ import { HOME_SERVICES } from "@/constants/HomeServices";
 // import FlagsAnimation from "../Common/FlagsAnimation";
 // import Services from "./Services";
 import dynamic from "next/dynamic";
+import HomePageBlogs from "./HomePageBlogs";
 const Platforms = dynamic(() => import("../Common/Platforms"), {
   loading: () => <></>,
 });
@@ -70,6 +71,7 @@ const HomePage = () => {
       <HomeStats />
       <HomeCustomerReviews />
       <FlagsAnimation />
+      <HomePageBlogs />
       <HomeFaqs />
     </main>
   );
