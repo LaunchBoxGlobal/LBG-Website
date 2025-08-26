@@ -5,13 +5,14 @@ const PopupFormAnimation = () => {
   return (
     <div className="lg:p-10 midlg:p-16 flex flex-col items-center justify-between relative overflow-hidden w-full h-full">
       <div className="flex flex-col items-center gap-4 text-center">
-        <h2 className="font-bold text-[54px] tracking-tight leading-[1]">
-          Before You <span className="red-text">Leave</span>
+        <h2 className="font-bold text-[28px] tracking-tight leading-[1]">
+          This could be the moment where your idea takes shape.{" "}
+          <span className="red-text">Will you close it?</span>
         </h2>
-        <p className="text-[27px] font-normal leading-[1]">
-          Sign up now for a free quote
+        <p className="text-[20px] font-normal leading-[1]">
+          Take the first step today with
         </p>
-        <p className="uppercase red-bg text-white w-[266px] h-[58px] flex items-center justify-center rounded-[13px] text-[22px] font-bold">
+        <p className="uppercase red-bg text-white lg:w-[230px] xl:w-[250px] lg:h-[48px] xl:h-[58px] flex items-center justify-center rounded-[13px] text-[18px] font-bold">
           UPTO 25% free
         </p>
       </div>
@@ -40,7 +41,7 @@ const PopupFormAnimation = () => {
           height={122}
           className="absolute -left-1 bottom-[-5%] z-10"
         /> */}
-        <div className="w-full absolute left-1/2 -translate-x-1/2 bottom-[-25%] h-full">
+        <div className="w-full absolute left-1/2 -translate-x-1/2 lg:-bottom-[15%] xl:bottom-[-25%] h-full">
           <img
             src="/popup-form-lines.png"
             alt="popup-form-lines"
@@ -53,14 +54,14 @@ const PopupFormAnimation = () => {
             alt="popup-form-magnifire"
             width={134}
             height={135}
-            className="absolute bottom-[20%] left-[19%] z-10 lg:w-[100px] zigzag-image"
+            className="absolute lg:bottom-[12%] xl:bottom-[20%] lg:left-[14%] xl:left-[19%] z-10 lg:w-[100px] zigzag-image"
           />
           <img
             src="/popup-form-rocket-image.png"
             alt="popup-form-rocket-image"
             width={191}
             height={221}
-            className="absolute right-[-14%] top-[-28%] -rotate-6"
+            className="absolute lg:right-[-21.5%] xl:right-[-14%] top-[-28%] -rotate-6"
           />
         </div>
         {/* <img

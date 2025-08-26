@@ -1,9 +1,13 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import Cursor from "../Blogs/Cursor";
+import HomeBlogCardCursor from "./HomeBlogCardCursor";
+// import Cursor from "../Global/Cursor";
 
 const HomePageBlogs = () => {
   const [blogs, setBlogs] = useState(null);
+  const [isCursorHovering, setIsCursorHovering] = useState(false);
 
   const fetchBlogs = async () => {
     try {
@@ -36,7 +40,7 @@ const HomePageBlogs = () => {
         id="blogs"
       >
         <h2 className="section-heading lg:w-[70%] text-center">
-          Discover What’s New and <span className="red-text">Next</span>
+          Discover What’s <br /> <span className="red-text">New and Next</span>
         </h2>
         <p className="section-paragraph text-center w-full md:w-2/3">
           Stay updated with the latest trends and find simple, practical guides
@@ -49,7 +53,12 @@ const HomePageBlogs = () => {
         {/* Left Column (2 blogs) */}
         <div className="col-span-1 flex flex-col gap-4">
           {blogs?.slice(0, 2).map((blog, index) => (
-            <div className="relative" key={index}>
+            <div
+              className="relative"
+              key={index}
+              onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
+              onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
+            >
               <Link href={`/blog/${blog?.slug}`}>
                 <img
                   src={blog?.jetpack_featured_media_url}
@@ -59,12 +68,18 @@ const HomePageBlogs = () => {
               </Link>
             </div>
           ))}
+          <HomeBlogCardCursor isHovering={isCursorHovering} />
         </div>
 
         {/* Center Column (1 blog) */}
         <div className="col-span-1 md:col-span-2 flex flex-col items-center justify-center h-full">
           {blogs?.slice(2, 3).map((blog, index) => (
-            <div className="relative w-full h-full" key={index}>
+            <div
+              className="relative w-full h-full"
+              key={index}
+              onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
+              onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
+            >
               <Link href={`/blog/${blog?.slug}`}>
                 <img
                   src={blog?.jetpack_featured_media_url}
@@ -74,12 +89,18 @@ const HomePageBlogs = () => {
               </Link>
             </div>
           ))}
+          <HomeBlogCardCursor isHovering={isCursorHovering} />
         </div>
 
         {/* Right Column (2 blogs) */}
         <div className="col-span-1 flex flex-col gap-4">
           {blogs?.slice(3, 5).map((blog, index) => (
-            <div className="relative" key={index}>
+            <div
+              className="relative"
+              key={index}
+              onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
+              onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
+            >
               <Link href={`/blog/${blog?.slug}`}>
                 <img
                   src={blog?.jetpack_featured_media_url}
@@ -89,6 +110,7 @@ const HomePageBlogs = () => {
               </Link>
             </div>
           ))}
+          <HomeBlogCardCursor isHovering={isCursorHovering} />
         </div>
       </section>
 
