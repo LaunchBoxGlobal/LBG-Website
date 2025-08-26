@@ -100,7 +100,7 @@ const PopupForm = () => {
         >
           <IoClose className="w-full h-full text-gray-600" />
         </button>
-        <div className="lg:w-[90%] midlg:w-[80%] bg-white grid grid-cols-2 rounded-[46px]">
+        <div className="lg:w-full midlg:w-[80%] bg-white grid grid-cols-2 rounded-[46px]">
           <div className="bg-[#f9f9f9] rounded-l-[46px]">
             <PopupFormAnimation />
           </div>

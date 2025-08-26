@@ -1,22 +1,21 @@
 @keyframes zigzag {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, -5%);
   }
   20% {
-    transform: translate(20px, -20px);
+    transform: translate(15%, -25%);
   }
   40% {
-    transform: translate(55px, 30px);
+    transform: translate(60%, 25%);
   }
   60% {
-    transform: translate(110px, -50px);
+    transform: translate(110%, -60%);
   }
   80% {
-    transform: translate(160px, 45px);
+    transform: translate(160%, 45%);
   }
   100% {
-    /* transform: translate(160px, 45px); */
-    transform: translate(200px, -40px);
+    transform: translate(205%, -45%);
   }
 }
 

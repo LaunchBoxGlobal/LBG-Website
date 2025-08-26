@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           crossOrigin="*"
         />
         {/* <WhatsappButton /> */}
-        {/* <PopupForm /> */}
+        <PopupForm />
         <HomeFooter />
       </body>
     </html>
