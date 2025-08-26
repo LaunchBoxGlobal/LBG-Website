@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { motion, useTransform, useScroll } from "framer-motion";
 import React, { useRef } from "react";
 import { DIGITAL_MARKETING_REASONS } from "@/constants/digital-marketing/DigitalMarketingReasons";
@@ -9,11 +8,14 @@ const Reasons = () => {
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
         <h2 className="section-heading text-center">
-          What You Might Be <span className="red-text">Missing Out</span>
+          Why Full Digital Marketing Services Are a{" "}
+          <span className="red-text">Game-Changer</span>
         </h2>
         <p className="section-paragraph text-center mx-auto lg:w-[80%]">
-          You can't just "Let's see" things when you're in business. You must do
-          whatever it takes to succeed and move at everyone's pace.
+          You can't just "let's see" things when you're in business. Success
+          requires consistent effort, smart strategies, and the right support.
+          By using digital marketing as a service, you can access expert
+          guidance and proven tactics that help your business grow.
         </p>
       </div>
 

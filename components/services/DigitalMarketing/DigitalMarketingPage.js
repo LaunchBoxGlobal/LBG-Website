@@ -10,6 +10,10 @@ import Workflow from "./Workflow";
 import DigitalMarketingContactForm from "./DigitalMarketingContactForm";
 import DigitalMarketingFaqs from "./DigitalMarketingFaqs";
 import AboutSection from "./AboutSection";
+import DigitalMarketingServicesForEveryBusiness from "./DigitalMarketingServicesForEveryBusiness";
+import CustomSoftwareAwards from "../CustomSoftwareDevelopment/CustomSoftwareAwards";
+import DigitalMarketingForEveryBusiness from "./DigitalMarketingForEveryBusiness";
+import SecuritySolutions from "./SecuritySolutions";
 
 const DigitalMarketingPage = () => {
   return (
@@ -25,6 +29,10 @@ const DigitalMarketingPage = () => {
       <Workflow />
       <DigitalMarketingFaqs />
       <DigitalMarketingContactForm />
+      <DigitalMarketingServicesForEveryBusiness />
+      <CustomSoftwareAwards />
+      <DigitalMarketingForEveryBusiness />
+      <SecuritySolutions />
     </main>
   );
 };

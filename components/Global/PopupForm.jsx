@@ -7,6 +7,7 @@ import ButtonLoader from "./ButtonLoader";
 import axios from "axios";
 import Link from "next/link";
 import { IoClose } from "react-icons/io5";
+import { serviceLinks } from "../ContactUs/ContactUsForm";
 
 const PopupForm = () => {
   const [loading, setLoading] = useState(false);
@@ -39,17 +40,19 @@ const PopupForm = () => {
       firstName: "",
       email: "",
       phoneNumber: "",
+      service: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form From Service Page",
       // textMessagesCheckbox: false,
       agreeToTermsConditions: false,
-      message: "",
+      // message: "",
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
         .min(3, "Name can not be less than 3 characters")
         .max(15, "Name can not be more than 25 characters")
         .required("Please enter your name"),
+      service: Yup.string().required("Please select a service"),
       email: Yup.string()
         .email("Invalid email address")
         .required("Please enter your email address"),
@@ -59,10 +62,10 @@ const PopupForm = () => {
         .required("Please enter your phone number"),
       // textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
       agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
-      message: Yup.string()
-        .min(100, "Message can not be less than 100 characters")
-        .max(1000, "Message can not be more than 1000 characters")
-        .required("Please enter the message"),
+      // message: Yup.string()
+      //   .min(100, "Message can not be less than 100 characters")
+      //   .max(1000, "Message can not be more than 1000 characters")
+      //   .required("Please enter the message"),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
@@ -78,6 +81,7 @@ const PopupForm = () => {
 
           resetForm();
           alert("Form submitted successfully!");
+          setIsOpen(false);
         }
       } catch (error) {
         console.log("error while submitting form >>>", error);
@@ -96,15 +100,15 @@ const PopupForm = () => {
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
-          className="w-8 h-8 rounded-full p-1 bg-white flex items-center justify-center absolute top-[5%] right-[2%]"
+          className="w-8 h-8 rounded-full p-1 bg-white flex items-center justify-center absolute top-2 right-2 midlg:top-[5%] midlg:right-[2%]"
         >
           <IoClose className="w-full h-full text-gray-600" />
         </button>
-        <div className="lg:w-full midlg:w-[80%] bg-white grid grid-cols-2 rounded-[46px]">
-          <div className="bg-[#f9f9f9] rounded-l-[46px]">
+        <div className="lg:w-full midlg:w-[80%] bg-white grid grid-cols-1 lg:grid-cols-2 rounded-[46px]">
+          <div className="bg-[#f9f9f9] rounded-l-[46px] hidden lg:block">
             <PopupFormAnimation />
           </div>
-          <div className="p-10">
+          <div className="p-10 bg-white rounded-r-[46px]">
             <form
               onSubmit={formik.handleSubmit}
               className="w-full bg-white text-black lg:max-w-[80%] mx-auto"
@@ -132,13 +136,6 @@ const PopupForm = () => {
                     value={formik.values.firstName}
                     className="pb-2 pt-1 block w-full border-b border-gray-800 lg:text-lg outline-none"
                   />
-                  {/* <div className="w-full">
-                  {formik.touched.firstName && formik.errors.firstName ? (
-                    <span className="text-xs red-text">
-                      {formik.errors.firstName}
-                    </span>
-                  ) : null}
-                </div> */}
                 </div>
                 <div className="w-full">
                   <label
@@ -162,13 +159,6 @@ const PopupForm = () => {
                     value={formik.values.email}
                     className="pb-2 pt-1 block w-full border-b border-gray-800 lg:text-lg outline-none"
                   />
-                  {/* <div className="w-full">
-                  {formik.touched.email && formik.errors.email ? (
-                    <span className="text-xs red-text">
-                      {formik.errors.email}
-                    </span>
-                  ) : null}
-                </div> */}
                 </div>
                 <div className="w-full">
                   <label
@@ -192,41 +182,36 @@ const PopupForm = () => {
                     value={formik.values.phoneNumber}
                     className="pb-2 pt-1 block w-full border-b border-gray-800 lg:text-lg outline-none"
                   />
-                  {/* <div className="w-full">
-                  {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-                    <span className="text-xs red-text">
-                      {formik.errors.phoneNumber}
-                    </span>
-                  ) : null}
-                </div> */}
                 </div>
                 <div className="w-full">
                   <label
-                    htmlFor="message"
+                    htmlFor="service"
                     className="block text-sm font-medium text-[#212121]"
                   >
-                    Message{" "}
+                    I'm interest in{" "}
                     <span>
-                      {formik.touched.message && formik.errors.message ? (
+                      {formik.touched.service && formik.errors.service ? (
                         <span className="text-lg red-text">*</span>
                       ) : null}
                     </span>
                   </label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.message}
+                  <select
+                    id="service"
+                    name="service"
+                    {...formik.getFieldProps("service")}
                     className="pb-2 pt-1 block w-full border-b border-gray-800 lg:text-lg outline-none"
-                  ></textarea>
-                  {/* <div className="w-full">
-                  {formik.touched.message && formik.errors.message ? (
-                    <span className="text-xs red-text">
-                      {formik.errors.message}
-                    </span>
-                  ) : null}
-                </div> */}
+                  >
+                    <option defaultValue={""} value="">
+                      Choose a service
+                    </option>
+                    {serviceLinks?.map((service, index) => {
+                      return (
+                        <option value={service} key={index}>
+                          {service}
+                        </option>
+                      );
+                    })}
+                  </select>
                 </div>
                 <div className="flex items-start gap-2">
                   <input
@@ -264,9 +249,13 @@ const PopupForm = () => {
                 <div className="w-full">
                   <button
                     type="submit"
-                    className="hover:bg-[#212121] text-white w-full rounded-full h-[55px] text-sm lg:text-lg font-semibold bg-[#F40E00] transition-all duration-300"
+                    className="hover:bg-[#212121] text-white w-full rounded-full h-[55px] text-xs md:text-sm midlg:text-lg font-semibold bg-[#F40E00] transition-all duration-300"
                   >
-                    {loading ? <ButtonLoader /> : `Get Your Free App Plan!`}
+                    {loading ? (
+                      <ButtonLoader />
+                    ) : (
+                      `Book My Strategy Call (Worth $1,000)`
+                    )}
                   </button>
                 </div>
               </div>

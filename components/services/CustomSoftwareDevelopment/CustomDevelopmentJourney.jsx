@@ -124,7 +124,7 @@ const CustomDevelopmentJourney = () => {
             hoveredIndex === 2
               ? "bg-[#F40E00] text-white"
               : "bg-white text-black"
-          } ${hoveredIndex === 2 ? "rotate-0 z-20" : "rotate-6 z-10"}`}
+          } ${hoveredIndex === 2 ? "rotate-0 z-20" : "lg:rotate-6 z-10"}`}
         >
           <Image
             src={"/custom-software-journey-card-texture-image.webp"}

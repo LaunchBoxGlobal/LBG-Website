@@ -29,7 +29,7 @@ const Industries = () => {
       <section className="industries-wrapper w-full mt-10 lg:mt-16 flex flex-wrap gap-2">
         {CUSTOM_SOFTWARE_INDUSTRIES?.map((industry, index) => (
           <div
-            className="industry-card h-[300px] md:h-[280px] lg:h-[330px] midlg:h-[340px] xl:max-h-[340px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden"
+            className="industry-card h-[320px] md:h-[280px] lg:h-[330px] midlg:h-[340px] xl:max-h-[340px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden"
             key={index}
           >
             <h3 className="text-[26px] font-semibold leading-[1]">

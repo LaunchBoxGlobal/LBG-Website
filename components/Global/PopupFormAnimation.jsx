@@ -12,27 +12,27 @@ const PopupFormAnimation = () => {
         <p className="text-[20px] font-normal leading-[1]">
           Take the first step today with
         </p>
-        <p className="uppercase red-bg text-white lg:w-[230px] xl:w-[250px] lg:h-[48px] xl:h-[58px] flex items-center justify-center rounded-[13px] text-[18px] font-bold">
-          UPTO 25% free
+        <p className="uppercase red-bg text-white px-7 lg:h-[48px] xl:h-[58px] flex items-center justify-center rounded-[13px] text-[18px] font-bold">
+          UPTO 25% off
         </p>
       </div>
 
       <div className="lg:w-[90%] midlg:w-full relative h-full z-10">
         <div className="bg-white custom-shadow lg:w-[80px] lg:h-[80px] xl:w-[90px] xl:h-[90px] rounded-xl bulb-inner-shadow absolute left-3 xl:left-1 bottom-[-5%] z-10 flex items-center justify-center">
           <img
-            src="/yellow-bulb.png"
-            alt="yellow-bulb"
+            src="/yellow-bulb-image.png"
+            alt="yellow-bulb-image"
             width={51}
             height={66}
-            className="object-contain absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bulb-on"
+            className="object-contain absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
           />
-          <img
-            src="/white-bulb.png"
-            alt="white-bulb"
-            width={45}
-            height={60}
+          {/* <img
+            src="/white-bulb-image.png"
+            alt="white bulb image"
+            width={34}
+            height={44}
             className="object-contain absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bulb-off"
-          />
+          /> */}
         </div>
         {/* <img
           src="/popup-form-yellow-bulb-image.png"
@@ -41,7 +41,7 @@ const PopupFormAnimation = () => {
           height={122}
           className="absolute -left-1 bottom-[-5%] z-10"
         /> */}
-        <div className="w-full absolute left-1/2 -translate-x-1/2 lg:-bottom-[15%] xl:bottom-[-25%] h-full">
+        <div className="w-full absolute left-1/2 -translate-x-1/2 lg:-bottom-[15%] xl:bottom-[-15%] h-full">
           <img
             src="/popup-form-lines.png"
             alt="popup-form-lines"
@@ -54,7 +54,7 @@ const PopupFormAnimation = () => {
             alt="popup-form-magnifire"
             width={134}
             height={135}
-            className="absolute lg:bottom-[12%] xl:bottom-[20%] lg:left-[14%] xl:left-[19%] z-10 lg:w-[100px] zigzag-image"
+            className="absolute lg:bottom-[25%] lg:left-[18%] xl:bottom-[30%] xl:left-[22%] z-10 lg:w-[100px] zigzag-image"
           />
           <img
             src="/popup-form-rocket-image.png"

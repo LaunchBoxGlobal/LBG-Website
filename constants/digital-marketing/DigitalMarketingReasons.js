@@ -2,7 +2,7 @@ export const DIGITAL_MARKETING_REASONS = [
   {
     title: "Easier To Create A Brand Voice",
     titleBg: "#F40E00",
-    description: `You shouldn't say, "Let's see," about your business. You need the best digital marketing services to target the right people and build an effective online presence.`,
+    description: `You shouldn't take a wait-and-see approach with your business. You need the best digital marketing services and marketing websites to reach the right audience and build a strong, effective online presence.`,
     descriptionBg: "#F99C99",
     icon: "/storefront-icon.webp",
     iconWidth: "38",
@@ -11,7 +11,7 @@ export const DIGITAL_MARKETING_REASONS = [
   {
     title: "You Can See What's Working",
     titleBg: "#F6564D",
-    description: `It's way easier to track what's working and what's not. You can check who clicked, so you no longer need to spend money on something that doesn't work.`,
+    description: `It's easier to track what's working. Being one of the best SEO optimization companies, we ensure you no longer spend money on strategies that don’t work.`,
     descriptionBg: "#FBBFBE",
     icon: "/mobile-commerce-icon.webp",
     iconWidth: "37",
@@ -21,7 +21,7 @@ export const DIGITAL_MARKETING_REASONS = [
     title: "You Never Disappear From Minds",
     titleBg: "#FE8761",
     description:
-      "People don't have to pass by your store to remember you exist. You're always on feeds without spending a hefty amount on advertisements.",
+      "People don't have to pass by your store to remember you exist. You're always visible on feeds without spending a hefty amount on advertisements and SEO agencies.",
     descriptionBg: "#FFC3A5",
     icon: "/global-reach-icon.webp",
     iconWidth: "33",
@@ -31,7 +31,7 @@ export const DIGITAL_MARKETING_REASONS = [
     title: "Works 24/7",
     titleBg: "#F1A17E",
     description:
-      "You don't need to stay active 24/7. You can schedule everything. Even while you're away, the emails keep sending and the ads keep running.",
+      "We guide you through our marketing strategy services, how you can schedule everything in advance. Even while you're away, emails keep sending.",
     descriptionBg: "#F7C0A8",
     icon: "/customer-experience.webp",
     iconWidth: "36",
@@ -41,7 +41,7 @@ export const DIGITAL_MARKETING_REASONS = [
     title: "Pretty Affordable",
     titleBg: "#A6A6A6",
     description:
-      "Traditional marketing is comparatively more expensive than digital marketing. Digital marketing doesn't require breaking the bank.",
+      "Traditional marketing is often more expensive than digital marketing. With marketing IT services, you can reach your audience effectively without breaking the bank.",
     descriptionBg: "#BFBFBF",
     icon: "/data-driven-growth.webp",
     iconWidth: "28",

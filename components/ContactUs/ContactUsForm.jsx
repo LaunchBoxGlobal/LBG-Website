@@ -6,7 +6,7 @@ import * as Yup from "yup";
 import ButtonLoader from "../Global/ButtonLoader";
 import Link from "next/link";
 
-const serviceLinks = [
+export const serviceLinks = [
   "Mobile App Development",
   "Web App Development",
   "Custom Software Development",
@@ -21,6 +21,7 @@ const serviceLinks = [
   "Team Augmentation",
   "On-Demand Talent Augmentation",
   "Off-Shore Software Development",
+  "Software Project Rescue Service",
 ];
 
 const ContactUsForm = () => {

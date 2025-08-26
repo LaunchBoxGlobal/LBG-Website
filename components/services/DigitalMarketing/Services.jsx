@@ -14,7 +14,8 @@ const Services = () => {
     <section className="w-full pb-10 pt-14 lg:pb-20 lg:pt-32 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          What We Can Do <span className="red-text">For You</span>
+          Start with the Best Digital Marketing{" "}
+          <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
           Certainly, we are not just good at words and promises; we've got what

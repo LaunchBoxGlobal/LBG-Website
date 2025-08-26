@@ -14,9 +14,9 @@ const Hero = () => {
         </h1>
 
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-8">
-          Have you tried everything, but no one knows your existence? Let's step
-          up and switch to digital marketing because it's time to fix what
-          you've overlooked.
+          Have you tried everything, but no one knows your existence? Step up
+          and switch to our digital marketing services because it's time to fix
+          what you've overlooked.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1 mb-12">
           <ContactButton text={"Schedule a Quick Consultation"} />

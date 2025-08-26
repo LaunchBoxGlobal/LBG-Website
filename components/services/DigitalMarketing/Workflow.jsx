@@ -6,8 +6,6 @@ import ProcessCard from "@/components/StaffAugmentation/ProcessCard";
 import { DIGITAL_MARKETING_SERVICE_PROCESS } from "@/constants/digital-marketing/digital-marketing-process";
 
 const Workflow = () => {
-  const [activeTab, setActiveTab] = useState("recommended");
-
   return (
     <section className="w-full padding-x py-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
@@ -15,72 +13,20 @@ const Workflow = () => {
           How We Get <span className="red-text">Things Done</span>
         </h2>
         <p className="section-paragraph lg:w-[85%]">
-          We don't go through unnecessary, complicated steps. We follow
-          step-by-step approaches and stay transparent from the start.
+          Our workflow is simple and transparent. We follow clear, step-by-step
+          processes from start to finish, ensuring efficiency and accountability
+          while providing reliable digital marketing agency services that
+          generate measurable results.
         </p>
       </section>
-
-      <div className="w-full flex justify-center mt-10">
-        {/* <div className="w-full md:w-[413px] h-[56px] border rounded-full flex items-center justify-between p-1">
-          <button
-            type="button"
-            name="agile development process button"
-            onClick={() => setActiveTab("agile")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "agile"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            AGILE
-          </button>
-          <button
-            type="button"
-            name="recommended development process button"
-            onClick={() => setActiveTab("recommended")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "recommended"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            recommended
-          </button>
-          <button
-            type="button"
-            name="waterfall development process button"
-            onClick={() => setActiveTab("waterfall")}
-            className={`uppercase text-sm lg:text-lg font-semibold px-3.5 h-full rounded-full ${
-              activeTab === "waterfall"
-                ? "bg-[#F40E00] text-white"
-                : "bg-white text-gray-500"
-            }`}
-          >
-            Waterfall
-          </button>
-        </div> */}
-      </div>
 
       <div className="w-full relative py-20 lg:pb-60">
         <AnimatedLine />
 
-        {/* Cards */}
         {DIGITAL_MARKETING_SERVICE_PROCESS?.map((process, index) => (
           <ProcessCard process={process} key={index} index={index} />
         ))}
       </div>
-
-      {/* {activeTab === "agile" && (
-        <AgileWorkflow workflow={DIGITAL_MARKETING_AGILE_WORKFLOW} />
-      )}
-      {activeTab === "recommended" && (
-        <RecommendedWorkflow
-          workflow={DIGITAL_MARKETING_RECOMMENDED_WORKFLOW}
-        />
-      )} */}
-      {/* {activeTab === "waterfall" && (
-      )} */}
-      {/* <WaterfallWorkflow workflow={DIGITAL_MARKETING_WATERFALL_WORKFLOW} /> */}
     </section>
   );
 };

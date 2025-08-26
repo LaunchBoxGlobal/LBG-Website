@@ -3,21 +3,21 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const FlexibleDevelopmentServices = () => {
+const DigitalMarketingServicesForEveryBusiness = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <section className="w-full padding-x pt-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        {/* <h2 className="red-text text-[25px] font-semibold">Partner With Us</h2> */}
         <h2 className="section-heading w-full">
-          Flexible Ecommerce Development Services for{" "}
+          Flexible Digital Marketing Services for{" "}
           <span className="red-text">Every Project</span>
         </h2>
         <p className="section-paragraph lg:w-[85%]">
-          When you need extra help without long-term contracts, we can provide
-          you with skilled Ecommerce developers through our flexible staff
-          augmentation services.
+          When you need extra support without long-term commitments, we provide
+          skilled professionals through our flexible staff augmentation
+          services, helping your digital marketing projects scale efficiently
+          and achieve better results.
         </p>
       </section>
 
@@ -44,19 +44,19 @@ const FlexibleDevelopmentServices = () => {
             className="w-[150%] h-[150%] absolute inset-0 z-0 opacity-[0.02]"
           />
           <h4 className="text-[25px] font-bold leading-[1.1] z-10">
-            Ecommerce Development Outsourcing
+            Digital Marketing Outsourcing
           </h4>
           <p className="text-base z-10">
-            Get expert developers without the hassle of hiring in-house. As a
-            leading ecommerce development company, we help you with custom
-            ecommerce development that matches your vision. With our{" "}
+            Get expert digital marketing professionals without the hassle of
+            hiring in-house. As a leading digital marketing agency, we deliver
+            custom solutions that match your vision. With our{" "}
             <Link
-              href={`https://launchboxglobal.com/off-shore-software-development`}
-              className="underline"
+              href={`/off-shore-software-development`}
+              className="underline z-10"
             >
               offshore development
             </Link>{" "}
-            model, our team works as an extension of your business.
+            our team works as an extension of your business to improve results.
           </p>
           <Link
             href="/contact-us"
@@ -88,18 +88,15 @@ const FlexibleDevelopmentServices = () => {
             className="w-[150%] h-[150%] absolute inset-0 z-0 opacity-[0.02]"
           />
           <h4 className="text-[25px] font-bold leading-[1.1] z-10">
-            Dedicated Ecommerce Development Team
+            Dedicated Digital Marketing Team
           </h4>
           <p className="text-base z-10">
             Build your online store with a dedicated team focused solely on your
             project. Our{" "}
-            <Link
-              href={`https://launchboxglobal.com/on-demand-talent`}
-              className="underline"
-            >
+            <Link href={`/on-demand-talent`} className="underline">
               outsourcing staff
             </Link>{" "}
-            specializes in custom ecommerce development, delivering efficient
+            specializes in custom marketing IT services, delivering efficient
             processes, high-quality results, and on-time completion so your
             business grows with confidence.
           </p>
@@ -136,17 +133,14 @@ const FlexibleDevelopmentServices = () => {
             Team Augmentation
           </h4>
           <p className="text-base z-10">
-            Need extra hands on deck? With our custom ecommerce development
-            services, we provide skilled professionals through flexible{" "}
-            <Link
-              href={`https://launchboxglobal.com/staff-augmentation`}
-              className="underline"
-            >
+            Need extra hands on deck? You can use digital marketing as a service
+            too but we also provide skilled professionals through flexible{" "}
+            <Link href={`/staff-augmentation`} className="underline">
               team augmentation services.
             </Link>{" "}
-            Whether you need frontend and backend development, UI/UX design, or
-            project management, our approach ensures seamless collaboration,
-            faster development, and expert guidance at every step.
+            Whether it’s campaign management, content creation, SEO, or social
+            media strategy, our approach ensures smooth collaboration, faster
+            results, and expert guidance every step of the way.
           </p>
           <Link
             href="/contact-us"
@@ -164,4 +158,4 @@ const FlexibleDevelopmentServices = () => {
   );
 };
 
-export default FlexibleDevelopmentServices;
+export default DigitalMarketingServicesForEveryBusiness;

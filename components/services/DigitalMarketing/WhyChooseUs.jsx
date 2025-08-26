@@ -1,9 +1,9 @@
 "use client";
 import ContactButton from "@/components/Global/ContactButton";
 import {
-  WHY_CHOOSE_US2,
-  WHY_CHOOSE_US_1,
-} from "@/constants/custom-software-development/WhyChooseUs";
+  DIGITAL_MARKETING_WHY_CHOOSE_US_1,
+  DIGITAL_MARKETING_WHY_CHOOSE_US_2,
+} from "@/constants/digital-marketing/digital-marketing-why-choose-us";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -13,24 +13,24 @@ const WhyChooseUs = () => {
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
-        <h2 className="red-text font-semibold text-base md:text-xl lg:text-[25px] text-center">
+        {/* <h2 className="red-text font-semibold text-base md:text-xl lg:text-[25px] text-center">
           Power-Packed Digital Marketing Services
-        </h2>
-        <h3 className="section-heading text-center">
+        </h2> */}
+        <h2 className="section-heading text-center">
           Why Choose LaunchBox <br className="hidden lg:block" />{" "}
           <span className="red-text">Global?</span>
-        </h3>
+        </h2>
         <p className="section-paragraph text-center mx-auto">
           Your business deserves more than a generic marketing strategy. We
           craft custom digital marketing solutions tailored to your unique
-          goals, audience, and challenges. Unlike one-size-fits-all agencies, we
-          focus on strategies that deliver measurable results, ensuring your
-          investment goes further and your business scales faster.
+          goals, audience, and challenges. Unlike other search engine
+          optimization companies in USA, we focus on strategies and ensure your
+          investment goes further and your business grows faster.
         </p>
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14">
-        {WHY_CHOOSE_US_1?.map((c, i) => {
+        {DIGITAL_MARKETING_WHY_CHOOSE_US_1?.map((c, i) => {
           return (
             <div
               className={`w-full group flex flex-col items-center justify-start text-center gap-6 p-5 xl:p-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
@@ -61,7 +61,7 @@ const WhyChooseUs = () => {
             </div>
           );
         })}
-        {WHY_CHOOSE_US2?.map((c, i) => {
+        {DIGITAL_MARKETING_WHY_CHOOSE_US_2?.map((c, i) => {
           return (
             <div
               className={`w-full group flex flex-col items-center justify-start text-center gap-6 p-5 xl:p-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${

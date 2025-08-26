@@ -8,15 +8,16 @@ const AboutSection = () => {
           Facts about Launchbox Global
         </h2>
         <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
-          Launchbox Global is more than just a name. It's a team of experts who
-          provide digital marketing services to entrepreneurs, startups, and
-          businesses that want to upgrade their digital presence without wasting
-          money or time. And don't hold back if you're a small business; we
-          gladly offer our digital marketing services for small business as
-          well, We are not just another company promising the impossible; we
-          ensure you achieve what you've been planning for. Many founders and
-          busines owners don't know how to start or where to start. Some are
-          worried about limited budgets, but that's not a big problem.
+          Launchbox Global is a team of experts from a trusted digital media
+          company who provide professional SEO services and PPC services to
+          entrepreneurs, startups, and businesses that want to upgrade their
+          digital presence without wasting money or time. And don't hold back if
+          you're a small business; we gladly offer our digital marketing
+          services for small business as well. We are not just another company
+          promising the impossible; we ensure you achieve what you've been
+          planning for. Many founders and business owners don't know how to
+          start or where to start. Some are worried about limited budgets, but
+          that's not a big problem.
         </p>
       </section>
     </section>

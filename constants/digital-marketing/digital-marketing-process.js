@@ -6,7 +6,7 @@ export const DIGITAL_MARKETING_SERVICE_PROCESS = [
     tag_line: "Understand the Big Picture Before Execution",
     title: "Discovery & Strategy",
     description:
-      "We begin with a detailed discovery to fully understand your brand, goals, audience, and market. Based on this, we develop a comprehensive strategy and execution roadmap, outlining each phase clearly.",
+      "We begin with a detailed discovery to fully understand your brand, goals, audience, and market. Based on this, we develop a comprehensive marketing strategy and execution roadmap, outlining each phase clearly.",
   },
   {
     icon: "/locations/digital-marketing/planning-and-timeline-icon.png",
@@ -15,7 +15,7 @@ export const DIGITAL_MARKETING_SERVICE_PROCESS = [
     tag_line: "Set Clear Milestones, No Surprises",
     title: "Planning & Timeline",
     description:
-      "Once the strategy is approved, we map out every milestone: deliverables, deadlines, and responsibilities. Budgets and approval stages are locked in, so everyone is aligned from the start.",
+      "Once the strategy is approved, we map out every milestone: deliverables, deadlines, and responsibilities. Being a responsible digital media company, we manage each phase efficiently to deliver successful outcomes.",
   },
   {
     icon: "/digital-marketing-creative-development-icon.png",
@@ -24,7 +24,7 @@ export const DIGITAL_MARKETING_SERVICE_PROCESS = [
     tag_line: "Create Consistent, On-Brand Assets",
     title: "Creative Development",
     description:
-      "We produce all creative assets — copy, design, video, social media posts — in a sequence that ensures alignment with your brand and strategy. Each asset is developed with consistency and clarity in mind.",
+      "We produce all creative assets: copy, design, video, and social media posts. Each asset is crafted with consistency and clarity, leveraging our social media marketing service to maximize engagement and reach.",
   },
   {
     icon: "/locations/digital-marketing/testing-icon.png",
@@ -51,6 +51,6 @@ export const DIGITAL_MARKETING_SERVICE_PROCESS = [
     tag_line: "Track Results, Measure Success",
     title: "Post-Launch Reporting",
     description:
-      "After launch, we track campaign performance closely, providing a detailed report focused on pre-defined KPIs and outcomes. This ensures that the campaign’s effectiveness is measured against set objectives.",
+      "After launch, we track campaign performance closely, providing a detailed report focused on pre-defined KPIs and outcomes. With our full digital marketing services, we ensure every campaign’s effectiveness is measured against set objectives.",
   },
 ];
