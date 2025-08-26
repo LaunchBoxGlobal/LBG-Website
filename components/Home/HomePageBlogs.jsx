@@ -36,12 +36,12 @@ const HomePageBlogs = () => {
         id="blogs"
       >
         <h2 className="section-heading lg:w-[70%] text-center">
-          Insights That Drive <span className="red-text">Innovation</span>
+          Discover What’s New and <span className="red-text">Next</span>
         </h2>
         <p className="section-paragraph text-center w-full md:w-2/3">
-          Stay ahead with our blog, featuring industry insights, practical tips,
-          and stories that spark growth. From tech trends to proven strategies,
-          we share the knowledge you need to turn bold ideas into real results.
+          Stay updated with the latest trends and find simple, practical guides
+          to help boost your business growth and connect with your audience more
+          effectively.
         </p>
       </section>
 
@@ -90,6 +90,15 @@ const HomePageBlogs = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="w-full flex justify-center mt-10">
+        <Link
+          href={`/blog`}
+          className="red-bg text-white px-8 py-4 rounded-xl font-bold text-xl"
+        >
+          See More
+        </Link>
       </section>
     </section>
   );
