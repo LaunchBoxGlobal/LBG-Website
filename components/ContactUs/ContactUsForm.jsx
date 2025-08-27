@@ -29,6 +29,10 @@ const ContactUsForm = () => {
 
   useEffect(() => {
     formik.setFieldValue("pageUrl", window.location.href);
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone; // e.g. "Asia/Karachi"
+      if (tz) formik.setFieldValue("timezone", tz, false); // false = don't validate on set
+    } catch (e) {}
   }, []);
 
   const formik = useFormik({
@@ -38,6 +42,7 @@ const ContactUsForm = () => {
       email: "",
       phoneNumber: "",
       message: "",
+      timezone: "",
       // pageUrl: window.location.href,
       emailSubject: "New Contact Form Website",
       // textMessagesCheckbox: false, // Added
@@ -70,15 +75,11 @@ const ContactUsForm = () => {
             "Content-Type": "application/json",
           },
         });
-
         if (res?.status === 200) {
-          // console.log("res >>>>", res);
-
           resetForm();
           alert("Form submitted successfully!");
         }
       } catch (error) {
-        // console.log("error while submitting form >>>", error);
         alert("Something went wrong!");
       } finally {
         setLoading(false);
@@ -97,16 +98,17 @@ const ContactUsForm = () => {
           <div className="flex flex-col items-start gap-1">
             <label
               htmlFor="firstName"
-              className="block text-sm font-medium text-gray-900"
+              className="block text-sm lg:text-lg font-medium text-gray-900"
             >
-              Your Name
+              Who's the genius behind the idea?
             </label>
             <input
               type="text"
               id="firstName"
+              placeholder="Your full name"
               name="firstName"
               {...formik.getFieldProps("firstName")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
             />
             {formik.touched.firstName && formik.errors.firstName ? (
               <div className="text-red-500 text-sm">
@@ -117,15 +119,15 @@ const ContactUsForm = () => {
           <div className="flex flex-col items-start gap-1">
             <label
               htmlFor="service"
-              className="block text-sm font-medium text-gray-900"
+              className="block text-sm lg:text-lg font-medium text-gray-900"
             >
-              I'm interested in
+              Pick the service you'd like to start with.
             </label>
             <select
               id="service"
               name="service"
               {...formik.getFieldProps("service")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
             >
               <option defaultValue={""} value="">
                 Choose a service
@@ -149,16 +151,17 @@ const ContactUsForm = () => {
           <div className="flex flex-col items-start gap-1">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-900"
+              className="block text-sm lg:text-lg font-medium text-gray-900"
             >
-              Your Email
+              Best plan to send your plan?
             </label>
             <input
               type="email"
               id="email"
+              placeholder="Your email"
               name="email"
               {...formik.getFieldProps("email")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
               //   placeholder="First name"
             />
             {formik.touched.email && formik.errors.email ? (
@@ -168,16 +171,17 @@ const ContactUsForm = () => {
           <div className="flex flex-col items-start gap-1">
             <label
               htmlFor="phoneNumber"
-              className="block text-sm font-medium text-gray-900"
+              className="block text-sm lg:text-lg font-medium text-gray-900"
             >
-              Your Phone Number
+              Where can we reach you directly?
             </label>
             <input
               type="number"
               id="phoneNumber"
               name="phoneNumber"
+              placeholder="Your phone number"
               {...formik.getFieldProps("phoneNumber")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
               //   placeholder="000 2345 6789"
             />
             {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
@@ -187,88 +191,59 @@ const ContactUsForm = () => {
             ) : null}
           </div>
         </div>
-        <div className="w-full flex flex-col items-start gap-1">
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium text-gray-900"
-          >
-            Project Description
-          </label>
-          <textarea
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="w-full flex flex-col items-start gap-1">
+            <label
+              htmlFor="message"
+              className="block text-sm lg:text-lg font-medium text-gray-900"
+            >
+              Timezone
+            </label>
+            <input
+              type="text"
+              id="timezone"
+              name="timezone"
+              value={formik.values.timezone}
+              readOnly
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
+            />
+            {formik.touched.timezone && formik.errors.timezone ? (
+              <div className="text-red-500 text-sm">
+                {formik.errors.timezone}
+              </div>
+            ) : null}
+          </div>
+          <div className="w-full flex flex-col items-start gap-1">
+            <label
+              htmlFor="message"
+              className="block text-sm lg:text-lg font-medium text-gray-900"
+            >
+              Tell us about your idea in one line.
+            </label>
+            <input
+              type="text"
+              name="message"
+              placeholder="ex: A subscription app for healthy meal plans"
+              id="message"
+              {...formik.getFieldProps("message")}
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
+            />
+            {/* <textarea
             name="message"
             id="message"
             cols="30"
             rows="8"
             {...formik.getFieldProps("message")}
             className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
-          ></textarea>
-          {formik.touched.message && formik.errors.message ? (
-            <div className="text-red-500 text-sm">{formik.errors.message}</div>
-          ) : null}
+          ></textarea> */}
+            {formik.touched.message && formik.errors.message ? (
+              <div className="text-red-500 text-sm">
+                {formik.errors.message}
+              </div>
+            ) : null}
+          </div>
         </div>
-        {/* <div className="flex flex-col gap-y-5 lg:flex-row justify-between w-full"> */}
-        {/* <div className="w-full md:max-w-[73%]">
-            <div className="w-full">
-              <div className="flex items-start gap-2">
-                <input
-                  type="checkbox"
-                  name="textMessagesCheckbox"
-                  id="textMessagesCheckbox"
-                  {...formik.getFieldProps("textMessagesCheckbox")}
-                />
-                <label
-                  htmlFor="textMessagesCheckbox"
-                  className="leading-[1] text-sm flex items-start relative"
-                >
-                  <span className="flex-1">
-                    By submitting your phone number, you agree to receiving
-                    texts from LaunchBox Global.
-                  </span>
-                  {formik.touched.textMessagesCheckbox &&
-                    formik.errors.textMessagesCheckbox && (
-                      <span className="text-red-500 text-2xl relative -top-2.5">
-                        *
-                      </span>
-                    )}
-                </label>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="flex items-start gap-2 mt-2">
-                <input
-                  type="checkbox"
-                  name="agreeToTermsConditions"
-                  id="agreeToTermsConditions"
-                  {...formik.getFieldProps("agreeToTermsConditions")}
-                />
-                <label
-                  htmlFor="agreeToTermsConditions"
-                  className="leading-[1.3] text-sm relative -top-0.5"
-                >
-                  By checking this box, I agree to receive SMS from LaunchBox
-                  Global at the phone number provided. Msg & data rates may
-                  apply. Msg frequency varies. For help, reply HELP or email us
-                  at hello@launchboxglobal.com. You can opt out at any time by
-                  replying STOP.{" "}
-                  <Link href={`/privacy-policy`} className="underline mx-1">
-                    Privacy & Policy
-                  </Link>{" "}
-                  &{" "}
-                  <Link
-                    href={`/terms-and-conditions`}
-                    className="underline mx-1"
-                  >
-                    Terms and Conditions
-                  </Link>{" "}
-                  from LaunchBox Global.
-                  {formik.touched.agreeToTermsConditions &&
-                  formik.errors.agreeToTermsConditions ? (
-                    <span className="text-red-500 text-2xl absolute">*</span>
-                  ) : null}
-                </label>
-              </div>
-            </div>
-          </div> */}
+
         <div className="flex items-start gap-2">
           <input
             type="checkbox"
@@ -298,15 +273,28 @@ const ContactUsForm = () => {
             ) : null}
           </label>
         </div>
-        <div className="w-full flex justify-end mt-3">
+        <div className="w-full flex flex-col justify-center items-center mt-3 gap-5">
           <button
             type="submit"
             className="bg-[#F40E00] text-white px-5 min-w-[223px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
           >
-            {loading ? <ButtonLoader /> : "Schedule A Meeting"}
+            {loading ? (
+              <ButtonLoader />
+            ) : (
+              "Book My Free Strategy Call (Worth $1,000)"
+            )}
+          </button>
+          <button
+            type="submit"
+            className="bg-[#fff] border-2 border-[#F40E00] text-[#F40E00] hover:bg-[#F40E00] hover:text-white transition-all duration-300 px-5 min-w-[223px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
+          >
+            {loading ? (
+              <ButtonLoader />
+            ) : (
+              "Just send the plan — I’ll review it."
+            )}
           </button>
         </div>
-        {/* </div> */}
       </form>
     </section>
   );

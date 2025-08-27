@@ -13,7 +13,7 @@ export const DIGITAL_MARKETING_SERVICES = [
     alt_tag:
       "Search engine optimization agency dashboard displaying keyword rankings and organic traffic analytics",
     pageUrl: "/",
-    desc: "Do you have a website that looks good but is still not performing well? As a trusted search engine optimization agency, we can research keywords, optimize your pages, speed up your website, and do whatever it takes to boost your performance!",
+    desc: "SEO and website optimization were easier in your head than in reality because they need a plan. That's where people usually start searching, “seo service near me”. We can research keywords, optimize your pages, speed up your website, and do whatever it takes to boost your performance!",
   },
   {
     title: "Social Media Marketing Services",
@@ -21,8 +21,7 @@ export const DIGITAL_MARKETING_SERVICES = [
     alt_tag:
       "Social media marketing services dashboard displaying engagement metrics and campaign performance analytics",
     pageUrl: "/",
-    desc: `Social media marketing was easier in your head than in reality because it needs a plan. That's where people usually start searching, “seo service near me” But don’t worry, our social media marketing services got it covered for you!
-`,
+    desc: `“Social media would be easier because we all use it 24/7” is a very common thought process. This is why people usually skip the strategies. If you need help with SMM, don’t worry, our social media marketing services have it covered for you!`,
   },
   {
     title: "Paid Advertising (PPC)",

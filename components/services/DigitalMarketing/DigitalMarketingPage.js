@@ -27,12 +27,13 @@ const DigitalMarketingPage = () => {
       <Reasons />
       <WhyChooseUs />
       <Workflow />
-      <DigitalMarketingFaqs />
-      <DigitalMarketingContactForm />
+
       <DigitalMarketingServicesForEveryBusiness />
       <CustomSoftwareAwards />
       <DigitalMarketingForEveryBusiness />
       <SecuritySolutions />
+      <DigitalMarketingFaqs />
+      <DigitalMarketingContactForm />
     </main>
   );
 };

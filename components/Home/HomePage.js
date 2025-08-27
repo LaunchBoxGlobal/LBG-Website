@@ -13,6 +13,7 @@ import { HOME_SERVICES } from "@/constants/HomeServices";
 // import Services from "./Services";
 import dynamic from "next/dynamic";
 import HomePageBlogs from "./HomePageBlogs";
+import TechStackSlider from "./TechStackSlider";
 const Platforms = dynamic(() => import("../Common/Platforms"), {
   loading: () => <></>,
 });
@@ -61,13 +62,15 @@ const HomePage = () => {
       <HomeComparison />
       <HomeValueProposition />
       <Process />
-      <TeckStack
+      {/* <TeckStack
         heading={"Smart Technology for Better"}
         redText={"Solution"}
         description={
           "You get the best tools and technologies to build fast, secure, and reliable software that fits your business perfectly."
         }
-      />
+      /> */}
+
+      <TechStackSlider />
       <HomeStats />
       <HomeCustomerReviews />
       <FlagsAnimation />
