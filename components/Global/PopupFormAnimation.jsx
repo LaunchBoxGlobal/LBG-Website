@@ -30,25 +30,48 @@ const PopupFormAnimation = () => {
 
         <div className="w-full absolute left-1/2 -translate-x-1/2 h-[300px]">
           <img
-            src="/popup-form-red-zigzag-lines.png"
+            src="/strategizing-box.png"
+            alt="strategizing-box"
+            width={141}
+            height={180}
+            className="absolute left-[-6.7%] top-[8%] image-anim1"
+          />
+          {/* building-box */}
+          <img
+            src="/building-box.png"
+            alt="building-box"
+            width={141}
+            height={121}
+            className="absolute top-[17%] right-[13%] image-anim2"
+          />
+          {/* transforming-box */}
+          <img
+            src="/transforming-box.png"
+            alt="transforming-box"
+            width={195}
+            height={187}
+            className="absolute bottom-[-12%] left-[27.2%] image-anim"
+          />
+          <img
+            src="/red-zigzag-line.png"
             alt="popup-form-lines"
             width={399}
             height={214}
-            className="absolute left-1/2 -translate-x-1/2 top-0"
+            className="absolute left-1/2 -translate-x-1/2 bottom-[20%]"
           />
           <img
             src="/popup-form-magnifire.png"
             alt="popup-form-magnifire"
             width={134}
             height={135}
-            className="absolute bottom-[23%] left-[14%] z-10 lg:w-[100px] zigzag-image"
+            className="absolute bottom-[23%] left-[8%] z-10 lg:w-[100px] zigzag-image"
           />
           <img
             src="/popup-form-rocket-image.png"
             alt="popup-form-rocket-image"
             width={191}
             height={221}
-            className="absolute top-[-20%] right-[-22.5%] -rotate-6"
+            className="absolute top-[-20%] right-[-21%] -rotate-6"
           />
         </div>
       </div>

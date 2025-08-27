@@ -49,7 +49,7 @@ const TechStackSlider = () => {
         </p>
       </section>
 
-      <section className="w-full relative my-16">
+      <section className="w-full relative mb-16 mt-20">
         <div className="bg-white custom-shadow w-[180px] h-[180px] lg:w-[210px] lg:h-[210px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 rounded-full flex items-center justify-center">
           <img
             src="/launchbox-global-logo-tech-stack.png"
@@ -65,74 +65,66 @@ const TechStackSlider = () => {
             className="flex items-center w-max"
           >
             {[...HOME_PAGE_TECH_STACK, ...HOME_PAGE_TECH_STACK].map(
-              (platform, index) => (
-                <div key={index} className="w-[77px] h-[77px]">
-                  {platform?.link ? (
-                    <Link href={platform?.link}>
-                      <img
-                        key={index}
-                        src={platform?.image}
-                        width={77}
-                        height={77}
-                        alt={platform?.title}
-                        loading="lazy"
-                        priority={false}
-                        className="w-auto h-full object-contain"
-                      />
-                    </Link>
-                  ) : (
+              (platform, index) =>
+                platform?.link ? (
+                  <Link key={index} href={platform?.link}>
                     <img
-                      key={index}
                       src={platform?.image}
                       width={77}
                       height={77}
                       alt={platform?.title}
                       loading="lazy"
                       priority={false}
-                      className="w-auto h-full object-contain"
+                      className="w-auto h-full object-contain max-w-[75px] max-h-[75px]"
                     />
-                  )}
-                </div>
-              )
+                  </Link>
+                ) : (
+                  <img
+                    key={index}
+                    src={platform?.image}
+                    width={77}
+                    height={77}
+                    alt={platform?.title}
+                    loading="lazy"
+                    priority={false}
+                    className="w-auto h-full object-contain max-w-[75px] max-h-[75px]"
+                  />
+                )
             )}
           </motion.div>
         </section>
-        <section className="w-full overflow-hidden bg-[#fff]">
+        <section className="w-full overflow-hidden bg-[#fff] relative">
           <motion.div
             variants={marqueeVariantsReverse}
             animate="animate"
             className="flex items-center w-max"
           >
             {[...HOME_PAGE_TECH_STACK_2, ...HOME_PAGE_TECH_STACK_2].map(
-              (platform, index) => (
-                <div key={index} className="w-[77px] h-[77px]">
-                  {platform?.link ? (
-                    <Link href={platform?.link}>
-                      <img
-                        key={index}
-                        src={platform?.image}
-                        width={77}
-                        height={77}
-                        alt={platform?.title}
-                        loading="lazy"
-                        priority={false}
-                        className="w-auto h-full object-contain"
-                      />
-                    </Link>
-                  ) : (
+              (platform, index) =>
+                platform?.link ? (
+                  <Link key={index} href={platform?.link}>
                     <img
-                      key={index}
                       src={platform?.image}
                       width={77}
                       height={77}
                       alt={platform?.title}
                       loading="lazy"
                       priority={false}
-                      className="w-auto h-full object-contain"
+                      className="w-auto h-full object-contain max-w-[75px] max-h-[75px]"
                     />
-                  )}
-                </div>
-              )
+                  </Link>
+                ) : (
+                  <img
+                    key={index}
+                    src={platform?.image}
+                    width={77}
+                    height={77}
+                    alt={platform?.title}
+                    loading="lazy"
+                    priority={false}
+                    className="w-auto h-full object-contain max-w-[75px] max-h-[75px]"
+                  />
+                )
             )}
           </motion.div>
         </section>

@@ -130,7 +130,7 @@ const BlogsContactForm = () => {
               onBlur={formik.handleBlur}
               value={formik.values.phoneNumber}
               className="w-full h-[56px] bg-white block rounded-[15px] text-black placeholder:text-black outline-none px-5"
-              placeholder="(888) 868-8385"
+              placeholder="Phone number"
             />
             <div className="w-full">
               {formik.touched.phoneNumber && formik.errors.phoneNumber ? (

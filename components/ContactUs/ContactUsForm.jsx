@@ -153,7 +153,7 @@ const ContactUsForm = () => {
               htmlFor="email"
               className="block text-sm lg:text-lg font-medium text-gray-900"
             >
-              Best plan to send your plan?
+              Best place to send your plan?
             </label>
             <input
               type="email"
@@ -194,10 +194,10 @@ const ContactUsForm = () => {
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="w-full flex flex-col items-start gap-1">
             <label
-              htmlFor="message"
+              htmlFor="timezone"
               className="block text-sm lg:text-lg font-medium text-gray-900"
             >
-              Timezone
+              We’ll sync to your time zone.
             </label>
             <input
               type="text"
