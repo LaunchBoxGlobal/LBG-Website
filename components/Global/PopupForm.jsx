@@ -104,14 +104,14 @@ const PopupForm = () => {
         >
           <IoClose className="w-full h-full text-gray-600" />
         </button>
-        <div className="lg:w-full midlg:w-[80%] bg-white grid grid-cols-1 lg:grid-cols-2 rounded-[46px]">
+        <div className="lg:w-full midlg:w-[80%] max-w-[1297px] h-full max-h-[600px] bg-white grid grid-cols-1 lg:grid-cols-2 rounded-[46px]">
           <div className="bg-[#f9f9f9] rounded-l-[46px] hidden lg:block">
             <PopupFormAnimation />
           </div>
-          <div className="p-10 bg-white rounded-r-[46px]">
+          <div className="p-10 bg-white rounded-l-[46px] lg:rounded-l-none rounded-r-[46px]">
             <form
               onSubmit={formik.handleSubmit}
-              className="w-full bg-white text-black lg:max-w-[80%] mx-auto"
+              className="w-full h-full bg-white text-black lg:max-w-[80%] mx-auto"
             >
               <div className="w-full mt-7 flex flex-col items-start gap-3 lg:gap-5">
                 <div className="w-full">
@@ -199,7 +199,7 @@ const PopupForm = () => {
                     id="service"
                     name="service"
                     {...formik.getFieldProps("service")}
-                    className="pb-2 pt-1 block w-full border-b border-gray-800 lg:text-lg outline-none"
+                    className="pb-2 pt-1 block w-full border-b border-gray-800 text-sm outline-none"
                   >
                     <option defaultValue={""} value="">
                       Choose a service

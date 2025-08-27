@@ -9,6 +9,7 @@ import Link from "next/link";
 export const serviceLinks = [
   "Mobile App Development",
   "Web App Development",
+  "Software Project Rescue Service",
   "Custom Software Development",
   "E-commerce Development",
   "Digital Marketing",
@@ -21,7 +22,6 @@ export const serviceLinks = [
   "Team Augmentation",
   "On-Demand Talent Augmentation",
   "Off-Shore Software Development",
-  "Software Project Rescue Service",
 ];
 
 const ContactUsForm = () => {
