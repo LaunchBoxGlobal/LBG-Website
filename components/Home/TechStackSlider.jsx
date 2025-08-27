@@ -50,7 +50,7 @@ const TechStackSlider = () => {
       </section>
 
       <section className="w-full relative mb-16 mt-20">
-        <div className="bg-white custom-shadow w-[180px] h-[180px] lg:w-[210px] lg:h-[210px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 rounded-full flex items-center justify-center">
+        <div className="bg-white border-2 red-shadow w-[180px] h-[180px] lg:w-[210px] lg:h-[210px] absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 rounded-full flex items-center justify-center">
           <img
             src="/launchbox-global-logo-tech-stack.png"
             alt="launchbox-global-logo-tech-stack"

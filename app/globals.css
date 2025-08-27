@@ -57,6 +57,10 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.red-shadow {
+  box-shadow: #f40e001a 0px 8px 24px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
