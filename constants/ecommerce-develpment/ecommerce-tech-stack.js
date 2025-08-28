@@ -1,0 +1,51 @@
+export const ECOMMERCE_TECH_STACK = [
+  {
+    title: "Big Commerce",
+    image: "/big-commerce-icon.png",
+    width: 30,
+    height: 30,
+    link: null,
+  },
+  {
+    title: "Magento",
+    image: "/magento-tech-stack-icon.png",
+    width: 27,
+    height: 30,
+    link: null,
+  },
+  {
+    title: "Shopify",
+    image: "/shopify-tech-stack-icon.png",
+    width: 30,
+    height: 30,
+    link: null,
+  },
+  {
+    title: "WooCommerce",
+    image: "/woocommerce-icon.png",
+    width: 60,
+    height: 30,
+    link: null,
+  },
+  {
+    title: "Salesforce Commerce",
+    image: "/salesforce-commerce.png",
+    width: 43,
+    height: 30,
+    link: null,
+  },
+  {
+    title: "Square Space",
+    image: "/square-space-tech-stack-icon.png",
+    width: 38,
+    height: 30,
+    link: null,
+  },
+  {
+    title: "Wordpress",
+    image: "/wordpress-icon.png",
+    width: 30,
+    height: 30,
+    link: null,
+  },
+];

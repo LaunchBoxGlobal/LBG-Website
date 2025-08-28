@@ -254,7 +254,7 @@ const PopupForm = () => {
                     {loading ? (
                       <ButtonLoader />
                     ) : (
-                      `Book My Strategy Call (Worth $1,000)`
+                      `Book My Free Strategy Call (Worth $1,000)`
                     )}
                   </button>
                 </div>

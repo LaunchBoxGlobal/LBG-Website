@@ -17,6 +17,7 @@ import SoftwareSolution from "./SoftwareSolution";
 import CustomSoftwareAwards from "./CustomSoftwareAwards";
 import SecuritySolutions from "./SecuritySolutions";
 import TechTrends from "./TechTrends";
+import SoftwareDevelopmentTechStack from "./SoftwareDevelopmentTechStack";
 
 const CustomSoftwareDevelopmentPage = () => {
   return (
@@ -41,6 +42,7 @@ const CustomSoftwareDevelopmentPage = () => {
           "We leverage proven custom software development solutions using Flutter, React Native, and Firebase to create fast, scalable applications tailored to your business needs."
         }
       />
+      {/* <SoftwareDevelopmentTechStack /> */}
       <CustomDevelopmentJourney />
       <FlagsAnimation />
       <Faqs />

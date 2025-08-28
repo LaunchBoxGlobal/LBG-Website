@@ -14,7 +14,7 @@ import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import TechStack from "@/components/Common/TechStack";
 import Platforms from "@/components/Common/Platforms";
 import ServicePageForm from "@/components/Common/ServicePageForm";
-import ServicesTechStack from "@/components/Common/ServicesTechStack";
+import MobileAppTechStack from "./MobileAppTechStack";
 
 const MobileAppDevelopmentPage = () => {
   return (
@@ -36,7 +36,7 @@ const MobileAppDevelopmentPage = () => {
           "Great apps need the right tools. As a mobile app development company, the best technologies are used to build apps that run fast, work smoothly, and last long."
         }
       />
-      {/* <ServicesTechStack /> */}
+      {/* <MobileAppTechStack /> */}
       <FlagsAnimation />
       <MobileAppDevFaqs />
       <MobileAppDevContactForm />
