@@ -32,15 +32,15 @@ const EcommerceDevelopmentPage = () => {
       <Services />
       <Portfolio />
       <ReasonsSection />
-      {/* <TeckStack
+      <TeckStack
         heading={"Our Technology"}
         redText={"Stack"}
         description={
           "As a trusted ecommerce development company, we utilize a carefully selected tech stack that ensures performance, security, and scalability. Our ecommerce development services are powered by modern tools that meet global standards, enabling us to deliver enterprise-grade solutions as a leading ecommerce web development company."
         }
         headingWidth={""}
-      /> */}
-      <EcommerceTechStack />
+      />
+      {/* <EcommerceTechStack /> */}
       <GlobalReach />
       <EcommerceIndustries />
       <HomeStats />

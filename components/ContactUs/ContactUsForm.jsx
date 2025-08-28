@@ -284,16 +284,15 @@ const ContactUsForm = () => {
               "Book My Free Strategy Call (Worth $1,000)"
             )}
           </button>
-          <button
-            type="submit"
-            className="bg-[#fff] border-2 border-[#F40E00] text-[#F40E00] hover:bg-[#F40E00] hover:text-white transition-all duration-300 px-5 min-w-[223px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
+          <p
+            // type="submit"
+            className="text-[#F40E00] font-normal text-sm lg:text-lg lg:w-[35%] text-center"
+            style={{
+              lineHeight: "1.4rem",
+            }}
           >
-            {loading ? (
-              <ButtonLoader />
-            ) : (
-              "Just send the plan — I’ll review it."
-            )}
-          </button>
+            Your personalized plan will be shared after the discovery call.
+          </p>
         </div>
       </form>
     </section>
