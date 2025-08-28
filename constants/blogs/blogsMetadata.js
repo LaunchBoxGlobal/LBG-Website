@@ -1385,4 +1385,11 @@ export const BLOGS_METADATA = {
       canonical:
         "https://launchboxglobal.com/blogs/ios-app-making-complete-guide-to-building-successful-mobile-applications-in-2025",
     },
+  "what-to-do-when-developer-stops-responding-without-losing-progress": {
+    title: "Project Management: Handle Silent Developers Effectively",
+    description:
+      "Learn how project management recovers silent developer projects with repo audits, continuity plans, and smooth handovers to protect software progress.",
+    canonical:
+      "https://launchboxglobal.com/blogs/what-to-do-when-developer-stops-responding-without-losing-progress",
+  },
 };

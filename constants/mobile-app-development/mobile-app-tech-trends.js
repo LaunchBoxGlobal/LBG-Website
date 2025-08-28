@@ -1,0 +1,73 @@
+export const MOBILE_APP_TECH_TRENDS = [
+  {
+    title: "Generative AI Apps",
+    icon: "/artificial-intelligence-icon.png",
+    // icon: "/cloud-computing-icon.png",
+    width: 51,
+    height: 55,
+  },
+  {
+    title: "Cloud Mobile Apps",
+    // icon: "/machine-learning-icon.png",
+    icon: "/cloud-computing-icon.png",
+    width: 62,
+    height: 55,
+  },
+  {
+    title: "Augmented Reality",
+    // icon: "/cloud-computing-icon.png",
+    icon: "/micro-services-design-icon.png",
+    width: 56,
+    height: 55,
+  },
+  {
+    title: "Virtual Reality",
+    // icon: "/augmented-reality-icon.png",
+    icon: "/edge-computing-icon.png",
+    width: 62,
+    height: 55,
+  },
+  {
+    title: "Blockchain Security",
+    // icon: "/virtual-reality-icon.png",
+    icon: "/cloud-native-icon.png",
+    width: 61,
+    height: 55,
+  },
+  {
+    title: "Internet of Things",
+    // icon: "/blockchain-icon.png",
+    icon: "/green-software-icon.png",
+    width: 62,
+    height: 55,
+  },
+  {
+    title: "Cross-Platform Apps",
+    // icon: "/internet-of-things-icon.png",
+    icon: "/virtual-reality-icon.png",
+    width: 61,
+    height: 55,
+  },
+  {
+    title: "5G-Powered Innovation",
+    // icon: "/cyber-security-icon.png",
+    icon: "/internet-of-things-icon.png",
+    width: 55,
+    height: 55,
+  },
+  {
+    title: "Low-Code Apps",
+
+    // icon: "/big-data-icon.png",
+    icon: "/big-data-icon.png",
+    width: 55,
+    height: 55,
+  },
+  {
+    title: "Sustainable Apps",
+    // icon: "/nlp-icon.png",
+    icon: "/digital-twins-icon.png",
+    width: 55,
+    height: 12,
+  },
+];

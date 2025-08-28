@@ -13,7 +13,7 @@ export const MOBILE_APP_DEVELOPMENT_GENERIC_APP = [
     title: "Complete Control Over Features & User Experience",
     titleBg: "#F6564D",
     description:
-      "Unlike third-party platforms, a custom-built app gives you full control over its functionality, design, and monetization strategies. You are not limited by external policies or platform restrictions, allowing you to create a tailored experience that meets your business and customer needs.",
+      "Unlike third-party platforms, a custom-built app gives you full control over its functionality, design, and monetization strategies. You are not limited by external policies or platform restrictions, allowing you to create a tailored service mobile application that meets both your business and customer needs.",
     descriptionBg: "#FBBFBE",
     icon: "/complete-control-over-features-icon.png",
     iconWidth: "37",
@@ -33,7 +33,7 @@ export const MOBILE_APP_DEVELOPMENT_GENERIC_APP = [
     title: "Automation & Operational Efficiency",
     titleBg: "#F1A17E",
     description:
-      "A mobile app can streamline and automate various business processes, reducing manual workload and improving overall efficiency. Whether it’s managing bookings, processing orders, or handling customer support, an app simplifies operations and enhances productivity.",
+      "A mobile app can streamline and automate various business processes, reducing manual workload and improving overall efficiency. Whether it’s managing bookings, processing orders, or handling customer support, an app simplifies operations and enhances productivity. Partnering with our trusted mobile app development company in USA ensures your solution is built to handle these needs with reliability and scale.",
     descriptionBg: "#F7C0A8",
     icon: "/automation-and-operational-icon.png",
     iconWidth: "36",
@@ -53,7 +53,7 @@ export const MOBILE_APP_DEVELOPMENT_GENERIC_APP = [
     title: "Seamless Integration with Your Business Ecosystem",
     titleBg: "#212121",
     description:
-      "A well-designed mobile app integrates effortlessly with your existing systems. A CRM, payment gateway, inventory management tool, or analytics platform. This ensures smooth operations, efficient data flow, and a hassle-free user experience.",
+      "A well-designed mobile app integrates effortlessly with your existing systems—whether it’s a CRM, payment gateway, inventory management tool, or analytics platform. This ensures smooth operations, efficient data flow, and a hassle-free user experience. Working with one of the top mobile app development companies helps you build these integrations seamlessly and keep your app future-ready.",
     descriptionBg: "#4E4D4F",
     icon: "/seamless-integration-icon.png",
     iconWidth: "30",

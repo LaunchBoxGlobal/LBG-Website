@@ -14,15 +14,14 @@ const Services = () => {
     <section className="w-full py-10 lg:py-20 padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading">
-          Mobile App <br /> Development{" "}
+          Trusted Mobile App <br /> Development{" "}
           <span className="red-text">Services</span>
         </h2>
         <p className="section-paragraph lg:w-[90%]">
-          We build apps that solve real-world problems and keep users coming
-          back. Our mobile app development services focus on simple designs,
-          fast performance, and updates that make sense. We work with you to
-          create apps that grow as you do. Let’s make an app that truly works
-          for your goals.
+          Our app development service includes everything your business needs,
+          including iOS mobile app development and Android app development
+          services. Let’s break down all the services we provide related to
+          mobile app development.
         </p>
       </section>
 

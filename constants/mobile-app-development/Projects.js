@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Bloom",
     description:
-      "We created Bloom, a social app that helps people turn online chats into real friendships. It focuses on real connections without using algorithms. This project shows our team’s skills in building simple, user-friendly apps.",
+      "Brittany’s church needed a mobile app that deepens community engagement, and they came to us. Through our application development services, we built Bloom for them. A mobile app that was focused on spiritual growth. Members can start their day with devotionals, listen to worship music anywhere, and never have to miss a sermon. The app also connects the congregation with prayer requests and event updates, all in one place. We designed it to support hundreds of users at once.",
     src: "cactus.jpg",
     link: "/case-studies/bloom",
     color: "#88A28D",
@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "Now you Know Nashville",
     description:
-      "Now You Know Nashville is a travel app designed to make exploring the city easy and fun. With simple tips and useful insights, it helps travelers discover hidden gems. A great example of our team’s expertise in building user-friendly apps.",
+      "Our mobile app development team built a city discovery app, “Now You Know Nashville” for students and locals to uncover Nashville’s gems, like music venues and national landmarks. All organized into 11 cleanly designed categories. To deal with high payment fees and diverse content needs, our top application developers​ prepared smart solutions: a low-fee payment system, two free content categories to build trust, and category-specific styles. And now it’s become the go-to digital sidekick for discovering Nashville’s authentic vibe.",
     src: "rock.jpg",
     link: "/case-studies/now-you-know-nashville",
     color: "#BBACAF",
@@ -24,7 +24,7 @@ export const projects = [
   {
     title: "Fitness by Faith",
     description:
-      "We created Fitness by Faith, a health and fitness app that helps people stay active and motivated. It focuses on simple, real support without gimmicks. This project shows our team’s skills in building easy-to-use, helpful apps.",
+      "Fitness by Faith with Laken was made by our skilled custom mobile app development team to help users stay consistent with their fitness goals without stepping into a gym. Built with enterprise-grade flexibility, the app delivers personalized plans, real-time trainer chat, and gentle nudges when motivation dips. Trainers can update workouts instantly, while users easily log meals, check the next session, or dive into live workouts. With its clean layout and coaching features, it’s a smart runner-up among app creation companies that feel like a personal trainer in your pocket.",
     src: "tree.jpg",
     link: "/case-studies/fitness-by-faith",
     color: "#977F6D",
@@ -35,7 +35,7 @@ export const projects = [
   {
     title: "My Garage Outlet",
     description:
-      "My Garage Outlet is a shopping app designed for easy and hassle-free buying. It helps users find great deals on a variety of products. A perfect example of our team’s ability to create smooth and user-friendly shopping experiences.",
+      "We helped bring My Garage Outlet to life with standout mobile app design services that make local garage-sale hunting a breeze. Users can search nearby sales by location, connect directly with sellers, and complete secure payments—all from a clean, intuitive interface. The app also includes social sharing features so you never miss a hidden gem. Behind the scenes, a mobile app development consultant crafted admin tools to keep the platform running smoothly, making this modern digital marketplace feel effortless and engaging.",
     src: "water.jpg",
     link: "/case-studies/my-garage-outlet",
     color: "#C2491D",

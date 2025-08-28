@@ -8,7 +8,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import "./Styles.css";
 
 const paragraph =
-  "Constructing apps that are simple, fast, and accessible. We specialize in Mobile App Development Services focusing on quality, design, and smooth deployment. With expertise in building apps people love to use. Every project is carefully planned to deliver smooth experiences for businesses. We solve real problems while keeping users first in every stage. We ensure the final product is polished, reliable, and easy to navigate.";
+  "We are the top choice for startups seeking the best mobile app development company because we focus on providing mobile app development services that solve actual business problems. We create mobile apps that are reliable, secure, and ready to grow. Our mobile app development team makes sure that every project is carefully planned and provides a smooth experience for businesses. We even stay with you after the project is delivered to fix any bugs and keep your app updated.";
 
 const About = () => {
   // const buttonRef = useRef(null);
@@ -30,7 +30,7 @@ const About = () => {
           "text-xl lg:text-[25px] text-[#f40e00] font-semibold text-center"
         }
       >
-        Building Apps That Work: Simple, Reliable, and User-Focused
+        About LaunchBox Global
       </h2>
       {/* <Character value={paragraph} /> */}
       <p className="text-[22px] lg:text-[2.8vw] text-center lg:leading-[56px] text-gray-400 tracking-tight">

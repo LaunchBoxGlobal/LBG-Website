@@ -74,7 +74,7 @@ const GenericSoftware = () => {
                 }}
                 className={`absolute top-0 h-full bg-red-600 rounded-2xl flex justify-end items-center z-10 p-10`}
               >
-                <p className="text-white text-center text-base xl:text-xl w-full lg:w-[80%]">
+                <p className="text-white text-center text-sm midlg:text-base w-full lg:w-[80%]">
                   {solution?.description}
                 </p>
               </motion.div>

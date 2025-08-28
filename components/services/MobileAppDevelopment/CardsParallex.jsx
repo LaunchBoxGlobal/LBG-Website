@@ -10,10 +10,10 @@ export default function CardsParallex() {
           that We’ve
           <span className="red-text"> Built</span>
         </h2>
-        <p className="section-paragraph lg:w-[60%] text-center">
-          Explore real examples of apps we’ve made simple reliable and built to
-          solve problems From startups to businesses see how our work delivers
-          results that matter.
+        <p className="section-paragraph lg:w-[65%] text-center">
+          Explore the mobile apps we have built for startups, small businesses,
+          and enterprises. We are not just one of the companies that develop
+          apps. We create experiences for businesses.
         </p>
       </section>
       <PortfolioParallexCards projects={projects} />

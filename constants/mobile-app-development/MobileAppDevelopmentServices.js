@@ -5,7 +5,7 @@ export const MOBILE_APP_DEVELOPMENT_SERVICES = [
     image: "/cross-platform-app-development-service-image.webp",
     alt_tag:
       "Multi-platform app development interface showing cross-platform service compatibility across devices",
-    desc: "Cross-platform development lets you build one app that works on both iOS and Android, saving time and cost. As a trusted software development agency, we create apps that run smoothly, look great, and grow with your business. We focus on clean code, user-friendly designs, and thorough testing to ensure your app stands out. Let’s build an app that reaches more users and helps your business thrive.",
+    desc: "Our cross platform mobile app development services can build one app for you that works on both iOS and Android, saving time and cost. As a trusted mobile app development company, we create apps that run smoothly, look great, and grow with your business. We focus on clean code, user-friendly designs, and thorough testing to ensure your app stands out. Let’s build an app that reaches more users and helps your business thrive.",
     pageUrl: "/",
   },
   {

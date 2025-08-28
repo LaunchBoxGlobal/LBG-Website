@@ -15,6 +15,11 @@ import TechStack from "@/components/Common/TechStack";
 import Platforms from "@/components/Common/Platforms";
 import ServicePageForm from "@/components/Common/ServicePageForm";
 import MobileAppTechStack from "./MobileAppTechStack";
+import TopAppDevelopers from "./TopAppDevelopers";
+import ShowcasingExpertise from "../EcommerceDevelopment/ShowcasingExpertise";
+import MobileAppDevelopmentForEveryBusiness from "./MobileAppDevelopmentForEveryBusiness";
+import SecuritySolutions from "./SecuritySolutions";
+import MobileAppTechTrends from "./MobileAppTechTrends";
 
 const MobileAppDevelopmentPage = () => {
   return (
@@ -37,6 +42,11 @@ const MobileAppDevelopmentPage = () => {
         }
       />
       {/* <MobileAppTechStack /> */}
+      <TopAppDevelopers />
+      <ShowcasingExpertise />
+      <MobileAppDevelopmentForEveryBusiness />
+      <SecuritySolutions />
+      <MobileAppTechTrends />
       <FlagsAnimation />
       <MobileAppDevFaqs />
       <MobileAppDevContactForm />
