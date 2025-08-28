@@ -35,14 +35,14 @@ const CustomSoftwareDevelopmentPage = () => {
       <SoftwareSolution />
       <SecuritySolutions />
       <TechTrends />
-      <TeckStack
+      {/* <TeckStack
         heading={"Built With Modern"}
         redText={"Technology"}
         description={
           "We leverage proven custom software development solutions using Flutter, React Native, and Firebase to create fast, scalable applications tailored to your business needs."
         }
-      />
-      {/* <SoftwareDevelopmentTechStack /> */}
+      /> */}
+      <SoftwareDevelopmentTechStack />
       <CustomDevelopmentJourney />
       <FlagsAnimation />
       <Faqs />

@@ -34,14 +34,14 @@ const MobileAppDevelopmentPage = () => {
       <CreateYourMobileApp />
       <Benefits />
       <SmartPlanning />
-      <TechStack
+      {/* <TechStack
         heading={"Smart Technology for Better"}
         redText={"Solution"}
         description={
           "Great apps need the right tools. As a mobile app development company, the best technologies are used to build apps that run fast, work smoothly, and last long."
         }
-      />
-      {/* <MobileAppTechStack /> */}
+      /> */}
+      <MobileAppTechStack />
       <TopAppDevelopers />
       <ShowcasingExpertise />
       <MobileAppDevelopmentForEveryBusiness />
