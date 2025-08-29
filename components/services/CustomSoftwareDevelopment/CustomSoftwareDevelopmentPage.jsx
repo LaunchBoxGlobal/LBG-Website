@@ -17,6 +17,7 @@ import CustomSoftwareAwards from "./CustomSoftwareAwards";
 import SecuritySolutions from "./SecuritySolutions";
 import TechTrends from "./TechTrends";
 import SoftwareDevelopmentTechStack from "./SoftwareDevelopmentTechStack";
+import TeckStack from "@/components/Common/TechStack";
 
 const CustomSoftwareDevelopmentPage = () => {
   return (
