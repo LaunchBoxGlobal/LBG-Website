@@ -1,15 +1,12 @@
-"use client";
 import ContactButton from "@/components/Global/ContactButton";
 import {
-  WHY_CHOOSE_US2,
-  WHY_CHOOSE_US_1,
-} from "@/constants/custom-software-development/WhyChooseUs";
+  BRANDING_DESIGN_WHY_CHOOSE_US_1,
+  BRANDING_DESIGN_WHY_CHOOSE_US_2,
+} from "@/constants/branding-and-design/branding-and-design-why-choose-us";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 const WhyChooseUs = () => {
-  const [isHovered, setIsHovered] = useState(null);
-  const [isCardHovered, setIsCardHovered] = useState(null);
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
@@ -29,7 +26,7 @@ const WhyChooseUs = () => {
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-14">
-        {WHY_CHOOSE_US_1?.map((c, i) => {
+        {BRANDING_DESIGN_WHY_CHOOSE_US_1?.map((c, i) => {
           return (
             <div
               className={`w-full group flex flex-col items-center justify-start text-center gap-6 p-5 xl:p-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
@@ -42,8 +39,6 @@ const WhyChooseUs = () => {
                   : ""
               }`}
               key={i}
-              onMouseEnter={() => setIsHovered(i)}
-              onMouseLeave={() => setIsHovered(null)}
             >
               <h3 className="font-semibold text-[20px] xl:text-[22px]">
                 {c?.title}
@@ -60,7 +55,7 @@ const WhyChooseUs = () => {
             </div>
           );
         })}
-        {WHY_CHOOSE_US2?.map((c, i) => {
+        {BRANDING_DESIGN_WHY_CHOOSE_US_2?.map((c, i) => {
           return (
             <div
               className={`w-full group flex flex-col items-center justify-start text-center gap-6 p-5 xl:p-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 ${
@@ -73,8 +68,6 @@ const WhyChooseUs = () => {
                   : ""
               }`}
               key={i}
-              onMouseEnter={() => setIsCardHovered(i)}
-              onMouseLeave={() => setIsCardHovered(null)}
             >
               <h3 className="font-semibold text-[20px] xl:text-[22px]">
                 {c?.title}

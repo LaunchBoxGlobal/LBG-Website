@@ -5,24 +5,34 @@ import Portfolio from "./Portfolio";
 import Services from "./Services";
 import WhyChooseUs from "./WhyChooseUs";
 import Industries from "./Industries";
-import FAQs from "@/components/Common/FAQs";
 import CTA from "./CTA";
 import Workflow from "./Workflow";
 import Contact from "./Contact";
-import { BRANDING_AND_DESIGN_FAQS } from "@/constants/branding-and-design/branding-and-design-faqs";
 import BrandingAndDesignFaqs from "./BrandingAndDesignFaqs";
+import About from "./About";
+import Benefits from "./Benefits";
+import FlexibleBrandingAndDesign from "./FlexibleBrandingAndDesign";
+import ShowcasingExpertise from "../EcommerceDevelopment/ShowcasingExpertise";
+import BrandingAndDesignForBusinesses from "./BrandingAndDesignForEveryBusiness";
+import SecureBrandingAndDesign from "./SecureBrandingAndDesign";
 
 const BrandAndDesignPage = () => {
   return (
     <main className="w-full h-auto relative">
       <Hero />
       <Platforms />
+      <About />
       <Portfolio />
       <Services />
       <WhyChooseUs />
       <Industries />
+      <Benefits />
       <CTA />
       <Workflow />
+      <FlexibleBrandingAndDesign />
+      <ShowcasingExpertise />
+      <BrandingAndDesignForBusinesses />
+      <SecureBrandingAndDesign />
       <BrandingAndDesignFaqs />
       <Contact />
     </main>

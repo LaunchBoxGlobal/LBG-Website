@@ -14,7 +14,7 @@ export const BRANDING_AND_DESIGN_SERVICES = [
     image: "/brand-positioning-and-strategy-service-image.png",
     alt_tag:
       "Brand positioning strategy dashboard showing market analysis and competitive differentiation mapping",
-    desc: "Your brand needs more than just a pretty logo, it needs direction. We build smart brand positioning strategies that help you stand out in crowded markets. Whether you're launching something new or refining your existing brand, we pinpoint what makes you different and how to communicate it. Our process digs into your business goals, customers, and competitors to shape a brand identity that works. We focus on professionalism for B2B branding services companies especially. The result? A brand that looks good, makes sense, and sticks in customers' minds.",
+    desc: "Your brand needs more than just a pretty logo; it needs direction. We build smart brand positioning strategies that help you stand out in crowded markets. Whether you're launching something new or refining your existing brand, we pinpoint what makes you different and how to communicate it. Our process digs into your business goals, customers, and competitors to shape a brand identity that works. We focus on professionalism for B2B branding services companies especially. The result? A brand that looks good, makes sense, and sticks in customers' minds.",
     pageUrl: "/",
   },
   {
@@ -51,25 +51,25 @@ export const BRANDING_AND_DESIGN_SERVICES = [
     image: "/software-quality-testing-service-image.png",
     alt_tag:
       "UI and UX design testing dashboard showing usability metrics and interface analytics",
-    desc: "Your app or website shouldn’t confuse people, it should help them. Our UI/UX design focuses on what real users actually need, not just what looks trendy. We create interfaces that feel intuitive, with buttons where you’d expect them and workflows that don’t make people think too hard. Using proven branding development services, we ensure every screen reflects your brand while staying functional. From wireframes to final designs, we test ideas with real users to catch problems early. The result? Digital products that people enjoy using, not just tolerating.",
+    desc: "Your app or website shouldn’t confuse people; it should help them. Our UI and UX design focuses on what real users actually need, not just what looks trendy. We create interfaces that feel intuitive, with buttons where you’d expect them and workflows that don’t make people think too hard. Using proven branding development services, we ensure every screen reflects your brand while staying functional. From wireframes to final designs, we test ideas with real users to catch problems early. The result? Digital products that people enjoy using, not just tolerating.",
     pageUrl: "/",
   },
   {
-    title: "Website Visual Design",
+    title: "Website & App Visual Design",
     subtitle: "",
     image: "/ui-and-ux-design-service-image.png",
     alt_tag:
       "Website visual design interface showing wireframes, color palettes, and typography options",
-    desc: "Your digital presence needs to look good and work right. We design website and app visual design that balances style with functionality creating layouts that guide users naturally, not frustrate them. Every color, button, and animation serves a purpose. Using brand strategy services, we ensure your site/app aligns with your business goals while keeping users engaged. No overly flashy gimmicks just clean, purposeful designs that help visitors find what they need and take action. From loading speeds to mobile responsiveness, we sweat the details so your digital tools actually perform.",
+    desc: "Your digital presence needs to look good and work right. We design app and website visual design that balances style with functionality, creating layouts that guide users naturally, not frustrate them. Every color, button, and animation serves a purpose. Using brand strategy services, we ensure your site/app aligns with your business goals while keeping users engaged. No overly flashy gimmicks, just clean, purposeful designs that help visitors find what they need and take action. From loading speeds to mobile responsiveness, we sweat the details so your digital tools actually perform.",
     pageUrl: "/",
   },
   {
-    title: "Product Packaging Design",
+    title: "Packaging & Product Design",
     subtitle: "",
     image: "/website-visual-design-service-image.png",
     alt_tag:
       "Product packaging design showing 3D mockup with branding and label placement",
-    desc: "Your packaging isn’t just a box, it's the first handshake with your customer. We create packaging and product design that stops shoppers mid-scroll and makes them pick your product off the shelf. Clear messaging, smart materials, and intentional colors that work harder for your brand. Using branding development services, we ensure every detail from unboxing experience to shelf presence tells your story consistently. No generic templates, just strategic designs that protect your product.",
+    desc: "Your packaging isn’t just a box, it's the first handshake with your customer. We create product packaging design that stops shoppers mid-scroll and makes them pick your product off the shelf. Clear messaging, smart materials, and intentional colors that work harder for your brand. Using branding development services, we ensure every detail from the unboxing experience to shelf presence tells your story consistently. No generic templates, just strategic designs that protect your product.",
     pageUrl: "/",
   },
   {
