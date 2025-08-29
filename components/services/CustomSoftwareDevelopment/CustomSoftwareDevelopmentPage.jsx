@@ -9,7 +9,6 @@ import GenericSoftware from "./GenericSoftware";
 import WhyChooseUs from "./WhyChooseUs";
 import CustomDevelopmentJourney from "./CustomDevelopmentJourney";
 import FlagsAnimation from "@/components/Common/FlagsAnimation";
-import TeckStack from "@/components/Common/TechStack";
 import Platforms from "@/components/Common/Platforms";
 import Portfolio from "./Portfolio";
 import Faqs from "./Faqs";
