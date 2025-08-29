@@ -16,16 +16,15 @@ const Hero = () => {
         className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-10"
       >
         <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1] w-full z-10 flex flex-wrap justify-center items-center gap-4">
-          Mobile App Development Company in{" "}
+          Leading Mobile App Development Company in{" "}
           <span className="red-bg inline-block py-4 px-10 text-white rounded-[17px]">
             Texas
-          </span>{" "}
-          for Your Business Needs
+          </span>
         </h1>
 
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto z-10">
-          Build high-performance apps with a trusted partner in Dallas,
-          specializing in mobile app development in Texas.
+          Searching for a mobile app development company in Texas? We’ll build a
+          high-performance mobile app just for you!
         </p>
 
         <section className="w-full mt-5 z-10">

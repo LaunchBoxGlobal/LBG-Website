@@ -1,32 +1,28 @@
-import { ECOMMERCE_INDUSTRIES } from "@/constants/ecommerce-develpment/ecommerceIndustries";
 import React from "react";
 import { FiMinus } from "react-icons/fi";
 import { LuPlus } from "react-icons/lu";
-import "./industries.css";
+import "../../LocationComponents/industries.css";
+import { SOFTWARE_DEV_COMPANY_NEW_JERSEY_INDUSTRIES } from "@/constants/locations/software-dev-company-new-jersey/software-dev-company-new-jersey-industries";
 
-const EcommerceIndustries = () => {
+const Industries = () => {
   return (
     <section className="w-full padding-x pb-10 lg:py-20 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <h2 className="red-text font-semibold text-lg lg:text-[25px] text-center">
-          Serious About eCommerce?
+        <h2 className="section-heading w-full lg:w-[80%]">
+          Explore Our Diverse{" "}
+          <span className="red-text"> Industry Expertise</span>
         </h2>
-        <h3 className="section-heading w-full">
-          Work with a Development Company That Knows
-          <span className="red-text"> Your Industry</span>
-        </h3>
         <p className="section-paragraph lg:w-[80%]">
-          We’re a dev eCommerce company that understands your industry. whether
-          it’s fashion, electronics, beauty, or more. We build online stores and
-          apps that boost sales, keep customers engaged, and help your business
-          grow.
+          At Launchbox Global, we serve a wide range of industries, providing
+          tailored solutions that drive success and innovation. Our expertise
+          guarantees that we meet each sector's unique needs.
         </p>
       </section>
 
       <section className="industries-wrapper w-full mt-10 lg:mt-16 flex flex-wrap gap-2">
-        {ECOMMERCE_INDUSTRIES?.map((industry, index) => (
+        {SOFTWARE_DEV_COMPANY_NEW_JERSEY_INDUSTRIES?.map((industry, index) => (
           <div
-            className="industry-card h-[400px] md:h-[370px] lg:h-[330px] midlg:h-[340px] xl:h-[370px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden md:w-[46%] lg:w-auto"
+            className="industry-card h-[300px] md:h-[270px] midlg:h-[340px] xl:h-[300px] bg-[#F3F3F3] p-5 lg:p-8 rounded-[7px] flex flex-col justify-between group relative overflow-hidden md:w-[46%] lg:w-auto"
             key={index}
           >
             <h3 className="text-[26px] font-semibold leading-[1]">
@@ -54,4 +50,4 @@ const EcommerceIndustries = () => {
   );
 };
 
-export default EcommerceIndustries;
+export default Industries;

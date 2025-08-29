@@ -1,12 +1,11 @@
 "use client";
-import { TEXAS_FAQS } from "@/constants/locations/mobile-app-dev-company-texas/texas-faqs";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GoDotFill } from "react-icons/go";
 
-const TexasFaqs = ({ faqs }) => {
+const Faqs = ({ faqs }) => {
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
@@ -22,7 +21,7 @@ const TexasFaqs = ({ faqs }) => {
       </h2>
 
       <section className="w-full mt-10 lg:mt-24 flex flex-col items-start gap-4 lg:w-[90%]">
-        {TEXAS_FAQS?.map((faq, index) => (
+        {faqs?.map((faq, index) => (
           <div
             className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
             key={index}
@@ -88,12 +87,12 @@ const TexasFaqs = ({ faqs }) => {
           className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
         >
           <button
-            onClick={() => toggleFaq(TEXAS_FAQS?.length)}
+            onClick={() => toggleFaq(faqs?.length + 1)}
             className="w-full text-start flex items-start justify-between outline-none"
           >
             <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
               <span className="w-full leading-7 lg:leading-10">
-                Do you help with app design as well?
+                How much does it cost to build an app in the USA?
               </span>
             </h5>
 
@@ -103,7 +102,7 @@ const TexasFaqs = ({ faqs }) => {
               height={20}
               alt="arrow icon"
               className={`${
-                openFaq === TEXAS_FAQS?.length ? "scale-y-[-1]" : "scale-y-[1]"
+                openFaq === faqs?.length + 1 ? "scale-y-[-1]" : "scale-y-[1]"
               } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
             />
           </button>
@@ -111,73 +110,22 @@ const TexasFaqs = ({ faqs }) => {
           <motion.div
             initial={false}
             animate={{
-              height: openFaq === TEXAS_FAQS?.length ? "auto" : 0,
-              opacity: openFaq === TEXAS_FAQS?.length ? 1 : 0,
-              marginTop: openFaq === TEXAS_FAQS?.length ? "18px" : 0,
+              height: openFaq === faqs?.length + 1 ? "auto" : 0,
+              opacity: openFaq === faqs?.length + 1 ? 1 : 0,
+              marginTop: openFaq === faqs?.length + 1 ? "18px" : 0,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="overflow-hidden"
           >
             <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
-              Yes, design is a key part of our process. Our Texas{" "}
-              <Link
-                href={`/services/mobile-app-development`}
-                className="red-text"
-              >
-                mobile app development services
-              </Link>{" "}
-              include UI/UX design to assure your app is intuitive, attractive,
-              and optimized for user engagement. We collaborate with you at
-              every stage to align design with your brand.
-            </p>
-          </motion.div>
-        </div>
-        <div
-          className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
-        >
-          <button
-            onClick={() => toggleFaq(TEXAS_FAQS?.length + 1)}
-            className="w-full text-start flex items-start justify-between outline-none"
-          >
-            <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
-              <span className="w-full leading-7 lg:leading-10">
-                Should I choose a custom app or use a pre-built solution?
-              </span>
-            </h5>
-
-            <img
-              src={"/faq-arrow-icon.png"}
-              width={24}
-              height={20}
-              alt="arrow icon"
-              className={`${
-                openFaq === TEXAS_FAQS?.length + 1
-                  ? "scale-y-[-1]"
-                  : "scale-y-[1]"
-              } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
-            />
-          </button>
-
-          <motion.div
-            initial={false}
-            animate={{
-              height: openFaq === TEXAS_FAQS?.length + 1 ? "auto" : 0,
-              opacity: openFaq === TEXAS_FAQS?.length + 1 ? 1 : 0,
-              marginTop: openFaq === TEXAS_FAQS?.length + 1 ? "18px" : 0,
-            }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
-            <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
-              Custom mobile app development gives you more control, flexibility,
-              and scalability. Unlike off-the-shelf options, a custom mobile app
-              built by our Texas development team is tailored to your exact
-              business needs, making it easier to stand out, integrate with your
-              systems, and scale as you grow. You can{" "}
+              {" "}
+              The cost of building an app depends on features, complexity,
+              platform choice, and design requirements. For a precise estimate
+              tailored to your project, please connect with us through our{" "}
               <Link href={`/contact-us`} className="red-text">
-                talk to our experts
+                contact page.
               </Link>{" "}
-              for more information.
+              Our mobile app experts in Houston can help you budget effectively.
             </p>
           </motion.div>
         </div>
@@ -185,12 +133,12 @@ const TexasFaqs = ({ faqs }) => {
           className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
         >
           <button
-            onClick={() => toggleFaq(TEXAS_FAQS?.length + 2)}
+            onClick={() => toggleFaq(faqs?.length + 2)}
             className="w-full text-start flex items-start justify-between outline-none"
           >
             <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
               <span className="w-full leading-7 lg:leading-10">
-                Do you build apps for both iOS and Android?
+                Is C++ widely used for developing mobile apps?
               </span>
             </h5>
 
@@ -200,9 +148,7 @@ const TexasFaqs = ({ faqs }) => {
               height={20}
               alt="arrow icon"
               className={`${
-                openFaq === TEXAS_FAQS?.length + 2
-                  ? "scale-y-[-1]"
-                  : "scale-y-[1]"
+                openFaq === faqs?.length + 2 ? "scale-y-[-1]" : "scale-y-[1]"
               } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
             />
           </button>
@@ -210,30 +156,24 @@ const TexasFaqs = ({ faqs }) => {
           <motion.div
             initial={false}
             animate={{
-              height: openFaq === TEXAS_FAQS?.length + 2 ? "auto" : 0,
-              opacity: openFaq === TEXAS_FAQS?.length + 2 ? 1 : 0,
-              marginTop: openFaq === TEXAS_FAQS?.length + 2 ? "18px" : 0,
+              height: openFaq === faqs?.length + 2 ? "auto" : 0,
+              opacity: openFaq === faqs?.length + 2 ? 1 : 0,
+              marginTop: openFaq === faqs?.length + 2 ? "18px" : 0,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="overflow-hidden"
           >
             <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
-              Of course. We make apps for both iOS and Android platforms. We use
-              multiple languages for app development like{" "}
+              C++ is not commonly used for standard mobile app development. It’s
+              mainly applied for performance-intensive components like game
+              engines or system-level programming. Most apps are built using{" "}
               <Link
-                href={`https://launchboxglobal.com/development-technologies/flutter-app-development`}
+                href={`https://launchboxglobal.com/development-technologies/kotlin-app-development`}
                 className="red-text"
               >
-                Flutter
+                Kotlin
               </Link>
-              ,{" "}
-              <Link
-                href={`https://launchboxglobal.com/development-technologies/react-native-app-development`}
-                className="red-text"
-              >
-                React Native
-              </Link>
-              ,{" "}
+              , Java,{" "}
               <Link
                 href={`https://launchboxglobal.com/development-technologies/swift-app-development`}
                 className="red-text"
@@ -242,20 +182,19 @@ const TexasFaqs = ({ faqs }) => {
               </Link>
               ,{" "}
               <Link
-                href={`https://launchboxglobal.com/development-technologies/kotlin-app-development`}
+                href={`https://launchboxglobal.com/development-technologies/flutter-app-development`}
                 className="red-text"
               >
-                Kotlin
-              </Link>{" "}
-              or{" "}
-              <Link
-                href={`https://launchboxglobal.com/development-technologies/ionic-app-development`}
-                className="red-text"
-              >
-                Ionic
+                Flutter
               </Link>
-              , our Texas app developers ensure your app performs seamlessly
-              across devices and delivers a consistent user experience.
+              , or{" "}
+              <Link
+                href={`https://launchboxglobal.com/development-technologies/react-native-app-development`}
+                className="red-text"
+              >
+                React Native
+              </Link>
+              , especially by our mobile app development team in Houston.
             </p>
           </motion.div>
         </div>
@@ -264,4 +203,4 @@ const TexasFaqs = ({ faqs }) => {
   );
 };
 
-export default TexasFaqs;
+export default Faqs;

@@ -8,12 +8,13 @@ const Hero = () => {
     <section className="w-full relative overflow-x-hidden pt-36 2xl:pt-52 padding-x">
       <section className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white overflow-hidden">
         <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-[1] w-full capitalize">
-          React Native App Development for Effortless{" "}
-          <span className="blueText">Cross-Platform Apps</span>
+          Leading React Native App Development{" "}
+          <span className="blueText">Company</span>
         </h1>
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] leading-7">
-          React Native App Development that helps you reach iOS and Android
-          users with one powerful, unified app experience.
+          Work with the best React Native app development company to build
+          high-performance, reliable, and user-friendly mobile applications
+          efficiently.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1 mb-8">
           <Link

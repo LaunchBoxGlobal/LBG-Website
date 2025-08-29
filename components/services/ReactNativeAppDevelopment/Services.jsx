@@ -12,11 +12,11 @@ const Services = () => {
         </h2>
         <p className="section-paragraph lg:w-[90%]">
           We create mobile apps with great performance using React Native,
-          blending speed and quality. Whether you need a custom app or
-          improvements to an existing one, our team delivers smooth, scalable
-          solutions tailored to your needs. From concept to launch, we handle
-          everything so you get a polished, user-friendly app without the
-          hassle.
+          blending speed and quality. Our React Native app development services
+          cover custom apps and enhancements to existing ones, delivering
+          smooth, reliable solutions tailored to your needs. We handle
+          everything from concept to launch, so you get a user-friendly app
+          without the hassle.
         </p>
       </section>
 

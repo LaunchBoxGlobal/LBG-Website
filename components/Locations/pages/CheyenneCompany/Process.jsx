@@ -11,14 +11,16 @@ const Process = () => {
     <section className="w-full padding-x py-20 midlg:py-28 overflow-hidden relative">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[90%] mx-auto">
-          Built for Wyoming <span className="red-text">Businesses</span>
+          Proven Workflow for Cheyenne{" "}
+          <span className="red-text">Businesses</span>
         </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          We don't do cookie-cutter solutions. Whether you're a mom-and-pop shop
-          in Cheyenne or a growing enterprise across Wyoming, we listen first -
-          then build a marketing plan that actually works for your business.
-          Here's how we adapt:
+          Our workflow is built around clarity, consistency, and measurable
+          growth. Every step is designed to keep your business moving forward
+          with SEO strategies that align with your goals. By combining expertise
+          with a transparent approach, we make sure Cheyenne businesses see
+          lasting online success.
         </p>
       </section>
       <div className="w-full relative  py-20">

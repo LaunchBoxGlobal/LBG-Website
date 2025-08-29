@@ -10,22 +10,42 @@ const About = () => {
         </h2>
 
         <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
-          At LaunchBox Global, we are a dedicated partner for mobile, web, and
-          eCommerce development, focused on helping businesses in Texas succeed.
-          We specialize in mobile app development in Texas, turning your ideas
-          into digital products that generate revenue. With our strong
-          background in Dallas mobile development, we provide adaptable and
-          scalable solutions developed to meet your specific needs. You can
-          trust us to guide you through the digital landscape and assist you in
-          reaching your business goals. Explore our{" "}
-          <Link href={`/case-studies`} className="red-text">
-            projects
-          </Link>{" "}
-          and{" "}
-          <Link href={`/blogs`} className="red-text">
-            blogs
+          We are the go-to mobile app development company in Texas, trusted by
+          startups and founders. We specialize in mobile app development,
+          focused on helping businesses in Texas succeed. We understand that
+          building an app can sometimes feel overwhelming, so our top
+          application developers​ ensure that you don’t have to deal with the
+          issues later. And if you do, we’re right there with you, even after
+          launch. And it doesn’t stop at mobile apps. You also get access to a
+          variety of services designed to grow your business, like{" "}
+          <Link
+            href={`https://launchboxglobal.com/services/custom-software-development`}
+            className="underline"
+          >
+            custom software
           </Link>
-          , or contact us to learn more about our services.
+          ,{" "}
+          <Link
+            href={`https://launchboxglobal.com/services/web-app-development`}
+            className="underline"
+          >
+            web applications
+          </Link>
+          ,{" "}
+          <Link
+            href={`https://launchboxglobal.com/services/ecommerce-development`}
+            className="underline"
+          >
+            eCommerce development
+          </Link>
+          , and even{" "}
+          <Link
+            href={`https://launchboxglobal.com/services/branding-and-design`}
+            className="underline"
+          >
+            branding
+          </Link>
+          . Whatever your business needs, we’ve got you covered.
         </p>
       </section>
     </section>

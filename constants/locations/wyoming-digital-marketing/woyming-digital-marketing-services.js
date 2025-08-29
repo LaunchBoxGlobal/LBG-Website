@@ -1,5 +1,21 @@
 export const WYOMING_DIGITAL_MARKETING_SERVICES = [
   {
+    icon: "/locations/digital-marketing/content-marketing-service-icon.webp",
+    iconWidth: 53,
+    iconHeight: 53,
+    title: "Content Marketing",
+    description:
+      "Content marketing services create valuable content that attracts Wyoming customers and builds trust. Our strategies boost engagement and organic traffic.",
+  },
+  {
+    icon: "/locations/digital-marketing/email-marketing-service-icon.webp",
+    iconWidth: 53,
+    iconHeight: 53,
+    title: "Email Marketing",
+    description:
+      "Our email marketers ensure that Email Marketing nurtures leads with personalized emails tailored to Wyoming demographics and buying habits.",
+  },
+  {
     icon: "/locations/digital-marketing/seo-service-icon.webp",
     iconWidth: 53,
     iconHeight: 53,

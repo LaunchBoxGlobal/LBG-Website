@@ -6,7 +6,7 @@ export const WYOMING_DIGITAL_MARKETING_PROCESS = [
     tag_line: "Understand the Big Picture Before Execution",
     title: "Discovery & Strategy",
     description:
-      "We begin with a detailed discovery to fully understand your brand, goals, audience, and market. Based on this, we develop a comprehensive strategy and execution roadmap, outlining each phase clearly.",
+      "Our process begins with an in-depth discovery to understand your brand, objectives, target audience, and market. From there, we craft a tailored marketing strategy and execution plan, mapping out each stage with clarity.",
   },
   {
     icon: "/locations/digital-marketing/planning-and-timeline-icon.webp",
@@ -15,7 +15,7 @@ export const WYOMING_DIGITAL_MARKETING_PROCESS = [
     tag_line: "Set Clear Milestones, No Surprises",
     title: "Planning & Timeline",
     description:
-      "Once the strategy is approved, we map out every milestone: deliverables, deadlines, and responsibilities. Budgets and approval stages are locked in, so everyone is aligned from the start.",
+      "When the strategy is finalized, we break down each milestone, including key tasks, timelines, and ownership. As a trusted digital media company, we oversee every stage carefully to achieve meaningful results.",
   },
   {
     icon: "/locations/digital-marketing/development-icon.webp",
@@ -24,7 +24,7 @@ export const WYOMING_DIGITAL_MARKETING_PROCESS = [
     tag_line: "Create Consistent, On-Brand Assets",
     title: "Creative Development",
     description:
-      "We produce all creative assets — copy, design, video, social media posts — in a sequence that ensures alignment with your brand and strategy. Each asset is developed with consistency and clarity in mind.",
+      "We develop all creative assets: copy, design, video, and social media posts. Each asset is designed with consistency and clarity to enhance engagement and reach.",
   },
   {
     icon: "/locations/digital-marketing/testing-icon.webp",
@@ -33,7 +33,7 @@ export const WYOMING_DIGITAL_MARKETING_PROCESS = [
     tag_line: "Quality Checks Before Moving Forward",
     title: "Internal QA & Client Approval",
     description:
-      "All assets undergo thorough internal quality assurance, ensuring that everything is aligned with the strategy and brand tone. After that, we submit everything for your approval before moving forward.",
+      "All assets go through a rigorous internal quality check to ensure alignment with your strategy and brand voice. As part of our digital marketing Wyoming process, we then share everything for your approval before moving ahead.",
   },
   {
     icon: "/locations/digital-marketing/campaign-icon.webp",
@@ -42,7 +42,7 @@ export const WYOMING_DIGITAL_MARKETING_PROCESS = [
     tag_line: "Launch as Planned, No Surprises",
     title: "Campaign Launch",
     description:
-      "With everything approved, we roll out the campaign exactly as planned — on the channels, timelines, and budgets defined earlier. The focus is on executing according to the detailed roadmap.",
+      "Once everything is approved, we launch the campaign across the agreed-upon channels, timelines, and budgets. Our priority is precise execution following the defined roadmap.",
   },
   {
     icon: "/locations/digital-marketing/post-launch-reporting-icon.webp",
@@ -51,6 +51,6 @@ export const WYOMING_DIGITAL_MARKETING_PROCESS = [
     tag_line: "Track Results, Measure Success",
     title: "Post-Launch Reporting",
     description:
-      "After launch, we track campaign performance closely, providing a detailed report focused on pre-defined KPIs and outcomes. This ensures that the campaign’s effectiveness is measured against set objectives.",
+      "We closely monitor campaign performance and share detailed reports that highlight key KPIs and results. Through our comprehensive digital marketing services, we make sure every campaign is evaluated against your defined goals.",
   },
 ];

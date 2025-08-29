@@ -13,59 +13,13 @@ const Services = () => {
         </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          We help Wyoming businesses grow with targeted strategies and
-          measurable outcomes. While we're known as leading software companies
-          in Houston, our digital marketing expertise drives success across the
-          Mountain West.
+          As a dedicated digital marketing agency Cheyenne Wyoming, we provide
+          customized solutions that connect with your audience, build trust, and
+          accelerate business growth.
         </p>
       </section>
 
       <section className="w-full flex items-start justify-center flex-wrap mt-14 gap-5 mx-auto">
-        <div className="w-full md:w-[45%] lg:w-[32%]">
-          <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <img
-              src={`/locations/digital-marketing/content-marketing-service-icon.webp`}
-              width={`66`}
-              height={`53`}
-              alt={`cross-platform-app-development-service-icon`}
-              className=""
-              loading="lazy"
-            />
-            <h3 className="font-bold service-heading leading-[1.2]">
-              Content Marketing
-            </h3>
-            <p className="text-lg leading-[1.3]">
-              <Link href={`/services/digital-marketing`} className="red-text">
-                Content Marketing{" "}
-              </Link>
-              creates valuable content that attracts Wyoming customers and
-              builds trust. Our strategies boost engagement and organic traffic.
-            </p>
-          </div>
-        </div>
-        <div className="w-full md:w-[45%] lg:w-[32%]">
-          <div className="w-full rounded-[16px] p-8 min-h-[320px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <img
-              src={`/locations/digital-marketing/email-marketing-service-icon.webp`}
-              width={`59`}
-              height={`53`}
-              alt={`cross-platform-app-development-service-icon`}
-              className=""
-              loading="lazy"
-            />
-            <h3 className="font-bold service-heading leading-[1.2]">
-              Email Marketing
-            </h3>
-            <p className="text-lg leading-[1.3]">
-              The{" "}
-              <Link href={`/services/digital-marketing`} className="red-text">
-                Email Marketing
-              </Link>{" "}
-              nurture leads with personalized emails designed for Wyoming
-              demographics and buying habits.
-            </p>
-          </div>
-        </div>
         {WYOMING_DIGITAL_MARKETING_SERVICES?.map((s, i) => {
           return (
             <div className="w-full md:w-[45%] lg:w-[32%]">

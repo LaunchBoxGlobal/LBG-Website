@@ -10,17 +10,21 @@ const About = () => {
         </h2>
 
         <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
-          LaunchBox Global is a full-service{" "}
-          <Link href={`/services/digital-marketing`} className="red-text">
-            digital marketing
-          </Link>{" "}
-          and software development partner helping Wyoming businesses succeed
-          online. While we serve as one of the leading software companies in
-          Houston, we specialize in helping Wyoming clients build
-          revenue-generating digital products from custom websites to eCommerce
-          platforms all optimized for local markets. Our agile approach combines
-          data-driven marketing with technical excellence to deliver measurable
-          results.
+          Building a business in Wyoming comes with its own set of challenges so
+          if you’re looking for digital marketing services that just understand
+          your needs, we’ve got you covered. Our Wyoming digital marketing
+          approach is all about keeping things simple and effective. We create
+          strategies that genuinely connect with your audience and run campaigns
+          that produce genuine results. We are not just another digital media
+          company; we understand your needs. Whether you’re just starting or
+          looking to expand, we’ll ensure your brand stands out in the Wyoming
+          market and beyond through our{" "}
+          <Link
+            href={`https://launchboxglobal.com/services/digital-marketing`}
+            className="underline"
+          >
+            digital marketing services.
+          </Link>
         </p>
       </section>
     </section>

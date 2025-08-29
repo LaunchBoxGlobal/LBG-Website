@@ -23,7 +23,15 @@ import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import LocationStats from "../../LocationComponents/LocationStats";
 import LocationFaqs from "../../LocationComponents/LocationFaqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
+import About from "./About";
 import { SOFTWARE_DEV_FLORIDA_FAQS } from "@/constants/locations/software-dev-company-florida/software-dev-florida-faqs";
+import { SOFTWARE_DEV_COMPANY_FLORIDA_CASE_STUDIES } from "@/constants/locations/software-dev-company-florida/software-dev-company-florida-case-studies";
+import Industries from "./Industries";
+import {
+  SOFTWARE_DEV_FLORIDA_AGILE_WORKFLOW,
+  SOFTWARE_DEV_FLORIDA_RECOMMENDED_WORKFLOW,
+  SOFTWARE_DEV_FLORIDA_WATERFALL_WORKFLOW,
+} from "@/constants/locations/software-dev-company-florida/software-development-company-florida-workflow";
 
 const SoftwareDevelopmentInFloridaPage = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -31,10 +39,7 @@ const SoftwareDevelopmentInFloridaPage = () => {
     <main className="w-full relative">
       <Hero />
       <Platforms />
-      <AboutSection
-        heading={`Software Development Company in Florida You Can Trust`}
-        description={`LaunchBox Global is a full-service software development company in Florida, specializing in mobile, web, and eCommerce solutions. We partner with startups and enterprises across the state to transform ideas into high-performing digital products. Unlike generic software development companies in Florida, we focus on agile, scalable approaches tailored to your business goals whether it’s a customer-facing app, a productivity tool, or a revenue-driving platform. From Miami to Jacksonville, our Florida-based team delivers clarity, quality, and results at every stage.`}
-      />
+      <About />
       <Services />
       <LocationProcess
         heading={"Agile, Waterfall & Functionality-First  Built for"}
@@ -42,9 +47,9 @@ const SoftwareDevelopmentInFloridaPage = () => {
         agileDescription={`Ideal for Florida startups needing rapid iterations, our Agile process delivers working features every 2–4 weeks. We adapt to market feedback while maintaining quality perfect for apps in Miami’s competitive tech scene or Orlando’s growing startup ecosystem.`}
         waterfallDescription={`For Florida enterprises with fixed requirements (like healthcare or banking systems), our structured Waterfall approach ensures thorough planning, documentation, and predictable outcomes critical for regulated industries across the state.`}
         recommendedDescription={`We prioritize core features that drive revenue, especially for Florida SMBs with tight budgets. Launch essential functions fast, then scale proven for Tampa’s retail businesses and Jacksonville’s logistics firms.`}
-        agileProcess={SOFTWARE_DEV_FLORIDA_AGILE_PROCESS}
-        recommendedProcess={SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS}
-        waterfallProcess={SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS}
+        agileProcess={SOFTWARE_DEV_FLORIDA_AGILE_WORKFLOW}
+        recommendedProcess={SOFTWARE_DEV_FLORIDA_RECOMMENDED_WORKFLOW}
+        waterfallProcess={SOFTWARE_DEV_FLORIDA_WATERFALL_WORKFLOW}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
@@ -52,12 +57,15 @@ const SoftwareDevelopmentInFloridaPage = () => {
         heading={"Florida-Tested Software"}
         redText={"Solutions"}
         description={
-          "As a leading software development company in Florida, we deliver real results. Here’s how we’ve helped businesses like yours:"
+          "Every startup has its own set of challenges. That’s why our custom software development services are built to address them head-on. We collaborate with you to create solutions that streamline workflows, boost productivity, and equip your business with the right tools to grow."
         }
         child={
-          <PortfolioParallexCards projects={CUSTOM_SOFTWARE_CASE_STUDIES} />
+          <PortfolioParallexCards
+            projects={SOFTWARE_DEV_COMPANY_FLORIDA_CASE_STUDIES}
+          />
         }
       />
+      <Industries />
       <TeckStack
         heading={"Tech Stack Trusted by Florida’s"}
         redText={"Top Businesses"}

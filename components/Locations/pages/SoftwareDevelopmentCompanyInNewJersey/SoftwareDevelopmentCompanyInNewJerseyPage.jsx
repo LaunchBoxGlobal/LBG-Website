@@ -5,11 +5,6 @@ import Platforms from "@/components/Common/Platforms";
 import Services from "./Services";
 import AboutSection from "./AboutSection";
 import LocationProcess from "../../LocationComponents/LocationProcess";
-import {
-  SOFTWARE_DEV_FLORIDA_AGILE_PROCESS,
-  SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS,
-  SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS,
-} from "@/constants/locations/software-dev-company-florida/software-dev-florida-process";
 import CaseStudies from "../MobileAppDeveloper/CaseStudies";
 import PortfolioParallexCards from "@/components/Common/PortfolioParallexCards";
 import { CUSTOM_SOFTWARE_CASE_STUDIES } from "@/constants/custom-software-development/CaseStudies";
@@ -24,6 +19,14 @@ import LocationStats from "../../LocationComponents/LocationStats";
 import LocationFaqs from "../../LocationComponents/LocationFaqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
 import { SOFTWARE_DEV_NEW_JERSEY_FAQS } from "@/constants/locations/software-dev-company-new-jersey/software-dev-company-new-jersey-faqs";
+import {
+  SOFTWARE_DEV_NEW_JERSEY_AGILE_PROCESS,
+  SOFTWARE_DEV_NEW_JERSEY_RECOMMENDED_PROCESS,
+  SOFTWARE_DEV_NEW_JERSEY_WATERFALL_PROCESS,
+} from "@/constants/locations/software-dev-company-new-jersey/software-dev-company-new-jersey-workflow";
+import { SOFTWARE_DEV_COMPANY_NEW_JERSEY_CASE_STUDIES } from "@/constants/locations/software-dev-company-new-jersey/software-dev-company-new-jersey-case-studies";
+import NewJerseyFaqs from "./NewJerseyFaqs";
+import Industries from "./Industries";
 
 const SoftwareDevelopmentCompanyInNewJerseyPage = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -39,22 +42,26 @@ const SoftwareDevelopmentCompanyInNewJerseyPage = () => {
         agileDescription={`Our Agile approach is ideal for fast-paced New Jersey startups looking for iterative development and early MVPs. This methodology emphasizes collaboration and flexibility, allowing teams to respond quickly to changes and feedback. As a leading custom software development company in New Jersey, we ensure that your project evolves in alignment with your vision, maximizing the potential for success while minimizing risks.`}
         waterfallDescription={`For established enterprises in New Jersey that require a structured and sequential development process, our Waterfall methodology is the perfect fit. This approach allows for thorough planning and documentation, ensuring every phase is completed before moving on to the next. As one of the top software development companies in New Jersey, We use this approach to provide consistent and dependable results, making it ideal for projects with well-defined requirements.`}
         recommendedDescription={`Our Functionality-First methodology focuses on delivering core features that provide immediate value to your business. This approach is particularly beneficial for New Jersey companies looking to enhance their existing systems or launch new products efficiently. By prioritizing essential functionalities, we ensure your project remains aligned with your strategic goals, making us a trusted partner among custom software development companies in New Jersey.`}
-        agileProcess={SOFTWARE_DEV_FLORIDA_AGILE_PROCESS}
-        recommendedProcess={SOFTWARE_DEV_FLORIDA_RECOMMENDED_PROCESS}
-        waterfallProcess={SOFTWARE_DEV_FLORIDA_WATERFALL_PROCESS}
+        agileProcess={SOFTWARE_DEV_NEW_JERSEY_AGILE_PROCESS}
+        recommendedProcess={SOFTWARE_DEV_NEW_JERSEY_RECOMMENDED_PROCESS}
+        waterfallProcess={SOFTWARE_DEV_NEW_JERSEY_WATERFALL_PROCESS}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
       <CaseStudies
-        heading={"New Jersey-Tested Software"}
-        redText={"Solutions"}
+        heading={"Our Project "}
+        redText={"Highlights"}
         description={
           "As a leading software development company in New Jersey, we deliver real results. Here’s how we’ve helped businesses like yours:"
         }
         child={
-          <PortfolioParallexCards projects={CUSTOM_SOFTWARE_CASE_STUDIES} />
+          <PortfolioParallexCards
+            projects={SOFTWARE_DEV_COMPANY_NEW_JERSEY_CASE_STUDIES}
+          />
         }
       />
+
+      <Industries />
       <TeckStack
         heading={"Tech Stack Empowering New Jersey's"}
         redText={"Innovators"}
@@ -77,7 +84,7 @@ const SoftwareDevelopmentCompanyInNewJerseyPage = () => {
         redText={`Impact & Achievements`}
         description={`Launchbox Global is a trusted Software Development Company in New Jersey that delivers global results backed by experience, reach, and proven performance.`}
       />
-      <LocationFaqs faqs={SOFTWARE_DEV_NEW_JERSEY_FAQS} />
+      <NewJerseyFaqs faqs={SOFTWARE_DEV_NEW_JERSEY_FAQS} />
       <LocationContactForm
         heading={`Connect With Our Software Development Company in New Jersey`}
         description={`Share your vision with us and receive a complimentary 30-minute consultation or a tailored proposal within 24 hours. We are here to help you succeed. Contact us!`}

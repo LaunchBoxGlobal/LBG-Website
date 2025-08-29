@@ -18,8 +18,8 @@ const Hero = () => {
         </h1>
 
         <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto z-10">
-          We help Wyoming businesses grow with custom software solutions and
-          targeted marketing strategies tailored to your local audience.
+          Enhance your brand visibility with expert Wyoming digital marketing
+          services designed to fuel growth, engagement, and long-term success.
         </p>
 
         <section className="w-full mt-5 z-10">

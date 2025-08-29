@@ -10,6 +10,7 @@ import LocationStats from "../../LocationComponents/LocationStats";
 import LocationFaqs from "../../LocationComponents/LocationFaqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
 import { WYOMING_DIGITAL_MARKETING_FAQS } from "@/constants/locations/wyoming-digital-marketing/wyoming-digital-marketing-faqs";
+import DigitalMarketingFaqs from "./DigitalMarketingFaqs";
 
 const DigitalMarketingWyomingPage = () => {
   return (
@@ -28,7 +29,7 @@ const DigitalMarketingWyomingPage = () => {
         redText={`Numbers`}
         description={`We measure success by the results we deliver for local businesses. Here’s what sets us apart:`}
       />
-      <LocationFaqs faqs={WYOMING_DIGITAL_MARKETING_FAQS} />
+      <DigitalMarketingFaqs faqs={WYOMING_DIGITAL_MARKETING_FAQS} />
       <LocationContactForm
         heading={`Ready to Grow Your Wyoming Business Online?`}
         description={`Get started today with a free 30-minute consultation or receive a custom Wyoming digital marketing proposal within 24 hours. Let’s turn your goals into results.`}

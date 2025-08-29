@@ -25,6 +25,13 @@ import LocationStats from "../../LocationComponents/LocationStats";
 import LocationFaqs from "../../LocationComponents/LocationFaqs";
 import { MOBILE_APP_DEVS_HOUSTON_FAQS } from "@/constants/locations/mobile-app-devs-in-houston/mobile-app-devs-in-houston-faqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
+import {
+  MOBILE_APP_DEVS_HOUSTON_AGILE_PROCESS,
+  MOBILE_APP_DEVS_HOUSTON_RECOMMENDED_PROCESS,
+  MOBILE_APP_DEVS_HOUSTON_WATERFALL_PROCESS,
+} from "@/constants/locations/mobile-app-devs-in-houston/mobile-app-devs-in-houston-workflow";
+import Faqs from "./Faqs";
+import Industries from "./Industries";
 
 const MobileAppDevelopmentCompanyInHoustonPage = () => {
   const [activeTab, setActiveTab] = useState("agile");
@@ -45,9 +52,9 @@ const MobileAppDevelopmentCompanyInHoustonPage = () => {
         }
         recommendedDescription={`We help Houston SMBs launch core features quickly, then scale. This cost-effective method has helped local restaurants, retailers, and service businesses establish their digital presence without unnecessary features.`}
         waterfallDescription={`For Houston enterprises with fixed requirements (like financial or government projects), our structured Waterfall approach ensures thorough planning and predictable results. This method works especially well for complex systems needing strict compliance with Texas regulations.`}
-        agileProcess={FLORDIA_AGILE_PROCESS}
-        recommendedProcess={FLORDIA_RECOMMENDED_PROCESS}
-        waterfallProcess={FLORDIA_WATERFALL_PROCESS}
+        agileProcess={MOBILE_APP_DEVS_HOUSTON_AGILE_PROCESS}
+        recommendedProcess={MOBILE_APP_DEVS_HOUSTON_RECOMMENDED_PROCESS}
+        waterfallProcess={MOBILE_APP_DEVS_HOUSTON_WATERFALL_PROCESS}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
@@ -59,6 +66,8 @@ const MobileAppDevelopmentCompanyInHoustonPage = () => {
         }
         child={<PortfolioParallexCards projects={projects} />}
       />
+
+      <Industries />
       <TechAndTools
         heading={`Tech Stack Trusted by Houston's Top Mobile App`}
         redText={`Developers`}
@@ -80,7 +89,7 @@ const MobileAppDevelopmentCompanyInHoustonPage = () => {
         redText={`Houston`}
         description={`As a leading mobile app development company in Houston, our results speak for themselves:`}
       />
-      <LocationFaqs faqs={MOBILE_APP_DEVS_HOUSTON_FAQS} />
+      <Faqs faqs={MOBILE_APP_DEVS_HOUSTON_FAQS} />
       <LocationContactForm
         heading={`Work With Houston's Top Mobile App Developers`}
         description={`Turn your app idea into reality with a trusted local partner. Get free 30-minute consultation`}

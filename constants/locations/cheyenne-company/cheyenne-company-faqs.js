@@ -2,7 +2,7 @@ export const CHEYENNE_COMPANY_FAQS = [
   {
     question: "How much do Cheyenne SEO services cost?",
     answer:
-      "Our Cheyenne SEO services start at $1,200/month for small businesses, with custom packages up to $5,000+/month for competitive industries. Pricing depends on your goals—local SEO, e-commerce optimization, or enterprise technical SEO. Get a free quote tailored to your budget.",
+      "Our SEO services are tailored to your business needs and goals. Pricing varies based on factors like local SEO, e-commerce, or technical SEO. Contact us for a personalized quote and strategy that fits your business.",
     list: null,
     text: null,
   },
@@ -37,7 +37,12 @@ export const CHEYENNE_COMPANY_FAQS = [
     question: "Can you manage my Google Business Profile in Wyoming?",
     answer:
       "Absolutely. Our Google Business Profile management ensures your listing ranks for local searches, with posts, Q&A monitoring, and review responses critical for Cheyenne shops and services.",
-    list: null,
+    list: [
+      "Profile setup and verification",
+      "Regular updates and posts",
+      "Review monitoring and response",
+      "Insights and performance tracking",
+    ],
     text: null,
   },
 ];

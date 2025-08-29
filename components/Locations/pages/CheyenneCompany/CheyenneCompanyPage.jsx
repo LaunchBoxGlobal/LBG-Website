@@ -27,7 +27,7 @@ const CheyenneCompanyPage = () => {
       <LocationsWhyChooseUs
         heading={`Why Cheyenne Businesses Choose Our`}
         redText={`SEO Company`}
-        description={`We’re not just any team. We’re a Cheyenne SEO company focused on real growth for local businesses. Here’s why they trust us:`}
+        description={`Businesses trust our Cheyenne SEO company for personalized strategies that strengthens their online presence.`}
         content1={CHEYENNE_WHY_CHOOSE_US_1}
         content2={CHEYENNE_WHY_CHOOSE_US_2}
       />

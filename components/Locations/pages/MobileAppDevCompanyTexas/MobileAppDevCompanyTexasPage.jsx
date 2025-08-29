@@ -25,6 +25,12 @@ import {
 import LocationStats from "../../LocationComponents/LocationStats";
 import TexasFaqs from "./TexasFaqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
+import {
+  MOBILE_APP_DEV_COMPANY_TEXAS_AGILE_PROCESS,
+  MOBILE_APP_DEV_COMPANY_TEXAS_RECOMMENDED_PROCESS,
+  MOBILE_APP_DEV_COMPANY_TEXAS_WATERFALL_PROCESS,
+} from "@/constants/locations/mobile-app-dev-company-texas/mobile-app-dev-company-texas-workflow";
+import { MOBILE_APP_DEV_COMPANY_TEXAS_PORTFOLIO } from "@/constants/locations/mobile-app-dev-company-texas/mobile-app-dev-company-texas-portfolio";
 
 const MobileAppDevCompanyTexasPage = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -34,10 +40,10 @@ const MobileAppDevCompanyTexasPage = () => {
       <Platforms />
       <About />
       <LocationServices
-        heading={`App Development Services for Businesses in`}
+        heading={`Trusted Application Development Services in`}
         redText={`Texas`}
         services={MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES}
-        description={`At LaunchBox Global, we specialize in mobile app development in Texas, including Dallas mobile development, to help your business succeed in the digital landscape.`}
+        description={`Our Dallas mobile app development team ensures that you get the best mobile app service. We build apps that are highly functional and high-performing.`}
       />
       <LocationProcess
         heading={"Project Development"}
@@ -47,9 +53,9 @@ const MobileAppDevCompanyTexasPage = () => {
         }
         recommendedDescription={`Our Functionality-First methodology is designed for businesses in Texas that prioritize delivering core features before expanding functionality. This approach focuses on identifying and implementing the most critical aspects of a product, ensuring that essential user needs are met first. By concentrating on functionality, we assist organizations in streamlining their development process, reducing time-to-market, and enhancing user satisfaction. This method is particularly effective for Dallas mobile development, allowing companies to establish a robust foundation before scaling their offerings.`}
         waterfallDescription={`Our Waterfall methodology is the optimal choice for established enterprises in Texas that require a structured and sequential development process. This approach emphasizes comprehensive planning and documentation, ensuring that each phase is completed before progressing to the next. It is especially beneficial for projects with well-defined requirements, such as large-scale software implementations. By providing a clear roadmap, Waterfall enables organizations in Dallas to maintain control over complex projects, ensuring timely delivery and commitment to budget constraints.`}
-        agileProcess={FLORDIA_AGILE_PROCESS}
-        recommendedProcess={FLORDIA_RECOMMENDED_PROCESS}
-        waterfallProcess={FLORDIA_WATERFALL_PROCESS}
+        agileProcess={MOBILE_APP_DEV_COMPANY_TEXAS_AGILE_PROCESS}
+        recommendedProcess={MOBILE_APP_DEV_COMPANY_TEXAS_RECOMMENDED_PROCESS}
+        waterfallProcess={MOBILE_APP_DEV_COMPANY_TEXAS_WATERFALL_PROCESS}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
@@ -57,9 +63,13 @@ const MobileAppDevCompanyTexasPage = () => {
         heading={"Project Highlight and Success"}
         redText={"Stories"}
         description={
-          "Explore real-world examples of our work. Each story shows how we helped clients overcome problems and achieve their goals."
+          "We develop mobile apps  for startups, small businesses, and enterprises. We are one of the top mobile app development companies who focus on creating apps that get the work done. "
         }
-        child={<PortfolioParallexCards projects={projects} />}
+        child={
+          <PortfolioParallexCards
+            projects={MOBILE_APP_DEV_COMPANY_TEXAS_PORTFOLIO}
+          />
+        }
       />
       <TechAndTools
         heading={`Our Development`}
@@ -70,7 +80,7 @@ const MobileAppDevCompanyTexasPage = () => {
       <LocationsWhyChooseUs
         heading={`Why Businesses in Texas`}
         redText={`Prefer Us`}
-        description={`Businesses in Texas prefer us for our reliable, innovative solutions as a leading Mobile App Development Company in Texas, ensuring quality and customer satisfaction every time.`}
+        description={`We’re one of the leading companies in Texas for custom mobile app development because we care about our customers and fulfill the requirements.`}
         content1={TEXAS_WHY_CHOOSE_US_1}
         content2={TEXAS_WHY_CHOOSE_US_2}
       />

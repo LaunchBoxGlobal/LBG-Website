@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
           className={`w-full flex flex-col items-center group justify-start text-center gap-6 py-8 px-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 lg:border-r lg:border-b group`}
         >
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
-            Wyoming Market Experts
+            Functionality First- Approach
           </h3>
           <img
             src={`/locations/digital-marketing/marketing-experts-icon.webp`}
@@ -32,23 +32,17 @@ const WhyChooseUs = () => {
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
           <p className="text-lg">
-            We understand Casper's energy sector, Jackson's tourism economy and
-            Cheyenne's business landscape unlike national firms that treat
-            Wyoming as an afterthought. You can also go through our tourism
-            related case study{" "}
-            <Link
-              href={`/case-studies/now-you-know-nashville`}
-              className="text-[#F40E00] group-hover:text-white transition-all duration-300"
-            >
-              Now you know Nashville.
-            </Link>
+            We emphasize real-world functionality to ensure your digital
+            marketing solutions deliver true value. As a digital marketing
+            agency Cheyenne Wyoming, we craft strategies that strengthen
+            usability and drive lasting growth.
           </p>
         </div>
         <div
           className={`w-full flex flex-col items-center group justify-start text-center gap-6 py-8 px-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 lg:border-b`}
         >
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
-            Real Campaign Results
+            Flexible & Fast Solutions
           </h3>
           <img
             src={`/locations/digital-marketing/campaign-icon-why-choose-us.webp`}
@@ -59,9 +53,9 @@ const WhyChooseUs = () => {
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
           <p className="text-lg">
-            Our strategies deliver measurable outcomes, like the 58% lead
-            increase we drove for a Sheridan ranch equipment company last
-            quarter.
+            We continuously refine your digital marketing projects to keep them
+            on track. Through our conversion rate optimization services, every
+            update is designed to enhance engagement and maximize conversions.
           </p>
         </div>
         <div
@@ -79,15 +73,17 @@ const WhyChooseUs = () => {
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
           <p className="text-lg">
-            No hidden fees or confusing contracts, just clear packages starting
-            at $1,500/month. View pricing.
+            We offer transparent, upfront pricing with no hidden fees or
+            surprise charges. Our digital marketing agency services give you
+            full clarity on costs, making it easier to manage and plan your
+            budget confidently.
           </p>
         </div>
         <div
           className={`w-full flex flex-col items-center group justify-start text-center gap-6 py-8 px-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 `}
         >
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
-            Fast Local Support
+            World-Class Talent
           </h3>
           <img
             src={`/locations/digital-marketing/fast-local-support-icon.webp`}
@@ -98,15 +94,17 @@ const WhyChooseUs = () => {
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
           <p className="text-lg">
-            When your ad account gets flagged on a Friday afternoon, we answer
-            no waiting until Monday.
+            Our skilled team applies global experience to deliver top-quality
+            solutions customized for your business. With our best digital
+            marketing services, we design strategies and campaigns that enhance
+            engagement and generate greater conversions.
           </p>
         </div>
         <div
           className={`w-full flex flex-col items-center group justify-start text-center gap-6 py-8 px-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300 lg:border-r lg:border-l`}
         >
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
-            Content That Converts
+            Industry-Specific Expertise
           </h3>
           <img
             src={`/locations/digital-marketing/content-that-converts-icon.webp`}
@@ -117,15 +115,17 @@ const WhyChooseUs = () => {
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
           <p className="text-lg">
-            We create authentic Wyoming stories, not generic AI posts. See
-            examples of our ranch-to-table content approach.
+            Our team recognizes the specific challenges within your industry.
+            Combining our expertise in web design and digital marketing, we
+            develop strategies that captivate your audience and drive
+            sustainable business growth.
           </p>
         </div>
         <div
           className={`w-full flex flex-col items-center group justify-start text-center gap-6 py-8 px-5 hover:bg-[#F40E00] hover:text-white transition-all duration-300`}
         >
           <h3 className="font-semibold text-[20px] xl:text-[22px]">
-            Dual Expertise
+            Scalable & Future-Proof Solutions
           </h3>
           <img
             src={`/locations/digital-marketing/dual-expertise-icon.webp`}
@@ -136,8 +136,10 @@ const WhyChooseUs = () => {
             className="transition duration-300 group-hover:invert group-hover:brightness-0"
           />
           <p className="text-lg">
-            Combines Houston's tech savvy (our software development roots) with
-            Wyoming's business culture understanding.
+            We create digital marketing strategies and solutions built to grow
+            alongside your business, ensuring long-term adaptability. Our
+            services emphasize flexible approaches that adjust to market shifts,
+            keeping your brand competitive and future-ready.
           </p>
         </div>
       </div>

@@ -11,21 +11,16 @@ const About = () => {
         </h2>
 
         <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
-          LaunchBox Global is a full-service{" "}
-          <Link
-            href={`https://developers.google.com/search/docs/fundamentals/seo-starter-guide`}
-            rel="nofollow"
-            target="_blank"
-            className="red-text"
-          >
-            SEO company
-          </Link>{" "}
-          in Cheyenne, Wyoming, helping local businesses dominate search
-          rankings. While we excel at technical SEO and content marketing, our
-          roots in software development give us unique insights into website
-          performance. We’ve helped 50+ Cheyenne clients grow by combining
-          marketing expertise with technical excellence to deliver measurable
-          results.
+          Being the best Cheyenne SEO company, we specialize in helping local
+          businesses grow their online visibility and attract more customers
+          through strategic, performance-focused search engine optimization.
+          With a strong focus on data, content, and technical expertise, we
+          create customized SEO strategies tailored to your unique goals. From
+          keyword research and on-page optimization to link building and local
+          SEO, we deliver solutions that create real impact. Our team is
+          dedicated to helping Cheyenne businesses thrive online and achieve
+          sustainable growth in today’s digital landscape. expertise with
+          technical excellence to deliver measurable results.
         </p>
       </section>
     </section>

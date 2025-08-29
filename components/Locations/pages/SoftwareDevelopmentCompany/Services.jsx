@@ -1,5 +1,4 @@
 import { SOFTWARE_DEV_FLORIDA_SERVICES } from "@/constants/locations/software-dev-company-florida/software-dev-florida-services";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -13,9 +12,9 @@ const Services = () => {
         </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          We’re one of the top software development companies in Florida helping
-          businesses build useful, reliable tools. Our Florida software team
-          creates simple solutions that work for your daily needs.
+          Here's a polished App Development Services section tailored for your
+          Florida-based software development brand, incorporating your keywords
+          naturally while maintaining readability and local relevance:
         </p>
       </section>
 
@@ -39,28 +38,6 @@ const Services = () => {
             </div>
           );
         })}
-        <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
-          <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]">
-            <img
-              src={`/locations/software-development-company/uiux-design-icon.png`}
-              width={53}
-              height={53}
-              alt={"software-development-company uiux-design-icon"}
-              // className="group-hover:brightness-0 group-hover:invert"
-            />
-            <h3 className="font-bold service-heading leading-[1.2]">
-              UI/UX Design & Prototyping
-            </h3>
-            <p className="text-lg leading-[1.3]">
-              We deliver intuitive{" "}
-              <Link href={`/services/branding-and-design`}>
-                UI and UX design
-              </Link>{" "}
-              that resonates with Florida users, prioritizing accessibility and
-              engagement through wireframes and interactive prototypes.
-            </p>
-          </div>
-        </div>
       </section>
     </section>
   );

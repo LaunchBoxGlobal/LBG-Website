@@ -16,6 +16,14 @@ export const SOFTWARE_DEV_FLORIDA_SERVICES = [
       "Get tailored custom software development services built for Florida’s market—from healthcare tools to retail management systems designed for local compliance.",
   },
   {
+    icon: "/locations/software-development-company/uiux-design-icon.png",
+    iconWidth: 48,
+    iconHeight: 53,
+    title: "UI/UX Design & Prototyping",
+    description:
+      "We deliver intuitive UI and UX design that resonates with Florida users, prioritizing accessibility and engagement through wireframes and interactive prototypes.",
+  },
+  {
     icon: "/locations/software-development-company/system-integration-icon.webp",
     iconWidth: 47,
     iconHeight: 53,
@@ -37,7 +45,7 @@ export const SOFTWARE_DEV_FLORIDA_SERVICES = [
     iconHeight: 53,
     title: "Enterprise Software Development",
     description:
-      "Build robust enterprise software development solutions that streamline operations for Florida’s large-scale organizations, from logistics to finance.",
+      "Build Florida enterprise software development solutions that streamline operations for Florida’s large-scale organizations, from logistics to finance.",
   },
   {
     icon: "/locations/software-development-company/software-maintenance-icon.webp",

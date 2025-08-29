@@ -16,10 +16,9 @@ const Process = () => {
         </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          We tailor our approach to fit your needs. As one of the leading
-          software companies in Houston, we bring proven methodologies to
-          Wyoming businesses—whether you're a Cheyenne startup or statewide
-          enterprise.
+          As a leading digital solutions provider serving nationwide clients,
+          we've helped Wyoming businesses achieve real results through different
+          targeted digital strategies:
         </p>
       </section>
       <div className="w-full relative  py-20">

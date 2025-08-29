@@ -15,9 +15,9 @@ const LocationServices = ({ heading, redText, description, services }) => {
       <section className="w-full flex items-start justify-center flex-wrap mt-14 gap-5 mx-auto">
         {services?.map((s, i) => {
           return (
-            <div className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]">
+            <div className="w-full md:w-[45%] lg:w-[32%] min-h-[320px]">
               <div
-                className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
+                className="w-full rounded-[16px] p-8 min-h-[390px] flex flex-col items-start gap-3 group bg-[#f9f9f9]"
                 key={i}
               >
                 <img

@@ -5,7 +5,7 @@ import React from "react";
 export const metadata = {
   title: "Software Development Company in Florida | LaunchBox Global",
   description:
-    "Top software development company in Florida offering custom solutions for businesses. Mobile apps, web platforms & enterprise systems with proven results.",
+    "Leading software development company in Florida offering custom solutions for businesses. Mobile apps, web platforms & enterprise systems with proven results.",
   alternates: {
     canonical:
       "https://launchboxglobal.com/software-development-company-in-florida",

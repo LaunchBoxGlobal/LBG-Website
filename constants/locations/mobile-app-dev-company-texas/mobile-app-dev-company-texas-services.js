@@ -35,16 +35,16 @@ export const MOBILE_APP_DEV_COMPANY_TEXAS_SERVICES = [
     icon: "/locations/mobile-app-developer/web-app-development-service-icon.webp",
     iconWidth: 56,
     iconHeight: 53,
-    title: "Web Development",
+    title: "Prototyping",
     description:
-      "We provide extensive web development services, including responsive design and strong functionality. Our websites are prepared to reflect your brand identity and effectively engage your target audience, increasing traffic and conversions for your business.",
+      "Prototyping turns your ideas into clickable mockups before coding begins. It helps your business test concepts early and avoid costly mistakes. As part of our mobile app development Texas services, we focus on creating interactive prototypes that feel realistic so you can gather feedback, refine designs, and ensure your app meets user needs.",
   },
   {
     icon: "/locations/mobile-app-dev-company-texas/ecommerce-app-development-service-icon.webp",
     iconWidth: 48,
     iconHeight: 50,
-    title: "eCommerce Development Services",
+    title: "Software Quality Testing",
     description:
-      "Our eCommerce development services help Texas-based businesses establish a strong online presence. We incorporate secure payment systems and user-friendly interfaces, enhancing the shopping experience for your customers and boosting your sales potential.",
+      "Software quality testing ensures your app works flawlessly by identifying bugs early, enhancing the user experience, and reducing costs associated with fixes. As a trusted Mobile App Development Company in Texas, we test every feature on real devices and focus on real-world scenarios. Our team makes sure your app is reliable and fast.",
   },
 ];

@@ -38,13 +38,8 @@ const Services = () => {
             <p className="text-lg leading-[1.3]">
               Build once, deploy everywhere. We create apps that work seamlessly
               on iOS and Android, saving Houston businesses time and development
-              costs. Learn more about our{" "}
-              <Link
-                href={`/services/mobile-app-development`}
-                className="red-text"
-              >
-                cross-platform approach.
-              </Link>
+              costs. Learn more about our cross-platform app development
+              services.
             </p>
           </div>
         </div>
