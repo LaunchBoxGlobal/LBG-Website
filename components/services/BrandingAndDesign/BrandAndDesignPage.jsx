@@ -29,10 +29,10 @@ const BrandAndDesignPage = () => {
       <Benefits />
       <CTA />
       <Workflow />
-      <FlexibleBrandingAndDesign />
       <ShowcasingExpertise />
       <BrandingAndDesignForBusinesses />
       <SecureBrandingAndDesign />
+      <FlexibleBrandingAndDesign />
       <BrandingAndDesignFaqs />
       <Contact />
     </main>
