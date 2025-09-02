@@ -11,7 +11,7 @@ import { serviceLinks } from "../ContactUs/ContactUsForm";
 
 const PopupForm = () => {
   const [loading, setLoading] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     formik.setFieldValue("pageUrl", window.location.href);

@@ -17,7 +17,7 @@ const PopupFormAnimation = () => {
         </p>
       </div>
 
-      <div className="lg:w-[80%] lg:mt-10 midlg:mt-5 midlg:w-[400px] relative h-full z-10">
+      <div className="lg:w-[400px] lg:mt-10 midlg:mt-5 midlg:w-[400px] relative h-full z-10">
         <div className="bg-white custom-shadow w-[80px] h-[80px] rounded-xl bulb-inner-shadow absolute lg:-left-5 lg:bottom-20 midlg:-left-[8%] midlg:bottom-[-2%] z-20 flex items-center justify-center">
           <img
             src="/yellow-bulb-image.png"
