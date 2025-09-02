@@ -44,6 +44,7 @@ const PopupFormAnimation = () => {
             height={121}
             className="absolute top-[17%] right-[13%] image-anim2"
           />
+          {/* transforming-box */}
           <img
             src="/transforming-box.png"
             alt="transforming-box"
