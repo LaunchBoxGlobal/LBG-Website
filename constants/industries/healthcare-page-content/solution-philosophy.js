@@ -23,7 +23,7 @@ export const HEALTHCARE_SOLUTION_PHILOSOPHY = [
       "We design softwares with security and flexibility built in. Using healthcare software integration services, your system is modular, scalable, and ready to evolve. You’ll get a solution that’s robust, safe, and capable of connecting smoothly with other tools as your healthcare platform grows.",
     image: "/industries/healthcare/secure-and-modular-architecture-icon.png",
     width: "",
-    height: "",
+    height: "4343",
     alt_tag: "",
   },
   {
