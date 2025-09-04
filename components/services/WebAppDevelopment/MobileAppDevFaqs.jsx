@@ -70,6 +70,54 @@ const MobileAppDevFaqs = () => {
           className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
         >
           <button
+            onClick={() => toggleFaq(WEB_APP_DEV_FAQS?.length + 2)}
+            name="web app development faq"
+            className="w-full text-start flex items-start justify-between outline-none"
+          >
+            <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%] lg:leading-[1.1]">
+              Can ChatGPT actually create a website?
+            </h5>
+
+            <Image
+              src={"/faq-arrow-icon.webp"}
+              width={24}
+              height={20}
+              alt="arrow icon"
+              loading="lazy"
+              className={`${
+                openFaq === WEB_APP_DEV_FAQS?.length + 2
+                  ? "scale-y-[-1]"
+                  : "scale-y-[1]"
+              } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
+            />
+          </button>
+
+          <motion.div
+            initial={false}
+            animate={{
+              height: openFaq === WEB_APP_DEV_FAQS?.length + 2 ? "auto" : 0,
+              opacity: openFaq === WEB_APP_DEV_FAQS?.length + 2 ? 1 : 0,
+              marginTop: openFaq === WEB_APP_DEV_FAQS?.length + 2 ? "18px" : 0,
+            }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
+              Not directly. ChatGPT can give ideas, code snippets, and guidance,
+              but you’ll still need expert web application development teams to
+              build and launch your site. Our web app agency also offers a{" "}
+              <Link href={``} className="red-text">
+                Project Rescue Service
+              </Link>{" "}
+              for the Vibe coding projects.
+            </p>
+          </motion.div>
+        </div>
+
+        <div
+          className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
+        >
+          <button
             onClick={() => toggleFaq(WEB_APP_DEV_FAQS?.length)}
             name="web app development faq"
             className="w-full text-start flex items-start justify-between outline-none"
@@ -106,7 +154,7 @@ const MobileAppDevFaqs = () => {
               Web apps often use HTML, CSS, JavaScript,{" "}
               <Link
                 href={`https://launchboxglobal.com/development-technologies/react-native-app-development`}
-                className="underline"
+                className="red-text"
               >
                 React
               </Link>
@@ -157,7 +205,7 @@ const MobileAppDevFaqs = () => {
               Absolutely. While we have a strong presence as a{" "}
               <Link
                 href={`https://launchboxglobal.com/web-development-company-in-new-jersey`}
-                className="underline"
+                className="red-text"
               >
                 web app development company in New Jersey,
               </Link>{" "}

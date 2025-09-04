@@ -4,11 +4,11 @@ export const WEB_APP_DEV_FAQS = [
     answer:
       "The three main types are static web apps, dynamic web apps, and progressive web apps. Our web app development services cover all three, creating everything from simple informational apps to complex, interactive platforms. Whether you need speed, scalability, or both, our web app developers can bring your idea to life.",
   },
-  {
-    question: "Can ChatGPT actually create a website?",
-    answer:
-      "Not directly. ChatGPT can give ideas, code snippets, and guidance, but you’ll still need expert web application development teams to build and launch your site. Our web app agency combines AI assistance with skilled developers to deliver professional, functional, and beautiful web apps.",
-  },
+  // {
+  //   question: "Can ChatGPT actually create a website?",
+  //   answer:
+  //     "Not directly. ChatGPT can give ideas, code snippets, and guidance, but you’ll still need expert web application development teams to build and launch your site. Our web app agency combines AI assistance with skilled developers to deliver professional, functional, and beautiful web apps.",
+  // },
   {
     question: "What is the difference between a web app and a website?",
     answer:

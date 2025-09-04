@@ -1392,4 +1392,18 @@ export const BLOGS_METADATA = {
     canonical:
       "https://launchboxglobal.com/blogs/what-to-do-when-developer-stops-responding-without-losing-progress",
   },
+  "what-is-a-mobile-check-deposit-app-benefits-how-it-works-&-tips": {
+    title: "Best Mobile Check Deposit App Options in 2025",
+    description:
+      "Discover the best Mobile Check Deposit App in 2025 for fast, secure, and fee-free banking. Learn how to save time, avoid fees, and deposit checks easily.",
+    canonical:
+      "https://launchboxglobal.com/blogs/what-is-a-mobile-check-deposit-app-benefits-how-it-works-&-tips",
+  },
+  "from-figma-to-html-why-appealing-designs-need-a-solid-build-plan": {
+    title: "Figma to HTML: Build Plans for Appealing Designs",
+    description:
+      "Discover how Figma to HTML ensures smooth design transfer with build specs, clear interactions, and structured collaboration for faster development.",
+    canonical:
+      "https://launchboxglobal.com/blogs/from-figma-to-html-why-appealing-designs-need-a-solid-build-plan",
+  },
 };
