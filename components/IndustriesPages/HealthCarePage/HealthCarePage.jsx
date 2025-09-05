@@ -13,6 +13,7 @@ import CTA from "./CTA";
 import TechStackAndStandards from "./TechStackAndStandards";
 import Features from "./Features";
 import "./style.css";
+import FAQs from "@/components/Common/FAQs";
 
 const HealthCarePage = () => {
   return (
@@ -30,6 +31,7 @@ const HealthCarePage = () => {
       <HealthcareTechTrends />
       <HealthcareWhyChooseUs />
       <CTA />
+      <FAQs faqs={[]} />
     </main>
   );
 };
