@@ -5,7 +5,7 @@ const HealthcareProcessCard = ({ process, index }) => {
   return (
     <div
       className={`w-full lg:w-[608px] min-h-[342px] bg-white rounded-[25px] custom-shadow ${
-        index % 2 === 0 ? "px-10 py-10" : "py-10 px-14 ml-auto"
+        index % 2 === 0 ? "px-7 lg:px-10 py-10" : "py-10 px-7 lg:px-14 ml-auto"
       } relative ${index !== 0 && "mt-16"}`}
     >
       <h3 className="font-medium text-[26px] lg:text-[39px] red-text leading-[1]">

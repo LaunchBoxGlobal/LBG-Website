@@ -22,19 +22,19 @@ const DigitalTransformation = () => {
         {DIGITAL_TRANSFORMATION?.map((t, i) => {
           return (
             <div
-              className="w-full lg:w-[30%] min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-20 flex flex-col items-start gap-3 relative"
+              className="w-full md:w-[45%] lg:w-[30%] min-h-[550px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-20 flex flex-col items-start gap-3 relative"
               key={i}
             >
               <div className="w-[52px] h-[52px] border-[8px] border-white rounded-full flex items-center justify-center absolute top-5 left-5">
                 <span className="text-lg font-bold">0{i + 1}</span>
               </div>
-              <div className="w-full min-h-[140px]">
+              <div className="w-full lg:min-h-[110px] midlg:min-h-[130px]">
                 <img
                   src={t?.icon}
                   alt={t?.alt_tag}
                   width={t?.width}
                   height={t?.height}
-                  className="mx-auto"
+                  className="mx-auto lg:max-w-[100px]"
                 />
               </div>
               <h3 className="font-semibold text-[22px] leading-none">

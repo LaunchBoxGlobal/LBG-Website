@@ -4,9 +4,9 @@ import React from "react";
 const CTA = () => {
   return (
     <section className="w-full padding-x py-20 relative">
-      <div className="w-full h-[500px] bg-black relative rounded-[17px] flex items-center justify-between flex-wrap gap-10">
-        <div className="w-full lg:w-[55%] py-10 pl-20 flex flex-col items-start justify-center lg:h-full">
-          <h2 className="text-white text-[50px] font-bold leading-[1]">
+      <div className="w-full lg:h-[500px] bg-black relative rounded-[17px] flex items-center justify-between flex-wrap gap-10 pb-4">
+        <div className="w-full md:w-[55%] py-10 px-7 lg:pl-20 flex flex-col items-start justify-center lg:h-full">
+          <h2 className="text-white text-3xl lg:text-[50px] font-bold leading-[1]">
             Encourage <span className="red-text">Next</span> Steps —{" "}
             <span className="red-text">Friction-Free</span>
           </h2>
@@ -19,7 +19,7 @@ const CTA = () => {
           <div className="mt-10">
             <Link
               href={`/contact-us`}
-              className="text-lg font-bold leading-none bg-[#F40E00] text-white rounded-md py-5 px-10"
+              className="text-sm lg:text-lg font-bold leading-none bg-[#F40E00] text-white rounded-md py-5 px-6 lg:px-10"
             >
               Book a Free Strategy Call
             </Link>
@@ -30,7 +30,7 @@ const CTA = () => {
           alt="cta-mockup"
           width={551}
           height={437}
-          className="object-contain absolute right-0 top-0"
+          className="object-contain md:absolute right-0 top-0 md:w-[55%] lg:w-[45%] midlg:w-[50%]"
         />
       </div>
     </section>

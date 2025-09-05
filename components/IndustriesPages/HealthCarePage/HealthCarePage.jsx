@@ -12,6 +12,7 @@ import HealthcareWhyChooseUs from "./HealthcareWhyChooseUs";
 import CTA from "./CTA";
 import TechStackAndStandards from "./TechStackAndStandards";
 import Features from "./Features";
+import "./style.css";
 
 const HealthCarePage = () => {
   return (

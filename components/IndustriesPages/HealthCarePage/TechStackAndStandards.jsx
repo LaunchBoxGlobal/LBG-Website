@@ -24,7 +24,7 @@ const TechStackAndStandards = () => {
         {TECH_STACK_AND_STANDARDS?.map((talent, index) => {
           return (
             <div key={index} className="w-full">
-              <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] rounded-[29px] p-7 min-h-[508px] relative">
+              <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] rounded-[29px] p-7 min-h-[418px] md:min-h-[508px] relative">
                 <div className="w-[11px] h-[93px] red-bg rounded-l-2xl absolute left-[-10px]" />
                 <div className="flex flex-col items-start gap-3">
                   {/* <div className="rounded-full red-bg w-[71px] lg:w-[91px] h-[71px] lg:h-[91px] flex items-center justify-center"> */}

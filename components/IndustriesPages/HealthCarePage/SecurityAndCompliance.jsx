@@ -22,7 +22,7 @@ const SecurityAndCompliance = () => {
         {SECURITY_AND_COMPLIANCE?.map((t, i) => {
           return (
             <div
-              className="w-full lg:w-[23%] min-h-[530px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-20 flex flex-col items-center text-center gap-3 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+              className="w-full md:w-[45%] lg:w-[30%] midlg:w-[23%] min-h-[530px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-20 flex flex-col items-center text-center gap-3 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
               key={i}
             >
               <img

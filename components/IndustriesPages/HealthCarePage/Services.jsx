@@ -23,7 +23,7 @@ const Services = () => {
         {HEALTHCARE_DEVELOPMENT_SERVICES?.map((t, i) => {
           return (
             <div
-              className="w-full lg:w-[30%] midlg:w-[23%] min-h-[450px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start text-start gap-3 relative"
+              className="w-full md:w-[45%] lg:w-[30%] midlg:w-[23%] min-h-[450px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start text-start gap-3 relative"
               key={i}
             >
               <div className="w-full">

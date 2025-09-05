@@ -23,7 +23,7 @@ const SolutionPhilosophy = () => {
         {HEALTHCARE_SOLUTION_PHILOSOPHY?.map((t, i) => {
           return (
             <div
-              className="w-full lg:w-[30%] min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-start gap-3 relative"
+              className="w-full md:w-[45%] lg:w-[30%] min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-start gap-3 relative"
               key={i}
             >
               <div className="w-full">
