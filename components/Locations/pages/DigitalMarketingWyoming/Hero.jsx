@@ -30,30 +30,79 @@ const Hero = () => {
             Get Started
           </Link>
         </section>
-      </section>
-      <section
-        ref={ref}
-        className="lg:h-[609px] w-full flex justify-center relative items-end mt-10"
-      >
-        <motion.div
-          initial={{ y: 600 }}
-          animate={inView ? { y: 0 } : { y: 600 }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
-          className="mx-auto"
+
+        <section
+          ref={ref}
+          className="lg:h-[509px] midlg:h-[545px] xl:h-[609px] w-full max-w-[1200px] mx-auto flex justify-center relative items-end mt-10"
         >
-          <img
-            src="/locations/digital-marketing/hero-mockup.webp"
-            alt="Wyoming digital marketing dashboard displaying campaign analytics and audience engagement metrics"
-            width={1052}
-            height={573}
-            priority
-            quality={85}
-            sizes="(max-width: 768px) 100vw, 
-         (max-width: 1200px) 80vw, 
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={
+              inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
+            transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
+            className="absolute top-[30%] left-0 hidden lg:block z-20"
+          >
+            <Image
+              src="/locations/digital-marketing/hero-section-left-card.png"
+              alt="hero-section-left-card"
+              width={218}
+              height={212}
+              className="z-20"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={
+              inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
+            transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
+            className="absolute bottom-[13%] -left-3 lg:left-7 midlg:left-[12%] xl:left-[10%] z-20"
+          >
+            <Image
+              src={"/locations/digital-marketing/likes-card-1.png"}
+              alt="likes-card-1"
+              width={125}
+              height={58}
+              className="z-20  w-[60px] md:w-[100px] lg:w-auto"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={
+              inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }
+            }
+            transition={{ duration: 0.5, ease: "easeOut", delay: 1 }}
+            className="absolute top-[33%] -right-6 lg:right-2 midlg:right-[11%] xl:right-[9%] z-20"
+          >
+            <Image
+              src={"/locations/digital-marketing/likes-card-2.png"}
+              alt="likes-card-2"
+              width={125}
+              height={58}
+              className="z-20 w-[60px] md:w-[100px] lg:w-auto"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ y: 600 }}
+            animate={inView ? { y: 0 } : { y: 600 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            className="mx-auto z-10"
+          >
+            <Image
+              src="/locations/digital-marketing/wyoming-digital-marketing-hero-section-mockup.png"
+              alt="Wyoming digital marketing dashboard displaying campaign analytics and audience engagement metrics"
+              width={900}
+              height={573}
+              priority
+              quality={85}
+              sizes="(max-width: 768px) 100vw, 
+         (max-width: 1100px) 80vw, 
          1052px"
-            className="mx-auto h-auto object-contain z-10 relative"
-          />
-        </motion.div>
+              className="mx-auto h-auto object-contain z-10 relative lg:w-[85%] midlg:w-[85%] xl:w-[88%]"
+            />
+          </motion.div>
+        </section>
       </section>
     </section>
   );
