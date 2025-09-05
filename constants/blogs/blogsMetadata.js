@@ -1406,4 +1406,11 @@ export const BLOGS_METADATA = {
     canonical:
       "https://launchboxglobal.com/blogs/from-figma-to-html-why-appealing-designs-need-a-solid-build-plan",
   },
+  "10-exciting-games-ideas-you-will-want-to-try-in-2025": {
+    title: "10 Exciting Video Game Ideas You’ll Want to Try in 2025",
+    description:
+      "Discover 10 exciting video game ideas for 2025. Explore awesome video game ideas, creative computer game ideas, and innovative concepts to inspire gamers.",
+    canonical:
+      "https://launchboxglobal.com/blogs/10-exciting-games-ideas-you-will-want-to-try-in-2025",
+  },
 };
