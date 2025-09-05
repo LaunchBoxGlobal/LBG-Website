@@ -5,7 +5,7 @@ const Challenges = () => {
   return (
     <section className="w-full py-20 bg-[#fff] padding-x overflow-hidden">
       <div className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <h2 className="section-heading lg:w-[90%] mx-auto">
+        <h2 className="section-heading mx-auto">
           Major Challenges in Healthcare{" "}
           <span className="red-text">Software Development</span>
         </h2>

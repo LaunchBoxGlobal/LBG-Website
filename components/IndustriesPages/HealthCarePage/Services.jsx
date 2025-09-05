@@ -1,38 +1,38 @@
-import { HEALTHCARE_SOLUTION_PHILOSOPHY } from "@/constants/industries/healthcare-page-content/solution-philosophy";
+import { HEALTHCARE_DEVELOPMENT_SERVICES } from "@/constants/industries/healthcare-page-content/healthcare-development-services";
 import React from "react";
 
-const SolutionPhilosophy = () => {
+const Services = () => {
   return (
     <section className="w-full py-20 midlg:py-32 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[90%] mx-auto">
-          Our Healthcare Development{" "}
-          <span className="red-text">Philosophy</span>
+          Our Healthcare Software{" "}
+          <span className="red-text">Development Services</span>
         </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          With our custom healthcare software development services, we handle
-          every challenge that comes your way. Our medical software developer
-          designs software that is user-friendly, secure, and scalable.
-          Top-notch patient care is our top priority, so we make sure your
-          digital tools are customized to your healthcare needs.
+          We offer custom healthcare software development services designed to
+          help startups and healthcare providers build secure and
+          patient-centered platforms. We cover everything including strategy to
+          launch. We focus on functionality, compliance, and growth so your
+          solution delivers actual impact in healthcare.
         </p>
       </section>
 
       <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-16">
-        {HEALTHCARE_SOLUTION_PHILOSOPHY?.map((t, i) => {
+        {HEALTHCARE_DEVELOPMENT_SERVICES?.map((t, i) => {
           return (
             <div
-              className="w-full lg:w-[30%] min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-start gap-3 relative"
+              className="w-full lg:w-[30%] midlg:w-[23%] min-h-[450px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start text-start gap-3 relative"
               key={i}
             >
               <div className="w-full">
                 <img
-                  src={t?.image}
+                  src={t?.icon}
                   alt={t?.alt_tag}
                   width={t?.width}
                   height={t?.height}
-                  className="mx-auto object-contain"
+                  className="object-contain"
                 />
               </div>
               <h3 className="font-semibold text-[22px] leading-none mt-5">
@@ -47,4 +47,4 @@ const SolutionPhilosophy = () => {
   );
 };
 
-export default SolutionPhilosophy;
+export default Services;

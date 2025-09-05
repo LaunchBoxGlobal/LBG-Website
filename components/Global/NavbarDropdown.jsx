@@ -261,7 +261,7 @@ const Location = ({ selectedTab, closeDropdown }) => {
       pageUrl: "/mobile-app-development-company-in-texas",
     },
     {
-      title: "Digital Marketing Company in wyoming",
+      title: "Digital Marketing Company in Wyoming",
       pageUrl: "/wyoming-digital-marketing",
     },
     {

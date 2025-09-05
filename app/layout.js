@@ -9,7 +9,6 @@ import PopupForm from "@/components/Global/PopupForm";
 
 const outfit = Outfit({
   subsets: ["latin"],
-  // weight: ["400", "500", "700"],
   display: "swap",
   variable: "--font-outfit",
 });
