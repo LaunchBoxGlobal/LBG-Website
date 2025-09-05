@@ -16,7 +16,7 @@ const HeroAnimation = () => {
         alt="heart-image"
         width={714}
         height={474}
-        className="z-10 md:w-[500px] lg:w-[550px] midlg:w-[700px] xl:w-[800px] heart-image"
+        className="z-10 md:w-[500px] lg:w-[550px] midlg:w-[700px] xl:w-[800px]"
       />
       {/* table-design.png */}
       <Image

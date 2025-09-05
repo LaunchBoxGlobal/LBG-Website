@@ -11,27 +11,20 @@ import { serviceLinks } from "../ContactUs/ContactUsForm";
 
 const PopupForm = () => {
   const [loading, setLoading] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    formik.setFieldValue("pageUrl", window.location.href);
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
+    const handleMouseLeave = (e) => {
+      if (e.clientY <= 0 && window.innerWidth > 1000) {
         setIsOpen(true);
-        window.removeEventListener("scroll", handleScroll);
+        document.removeEventListener("mouseleave", handleMouseLeave);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-
-    const handleEsc = (e) => {
-      if (e.key === "Escape") setIsOpen(false);
-    };
-    window.addEventListener("keydown", handleEsc);
+    document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("keydown", handleEsc);
+      document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
