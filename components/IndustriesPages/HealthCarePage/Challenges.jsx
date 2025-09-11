@@ -1,5 +1,6 @@
 import { HEALTHCARE_APP_DEVELOPMENT_CHALLENGES } from "@/constants/industries/healthcare-page-content/healthcare-app-development-challenges";
 import React from "react";
+import ChallengesSlider from "./ChallengesSlider";
 
 const Challenges = () => {
   return (
@@ -20,7 +21,9 @@ const Challenges = () => {
         </p>
       </div>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 midlg:grid-cols-4 gap-5 mt-16 max-w-[1270px]">
+      <ChallengesSlider />
+
+      {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 midlg:grid-cols-4 gap-5 mt-16 max-w-[1270px]">
         {HEALTHCARE_APP_DEVELOPMENT_CHALLENGES?.map((t, i) => {
           return (
             <div
@@ -48,7 +51,7 @@ const Challenges = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -18,11 +18,11 @@ const DigitalTransformation = () => {
         </p>
       </section>
 
-      <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-16">
+      <div className="w-full flex items-center justify-center flex-wrap gap-5 midlg:gap-8 mt-16">
         {DIGITAL_TRANSFORMATION?.map((t, i) => {
           return (
             <div
-              className="w-full md:w-[45%] lg:w-[30%] min-h-[550px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-20 flex flex-col items-start gap-3 relative"
+              className="w-full md:w-[45%] lg:w-[30%] min-h-[550px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-20 flex flex-col items-start gap-3 relative group hover:-translate-y-4 hover:shadow-[5px_10px_15px_#F40E0040] transition-all duration-300"
               key={i}
             >
               <div className="w-[52px] h-[52px] border-[8px] border-white rounded-full flex items-center justify-center absolute top-5 left-5">

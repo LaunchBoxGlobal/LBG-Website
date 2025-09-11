@@ -9,7 +9,7 @@ const HealthcareWhyChooseUs = () => {
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
       <div className="w-full flex flex-col items-center gap-5">
-        <h2 className="text-lg lg:text-xl font-medium red-text leading-none text-center">
+        <h2 className="text-lg lg:text-xl font-semibold red-text leading-none text-center">
           Why Choose Launchbox Global
         </h2>
         <h3 className="section-heading text-center lg:w-[80%]">

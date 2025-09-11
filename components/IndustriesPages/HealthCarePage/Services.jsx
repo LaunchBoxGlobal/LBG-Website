@@ -23,7 +23,7 @@ const Services = () => {
         {HEALTHCARE_DEVELOPMENT_SERVICES?.map((t, i) => {
           return (
             <div
-              className="w-full md:w-[45%] lg:w-[30%] midlg:w-[23%] min-h-[450px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start text-start gap-3 relative"
+              className="w-full md:w-[45%] lg:w-[30%] midlg:w-[23%] min-h-[450px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start text-start gap-3 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
               key={i}
             >
               <div className="w-full">
@@ -32,7 +32,7 @@ const Services = () => {
                   alt={t?.alt_tag}
                   width={t?.width}
                   height={t?.height}
-                  className="object-contain"
+                  className="object-contain transition duration-300 group-hover:invert group-hover:brightness-0"
                 />
               </div>
               <h3 className="font-semibold text-[22px] leading-none mt-5">

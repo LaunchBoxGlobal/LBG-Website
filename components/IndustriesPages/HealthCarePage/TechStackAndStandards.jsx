@@ -24,17 +24,15 @@ const TechStackAndStandards = () => {
         {TECH_STACK_AND_STANDARDS?.map((talent, index) => {
           return (
             <div key={index} className="w-full">
-              <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] rounded-[29px] p-7 min-h-[418px] md:min-h-[508px] relative">
-                <div className="w-[11px] h-[93px] red-bg rounded-l-2xl absolute left-[-10px]" />
+              <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] group rounded-[29px] p-7 min-h-[418px] md:min-h-[508px] relative">
+                <div className="w-[11px] h-[93px] red-bg rounded-l-2xl absolute left-[-10px] group-hover:translate-y-16 transition-all duration-300" />
                 <div className="flex flex-col items-start gap-3">
-                  {/* <div className="rounded-full red-bg w-[71px] lg:w-[91px] h-[71px] lg:h-[91px] flex items-center justify-center"> */}
                   <Image
                     src={talent?.icon}
                     width={57}
                     height={57}
                     alt={`${talent?.title} icon`}
                   />
-                  {/* </div> */}
                   <h3 className="text-[20px] font-semibold leading-none">
                     {talent?.title}
                   </h3>
@@ -42,7 +40,7 @@ const TechStackAndStandards = () => {
                     {talent?.description}
                   </p>
                 </div>
-                <div className="w-full flex items-center flex-wrap gap-2">
+                <div className="w-full min-h-[80px] flex items-start flex-wrap gap-2">
                   {talent?.icons?.map((i, k) => {
                     return i?.link ? (
                       <Link href={i?.link} key={k}>
@@ -66,13 +64,6 @@ const TechStackAndStandards = () => {
                     );
                   })}
                 </div>
-                {/* <Image
-                  src={talent?.techIcons}
-                  width={talent?.iconWidth}
-                  height={talent?.iconHeight}
-                  alt={`${talent?.title} icon`}
-                  className=""
-                /> */}
               </div>
             </div>
           );

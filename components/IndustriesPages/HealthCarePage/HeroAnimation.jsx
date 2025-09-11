@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroAnimation = () => {
   return (
-    <div className="w-full h-[250px] md:h-[350px] xl:h-[569px] relative flex flex-col items-center justify-center">
+    <div className="w-full max-w-[1366px] h-[250px] md:h-[350px] midlg:h-[569px] relative flex flex-col items-center justify-center">
       <Image
         src={"/industries/healthcare/hero-section-border-lines.png"}
         alt="hero-section-border-lines"
@@ -24,7 +24,7 @@ const HeroAnimation = () => {
         alt="table-design"
         width={346}
         height={188}
-        className="object-contain absolute bottom-[8%] left-0 z-10 hidden lg:block lg:w-[260px] midlg:w-auto"
+        className="object-contain absolute bottom-[8%] left-0 z-10 hidden lg:block lg:w-[260px] midlg:w-[320px] xl:w-auto max-w-[340px]"
       />
       {/* appointment-icon */}
       <Image
@@ -32,7 +32,7 @@ const HeroAnimation = () => {
         alt="appointment icon"
         width={141}
         height={50}
-        className="absolute right-0 lg:right-[8%] top-0 lg:top-[10%] z-10 w-[100px] lg:w-auto"
+        className="absolute right-0 lg:right-[8%] top-0 lg:top-[10%] z-10 w-[100px] lg:w-auto midlg:max-w-[200px]"
       />
     </div>
   );

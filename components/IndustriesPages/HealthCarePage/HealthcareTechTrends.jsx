@@ -20,11 +20,11 @@ const HealthcareTechTrends = () => {
         </p>
       </div>
 
-      <div className="w-full flex items-start justify-center flex-wrap gap-5 mt-16 max-w-[1270px]">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-16 max-w-[1270px]">
         {HEALTHCARE_TECH_TRENDS?.map((t, i) => {
           return (
             <div
-              className="w-full lg:w-[23%] min-h-[560px] border rounded-[21px] p-7 flex flex-col items-start gap-3 relative overflow-hidden hover:shadow-[0px_8px_24px_rgba(149,157,165,0.2)] transition-all duration-300 hover:border-b-[6px] hover:border-b-[#F40E00]"
+              className="w-full min-h-[460px] border rounded-[21px] p-7 flex flex-col items-start gap-3 relative overflow-hidden hover:shadow-[0px_8px_24px_rgba(149,157,165,0.2)] transition-all duration-300 hover:border-b-[6px] hover:border-b-[#F40E00]"
               key={i}
             >
               <img

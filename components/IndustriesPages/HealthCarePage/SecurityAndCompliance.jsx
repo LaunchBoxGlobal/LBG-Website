@@ -1,5 +1,6 @@
 import { SECURITY_AND_COMPLIANCE } from "@/constants/industries/healthcare-page-content/security-and-compliance";
 import React from "react";
+import SecurityAndComplianceSlider from "./SecurityAndComplianceSlider";
 
 const SecurityAndCompliance = () => {
   return (
@@ -18,7 +19,9 @@ const SecurityAndCompliance = () => {
         </p>
       </section>
 
-      <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-16">
+      <SecurityAndComplianceSlider />
+
+      {/* <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-16">
         {SECURITY_AND_COMPLIANCE?.map((t, i) => {
           return (
             <div
@@ -48,7 +51,7 @@ const SecurityAndCompliance = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </section>
   );
 };

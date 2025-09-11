@@ -19,11 +19,11 @@ const SolutionPhilosophy = () => {
         </p>
       </section>
 
-      <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-16">
+      <div className="w-full flex items-center justify-center flex-wrap gap-8 mt-16">
         {HEALTHCARE_SOLUTION_PHILOSOPHY?.map((t, i) => {
           return (
             <div
-              className="w-full md:w-[45%] lg:w-[30%] min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-start gap-3 relative"
+              className="w-full md:w-[45%] lg:w-[30%] min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-start gap-3 relative group hover:scale-[1.05] transition-all duration-300"
               key={i}
             >
               <div className="w-full">

@@ -148,30 +148,30 @@ const Features = () => {
             </>
           )}
         </div>
-        <div className="hidden lg:flex justify-center items-start">
+        <div className="hidden lg:flex justify-center items-center">
           {activeFeatues === "patient" ? (
             <Image
               src={"/industries/healthcare/patient-screen-mobile-mockup.png"}
               alt="patient-screen-mobile-mockup"
-              width={239}
+              width={250}
               height={490}
-              className="object-contain"
+              className="object-contain lg:min-h-[500px]"
             />
           ) : activeFeatues === "doctor" ? (
             <Image
               src={"/industries/healthcare/doctor-screen-mobile-mockup.png"}
               alt="doctor-screen-mobile-mockup"
-              width={239}
+              width={250}
               height={490}
-              className="object-contain"
+              className="object-contain lg:min-h-[500px]"
             />
           ) : (
             <Image
               src={"/industries/healthcare/admin-mobile-screen-mockup.png"}
               alt="admin-mobile-screen-mockup"
-              width={239}
+              width={250}
               height={490}
-              className="object-contain"
+              className="object-contain lg:min-h-[500px]"
             />
           )}
         </div>

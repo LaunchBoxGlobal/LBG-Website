@@ -11,7 +11,7 @@ const HealthcareProcessCard = ({ process, index }) => {
       <h3 className="font-medium text-[26px] lg:text-[39px] red-text leading-[1]">
         {process?.title}
       </h3>
-      <p className="text-lg lg:text-[22px] leading-[1.2] mt-2 z-10 relative">
+      <p className="text-lg lg:text-[18px] leading-[1.2] mt-2 z-10 relative max-w-[84%]">
         {process?.description}
       </p>
       <p
