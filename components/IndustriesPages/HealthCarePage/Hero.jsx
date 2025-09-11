@@ -11,15 +11,15 @@ const Hero = () => {
           <span className="red-text">Development Company</span>
         </h1>
 
-        <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[70%] lg:leading-8">
+        <p className="text-base md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[85%] lg:leading-8">
           We are a custom healthcare software development company creating
           secure and scalable solutions for healthcare teams and patients. We
           help simplify and streamline operations for healthcare providers,
           enhance patient care, and adopt digital tools to make daily tasks
           easier.
         </p>
-        <div className="flex items-center justify-center gap-4 mt-1 mb-10">
-          <ContactButton text={"Explore Healthcare Solutions"} />
+        <div className="flex items-center justify-center gap-4 mt-1 mb-10 z-20">
+          <ContactButton text={"Talk to an Expert"} />
         </div>
       </section>
       <HeroAnimation />
