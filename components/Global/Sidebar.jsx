@@ -10,6 +10,11 @@ const Sidebar = ({ onclose }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useRouter();
   const [locationsDropdown, setLocationsDropdown] = useState(false);
+  const [industriesDropdown, setIndustriesDropdown] = useState();
+
+  const toggleIndustriesDropdown = () => {
+    setIndustriesDropdown((prev) => !prev);
+  };
 
   const toggleLocationsDropdown = () => {
     setLocationsDropdown((prev) => !prev);
@@ -168,14 +173,37 @@ const Sidebar = ({ onclose }) => {
             Blogs
           </button>
         </li>
-        <li>
+        <li className="w-full relative">
           <button
-            type="button"
-            onClick={() => handleScrollToServices("testimonials")}
-            className={`font-normal text-[16px] 2xl:text-[22px]`}
+            type={`button`}
+            onClick={toggleIndustriesDropdown}
+            className={`font-normal w-full text-[16px] 2xl:text-[22px] flex items-center justify-between gap-1 group ${
+              industriesDropdown && "red-text"
+            }`}
           >
-            Testimonials
+            Industries{" "}
+            <IoIosArrowDown
+              className={`transition-all duration-300 text-lg mt-0.5 ${
+                industriesDropdown ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </button>
+          {industriesDropdown && (
+            <div className="bg-white px-2 from-blue-50 mt-4 z-50">
+              <ul className="space-y-1">
+                <li className="">
+                  <button
+                    type="button"
+                    onClick={() => handleNavigate(`/healthcare`)}
+                    // href={`/services/mobile-app-development-services`}
+                    className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                  >
+                    Healthcare
+                  </button>
+                </li>
+              </ul>
+            </div>
+          )}
         </li>
         <li>
           <button

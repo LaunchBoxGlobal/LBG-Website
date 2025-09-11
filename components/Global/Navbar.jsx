@@ -25,6 +25,11 @@ const Navbar = () => {
   const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
   const [augmentationDropdown, setAugmentationDropdown] = useState(false);
+  const [industriesDropdown, setIndustriesDropdown] = useState(false);
+
+  const toggleIndustriesDropdown = () => {
+    setIndustriesDropdown((prev) => !prev);
+  };
 
   const toggleAugmentationDropdown = () => {
     setAugmentationDropdown((prev) => !prev);
@@ -121,7 +126,6 @@ const Navbar = () => {
             Case Studies{" "}
           </Link>
         </li>
-
         <li>
           <Link
             href={`/blog`}
@@ -130,13 +134,46 @@ const Navbar = () => {
             Blogs{" "}
           </Link>
         </li>
-        <li>
+        <li
+          className="z-50 h-full flex items-center"
+          onMouseEnter={() => toggleIndustriesDropdown()}
+          onMouseLeave={() => toggleIndustriesDropdown()}
+        >
           <button
-            onClick={() => handleNavClick("testimonials")}
-            className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px]`}
+            type="button"
+            name="services menu button"
+            className="font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group"
           >
-            Testimonials
+            Industries{" "}
+            <IoIosArrowDown
+              className={`transition-transform duration-300 relative top-0.5 ${
+                industriesDropdown ? "rotate-180" : "rotate-0"
+              }`}
+            />
           </button>
+          {industriesDropdown && (
+            <motion.span
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="bg-transparent lg:w-[250px] midlg:w-[250px] mx-auto absolute right-[22.8%] mt-0 z-40 top-16 2xl:top-20 pt-5"
+            >
+              <div className="w-full bg-white p-4 rounded-xl border">
+                <p className="text-lg font-medium">Industries</p>
+                <ul className="space-y-1 mt-3 flex flex-col items-start">
+                  <Link
+                    href={`/healthcare`}
+                    onClick={toggleIndustriesDropdown}
+                    className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
+                  >
+                    Healthcare
+                  </Link>
+                </ul>
+              </div>
+              {/* <NavbarDropdown closeDropdown={toggleIndustriesDropdown} /> */}
+            </motion.span>
+          )}
         </li>
 
         <li>
