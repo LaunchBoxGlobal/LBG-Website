@@ -194,11 +194,13 @@ const Sidebar = ({ onclose }) => {
                 <li className="">
                   <button
                     type="button"
-                    onClick={() => handleNavigate(`/healthcare`)}
+                    onClick={() =>
+                      handleNavigate(`/healthcare-software-development`)
+                    }
                     // href={`/services/mobile-app-development-services`}
                     className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
                   >
-                    Healthcare
+                    Healthcare Software Development
                   </button>
                 </li>
               </ul>

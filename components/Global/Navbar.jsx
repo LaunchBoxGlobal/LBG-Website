@@ -157,17 +157,17 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="bg-transparent lg:w-[250px] midlg:w-[250px] mx-auto absolute right-[22.8%] mt-0 z-40 top-16 2xl:top-20 pt-5"
+              className="bg-transparent lg:w-[350px] midlg:w-[350px] mx-auto absolute lg:right-[17%] midlg:right-[24.5%] xl:right-[22.8%] mt-0 z-40 top-16 2xl:top-20 pt-5"
             >
               <div className="w-full bg-white p-4 rounded-xl border">
                 <p className="text-lg font-medium">Industries</p>
                 <ul className="space-y-1 mt-3 flex flex-col items-start">
                   <Link
-                    href={`/healthcare`}
+                    href={`/healthcare-software-development`}
                     onClick={toggleIndustriesDropdown}
                     className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
                   >
-                    Healthcare
+                    Healthcare Software Development
                   </Link>
                 </ul>
               </div>
