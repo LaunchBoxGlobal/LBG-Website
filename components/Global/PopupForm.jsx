@@ -242,7 +242,7 @@ const PopupForm = () => {
                 <div className="w-full">
                   <button
                     type="submit"
-                    className="hover:bg-[#212121] text-white w-full rounded-full h-[55px] text-xs md:text-sm midlg:text-lg font-semibold bg-[#F40E00] transition-all duration-300"
+                    className="hover:bg-[#212121] text-white w-full rounded-full h-[55px] text-xs md:text-sm midlg:text-base 2xl:text-lg font-semibold bg-[#F40E00] transition-all duration-300"
                   >
                     {loading ? (
                       <ButtonLoader />

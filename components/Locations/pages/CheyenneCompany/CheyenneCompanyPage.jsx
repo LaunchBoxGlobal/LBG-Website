@@ -15,6 +15,7 @@ import LocationFaqs from "../../LocationComponents/LocationFaqs";
 import { WYOMING_DIGITAL_MARKETING_FAQS } from "@/constants/locations/wyoming-digital-marketing/wyoming-digital-marketing-faqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
 import { CHEYENNE_COMPANY_FAQS } from "@/constants/locations/cheyenne-company/cheyenne-company-faqs";
+import CheyenneFaqs from "./CheynneFaqs";
 
 const CheyenneCompanyPage = () => {
   return (
@@ -40,7 +41,7 @@ const CheyenneCompanyPage = () => {
         redText={`Numbers`}
         description={`These numbers reflect the work we’ve done with businesses in Cheyenne.`}
       />
-      <LocationFaqs faqs={CHEYENNE_COMPANY_FAQS} />
+      <CheyenneFaqs faqs={CHEYENNE_COMPANY_FAQS} />
       <LocationContactForm
         heading={`Ready to Boost Your Cheyenne Business Online?`}
         description={`Get a free 30-minute SEO consultation or a custom proposal within 24 hours. Let’s get you ranking higher and growing faster.`}

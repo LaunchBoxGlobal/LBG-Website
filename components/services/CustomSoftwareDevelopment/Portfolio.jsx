@@ -1,5 +1,5 @@
 import PortfolioParallexCards from "@/components/Common/PortfolioParallexCards";
-import { CUSTOM_SOFTWARE_CASE_STUDIES } from "@/constants/custom-software-development/CaseStudies";
+import { CUSTOM_SOFTWARE_DEVELOPMENT_CASE_STUDIES } from "@/constants/custom-software-development/custom-software-development-case-studies";
 
 export default function Portfolio() {
   return (
@@ -17,7 +17,9 @@ export default function Portfolio() {
           it needs.
         </p>
       </section>
-      <PortfolioParallexCards projects={CUSTOM_SOFTWARE_CASE_STUDIES} />
+      <PortfolioParallexCards
+        projects={CUSTOM_SOFTWARE_DEVELOPMENT_CASE_STUDIES}
+      />
     </>
   );
 }

@@ -1,12 +1,11 @@
 "use client";
-import { SOFTWARE_DEV_HOUSTAN_FAQS } from "@/constants/locations/software-dev-company-houston/software-dev-company-faqs";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GoDotFill } from "react-icons/go";
 
-const Faqs = () => {
+const CheyenneFaqs = ({ faqs }) => {
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
@@ -26,24 +25,22 @@ const Faqs = () => {
           className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
         >
           <button
-            onClick={() => toggleFaq(SOFTWARE_DEV_HOUSTAN_FAQS?.length + 1)}
+            onClick={() => toggleFaq(faqs?.length + 1)}
             className="w-full text-start flex items-start justify-between outline-none"
           >
             <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
               <span className="w-full leading-7 lg:leading-10">
-                What is the cost of custom software development in Houston?
+                How much do Cheyenne SEO services cost?
               </span>
             </h5>
 
-            <Image
+            <img
               src={"/faq-arrow-icon.png"}
               width={24}
               height={20}
               alt="arrow icon"
               className={`${
-                openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length + 1
-                  ? "scale-y-[-1]"
-                  : "scale-y-[1]"
+                openFaq === faqs?.length + 1 ? "scale-y-[-1]" : "scale-y-[1]"
               } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
             />
           </button>
@@ -51,31 +48,74 @@ const Faqs = () => {
           <motion.div
             initial={false}
             animate={{
-              height:
-                openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length + 1 ? "auto" : 0,
-              opacity:
-                openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length + 1 ? 1 : 0,
-              marginTop:
-                openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length + 1 ? "18px" : 0,
+              height: openFaq === faqs?.length + 1 ? "auto" : 0,
+              opacity: openFaq === faqs?.length + 1 ? 1 : 0,
+              marginTop: openFaq === faqs?.length + 1 ? "18px" : 0,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="overflow-hidden"
           >
             <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
-              Every software project is unique, with factors like scope,
-              features, and timeline influencing the overall investment. Instead
-              of giving a one-size-fits-all number, we provide tailored
-              estimates that match your exact needs and goals. The best way to
-              get an accurate figure is to connect with us directly.{" "}
-              <Link href={`/contact-us`} className="red-text" target="_blank">
-                Contact us,{" "}
-              </Link>
-              share your project details, and we’ll prepare a personalized
-              proposal for you.
+              Our SEO services are tailored to your business needs and goals.
+              Pricing varies based on factors like local SEO, e-commerce, or
+              technical SEO.{" "}
+              <Link href={`/contact-us`} className="red-text">
+                Contact us
+              </Link>{" "}
+              for a personalized quote and strategy that fits your business.
             </p>
           </motion.div>
         </div>
-        {SOFTWARE_DEV_HOUSTAN_FAQS?.map((faq, index) => (
+        <div
+          className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
+        >
+          <button
+            onClick={() => toggleFaq(faqs?.length + 2)}
+            className="w-full text-start flex items-start justify-between outline-none"
+          >
+            <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
+              <span className="w-full leading-7 lg:leading-10">
+                What’s the best SEO company near me for Wyoming businesses?
+              </span>
+            </h5>
+
+            <img
+              src={"/faq-arrow-icon.png"}
+              width={24}
+              height={20}
+              alt="arrow icon"
+              className={`${
+                openFaq === faqs?.length + 2 ? "scale-y-[-1]" : "scale-y-[1]"
+              } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
+            />
+          </button>
+
+          <motion.div
+            initial={false}
+            animate={{
+              height: openFaq === faqs?.length + 2 ? "auto" : 0,
+              opacity: openFaq === faqs?.length + 2 ? 1 : 0,
+              marginTop: openFaq === faqs?.length + 2 ? "18px" : 0,
+            }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="overflow-hidden"
+          >
+            <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
+              We’re a Cheyenne-based SEO company with proven Wyoming
+              results—unlike national agencies. Our local expertise helped 50+
+              businesses rank #1 for terms like “best restaurants in Cheyenne”
+              and “Wyoming HVAC services” through our{" "}
+              <Link href={`/services/digital-marketing`} className="red-text">
+                digital marketing services.
+              </Link>{" "}
+              See our{" "}
+              <Link href={`/case-studies`} className="red-text">
+                case studies.
+              </Link>
+            </p>
+          </motion.div>
+        </div>
+        {faqs?.map((faq, index) => (
           <div
             className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
             key={index}
@@ -90,7 +130,7 @@ const Faqs = () => {
                 </span>
               </h5>
 
-              <Image
+              <img
                 src={"/faq-arrow-icon.png"}
                 width={24}
                 height={20}
@@ -137,62 +177,9 @@ const Faqs = () => {
             </motion.div>
           </div>
         ))}
-        <div
-          className={`w-full rounded-3xl px-5 py-5 lg:px-10 lg:py-14 bg-[#F9F9F9] text-black`}
-        >
-          <button
-            onClick={() => toggleFaq(SOFTWARE_DEV_HOUSTAN_FAQS?.length)}
-            className="w-full text-start flex items-start justify-between outline-none"
-          >
-            <h5 className="font-medium text-[17px] md:text-2xl lg:text-[35px] 2xl:text-[40px] w-[90%]">
-              <span className="w-full leading-7 lg:leading-10">
-                What industries are served by software companies in Houston?
-              </span>
-            </h5>
-
-            <Image
-              src={"/faq-arrow-icon.png"}
-              width={24}
-              height={20}
-              alt="arrow icon"
-              className={`${
-                openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length
-                  ? "scale-y-[-1]"
-                  : "scale-y-[1]"
-              } transition-all duration-700 w-[18px] h-[18px] lg:w-[24px] lg:h-[26px] lg:mt-3`}
-            />
-          </button>
-
-          <motion.div
-            initial={false}
-            animate={{
-              height:
-                openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length ? "auto" : 0,
-              opacity: openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length ? 1 : 0,
-              marginTop:
-                openFaq === SOFTWARE_DEV_HOUSTAN_FAQS?.length ? "18px" : 0,
-            }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="overflow-hidden"
-          >
-            <p className="text-base lg:text-[20px] font-normal lg:w-[90%]">
-              Software companies in Houston serve industries like healthcare,
-              logistics, energy, real estate, and finance. At{" "}
-              <Link
-                href={`https://launchboxglobal.com/`}
-                className="red-text"
-                target="_blank"
-              >
-                LaunchBox Global
-              </Link>
-              , we build tailored solutions that align with specific business
-              goals across multiple sectors.
-            </p>
-          </motion.div>
-        </div>
       </section>
     </section>
   );
 };
 
-export default Faqs;
+export default CheyenneFaqs;

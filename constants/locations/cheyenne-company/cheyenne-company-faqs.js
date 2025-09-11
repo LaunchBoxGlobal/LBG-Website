@@ -1,18 +1,18 @@
 export const CHEYENNE_COMPANY_FAQS = [
-  {
-    question: "How much do Cheyenne SEO services cost?",
-    answer:
-      "Our SEO services are tailored to your business needs and goals. Pricing varies based on factors like local SEO, e-commerce, or technical SEO. Contact us for a personalized quote and strategy that fits your business.",
-    list: null,
-    text: null,
-  },
-  {
-    question: "What’s the best SEO company near me for Wyoming businesses?",
-    answer:
-      "We’re a Cheyenne-based SEO company with proven Wyoming results—unlike national agencies. Our local expertise helped 50+ businesses rank #1 for terms like “best restaurants in Cheyenne” and “Wyoming HVAC services.” See our case studies.",
-    list: null,
-    text: null,
-  },
+  // {
+  //   question: "How much do Cheyenne SEO services cost?",
+  //   answer:
+  //     "Our SEO services are tailored to your business needs and goals. Pricing varies based on factors like local SEO, e-commerce, or technical SEO. Contact us for a personalized quote and strategy that fits your business.",
+  //   list: null,
+  //   text: null,
+  // },
+  // {
+  //   question: "What’s the best SEO company near me for Wyoming businesses?",
+  //   answer:
+  //     "We’re a Cheyenne-based SEO company with proven Wyoming results—unlike national agencies. Our local expertise helped 50+ businesses rank #1 for terms like “best restaurants in Cheyenne” and “Wyoming HVAC services.” See our case studies.",
+  //   list: null,
+  //   text: null,
+  // },
   {
     question: "How can I improve my Google rankings in Wyoming?",
     answer: "Focus on:",

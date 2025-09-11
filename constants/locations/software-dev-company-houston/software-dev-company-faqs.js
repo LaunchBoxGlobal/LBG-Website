@@ -1,11 +1,11 @@
 export const SOFTWARE_DEV_HOUSTAN_FAQS = [
-  {
-    question: "What is the cost of custom software development in Houston?",
-    answer:
-      "The cost of custom software development in Houston depends on the project’s size, features, and timeline. On average, small applications may start at $15,000, while complex platforms can go beyond $100,000. We provide transparent, fast proposals to help you plan confidently.",
-    list: null,
-    text: null,
-  },
+  // {
+  //   question: "What is the cost of custom software development in Houston?",
+  //   answer:
+  //     "The cost of custom software development in Houston depends on the project’s size, features, and timeline. On average, small applications may start at $15,000, while complex platforms can go beyond $100,000. We provide transparent, fast proposals to help you plan confidently.",
+  //   list: null,
+  //   text: null,
+  // },
   {
     question: "What’s the typical timeline for software development projects?",
     answer:

@@ -14,6 +14,7 @@ import TechStackAndStandards from "./TechStackAndStandards";
 import Features from "./Features";
 import "./style.css";
 import FAQs from "@/components/Common/FAQs";
+import { HEALTHCARE_FAQS } from "@/constants/industries/healthcare-page-content/healthcare-faqs";
 
 const HealthCarePage = () => {
   return (
@@ -31,7 +32,7 @@ const HealthCarePage = () => {
       <HealthcareTechTrends />
       <HealthcareWhyChooseUs />
       <CTA />
-      <FAQs faqs={[]} />
+      <FAQs faqs={HEALTHCARE_FAQS} />
     </main>
   );
 };
