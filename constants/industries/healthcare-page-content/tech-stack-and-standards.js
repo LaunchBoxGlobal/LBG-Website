@@ -33,40 +33,7 @@ export const TECH_STACK_AND_STANDARDS = [
       },
     ],
   },
-  {
-    title: "Mobile App Development",
-    description:
-      "Patients and providers live on their phones. so your software has to run flawlessly on mobile. Using Flutter, React Native, Swift, and Kotlin, we create apps that feel smooth and reliable on any device. Your startup gets flexibility and speed to market without compromising on quality.",
-    icon: "/industries/healthcare/mobile-app-development-icon.png",
-    width: 57,
-    height: 57,
-    icons: [
-      {
-        image: "/industries/healthcare/flutter-icon.png",
-        width: 86,
-        height: 34,
-        link: `/development-technologies/flutter-app-development`,
-      },
-      {
-        image: "/industries/healthcare/react-icon.png",
-        width: 85,
-        height: 34,
-        link: `/development-technologies/react-native-app-development`,
-      },
-      {
-        image: "/industries/healthcare/kotlin-icon.png",
-        width: 86,
-        height: 34,
-        link: `/development-technologies/kotlin-app-development`,
-      },
-      {
-        image: "/industries/healthcare/swift-icon.png",
-        width: 82,
-        height: 34,
-        link: `/development-technologies/swift-app-development`,
-      },
-    ],
-  },
+
   {
     title: "Backend Development",
     description:

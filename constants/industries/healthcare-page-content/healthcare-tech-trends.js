@@ -2,7 +2,7 @@ export const HEALTHCARE_TECH_TRENDS = [
   {
     title: "Generative AI for Drug Discovery",
     description:
-      "Generative AI is transforming pharmaceutical research by enabling rapid chemical analysis, evaluating potential, and reducing the costly trial-and-error process. This innovation allows healthcare leaders to bring safer drugs to market more quickly, thereby significantly improving patient outcomes by reducing development timelines and expenses.",
+      "Generative AI is transforming pharmaceutical research by enabling rapid chemical analysis, evaluating potential, and reducing the costly trial-and-error process. This innovation allows healthcare leaders to bring safer drugs to market more quickly, thereby significantly improving patient outcomes by lowering healthcare software development timelines and expenses.",
     icon: "/industries/healthcare/predictive-diagnostics-icon.png",
     width: 75,
     height: 79,
@@ -10,7 +10,7 @@ export const HEALTHCARE_TECH_TRENDS = [
   {
     title: "Remote Robotic Surgery",
     description:
-      "Advances in robotics and 5G are enabling remote surgery, providing patients with access to specialized care regardless of their location. Surgeons can perform complex operations with unmatched precision by reducing travel barriers, minimizing surgical risks, and ensuring high-quality outcomes for multiple patients worldwide.",
+      "Advances in software and medical robotics and 5G are enabling remote surgery, providing patients with access to specialized care regardless of their location. Surgeons can perform complex operations with unmatched precision by reducing travel barriers, minimizing surgical risks, and ensuring high-quality outcomes for multiple patients worldwide.",
     icon: "/industries/healthcare/remote-robotic-surgery-icon.png",
     width: 80,
     height: 79,
@@ -26,7 +26,7 @@ export const HEALTHCARE_TECH_TRENDS = [
   {
     title: "Personalized Medicine with Genomics",
     description:
-      "Genomics is driving the new era of personalized medicine, where treatments are tailored to an individual's genetic profile. This approach ensured higher success rates, fewer side effects, and better long-term results, thereby strengthening patient trust while transforming care delivery across diverse healthcare systems.",
+      "Genomics is driving the new era of personalized medicine, where treatments are tailored to an individual's genetic profile. This approach ensured higher success rates, fewer side effects, and better long-term results, thereby strengthening patient trust while transforming care delivery across diverse patient data management systems.",
     icon: "/industries/healthcare/treatment-simulations-icon.png",
     width: 75,
     height: 79,
@@ -42,7 +42,7 @@ export const HEALTHCARE_TECH_TRENDS = [
   {
     title: "Voice Enabled Virtual Health Assistants",
     description:
-      "AI-powered voice assistants support patients with tasks such as appointment scheduling, medication tracking, and symptom reporting. By simplifying healthcare access and reducing administrative strain, these assistants enhance engagement while offering the organization practical pathways to scalable digital transformation in healthcare.",
+      "AI-powered voice assistants support patients with tasks such as appointment scheduling, medication tracking, and symptom reporting. By simplifying custom health services​ and reducing administrative strain, these assistants enhance engagement while offering the organization practical pathways to scalable digital transformation in healthcare.",
     icon: "/industries/healthcare/voice-enabled-virtual-health-assistants-icon.png",
     width: 80,
     height: 79,

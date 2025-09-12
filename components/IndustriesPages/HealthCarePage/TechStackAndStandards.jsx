@@ -68,6 +68,92 @@ const TechStackAndStandards = () => {
             </div>
           );
         })}
+        <div className="w-full">
+          <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] group rounded-[29px] p-7 min-h-[418px] md:min-h-[508px] relative">
+            <div className="w-[11px] h-[93px] red-bg rounded-l-2xl absolute left-[-10px] group-hover:translate-y-16 transition-all duration-300" />
+            <div className="flex flex-col items-start gap-3">
+              <Image
+                src={`/industries/healthcare/mobile-app-development-icon.png`}
+                width={57}
+                height={57}
+                alt={`Mobile app development service icon`}
+              />
+              <h3 className="text-[20px] font-semibold leading-none">
+                Mobile App Development
+              </h3>
+              <p className="text-sm md:text-base lg:text-[18px] leading-[1.1] font-light">
+                Patients and providers live on their phones. so your software
+                has to run flawlessly on mobile. Using{" "}
+                <Link
+                  href={`https://launchboxglobal.com/development-technologies/flutter-app-development`}
+                >
+                  Flutter
+                </Link>
+                ,{" "}
+                <Link
+                  href={`https://launchboxglobal.com/development-technologies/react-native-app-development`}
+                >
+                  React Native
+                </Link>
+                ,{" "}
+                <Link
+                  href={`https://launchboxglobal.com/development-technologies/swift-app-development`}
+                >
+                  Swift
+                </Link>
+                , and{" "}
+                <Link
+                  href={`https://launchboxglobal.com/development-technologies/kotlin-app-development`}
+                >
+                  Kotlin
+                </Link>
+                , we create apps that feel smooth and reliable on any device.
+                Your startup gets flexibility and speed to market without
+                compromising on quality.
+              </p>
+            </div>
+            <div className="w-full min-h-[80px] flex items-start flex-wrap gap-2">
+              <Link href={`/development-technologies/flutter-app-development`}>
+                <Image
+                  src={`/industries/healthcare/flutter-icon.png`}
+                  width={86}
+                  height={34}
+                  alt={` icon`}
+                  className=""
+                />
+              </Link>
+              <Link
+                href={`/development-technologies/react-native-app-development`}
+              >
+                <Image
+                  src={`/industries/healthcare/react-icon.png`}
+                  width={85}
+                  height={34}
+                  alt={` icon`}
+                  className=""
+                />
+              </Link>
+              <Link href={`/development-technologies/kotlin-app-development`}>
+                <Image
+                  src={`/industries/healthcare/kotlin-icon.png`}
+                  width={86}
+                  height={34}
+                  alt={` icon`}
+                  className=""
+                />
+              </Link>
+              <Link href={`/development-technologies/swift-app-development`}>
+                <Image
+                  src={`/industries/healthcare/swift-icon.png`}
+                  width={82}
+                  height={34}
+                  alt={` icon`}
+                  className=""
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
     </section>
   );

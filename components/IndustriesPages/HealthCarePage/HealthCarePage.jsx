@@ -15,6 +15,7 @@ import Features from "./Features";
 import "./style.css";
 import FAQs from "@/components/Common/FAQs";
 import { HEALTHCARE_FAQS } from "@/constants/industries/healthcare-page-content/healthcare-faqs";
+import HealthcareFaqs from "./HealthcareFaqs";
 
 const HealthCarePage = () => {
   return (
@@ -32,7 +33,7 @@ const HealthCarePage = () => {
       <HealthcareTechTrends />
       <HealthcareWhyChooseUs />
       <CTA />
-      <FAQs faqs={HEALTHCARE_FAQS} />
+      <HealthcareFaqs />
     </main>
   );
 };

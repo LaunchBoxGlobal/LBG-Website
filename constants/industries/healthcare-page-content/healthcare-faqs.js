@@ -19,11 +19,11 @@ export const HEALTHCARE_FAQS = [
     answer:
       "Data security is fundamental in every solution we deliver. We use encryption for data in transit and at rest. Role based access controls, and multi factor authentication. Our solutions are easily hacked to ensure the resilience against the threats. By fixing compliance and privacy by the design principles into our healthcare application development services, we safeguard both the PHI (protected Health Information) and PII (Personally Identifiable Information). This level of protection builds trust for the healthcare organizations and their parents.",
   },
-  {
-    question: "Do you offer custom solutions or use pre-built templates?",
-    answer:
-      "We prioritize custom built solutions tailored to the unique needs of each healthcare provider or the startup. Templates may reduce the cost but often limit the scalability, compliance and innovation. Our approach makes sure that every application is designed to address the specific workflows, compliance requirements and patient engagement goals. With the focus on flexibility, our solutions would grow alongside your organization, enabling long term adaptability and sustaining the value.",
-  },
+  // {
+  //   question: "Do you offer custom solutions or use pre-built templates?",
+  //   answer:
+  //     "We prioritize custom built solutions tailored to the unique needs of each healthcare provider or the startup. Templates may reduce the cost but often limit the scalability, compliance and innovation. Our approach makes sure that every application is designed to address the specific workflows, compliance requirements and patient engagement goals. With the focus on flexibility, our solutions would grow alongside your organization, enabling long term adaptability and sustaining the value.",
+  // },
   {
     question: "How long does a healthcare MVP usually take?",
     answer:
@@ -35,9 +35,9 @@ export const HEALTHCARE_FAQS = [
     answer:
       "Yes. We help hospitals upgrade the outdated infrastructure into modern, compatible systems. Our team evaluates the legacy applications and rebuilds them with the cloud based secure and the scalable technologies. By doing so, we reduce the downtime, improve the performance and extend the system’s lifespan. Modernization also helps healthcare organizations integrate with the new digital platforms, enhance patient care and comply with today’s regulatory standards without sacrificing the previous investments.",
   },
-  {
-    question: "Do you work with healthcare startups as well as hospitals?",
-    answer:
-      "Absolutely. Our healthcare app development company works with both emerging startups and established hospital networks. For startups, we bring guidance on compliance, scalability, and cost-effective MVP development. For hospitals and enterprises, we deliver full-scale healthcare application development services that integrate into complex environments. No matter the size, we tailor our solutions to meet organizational goals, regulatory demands, and patient needs while ensuring long-term growth potential.",
-  },
+  // {
+  //   question: "Do you work with healthcare startups as well as hospitals?",
+  //   answer:
+  //     "Absolutely. Our healthcare app development company works with both emerging startups and established hospital networks. For startups, we bring guidance on compliance, scalability, and cost-effective MVP development. For hospitals and enterprises, we deliver full-scale healthcare application development services that integrate into complex environments. No matter the size, we tailor our solutions to meet organizational goals, regulatory demands, and patient needs while ensuring long-term growth potential.",
+  // },
 ];
