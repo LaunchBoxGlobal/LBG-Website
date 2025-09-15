@@ -1,5 +1,6 @@
 import React from "react";
 import ContactButton from "@/components/Global/ContactButton";
+import HeroAnimation from "./HeroAnimation";
 
 const Hero = () => {
   return (
@@ -18,6 +19,8 @@ const Hero = () => {
         <div className="flex items-center justify-center gap-4 mt-1 mb-10 z-20">
           <ContactButton text={"Start Your Project Today"} />
         </div>
+
+        <HeroAnimation />
       </section>
     </section>
   );

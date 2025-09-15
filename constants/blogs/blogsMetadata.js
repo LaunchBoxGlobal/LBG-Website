@@ -1413,4 +1413,18 @@ export const BLOGS_METADATA = {
     canonical:
       "https://launchboxglobal.com/blogs/10-exciting-games-ideas-you-will-want-to-try-in-2025",
   },
+  "the-real-cost-of-rebuilding-an-mvp-and-how-to-avoid-it": {
+    title: "The Real Cost of Rebuilding an mvp | mvp Development Cost",
+    description:
+      "Discover how to avoid rebuilds, reduce mvp development cost, and secure growth with planning, audits, and scalable architecture strategies for startups.",
+    canonical:
+      "https://launchboxglobal.com/blogs/the-real-cost-of-rebuilding-an-mvp-and-how-to-avoid-it",
+  },
+  "how-app-ecommerce-is-shaping-mobile-shopping-behaviour-in-2025": {
+    title: "How App Ecommerce Is Transforming Mobile Shopping 2025",
+    description:
+      "Discover how app ecommerce is transforming shopping in 2025 through innovative ecommerce app features, mobile platforms, and strategies driving growth.",
+    canonical:
+      "https://launchboxglobal.com/blogs/how-app-ecommerce-is-shaping-mobile-shopping-behaviour-in-2025",
+  },
 };
