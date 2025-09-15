@@ -1,5 +1,4 @@
 "use client";
-import { VALUE_PROPOSITION } from "@/constants/HomeValueProposition";
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
@@ -8,7 +7,6 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { HEALTHCARE_APP_DEVELOPMENT_CHALLENGES } from "@/constants/industries/healthcare-page-content/healthcare-app-development-challenges";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -45,7 +43,7 @@ export const sliderSettings = {
   },
 };
 
-const ChallengesSlider = () => {
+const ChallengesSlider = ({ Challenges }) => {
   return (
     <section className="w-full py-10 lg:pt-20 relative overflow-hidden bg-[#fff]">
       <Swiper
@@ -53,7 +51,7 @@ const ChallengesSlider = () => {
         modules={[Autoplay]}
         className="overflow-hidden flex gap-4 min-h-[540px] relative"
       >
-        {HEALTHCARE_APP_DEVELOPMENT_CHALLENGES?.map((t, i) => {
+        {Challenges?.map((t, i) => {
           return (
             <SwiperSlide key={i} className="w-[95%] lg:w-[320px]">
               <div className="w-full min-h-[440px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start gap-3 relative overflow-hidden">

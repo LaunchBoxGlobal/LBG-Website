@@ -19,39 +19,7 @@ const SecurityAndCompliance = () => {
         </p>
       </section>
 
-      <SecurityAndComplianceSlider />
-
-      {/* <div className="w-full flex items-center justify-center flex-wrap gap-5 mt-16">
-        {SECURITY_AND_COMPLIANCE?.map((t, i) => {
-          return (
-            <div
-              className="w-full md:w-[45%] lg:w-[30%] midlg:w-[23%] min-h-[530px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-20 flex flex-col items-center text-center gap-3 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
-              key={i}
-            >
-              <img
-                src="/industries/healthcare/security-and-compliance-card-image.png"
-                alt="security-and-compliance-card-image"
-                width={80}
-                height={114}
-                className="absolute top-7 right-7 z-0 transition duration-300 group-hover:invert group-hover:brightness-0"
-              />
-              <div className="w-full">
-                <img
-                  src={t?.icon}
-                  alt={t?.alt_tag}
-                  width={t?.width}
-                  height={t?.height}
-                  className="mx-auto object-contain transition duration-300 group-hover:invert group-hover:brightness-0"
-                />
-              </div>
-              <h3 className="font-semibold text-[22px] leading-none mt-5">
-                {t?.title}
-              </h3>
-              <p className="text-lg leading-[1.2]">{t?.description}</p>
-            </div>
-          );
-        })}
-      </div> */}
+      <SecurityAndComplianceSlider content={SECURITY_AND_COMPLIANCE} />
     </section>
   );
 };

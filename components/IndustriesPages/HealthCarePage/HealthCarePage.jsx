@@ -13,8 +13,6 @@ import CTA from "./CTA";
 import TechStackAndStandards from "./TechStackAndStandards";
 import Features from "./Features";
 import "./style.css";
-import FAQs from "@/components/Common/FAQs";
-import { HEALTHCARE_FAQS } from "@/constants/industries/healthcare-page-content/healthcare-faqs";
 import HealthcareFaqs from "./HealthcareFaqs";
 
 const HealthCarePage = () => {

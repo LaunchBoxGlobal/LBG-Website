@@ -1,14 +1,12 @@
 "use client";
-import { VALUE_PROPOSITION } from "@/constants/HomeValueProposition";
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { SECURITY_AND_COMPLIANCE } from "@/constants/industries/healthcare-page-content/security-and-compliance";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -45,7 +43,7 @@ export const sliderSettings = {
   },
 };
 
-const SecurityAndComplianceSlider = () => {
+const SecurityAndComplianceSlider = ({ content }) => {
   return (
     <section className="w-full py-10 lg:pt-20 relative overflow-hidden bg-[#fff]">
       <Swiper
@@ -53,7 +51,7 @@ const SecurityAndComplianceSlider = () => {
         modules={[Autoplay]}
         className="overflow-hidden flex gap-4 min-h-[540px] relative"
       >
-        {SECURITY_AND_COMPLIANCE?.map((t, i) => {
+        {content?.map((t, i) => {
           return (
             <SwiperSlide key={i} className="w-[95%] lg:w-[320px]">
               <div

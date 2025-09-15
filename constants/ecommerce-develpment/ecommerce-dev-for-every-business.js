@@ -8,7 +8,7 @@ export const ECOMMERCE_DEV_FOR_EVERY_BUSINESS = [
   {
     title: "For Small Businesses",
     description:
-      "Our ecommerce development services are built for small businesses that want to work smarter, not harder. r. We design solutions that simplify daily operations, reduce repetitive tasks, and free up your time. We can also help you build Shopify store features. The result? Cost-effective solutions that free up your time.",
+      "Our ecommerce development services are built for small businesses that want to work smarter, not harder. We design solutions that simplify daily operations, reduce repetitive tasks, and free up your time. We can also help you build Shopify store features. The result? Cost-effective solutions that free up your time.",
     icon: "/for-small-businesses-icon.png",
   },
   {
