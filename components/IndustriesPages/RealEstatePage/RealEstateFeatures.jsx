@@ -202,12 +202,20 @@ const RealEstateFeatures = () => {
             </>
           ) : activeFeatues === "Virtual Tours & AR/VR Experiences" ? (
             <>
-              <Image
+              {/* <Image
                 src={"/industries/real-estate/virtual-tours-mockup.png"}
                 alt="virtual-tours-mockup"
                 width={514}
                 height={332}
                 className="object-contain lg:min-h-[500px] mx-auto"
+              /> */}
+              <video
+                src="/industries/real-estate/virtual-tours.mp4"
+                controls={false}
+                autoPlay={true}
+                loop
+                muted
+                className="w-full h-auto rounded-lg shadow-lg"
               />
             </>
           ) : activeFeatues === "Tenant & Landlord Management Portals" ? (
