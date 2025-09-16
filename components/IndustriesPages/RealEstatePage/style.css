@@ -48,3 +48,11 @@
 .animate-marquee-vertical-reverse {
   animation: marquee-vertical-reverse 60s linear infinite;
 }
+
+.hero-card-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.hero-card-shadow:hover {
+  box-shadow: rgba(232, 66, 45, 0.2) 0px 8px 24px;
+}

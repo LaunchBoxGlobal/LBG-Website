@@ -22,7 +22,7 @@ const HeroAnimation = () => {
           alt="border line"
           className="object-contain absolute top-[40%] left-[-17%]"
         />
-        <div className="bg-white max-w-[240px] p-4 rounded-[17px] custom-shadow z-10">
+        <div className="bg-white max-w-[240px] p-4 rounded-[17px] hero-card-shadow z-10">
           <span className="font-medium xl:text-lg text-gray-600 text-nowrap">
             Secure Payment Gateway
           </span>
@@ -39,7 +39,7 @@ const HeroAnimation = () => {
           className="object-contain absolute top-[-120%] left-[-17%]"
         />
 
-        <div className="bg-white min-w-[210px] p-4 rounded-[17px] custom-shadow z-10">
+        <div className="bg-white min-w-[210px] p-4 rounded-[17px] hero-card-shadow z-10">
           <span className="font-medium text-lg text-gray-600 text-nowrap">
             Interactive Dashboards
           </span>
@@ -55,7 +55,7 @@ const HeroAnimation = () => {
           alt="border line"
           className="object-contain absolute top-[40%] lg:right-[-20%] midlg:right-[-16%] xl:right-[-14%]"
         />
-        <div className="bg-white min-w-[210px] p-4 rounded-[17px] custom-shadow z-10">
+        <div className="bg-white min-w-[210px] p-4 rounded-[17px] hero-card-shadow z-10">
           <span className="font-medium text-lg text-gray-600 text-nowrap">
             Advanced Lead Management
           </span>
