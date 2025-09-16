@@ -14,7 +14,7 @@ const RealEstateFeatureCard = ({ feature }) => {
             className="grayscale"
           />
         </div>
-        <h3 className="font-bold leading-none group-hover:text-[#F40E00] transition-all duration-300">
+        <h3 className="font-bold leading-none transition-all duration-300">
           {feature?.title}
         </h3>
       </div>

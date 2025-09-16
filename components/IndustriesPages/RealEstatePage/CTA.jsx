@@ -10,7 +10,7 @@ const CTA = () => {
         <div className="w-full md:w-[50%] py-10 px-7 lg:pl-14 flex flex-col items-start justify-center lg:h-full">
           <h2 className="text-white text-3xl lg:text-[40px] xl:text-[50px] font-bold leading-[1] z-10">
             Close Property Deals Faster with{" "}
-            <span className="red-text">Real Estate Software</span>
+            <span className="">Real Estate Software</span>
           </h2>
           <p className="text-gray-200 text-sm md:text-base xl:text-lg leading-[1] mt-4 z-10">
             Your real estate business deserves more than just a platform. It

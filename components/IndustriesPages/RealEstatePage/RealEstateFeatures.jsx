@@ -18,55 +18,66 @@ export const features_tabs = [
   {
     title: "Smart Property Listings & Search",
     icon: "/industries/real-estate/smart-property-listing-icon.png",
+    whiteIcon: "/industries/real-estate/smart-property-listing-white-icon.png",
     width: 17,
     height: 20,
   },
   {
     title: "Agent & Broker CRM Automation",
     icon: "/industries/real-estate/agent-and-broker-icon.png",
+    whiteIcon: "/industries/real-estate/agent-and-broker-white-icon.png",
     width: 21,
     height: 20,
   },
   {
     title: "Virtual Tours & AR/VR Experiences",
     icon: "/industries/real-estate/virtual-tours-icon.png",
+    whiteIcon: "/industries/real-estate/virtual-tours-white-icon.png",
     width: 20,
     height: 20,
   },
   {
     title: "Tenant & Landlord Management Portals",
     icon: "/industries/real-estate/tenant-and-landlord-icon.png",
+    whiteIcon: "/industries/real-estate/tenant-and-landlord-white-icon.png",
     width: 20,
     height: 20,
   },
   {
     title: "Property Management Dashboards",
     icon: "/industries/real-estate/propert-management-dashboard-icon.png",
+    whiteIcon:
+      "/industries/real-estate/propert-management-dashboard-white-icon.png",
     width: 23,
     height: 20,
   },
   {
     title: "Analytics & Investment Tools",
     icon: "/industries/real-estate/analytics-icon.png",
+    whiteIcon: "/industries/real-estate/analytics-white-icon.png",
     width: 17,
     height: 19,
   },
   {
     title: "Secure e-Signatures & Document Management",
-    icon: "/industries/real-estate/propert-management-dashboard-icon.png",
-    width: 23,
-    height: 20,
+    icon: "/industries/real-estate/signatures-and-document-management-icon.png",
+    whiteIcon:
+      "/industries/real-estate/signatures-and-document-management-white-icon.png",
+    width: 21,
+    height: 19,
   },
   {
     title: "Property Financing & Evaluation Tools",
-    icon: "/industries/real-estate/analytics-icon.png",
-    width: 17,
+    icon: "/industries/real-estate/propert-financing-icon.png",
+    whiteIcon: "/industries/real-estate/propert-financing-white-icon.png",
+    width: 19,
     height: 19,
   },
 ];
 
 const RealEstateFeatures = () => {
   const [activeFeatues, setActiveFeatures] = useState(features_tabs[0]?.title);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleChangeFeature = (f) => {
     setActiveFeatures(f);
@@ -90,26 +101,29 @@ const RealEstateFeatures = () => {
 
       <div className="w-full bg-white grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-16">
         {features_tabs?.map((tab, i) => {
+          const isActive = activeFeatues === tab?.title;
+          const isHovered = hoveredIndex === i;
           return (
             <button
               type="button"
               onClick={() => handleChangeFeature(tab?.title)}
-              className={`flex items-center text-start gap-2 lg:w-[200px]`}
+              onMouseEnter={() => setHoveredIndex(i)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              className={`flex items-center text-start gap-2 lg:w-[200px] px-5 py-2.5 rounded-lg mx-auto transition-all duration-300 group min-h-[100px] lg:min-w-[150px] ${
+                isActive
+                  ? "bg-[#F40E00] text-white"
+                  : "bg-[#f9f9f9] hover:bg-[#F40E00] hover:text-white"
+              }`}
               key={i}
             >
               <Image
-                src={tab?.icon}
-                alt={`${tab?.title}`}
+                src={isActive || isHovered ? tab?.whiteIcon : tab?.icon}
+                alt={tab?.title}
                 width={tab?.width}
                 height={tab?.height}
               />
-              <span
-                className={`text-base leading-[1.1] font-medium text-gray-600 pb-2 border-b-4 ${
-                  activeFeatues === tab?.title
-                    ? " border-[#F40E00]"
-                    : "border-white"
-                }`}
-              >
+
+              <span className="text-base leading-[1.1] font-medium">
                 {tab?.title}
               </span>
             </button>

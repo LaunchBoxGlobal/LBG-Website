@@ -12,7 +12,7 @@ export const mockups = [
 
 const ContactFormAnimation = () => {
   return (
-    <div className="w-full relative overflow-hidden lg:h-[130vh] midlg:h-[110vh] grid grid-cols-2 gap-0 pr-7">
+    <div className="w-full relative overflow-hidden lg:h-[130vh] midlg:h-[130vh] grid grid-cols-2 gap-0 pr-7">
       {/* Left column */}
       <div className="relative flex flex-col items-center justify-center">
         <div className="animate-marquee-vertical flex flex-col">
