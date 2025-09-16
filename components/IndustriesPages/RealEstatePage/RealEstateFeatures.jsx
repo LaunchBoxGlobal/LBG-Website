@@ -74,14 +74,17 @@ const RealEstateFeatures = () => {
   return (
     <section className="w-full py-20 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <h2 className="section-heading lg:w-[90%] mx-auto">Features</h2>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          Features Designed to Simplify{" "}
+          <span className="red-text">Real Estate</span>
+        </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          Our healthcare applications are built on a foundation of
-          interoperability, security, and scalability. We combine
-          industry-proven standards with modern technologies to deliver
-          solutions that are compliant, reliable, and ready for the evolving
-          digital health landscape.
+          Being a trusted real estate application development company, we add
+          features that facilitate your business and clients. We keep the
+          listings organized, and we simplify tenant and buyer interactions
+          while adding other features as well. Our tech solutions deal with
+          everyday challenges that help your business run smoothly.
         </p>
       </section>
 

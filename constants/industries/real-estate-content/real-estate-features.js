@@ -162,7 +162,7 @@ export const REAL_ESTATE_ANALYTICS_AND_INVESTEMENT_TOOLS = [
     title: "Actionable Market Insights",
     description:
       "Stay ahead of shifts with data-driven dashboards that simplify property trends. With software for land development, you can spot opportunities early, adapt strategies quickly, and make confident investment moves in an ever-changing market.",
-    icon: "/industries/real-estateactionable-market-insights-icon.png",
+    icon: "/industries/real-estate/actionable-market-insights-icon.png",
     width: 40,
     height: 40,
     alt_tag: "Actionable Market Insights",
