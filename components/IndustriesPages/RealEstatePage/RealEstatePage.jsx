@@ -11,6 +11,9 @@ import RealEstateServices from "./RealEstateServices";
 import CTA from "./CTA";
 import RealEstateProcess from "./RealEstateProcess";
 import RealEstateTechTrends from "./RealEstateTechTrends";
+import WhyChooseUs from "./WhyChooseUs";
+import RealEstateFaqs from "./RealEstateFaqs";
+import RealEstateContact from "./RealEstateContact";
 
 const RealEstatePage = () => {
   return (
@@ -27,6 +30,9 @@ const RealEstatePage = () => {
       <CTA />
       <RealEstateProcess />
       <RealEstateTechTrends />
+      <WhyChooseUs />
+      <RealEstateContact />
+      <RealEstateFaqs />
     </main>
   );
 };

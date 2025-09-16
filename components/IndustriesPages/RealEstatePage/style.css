@@ -21,3 +21,30 @@
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#212121", endColorstr="#878787", GradientType=0 );
 }
+
+/*  */
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes marquee-vertical-reverse {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical 60s linear infinite;
+}
+
+.animate-marquee-vertical-reverse {
+  animation: marquee-vertical-reverse 60s linear infinite;
+}

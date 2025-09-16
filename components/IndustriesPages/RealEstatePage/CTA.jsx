@@ -35,7 +35,7 @@ const CTA = () => {
           width={589}
           height={540}
           loading="lazy"
-          className="h-full object-contain absolute -right-[8%] bottom-0 opacity-75"
+          className="h-full absolute -right-[8%] bottom-0 opacity-75"
         />
 
         <Image

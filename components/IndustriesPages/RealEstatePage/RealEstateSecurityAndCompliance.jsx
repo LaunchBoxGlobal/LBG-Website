@@ -1,6 +1,6 @@
 import React from "react";
-import SecurityAndComplianceSlider from "../HealthCarePage/SecurityAndComplianceSlider";
 import { REAL_ESTATE_SECURITY_AND_COMPLIANCE } from "@/constants/industries/real-estate-content/real-estate-security-and-compliance";
+import RealEstateSecurityAndComplianceSlider from "./RealEstateSecurityAndComplianceSlider";
 
 const RealEstateSecurityAndCompliance = () => {
   return (
@@ -19,7 +19,7 @@ const RealEstateSecurityAndCompliance = () => {
         </p>
       </section>
 
-      <SecurityAndComplianceSlider
+      <RealEstateSecurityAndComplianceSlider
         content={REAL_ESTATE_SECURITY_AND_COMPLIANCE}
       />
     </section>

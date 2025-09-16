@@ -2,7 +2,7 @@
 import React from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -43,36 +43,41 @@ export const sliderSettings = {
   },
 };
 
-const ChallengesSlider = ({ Challenges }) => {
+const RealEstateSecurityAndComplianceSlider = ({ content }) => {
   return (
     <section className="w-full py-10 lg:pt-20 relative overflow-hidden bg-[#fff]">
       <Swiper
         {...sliderSettings}
         modules={[Autoplay]}
-        className="overflow-hidden flex gap-4 min-h-[540px] relative"
+        className="overflow-hidden flex gap-4 h-[620px] midlg:h-[580px] relative"
       >
-        {Challenges?.map((t, i) => {
+        {content?.map((t, i) => {
           return (
             <SwiperSlide key={i} className="w-[95%] lg:w-[320px]">
-              <div className="w-full min-h-[440px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start gap-3 relative overflow-hidden">
+              <div
+                className="w-full h-[530px] midlg:h-[480px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-16 flex flex-col items-center text-center gap-3 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
+                key={i}
+              >
                 <img
-                  src={t?.bg_image}
-                  alt={`${t?.title} image`}
-                  width={t?.bg_image_width}
-                  height={t?.bg_image_height}
-                  className="absolute z-0 top-0 right-0 object-contain opacity-75 max-w-[70%]"
+                  src="/industries/healthcare/security-and-compliance-card-image.png"
+                  alt="security-and-compliance-card-image"
+                  width={80}
+                  height={114}
+                  className="absolute top-7 right-7 z-0 transition duration-300 group-hover:invert group-hover:brightness-0"
                 />
-                <img
-                  src={t?.icon}
-                  alt={`${t?.title} image`}
-                  width={t?.width}
-                  height={t?.height}
-                  className="z-10"
-                />
-                <h3 className="font-semibold text-[22px] leading-none z-10 mt-3 mb-10">
+                <div className="w-full">
+                  <img
+                    src={t?.icon}
+                    alt={t?.alt_tag}
+                    width={t?.width}
+                    height={t?.height}
+                    className="mx-auto object-contain transition duration-300 group-hover:invert group-hover:brightness-0"
+                  />
+                </div>
+                <h3 className="font-semibold text-[22px] leading-none mt-5">
                   {t?.title}
                 </h3>
-                <p className="text-lg leading-[1.2] z-10">{t?.description}</p>
+                <p className="text-lg leading-[1.2]">{t?.description}</p>
               </div>
             </SwiperSlide>
           );
@@ -83,7 +88,7 @@ const ChallengesSlider = ({ Challenges }) => {
   );
 };
 
-export default ChallengesSlider;
+export default RealEstateSecurityAndComplianceSlider;
 
 function SwiperButtons() {
   const swiper = useSwiper();

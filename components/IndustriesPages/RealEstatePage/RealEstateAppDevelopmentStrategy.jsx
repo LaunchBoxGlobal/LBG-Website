@@ -22,7 +22,7 @@ const RealEstateAppDevelopmentStrategy = () => {
         {HEALTHCARE_SOLUTION_PHILOSOPHY?.map((t, i) => {
           return (
             <div
-              className="w-full md:w-[45%] lg:w-[30%] min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-center gap-3 relative group hover:scale-[1.05] transition-all duration-300 text-center"
+              className="w-full md:w-[45%] lg:w-[30%] lg:h-[580px] midlg:min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-center gap-3 relative group hover:scale-[1.05] transition-all duration-300 text-center"
               key={i}
             >
               <div className="w-full">
