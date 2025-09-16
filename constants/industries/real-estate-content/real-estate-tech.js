@@ -3,7 +3,7 @@ export const REAL_ESTATE_TECH = [
     title: "Frontend Development",
     description:
       "With React, Angular, and Vue, we design clean, responsive interfaces that make your platform simple and enjoyable to use. For software for real estate developers, this means property searches feel smoother, navigation stays clear, and every interaction delivers the modern polish your users expect.",
-    icon: "/industries/healthcare/healthcare-data-standards-icon.png",
+    icon: "/industries/real-estate/frontend-development-icon.png",
     width: 57,
     height: 57,
     icons: [
@@ -14,16 +14,22 @@ export const REAL_ESTATE_TECH = [
         link: `/development-technologies/react-native-app-development`,
       },
       {
-        image: "/on-demand-talent/angular-icon.webp",
+        image: "/on-demand-talent/flutter-icon.webp",
         width: 84,
         height: 34,
-        link: null,
+        link: `/development-technologies/flutter-app-development`,
       },
       {
-        image: "/on-demand-talent/vuejs-icon.webp",
-        width: 70,
+        image: "/on-demand-talent/kotlin-icon.webp",
+        width: 84,
         height: 34,
-        link: null,
+        link: `/development-technologies/kotlin-app-development`,
+      },
+      {
+        image: "/on-demand-talent/swift-icon.webp",
+        width: 84,
+        height: 34,
+        link: `/development-technologies/swift-app-development`,
       },
     ],
   },
@@ -68,7 +74,26 @@ export const REAL_ESTATE_TECH = [
     icon: "/industries/healthcare/ai-and-machine-learning-icon.png",
     width: 57,
     height: 57,
-    icons: null,
+    icons: [
+      {
+        image: "/industries/real-estate/ai-ml-model-icon.png",
+        width: 121,
+        height: 34,
+        link: null,
+      },
+      {
+        image: "/industries/real-estate/predictive-analysis.png",
+        width: 127,
+        height: 34,
+        link: null,
+      },
+      {
+        image: "/industries/real-estate/privacy-preserving-icon.png",
+        width: 137,
+        height: 34,
+        link: null,
+      },
+    ],
   },
   {
     title: "APIs & Integrations",
@@ -77,7 +102,26 @@ export const REAL_ESTATE_TECH = [
     icon: "/industries/healthcare/iot-protocols-and-integrations-icon.png",
     width: 57,
     height: 57,
-    icons: null,
+    icons: [
+      {
+        image: "/industries/real-estate/mqtt-icon.png",
+        width: 81,
+        height: 34,
+        link: null,
+      },
+      {
+        image: "/industries/real-estate/ble-icon.png",
+        width: 193,
+        height: 34,
+        link: null,
+      },
+      {
+        image: "/industries/real-estate/proprietry-icon.png",
+        width: 142,
+        height: 34,
+        link: null,
+      },
+    ],
   },
   {
     title: "Cloud Platforms",
@@ -86,15 +130,49 @@ export const REAL_ESTATE_TECH = [
     icon: "/industries/healthcare/cloud-infrastructure-icon.png",
     width: 57,
     height: 57,
-    icons: null,
+    icons: [
+      {
+        image: "/on-demand-talent/aws-icon.webp",
+        width: 78,
+        height: 34,
+        link: null,
+      },
+      {
+        image: "/industries/healthcare/azure-icon.png",
+        width: 73,
+        height: 34,
+        link: null,
+      },
+      {
+        image: "/industries/real-estate/gcp-icon.png",
+        width: 72,
+        height: 34,
+        link: null,
+      },
+    ],
   },
   {
     title: "Role-Based Access",
     description:
       "We set up secure role-based access so every user including agents, admins, or tenants, only sees what they need. With mobile app solutions, you gain stronger data protection, reduced risks, and smoother collaboration without overcomplicating permissions or slowing down your workflows.",
-    icon: "/industries/healthcare/role-based-access-control-image.png",
+    icon: "/industries/real-estate/role-based-access-icon.png",
     width: 57,
     height: 57,
-    icons: null,
+    icons: [
+      {
+        image: "/industries/real-estate/role-based-access-control-icon.png",
+        width: 240,
+        height: 34,
+        link: null,
+      },
+      {
+        image: "/industries/real-estate/encryption-in-transit-icon.png",
+        width: 230,
+        height: 34,
+        link: null,
+      },
+    ],
   },
 ];
+
+// role-based-access-control-icon

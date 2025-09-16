@@ -3,6 +3,33 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+export const mobile_app_icons = [
+  {
+    image: "/industries/healthcare/react-icon.png",
+    width: 84,
+    height: 34,
+    link: `/development-technologies/react-native-app-development`,
+  },
+  {
+    image: "/on-demand-talent/flutter-icon.webp",
+    width: 84,
+    height: 34,
+    link: `/development-technologies/flutter-app-development`,
+  },
+  {
+    image: "/on-demand-talent/kotlin-icon.webp",
+    width: 84,
+    height: 34,
+    link: `/development-technologies/kotlin-app-development`,
+  },
+  {
+    image: "/on-demand-talent/swift-icon.webp",
+    width: 84,
+    height: 34,
+    link: `/development-technologies/swift-app-development`,
+  },
+];
+
 const RealEstateTech = () => {
   return (
     <section className="w-full py-20 midlg:py-32 bg-[#fff] padding-x overflow-hidden">
@@ -70,16 +97,21 @@ const RealEstateTech = () => {
               </p>
             </div>
             <div className="w-full min-h-[80px] flex items-start flex-wrap gap-2">
-              <Link href={`/development-technologies/flutter-app-development`}>
-                <Image
-                  src={`/industries/healthcare/flutter-icon.png`}
-                  width={86}
-                  height={34}
-                  alt={` icon`}
-                  className=""
-                />
-              </Link>
-              <Link
+              {mobile_app_icons?.map((i, index) => {
+                return (
+                  <Link href={i?.link}>
+                    <Image
+                      src={i?.image}
+                      width={i?.width}
+                      height={i?.height}
+                      alt={`icon`}
+                      className=""
+                    />
+                  </Link>
+                );
+              })}
+
+              {/* <Link
                 href={`/development-technologies/react-native-app-development`}
               >
                 <Image
@@ -107,7 +139,7 @@ const RealEstateTech = () => {
                   alt={` icon`}
                   className=""
                 />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

@@ -12,9 +12,10 @@ const Services = () => {
         </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          Here's a polished App Development Services section tailored for your
-          Florida-based software development brand, incorporating your keywords
-          naturally while maintaining readability and local relevance:
+          Check out our software development services in Florida, where we build
+          custom solutions that fit your business needs. We provide multiple
+          software services, offering full-scale development. we work on your
+          ideas with speed and reliability.
         </p>
       </section>
 

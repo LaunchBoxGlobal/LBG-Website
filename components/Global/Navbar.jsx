@@ -169,6 +169,13 @@ const Navbar = () => {
                   >
                     Healthcare Software Development
                   </Link>
+                  <Link
+                    href={`/real-estate`}
+                    onClick={toggleIndustriesDropdown}
+                    className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
+                  >
+                    Real Estate App Development
+                  </Link>
                 </ul>
               </div>
               {/* <NavbarDropdown closeDropdown={toggleIndustriesDropdown} /> */}

@@ -197,10 +197,16 @@ const Sidebar = ({ onclose }) => {
                     onClick={() =>
                       handleNavigate(`/healthcare-software-development`)
                     }
-                    // href={`/services/mobile-app-development-services`}
                     className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
                   >
                     Healthcare Software Development
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleNavigate(`/real-estate`)}
+                    className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
+                  >
+                    Real Estate
                   </button>
                 </li>
               </ul>
