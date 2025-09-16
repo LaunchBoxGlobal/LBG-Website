@@ -109,7 +109,7 @@ const RealEstateFeatures = () => {
               onClick={() => handleChangeFeature(tab?.title)}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`flex items-center text-start gap-2 lg:w-[200px] px-5 py-2.5 rounded-lg mx-auto transition-all duration-300 group min-h-[100px] lg:min-w-[150px] ${
+              className={`flex items-center text-start gap-2 w-full px-5 py-2.5 rounded-lg mx-auto transition-all duration-300 group min-h-[100px] ${
                 isActive
                   ? "bg-[#F40E00] text-white"
                   : "bg-[#f9f9f9] hover:bg-[#F40E00] hover:text-white"
