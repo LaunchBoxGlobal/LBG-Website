@@ -196,15 +196,15 @@ const RealEstateFeatures = () => {
         </div>
         <div className="hidden lg:flex justify-center items-center lg:w-[40%]">
           {activeFeatues === "Smart Property Listings & Search" ? (
-            <>
+            <div className="max-w-[260px] min-h-[500px] overflow-hidden rounded-[40px]">
               <Image
                 src={"/industries/real-estate/real-estate-features-mockup.png"}
-                alt="patient-screen-mobile-mockup"
+                alt="real-estate-features-mockup"
                 width={260}
                 height={490}
-                className="object-contain lg:min-h-[500px] mx-auto"
+                className="object-contain lg:min-h-[500px] max-w-[260px] mx-auto"
               />
-            </>
+            </div>
           ) : activeFeatues === "Agent & Broker CRM Automation" ? (
             <>
               <Image
@@ -238,50 +238,58 @@ const RealEstateFeatures = () => {
           ) : activeFeatues === "Tenant & Landlord Management Portals" ? (
             <>
               <Image
-                src={"/industries/real-estate/real-estate-features-mockup.png"}
-                alt="patient-screen-mobile-mockup"
-                width={260}
-                height={490}
+                src={
+                  "/industries/real-estate/tenant-and-landlored-management-mockup.png"
+                }
+                alt="tenant-and-landlored-management-mockup"
+                width={512}
+                height={288}
                 className="object-contain lg:min-h-[500px] mx-auto"
               />
             </>
           ) : activeFeatues === "Property Management Dashboards" ? (
             <>
               <Image
-                src={"/industries/real-estate/real-estate-features-mockup.png"}
-                alt="patient-screen-mobile-mockup"
-                width={260}
-                height={490}
+                src={
+                  "/industries/real-estate/property-management-dashboards-mockup.png"
+                }
+                alt="property-management-dashboards-mockup"
+                width={430}
+                height={270}
                 className="object-contain lg:min-h-[500px] mx-auto"
               />
             </>
           ) : activeFeatues === "Analytics & Investment Tools" ? (
             <>
               <Image
-                src={"/industries/real-estate/real-estate-features-mockup.png"}
-                alt="patient-screen-mobile-mockup"
-                width={260}
-                height={490}
+                src={
+                  "/industries/real-estate/analytics-and-investment-tools-mockup.png"
+                }
+                alt="analytics-and-investment-tools-mockup"
+                width={545}
+                height={419}
                 className="object-contain lg:min-h-[500px] mx-auto"
               />
             </>
           ) : activeFeatues === "Secure e-Signatures & Document Management" ? (
             <>
               <Image
-                src={"/industries/real-estate/real-estate-features-mockup.png"}
-                alt="patient-screen-mobile-mockup"
-                width={260}
-                height={490}
+                src={
+                  "/industries/real-estate/secure-document-management-mockup.png"
+                }
+                alt="secure-document-management-mockup"
+                width={501}
+                height={375}
                 className="object-contain lg:min-h-[500px] mx-auto"
               />
             </>
           ) : (
             <>
               <Image
-                src={"/industries/real-estate/real-estate-features-mockup.png"}
-                alt="patient-screen-mobile-mockup"
-                width={260}
-                height={490}
+                src={"/industries/real-estate/property-financing-mockup.png"}
+                alt="property-financing-mockup"
+                width={430}
+                height={278}
                 className="object-contain lg:min-h-[500px] mx-auto"
               />
             </>
