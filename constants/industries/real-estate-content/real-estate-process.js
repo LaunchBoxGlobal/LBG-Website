@@ -1,7 +1,7 @@
 export const REAL_ESTATE_AGILE_PROCESS = [
   {
-    icon: "/locations/mobile-app-developer/discovery-and-planning-icon.png",
-    iconWidth: 40,
+    icon: "/industries/real-estate/discovery-and-planning-icon.png",
+    iconWidth: 27,
     iconHeight: 34,
     alt_tag:
       "Software development agency AURLEN showcasing clean modern logo design for tech branding solutions",
@@ -11,8 +11,8 @@ export const REAL_ESTATE_AGILE_PROCESS = [
       "We begin by understanding your client’s requirements, business goals, and market needs. From there, we define project scope, create user stories, and prioritize features using a product backlog. This structured planning shapes a clear development roadmap, ensuring your real estate platform evolves into custom solutions that are reliable and aligned with everyday property operations.",
   },
   {
-    icon: "/locations/mobile-app-developer/designing-and-prototyping-icon.png",
-    iconWidth: 34,
+    icon: "/industries/real-estate/design-and-prototyping-icon.png",
+    iconWidth: 39,
     iconHeight: 34,
     alt_tag: "",
     title: "Design & Prototyping",
@@ -21,7 +21,7 @@ export const REAL_ESTATE_AGILE_PROCESS = [
       "In this stage, we focus on wireframing, UI/UX design, and building interactive prototypes. By gathering early client feedback, we refine designs before moving into full development. This step is crucial in developing real estate application development that balances functionality and accessibility, ensuring agents, buyers, and tenants enjoy a smooth experience from the start.",
   },
   {
-    icon: "/locations/mobile-app-developer/agile-development-icon.png",
+    icon: "/industries/real-estate/agile-development-icon.png",
     iconWidth: 34,
     iconHeight: 34,
     alt_tag: "",
@@ -31,7 +31,7 @@ export const REAL_ESTATE_AGILE_PROCESS = [
       "We follow an agile approach by breaking work into short sprints where features are developed, tested, and refined. Daily stand-ups keep progress on track, while continuous integration and deployment (CI/CD) ensure reliable delivery. This flexible method makes real estate app development solutions more transparent, responsive, and adaptive to both client needs and market feedback.",
   },
   {
-    icon: "/locations/mobile-app-developer/quality-assurance-icon.png",
+    icon: "/industries/real-estate/quality-assurance-icon.png",
     iconWidth: 34,
     iconHeight: 34,
     alt_tag: "",
@@ -41,7 +41,7 @@ export const REAL_ESTATE_AGILE_PROCESS = [
       "As part of our QA process, we handle unit testing, integration testing, and bug fixes to ensure your solution is stable. We also run usability testing to validate smooth user interactions and optimize for both performance and safety. With this approach, real estate mobile app development company projects deliver dependable, user-friendly platforms that clients and agents can trust.",
   },
   {
-    icon: "/locations/mobile-app-developer/sprint-demos-icon.png",
+    icon: "/industries/real-estate/sprint-demos-icon.png",
     iconWidth: 34,
     iconHeight: 34,
     alt_tag: "",
@@ -51,8 +51,8 @@ export const REAL_ESTATE_AGILE_PROCESS = [
       "During sprint demos, we showcase the outcomes of each cycle for client validation and collect feedback to guide the next sprint. This collaborative process ensures that features evolve in response to authentic feedback and market needs. As experienced real estate app developers, we ensure your solution remains aligned with usability, performance, and business goals at every step.",
   },
   {
-    icon: "/locations/mobile-app-developer/deployement-and-launch-icon.png",
-    iconWidth: 34,
+    icon: "/industries/real-estate/deployement-launch-icon.png",
+    iconWidth: 44,
     iconHeight: 34,
     alt_tag: "",
     title: "Deployment & Launch",
@@ -61,8 +61,8 @@ export const REAL_ESTATE_AGILE_PROCESS = [
       "In the deployment and launch stage, our team runs final rounds of testing before publishing your solution to web and mobile platforms. After launch, we closely monitor performance to ensure stability and a smooth user experience. With our expertise in real estate app development services, your platform is protected, reliable, and market-ready.",
   },
   {
-    icon: "/locations/mobile-app-developer/post-launch-support-icon.png",
-    iconWidth: 34,
+    icon: "/industries/real-estate/post-launch-support-icon.png",
+    iconWidth: 41,
     iconHeight: 34,
     alt_tag: "",
     title: "Post-Launch Support",

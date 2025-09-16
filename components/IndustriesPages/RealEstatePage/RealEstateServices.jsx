@@ -44,8 +44,8 @@ const RealEstateServices = () => {
         <div className="w-full md:w-[45%] lg:w-[30%] midlg:w-[23%] min-h-[450px] bg-[#F6F6F6] rounded-[21px] p-7 flex flex-col items-start text-start gap-3 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300">
           <div className="w-full">
             <img
-              src="/industries/healthcare/ongoing-optimization-icon.png"
-              width={53}
+              src="/industries/real-estate/web-portals-icon.png"
+              width={56}
               height={53}
               alt="web portals for agencts and agencies icon"
               className="object-contain transition duration-300 group-hover:invert group-hover:brightness-0"

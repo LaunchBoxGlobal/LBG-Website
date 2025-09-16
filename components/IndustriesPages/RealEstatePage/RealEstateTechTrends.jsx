@@ -5,11 +5,11 @@ const RealEstateTechTrends = () => {
   return (
     <section className="w-full py-20 midlg:py-32 midlg:pt-48 xl:pt-56 bg-[#fff] padding-x overflow-hidden">
       <div className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <h2 className="section-heading lg:w-[90%] mx-auto">
+        <h2 className="section-heading lg:w-[80%] mx-auto">
           Real Estate Tech Trends <span className="red-text">for 2025</span>
         </h2>
 
-        <p className="section-paragraph lg:w-[90%] mx-auto">
+        <p className="section-paragraph lg:w-[85%] mx-auto">
           Stay ahead of the curve with the latest real estate tech trends for
           2025. These tech innovations are shaping how agents, buyers, and
           investors interact with the market.
