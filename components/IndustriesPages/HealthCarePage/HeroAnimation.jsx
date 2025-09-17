@@ -99,7 +99,6 @@ const HeroAnimation = () => {
           height={663}
           className="relative z-20 w-full h-auto"
         />
-        {/* woineofeno */}
         <div
           className="
       absolute left-1/2 -translate-x-1/2 
