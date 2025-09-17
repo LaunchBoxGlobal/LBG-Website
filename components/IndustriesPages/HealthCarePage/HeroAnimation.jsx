@@ -100,7 +100,6 @@ const HeroAnimation = () => {
           className="relative z-20 w-full h-auto"
         />
 
-        {/* Screen slider */}
         <div
           className="
       absolute left-1/2 -translate-x-1/2 
