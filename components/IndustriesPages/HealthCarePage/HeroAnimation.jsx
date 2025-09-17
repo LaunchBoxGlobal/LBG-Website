@@ -1,9 +1,17 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const HeroAnimation = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
-    <div className="w-full max-w-[1366px] h-[250px] md:h-[350px] midlg:h-[569px] relative flex flex-col items-center justify-center">
+    <div className="w-full max-w-[1366px] h-[250px] md:h-[350px] midlg:h-[549px] relative flex flex-col items-center justify-center">
+      {/* Background line */}
       <Image
         src={"/industries/healthcare/hero-section-border-lines.png"}
         alt="hero-section-border-lines"
@@ -11,29 +19,136 @@ const HeroAnimation = () => {
         height={619}
         className="absolute left-1/2 -translate-x-1/2 top-0 lg:-top-20 z-0"
       />
+
+      {/* Stethoscope */}
       <Image
-        src="/industries/healthcare/heart-image.png"
-        alt="heart-image"
-        width={714}
-        height={474}
-        className="z-10 md:w-[500px] lg:w-[550px] midlg:w-[700px] xl:w-[800px]"
+        src={`/industries/healthcare/stethoscope.png`}
+        alt="stethoscope"
+        width={1365}
+        height={780}
+        className="absolute left-1/2 -translate-x-1/2 bottom-0 z-10 lg:w-[85%] midlg:w-auto max-w-[95%]"
       />
-      {/* table-design.png */}
+
+      {/* ---- Screen 1 cards ---- */}
       <Image
-        src={"/industries/healthcare/table-design.png"}
-        alt="table-design"
-        width={346}
-        height={188}
-        className="object-contain absolute bottom-[8%] left-0 z-10 hidden lg:block lg:w-[260px] midlg:w-[320px] xl:w-auto max-w-[340px]"
+        src={`/industries/healthcare/screen-one-card-1.png`}
+        alt="screen-one-card-1"
+        width={174}
+        height={154}
+        className={`absolute right-[-3%] bottom-[10%] z-10 transition-opacity duration-700 ${
+          activeIndex === 0 ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
       />
-      {/* appointment-icon */}
       <Image
-        src={"/industries/healthcare/appointment-icon.png"}
-        alt="appointment icon"
-        width={141}
-        height={50}
-        className="absolute right-0 lg:right-[8%] top-0 lg:top-[10%] z-10 w-[100px] lg:w-auto midlg:max-w-[200px]"
+        src={`/industries/healthcare/screen-one-card-2.png`}
+        alt="screen-one-card-2"
+        width={183}
+        height={172}
+        className={`absolute left-[-2%] top-[20%] z-10 transition-opacity duration-700 ${
+          activeIndex === 0 ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
       />
+
+      {/* ---- Screen 2 cards ---- */}
+      <Image
+        src={`/industries/healthcare/screen-two-card-1.png`}
+        alt="screen-two-card-1"
+        width={203}
+        height={110}
+        className={`absolute right-[-3%] bottom-[10%] z-10 transition-opacity duration-700 ${
+          activeIndex === 1 ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
+      />
+      <Image
+        src={`/industries/healthcare/screen-two-card-2.png`}
+        alt="screen-two-card-2"
+        width={167}
+        height={179}
+        className={`absolute left-[-2%] top-[20%] z-10 transition-opacity duration-700 ${
+          activeIndex === 1 ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
+      />
+
+      {/* ---- Screen 3 cards ---- */}
+      <Image
+        src={`/industries/healthcare/screen-three-card-1.png`}
+        alt="screen-three-card-1"
+        width={147}
+        height={174}
+        className={`absolute right-[-3%] bottom-[10%] z-10 transition-opacity duration-700 ${
+          activeIndex === 2 ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
+      />
+      <Image
+        src={`/industries/healthcare/screen-three-card-2.png`}
+        alt="screen-three-card-2"
+        width={191}
+        height={174}
+        className={`absolute left-[-2%] top-[20%] z-10 transition-opacity duration-700 ${
+          activeIndex === 2 ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
+      />
+
+      {/* iPad + Slider */}
+      <div className="mt-16 relative mx-auto w-full max-w-[857px] z-20 border-4 border-green-500">
+        {/* iPad mockup */}
+        <Image
+          src="/industries/healthcare/ipad-pro-space-gray-landscape.png"
+          alt="iPad mockup"
+          width={857}
+          height={663}
+          className="relative z-20 w-full h-auto"
+        />
+
+        {/* Screen slider */}
+        <div
+          className="
+      absolute left-1/2 -translate-x-1/2 
+      top-[3%] sm:top-[4%] md:top-[5%] lg:top-[6%] xl:top-[4%]
+      w-[94%] sm:w-[93%] md:w-[92%] lg:w-[91%]
+      h-[82%] sm:h-[83%] md:h-[84%] lg:h-[85%]
+      rounded-t-[12px] md:rounded-t-[15px]
+      overflow-hidden z-10
+    "
+        >
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            loop
+            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+            className="w-full h-full"
+          >
+            <SwiperSlide>
+              <Image
+                src="/industries/healthcare/screen-1.png"
+                alt="screen 1"
+                width={791}
+                height={593}
+                className="w-full"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/industries/healthcare/screen-2.png"
+                alt="screen 2"
+                width={791}
+                height={593}
+                className="w-full"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/industries/healthcare/screen-3.png"
+                alt="screen 3"
+                width={791}
+                height={593}
+                className="w-full"
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
     </div>
   );
 };
