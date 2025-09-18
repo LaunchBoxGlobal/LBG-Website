@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Tech = () => {
   return (
-    <section className="w-full py-20 midlg:py-32 xl:py-40 bg-[#fff] padding-x">
+    <section className="w-full py-20 midlg:py-28 bg-[#fff] padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading lg:w-[80%] mx-auto">
           The Tech Behind Your <span className="red-text">Mobile Apps</span>

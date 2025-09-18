@@ -25,6 +25,7 @@ import {
   MOBILE_APP_DEV_AUSTIN_WHY_CHOOSE_US_2,
 } from "@/constants/locations/mobile-app-development-austin/mobile-app-dev-austin-why-choose-us";
 import AustinFaqs from "./AustinFaqs";
+import Industries from "./Industries";
 
 const MobileAppDeveloperAustinPage = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -37,6 +38,7 @@ const MobileAppDeveloperAustinPage = () => {
         description={`We’re a leading mobile app development company in Austin, built on the belief that great apps come from a mix of creativity, strategy, and community connection. Our team of designers, Austin mobile developers, and strategists is dedicated to shaping ideas into apps that feel easy to use, reliable, and ready to grow. Being part of Austin’s dynamic tech hub keeps us inspired and grounded. We understand the local business landscape, the people, and the culture that drive progress here. That’s why businesses across Austin trust us not just as developers, but as partners who care about long-term success. For us, every project is more than code; it’s about creating meaningful digital experiences that reflect Austin’s spirit of forward thinking.`}
       />
       <Services />
+      <Industries />
       <Benefits
         heading={`Key Benefits of Mobile Apps for `}
         colorfulText={`Austin Businesses`}

@@ -7,7 +7,7 @@ const EngagementModel = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section className="w-full padding-x pt-10 lg:py-20 relative overflow-hidden">
+    <section className="w-full padding-x pt-10 lg:pt-20 lg:pb-14 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
         <h2 className="section-heading w-full">
           Flexible Engagement Models for Texas-Based{" "}
