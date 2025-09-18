@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const CTA = () => {
   return (
     <section className="w-full padding-x py-20 relative">
-      <div className="w-full lg:h-[600px] bg-black relative rounded-[17px] flex items-center justify-between flex-wrap gap-10 pb-4">
+      <div className="w-full lg:h-[600px] bg-black relative rounded-[17px] flex items-center justify-between flex-wrap gap-y-8">
         <div className="w-full md:w-[55%] py-10 px-7 lg:pl-20 flex flex-col items-start justify-center lg:h-full">
           <h2 className="text-white text-3xl lg:text-[50px] font-bold leading-[1]">
             Transform Patient Care With Our{" "}
@@ -29,13 +30,15 @@ const CTA = () => {
             </Link>
           </div>
         </div>
-        <img
-          src="/industries/healthcare/cta-mockup.png"
-          alt="cta-mockup"
-          width={551}
-          height={437}
-          className="object-contain md:absolute right-0 top-0 md:w-[55%] lg:w-[45%] midlg:w-[48%]"
-        />
+        <div className="w-full md:w-[40%] h-full flex justify-start items-end pr-4 relative">
+          <Image
+            src="/industries/healthcare/cta-mobile-mockup.png"
+            alt="cta-mockup"
+            width={391}
+            height={479}
+            className="object-contain"
+          />
+        </div>
       </div>
     </section>
   );
