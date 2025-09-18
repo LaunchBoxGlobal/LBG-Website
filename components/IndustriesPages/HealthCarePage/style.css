@@ -19,3 +19,7 @@
     transform: scale(1);
   }
 }
+
+.blurry-gradient {
+  filter: blur(20px);
+}

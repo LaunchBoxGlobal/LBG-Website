@@ -13,21 +13,21 @@ const HeroAnimation = () => {
     <div className="w-full max-w-[1366px] h-[250px] md:h-[380px] lg:h-[549px] relative flex flex-col items-center justify-center">
       {/* Background line */}
       <Image
-        src={"/industries/healthcare/hero-section-border-lines.png"}
+        src={"/industries/healthcare/stethoscope-and-borders-image.png"}
         alt="hero-section-border-lines"
         width={1043}
         height={619}
-        className="absolute left-1/2 -translate-x-1/2 top-0 lg:-top-20 z-0"
+        className="absolute left-1/2 -translate-x-1/2 top-0 lg:-top-20 z-0 w-full hidden lg:block"
       />
 
       {/* Stethoscope */}
-      <Image
+      {/* <Image
         src={`/industries/healthcare/stethoscope.png`}
         alt="stethoscope"
         width={1365}
         height={780}
         className="absolute left-1/2 -translate-x-1/2 bottom-0 z-10 hidden lg:block w-full lg:w-[85%] midlg:w-auto max-w-[95%]"
-      />
+      /> */}
 
       {/* ---- Screen 1 cards ---- */}
       <Image
