@@ -10,7 +10,7 @@ const HeroAnimation = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full max-w-[1366px] h-[250px] md:h-[350px] midlg:h-[549px] relative flex flex-col items-center justify-center">
+    <div className="w-full max-w-[1366px] h-[250px] md:h-[380px] lg:h-[549px] relative flex flex-col items-center justify-center">
       {/* Background line */}
       <Image
         src={"/industries/healthcare/hero-section-border-lines.png"}
@@ -26,7 +26,7 @@ const HeroAnimation = () => {
         alt="stethoscope"
         width={1365}
         height={780}
-        className="absolute left-1/2 -translate-x-1/2 bottom-0 z-10 lg:w-[85%] midlg:w-auto max-w-[95%]"
+        className="absolute left-1/2 -translate-x-1/2 bottom-0 z-10 hidden lg:block w-full lg:w-[85%] midlg:w-auto max-w-[95%]"
       />
 
       {/* ---- Screen 1 cards ---- */}
@@ -90,29 +90,29 @@ const HeroAnimation = () => {
       />
 
       {/* iPad + Slider */}
-      <div className="mt-16 relative mx-auto w-full max-w-[857px] z-20 border-4 border-green-500">
+      <div className="mt-16 relative mx-auto w-full max-w-[857px] h-[663px] z-20">
         {/* iPad mockup */}
         <Image
           src="/industries/healthcare/ipad-pro-space-gray-landscape.png"
           alt="iPad mockup"
-          width={857}
-          height={663}
-          className="relative z-20 w-full h-auto"
+          width={791}
+          height={593}
+          className="relative z-20 mx-auto w-full md:w-[87%] lg:w-[80%] midlg:w-[92%] h-full"
         />
         <div
           className="
       absolute left-1/2 -translate-x-1/2 
-      top-[3%] sm:top-[4%] md:top-[5%] lg:top-[6%] xl:top-[4%]
-      w-[94%] sm:w-[93%] md:w-[92%] lg:w-[91%]
-      h-[82%] sm:h-[83%] md:h-[84%] lg:h-[85%]
+      top-[3%]
+      w-[94%] sm:w-[93%] md:w-[82%] lg:w-[77%] midlg:w-[86%] h-full
+      
       rounded-t-[12px] md:rounded-t-[15px]
       overflow-hidden z-10
     "
         >
           <Swiper
-            modules={[Autoplay, Pagination]}
+            modules={[Autoplay]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            pagination={{ clickable: true }}
+            pagination={{ clickable: false }}
             loop
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             className="w-full h-full"
@@ -123,7 +123,7 @@ const HeroAnimation = () => {
                 alt="screen 1"
                 width={791}
                 height={593}
-                className="w-full"
+                className="w-full h-full"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -132,7 +132,7 @@ const HeroAnimation = () => {
                 alt="screen 2"
                 width={791}
                 height={593}
-                className="w-full"
+                className="w-full h-full"
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -141,7 +141,7 @@ const HeroAnimation = () => {
                 alt="screen 3"
                 width={791}
                 height={593}
-                className="w-full"
+                className="w-full h-full"
               />
             </SwiperSlide>
           </Swiper>
