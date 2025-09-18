@@ -33,7 +33,6 @@ export const TECH_STACK_AND_STANDARDS = [
       },
     ],
   },
-
   {
     title: "Backend Development",
     description:

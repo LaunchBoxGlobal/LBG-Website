@@ -55,7 +55,7 @@ export const ON_DEMAND_BENEFITS = [
     description:
       "Access specialized skills for short-term needs. From blockchain to AI, we connect you with experts for any project requirement.",
     descriptionBg: "#4E4D4F",
-    icon: "/staff-augmentation/flexibile-scaling-icon.webp",
+    icon: "/industry-specific-expertise-white-icon.webp",
     iconWidth: "42",
     iconHeight: "32",
   },

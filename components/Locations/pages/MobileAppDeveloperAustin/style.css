@@ -1,0 +1,6 @@
+.red-blurry-gradient {
+  width: 100vw;
+  height: 90vw;
+  background-color: #ff7d754a;
+  filter: blur(100px);
+}
