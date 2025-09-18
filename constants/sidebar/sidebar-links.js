@@ -91,6 +91,10 @@ export const locationLinks = [
     pageUrl: "/mobile-app-development-company-in-texas",
   },
   {
+    title: "Mobile App Development in Austin",
+    pageUrl: "/mobile-app-development-in-austin",
+  },
+  {
     title: "Digital Marketing Company in wyoming",
     pageUrl: "/wyoming-digital-company",
   },
