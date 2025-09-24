@@ -109,7 +109,7 @@ const RealEstateFeatures = () => {
               onClick={() => handleChangeFeature(tab?.title)}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`flex items-center text-start gap-2 w-full px-5 py-2.5 rounded-lg mx-auto transition-all duration-300 group min-h-[100px] ${
+              className={`flex flex-col items-center gap-2 w-full p-5 text-center rounded-lg mx-auto transition-all duration-300 group min-h-[100px] ${
                 isActive
                   ? "bg-[#F40E00] text-white"
                   : "bg-[#f9f9f9] hover:bg-[#F40E00] hover:text-white"
@@ -123,7 +123,7 @@ const RealEstateFeatures = () => {
                 height={tab?.height}
               />
 
-              <span className="text-base leading-[1.1] font-medium">
+              <span className="text-base leading-[1.1] font-medium lg:w-[70%]">
                 {tab?.title}
               </span>
             </button>

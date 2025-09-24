@@ -15,7 +15,6 @@ import {
   MOBILE_APP_DEVELOPMENT_AUSTIN_WATERFALL_PROCESS,
 } from "@/constants/locations/mobile-app-development-austin/mobile-app-development-austin-workflow";
 import CaseStudies from "../MobileAppDeveloper/CaseStudies";
-import { projects } from "@/constants/mobile-app-development/Projects";
 import { MOBILE_APP_DEVELOPMENT_AUSTIN_CASE_STUDIES } from "@/constants/locations/mobile-app-development-austin/mobile-app-development-austin-case-studies";
 import PortfolioParallexCards from "@/components/Common/PortfolioParallexCards";
 import Tech from "./Tech";
