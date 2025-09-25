@@ -7,7 +7,7 @@ import axios from "axios";
 import Link from "next/link";
 import ButtonLoader from "@/components/Global/ButtonLoader";
 
-const RealEstateContactForm = ({ title, buttonTitle }) => {
+const CtaForm = ({ title, buttonTitle }) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -66,23 +66,8 @@ const RealEstateContactForm = ({ title, buttonTitle }) => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="w-full bg-black rounded-2xl p-5 lg:p-10 xl:p-16 text-white"
+      className="w-full bg-transparent z-20 text-white py-5 lg:pb-14"
     >
-      <div className="w-full">
-        <h2 className="text-2xl md:text-[45px] lg:text-[40px] xl:text-[45px] leading-none font-bold tracking-tight">
-          Grow Your Real Estate Business{" "}
-          <span className="red-text">With Us</span>
-        </h2>
-        <p className="text-base text-gray-300 mt-4">
-          <span className="leading-[1]">
-            Take your real estate business to the next level with LaunchBox
-            Global. We build smart, user-friendly, and reliable apps that make
-            property management, investments, and client interactions simple and
-            interactive. Work with us and see your ideas turning into
-            market-ready products that work well.
-          </span>
-        </p>
-      </div>
       <div className="w-full mt-10 flex flex-col items-start gap-3 lg:gap-5">
         <div className="w-full">
           <label
@@ -98,7 +83,7 @@ const RealEstateContactForm = ({ title, buttonTitle }) => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.firstName}
-            className="pb-2 pt-1 block w-full border-b border-gray-400 lg:text-lg outline-none bg-black"
+            className="pb-2 pt-1 block w-full border-b border-gray-400 lg:text-lg outline-none bg-transparent z-20"
           />
           <div className="w-full">
             {formik.touched.firstName && formik.errors.firstName ? (
@@ -122,7 +107,7 @@ const RealEstateContactForm = ({ title, buttonTitle }) => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className="pb-2 pt-1 block w-full border-b border-gray-400 bg-black lg:text-lg outline-none"
+            className="pb-2 pt-1 block w-full border-b border-gray-400 bg-transparent z-20 lg:text-lg outline-none"
           />
           <div className="w-full">
             {formik.touched.email && formik.errors.email ? (
@@ -144,7 +129,7 @@ const RealEstateContactForm = ({ title, buttonTitle }) => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.phoneNumber}
-            className="pb-2 pt-1 block w-full border-b border-gray-400 bg-black lg:text-lg outline-none"
+            className="pb-2 pt-1 block w-full border-b border-gray-400 bg-transparent z-20 lg:text-lg outline-none"
           />
           <div className="w-full">
             {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
@@ -163,7 +148,7 @@ const RealEstateContactForm = ({ title, buttonTitle }) => {
           />
           <label
             htmlFor="agreeToTermsConditions"
-            className="leading-[1.3] text-sm relative -top-0.5 text-gray-400"
+            className="leading-[1.3] text-xs lg:text-sm relative -top-0.5 text-gray-400"
           >
             By checking this box, I agree to receive SMS from LaunchBox Global
             at the phone number provided. Msg & data rates may apply. Msg
@@ -197,4 +182,4 @@ const RealEstateContactForm = ({ title, buttonTitle }) => {
   );
 };
 
-export default RealEstateContactForm;
+export default CtaForm;

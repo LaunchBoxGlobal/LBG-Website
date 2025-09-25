@@ -17,7 +17,10 @@ const Features = () => {
   return (
     <section className="w-full py-20 bg-[#fff] padding-x overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <h2 className="section-heading lg:w-[90%] mx-auto">Features</h2>
+        <h2 className="section-heading lg:w-[90%] mx-auto">
+          Top Features of Our{" "}
+          <span className="red-text">Healthcare Solutions</span>
+        </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
           Our healthcare applications are built on a foundation of

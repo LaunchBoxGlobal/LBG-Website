@@ -163,18 +163,25 @@ const Navbar = () => {
                 <p className="text-lg font-medium">Industries</p>
                 <ul className="space-y-1 mt-3 flex flex-col items-start">
                   <Link
-                    href={`/healthcare-software-development`}
+                    href={`/industries/healthcare-software-development`}
                     onClick={toggleIndustriesDropdown}
                     className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
                   >
                     Healthcare Software Development
                   </Link>
                   <Link
-                    href={`/real-estate`}
+                    href={`/industries/real-estate`}
                     onClick={toggleIndustriesDropdown}
                     className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
                   >
                     Real Estate App Development
+                  </Link>
+                  <Link
+                    href={`/industries/ecommerce-app-development`}
+                    onClick={toggleIndustriesDropdown}
+                    className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
+                  >
+                    Ecommerce App Development
                   </Link>
                 </ul>
               </div>

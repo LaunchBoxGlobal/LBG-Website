@@ -9,7 +9,7 @@ const MidPageCta = () => {
         <div className="w-full md:w-[50%] py-10 px-7 lg:pl-14 flex flex-col items-start justify-center lg:h-full">
           <h2 className="text-white text-3xl lg:text-[40px] xl:text-[50px] font-bold leading-[1]">
             Your Real Estate Goals Deserve{" "}
-            <span className="red-text">Powerful Tools</span> Services
+            <span className="red-text">Powerful Tools</span>
           </h2>
           <p className="text-gray-200 text-sm md:text-base xl:text-lg leading-none mt-4">
             Looking to connect traditional property dealings with modern digital

@@ -38,7 +38,7 @@ const Tech = () => {
                     {talent?.description}
                   </p>
                 </div>
-                <div className="w-full flex items-start justify-start flex-wrap gap-2 items min-h-[180px]">
+                <div className="w-full min-h-[130px] flex items-end flex-wrap gap-2">
                   {talent?.icons?.map((ic, ind) => {
                     return (
                       <Image
@@ -101,7 +101,7 @@ const Tech = () => {
                 smoothly across different devices.
               </p>
             </div>
-            <div className="w-full min-h-[80px] flex items-start flex-wrap gap-2">
+            <div className="w-full min-h-[80px] flex items-end flex-wrap gap-2">
               <Link href={`/development-technologies/flutter-app-development`}>
                 <Image
                   src={`/industries/healthcare/flutter-icon.png`}

@@ -1,4 +1,5 @@
 import { HEALTHCARE_SOLUTION_PHILOSOPHY } from "@/constants/industries/healthcare-page-content/solution-philosophy";
+import Link from "next/link";
 import React from "react";
 
 const RealEstateAppDevelopmentStrategy = () => {
@@ -19,10 +20,43 @@ const RealEstateAppDevelopmentStrategy = () => {
       </section>
 
       <div className="w-full flex items-center justify-center flex-wrap gap-8 mt-16">
+        <div className="w-full md:w-[45%] lg:w-[30%] lg:h-[580px] midlg:h-[530px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-center gap-3 relative group hover:scale-[1.05] transition-all duration-300 text-center">
+          <div className="w-full">
+            <img
+              src={`/industries/healthcare/functionality-first-approach-icon.png`}
+              alt={`functionality first approach icon`}
+              width={175}
+              height={175}
+              className="mx-auto object-contain"
+            />
+          </div>
+          <h3 className="font-semibold text-[22px] leading-none mt-5 text-center">
+            Functionality-First
+          </h3>
+          <p className="text-lg leading-[1.2]">
+            Unlike typical platforms, our{" "}
+            <Link
+              href={`/services/custom-software-development`}
+              className="underline"
+            >
+              software
+            </Link>{" "}
+            and{" "}
+            <Link
+              href={`/services/mobile-app-development`}
+              className="underline"
+            >
+              mobile app development
+            </Link>{" "}
+            for real estate focuses on both functionality and user experience.
+            We build apps that simplify property search, facilitate listings
+            management, and make client interactions interactive and efficient.
+          </p>
+        </div>
         {HEALTHCARE_SOLUTION_PHILOSOPHY?.map((t, i) => {
           return (
             <div
-              className="w-full md:w-[45%] lg:w-[30%] lg:h-[580px] midlg:min-h-[540px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-center gap-3 relative group hover:scale-[1.05] transition-all duration-300 text-center"
+              className="w-full md:w-[45%] lg:w-[30%] lg:h-[580px] midlg:h-[530px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-10 flex flex-col items-center gap-3 relative group hover:scale-[1.05] transition-all duration-300 text-center"
               key={i}
             >
               <div className="w-full">

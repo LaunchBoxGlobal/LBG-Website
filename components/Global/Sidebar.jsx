@@ -195,7 +195,9 @@ const Sidebar = ({ onclose }) => {
                   <button
                     type="button"
                     onClick={() =>
-                      handleNavigate(`/healthcare-software-development`)
+                      handleNavigate(
+                        `/industries/healthcare-software-development`
+                      )
                     }
                     className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
                   >
@@ -203,7 +205,7 @@ const Sidebar = ({ onclose }) => {
                   </button>
                   <button
                     type="button"
-                    onClick={() => handleNavigate(`/real-estate`)}
+                    onClick={() => handleNavigate(`/industries/real-estate`)}
                     className={`font-normal text-[15px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
                   >
                     Real Estate

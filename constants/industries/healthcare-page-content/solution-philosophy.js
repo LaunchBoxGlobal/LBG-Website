@@ -1,13 +1,13 @@
 export const HEALTHCARE_SOLUTION_PHILOSOPHY = [
-  {
-    title: "Functionality-First",
-    description:
-      "Unlike typical platforms, our software and mobile app development for real estate focuses on both functionality and user experience. We build apps that simplify property search, facilitate listings management, and make client interactions interactive and efficient.",
-    image: "/industries/healthcare/functionality-first-approach-icon.png",
-    width: 175,
-    height: 175,
-    alt_tag: "functionality first approach icon",
-  },
+  // {
+  //   title: "Functionality-First",
+  //   description:
+  //     "Unlike typical platforms, our software and mobile app development for real estate focuses on both functionality and user experience. We build apps that simplify property search, facilitate listings management, and make client interactions interactive and efficient.",
+  //   image: "/industries/healthcare/functionality-first-approach-icon.png",
+  //   width: 175,
+  //   height: 175,
+  //   alt_tag: "functionality first approach icon",
+  // },
   {
     title: "Agile Development",
     description:
