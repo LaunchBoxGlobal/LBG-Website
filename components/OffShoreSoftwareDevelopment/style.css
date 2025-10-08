@@ -1,0 +1,5 @@
+.offshore-card:hover {
+  /* border: white; */
+  box-shadow: 0px 0px 20px #f40e0026;
+  transition: all 0.3s;
+}

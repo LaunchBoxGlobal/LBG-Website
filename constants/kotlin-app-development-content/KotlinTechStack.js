@@ -1,0 +1,80 @@
+export const KOTLIN_TECH_STACK = [
+  {
+    icon: "/kotlin/android-studio-icon.png",
+    title: "Android Studio",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/kotlin-programming-icon.png",
+    title: "Kotlin Programming ",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/androidx-icon.png",
+    title: "AndroidX",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/ktor-icon.png",
+    title: "Ktor",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/gradle-icon.png",
+    title: "Gradle",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/sql-delight-icon.png",
+    title: "SQLDelight",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/retrofit-icon.png",
+    title: "Retrofit",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/room-icon.png",
+    title: "Room",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/realm-icon.png",
+    title: "Realm",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/dagger-icon.png",
+    title: "Dagger",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/hilt-icon.png",
+    title: "Hilt",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/koin-icon.png",
+    title: "Koin",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+  {
+    icon: "/kotlin/coroutines-icon.png",
+    title: "Coroutines",
+    iconWidth: 32,
+    iconHeight: 30,
+  },
+];

@@ -1,0 +1,77 @@
+.blueText {
+  color: #5290f1;
+}
+
+.service-heading {
+  font-size: clamp(22px, 26px, 28px);
+}
+
+/* orbit animation 01 start */
+.orbit-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: rotateOrbit 70s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotateOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* orbit animation 01 end */
+
+.moveUpDown {
+  animation: moveUpDown 5s linear infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.moveUpDownMockup {
+  animation: moveUpDownMockup 5s linear infinite;
+}
+
+@keyframes moveUpDownMockup {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.scaleUpDown {
+  animation: scaleUpDown 10s linear infinite;
+}
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

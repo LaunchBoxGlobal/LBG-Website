@@ -1,0 +1,314 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* font-family: var(--font-outfit), serif !important; */
+  scroll-behavior: smooth;
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  @apply bg-[#fff];
+  font-family: var(--font-outfit), serif !important;
+}
+
+.red-text {
+  @apply text-[#F40E00];
+}
+
+.red-bg {
+  @apply bg-[#F40E00];
+}
+
+.padding-x {
+  @apply px-6 md:px-8 midlg:px-[10%] 2xl:px-[13%];
+}
+
+.red-btn-shadow {
+  box-shadow: #f40e0080 0px 8px 24px;
+}
+.red-btn-shadow:hover {
+  box-shadow: #3d3d3d80 0px 8px 24px;
+}
+
+.red-btn {
+  @apply bg-[#F40E00] text-white px-5 lg:px-10 py-4 lg:py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#000] transition-all duration-300;
+}
+
+.black-btn {
+  @apply bg-[#000] text-white px-5 lg:px-10 py-6 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-[22px] 2xl:text-[25px] hover:bg-[#e0443c] transition-all duration-300;
+}
+
+.section-heading {
+  @apply text-[8.6vw] md:text-[5.5vw] font-bold 2xl:font-extrabold lg:tracking-tight leading-[1];
+}
+
+.section-paragraph {
+  @apply text-base lg:text-[24px] 2xl:text-[30px] font-light lg:leading-[36px] text-gray-400;
+}
+
+.custom-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.red-shadow {
+  box-shadow: #f40e001a 0px 8px 24px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f40e00;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f40e00;
+}
+
+/* canvas {
+  width: 100% !important;
+  height: 100vh !important;
+} */
+
+.grayscale-img {
+  /* filter: grayscale(1) !important; */
+  aspect-ratio: 3/2 !important;
+}
+
+.shadow-bottom {
+  box-shadow: 0 -40px -100px rgba(0, 0, 0, 0.9);
+}
+
+.workFlowImage {
+  /* animation: animateSlide 1s ease-in-out forwards, */
+  animation: floatUpDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes animateSlide {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.custom-red-shadow {
+  /* box-shadow: #f40e00 0px 7px 29px 0px; */
+  filter: drop-shadow(0px 7px 29px #fc6058);
+}
+
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cardContainer:hover {
+  /* cursor: url("/genetic-data-svgrepo-com.svg"), auto !important; */
+  cursor: none !important;
+}
+
+/* Hide the number input arrows in Chrome, Safari, and Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes scroll {
+  /* 0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  } */
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-footer {
+  animation: scroll 60s linear infinite;
+}
+
+.benefit-section::-webkit-scrollbar {
+  /* display: none; */
+  width: 100%;
+  height: 7px;
+  margin-top: 5px;
+}
+
+/* Track */
+.benefit-section::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+/* Handle */
+.benefit-section::-webkit-scrollbar-thumb {
+  background: #F6F6F6;
+}
+
+/* Handle on hover */
+.benefit-section::-webkit-scrollbar-thumb:hover {
+  background: #F6F6F6;
+}
+
+/* .wp-block-list {
+  margin: 10px 0px 30px 0 !important;
+} */
+
+.cube-slide {
+  background-color: transparent !important;
+  border-radius: 35px !important;
+  background-color: white !important;
+}
+
+/* .swiper-slide-shadow-coverflow {
+  box-shadow: none !important;
+  background-color: white !important;
+} */
+
+.swiper-slide-shadow-right,
+.swiper-slide-shadow-left {
+  background-image: none !important;
+}
+
+.userflow-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.userflow-container::-webkit-scrollbar-thumb {
+  background: #212121;
+  width: 150px !important;
+}
+
+.userflow-container::-webkit-scrollbar-track {
+  background-color: #c7c7c7;
+}
+
+.service-heading {
+  font-size: clamp(22px, 26px, 28px);
+}
+
+.new-service-card-cta-bg {
+  background: linear-gradient(to bottom left, #c04db2, #d696df);
+}
+
+.left-item {
+  /* Prevent height collapse */
+  min-height: fit-content;
+  height: auto;
+  
+  /* Prevent distortion */
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  
+  /* Ensure consistent sizing */
+  flex-shrink: 0;
+  
+  /* Hardware acceleration */
+  will-change: transform;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Default bullets */
+.swiper-pagination-bullet {
+  background-color: #d1d5db !important; /* gray */
+  opacity: 1 !important;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px !important;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background-color: #ef4444 !important; /* red fill */
+  transform: scale(1.1);
+  padding: 2px;
+  box-shadow: 0 0 0 4px #ef4444 !important; /* outer red ring */
+}
+
+@keyframes autoHover {
+  0%, 100% {
+    transform: translateZ(var(--base-z)) scale(1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    border-color: rgba(55, 65, 81, 0.5);
+    background: linear-gradient(to bottom right, rgba(31, 41, 55, 0.4), rgba(17, 24, 39, 0.6));
+  }
+  50% {
+    transform: translateZ(var(--base-z)) scale(1.1);
+    box-shadow: 0 12px 48px rgba(244, 14, 0, 0.4);
+    border-color: rgba(239, 68, 68, 0.5);
+    border-bottom-width: 8px;
+    border-right-width: 8px;
+    background: linear-gradient(to bottom right, rgba(220, 38, 38, 0.2), rgba(17, 24, 39, 0.8));
+  }
+}
+
+@keyframes iconGlow {
+  0%, 100% {
+    color: rgb(209, 213, 219);
+    filter: drop-shadow(0 0 8px rgba(244, 14, 0, 0.3));
+    transform: scale(1);
+  }
+  50% {
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 16px rgba(244, 14, 0, 0.8));
+    transform: scale(1.1);
+  }
+}

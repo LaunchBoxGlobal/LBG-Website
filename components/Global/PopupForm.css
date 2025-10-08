@@ -1,0 +1,92 @@
+@keyframes zigzag {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(45%, 50%);
+  }
+  50% {
+    transform: translate(105%, -40%);
+  }
+  75% {
+    transform: translate(155%, 65%);
+  }
+  100% {
+    transform: translate(220%, -25%);
+  }
+}
+
+.zigzag-image {
+  width: 100px;
+  animation: zigzag 8s linear infinite alternate;
+}
+
+.bulb-inner-shadow {
+  box-shadow: rgba(197, 214, 69, 0.25) 0px 10px 60px -12px inset,
+    rgba(181, 223, 88, 0.3) 0px -10px 60px -12px inset;
+}
+
+@keyframes bulbFadeInOut {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bulbFadeOutIn {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bulb-on {
+  animation: bulbFadeInOut 5s infinite linear;
+}
+
+.bulb-off {
+  animation: bulbFadeOutIn 5s infinite linear;
+}
+
+@keyframes appearDisappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-anim {
+  opacity: 0;
+  animation: appearDisappear 0.5s ease forwards;
+  animation-delay: 4s;
+}
+
+.image-anim1 {
+  opacity: 0;
+  animation: appearDisappear 0.5s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.image-anim2 {
+  opacity: 0;
+  animation: appearDisappear 0.5s ease forwards;
+  animation-delay: 8s;
+}

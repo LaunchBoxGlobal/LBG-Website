@@ -1,0 +1,9 @@
+.high-powered {
+  background-image: url("/case-studies/heading-rectangular-border.png");
+  background-position: center;
+  background-size: contain;
+  margin-right: 2px;
+  background-repeat: no-repeat;
+  width: 110% !important;
+  @apply p-2 pb-3 lg:p-3 lg:pb-4 xl:p-4 xl:pb-6;
+}

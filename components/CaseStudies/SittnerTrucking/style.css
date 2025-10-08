@@ -1,0 +1,85 @@
+.sittner-primary-text {
+  color: #02ea4c;
+}
+
+.sittner-primary-bg {
+  background: #02ea4c;
+}
+
+@media (min-width: 1200px) {
+  .sittner-hover:hover {
+    box-shadow: #5ef68e 0px 0px 24px;
+  }
+}
+
+.sittner-glow {
+  width: 20rem;
+  height: 20rem;
+  background: #02ea4c;
+  filter: blur(100px);
+  position: absolute;
+  z-index: 1; /* Above background but below text */
+  /* opacity: 0.1; */
+}
+
+.circle-fade {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.sittner-glow-2 {
+  background: #02ea4c;
+  filter: blur(50px);
+  position: absolute;
+  /* z-index: 1;  */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide-sittner-mockups {
+  display: flex;
+  animation: slide 40s linear infinite;
+  width: max-content;
+}
+
+@keyframes slide-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-sittner-mockups-reverse {
+  display: flex;
+  animation: slide-reverse 40s linear infinite;
+  width: max-content;
+}
+
+.sittner-mockup:hover {
+  box-shadow: -154px 110px 312px -26px rgba(104, 100, 100, 0.73);
+  -webkit-box-shadow: -154px 110px 312px -26px rgba(104, 100, 100, 0.73);
+  -moz-box-shadow: -154px 110px 312px -26px rgba(104, 100, 100, 0.73);
+  transition: all 0.3s;
+  z-index: 100;
+}

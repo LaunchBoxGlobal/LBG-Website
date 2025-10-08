@@ -1,0 +1,65 @@
+.my-garage-outlet-text {
+  color: #a07439;
+}
+
+@keyframes spin360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brownShadow:hover {
+    box-shadow: #f5c78b 0 0 30px;
+    transition: all 0.3s;
+  }
+}
+
+.line-curve {
+  position: relative;
+  width: 700px;
+  height: 2px;
+  background: black;
+}
+
+.line-curve::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-left: none;
+  border-bottom: none;
+}
+
+/* @keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1110px);
+  }
+} */
+
+@keyframes followPathSpin {
+  from {
+    offset-distance: 0%;
+    transform: rotate(0deg);
+  }
+  to {
+    offset-distance: 96%;
+    transform: rotate(1440deg); /* 4 full spins */
+  }
+}
+
+.image-gear-slide {
+  offset-path: path("M -10 30 H 220 C 460 30, 560 140, 750 150 H 1210");
+  offset-rotate: auto; /* rotates based on the path direction */
+  animation: followPathSpin 8s ease forwards;
+}

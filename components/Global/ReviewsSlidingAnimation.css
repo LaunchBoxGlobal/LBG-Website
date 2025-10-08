@@ -1,0 +1,63 @@
+/* Container to hold all cards */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  gap: 20px; /* Space between the cards */
+  overflow: hidden; /* Hide anything outside the container */
+  padding: 50px 0; /* Optional padding for spacing */
+}
+
+/* Infinite sliding animation from bottom to top */
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px); /* Start from below */
+    /* opacity: 0; */
+  }
+  100% {
+    transform: translateY(-100%); /* Move all the way up */
+    /* opacity: 1; */
+  }
+}
+
+/* Apply the infinite sliding animation */
+.customer-review-card {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(30px); /* Start from below */
+  animation: slideUp 5s linear infinite; /* Infinite animation */
+  position: absolute; /* Allow absolute positioning within container */
+  width: 383px; /* Same as defined for the card */
+  height: 250px; /* Same as defined for the card */
+}
+
+/* Apply different random positions for each card */
+.customer-review-card:nth-child(1) {
+  left: 5%;
+}
+
+.customer-review-card:nth-child(2) {
+  left: 30%;
+}
+
+.customer-review-card:nth-child(3) {
+  left: 60%;
+}
+
+.customer-review-card:nth-child(4) {
+  left: 10%;
+}
+
+.customer-review-card:nth-child(5) {
+  left: 50%;
+}
+
+.customer-review-card:nth-child(6) {
+  left: 80%;
+}
+
+/* Pause animation when hovering over the container */
+.card-container.paused .customer-review-card {
+  animation-play-state: paused; /* Pause animation on hover */
+}

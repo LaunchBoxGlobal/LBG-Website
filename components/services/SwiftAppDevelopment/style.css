@@ -1,0 +1,111 @@
+.orangeText {
+  color: #ff5034;
+}
+
+.orangeBg {
+  background-color: #ff5034;
+}
+
+.orangeBorder {
+  border: 2px solid #ff5034;
+  border-style: dashed;
+}
+
+.floatUpImage {
+  /* animation: animateSlide 1s ease-in-out forwards, */
+  animation: floatUpDown 3s ease-in-out infinite alternate;
+}
+
+.floatDownImage {
+  /* animation: animateSlide 1s ease-in-out forwards, */
+  animation: animateUpDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes animateUpDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.swift-orbiting-cursor {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation: orbittingCursor 8s linear infinite;
+}
+
+@keyframes orbittingCursor {
+  0% {
+    /* initial position */
+    transform: translate(0px, 0px);
+  }
+  25% {
+    /* move left to right */
+    transform: translate(270px, 0px);
+  }
+  50% {
+    /* move top right to bottom */
+    transform: translate(270px, 220px);
+  }
+  75% {
+    /* move bottom right to left */
+    transform: translate(-5px, 220px);
+  }
+  100% {
+    /* move to normal position */
+    transform: translate(-5px, 0px);
+  }
+}
+
+.swift-orbiting-cursor-right {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation: orbittingCursorRight 8s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes orbittingCursorRight {
+  0% {
+    /* initial position */
+    transform: translate(-20px, -20px);
+  }
+  25% {
+    /* move left to right */
+    transform: translate(250px, -20px);
+  }
+  50% {
+    /* move top right to bottom */
+    transform: translate(250px, 150px);
+  }
+  75% {
+    /* move bottom right to left */
+    transform: translate(-20px, 150px);
+  }
+  100% {
+    /* move to normal position */
+    transform: translate(-20px, 0px);
+  }
+}
+
+.tech-stack-card {
+  border: 1px solid rgb(213, 213, 213);
+}
+
+.tech-stack-card:hover {
+  border: 1px solid #ff5034;
+  box-shadow: #ffbdb3 0 0 15px;
+  transition: all 0.3s;
+}

@@ -1,0 +1,18 @@
+.cta-container {
+  border-radius: 0% 100% 0% 100% / 100% 34% 66% 0%;
+  border-top-left-radius: 75px;
+}
+
+@keyframes spin-wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-wheel {
+  animation: spin-wheel 20s linear infinite;
+  /* transform-origin: center; */
+}
