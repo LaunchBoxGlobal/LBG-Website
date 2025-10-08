@@ -30,11 +30,7 @@ const EngagementModel = () => {
             hoveredIndex === 0
               ? "bg-[#F40E00] text-white"
               : "bg-white text-black"
-          } ${
-            0 === 0
-              ? "lg:-rotate-6 z-10 lg:top-5 hover:rotate-0 hover:top-0"
-              : "z-20"
-          }`}
+          } ${0 === 0 ? "lg:-rotate-6 z-10 lg:top-5 hover:rotate-0 hover:top-0" : "z-20"}`}
         >
           <Image
             src={"/custom-software-journey-card-texture-image.webp"}
@@ -48,16 +44,15 @@ const EngagementModel = () => {
           </h4>
           <p className="text-base z-10">
             If building software is on your list but you’d rather skip the
-            traditional service model, our augmentation experts have you
-            covered. As a{" "}
+            traditional service model, our{" "}
             <Link
-              href="https://launchboxglobal.com/custom-software-development-company-in-austin"
+              href="https://launchboxglobal.com/off-shore-software-development"
               className="underline"
             >
-              custom software development company in Austin
-            </Link>
-            , we provide offshore developers who work as an extension of your
-            team, delivering efficient, high-quality solutions that fuel
+              offshore developers
+            </Link>{" "}
+            have you covered. We provide professionals who work as an extension
+            of your team, delivering efficient, high-quality solutions that fuel
             business growth.
           </p>
           <Link
@@ -94,16 +89,16 @@ const EngagementModel = () => {
           </h4>
           <p className="text-base z-10">
             Build your custom software with a dedicated team that works only on
-            your project. As one of the{" "}
+            your project. We provide{" "}
             <Link
-              href="https://launchboxglobal.com/software-development-company-in-austin"
+              href="https://launchboxglobal.com/on-demand-talent"
               className="underline"
             >
-              leading software companies in Austin TX
-            </Link>
-            , we provide outsourcing staff and proven processes to ensure smooth
-            development, high-quality results, and timely delivery, so you can
-            focus on growing your business.
+              outsourcing staff
+            </Link>{" "}
+            and proven processes to ensure smooth development, high-quality
+            results, and timely delivery, so you can focus on growing your
+            business.
           </p>
           <Link
             href="/contact-us"
@@ -138,17 +133,17 @@ const EngagementModel = () => {
             Team Augmentation
           </h4>
           <p className="text-base z-10">
-            Sometimes your project just needs an extra boost. As a{" "}
+            Sometimes your project just needs an extra boost. We connect you
+            with skilled professionals through{" "}
             <Link
-              href="https://launchboxglobal.com/software-development-company-in-austin"
+              href="https://launchboxglobal.com/staff-augmentation"
               className="underline"
             >
-              software development company in Texas
+              staff augmentation
             </Link>
-            , we connect you with skilled professionals through staff
-            augmentation who integrate into your team. Whether for coding,
-            design, or management, ensuring faster progress and smoother
-            collaboration without the hassle of hiring.
+            , who integrate into your team for coding, design, or management,
+            ensuring faster progress and smoother collaboration without the
+            hassle of hiring.
           </p>
           <Link
             href="/contact-us"

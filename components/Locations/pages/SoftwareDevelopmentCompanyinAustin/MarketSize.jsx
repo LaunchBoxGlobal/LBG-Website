@@ -35,14 +35,14 @@ function MarketSize() {
           Enterprise software will dominate at <strong>US$316.69bn</strong>, while the{" "}
           <strong>U.S. leads globally with US$379.29bn</strong>, highlighting massive
           opportunities for innovation and expansion.{" "}
-          <span className="text-gray-500">(Source: <a href="https://www.statista.com/outlook/tmo/software/worldwide" >Statista</a>)</span>
+          <span className="text-gray-500">(Source: <a className="underline text-[#f40e00]" href="https://www.statista.com/outlook/tmo/software/worldwide" >Statista</a>)</span>
         </p>
 
-        <section className="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+        <section className="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
           {stats.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col justify-center items-center p-6 bg-white rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 text-center"
+              className="flex flex-col hover:border hover:border-[#f40e00] justify-center items-center p-6 bg-white rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-1 text-center"
             >
               <p className="text-sm text-gray-600 mb-2 font-medium uppercase">
                 {item.title}
@@ -53,7 +53,7 @@ function MarketSize() {
           ))}
         </section>
 
-        <div className="mt-12 flex flex-col items-center justify-center">
+        <div className="mt-4 flex flex-col items-center justify-center">
           <Link
             href="/contact-us"
             className="group relative text-center w-full md:w-auto font-semibold px-8 py-3 rounded-full overflow-hidden bg-[#F40E00] before:absolute before:bg-[#ffffff] before:top-1/2 before:left-1/2 before:h-8 before:w-28 before:border before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
