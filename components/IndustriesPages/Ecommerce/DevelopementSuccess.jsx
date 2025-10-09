@@ -45,7 +45,7 @@ const DevelopmentSuccess = () => {
                 key={index}
                 className="group !flex flex-col !justify-start !items-start !h-[500px] !bg-[#f6f6f6] p-5 rounded-[16px] text-left shadow-md transition-all duration-300 hover:!bg-[#f40e00]"
               >
-                <h3 className="text-2xl text-start uppercase font-bold mb-3 text-black transition-colors duration-300 group-hover:text-white">
+                <h3 className="text-xl text-start uppercase font-bold mb-3 text-black transition-colors duration-300 group-hover:text-white">
                   {service?.title}
                 </h3>
 

@@ -9,14 +9,14 @@ export default function HeroSection() {
         initial={{ opacity: 0, scale: 0.9, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative flex justify-center items-center w-full  p-4"
+        className="relative flex justify-center items-center w-full  p-20"
       >
         <Image
           src="/industries/ecommerce/hero.png"
           width={1000}
           height={1000}
           alt="Laptop mockup"
-          className="drop-shadow-2xl z-0 w-[80%] sm:w-[70%] md:w-[50%] p-5 h-auto"
+          className="drop-shadow-2xl z-0 w-[80%] sm:w-[70%]  lg:w-[60%] xl:w-[55%] 2xl:w-[50%] p-5 h-auto"
         />
         <motion.div
           initial={{ y: 50}}
@@ -32,16 +32,16 @@ export default function HeroSection() {
           }}
           className="absolute  z-10"
           style={{
-            left: "30%",
+            left: "25%",
             transform: "translateX(-50%)",
           }}
         >
           <Image
             src="/industries/ecommerce/hero1.png"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             alt="Mobile mockup"
-            className="drop-shadow-xl w-[50%] md:w-[100%]"
+            className="drop-shadow-xl w-[50%] py-8 md:w-[60%] lg:w-[80%] "
           />
         </motion.div>
       </motion.div>

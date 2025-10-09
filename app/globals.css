@@ -29,7 +29,7 @@ body {
 }
 
 .padding-x {
-  @apply px-6 md:px-8 midlg:px-[10%] 2xl:px-[13%];
+  @apply px-6 md:px-8 midlg:px-[5%] lglg:px-[10%] 2xl:px-[13%];
 }
 
 .red-btn-shadow {

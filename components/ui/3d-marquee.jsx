@@ -52,7 +52,7 @@ export const ThreeDMarquee = ({ images, className = "" }) => {
 
     const interval = setInterval(() => {
       animateRandomCard();
-    }, 3000 + Math.random() * 1000);
+    }, 3000 + Math.random() * 900);
 
     return () => {
       clearTimeout(initialTimeout);
@@ -100,7 +100,7 @@ export const ThreeDMarquee = ({ images, className = "" }) => {
                       before:absolute before:inset-0 before:rounded-xl 
                       before:bg-gradient-to-br before:from-white/0 before:to-white/0
                       before:transition-all before:duration-500
-                      ${isActive ? 'scale-110 z-10 border-b-8 border-r-8 border-red-500/50 shadow-[0_12px_48px_rgba(244,14,0,0.4)] !bg-gradient-to-br !from-red-600/20 !to-gray-900/80 before:!from-white/10 before:!to-transparent' : ''}`}
+                      ${isActive ? 'scale-110 z-10 border-b-8 border-r-8 border-red-500/50 shadow-[0_12px_48px_rgba(244,14,0,0.4)] !bg-[#fe0400] !from-red-600/20 !to-gray-900/80 before:!from-white/10 before:!to-transparent' : ''}`}
                     style={{
                       transform: `translateZ(${(colIdx * 20 + idx * 10)}px) ${isActive ? 'scale(1.1)' : 'scale(1)'}`,
                     }}
