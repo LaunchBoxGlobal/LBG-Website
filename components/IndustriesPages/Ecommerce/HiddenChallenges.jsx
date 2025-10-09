@@ -29,11 +29,11 @@ const HiddenChallenges = () => {
 
       <div className="w-full mt-16">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-0">
-          <div className="col-span-1 mr-4 space-y-10 relative">
+          <div className="col-span-1 md:mr-4 space-y-10 relative">
             <motion.div
               whileHover="hover"
               variants={shakeAnimation}
-              className="bg-[#F6F6F6] w-full max-w-[493px] p-3 rounded-[16px] relative"
+              className="bg-[#F6F6F6] w-full max-w-[493px] p-5 rounded-[16px] relative"
             >
               <div className="w-0 h-0 border-l-[0px] border-l-transparent border-r-[70px] border-r-transparent border-b-[32px] border-b-[#F6F6F6] absolute right-[-15%] top-5 hidden lg:block" />
               <h3 className="text-[21px] font-semibold leading-[1]">
@@ -50,7 +50,7 @@ const HiddenChallenges = () => {
             <motion.div
               whileHover="hover"
               variants={shakeAnimation}
-              className="bg-[#F6F6F6] w-full max-w-[493px] p-3 rounded-[16px] relative lg:-left-10"
+              className="bg-[#F6F6F6] w-full max-w-[493px] p-5 rounded-[16px] relative lg:-left-10"
             >
               <div className="w-0 h-0 border-l-[70px] border-l-transparent border-r-[0px] border-r-transparent border-t-[32px] border-[#F6F6F6] absolute right-[-15%] top-5 [transform:rotateY(-180deg)] hidden lg:block" />
               <h3 className="text-[21px] font-semibold leading-[1]">
@@ -88,11 +88,11 @@ const HiddenChallenges = () => {
             </motion.div>
           </div>
 
-          <div className="col-span-1 ml-4 space-y-10 relative">
+          <div className="col-span-1 md:ml-4 space-y-10 relative">
             <motion.div
               whileHover="hover"
               variants={shakeAnimation}
-              className="bg-[#F6F6F6] w-full max-w-[493px] p-3 rounded-[16px] relative"
+              className="bg-[#F6F6F6] w-full max-w-[493px] p-5 rounded-[16px] relative"
             >
               <div className="w-0 h-0 border-r-[0px] border-r-transparent border-l-[70px] border-l-transparent border-b-[32px] border-b-[#F6F6F6] absolute left-[-18%] top-5 hidden lg:block" />
               <h3 className="text-[21px] font-semibold leading-[1]">
@@ -109,7 +109,7 @@ const HiddenChallenges = () => {
             <motion.div
               whileHover="hover"
               variants={shakeAnimation}
-              className="bg-[#F6F6F6] w-full max-w-[493px] p-3 rounded-[16px] relative lg:-right-10"
+              className="bg-[#F6F6F6] w-full max-w-[493px] p-5 rounded-[16px] relative lg:-right-10"
             >
               <div className="w-0 h-0 border-r-[0px] border-r-transparent border-l-[70px] border-l-transparent border-t-[32px] border-t-[#F6F6F6] absolute left-[-18%] top-5 hidden lg:block" />
               <h3 className="text-[21px] font-semibold leading-[1]">
@@ -131,7 +131,7 @@ const HiddenChallenges = () => {
           variants={shakeAnimation}
           className="w-full md:w-1/2 lg:w-full flex justify-center mt-10"
         >
-          <div className="bg-[#F6F6F6] w-full max-w-[493px] p-3 rounded-[16px] relative">
+          <div className="bg-[#F6F6F6] w-full max-w-[493px] p-5 rounded-[16px] relative">
             <div className="w-0 h-0 border-r-[0px] border-r-transparent border-l-[70px] border-l-transparent border-b-[32px] border-b-[#F6F6F6] absolute top-[-24%] right-[5%] rotate-90 hidden lg:block" />
             <h3 className="text-[21px] font-semibold leading-[1]">
               Closing Marketing Gaps

@@ -9,7 +9,7 @@ const AboutSection = () => {
           Our Story
         </h2>
 
-        <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
+        <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto md:leading-[3] font-normal">
           We’re a team passionate about helping startups and growing businesses
           succeed through custom software development services. Being one of the
           leading software companies in Texas, we focus on understanding your
