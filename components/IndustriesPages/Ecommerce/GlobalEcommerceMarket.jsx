@@ -32,9 +32,9 @@ function GlobalEcommerceMarket() {
     { title: "Subscription Boxes",icon: "/industries/ecommerce/icons/folder.png" },
   ];
   return (
-    <section className="w-full py-20 midlg:py-32 bg-[#fff]">
+    <section className="w-full py-20 midlg:py-32 bg-[#fff] padding-x">
       <section className="w-full flex flex-col items-center justify-center gap-6 padding-x text-center">
-        <h2 className="section-heading lg:w-[90%] mx-auto">
+        <h2 className="section-heading ">
           Global Ecommerce Market: A {" "}
           <span className="red-text"> Trillion-Dollar Opportunity</span>
         </h2>
@@ -47,7 +47,7 @@ function GlobalEcommerceMarket() {
       
         </section> */}
       </section>
-        <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <section className=" py-16 grid md:grid-cols-2 gap-10 items-center">
       <div className="flex flex-col items-center md:items-start text-center md:text-left">
         <div>
         <h2 className="text-2xl text-center font-semibold text-black mb-8">

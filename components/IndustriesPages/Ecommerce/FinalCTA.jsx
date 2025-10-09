@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 function FinalCTA() {
   return (
-    <section className="w-full mx-auto bg-black text-white rounded-[17px]  max-w-[1220px]   grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  overflow-hidden">
+    <section className=" padding-x ">
       {/* ===== Left Content ===== */}
       {/* <div className="relative py-16 px-10 z-10 flex flex-col items-start justify-center space-y-6 md:w-[60%]">
         <h2 className="text-3xl font-extrabold leading-snug md:text-4xl">
@@ -34,6 +34,7 @@ function FinalCTA() {
               </span>
             </Link>
       </div> */}
+      <div className="py-10 bg-black text-white rounded-[17px]  w-full lg:py-20 relative  grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  overflow-hidden">
       <ContactForm/>
       <Image
         src={"/industries/ecommerce/icons/mobiles.png"}
@@ -42,6 +43,7 @@ function FinalCTA() {
         height={1050}
         className="object-center"
       />
+      </div>
     </section>
   );
 }
