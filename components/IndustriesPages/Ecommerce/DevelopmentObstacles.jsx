@@ -166,7 +166,7 @@ const DevelopmentObstacles = () => {
                   className="mx-auto object-contain"
                 />
               </div>
-              <h3 className="font-semibold text-[22px] text-nowrap leading-none mt-5 card-title">
+              <h3 className="font-semibold text-lg text-nowrap leading-none mt-5 card-title">
                 {t?.title}
               </h3>
               <p className="text-[15px] text-black/50 leading-[1.2] card-description">

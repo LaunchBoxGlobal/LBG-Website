@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ContactForm from "./ContactForm";
 
 function FinalCTA() {
   return (
-    <section className="relative mx-4 md:mx-auto my-20 max-w-7xl overflow-hidden rounded-3xl bg-[#212121] from-[#0B0B0B] to-[#1C1C1C]   text-white flex md:flex-row flex-col items-center justify-center md:justify-between md:px-16">
+    <section className="w-full mx-auto bg-black text-white rounded-[17px]  max-w-[1220px]   grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  overflow-hidden">
       {/* ===== Left Content ===== */}
-      <div className="relative py-16 px-10 z-10 flex flex-col items-start justify-center space-y-6 md:w-[60%]">
+      {/* <div className="relative py-16 px-10 z-10 flex flex-col items-start justify-center space-y-6 md:w-[60%]">
         <h2 className="text-3xl font-extrabold leading-snug md:text-4xl">
           Start Your Ecommerce Success
           <br />
@@ -32,12 +33,14 @@ function FinalCTA() {
               Talk to Our Experts
               </span>
             </Link>
-      </div>
+      </div> */}
+      <ContactForm/>
       <Image
         src={"/industries/ecommerce/icons/mobiles.png"}
         alt="mobile"
         width={650}
         height={650}
+        className="bg-center"
       />
     </section>
   );

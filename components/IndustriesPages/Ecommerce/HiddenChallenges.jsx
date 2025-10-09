@@ -94,7 +94,7 @@ const HiddenChallenges = () => {
               variants={shakeAnimation}
               className="bg-[#F6F6F6] w-full max-w-[493px] p-3 rounded-[16px] relative"
             >
-              <div className="w-0 h-0 border-r-[0px] border-r-transparent border-l-[70px] border-l-transparent border-b-[32px] border-b-[#F6F6F6] absolute left-[-15%] top-5 hidden lg:block" />
+              <div className="w-0 h-0 border-r-[0px] border-r-transparent border-l-[70px] border-l-transparent border-b-[32px] border-b-[#F6F6F6] absolute left-[-18%] top-5 hidden lg:block" />
               <h3 className="text-[21px] font-semibold leading-[1]">
                 Expanding Your Store
               </h3>
@@ -111,7 +111,7 @@ const HiddenChallenges = () => {
               variants={shakeAnimation}
               className="bg-[#F6F6F6] w-full max-w-[493px] p-3 rounded-[16px] relative lg:-right-10"
             >
-              <div className="w-0 h-0 border-r-[0px] border-r-transparent border-l-[70px] border-l-transparent border-t-[32px] border-t-[#F6F6F6] absolute left-[-15%] top-5 hidden lg:block" />
+              <div className="w-0 h-0 border-r-[0px] border-r-transparent border-l-[70px] border-l-transparent border-t-[32px] border-t-[#F6F6F6] absolute left-[-18%] top-5 hidden lg:block" />
               <h3 className="text-[21px] font-semibold leading-[1]">
                 Optimizing Your Store Operations
               </h3>

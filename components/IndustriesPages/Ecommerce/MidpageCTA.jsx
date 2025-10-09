@@ -34,7 +34,7 @@ const icons = [
 function MidpageCTA() {
   return (
     <div className="min-h-screen p-8 flex items-center justify-center">
-      <section className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-br from-[#0B0B0B] to-[#1C1C1C] text-white shadow-2xl">
+      <section className="relative mx-auto max-w-[1220px] overflow-hidden rounded-3xl bg-gradient-to-br from-[#0B0B0B] to-[#1C1C1C] text-white shadow-2xl">
         <div className="relative z-10 flex flex-col md:flex-row items-center">
           {/* Left Content */}
           <div className="md:w-[60%] px-10 md:px-16 py-16 space-y-6">
