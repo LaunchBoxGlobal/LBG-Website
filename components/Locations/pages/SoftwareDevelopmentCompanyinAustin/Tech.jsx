@@ -39,16 +39,25 @@ const Tech = () => {
                   </p>
                 </div>
                 <div className="w-full min-h-[130px] flex items-end flex-wrap gap-2">
-                  {talent?.icons?.map((ic, ind) => {
-                    return (
+                         {talent?.icons?.map((i, k) => {
+                    return i?.link ? (
+                      <Link href={i?.link} key={k}>
+                        <Image
+                          src={i?.image}
+                          width={i?.width}
+                          height={i?.height}
+                          alt={`${i?.image} icon`}
+                          className=""
+                        />
+                      </Link>
+                    ) : (
                       <Image
-                        src={ic?.image}
-                        width={ic?.width}
-                        height={ic?.height}
-                        alt={`tech icon`}
-                        key={ind}
-                        style={{ minWidth: ic?.width }}
-                        className="object-contain"
+                        key={k}
+                        src={i?.image}
+                        width={i?.width}
+                        height={i?.height}
+                        alt={`${i?.image} icon`}
+                        className=""
                       />
                     );
                   })}

@@ -41,6 +41,7 @@ const Tech = () => {
                 <div className="w-full min-h-[130px] flex items-end flex-wrap gap-2">
                   {talent?.icons?.map((ic, ind) => {
                     return (
+                      <Link href={ic.link} >
                       <Image
                         src={ic?.image}
                         width={ic?.width}
@@ -50,6 +51,7 @@ const Tech = () => {
                         style={{ minWidth: ic?.width }}
                         className="object-contain"
                       />
+                      </Link>
                     );
                   })}
                 </div>

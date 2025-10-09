@@ -240,10 +240,7 @@ const Location = ({ selectedTab, closeDropdown }) => {
       title: "Software Development Company in Florida",
       pageUrl: "/software-development-company-in-florida",
     },
-    {
-      title: "Software Development Company in Austin",
-      pageUrl: "/software-development-company-in-austin",
-    },
+   
     {
       title: "Software Development Company in New Jersey",
       pageUrl: "/software-development-company-in-new-jersey",
@@ -263,6 +260,10 @@ const Location = ({ selectedTab, closeDropdown }) => {
     {
       title: "Mobile App Development Company in Texas",
       pageUrl: "/mobile-app-development-company-in-texas",
+    },
+     {
+      title: "Software Development Company in Austin",
+      pageUrl: "/software-development-company-in-austin",
     },
     {
       title: "Mobile App Development in Austin",

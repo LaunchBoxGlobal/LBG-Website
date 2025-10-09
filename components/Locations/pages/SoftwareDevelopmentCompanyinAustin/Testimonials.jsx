@@ -5,6 +5,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaQuoteLeft } from "react-icons/fa6";
+import Image from "next/image";
 
 const TESTIMONIALS = [
   {
@@ -12,6 +13,7 @@ const TESTIMONIALS = [
       "LaunchBox Global did more than just code for us. They acted like true partners. Their software development consultancy helped us prioritize features, avoid costly mistakes, and launch faster than expected. Our app hit 10k users in three months, which felt impossible before working with them.",
     name: "Megan Ross",
     role: "Product Manager at HealthTrack",
+    image: "/testimonials/e1.png", 
     bg: "bg-[#F5F5F5]",
     text: "text-black",
   },
@@ -20,6 +22,7 @@ const TESTIMONIALS = [
       "We talked to several tech companies in Austin TX, but LaunchBox Global worked differently. They actually listened, understood our plan, and built something practical instead of overcomplicating it. Since launch, our customer retention rate has doubled, and scaling feels a lot less overwhelming now.",
     name: "Daniel Price",
     role: "CEO at TaskFlow",
+    image: "/testimonials/e2.png", 
     bg: "bg-[#F5F5F5]",
     text: "text-black",
   },
@@ -28,10 +31,12 @@ const TESTIMONIALS = [
       "We’d worked with a couple of local software companies before, but the experience wasn’t great. LaunchBox changed that completely. Their team blended right in with ours, answered every question, and delivered on time. They made the process smoother than we imagined.",
     name: "Laura Kim",
     role: "COO at RetailEdge",
+    image: "/testimonials/e3.png", 
     bg: "bg-[#F5F5F5]",
     text: "text-black",
   },
 ];
+
 
 const Testimonials = () => {
   return (
@@ -68,21 +73,28 @@ const Testimonials = () => {
                 >
                   <div>
                     <div className="text-[40px] font-bold leading-[0.8] mb-4">
-                      <FaQuoteLeft />
+                      <FaQuoteLeft className="text-[#f40e00]" />
                     </div>
-                    <p className="text-base leading-[1.6]">
-                      {item.quote}
-                    </p>
+                    <p className="text-base leading-[1.6]">{item.quote}</p>
                   </div>
 
-                  {/* Signature Section — Replaces Image */}
-                  <div className="mt-6">
-                    <p className="font-semibold text-base group-hover:text-white">
-                      — {item.name}
-                    </p>
-                    <p className="text-sm text-gray-600 group-hover:text-gray-300">
-                      {item.role}
-                    </p>
+                  {/* Signature Section with Image */}
+                  <div className="mt-6 flex items-center gap-3">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={100}
+                      height={100}
+                      className=" rounded-full !w-12 !h-12 object-cover border border-gray-300 group-hover:border-white transition-all duration-300"
+                    />
+                    <div>
+                      <p className="font-semibold text-base group-hover:text-white">
+                       {item.name}
+                      </p>
+                      <p className="text-sm text-gray-600 group-hover:text-gray-300">
+                        {item.role}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

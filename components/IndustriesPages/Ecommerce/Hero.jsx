@@ -4,7 +4,7 @@ import ContactButton from "@/components/Global/ContactButton";
 const Hero = () => {
   return (
     <section className="w-full relative pt-36 2xl:pt-52 padding-x overflow-hidden">
-      <section className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white">
+      <section className="w-full relative  flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white">
         <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-[1] w-full">
           Your Reliable Ecommerce Development{" "}
           <span className="red-text">Starts Here</span>

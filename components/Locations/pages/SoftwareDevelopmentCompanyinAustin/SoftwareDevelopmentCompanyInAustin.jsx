@@ -79,13 +79,13 @@ const SoftwareDevelopmentCompanyInAustinPage = () => {
         }
       />
       <Tech/>
-      <TeckStack
+      {/* <TeckStack
         heading={"Tech Stack Empowering New Jersey's"}
         redText={"Innovators"}
         description={
           "Launchbox Global utilizes a strong set of technologies to support businesses in New Jersey and beyond. Our expertise encompasses various technologies, ensuring we deliver top-notch solutions tailored to your needs."
         }
-      />
+      /> */}
       <LocationsWhyChooseUs
         heading={`Your Trusted Austin`}
         redText={`Software Partner`}

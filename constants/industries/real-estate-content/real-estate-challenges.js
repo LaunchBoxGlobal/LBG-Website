@@ -4,8 +4,8 @@ export const REAL_ESTATE_APP_DEVELOPMENT_CHALLENGES = [
     description:
       "As the property listing grows, keeping everything accurate and updated becomes overwhelming and a significant challenge. Without an updated real estate development software, the data on properties gets lost, details become outdated, and you may lose potential buyers.",
     icon: "/industries/real-estate/property-listing-icon.png",
-    width: 24,
-    height: 24,
+    width: 20,
+    height: 20,
     bg_image: "/industries/healthcare/data-privacy-background-image.png",
     bg_image_width: 540,
     bg_image_height: 542,

@@ -14,9 +14,9 @@ const Hero = () => {
     <section className="w-full relative overflow-hidden bg-white min-h-[100vh]">
       <section
         ref={ref}
-        className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-20"
+        className="w-full relative pt-28 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 overflow-hidden z-20"
       >
-        {/* Heading */}
+ 
         <h1 className="font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] xl:text-[70px] text-center tracking-normal leading-[1] w-full z-20 flex flex-col items-center gap-4">
           <span>Your Trusted Custom Software Development Company In</span>
           <span className="red-bg block py-4 px-10 text-white rounded-[17px]">
@@ -24,7 +24,7 @@ const Hero = () => {
           </span>
         </h1>
 
-        {/* Description */}
+
         <p className="text-base z-20 md:text-lg lg:text-[22px] my-2 2xl:text-[26px] font-medium text-gray-500 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto">
           As a leading custom software development company in Austin, we create
           personalized, smart solutions that help startups improve processes,
@@ -32,7 +32,7 @@ const Hero = () => {
           them.
         </p>
 
-        {/* CTA */}
+   
         <section className="w-full mt-5 z-20">
           <Link
             href={`/contact-us`}
@@ -42,7 +42,6 @@ const Hero = () => {
           </Link>
         </section>
 
-        {/* Hero Image Section */}
         <div className="lg:h-[595px] w-full flex justify-center relative items-end mt-0">
           <motion.div
             initial={{ y: 600 }}
@@ -50,7 +49,7 @@ const Hero = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             className="mx-auto relative"
           >
-            {/* Main Hero Image */}
+ 
             <Image
               src="/locations/software-dev-company-austin/hero.png"
               width={4028}
@@ -58,10 +57,10 @@ const Hero = () => {
               alt="Custom Software Development Company in Austin showcasing innovative digital solutions for startups"
               priority
               sizes="(max-width: 768px) 95vw, (max-width: 1400px) 80vw, 2028px"
-              className="mx-auto scale-[2] h-full object-cover z-10 relative -bottom-80"
+              className="mx-auto scale-[2] h-full object-cover z-10 relative md:-bottom-80"
             />
 
-            {/* Hero 2 — Popup Animation */}
+
             <motion.div
               initial={{ opacity: 0, scale: 0.5, y: 100 }}
               animate={inView ? { opacity: 1, scale: 1, y: 0 } : {}}
@@ -78,7 +77,7 @@ const Hero = () => {
                 height={892}
                 alt="Overlay image showcasing digital creativity and innovation"
                 priority
-                className="w-[280px]"
+                className="w-[280px] md:block hidden"
               />
             </motion.div>
           </motion.div>

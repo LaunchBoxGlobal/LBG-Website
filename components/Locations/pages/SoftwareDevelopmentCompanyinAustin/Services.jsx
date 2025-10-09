@@ -26,20 +26,20 @@ const Services = () => {
         {SOFTWARE_DEV_AUSTIN_SERVICES.map((service, index) => (
           <div
             key={index}
-            className="w-full md:w-[45%] lg:w-[32%] min-h-[300px]"
+            className="w-full md:w-[45%]  lg:w-[32%]"
           >
-            <div className="w-full rounded-[16px] p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9] transition-all duration-300 hover:shadow-lg">
+            <div className="w-full !h-[400px] group rounded-[16px] hover:bg-[#f40e00] hover:text-white p-8 min-h-[370px] flex flex-col items-start gap-3 group bg-[#f9f9f9] transition-all duration-300 hover:shadow-lg">
               <Image
                 src={service.icon}
                 width={service.iconWidth}
                 height={service.iconHeight}
                 alt={`${service.title} icon`}
-                className="object-contain"
+               className="transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"
               />
               <h3 className="font-bold service-heading leading-[1.2]">
                 {service.title}
               </h3>
-              <p className="text-lg leading-[1.3] text-gray-600">
+              <p className="text-lg leading-[1.3] ">
                 {service.description}
               </p>
             </div>

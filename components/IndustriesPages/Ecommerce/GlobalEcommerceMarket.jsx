@@ -43,9 +43,9 @@ function GlobalEcommerceMarket() {
           The global ecommerce market is booming, valued at $6.09 trillion in 2024 (<a href='https://www.emarketer.com/content/ecommerce-account-more-than-20--of-worldwide-retail-sales-despite-slowdown?' className='text-red-500 underline'>eMarketer</a>) and projected to reach $6.88 trillion by 2025 (<a href='https://soax.com/research/ecommerce-market-size?' className='text-red-500 underline'>SOAX</a>). Forecasts indicate it will surpass $8 trillion by 2027 (<a href='https://www.emarketer.com/content/ecommerce-account-more-than-20--of-worldwide-retail-sales-despite-slowdown?' className='text-red-500 underline'>eMarketer</a>). Mobile commerce, social commerce, and personalized shopping experiences are driving this growth, transforming how customers browse and buy. Businesses using these trends can capture more revenue and stay ahead in this rapidly evolving digital marketplace.
         </p>
 
-        <section className="w-full  justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 midlg:grid-cols-4 gap-5 max-w-[1305px] mx-auto mt-16">
+        {/* <section className="w-full  justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 midlg:grid-cols-4 gap-5 max-w-[1305px] mx-auto ">
       
-        </section>
+        </section> */}
       </section>
         <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
       <div className="flex flex-col items-center md:items-start text-center md:text-left">
