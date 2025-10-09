@@ -1,3 +1,4 @@
+"use client"
 import { MOBILE_APP_DEVELOPMENT_AUSTIN_SERVICES } from "@/constants/locations/mobile-app-development-austin/mobile-app-dev-austin-services";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { FiMinus } from "react-icons/fi";
 import { LuPlus } from "react-icons/lu";

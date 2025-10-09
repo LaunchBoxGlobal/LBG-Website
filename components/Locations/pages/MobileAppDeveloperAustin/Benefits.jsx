@@ -13,7 +13,6 @@ const Benefits = ({
 }) => {
   return (
     <section className="w-full py-10 lg:py-20 padding-x">
-      {/* Top Heading */}
       <div className="w-full flex flex-col items-center gap-5">
         <p className="text-2xl font-semibold" style={{ color }}>
           {subheading}
@@ -26,7 +25,6 @@ const Benefits = ({
         </p>
       </div>
 
-      {/* Desktop Version */}
       <div className="w-full bg-white lg:px-16 mt-10 xl:mt-12 hidden lg:flex flex-col items-center mx-auto relative left-[-4.3%]">
         {benefits?.map((solution, i) => {
           const containerRef = useRef(null);
@@ -49,7 +47,7 @@ const Benefits = ({
               className="relative w-full min-h-[240px]"
               style={{ height: "220px" }} // Reserve exact space
             >
-              {/* Left Card */}
+             
               <motion.div
                 style={{
                   left: leftDivX,
@@ -78,7 +76,6 @@ const Benefits = ({
                 </h3>
               </motion.div>
 
-              {/* Right Card */}
               <motion.div
                 style={{
                   left: rightDivX,
@@ -96,7 +93,7 @@ const Benefits = ({
         })}
       </div>
 
-      {/* Mobile Version */}
+  
       <div className="w-full mt-14">
         {benefits?.map((solution, i) => (
           <div
@@ -107,7 +104,7 @@ const Benefits = ({
               className="w-full p-10 rounded-2xl flex flex-col items-start justify-center gap-4"
               style={{
                 background: solution?.titleBg,
-                height: "220px", // Fixed height
+                height: "220px",
               }}
             >
               <div
@@ -134,7 +131,7 @@ const Benefits = ({
               className="w-full py-10 px-[8%] rounded-2xl flex items-center justify-end"
               style={{
                 background: solution?.descriptionBg,
-                height: "220px", // Fixed height
+                height: "220px", 
               }}
             >
               <p className="text-white text-center text-sm w-full lg:w-[40%]">
