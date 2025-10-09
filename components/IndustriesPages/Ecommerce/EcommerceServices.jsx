@@ -29,7 +29,7 @@ const EcommerceServices = () => {
                 key={index}
               >
                 <Image src={icons[index]} alt="tv" width={50} height={50}  className="transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:contrast-200"/>
-                <h3 className="text-[28px] group-hover:text-white font-bold leading-[1]">
+                <h3 className="text-[22px] group-hover:text-white font-bold leading-[1]">
                   {service?.title}
                 </h3>
                 <p className="text-sm font-normal group-hover:text-white  text-[#212121] leading-[1.2]">

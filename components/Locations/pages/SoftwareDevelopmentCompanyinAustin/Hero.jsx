@@ -59,14 +59,14 @@ function Hero() {
   </motion.div>
 </motion.div>
 
-      <div className="pt-24 max-w-screen-xl mx-auto">
+      <div className="pt-32 max-w-screen-xl mx-auto">
         <h1 className="relative z-30 font-extrabold text-[8.5vw] md:text-[5.5vw] lg:text-[70px] text-center tracking-normal leading-[1.1] w-full flex flex-col items-center gap-4">
           <span>Your Trusted Custom Software Development Company In</span>
           <span className="bg-[#F40E00] block py-4 px-10 text-white rounded-[17px]">
             Austin
           </span>
         </h1>
-        <p className="text-base px-2 mt-4 relative z-50 md:text-lg lg:text-[22px] 2xl:text-[26px] font-medium text-gray-600 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto">
+        <p className="text-base px-2 mt-4 relative z-30 md:text-lg lg:text-[22px] 2xl:text-[26px] font-medium text-gray-600 text-center md:w-2/3 lg:w-[75%] leading-7 mx-auto">
           As a leading custom software development company in Austin, we create
           personalized, smart solutions that help startups improve processes,
           grow performance, and achieve flexible growth with tech made just for

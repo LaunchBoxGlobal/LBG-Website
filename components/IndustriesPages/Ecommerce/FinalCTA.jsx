@@ -38,9 +38,9 @@ function FinalCTA() {
       <Image
         src={"/industries/ecommerce/icons/mobiles.png"}
         alt="mobile"
-        width={650}
-        height={650}
-        className="bg-center"
+        width={1050}
+        height={1050}
+        className="object-center"
       />
     </section>
   );
