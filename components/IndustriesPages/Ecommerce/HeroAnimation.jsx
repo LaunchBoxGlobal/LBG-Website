@@ -4,19 +4,19 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[60vh]  flex items-center justify-center overflow-hidden bg-white">
+    <section className="relative h-[40vh] md:h-[60vh]  flex items-center justify-center overflow-hidden bg-white">
       <motion.div
         initial={{ opacity: 0, scale: 0.9, y: 50 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative flex justify-center items-center w-full  p-20"
+        className="relative flex justify-center items-center w-full  md:p-20"
       >
         <Image
           src="/industries/ecommerce/hero.png"
           width={1000}
           height={1000}
           alt="Laptop mockup"
-          className="drop-shadow-2xl z-0 w-[80%] sm:w-[70%]  lg:w-[60%] xl:w-[55%] 2xl:w-[50%] p-5 h-auto"
+          className="drop-shadow-2xl z-0 w-[100%] sm:w-[70%]  lg:w-[60%] xl:w-[55%] 2xl:w-[50%] md:p-5 h-auto"
         />
         <motion.div
           initial={{ y: 50}}
@@ -30,9 +30,9 @@ export default function HeroSection() {
             ease: "easeInOut",
             repeat: Infinity,
           }}
-          className="absolute  z-10"
+          className="absolute  z-10 left-4 md:left-[25%] "
           style={{
-            left: "25%",
+           
             transform: "translateX(-50%)",
           }}
         >

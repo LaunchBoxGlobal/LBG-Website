@@ -49,7 +49,7 @@ const DevelopmentSuccess = () => {
                   {service?.title}
                 </h3>
 
-                <p className="text-[15px] text-start font-normal text-gray-700 mb-4 transition-colors duration-300 group-hover:text-white">
+                <p className="text-sm md:text-[15px]  text-start font-normal text-gray-700 mb-4 transition-colors duration-300 group-hover:text-white">
                   {service?.description}
                 </p>
 
