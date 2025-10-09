@@ -39,6 +39,13 @@ function Hero() {
           src={"/locations/software-dev-company-austin/gradient.png"}
           width={800}
           height={1000}
+          className="absolute top-0 w-full md:block hidden"
+          alt="Gradient background"
+        />
+        <Image
+          src={"/locations/software-dev-company-austin/grids.png"}
+          width={800}
+          height={1000}
           className="absolute top-0 w-full"
           alt="Gradient background"
         />
@@ -53,7 +60,7 @@ function Hero() {
               duration: 0.6, 
               ease: [0.34, 1.56, 0.64, 1] // Bouncy easing for popup effect
             }}
-            className="absolute -top-7 left-1/2 translate-x-[-50%] z-30"
+            className="absolute -top-6 left-[40%] translate-x-[-50%] z-30"
           >
             {/* Continuous floating animation after popup */}
             <motion.div
@@ -87,7 +94,7 @@ function Hero() {
               width={1000}
               height={1000}
               alt="Austin city background"
-              className="object-cover relative z-0 mx-auto w-[70%] mt-5"
+              className="object-cover relative z-0 mx-auto w-[70%] mt-20 -mb-12"
               priority
             />
           </motion.div>
