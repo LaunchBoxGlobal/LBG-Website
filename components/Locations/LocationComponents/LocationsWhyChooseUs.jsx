@@ -17,10 +17,10 @@ const LocationsWhyChooseUs = ({
         {/* <h2 className="blueText font-semibold text-[25px] lg:w-[60%] text-center">
           Partner with LaunchBox Global
         </h2> */}
-        <h2 className="section-heading text-center mx-auto lg:w-[80%]">
+        <h2 className="section-heading text-center mx-auto ">
           {heading} <span className="red-text">{redText}</span>
         </h2>
-        <p className="section-paragraph text-center mx-auto lg:w-[70%]">
+        <p className="section-paragraph text-center mx-auto lg:w-[90%]">
           {description}
         </p>
       </div>

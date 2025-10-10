@@ -8,7 +8,7 @@ const AboutSection = ({ heading, description }) => {
           {heading}
         </h2>
 
-        <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto leading-[3] font-normal">
+        <p className="text-2xl md:text-3xl lg:text-[36px] text-gray-500 lg:w-[90%] mx-auto  font-normal">
           {description}
         </p>
       </section>

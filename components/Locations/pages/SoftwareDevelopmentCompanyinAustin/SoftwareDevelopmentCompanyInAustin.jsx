@@ -12,17 +12,17 @@ import TeckStack from "@/components/Common/TechStack";
 import LocationsWhyChooseUs from "../../LocationComponents/LocationsWhyChooseUs";
 import {
   SOFTWARE_DEV_AUSTIN_WHY_CHOOSE_US_1,
-  SOFTWARE_DEV_AUSTIN_WHY_CHOOSE_US_2
-} from "@/constants/locations/software-dev-company-austin/software-development-company-austin-why-choose-us"
+  SOFTWARE_DEV_AUSTIN_WHY_CHOOSE_US_2,
+} from "@/constants/locations/software-dev-company-austin/software-development-company-austin-why-choose-us";
 import FlagsAnimation from "@/components/Common/FlagsAnimation";
 import LocationStats from "../../LocationComponents/LocationStats";
 import LocationFaqs from "../../LocationComponents/LocationFaqs";
 import LocationContactForm from "../../LocationComponents/LocationContactForm";
 import { SOFTWARE_DEV_AUSTIN_FAQS } from "@/constants/locations/software-dev-company-austin/software-dev-austin-faqs";
 import {
-SOFTWARE_DEV_AUSTIN_AGILE_WORKFLOW,
+  SOFTWARE_DEV_AUSTIN_AGILE_WORKFLOW,
   SOFTWARE_DEV_AUSTIN_RECOMMENDED_WORKFLOW,
-  SOFTWARE_DEV_AUSTIN_WATERFALL_WORKFLOW
+  SOFTWARE_DEV_AUSTIN_WATERFALL_WORKFLOW,
 } from "@/constants/locations/software-dev-company-austin/software-development-company-austin-workflow";
 import { SOFTWARE_DEV_COMPANY_AUSTIN_CASE_STUDIES } from "@/constants/locations/software-dev-company-austin/software-dev-company-austin-case-studies";
 import NewJerseyFaqs from "./AustinFaqs";
@@ -31,9 +31,10 @@ import AustinFaqs from "./AustinFaqs";
 import Benefits from "./Benefits";
 import { SOFTWARE_DEV_AUSTIN_BENEFITS } from "@/constants/locations/software-dev-company-austin/benefits";
 import EngagementModel from "./EngagementModel";
-import Testimonials from "./Testimonials";
+
 import Tech from "./Tech";
 import MarketSize from "./MarketSize";
+import Testimonials from "@/components/Common/Testimonials";
 
 const SoftwareDevelopmentCompanyInAustinPage = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -43,17 +44,52 @@ const SoftwareDevelopmentCompanyInAustinPage = () => {
       <Platforms />
       <AboutSection />
       <Services />
-      <Industries/>
-       <Benefits
+      <Industries />
+      <Benefits
         heading={`Key Benefits of Custom  `}
         colorfulText={`Software Development in Austin`}
         color={`#F40E00`}
         description={`With our custom software development services in Austin, your business gets solutions built to fit your unique needs. Custom software helps you save time, cut costs, and stay ahead with technology designed just for you through improving workflows and enhancing customer experiences.`}
         benefits={SOFTWARE_DEV_AUSTIN_BENEFITS}
       />
-      <MarketSize/>
-      <EngagementModel/>
-      <Testimonials/>
+      <MarketSize />
+      <EngagementModel />
+      <Testimonials desc={`Client experiences matter because they show the real impact of our
+          work. When people search for a software development agency near me,
+          these testimonials highlight why startups and businesses trust us to
+          deliver reliable, growth-focused solutions.`}
+        testimonials={[
+          {
+            quote:
+              "LaunchBox Global did more than just code for us. They acted like true partners. Their software development consultancy helped us prioritize features, avoid costly mistakes, and launch faster than expected. Our app hit 10k users in three months, which felt impossible before working with them.",
+            name: "Megan Ross",
+            role: "Product Manager at HealthTrack",
+            image: "/testimonials/e1.png",
+            bg: "bg-[#F5F5F5]",
+            text: "text-black",
+          },
+          {
+            quote:
+              "We talked to several tech companies in Austin TX, but LaunchBox Global worked differently. They actually listened, understood our plan, and built something practical instead of overcomplicating it. Since launch, our customer retention rate has doubled, and scaling feels a lot less overwhelming now.",
+            name: "Daniel Price",
+            role: "CEO at TaskFlow",
+            image: "/testimonials/e2.png",
+            bg: "bg-[#F5F5F5]",
+            text: "text-black",
+          },
+          {
+            quote:
+              "We’d worked with a couple of local software companies before, but the experience wasn’t great. LaunchBox changed that completely. Their team blended right in with ours, answered every question, and delivered on time. They made the process smoother than we imagined.",
+            name: "Laura Kim",
+            role: "COO at RetailEdge",
+            image: "/testimonials/e3.png",
+            bg: "bg-[#F5F5F5]",
+            text: "text-black",
+          },
+        ]}
+
+        btn={`Be Our Next Success Story`}
+      />
       <LocationProcess
         heading={"Our Software Development"}
         redText={"Workflow"}
@@ -78,7 +114,7 @@ const SoftwareDevelopmentCompanyInAustinPage = () => {
           />
         }
       />
-      <Tech/>
+      <Tech />
       {/* <TeckStack
         heading={"Tech Stack Empowering New Jersey's"}
         redText={"Innovators"}

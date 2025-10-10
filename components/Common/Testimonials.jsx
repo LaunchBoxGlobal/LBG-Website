@@ -7,38 +7,9 @@ import "swiper/css/pagination";
 import { FaQuoteLeft } from "react-icons/fa6";
 import Image from "next/image";
 
-const TESTIMONIALS = [
-  {
-    quote:
-      "LaunchBox Global did more than just code for us. They acted like true partners. Their software development consultancy helped us prioritize features, avoid costly mistakes, and launch faster than expected. Our app hit 10k users in three months, which felt impossible before working with them.",
-    name: "Megan Ross",
-    role: "Product Manager at HealthTrack",
-    image: "/testimonials/e1.png", 
-    bg: "bg-[#F5F5F5]",
-    text: "text-black",
-  },
-  {
-    quote:
-      "We talked to several tech companies in Austin TX, but LaunchBox Global worked differently. They actually listened, understood our plan, and built something practical instead of overcomplicating it. Since launch, our customer retention rate has doubled, and scaling feels a lot less overwhelming now.",
-    name: "Daniel Price",
-    role: "CEO at TaskFlow",
-    image: "/testimonials/e2.png", 
-    bg: "bg-[#F5F5F5]",
-    text: "text-black",
-  },
-  {
-    quote:
-      "We’d worked with a couple of local software companies before, but the experience wasn’t great. LaunchBox changed that completely. Their team blended right in with ours, answered every question, and delivered on time. They made the process smoother than we imagined.",
-    name: "Laura Kim",
-    role: "COO at RetailEdge",
-    image: "/testimonials/e3.png", 
-    bg: "bg-[#F5F5F5]",
-    text: "text-black",
-  },
-];
 
 
-const Testimonials = () => {
+const Testimonials = ({testimonials  , desc , btn}) => {
   return (
     <section className="w-full py-20 midlg:py-32 bg-[#fff]">
       <section className="w-full flex flex-col items-center justify-center gap-6 padding-x text-center">
@@ -47,10 +18,7 @@ const Testimonials = () => {
         </h2>
 
         <p className="section-paragraph lg:w-[90%] mx-auto">
-          Client experiences matter because they show the real impact of our
-          work. When people search for a software development agency near me,
-          these testimonials highlight why startups and businesses trust us to
-          deliver reliable, growth-focused solutions.
+          {desc}
         </p>
 
         <section className="w-full max-w-[1305px] mx-auto mt-16">
@@ -66,16 +34,16 @@ const Testimonials = () => {
             }}
             className="mySwiper"
           >
-            {TESTIMONIALS.map((item, index) => (
+            {testimonials.map((item, index) => (
               <SwiperSlide className="!bg-transparent" key={index}>
                 <div
-                  className={`group flex flex-col justify-between h-[400px] rounded-[20px] p-8 text-left transition-all duration-300 shadow-md ${item.bg} ${item.text} hover:bg-[#212121] hover:text-white`}
+                  className={`group flex flex-col justify-between h-[420px] rounded-3xl p-8 text-left transition-all duration-300 shadow-md ${item.bg} ${item.text} hover:bg-[#212121] hover:text-white`}
                 >
                   <div>
                     <div className="text-[40px] font-bold leading-[0.8] mb-4">
                       <FaQuoteLeft className="text-[#f40e00]" />
                     </div>
-                    <p className="text-base h-[220px] leading-[1.6]">{item.quote}</p>
+                    <p className="text-lg h-[225px] leading-[1.6]">{item.quote}</p>
                   </div>
 
                   {/* Signature Section with Image */}
@@ -108,7 +76,7 @@ const Testimonials = () => {
               href="/contact-us"
               className="bg-[#F40E00] text-white font-semibold text-base px-8 py-3 rounded-full transition-all duration-300 hover:bg-[#212121]"
             >
-              Be Our Next Success Story
+              {btn}
             </a>
           </div>
         </section>

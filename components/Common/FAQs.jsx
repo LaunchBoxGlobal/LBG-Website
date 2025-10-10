@@ -6,6 +6,7 @@ import React, { useState } from "react";
 const FAQs = ({ faqs }) => {
   const [openFaq, setOpenFaq] = useState(null);
 
+  
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
