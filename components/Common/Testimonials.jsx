@@ -37,13 +37,13 @@ const Testimonials = ({testimonials  , desc , btn}) => {
             {testimonials.map((item, index) => (
               <SwiperSlide className="!bg-transparent" key={index}>
                 <div
-                  className={`group flex flex-col justify-between h-[420px] rounded-3xl p-8 text-left transition-all duration-300 shadow-md ${item.bg} ${item.text} hover:bg-[#212121] hover:text-white`}
+                  className={`group flex flex-col justify-between  rounded-3xl p-8 text-left transition-all duration-300 shadow-md ${item.bg} ${item.text} hover:bg-[#212121] hover:text-white`}
                 >
                   <div>
                     <div className="text-[40px] font-bold leading-[0.8] mb-4">
                       <FaQuoteLeft className="text-[#f40e00]" />
                     </div>
-                    <p className="text-lg h-[225px] leading-[1.6]">{item.quote}</p>
+                    <p className="text-lg h-[300px] leading-[1.6]">{item.quote}</p>
                   </div>
 
                   {/* Signature Section with Image */}
