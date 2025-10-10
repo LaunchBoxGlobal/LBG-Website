@@ -10,7 +10,7 @@ const Industries = () => {
   return (
     <section className="w-full padding-x pb-10 lg:pt-28 lg:pb-32 relative overflow-hidden">
       <section className="w-full flex flex-col items-center justify-center gap-6 text-center">
-        <h2 className="section-heading w-full lg:w-[80%]">
+        <h2 className="section-heading w-full lg:w-[70%]">
           Serving Industries in San Francisco with {" "}
           <span className="red-text">Custom Apps</span>
         </h2>

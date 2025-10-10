@@ -3,38 +3,91 @@ import { FiMinus } from "react-icons/fi";
 import { LuPlus } from "react-icons/lu";
 import "../../LocationComponents/industries.css";
 
-const INDUSTRIES_WE_SERVE = [
+import Link from "next/link";
+
+export const INDUSTRIES_WE_SERVE = [
   {
     title: "Health & Wellness",
-    description:
-      "As one of the trusted healthcare management software companies, we help you build health and wellness software with features like nutrition tracking and wearable integration. Secure, simple solutions that keep clients engaged while supporting your business growth.",
+    description: (
+      <>
+        As one of the trusted{" "}
+        <Link
+          href="https://lbg-website.vercel.app/industries/healthcare-software-development"
+          className="underline text-[#f40e00]"
+        >
+          healthcare management software companies
+        </Link>
+        , we help you build health and wellness software with features like
+        nutrition tracking and wearable integration. Secure, simple solutions
+        that keep clients engaged while supporting your business growth.
+      </>
+    ),
   },
   {
     title: "Financial Services & Fintech",
-    description:
-      "We make software development for fintech secure and straightforward. We’ve got you covered by providing services, including easy payments and reliable software. Safe transactions, protected data, and smooth user experiences that keep your customers happy and your business moving forward.",
+    description: (
+      <>
+        We make software development for fintech secure and straightforward.
+        We’ve got you covered by providing services, including easy payments and
+        reliable software. Safe transactions, protected data, and smooth user
+        experiences that keep your customers happy and your business moving
+        forward.
+      </>
+    ),
   },
   {
     title: "E-Learning",
-    description:
-      "Learning gets exciting with our elearning software development services. We design secure, user-friendly platforms with interactive courses and virtual classrooms, making education more accessible, engaging, and available anytime, anywhere for learners and educators alike.",
+    description: (
+      <>
+        Learning gets exciting with our elearning software development services.
+        We design secure, user-friendly platforms with interactive courses and
+        virtual classrooms, making education more accessible, engaging, and
+        available anytime, anywhere for learners and educators alike.
+      </>
+    ),
   },
   {
     title: "Travel & Experiences",
-    description:
-      "With our custom software development for travel, you can build solutions that handle bookings, tours, and trip planning with ease. Give travelers a smooth, engaging experience while we take care of the technical details that power your business.",
+    description: (
+      <>
+        With our custom software development for travel, you can build
+        solutions that handle bookings, tours, and trip planning with ease. Give
+        travelers a smooth, engaging experience while we take care of the
+        technical details that power your business.
+      </>
+    ),
   },
   {
     title: "Real Estate",
-    description:
-      "Our real estate software development services help you create platforms with property listings, virtual tours, and client management tools. Close deals faster, attract more buyers, and manage transactions easily. All while delivering a smooth experience to your clients.",
+    description: (
+      <>
+        Our{" "}
+        <Link
+          href="https://lbg-website.vercel.app/industries/real-estate"
+          className="underline text-[#f40e00]"
+        >
+          real estate software development services
+        </Link>{" "}
+        help you create platforms with property listings, virtual tours, and
+        client management tools. Close deals faster, attract more buyers, and
+        manage transactions easily — all while delivering a smooth experience to
+        your clients.
+      </>
+    ),
   },
   {
     title: "SaaS Marketing",
-    description:
-      "As a trusted SaaS software development company, we create flexible SaaS solutions with features like subscriptions, analytics, and automation. Keep customers engaged, increase sales, and simplify management. While you focus on growth and we take care of the tech.",
+    description: (
+      <>
+        As a trusted SaaS software development company, we create flexible SaaS
+        solutions with features like subscriptions, analytics, and automation.
+        Keep customers engaged, increase sales, and simplify management while
+        you focus on growth and we take care of the tech.
+      </>
+    ),
   },
 ];
+
 
 const Industries = () => {
   return (
