@@ -1,48 +1,49 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import ContactForm from "./ContactForm";
+import { motion } from "framer-motion";
 
 function FinalCTA() {
   return (
-    <section className=" padding-x ">
-      {/* ===== Left Content ===== */}
-      {/* <div className="relative py-16 px-10 z-10 flex flex-col items-start justify-center space-y-6 md:w-[60%]">
-        <h2 className="text-3xl font-extrabold leading-snug md:text-4xl">
-          Start Your Ecommerce Success
-          <br />
-          <span className="text-white">Journey With Us Today</span>
-        </h2>
-        <p className="text-gray-300">
-          Every moment you delay launching your online store, you risk losing
-          customers and revenue. Our team specializes in building
-          high-performing ecommerce stores and apps quickly and efficiently.
-          With our expertise, you can start selling faster, capture your
-          audience, and stay ahead of competitors without wasting another day.
-        </p>
+    <section className="padding-x">
+      <div className="bg-black items-center text-white rounded-[17px] w-full relative grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-hidden">
+        {/* ===== Left Side ===== */}
+        <ContactForm />
 
-        <Link
-              href="/contact-us"
-              className="group relative inline-block z-50 [transform:translateZ(0)] font-semibold px-6 py-3 rounded-lg overflow-hidden bg-[#F40E00] 
-  before:absolute before:bg-[#ffffff] before:top-1/2 before:left-1/2 before:h-8 before:w-12 before:-translate-y-1/2 before:-translate-x-1/2 
-  before:rounded-full before:scale-[0] before:opacity-0 
-  hover:before:scale-[6] hover:before:opacity-100 
-  before:transition before:ease-in-out before:duration-500"
-            >
-              <span className="relative z-0 text-white group-hover:text-black transition ease-in-out duration-500">
-              Talk to Our Experts
-              </span>
-            </Link>
-      </div> */}
-      <div className="py-10 bg-black text-white rounded-[17px]  w-full lg:py-20 relative  grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  overflow-hidden">
-      <ContactForm/>
-      <Image
-        src={"/industries/ecommerce/icons/mobiles.png"}
-        alt="mobile"
-        width={1050}
-        height={1050}
-        className="object-center"
-      />
+        {/* ===== Right Side with Floating Image ===== */}
+        <div className="relative hidden  md:flex justify-center items-center">
+          {/* Floating animation for the mobile image */}
+          <motion.div
+            animate={{
+              y: [0, -40, 0], // moves up 20px, then back down
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="relative z-20 w-[80%]"
+          >
+            <Image
+              src={"/industries/ecommerce/icons/mobiles.png"}
+              alt="mobile"
+              width={1050}
+              height={1050}
+              className="object-center"
+            />
+          </motion.div>
+
+          {/* Background Gradient Image */}
+          <Image
+            src={"/industries/ecommerce/icons/grad.png"}
+            alt="gradient"
+            width={1250}
+            height={1250}
+            className="object-center w-[1250px] absolute top-0 z-10"
+          />
+        </div>
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ function TechStack() {
         <section className="w-full  justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 midlg:grid-cols-4 gap-5 max-w-[1305px] mx-auto mt-16">
           {TECH_STACK?.map((service, index) => {
             return (
-              <div key={index} className="w-full">
+              <div key={index} className="w-full ">
                 <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] group rounded-[29px] p-7  relative">
                   <div  style={{ backgroundColor: service.color }} className={`w-[11px] h-[93px]  rounded-l-2xl absolute left-[-10px] group-hover:translate-y-16 transition-all duration-300`} />
                   <div className="flex flex-col items-start gap-3">
@@ -35,7 +35,7 @@ function TechStack() {
                     <h3 className="text-[20px] font-bold leading-none">
                       {service?.title}
                     </h3>
-                    <p className="text-md leading-[1.3] font-light">
+                    <p className="text-md h-[200px] leading-[1.3] font-light">
                       {service?.description}
                     </p>
                   </div>

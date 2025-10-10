@@ -16,7 +16,7 @@ export default function HeroSection() {
           width={1000}
           height={1000}
           alt="Laptop mockup"
-          className="drop-shadow-2xl z-0 w-[100%] sm:w-[70%]  lg:w-[60%] xl:w-[55%] 2xl:w-[50%] md:p-5 h-auto"
+          className="drop-shadow-2xl z-0 w-[100%] sm:w-[70%]  lg:w-[60%] midlg:w-[52%] lglg:w-[55%] xl:w-[55%] 2xl:w-[50%] md:p-5 h-auto"
         />
         <motion.div
           initial={{ y: 50}}

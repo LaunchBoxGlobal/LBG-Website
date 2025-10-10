@@ -38,7 +38,7 @@ function MidpageCTA() {
         <section className="relative  overflow-hidden rounded-3xl bg-gradient-to-br from-[#0B0B0B] to-[#1C1C1C] text-white shadow-2xl">
           <div className="relative z-10 flex flex-col md:flex-row items-center">
             {/* Left Content */}
-            <div className="md:w-[60%] px-10 md:px-16 py-16 space-y-6">
+            <div className="lg:w-[60%] relative z-50 px-10 md:px-16 py-16 space-y-6">
               <h2 className="text-4xl font-extrabold leading-snug ">
                 Every Hour You Wait Costs Sales.
                 <br />
@@ -68,7 +68,7 @@ function MidpageCTA() {
             </div>
 
             {/* Right 3D Marquee */}
-            <div className="hidden md:absolute z-50 scale-150 md:block md:w-[150%] h-[400px] relative -right-0 bottom-16">
+            <div className="hidden md:absolute z-40 scale-150 lg:block md:w-[170%] h-[400px] relative -right-0 bottom-16">
               <ThreeDMarquee images={icons} />
             </div>
           </div>

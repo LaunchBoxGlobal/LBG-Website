@@ -62,7 +62,7 @@ export const ThreeDMarquee = ({ images, className = "" }) => {
 
   return (
     <div
-      className={`absolute right-0 top-0 bottom-0 w-[47%] overflow-hidden ${className}`}
+      className={`absolute right-0 top-0 bottom-0 w-[45%] overflow-hidden ${className}`}
       style={{
         perspective: "1200px",
         transformStyle: "preserve-3d",

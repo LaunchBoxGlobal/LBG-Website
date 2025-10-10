@@ -17,7 +17,7 @@ const Hero = () => {
           that perform.
         </p>
         <div className="flex items-center justify-center gap-4 mt-1 mb-10 z-20">
-          <ContactButton text={"Increase Sales Today"} />
+          <ContactButton text={"Discuss Growth Strategy"} />
         </div>
       </section>
     </section>

@@ -33,7 +33,7 @@ function GlobalEcommerceMarket() {
   ];
   return (
     <section className="w-full py-20 midlg:py-32 bg-[#fff] padding-x">
-      <section className="w-full flex flex-col items-center justify-center gap-6 padding-x text-center">
+      <section className="w-full flex flex-col items-center justify-center gap-6  text-center">
         <h2 className="section-heading ">
           Global Ecommerce Market: A {" "}
           <span className="red-text"> Trillion-Dollar Opportunity</span>
