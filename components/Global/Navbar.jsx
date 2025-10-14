@@ -170,7 +170,7 @@ const Navbar = () => {
                     Healthcare Software Development
                   </Link>
                   <Link
-                    href={`/industries/real-estate`}
+                    href={`/industries/real-estate-app-development`}
                     onClick={toggleIndustriesDropdown}
                     className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
                   >

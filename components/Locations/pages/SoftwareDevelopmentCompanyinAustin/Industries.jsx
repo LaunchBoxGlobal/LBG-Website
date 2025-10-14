@@ -12,8 +12,8 @@ export const INDUSTRIES_WE_SERVE = [
       <>
         As one of the trusted{" "}
         <Link
-          href="https://lbg-website.vercel.app/industries/healthcare-software-development"
-          className="underline text-[#f40e00]"
+          href="/industries/healthcare-software-development"
+          className="underline "
         >
           healthcare management software companies
         </Link>
@@ -63,8 +63,8 @@ export const INDUSTRIES_WE_SERVE = [
       <>
         Our{" "}
         <Link
-          href="https://lbg-website.vercel.app/industries/real-estate"
-          className="underline text-[#f40e00]"
+          href="/industries/real-estate-app-development"
+          className="underline "
         >
           real estate software development services
         </Link>{" "}

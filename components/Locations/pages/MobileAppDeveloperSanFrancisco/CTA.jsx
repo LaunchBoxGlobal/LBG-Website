@@ -6,11 +6,11 @@ function CTA() {
   return (
     <section className="padding-x w-[95%] p-10 md:w-[80%] text-center flex  justify-center flex-col gap-5  mx-auto rounded-2xl bg-[#f40e00] text-white relative">
       <Image
-        src={"/locations/software-dev-company-francisco/cta-bg.png"}
+             src="/locations/mobile-app-company-francisco/cta-bg.png"
         alt="cta"
-        className="absolute object-cover md:block hidden"
-        width={1000}
-        height={1000}
+        fill
+        className="absolute inset-0 object-cover z-0"
+        priority
       />
       <div className="md:w-[60%] mx-auto relative z-10 space-y-5">
         <h1 className="text-4xl font-bold">

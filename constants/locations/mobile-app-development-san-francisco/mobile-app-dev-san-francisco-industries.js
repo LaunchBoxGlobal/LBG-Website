@@ -19,7 +19,7 @@ export const MOBILE_APP_DEV_SAN_FRANCISCO_INDUSTRIES = [
       <>
         As a leading{" "}
         <Link
-          href="https://lbg-website.vercel.app/industries/healthcare-software-development"
+          href="/industries/healthcare-software-development"
           className="underline "
         >
           healthcare mobile app development company
@@ -37,7 +37,7 @@ export const MOBILE_APP_DEV_SAN_FRANCISCO_INDUSTRIES = [
       <>
         Our{" "}
         <Link
-          href="https://lbg-website.vercel.app/industries/ecommerce-app-development"
+          href="/industries/ecommerce-app-development"
           className="underline "
         >
           e-commerce mobile app development services
@@ -55,7 +55,7 @@ export const MOBILE_APP_DEV_SAN_FRANCISCO_INDUSTRIES = [
       <>
         Our{" "}
         <Link
-          href="https://lbg-website.vercel.app/industries/real-estate"
+          href="/industries/real-estate-app-development"
           className="underline "
         >
           real estate mobile app development
