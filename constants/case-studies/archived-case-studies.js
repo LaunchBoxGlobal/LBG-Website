@@ -29,4 +29,9 @@ export const ARCHIVED_CASE_STUDIES = [
     title: "JB Sittner Trucking",
     url: "/case-studies/jb-sittner-trucking",
   },
+  {
+    image: "/case-studies/market/market-toll-banner.png",
+    title: "Market Toll",
+    url: "/case-studies/market-toll",
+  },
 ];

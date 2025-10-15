@@ -57,7 +57,7 @@ const RealEstateServices = () => {
           <p className="text-lg leading-[1.2]">
             Empower your agents and agencies with portals designed to simplify
             daily operations. Through{" "}
-            <Link href={`/services/web-app-development`}>
+            <Link className="underline" href={`/services/web-app-development`}>
               web app development
             </Link>{" "}
             and mobile app solutions, manage listings, track leads, and

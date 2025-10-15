@@ -13,7 +13,7 @@ const Process = () => {
         <h2 className="section-heading">Process</h2>
         <p className="text-center lg:w-[90%] text-base lg:text-xl mt-7">
           We followed a clear agile workflow. The plan was not to overcomplicate
-          things; we planned to keep it simple. We made fast decisions, kept
+          things; we planned to keep it simple. We made fast decisions, ke pt
           moving, and built without getting stuck in the usual mess.
         </p>
       </section>

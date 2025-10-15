@@ -53,7 +53,7 @@ const SecurityAndComplianceSlider = ({ content }) => {
       >
         {content?.map((t, i) => {
           return (
-            <SwiperSlide key={i} className="w-[95%] lg:w-[320px]">
+            <SwiperSlide key={i} className="w-[95%] !bg-transparent lg:w-[320px]">
               <div
                 className="w-full min-h-[420px] bg-[#F6F6F6] rounded-[21px] px-7 pb-7 pt-16 flex flex-col items-center text-center gap-3 relative group hover:bg-[#F40E00] hover:text-white transition-all duration-300"
                 key={i}
@@ -63,7 +63,7 @@ const SecurityAndComplianceSlider = ({ content }) => {
                   alt="security-and-compliance-card-image"
                   width={80}
                   height={114}
-                  className="absolute top-7 right-7 z-0 transition duration-300 group-hover:invert group-hover:brightness-0"
+                  className="absolute top-7 !h-20 !w-20 right-7 z-0 transition duration-300 group-hover:invert group-hover:brightness-0"
                 />
                 <div className="w-full">
                   <img
@@ -71,7 +71,7 @@ const SecurityAndComplianceSlider = ({ content }) => {
                     alt={t?.alt_tag}
                     width={t?.width}
                     height={t?.height}
-                    className="mx-auto object-contain transition duration-300 group-hover:invert group-hover:brightness-0"
+                    className="mx-auto !w-10 !object-contain transition duration-300 group-hover:invert group-hover:brightness-0"
                   />
                 </div>
                 <h3 className="font-semibold text-[22px] leading-none mt-5">

@@ -7,6 +7,7 @@ import {
 import React, { useState } from "react";
 import FeatureCard from "./FeatureCard";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const Features = () => {
   const [activeFeatues, setActiveFeatures] = useState("patient");
@@ -123,7 +124,7 @@ const Features = () => {
         </button>
       </div>
 
-      <div className="w-full bg-[#F9F9F9] rounded-[17px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 lg:px-10 py-10 lg:py-20 mt-16">
+      <div className={cn("w-full bg-[#F9F9F9] rounded-[17px] grid grid-cols-1 md:grid-cols-2   px-5 lg:px-10 py-10 lg:py-20 mt-16" , activeFeatues == "admin" ? "lg:grid-cols-2 gap-32" :"lg:grid-cols-3 gap-8")}>
         <div className="flex flex-col items-start gap-4">
           {activeFeatues === "patient" ? (
             <>
@@ -143,7 +144,7 @@ const Features = () => {
             </>
           ) : (
             <>
-              {HEALTHCARE_ADMIN_SCREEN_CONTENT?.slice(0, 3)?.map(
+              {HEALTHCARE_PATIENT_SCREEN_CONTENT?.slice(3, 6)?.map(
                 (feature, i) => {
                   return <FeatureCard feature={feature} key={i} />;
                 }
@@ -170,19 +171,24 @@ const Features = () => {
             />
           ) : (
             <Image
-              src={"/industries/healthcare/admin-mobile-screen-mockup.png"}
+              src={"/industries/healthcare/admin-healthcare.png"}
               alt="admin-mobile-screen-mockup"
-              width={250}
+              width={1000}
               height={490}
-              className="object-contain lg:min-h-[500px]"
+              className="object-contain "
             />
           )}
         </div>
-        <div className="flex flex-col items-start gap-4">
-          {HEALTHCARE_PATIENT_SCREEN_CONTENT?.slice(3, 6)?.map((feature, i) => {
-            return <FeatureCard feature={feature} key={i} />;
-          })}
-        </div>
+        {(activeFeatues == "patient" ||
+          activeFeatues == "doctor") && (
+            <div className="flex flex-col items-start gap-4">
+              {HEALTHCARE_PATIENT_SCREEN_CONTENT?.slice(3, 6)?.map(
+                (feature, i) => {
+                  return <FeatureCard feature={feature} key={i} />;
+                }
+              )}
+            </div>
+          )}
       </div>
     </section>
   );
