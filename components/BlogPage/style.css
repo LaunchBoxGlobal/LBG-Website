@@ -11,7 +11,7 @@
 }
 
 .blogContent > h2 {
-  font-size: clamp(26px, 30px, 35px);
+  font-size: clamp(26px, 35px, 35px);
   line-height: 1.35;
   margin: 50px 0 10px 0;
   font-weight: 700 !important;
@@ -33,7 +33,8 @@
 
 .blogContent > p {
   font-size: clamp(14px, 18px, 20px);
-  line-height: 1.35;
+  line-height: 1.7;
+  font-weight: 300;
   color: #434343 !important;
   /* text-align: justify; */
 }
@@ -244,12 +245,12 @@ summary::marker {
   border-radius: 16px;
   margin-top: 2rem;
   flex-wrap: wrap;
-  @apply flex flex-col lg:flex-row items-center justify-between;
+  @apply flex flex-col text-center items-center justify-between hover:scale-105 transition-all ease-linear;
 }
 
 .blogGrayCta div {
   /* max-width: 80%; */
-  @apply w-full lg:max-w-[65%]
+  @apply w-full lg:max-w-[65%] text-center 
   /* border: 1px solid black; */;
 }
 
@@ -257,17 +258,18 @@ summary::marker {
   font-weight: 600;
   font-size: clamp(25px, 1.8rem, 2.3rem);
   margin-bottom: 10px;
-  @apply tracking-tight leading-[1] text-center lg:text-start;
+  @apply tracking-tight leading-[1] text-center ;
 }
 
 .blogGrayCta div p {
   font-weight: 400;
   font-size: clamp(16px, 18px, 20px);
   /* margin-bottom: 10px; */
-  @apply tracking-tight leading-[1] text-center lg:text-start;
+  @apply tracking-tight leading-[1] text-center ;
 }
 
 .blogGrayCta a {
+  position: relative;
   background-color: #f40e00;
   color: white;
   font-weight: 700;
@@ -275,6 +277,46 @@ summary::marker {
   border-radius: 8px;
   min-width: 200px;
   text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Add a glossy moving shine */
+.blogGrayCta a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+    background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+/* Hover effect — run the shine animation */
+.blogGrayCta a:hover::before {
+  animation: shine-move 0.5s ease-in-out forwards;
+}
+
+/* Optional: tiny scale-up for interactivity */
+.blogGrayCta a:hover {
+  transform: scale(1.03);
+}
+
+/* Keyframes for shine movement */
+@keyframes shine-move {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
 }
 
 .blogBlackCta {
@@ -288,6 +330,7 @@ summary::marker {
   color: white;
   border-radius: 16px;
   margin: 2rem 0;
+  @apply hover:scale-105 transition-all ease-linear
 }
 
 .blogBlackCta div {
@@ -313,13 +356,45 @@ summary::marker {
 }
 
 .blogBlackCta a {
+  position: relative;
   background-color: #f40e00;
   color: white;
   font-weight: 700;
   padding: 1rem 1.5rem;
   border-radius: 8px;
   text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
+
+/* ✨ The shine overlay */
+.blogBlackCta a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+/* ✨ Run the shine animation on hover */
+.blogBlackCta a:hover::before {
+  animation: shine-move 0.5s ease-in-out forwards;
+}
+
+/* Optional: subtle scale-up */
+.blogBlackCta a:hover {
+  transform: scale(1.03);
+}
+
 
 .blogRedButton {
   display: block;
@@ -334,4 +409,8 @@ summary::marker {
 
 .blogContent nav {
   display: none !important;
+}
+
+p> strong{
+  font-weight: 700;
 }

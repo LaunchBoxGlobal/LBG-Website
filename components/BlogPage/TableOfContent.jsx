@@ -1,30 +1,94 @@
-import Link from "next/link";
-import React from "react";
+"use client";
 
-const TableOfContent = ({ headings }) => {
-  console.log(`headings >>> `, headings);
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, ChevronRight } from "lucide-react";
+import Link from "next/link";
+
+const TableOfContent = ({ headings = [] }) => {
+  const [isOpen, setIsOpen] = useState(true);
+  const [activeId, setActiveId] = useState(null);
+
+  useEffect(() => {
+    if (!headings.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "0px 0px -70% 0px",
+        threshold: 0.3,
+      }
+    );
+
+    headings.forEach((h) => {
+      const el = document.getElementById(h.id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [headings]);
+
+  const handleClick = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveId(id);
+    }
+  };
+
   return (
-    <div className="w-full bg-[#fafafa] border border-[#E9E9E9] p-5 lg:p-7 rounded-[15px] hidden lg:block">
-      <h3 className="font-bold text-lg border-b-2 border-[#F40E00] pb-2 w-1/2">
-        Table Of Content
-      </h3>
-      <ul className="flex flex-col items-start gap-2 mt-5 list-disc pl-2">
-        {headings?.slice(1).map((h, i) => {
-          return (
-            <Link
-              href={`#${h}`}
-              key={i}
-              className="font-normal underline text-lg flex items-start gap-2 leading-[1.3]"
-            >
-              <div className="min-w-[14px] min-h-[14px] h-[14px] w-[14px] bg-[#F40E00] mt-1.5" />
-              <span
-                className="text-[#434343]"
-                dangerouslySetInnerHTML={{ __html: h }}
-              />
-            </Link>
-          );
-        })}
-      </ul>
+    <div className="w-full bg-white   border-b overflow-hidden">
+
+      <button
+        onClick={() => setIsOpen((prev) => !prev)}
+        className="w-full flex items-center justify-between p-4 font-semibold text-sm md:text-base "
+      >
+        <span className="uppercase text-sm md:text-xl tracking-wide">Table of Contents</span>
+        {isOpen ? (
+          <ChevronDown size={18} className="text-gray-600" />
+        ) : (
+          <ChevronRight size={18} className="text-gray-600" />
+        )}
+      </button>
+
+
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            className=""
+          >
+            {headings.length > 0 ? (
+              headings.map((heading, index) => (
+                <Link 
+                href={`#${heading}`}
+                  key={index}
+                  className={`cursor-pointer hover:font-bold transition-all ease-linear rounded-2xl hover:bg-gray-100 px-5 py-3 text-sm md:text-lg  flex items-center gap-2 ${
+                    activeId === heading.id
+                      ? "bg-gray-100 font-semibold text-red-600"
+                      : "hover:bg-gray-100 text-gray-700"
+                  }`}
+                  onClick={() => handleClick(heading.id)}
+                >
+                  <ChevronRight size={20}/>
+                 <span dangerouslySetInnerHTML={{__html:heading}} /> 
+                </Link>
+              ))
+            ) : (
+              <p className="p-4 text-gray-500 text-sm">No sections found</p>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

@@ -95,11 +95,9 @@ export default async function BlogPage({ params }) {
   );
 }
 
-// Utility: extract <h1> and <h2> from HTML
 function extractHeadingsFromHTML(html) {
   const headings = [];
 
-  // Naive regex for demo – for production use a parser or DOMPurify + JSDOM
   const h1Matches = [...html.matchAll(/<h1[^>]*>(.*?)<\/h1>/gi)];
   const h2Matches = [...html.matchAll(/<h2[^>]*>(.*?)<\/h2>/gi)];
 

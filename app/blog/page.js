@@ -23,7 +23,12 @@ export default async function page() {
     }
   );
 
+    const categoriesRes = await fetch(
+    "https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/categories"
+  );
+  const categories = await categoriesRes.json();
+
   const blogs = await data.json();
 
-  return <BlogsPage blogs={blogs} />;
+  return <BlogsPage blogs={blogs} categories={categories} />;
 }

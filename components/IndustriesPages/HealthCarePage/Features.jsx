@@ -144,7 +144,7 @@ const Features = () => {
             </>
           ) : (
             <>
-              {HEALTHCARE_PATIENT_SCREEN_CONTENT?.slice(3, 6)?.map(
+              {HEALTHCARE_ADMIN_SCREEN_CONTENT?.slice(3, 6)?.map(
                 (feature, i) => {
                   return <FeatureCard feature={feature} key={i} />;
                 }
@@ -179,10 +179,18 @@ const Features = () => {
             />
           )}
         </div>
-        {(activeFeatues == "patient" ||
-          activeFeatues == "doctor") && (
+        {activeFeatues == "patient"  && (
             <div className="flex flex-col items-start gap-4">
               {HEALTHCARE_PATIENT_SCREEN_CONTENT?.slice(3, 6)?.map(
+                (feature, i) => {
+                  return <FeatureCard feature={feature} key={i} />;
+                }
+              )}
+            </div>
+          )}
+        {activeFeatues == "doctor"  && (
+            <div className="flex flex-col items-start gap-4">
+              {HEALTHCARE_DOCTOR_SCREEN_CONTENT?.slice(3, 6)?.map(
                 (feature, i) => {
                   return <FeatureCard feature={feature} key={i} />;
                 }
