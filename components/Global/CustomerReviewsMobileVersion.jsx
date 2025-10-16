@@ -42,7 +42,7 @@ export const sliderSettings = {
 
 const CustomerReviewsMobileVersion = () => {
   return (
-    <section className="w-full overflow-hidden block lg:hidden relative">
+    <section className="w-full  overflow-hidden block lg:hidden relative">
       <Swiper
         {...sliderSettings}
         modules={[Autoplay, Navigation, Pagination]}
@@ -50,12 +50,12 @@ const CustomerReviewsMobileVersion = () => {
       >
         {REVIEWS?.map((review, index) => {
           return (
-            <SwiperSlide key={index} className="">
+            <SwiperSlide key={index} className="!bg-transparent">
               <CustomerReviewCard index={1} key={index} text={review} />
             </SwiperSlide>
           );
         })}
-        <Buttons />
+        {/* <Buttons /> */}
       </Swiper>
     </section>
   );
@@ -66,7 +66,7 @@ export default CustomerReviewsMobileVersion;
 export const Buttons = () => {
   const swiper = useSwiper();
   return (
-    <div className="w-full flex items-center justify-center gap-2 absolute bottom-[25px] z-10">
+    <div className="w-full flex items-center justify-center gap-2 !absolute !bottom-[-10px] !z-50">
       <button
         type="button"
         onClick={() => swiper.slidePrev()}

@@ -17,7 +17,7 @@ const HomeCustomerReviews = () => {
         <span className="red-text">Clients</span>
       </h2>
 
-      <div className="w-full lg:hidden h-[350px]">
+      <div className="w-full lg:hidden h-[400px]">
         <CustomerReviewsMobileVersion />
       </div>
 
