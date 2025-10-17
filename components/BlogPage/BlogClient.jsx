@@ -86,6 +86,21 @@ const BlogClient = ({
     formik.setFieldValue("pageUrl", window.location.href);
   }, []);
 
+useEffect(() => {
+  const hasSeenPopup = sessionStorage.getItem("hasSeenNewsletterPopup");
+
+  if (!hasSeenPopup) {
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+      console.log("calling newsletter popup after 3s");
+      sessionStorage.setItem("hasSeenNewsletterPopup", "true");
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }
+}, []);
+
+
   return (
     <main className="w-full bg-white  py-36 2xl:pt-52 padding-x">
       <div className="fixed bottom-0 left-[3%] z-[9999]">
