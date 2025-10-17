@@ -28,6 +28,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { FaXTwitter } from "react-icons/fa6";
 import { useFormik } from "formik";
+import axios from "axios";
 
 const BlogClient = ({
   blog,
@@ -44,6 +45,9 @@ const BlogClient = ({
   const matchedCategories = blog?.categories?.map((catId) =>
     categories?.find((category) => category?.id === catId)
   );
+   useEffect(() => {
+      formik.setFieldValue("pageUrl", window.location.href);
+    }, []);
 
   const formik = useFormik({
     initialValues: {
@@ -78,7 +82,6 @@ const BlogClient = ({
       }
     },
   });
-console.log(formik.errors)
   useEffect(() => {
     formik.setFieldValue("pageUrl", window.location.href);
   }, []);
