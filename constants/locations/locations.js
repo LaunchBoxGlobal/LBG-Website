@@ -65,4 +65,27 @@ export const LOCATIONS_ARCHIVE = [
       },
     ],
   },
+  {
+    title: "Austin",
+    pages: [
+      {
+        title: "Software Development Company in Austin",
+        url: "/software-development-company-in-austin",
+      },
+      {
+        title: "Mobile App Development in Austin",
+        url: "/mobile-app-development-in-austin",
+      },
+    ],
+  },
+  {
+    title: "San Francisco",
+    pages: [
+    
+      {
+        title: "Mobile App Development in San Francisco",
+        url: "/mobile-app-development-in-san-francisco",
+      },
+    ],
+  },
 ];

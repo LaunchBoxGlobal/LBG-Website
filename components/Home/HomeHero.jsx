@@ -64,7 +64,7 @@ const HomeHero = () => {
       </div>
 
       <div className="w-full flex items-center justify-center z-0">
-        <GlobeDemo />
+              <GlobeDemo />
       </div>
 
       <Image
