@@ -13,7 +13,7 @@ const BlogsPage = ({ blogs, categories }) => {
       : blogs?.filter((blog) =>
           blog.categories?.includes(activeCategory)
         );
-console.log({filteredBlogs , categories})
+
         
   return (
     <section className="w-full relative pt-36 2xl:pt-52 padding-x">

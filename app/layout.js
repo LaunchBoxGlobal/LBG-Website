@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
           async
           charSet="UTF-8"
           crossOrigin="*"
+          className="bottom-10"
         />
         {/* <WhatsappButton /> */}
         <PopupForm />

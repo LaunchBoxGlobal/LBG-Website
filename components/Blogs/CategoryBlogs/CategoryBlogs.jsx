@@ -1,47 +1,79 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import BlogCard from "../BlogCard";
 import BlogsContactForm from "@/components/Common/BlogsContactForm";
 
-const CategoryBlogs = async ({ id, category }) => {
-  let blogs = [];
+const CategoryBlogs = ({ id, blogs = [], categories = [] }) => {
+  const [activeCategory, setActiveCategory] = useState("all");
 
-  try {
-    const res = await fetch(
-      `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?categories=${id}`,
-      { cache: "no-store" } // or "force-cache" if you're okay with caching
-    );
-
-    if (res.ok) {
-      blogs = await res.json();
+  
+  useEffect(() => {
+    if (id) {
+      setActiveCategory(Number(id));
     }
-  } catch (error) {
-    console.error("Error fetching category blogs:", error);
-  }
+  }, [id]);
+
+  // ✅ Filter blogs based on selected category
+  const filteredBlogs =
+    activeCategory === "all"
+      ? blogs
+      : blogs?.filter((blog) =>
+          blog.categories?.includes(activeCategory)
+        );
+
 
   return (
-    <section className="w-full relative padding-x">
-      {blogs?.length > 0 ? (
-        <>
-          <div className="w-full relative pt-36 2xl:pt-52 padding-x flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white">
-            <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-10 md:leading-[54px] lg:leading-[84px] xl:leading-[104px] 2xl:leading-[104px] w-full">
-              Our Exclusive <span className="red-text">Blogs</span>
-            </h1>
-          </div>
+    <section className="w-full relative pt-36 2xl:pt-52 padding-x">
+      {/* Header */}
+      <div className="w-full relative pt-10 flex flex-col items-center justify-start gap-5 lg:gap-3 bg-white">
+        <h1 className="font-bold text-[8.5vw] md:text-[5.5vw] text-center tracking-normal leading-[1] w-full">
+          Our Exclusive <span className="red-text">Blogs</span>
+        </h1>
+      </div>
 
-          <div className="w-full my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10">
-            {blogs.map((blog, i) => (
-              <BlogCard key={i} content={blog} />
-            ))}
-          </div>
-        </>
-      ) : (
-        <div className="w-full pt-40 pb-20 text-center">
-          <p className="text-4xl font-bold red-text">Blogs not found.</p>
-        </div>
-      )}
+      {/* Category Filter Buttons */}
+      <div className="w-full flex flex-wrap justify-center items-center gap-3 mt-10">
+        <button
+          onClick={() => setActiveCategory("all")}
+          className={`px-4 py-2 rounded-full border text-sm md:text-base transition-all ${
+            activeCategory === "all"
+              ? "bg-red-600 text-white border-red-600"
+              : "border-gray-300 hover:bg-gray-100"
+          }`}
+        >
+          All
+        </button>
 
+        {categories?.map((cat) => (
+          <button
+            key={cat.id}
+            onClick={() => setActiveCategory(cat.id)}
+            className={`px-4 py-2 rounded-full border text-sm md:text-base transition-all ${
+              activeCategory == cat.id
+                ? "bg-red-600 text-white border-red-600"
+                : "border-gray-300 hover:bg-gray-100"
+            }`}
+          >
+            <span dangerouslySetInnerHTML={{ __html: cat.name }} />
+          </button>
+        ))}
+      </div>
+
+      {/* Blog Grid */}
+      <div className="w-full my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10">
+        {filteredBlogs?.length ? (
+          filteredBlogs.map((blog, i) => (
+            <BlogCard key={blog.id || i} content={blog} />
+          ))
+        ) : (
+          <div className="col-span-full text-center text-gray-500">
+            No blogs found for this category.
+          </div>
+        )}
+      </div>
+
+      {/* Divider + Contact Form */}
       <div className="w-full border hidden lg:block" />
-
       <div className="w-full py-10 lg:py-28">
         <BlogsContactForm />
       </div>

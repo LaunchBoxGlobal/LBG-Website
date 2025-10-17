@@ -27,7 +27,6 @@ export default async function page() {
     "https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/categories?per_page=100"
   );
   const categories = await categoriesRes.json();
-console.log(categories)
   const blogs = await data.json();
 
   return <BlogsPage blogs={blogs} categories={categories} />;
