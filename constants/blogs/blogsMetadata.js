@@ -1,4 +1,41 @@
 export const BLOGS_METADATA = {
+  "how-much-does-it-cost-to-develop-an-app-complete-price-breakdown": {
+  title: "How Much Does It Cost to Develop an App? The Price Breakdown",
+  description:
+    "Wondering how much it cost to develop an app in 2025? Explore detailed price breakdowns, app design cost, and factors influencing budgets.",
+  canonical:
+    "https://launchboxglobal.com/blog/how-much-does-it-cost-to-develop-an-app-complete-price-breakdown/",
+},
+
+  "how-do-free-apps-make-money-11-proven-monetization-models-for-2025": {
+  title: "How Do Free Apps Make Money? Proven Models for 2025",
+  description:
+    "Discover how free apps make money in 2025 with ads, in-app purchases, and subscriptions. Learn proven monetization strategies to scale your app business.",
+  canonical:
+    "https://launchboxglobal.com/blog/how-do-free-apps-make-money-11-proven-monetization-models-for-2025/",
+},
+
+  "how-to-rescue-a-half-built-saas-without-wasting-more-time": {
+  title: "Rescue Half-Built Projects with Expert SaaS Development",
+  description:
+    "Discover how to rescue stalled SaaS projects with proven SaaS development strategies. LaunchBox Global helps rebuild, recover, and deliver results faster.",
+  canonical: "https://launchboxglobal.com/blog/how-to-rescue-a-half-built-saas-without-wasting-more-time/",
+},
+
+  "how-to-construct-an-app-from-scratch-a-step-by-step-guide-for-beginners": {
+  title: "How to Construct an App – Step-by-Step Guide",
+  description:
+    "Learn how to construct an app from scratch with a complete step-by-step guide. Discover tools, strategies, and expert tips to build scalable mobile apps.",
+  canonical: "https://launchboxglobal.com/blog/how-to-construct-an-app-from-scratch-a-step-by-step-guide-for-beginners/",
+},
+
+  "flutter-vs-react-native-making-the-right-app-choice": {
+  title: "Flutter vs React Native: Choose the Right Framework",
+  description:
+    "Compare Flutter vs React Native to find the best framework for your startup. Learn which delivers faster, scalable, and high-performing mobile apps.",
+  canonical: "https://launchboxglobal.com/blog/flutter-vs-react-native-making-the-right-app-choice/",
+},
+
   "top-6-apps-like-tiktok-you-should-try-in-2025": {
     title: "Top 6 Apps like TikTok to try in 2025",
     description:

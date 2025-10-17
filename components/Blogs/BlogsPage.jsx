@@ -6,7 +6,7 @@ import BlogsContactForm from "../Common/BlogsContactForm";
 
 const BlogsPage = ({ blogs, categories }) => {
   const [activeCategory, setActiveCategory] = useState("all");
-
+console.log(blogs.length)
   const filteredBlogs =
     activeCategory === "all"
       ? blogs

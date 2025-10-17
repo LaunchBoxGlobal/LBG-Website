@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import BlogsContactForm from "@/components/Common/BlogsContactForm";
 import SingleBlogPage from "@/components/BlogPage/SingleBlogPage";
@@ -16,7 +16,7 @@ import {
   MdKeyboardArrowRight,
   MdKeyboardArrowUp,
 } from "react-icons/md";
-
+import * as Yup from "yup";
 import {
   FaShareAlt,
   FaFacebookF,
@@ -27,6 +27,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { FaXTwitter } from "react-icons/fa6";
+import { useFormik } from "formik";
 
 const BlogClient = ({
   blog,
@@ -39,65 +40,117 @@ const BlogClient = ({
 }) => {
   const [showShare, setShowShare] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
   const matchedCategories = blog?.categories?.map((catId) =>
     categories?.find((category) => category?.id === catId)
   );
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      // pageUrl: window.location.href,
+      emailSubject: "Subscribe Form from Blog Page",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Please enter your email address"),
+    }),
+    onSubmit: async (values, { resetForm }) => {
+      setLoading(true);
+      try {
+        const res = await axios.post(`/api/submit-form`, values, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (res?.status === 200) {
+
+          resetForm();
+          alert("Form submitted successfully!");
+        }
+      } catch (error) {
+        console.log("error while submitting form >>>", error);
+        alert("Something went wrong!");
+      } finally {
+        setLoading(false);
+      }
+    },
+  });
+console.log(formik.errors)
+  useEffect(() => {
+    formik.setFieldValue("pageUrl", window.location.href);
+  }, []);
 
   return (
     <main className="w-full bg-white  py-36 2xl:pt-52 padding-x">
       <div className="fixed bottom-0 left-[3%] z-[9999]">
         {isOpen ? (
-          <div className="bg-white border border-gray-200 shadow-2xl rounded-t-xl w-[300px] p-5 relative">
+          <form
+            onSubmit={formik.handleSubmit}
+            className="bg-white border md:block hidden border-gray-200 shadow-2xl rounded-t-xl w-[300px]  relative"
+          >
             {/* Header */}
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="text-sm font-bold text-gray-900">
+            <div onClick={() => setIsOpen(false)}  className="flex cursor-pointer justify-between text-white p-3 rounded-t-lg  bg-[#f40e00] items-center mb-3">
+              <h3 className="text-sm font-bold  text-white ">
                 SUBSCRIBE TO OUR NEWSLETTER
               </h3>
 
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-gray-500 hover:text-gray-700"
-              >
+              <button className="text-white">
                 <MdKeyboardArrowDown size={20} />
               </button>
             </div>
 
             {/* Body */}
-            <input
-              className="border w-full my-2 p-2 rounded-md "
-              placeholder="Email"
-            />
-            <p className="text-sm text-gray-600 mb-4">
-              Get the latest updates, blogs, and news delivered to your inbox.
-            </p>
-            <button
-              onClick={() =>
-                document
-                  .getElementById("newsletter-form")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-              className="w-full bg-[#F40E00] text-white font-semibold py-2 rounded-lg hover:bg-[#d90c00] transition"
-            >
-              Subscribe Now
-            </button>
-          </div>
+            <div className="px-5 pb-5">
+              <input
+                className="border w-full mt-2 p-2 outline-none rounded-md "
+                placeholder="Email"
+                type="email"
+                name="email"
+                id="email"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.email}
+              />
+                 {formik.touched.email && formik.errors.email && (
+                <span className="text-xs text-red-600">
+                  {formik.errors.email}
+                </span>
+              )}
+              <p className="text-sm text-gray-600 mb-4 pt-2">
+                Get the latest updates, blogs, and news delivered to your inbox.
+              </p>
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("newsletter-form")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                type="submit"
+                disabled={loading}
+                className="w-full bg-[#F40E00] text-white font-semibold py-2 rounded-lg hover:bg-[#d90c00] transition"
+              >
+                Subscribe Now
+              </button>
+            </div>
+          </form>
         ) : (
           <button
             onClick={() => setIsOpen(true)}
-            className="flex items-center justify-between w-[300px] bg-white border border-gray-300 
-                 shadow-md px-4 py-3 rounded-t-lg font-semibold text-sm text-gray-900 hover:bg-gray-50"
+            className="md:flex hidden items-center justify-between text-white w-[300px] bg-[#f40e00]  border-gray-300 
+                 shadow-md px-4 py-3 rounded-t-lg font-semibold text-sm  "
           >
             SUBSCRIBE TO OUR NEWSLETTER
-            <MdKeyboardArrowUp size={20} className="text-gray-700" />
+            <MdKeyboardArrowUp size={20} className="text-white" />
           </button>
         )}
       </div>
 
-
       <div className="relative">
         <div className="sticky top-1/3 w-[10%]  z-50 hidden md:flex flex-col ">
           <div className="relative">
-      
             <button
               onClick={() => setShowShare((prev) => !prev)}
               className={cn(
@@ -208,10 +261,12 @@ const BlogClient = ({
               author={author}
               date={blogDate}
             />
-            <div className="bg-white border mx-auto md:hidden block border-gray-200 shadow-2xl rounded-t-xl w-[300px] p-5 relative">
-  
-              <div className="flex justify-between items-center mb-3">
-                <h3 className="text-sm font-bold text-gray-900">
+            <form
+              onSubmit={formik.handleSubmit}
+              className="bg-white border my-4 mx-auto md:hidden block border-gray-200 shadow-2xl rounded-xl w-[300px] p-5 relative"
+            >
+              <div className="flex justify-between  items-center mb-3">
+                <h3 className="text-sm font-bold ">
                   SUBSCRIBE TO OUR NEWSLETTER
                 </h3>
               </div>
@@ -219,6 +274,12 @@ const BlogClient = ({
               <input
                 className="border w-full my-2 p-2 rounded-md "
                 placeholder="Email"
+                type="email"
+                name="email"
+                id="email"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.email}
               />
               <p className="text-sm text-gray-600 mb-4">
                 Get the latest updates, blogs, and news delivered to your inbox.
@@ -229,11 +290,13 @@ const BlogClient = ({
                     .getElementById("newsletter-form")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
+                type="submit"
+                disabled={loading}
                 className="w-full bg-[#F40E00] text-white font-semibold py-2 rounded-lg hover:bg-[#d90c00] transition"
               >
                 Subscribe Now
               </button>
-            </div>
+            </form>
           </div>
 
           {/* Optional Sidebar */}
