@@ -17,7 +17,6 @@ import {
   MdKeyboardArrowUp,
 } from "react-icons/md";
 
-// 👇 icons for share
 import {
   FaShareAlt,
   FaFacebookF,
@@ -94,11 +93,11 @@ const BlogClient = ({
         )}
       </div>
 
-      {/* 🌐 Floating Share Button */}
+
       <div className="relative">
         <div className="sticky top-1/3 w-[10%]  z-50 hidden md:flex flex-col ">
           <div className="relative">
-            {/* Main circular button */}
+      
             <button
               onClick={() => setShowShare((prev) => !prev)}
               className={cn(
@@ -112,7 +111,6 @@ const BlogClient = ({
               <span className="text-[15px] font-medium mt-1">Share</span>
             </button>
 
-            {/* Dropdown social icons */}
             <AnimatePresence>
               {showShare && (
                 <motion.div
@@ -211,14 +209,13 @@ const BlogClient = ({
               date={blogDate}
             />
             <div className="bg-white border mx-auto md:hidden block border-gray-200 shadow-2xl rounded-t-xl w-[300px] p-5 relative">
-              {/* Header */}
+  
               <div className="flex justify-between items-center mb-3">
                 <h3 className="text-sm font-bold text-gray-900">
                   SUBSCRIBE TO OUR NEWSLETTER
                 </h3>
               </div>
 
-              {/* Body */}
               <input
                 className="border w-full my-2 p-2 rounded-md "
                 placeholder="Email"
