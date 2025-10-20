@@ -274,6 +274,10 @@ const Location = ({ selectedTab, closeDropdown }) => {
       pageUrl: "/mobile-app-development-in-san-francisco",
     },
     {
+      title: "Mobile App Development in Atlanta",
+      pageUrl: "/mobile-app-development-in-atlanta",
+    },
+    {
       title: "Digital Marketing Company in Wyoming",
       pageUrl: "/wyoming-digital-marketing",
     },

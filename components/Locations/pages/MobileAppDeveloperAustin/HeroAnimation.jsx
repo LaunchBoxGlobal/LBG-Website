@@ -27,7 +27,7 @@ const HeroAnimation = () => {
         width={370}
         height={564}
         alt="mobile screen mockup"
-        className="mx-auto z-20 w-[270px] md:w-auto"
+        className="mx-auto z-20 w-[30%] "
       />
 
       {/* modern-yellow-chair-card */}

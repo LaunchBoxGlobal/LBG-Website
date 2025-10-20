@@ -88,4 +88,14 @@ export const LOCATIONS_ARCHIVE = [
       },
     ],
   },
+  {
+    title:"Atlanta",
+    pages: [
+    
+      {
+        title: "Mobile App Development in Atlanta",
+        url: "/mobile-app-development-in-atlanta",
+      },
+    ],
+  },
 ];

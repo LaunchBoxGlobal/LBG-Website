@@ -67,6 +67,10 @@ export const locationLinks = [
     pageUrl: "/mobile-app-developer-in-florida",
   },
   {
+    title: "Mobile App Development in Atlanta",
+    pageUrl: "/mobile-app-developer-in-atlanta",
+  },
+  {
     title: "Software Development Company in Florida",
     pageUrl: "/software-development-company-in-florida",
   },
