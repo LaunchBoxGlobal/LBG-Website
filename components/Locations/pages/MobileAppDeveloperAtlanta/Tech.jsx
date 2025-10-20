@@ -37,7 +37,8 @@ const Tech = () => {
                     {talent?.description}
                   </p>
                 </div>
-                <div className="w-full min-h-[130px] flex items-end flex-wrap gap-2">
+                <div className="min-h-[130px]" >
+                <div className="w-full  flex items-start  flex-wrap gap-2 ">
                   {talent?.icons?.map((i, k) => {
                     return i?.link ? (
                       <Link href={i?.link} key={k}>
@@ -60,6 +61,7 @@ const Tech = () => {
                       />
                     );
                   })}
+                </div>
                 </div>
               </div>
             </div>

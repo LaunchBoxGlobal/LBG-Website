@@ -34,32 +34,33 @@ export const MOBILE_APP_DEVELOPMENT_ATLANTA_TECH = [
     icon: "/industries/healthcare/ai-and-machine-learning-icon.png",
     width: 57,
     height: 57,
-    icons: [
-      {
-        image: "/on-demand-talent/flutter-icon.webp",
-        width: 82,
-        height: 34,
-        link: null,
-      },
-      {
-        image: "/on-demand-talent/react-icon.webp",
-        width: 84,
-        height: 34,
-        link: `/development-technologies/react-native-app-development`,
-      },
-      {
-        image: "/on-demand-talent/swift-icon.webp",
-        width: 68,
-        height: 34,
-        link: null,
-      },
-      {
-        image: "/on-demand-talent/kotlin-icon.webp",
-        width: 81,
-        height: 34,
-        link: null,
-      },
-    ],
+  icons: [
+  {
+    image: "/on-demand-talent/flutter-icon.webp",
+    width: 82,
+    height: 34,
+    link: "/development-technologies/flutter-app-development",
+  },
+  {
+    image: "/on-demand-talent/react-icon.webp",
+    width: 84,
+    height: 34,
+    link: "/development-technologies/react-native-app-development",
+  },
+  {
+    image: "/on-demand-talent/swift-icon.webp",
+    width: 68,
+    height: 34,
+    link: "/development-technologies/swift-app-development",
+  },
+  {
+    image: "/on-demand-talent/kotlin-icon.webp",
+    width: 81,
+    height: 34,
+    link: "/development-technologies/kotlin-app-development",
+  },
+],
+
   },
   {
     title: "Backend & Cloud",
