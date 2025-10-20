@@ -19,7 +19,7 @@ const HeroAnimation = () => {
         className="absolute left-[8%] bottom-[10%] object-contain z-20 hidden lg:block"
       >
         <Image
-          src={`/locations/mobile-app-developer-in-atlanta/card.png`}
+          src={`/locations/mobile-app-developer-in-atlanta/card.webp`}
           width={251}
           height={172}
           alt="floating card left"
@@ -40,7 +40,7 @@ const HeroAnimation = () => {
         className="mx-auto z-20 w-[40%]"
       >
         <Image
-          src={`/locations/mobile-app-developer-in-atlanta/mobile.png`}
+          src={`/locations/mobile-app-developer-in-atlanta/mobile.webp`}
           width={370}
           height={564}
           alt="mobile screen mockup"
@@ -61,7 +61,7 @@ const HeroAnimation = () => {
         className="absolute right-[4%] bottom-[40%] z-20 hidden lg:block"
       >
         <Image
-          src={`/locations/mobile-app-developer-in-atlanta/card1.png`}
+          src={`/locations/mobile-app-developer-in-atlanta/card1.webp`}
           alt="floating card right"
           width={227}
           height={272}
