@@ -61,18 +61,18 @@ const MarketShifts = () => {
       <section className={`w-full relative overflow-hidden mt-10 lg:mt-14`}>
         <Swiper
           {...sliderSettings}
-          className="overflow-hidden h-full flex gap-4 relative"
+          className="overflow-hidden h-full  flex gap-4 relative"
         >
           {MARKET_SHIFTS?.map((value, index) => {
             return (
-              <SwiperSlide key={index} className="mx-4">
-                <div className="w-[95%] rounded-xl p-6 bg-white h-[386px] lg:w-[320px] flex flex-col items-start justify-start gap-2 mx-2">
+              <SwiperSlide key={index} className="mx-4 !bg-transparent">
+                <div className="!w-[95%] rounded-xl p-6 bg-white !h-[386px] !lg:w-[320px] flex flex-col items-start justify-start gap-2 mx-2">
                   <Image
                     src={value?.image}
                     width={value?.width}
                     height={value?.height}
                     alt={value?.title}
-                    className="object-contain"
+                    className="object-contain !w-[140px] !h-[115px]"
                   />
                   <h3 className="text-[18px] lg:text-[22px] tracking-tight mt-3 font-medium">
                     {value?.title}

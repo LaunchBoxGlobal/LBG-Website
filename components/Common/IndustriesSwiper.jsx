@@ -56,7 +56,7 @@ const IndustriesSwiper = ({ industries }) => {
           return (
             <SwiperSlide
               key={index}
-              className="w-full h-[360px]"
+              className="w-full h-[360px] !bg-transparent"
               style={{ width: "100%" }}
             >
               <div
@@ -71,7 +71,7 @@ const IndustriesSwiper = ({ industries }) => {
                   height={29}
                   loading="lazy"
                   className={`object-contain transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:filter group-hover:contrast-200 ${
-                    index === 1 && "w-[25px] h-[26px]"
+                    index === 1 ? "!w-[27px] !h-[32px]":"!w-[37px] !h-[32px]"
                   }`}
                 />
                 <h3 className="text-[22px] lg:text-[26px] font-semibold tracking-tight leading-8">

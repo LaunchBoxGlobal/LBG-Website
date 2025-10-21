@@ -72,11 +72,11 @@ const Industries = () => {
             return (
               <SwiperSlide
                 key={index}
-                className="w-full h-[360px]"
+                className="w-full h-[360px] !bg-transparent"
                 style={{ width: "100%" }}
               >
                 <div
-                  className="w-full rounded-xl p-6 bg-white min-h-[360px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#00A7D4] hover:text-white transition-all duration-300"
+                  className="w-full rounded-xl p-6 bg-white !min-h-[360px] border flex flex-col items-start justify-start gap-3 group hover:bg-[#00A7D4] hover:text-white transition-all duration-300"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >
@@ -86,7 +86,7 @@ const Industries = () => {
                     width={29}
                     height={29}
                     className={`object-contain transition-all duration-300 group-hover:invert group-hover:brightness-0 group-hover:filter group-hover:contrast-200 ${
-                      index === 0 && "w-[23px] h-[27px]"
+                      index === 0 ? "!w-[23px] !h-[27px]":"!w-[29px] !h-[29px]"
                     }`}
                   />
                   <h3 className="text-[22px] lg:text-[26px] font-semibold tracking-tight">
