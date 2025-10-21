@@ -1,4 +1,11 @@
 export const BLOGS_METADATA = {
+  "swift-vs-kotlin-vs-ionic-which-framework-best-aligns-with-your-business-goals": {
+  title: "Swift vs. Kotlin vs. Ionic: Choose the Best Framework",
+  description:
+    "Compare Swift vs. Kotlin vs. Ionic to find the ideal framework for your business goals. Discover which platform offers speed, scalability, and performance.",
+  canonical:
+    "https://launchboxglobal.com/blogs/swift-vs-kotlin-vs-ionic-which-framework-best-aligns-with-your-business-goals",
+},
   "how-much-does-it-cost-to-develop-an-app-complete-price-breakdown": {
   title: "How Much Does It Cost to Develop an App? The Price Breakdown",
   description:
