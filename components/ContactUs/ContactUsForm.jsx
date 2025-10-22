@@ -6,6 +6,7 @@ import * as Yup from "yup";
 import ButtonLoader from "../Global/ButtonLoader";
 import Link from "next/link";
 import TimezoneSelect from "react-timezone-select";
+import Select from "react-select";
 
 export const serviceLinks = [
   "Mobile App Development",
@@ -117,32 +118,81 @@ const ContactUsForm = () => {
             )}
           </div>
 
-          <div className="flex flex-col items-start gap-1">
-            <label
-              htmlFor="service"
-              className="block text-sm lg:text-lg font-medium text-gray-900"
-            >
-              Pick the service you'd like to start with.
-            </label>
-            <select
-              id="service"
-              name="service"
-              {...formik.getFieldProps("service")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] block w-full p-3.5 opacity-60"
-            >
-              <option value="">Choose a service</option>
-              {serviceLinks.map((service, i) => (
-                <option key={i} value={service}>
-                  {service}
-                </option>
-              ))}
-            </select>
-            {formik.touched.service && formik.errors.service && (
-              <div className="text-red-500 text-sm">
-                {formik.errors.service}
-              </div>
-            )}
-          </div>
+<div className="flex flex-col items-start gap-1">
+  <label
+    htmlFor="service"
+    className="block text-sm lg:text-lg font-medium text-gray-900"
+  >
+    Pick the service you'd like to start with.
+  </label>
+
+  <Select
+    id="service"
+    name="service"
+    styles={{
+        container: (provided) => ({
+          ...provided,
+          width: "100%",
+          padding: "2px 0"
+        }),
+      control: (provided, state) => ({
+        ...provided,
+        backgroundColor: "#f9fafb", // bg-gray-50
+        borderColor: state.isFocused ? "#F40E00" : "#d1d5db",
+        boxShadow: state.isFocused ? "0 0 0 1px #F40E00" : "none",
+        borderRadius: "0.5rem", // rounded-lg
+        minHeight: "45px",
+        fontSize: "0.875rem", // text-sm
+        width:"100%",
+        color: "#111827",
+        opacity: 0.9,
+        "&:hover": { borderColor: "#F40E00" },
+      }),
+      menu: (provided) => ({
+        ...provided,
+        zIndex: 20,
+        backgroundColor: "white",
+        borderRadius: "0.5rem",
+        border: "1px solid #e5e7eb",
+      }),
+      option: (provided, state) => ({
+        ...provided,
+        backgroundColor: state.isFocused ? "#F40E00" : "white",
+        color: state.isFocused ? "white" : "#111827",
+        fontSize: "0.875rem",
+        cursor: "pointer",
+      }),
+      singleValue: (provided) => ({
+        ...provided,
+        color: "#111827",
+      }),
+      placeholder: (provided) => ({
+        ...provided,
+        color: "#6b7280",
+      }),
+    }}
+    options={serviceLinks.map((service) => ({
+      value: service,
+      label: service,
+    }))}
+    placeholder="Choose a service"
+    value={
+      serviceLinks
+        .map((s) => ({ value: s, label: s }))
+        .find((option) => option.value === formik.values.service) || null
+    }
+    onChange={(selectedOption) =>
+      formik.setFieldValue("service", selectedOption?.value)
+    }
+    onBlur={() => formik.setFieldTouched("service", true)}
+  />
+
+  {formik.touched.service && formik.errors.service && (
+    <div className="text-red-500 text-sm mt-1">
+      {formik.errors.service}
+    </div>
+  )}
+</div>
         </div>
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">

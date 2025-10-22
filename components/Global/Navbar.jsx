@@ -26,9 +26,13 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [augmentationDropdown, setAugmentationDropdown] = useState(false);
   const [industriesDropdown, setIndustriesDropdown] = useState(false);
+  const [resourcesDropdown, setResourcesDropdown] = useState(false);
 
   const toggleIndustriesDropdown = () => {
     setIndustriesDropdown((prev) => !prev);
+  };
+  const toggleResourcesDropdown = () => {
+    setResourcesDropdown((prev) => !prev);
   };
 
   const toggleAugmentationDropdown = () => {
@@ -126,13 +130,68 @@ const Navbar = () => {
             Case Studies{" "}
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             href={`/blog`}
             className={`font-normal text-sm xl:text-[17px] 2xl:text-[22px] flex items-center justify-start gap-1 group`}
           >
             Blogs{" "}
           </Link>
+        </li> */}
+        <li
+          className="z-50 h-full flex items-center"
+          onMouseEnter={() => toggleResourcesDropdown()}
+          onMouseLeave={() => toggleResourcesDropdown()}
+        >
+          <button
+            type="button"
+            name="services menu button"
+            className="font-normal text-sm xl:text-[18px] 2xl:text-[22px] flex items-center justify-start gap-1 group"
+          >
+            Resources{" "}
+            <IoIosArrowDown
+              className={`transition-transform duration-300 relative top-0.5 ${
+                resourcesDropdown ? "rotate-180" : "rotate-0"
+              }`}
+            />
+          </button>
+          {resourcesDropdown && (
+            <motion.span
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="bg-transparent lg:w-[250px] midlg:w-[250px] mx-auto absolute lg:right-[17%] midlg:right-[27.5%] xl:right-[28.8%] mt-0 z-40 top-16 2xl:top-20 pt-5"
+            >
+              <div className="w-full bg-white p-4 rounded-xl border">
+                {/* <p className="text-lg font-medium">Industries</p> */}
+                <ul className="space-y-1 mt-3 flex flex-col items-start">
+                  <Link
+                    href={`/blog`}
+                    onClick={toggleResourcesDropdown}
+                    className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
+                  >
+                   Blogs
+                  </Link>
+                  <Link
+                    href={`/e-book`}
+                    onClick={toggleResourcesDropdown}
+                    className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
+                  >
+                    E-Book
+                  </Link>
+                  {/* <Link
+                    href={`/industries/ecommerce-app-development`}
+                    onClick={toggleIndustriesDropdown}
+                    className="text-lg underline text-gray-600 hover:text-black whitespace-nowrap"
+                  >
+                    Ecommerce App Development
+                  </Link> */}
+                </ul>
+              </div>
+              {/* <NavbarDropdown closeDropdown={toggleIndustriesDropdown} /> */}
+            </motion.span>
+          )}
         </li>
         <li
           className="z-50 h-full flex items-center"
