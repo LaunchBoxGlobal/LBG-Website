@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import ButtonLoader from "../Global/ButtonLoader";
 import Link from "next/link";
+import TimezoneSelect from "react-timezone-select";
 
 export const serviceLinks = [
   "Mobile App Development",
@@ -26,14 +27,7 @@ export const serviceLinks = [
 
 const ContactUsForm = () => {
   const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    formik.setFieldValue("pageUrl", window.location.href);
-    try {
-      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone; // e.g. "Asia/Karachi"
-      if (tz) formik.setFieldValue("timezone", tz, false); // false = don't validate on set
-    } catch (e) {}
-  }, []);
+  const [selectedTimezone, setSelectedTimezone] = useState({});
 
   const formik = useFormik({
     initialValues: {
@@ -43,10 +37,8 @@ const ContactUsForm = () => {
       phoneNumber: "",
       message: "",
       timezone: "",
-      // pageUrl: window.location.href,
       emailSubject: "New Contact Form Website",
-      // textMessagesCheckbox: false, // Added
-      agreeToTermsConditions: false, // Added
+      agreeToTermsConditions: false,
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -59,21 +51,18 @@ const ContactUsForm = () => {
       phoneNumber: Yup.string()
         .min(10, "Phone number must be 10-11 digits")
         .max(11, "Phone number must be 11 digits")
-        .required("phone number is required"),
+        .required("Phone number is required"),
       message: Yup.string()
         .min(100, "Message must be at least 100 characters")
         .max(500, "Message cannot exceed 500 characters")
         .required("Message is required"),
-      // textMessagesCheckbox: Yup.boolean().oneOf([true], "*"),
       agreeToTermsConditions: Yup.boolean().oneOf([true], "*"),
     }),
     onSubmit: async (values, { resetForm }) => {
       setLoading(true);
       try {
         const res = await axios.post(`/api/submit-form`, values, {
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
         });
         if (res?.status === 200) {
           resetForm();
@@ -86,10 +75,21 @@ const ContactUsForm = () => {
       }
     },
   });
+
+  useEffect(() => {
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      if (tz) {
+        setSelectedTimezone({ value: tz, label: tz });
+        formik.setFieldValue("timezone", tz, false);
+      }
+    } catch (e) {
+      console.warn("Timezone detection failed:", e);
+    }
+  }, []);
+
   return (
-    <section
-      className={`w-full pb-10 lg:pb-20 padding-x flex items-center justify-center relative overflow-hidden`}
-    >
+    <section className="w-full pb-10 lg:pb-20 padding-x flex items-center justify-center relative overflow-hidden">
       <form
         onSubmit={formik.handleSubmit}
         className="w-full lg:w-[70%] 2xl:w-[60%] flex flex-col items-start gap-6 z-10 pb-10"
@@ -108,14 +108,15 @@ const ContactUsForm = () => {
               placeholder="Your full name"
               name="firstName"
               {...formik.getFieldProps("firstName")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
             />
-            {formik.touched.firstName && formik.errors.firstName ? (
+            {formik.touched.firstName && formik.errors.firstName && (
               <div className="text-red-500 text-sm">
                 {formik.errors.firstName}
               </div>
-            ) : null}
+            )}
           </div>
+
           <div className="flex flex-col items-start gap-1">
             <label
               htmlFor="service"
@@ -127,26 +128,23 @@ const ContactUsForm = () => {
               id="service"
               name="service"
               {...formik.getFieldProps("service")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] block w-full p-3.5 opacity-60"
             >
-              <option defaultValue={""} value="">
-                Choose a service
-              </option>
-              {serviceLinks?.map((service, index) => {
-                return (
-                  <option value={service} key={index}>
-                    {service}
-                  </option>
-                );
-              })}
+              <option value="">Choose a service</option>
+              {serviceLinks.map((service, i) => (
+                <option key={i} value={service}>
+                  {service}
+                </option>
+              ))}
             </select>
-            {formik.touched.service && formik.errors.service ? (
+            {formik.touched.service && formik.errors.service && (
               <div className="text-red-500 text-sm">
                 {formik.errors.service}
               </div>
-            ) : null}
+            )}
           </div>
         </div>
+
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col items-start gap-1">
             <label
@@ -158,16 +156,16 @@ const ContactUsForm = () => {
             <input
               type="email"
               id="email"
-              placeholder="Your email"
               name="email"
+              placeholder="Your email"
               {...formik.getFieldProps("email")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
-              //   placeholder="First name"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] block w-full p-3.5 opacity-60"
             />
-            {formik.touched.email && formik.errors.email ? (
+            {formik.touched.email && formik.errors.email && (
               <div className="text-red-500 text-sm">{formik.errors.email}</div>
-            ) : null}
+            )}
           </div>
+
           <div className="flex flex-col items-start gap-1">
             <label
               htmlFor="phoneNumber"
@@ -181,38 +179,77 @@ const ContactUsForm = () => {
               name="phoneNumber"
               placeholder="Your phone number"
               {...formik.getFieldProps("phoneNumber")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
-              //   placeholder="000 2345 6789"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] block w-full p-3.5 opacity-60"
             />
-            {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+            {formik.touched.phoneNumber && formik.errors.phoneNumber && (
               <div className="text-red-500 text-sm">
                 {formik.errors.phoneNumber}
               </div>
-            ) : null}
+            )}
           </div>
         </div>
+
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="w-full flex flex-col items-start gap-1">
-            <label
-              htmlFor="timezone"
-              className="block text-sm lg:text-lg font-medium text-gray-900"
-            >
-              We’ll sync to your time zone.
-            </label>
-            <input
-              type="text"
-              id="timezone"
-              name="timezone"
-              value={formik.values.timezone}
-              readOnly
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
-            />
-            {formik.touched.timezone && formik.errors.timezone ? (
-              <div className="text-red-500 text-sm">
-                {formik.errors.timezone}
-              </div>
-            ) : null}
-          </div>
+         <div className="w-full flex flex-col items-start gap-1">
+  <label
+    htmlFor="timezone"
+    className="block text-sm lg:text-lg font-medium text-gray-900"
+  >
+    We’ll sync to your time zone.
+  </label>
+
+  <div className="w-full">
+    <TimezoneSelect
+      value={selectedTimezone}
+      onChange={(tz) => {
+        setSelectedTimezone(tz);
+        formik.setFieldValue("timezone", tz.value);
+      }}
+      styles={{
+        container: (provided) => ({
+          ...provided,
+          width: "100%",
+          padding: "2px 0"
+        }),
+        control: (provided, state) => ({
+          ...provided,
+          width: "100%",
+          backgroundColor: "#f9fafb",
+          borderColor: state.isFocused ? "#3C3C3C" : "#d1d5db",
+          boxShadow: state.isFocused ? "0 0 0 1px #3C3C3C" : "none",
+          borderRadius: "0.5rem",
+          padding: "0.25rem 0.5rem",
+          fontSize: "0.875rem", // text-sm
+          color: "#111827", // text-gray-900
+        }),
+        menu: (provided) => ({
+          ...provided,
+          zIndex: 20,
+          backgroundColor: "white",
+          borderRadius: "0.5rem",
+          border: "1px solid #e5e7eb",
+        }),
+        option: (provided, state) => ({
+          ...provided,
+          backgroundColor: state.isFocused ? "#F40E00" : "white",
+          color: state.isFocused ? "white" : "#111827",
+          fontSize: "0.875rem",
+          cursor: "pointer",
+        }),
+        singleValue: (provided) => ({
+          ...provided,
+          color: "#111827",
+        }),
+      }}
+    />
+  </div>
+
+  {formik.touched.timezone && formik.errors.timezone && (
+    <div className="text-red-500 text-sm">{formik.errors.timezone}</div>
+  )}
+</div>
+
+
           <div className="w-full flex flex-col items-start gap-1">
             <label
               htmlFor="message"
@@ -222,25 +259,17 @@ const ContactUsForm = () => {
             </label>
             <input
               type="text"
+              id="message"
               name="message"
               placeholder="ex: A subscription app for healthy meal plans"
-              id="message"
               {...formik.getFieldProps("message")}
-              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
+              className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] block w-full p-3.5 opacity-60 placeholder:text-gray-600"
             />
-            {/* <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="8"
-            {...formik.getFieldProps("message")}
-            className="shadow-xs bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-[#F40E00] focus:border-[#F40E00] outline-[#F40E00] block w-full p-3.5 opacity-60"
-          ></textarea> */}
-            {formik.touched.message && formik.errors.message ? (
+            {formik.touched.message && formik.errors.message && (
               <div className="text-red-500 text-sm">
                 {formik.errors.message}
               </div>
-            ) : null}
+            )}
           </div>
         </div>
 
@@ -268,15 +297,16 @@ const ContactUsForm = () => {
               Terms and Conditions.
             </Link>{" "}
             {formik.touched.agreeToTermsConditions &&
-            formik.errors.agreeToTermsConditions ? (
-              <span className="text-red-500 text-2xl absolute">*</span>
-            ) : null}
+              formik.errors.agreeToTermsConditions && (
+                <span className="text-red-500 text-2xl absolute">*</span>
+              )}
           </label>
         </div>
+
         <div className="w-full flex flex-col justify-center items-center mt-3 gap-5">
           <button
             type="submit"
-            className="bg-[#F40E00] text-white px-5 min-w-[223px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px] "
+            className="bg-[#F40E00] text-white px-5 min-w-[223px] lg:px-7 py-4 2xl:py-8 font-bold rounded-xl flex items-center justify-center gap-2 text-sm lg:text-lg 2xl:text-[25px]"
           >
             {loading ? (
               <ButtonLoader />
@@ -285,11 +315,8 @@ const ContactUsForm = () => {
             )}
           </button>
           <p
-            // type="submit"
             className="text-[#F40E00] font-normal text-sm lg:text-lg lg:w-[35%] text-center"
-            style={{
-              lineHeight: "1.4rem",
-            }}
+            style={{ lineHeight: "1.4rem" }}
           >
             Your personalized plan will be shared after the discovery call.
           </p>
