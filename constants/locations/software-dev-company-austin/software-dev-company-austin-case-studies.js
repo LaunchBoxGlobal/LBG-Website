@@ -1,8 +1,31 @@
+import Link from "next/link";
+
 export const SOFTWARE_DEV_COMPANY_AUSTIN_CASE_STUDIES = [
   {
     title: "Bloom",
-    description:
-      "When Brittany’s church wanted to engage their community better, we built Bloom through our custom software development services. Alongside the mobile app, we created a powerful dashboard to manage devotionals, music, sermons, prayer requests, and events. Through our software development consultancy, we used Flutter and a flexible backend, iterating with feedback to deliver a smooth, high-performing, all-in-one solution.",
+    description: (
+      <>
+        When Brittany’s church wanted to engage their community better, we built
+        Bloom through our{" "}
+        <Link
+          href="/services/custom-software-development"
+          className="underline font-medium"
+        >
+          custom software development
+        </Link>{" "}
+        services. Alongside the mobile app, we created a powerful dashboard to
+        manage devotionals, music, sermons, prayer requests, and events. Through
+        our software development consultancy, we used{" "}
+        <Link
+          href="/development-technologies/flutter-app-development"
+          className="underline font-medium"
+        >
+          Flutter
+        </Link>{" "}
+        and a flexible backend, iterating with feedback to deliver a smooth,
+        high-performing, all-in-one solution.
+      </>
+    ),
     src: "cactus.jpg",
     link: "/case-studies/bloom",
     color: "#88A28D",

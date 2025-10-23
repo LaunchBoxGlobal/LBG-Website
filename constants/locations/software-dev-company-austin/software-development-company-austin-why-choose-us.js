@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const SOFTWARE_DEV_AUSTIN_WHY_CHOOSE_US_1 = [
   {
     title: "Local Expertise with Global Reach",
@@ -33,8 +35,21 @@ export const SOFTWARE_DEV_AUSTIN_WHY_CHOOSE_US_2 = [
     title: "Proven Track Record of Success",
     icon: "/locations/software-dev-company-new-jersey/track-record-success-icon.png",
     whiteIcon: "/fast-development-white-icon.webp",
-    description:
-      "Our portfolio highlights successful projects across diverse industries. As one of the trusted customized software development companies, we deliver high-quality solutions that solve real problems and generate results. Explore our case studies to discover how our work drives tangible business success.",
+    description: (
+      <>
+        Our portfolio highlights successful projects across diverse industries.
+        As one of the trusted customized software development companies, we
+        deliver high-quality solutions that solve real problems and generate
+        results. Explore our{" "}
+        <Link
+          href="/case-studies"
+          className="underline font-medium text-inherit" // 👈 inherits parent text color, always underlined
+        >
+          case studies
+        </Link>{" "}
+        to discover how our work drives tangible business success.
+      </>
+    ),
     iconWidth: "53",
     iconHeight: "70",
   },

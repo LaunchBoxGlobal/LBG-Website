@@ -19,8 +19,18 @@ export const MOBILE_APP_DEV_ATLANTA_FAQS = [
   },
   {
     question: "How much does it cost to develop a mobile app in Atlanta?",
-    answer:
-      "Costs for mobile development in Atlanta vary depending on project complexity, features, and long-term goals. Since every app is unique, LaunchBox Global provides customized quotes instead of fixed pricing. Contact us today to discuss your requirements and receive clear guidance on the right investment for your business.",
+     answer: (
+    <>
+      Costs for mobile development in Atlanta vary depending on project complexity,
+      features, and long-term goals. Since every app is unique, LaunchBox Global
+      provides customized quotes instead of fixed pricing.{" "}
+      <Link href="/contact-us" className="underline text-inherit font-medium">
+        Contact us
+      </Link>{" "}
+      today to discuss your requirements and receive clear guidance on the right
+      investment for your business.
+    </>
+  ),
   },
   {
     question: "How long does LaunchBox Global take to develop an app in Atlanta?",

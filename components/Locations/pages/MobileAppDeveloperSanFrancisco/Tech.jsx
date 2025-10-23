@@ -67,7 +67,7 @@ const Tech = () => {
             </div>
           );
         })}
-        <div className="w-full">
+        {/* <div className="w-full">
           <div className="w-full flex flex-col items-start justify-between gap-3 bg-[#F6F6F6] group rounded-[29px] p-7 min-h-[570px] relative">
             <div className="w-[11px] h-[93px] red-bg rounded-l-2xl absolute left-[-10px] group-hover:translate-y-16 transition-all duration-300" />
             <div className="flex flex-col items-start gap-3">
@@ -152,7 +152,7 @@ const Tech = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </section>
   );

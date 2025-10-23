@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const SOFTWARE_DEV_AUSTIN_AGILE_WORKFLOW = [
   {
     icon: "/locations/software-development-company/discovery-and-planning-icon.webp",
@@ -17,14 +19,24 @@ export const SOFTWARE_DEV_AUSTIN_AGILE_WORKFLOW = [
     description:
       "As one of the top IT companies in Austin TX, we focus on design and prototyping. This includes wireframing, UI/UX design, and creating interactive prototypes. We gather client feedback early, making refinements to deliver a smooth and engaging user experience for your software.",
   },
-  {
+ {
     icon: "/locations/software-development-company/agile-development-icon.webp",
     iconWidth: 38,
     iconHeight: 34,
     title: "Agile Development",
     tag_line: "Iterating to Perfection",
-    description:
-      "With our custom software development service, we follow agile development by breaking work into short sprints. Features are developed, tested, and refined in each sprint, while daily stand-ups track progress and continuous integration and deployment (CI/CD) keep your software evolving efficiently.",
+    description: (
+      <>
+        With our{" "}
+        <Link
+          href="/services/custom-software-development"
+          className=" underline font-medium"
+        >
+          custom software development
+        </Link>{" "}
+        service, we follow agile development by breaking work into short sprints. Features are developed, tested, and refined in each sprint, while daily stand-ups track progress and continuous integration and deployment (CI/CD) keep your software evolving efficiently.
+      </>
+    ),
   },
   {
     icon: "/locations/software-development-company/quality-assurance-icon.webp",
