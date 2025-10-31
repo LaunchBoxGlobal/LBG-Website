@@ -1,127 +1,177 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Cursor from "../Blogs/Cursor";
-import HomeBlogCardCursor from "./HomeBlogCardCursor";
-// import Cursor from "../Global/Cursor";
+import Link from "next/link";
+import Image from "next/image";
 
 const HomePageBlogs = () => {
-  const [blogs, setBlogs] = useState(null);
-  const [isCursorHovering, setIsCursorHovering] = useState(false);
+  const [blogs, setBlogs] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [loading, setLoading] = useState(false);
 
-  const fetchBlogs = async () => {
+  // Fetch blogs
+  const fetchBlogs = async (count = 6, categoryId) => {
+    setLoading(true);
+    try {
+      const url =
+        categoryId && categoryId !== "all"
+          ? `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?_embed=author&categories=${categoryId}&per_page=${count}`
+          : `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts?_embed=author&per_page=${count}`;
+
+      const res = await fetch(url, {
+        cache: "no-store",
+        headers: {
+          Authorization:
+            "Bearer DWK4UhkW*^@OACYDrZTCGF%nwYs!zk*Im3z0h1jVTllrTWh%92PHXq6OCCIKeJy2",
+        },
+      });
+
+      const data = await res.json();
+      setBlogs(data);
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Fetch categories — only show chosen ones
+  const fetchCategories = async () => {
     try {
       const res = await fetch(
-        `https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/posts`,
-        { cache: "no-store" } // or "force-cache" if you're okay with caching
+        "https://public-api.wordpress.com/wp/v2/sites/blogs0864.wordpress.com/categories?per_page=100"
+      );
+      const data = await res.json();
+      const allowedCategories = [
+        "App &amp; Software Development",
+       "Ecommerce &amp; Digital Business",
+        "Custom Software Development",
+      ];
+
+      const filtered = data.filter((cat) =>
+    
+        allowedCategories.includes(cat.name)
+      
       );
 
-      if (res.ok) {
-        let blogs = await res.json();
-        console.log("blogs >>>>", blogs?.slice(0, 5));
-        setBlogs(blogs?.slice(0, 5));
-      }
+      const ordered = filtered.sort(
+        (a, b) =>
+          allowedCategories.indexOf(decodeHTML(a.name)) -
+          allowedCategories.indexOf(decodeHTML(b.name))
+      );
+
+      setCategories(ordered);
     } catch (error) {
-      console.error("Error fetching category blogs:", error);
+      console.error("Error fetching categories:", error);
     }
   };
 
   useEffect(() => {
+    fetchCategories();
     fetchBlogs();
   }, []);
 
+  const handleCategoryClick = (categoryId) => {
+    setActiveCategory(categoryId);
+    if (categoryId === "all") {
+      fetchBlogs();
+    } else {
+      fetchBlogs(6, categoryId);
+    }
+  };
+
+  const decodeHTML = (str) => {
+    const txt = document.createElement("textarea");
+    txt.innerHTML = str;
+    return txt.value;
+  };
+
   return (
-    <section
-      className="w-full padding-x py-12 lg:py-28 bg-[#fff]"
-      id="workflow"
-    >
-      <section
-        className="w-full flex flex-col items-center justify-center gap-5"
-        id="blogs"
-      >
+    <section className="w-full py-16 lg:py-28 bg-white padding-x">
+      {/* Title Section */}
+      <div className="flex flex-col items-center text-center gap-4 px-4">
         <h2 className="section-heading lg:w-[70%] text-center">
-          Discover What’s <br /> <span className="red-text">New and Next</span>
+          Insights That Drive <br />
+          <span className="text-red-600">Innovation</span>
         </h2>
         <p className="section-paragraph text-center w-full md:w-2/3">
-          Stay updated with the latest trends and find simple, practical guides
-          to help boost your business growth and connect with your audience more
-          effectively.
+          Stay ahead with our blog, featuring industry insights, practical tips,
+          and stories that spark growth. From tech trends to proven strategies,
+          we share the knowledge you need to turn bold ideas into real results.
         </p>
-      </section>
+      </div>
 
-      <section className="w-full mt-12 grid grid-cols-1 md:grid-cols-4 gap-4">
-        {/* Left Column (2 blogs) */}
-        <div className="col-span-1 flex flex-col gap-4">
-          {blogs?.slice(0, 2).map((blog, index) => (
-            <div
-              className="relative"
-              key={index}
-              onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
-              onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
-            >
-              <Link href={`/blog/${blog?.slug}`}>
-                <img
-                  src={blog?.jetpack_featured_media_url}
-                  alt=""
-                  className="rounded-[7px]"
-                />
-              </Link>
-            </div>
-          ))}
-          <HomeBlogCardCursor isHovering={isCursorHovering} />
-        </div>
-
-        {/* Center Column (1 blog) */}
-        <div className="col-span-1 md:col-span-2 flex flex-col items-center justify-center h-full">
-          {blogs?.slice(2, 3).map((blog, index) => (
-            <div
-              className="relative w-full h-full"
-              key={index}
-              onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
-              onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
-            >
-              <Link href={`/blog/${blog?.slug}`}>
-                <img
-                  src={blog?.jetpack_featured_media_url}
-                  alt=""
-                  className="h-full object-cover w-full rounded-[7px]"
-                />
-              </Link>
-            </div>
-          ))}
-          <HomeBlogCardCursor isHovering={isCursorHovering} />
-        </div>
-
-        {/* Right Column (2 blogs) */}
-        <div className="col-span-1 flex flex-col gap-4">
-          {blogs?.slice(3, 5).map((blog, index) => (
-            <div
-              className="relative"
-              key={index}
-              onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
-              onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
-            >
-              <Link href={`/blog/${blog?.slug}`}>
-                <img
-                  src={blog?.jetpack_featured_media_url}
-                  alt=""
-                  className="rounded-[7px]"
-                />
-              </Link>
-            </div>
-          ))}
-          <HomeBlogCardCursor isHovering={isCursorHovering} />
-        </div>
-      </section>
-
-      <section className="w-full flex justify-center mt-10">
-        <Link
-          href={`/blog`}
-          className="red-bg text-white px-8 py-4 rounded-xl font-bold text-xl"
+      <div className="flex flex-wrap justify-center gap-3 mt-8">
+        <button
+          onClick={() => handleCategoryClick("all")}
+          className={`px-4 py-2 rounded-full border transition ${
+            activeCategory === "all"
+              ? "bg-red-600 text-white border-red-600"
+              : "bg-transparent text-gray-700 border-gray-300 hover:border-red-600"
+          }`}
         >
-          See More
-        </Link>
-      </section>
+          All
+        </button>
+
+        {categories.map((cat) => (
+          <button
+            key={cat.id}
+            onClick={() => handleCategoryClick(cat.id)}
+            className={`px-4 py-2 rounded-full border transition ${
+              activeCategory === cat.id
+                ? "bg-red-600 text-white border-red-600"
+                : "bg-transparent text-gray-700 border-gray-300 hover:border-red-600"
+            }`}
+          >
+            {decodeHTML(cat.name)}
+          </button>
+        ))}
+      </div>
+
+      {/* Blog Cards */}
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-12 lg:px-24">
+        {loading ? (
+          <p className="col-span-full text-center text-gray-500">
+            Loading blogs...
+          </p>
+        ) : blogs.length === 0 ? (
+          <p className="col-span-full text-center text-gray-500">
+            No blogs found.
+          </p>
+        ) : (
+          blogs.map((blog) => (
+            <Link
+              href={`/blog/${blog.slug}`}
+              key={blog.id}
+              className="bg-white border rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden flex flex-col"
+            >
+              <Image
+                src={
+                  blog.jetpack_featured_media_url ||
+                  "https://via.placeholder.com/400x250?text=No+Image"
+                }
+                width={100}
+                height={52}
+                alt={blog.title?.rendered}
+                className="w-full h-52 object-cover"
+              />
+              <div className="p-5 flex flex-col flex-1">
+                <span className="text-xs text-gray-400 uppercase mb-1">
+                  Category
+                </span>
+                <h3
+                  className="font-semibold text-lg line-clamp-2"
+                  dangerouslySetInnerHTML={{ __html: blog.title?.rendered }}
+                />
+                <p
+                  className="text-sm text-gray-500 mt-2 line-clamp-3"
+                  dangerouslySetInnerHTML={{ __html: blog.excerpt?.rendered }}
+                />
+              </div>
+            </Link>
+          ))
+        )}
+      </div>
     </section>
   );
 };

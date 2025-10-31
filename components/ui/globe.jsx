@@ -16,7 +16,7 @@ let numbersOfRings = [0];
 
 export function Globe({
   globeConfig,
-  data
+    data
 }) {
   const globeRef = useRef(null);
   const groupRef = useRef();

@@ -1,6 +1,6 @@
 "use client";
 import { VALUE_PROPOSITION } from "@/constants/HomeValueProposition";
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
@@ -8,6 +8,9 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export const sliderSettings = {
   slidesPerView: 1,
@@ -45,6 +48,7 @@ export const sliderSettings = {
 };
 
 const HomeValueProposition = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <section className="w-full py-10 lg:pt-20 relative overflow-hidden bg-[#fff]">
       <section className="w-full flex flex-col items-center text-center justify-start gap-4 mb-7 padding-x">
@@ -58,34 +62,91 @@ const HomeValueProposition = () => {
       </section>
 
       <section
-        className={`w-full relative overflow-hidden h-[280px] mt-10 lg:mt-14`}
+        className={`w-full relative overflow-visible h-[550px] mt-10 lg:mt-14`}
       >
         <Swiper
-          {...sliderSettings}
           modules={[Autoplay]}
-          className="overflow-hidden h-full flex gap-4 relative"
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          onSwiper={(swiper) => setActiveIndex(swiper.activeIndex)}
+          className="overflow-visible !px-[80px] h-full !flex !justify-center gap-4 relative"
         >
           {VALUE_PROPOSITION?.map((value, index) => {
+            const isActive = index === activeIndex;
+
             return (
-              <SwiperSlide key={index} className="w-[95%] !bg-transparent lg:w-[320px]">
-                <div className="w-[95%] rounded-xl p-6 bg-white h-[207px] lg:w-[320px] border flex flex-col items-center justify-start mx-2">
-                  <div className="flex items-center justify-center lg:justify-start gap-3 w-full">
-                    <div
-                      className={`lg:w-[22px] lg:h-[22px] w-[20px] h-[20px] ${
-                        index % 2 === 0 ? "bg-red-600" : "bg-black"
-                      }`}
-                    ></div>
-                    <h3 className="text-[18px] lg:text-[22px] tracking-tight">
+              <SwiperSlide
+                key={index}
+                className="!bg-transparent h-[507px] lg:!w-[320px] transition-transform duration-500 flex justify-center"
+                style={{
+                  transform: isActive ? "scale(1)" : "scale(0.9)",
+                  transition: "transform 0.5s ease",
+                  zIndex: isActive ? 10 : 1,
+                }}
+              >
+                <div
+                  style={{
+                    backgroundColor: value.color,
+                    width: "100%",
+                    borderRadius: "12px",
+                    height: "450px",
+                    transition: "all 0.1s ease",
+                    border: "1px solid rgba(255,255,255,0.2)",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    gap: "8px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <div
+                    className="flex items-center justify-center pt-8 px-6 gap-3 w-full"
+                    style={{ textAlign: "center" }}
+                  >
+                    <h3 className="text-[18px] lg:text-[22px] text-white tracking-tight">
                       {value?.title}
                     </h3>
                   </div>
-                  <p className="text-base lg:text-[18px] lg:leading-[24px] mt-3 text-center lg:text-start font-light text-gray-400">
+
+                  <p className="text-base px-6 text-center lg:leading-[24px] font-light text-white">
                     {value?.desc}
                   </p>
+
+                 <div className="relative h-[280px] w-full flex items-center justify-center">
+  <motion.div
+    className="absolute top-20 flex items-center justify-center w-[80%] left-8"
+    whileHover={{
+      // scale: 1.05,
+      y: [0, -15, 0], // smooth up-down motion
+    }}
+    transition={{
+      duration: 1.4,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "mirror",
+    }}
+  >
+    <Image
+      src={value.img}
+      alt={value.title || "image"}
+      className="object-contain select-none pointer-events-none"
+      width={value.width}
+      height={value.height}
+    />
+  </motion.div>
+</div>
+
                 </div>
               </SwiperSlide>
             );
           })}
+
           <SwiperButtons />
         </Swiper>
       </section>
