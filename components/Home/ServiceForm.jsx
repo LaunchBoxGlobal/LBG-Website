@@ -64,7 +64,7 @@ const ServiceForm = ({ title, buttonTitle }) => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="w-full bg-transparent px-12 py-8 rounded-2xl text-white"
+      className="w-full bg-transparent md:px-12 py-8 rounded-2xl text-white"
     >
       <div className="w-full flex flex-col items-start gap-3 lg:gap-5">
 

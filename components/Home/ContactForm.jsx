@@ -44,11 +44,11 @@ function ContactForm() {
 
           <div className="w-full md:w-1/2 mx-auto flex justify-center items-center text-center md:text-left">
             <div className="w-[80%]">
-              <h1 className="text-5xl w-full font-bold ">
+              <h1 className="text-2xl md:text-5xl w-full font-bold ">
                 Your app idea <br/> deserves
               </h1>
 
-              <div className="relative h-[1.2em] text-nowrap  text-white text-5xl font-bold ">
+              <div className="relative h-[1.2em] text-nowrap  text-white text-2xl md:text-5xl font-bold ">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={words[index]}
