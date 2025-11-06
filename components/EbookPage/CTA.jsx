@@ -71,9 +71,9 @@ function CTA() {
             <p className="mb-4">The same process we use to build apps for clients can be yours for free.</p>
                <div className="relative bg-white shadow-xl  p-3 w-full rounded-full" >
             <input placeholder="Enter Your Email" className="pl-2 py-2 rounded-full text-xs outline-none text-gray-500" />
-            <button className="bg-[#f40e00] text-white px-6 py-2 rounded-full absolute right-4 top-2" >Download the eBook</button>
+            <button className="bg-[#f40e00] text-white px-6 py-3 rounded-full absolute right-1 top-1" >Get the eBook</button>
           </div>
-             <div className="p-2 text-sm opacity-65 "><h2>Disclaimer: <span>Get it while it’s still free. This won’t stay free forever.</span></h2></div>
+             <div className="p-2 text-sm opacity-65 "><h2> <span>Get it while it’s still free. This won’t stay free forever.</span></h2></div>
         </div>
       </div>
     </section>

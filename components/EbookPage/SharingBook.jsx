@@ -6,7 +6,7 @@ import { ArrowRight, BookOpen } from "lucide-react";
 export default function SharingBook() {
   return (
     <section className="w-full  py-20  flex padding-x justify-center items-center">
-      <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2  items-center">
         
         <div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-snug">

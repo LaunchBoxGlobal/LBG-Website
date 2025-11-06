@@ -44,7 +44,6 @@ const InsideBook = () => {
   return (
     <section className="py-24 padding-x">
       <div className="max-w-6xl mx-auto  grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-        {/* Left side - Image and Heading */}
         <div className="relative">
           <motion.p
             initial={{ opacity: 0, y: -10 }}
@@ -124,25 +123,26 @@ const InsideBook = () => {
                   </motion.div>
                 </motion.button>
 
-                {/* Smooth, transform-based open animation */}
                 <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      key="content"
-                      initial={{ opacity: 0, scaleY: 0 }}
-                      animate={{ opacity: 1, scaleY: 1 }}
-                      exit={{ opacity: 0, scaleY: 0 }}
-                      transition={{
-                        duration: 0.35,
-                        ease: [0.25, 0.8, 0.25, 1],
-                      }}
-                      style={{ originY: 0 }}
-                      className="bg-gray-50 text-gray-600 px-6 py-4 text-base leading-relaxed"
-                    >
-                      {chapter.content}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+  {isOpen && (
+    <motion.div
+      key="content"
+      initial={{ opacity: 0, height: 0 }}
+      animate={{ opacity: 1, height: "auto" }}
+      exit={{ opacity: 0, height: 0 }}
+      transition={{
+        duration: 0.35,
+        ease: [0.25, 0.8, 0.25, 1],
+      }}
+      className="overflow-hidden"
+    >
+      <div className="bg-gray-50 text-gray-600 px-6 py-4 text-base leading-relaxed">
+        {chapter.content}
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
               </motion.div>
             );
           })}

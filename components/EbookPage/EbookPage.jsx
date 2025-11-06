@@ -14,7 +14,7 @@ function EbookPage() {
       <Hero/>
       <Platforms/>
       <Ideas/>
-      <TechTeam/>
+      {/* <TechTeam/> */}
       <Glimpse/>
       <ReinforceDepth/>
       <InsideBook/>
