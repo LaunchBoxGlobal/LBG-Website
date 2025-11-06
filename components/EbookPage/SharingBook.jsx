@@ -10,16 +10,12 @@ export default function SharingBook() {
         
         <div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-snug">
-            Why We’re Sharing This eBook{" "}
-            <span className="text-[#F40E00]">for Free</span>
+            Here’s Why We’re Not Charging a <br/> {" "}
+            <span className="text-[#F40E00]">Dollar for This eBook</span>
           </h2>
 
           <p className="text-gray-600 mt-6 text-sm sm:text-base leading-relaxed max-w-lg">
-            We believe access to the right knowledge can change how startups grow.
-            This eBook is part of our mission to empower founders, teams, and
-            innovators with the tools they need — without barriers. By giving
-            our insights away for free, we build real relationships and help you
-            make smarter product decisions.
+            Simply put, our goal isn’t to earn money from this eBook. It was created by one of the best app developers for startups because, even if you never work with us, we want you to build better and avoid mistakes. This eBook exists to share what we’ve learned. You’ll know what to look for when you hire mobile app developers or when you start the mobile app development process. We believe knowledge should be shared freely without limits. 
           </p>
 
        
@@ -36,13 +32,13 @@ export default function SharingBook() {
 
 
         <div className="flex justify-center relative">
-          <div className="relative -rotate-6 drop-shadow-2xl">
+          <div className="relative ">
             <Image
-              src="/images/free-ebook-preview.png"
+              src="/e-book/f1.png"
               alt="eBook Preview"
-              width={500}
-              height={400}
-              className="rounded-2xl shadow-2xl"
+              width={700}
+              height={800}
+              className=""
             />
           </div>
         </div>

@@ -7,6 +7,7 @@ import Glimpse from './Glimpse';
 import ReinforceDepth from './ReinforceDepth';
 import SharingBook from './SharingBook';
 import CTA from './CTA';
+import InsideBook from './InsideBook';
 function EbookPage() {
   return (
     <div>
@@ -16,6 +17,7 @@ function EbookPage() {
       <TechTeam/>
       <Glimpse/>
       <ReinforceDepth/>
+      <InsideBook/>
       <SharingBook/>
       <CTA/>
     </div>

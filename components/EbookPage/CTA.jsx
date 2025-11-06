@@ -5,10 +5,10 @@ function CTA() {
   return (
     <section className="padding-x my-40">
       <div className="flex justify-center items-center gap-20 bg-[#212121] rounded-3xl h-[400px]">
-        <div className="w-[30%] relative h-[400px]">
-               <div className="flex absolute bottom-10  h-[500px] w-[350px] flex-col border bg-white  rounded-2xl shadow-2xl">
-          <Image src={""} alt="image" width={300} height={300} />
-          <div className="p-6">
+        <div className="md:block hidden md:w-[30%] relative h-[400px]">
+               <div className=" absolute bottom-10  flex  h-[500px] w-[350px] flex-col  bg-white  rounded-2xl shadow-2xl">
+          <Image src={"/e-book/c1.png"} alt="image" className="rounded-t-2xl" width={500} height={300} />
+          <div className="p-6 ">
             <svg
               width="300"
               height="35"
@@ -65,13 +65,15 @@ function CTA() {
         </div>
         </div>
      
-        <div className="text-white w-[30%]">
+        <div className="text-white w-full md:w-[30%] p-4">
             <h4 className="uppercase text-sm font-semibold">Download the book</h4>
-            <h1 className="text-4xl font-bold py-5">Ready to Build Something  <span className="text-[#f40e00]">Great?</span></h1>
+            <h1 className="text-4xl font-bold py-5"> Ready to steal our process {" "}<span className="text-[#f40e00]">(legally)?</span></h1>
+            <p className="mb-4">The same process we use to build apps for clients can be yours for free.</p>
                <div className="relative bg-white shadow-xl  p-3 w-full rounded-full" >
             <input placeholder="Enter Your Email" className="pl-2 py-2 rounded-full text-xs outline-none text-gray-500" />
-            <button className="bg-[#f40e00] text-white px-6 py-2 rounded-full absolute right-4 top-2" >Download</button>
+            <button className="bg-[#f40e00] text-white px-6 py-2 rounded-full absolute right-4 top-2" >Download the eBook</button>
           </div>
+             <div className="p-2 text-sm opacity-65 "><h2>Disclaimer: <span>Get it while it’s still free. This won’t stay free forever.</span></h2></div>
         </div>
       </div>
     </section>

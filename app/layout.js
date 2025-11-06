@@ -16,7 +16,7 @@ const outfit = Outfit({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`overflow-x-hidden ${outfit.variable}`}>
+      <body className={`overflow-x-hidden ${outfit.variable} max-w-screen-2xl mx-auto`}>
         <Navbar />
         <GoogleAnalytics />
         {children}
