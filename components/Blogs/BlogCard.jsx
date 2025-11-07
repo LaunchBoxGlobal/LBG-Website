@@ -57,12 +57,16 @@ const BlogCard = ({ content }) => {
             onMouseEnter={() => setIsCursorHovering((prev) => !prev)}
             onMouseLeave={() => setIsCursorHovering((prev) => !prev)}
           >
-            <img
+            <Image
               src={imageUrl}
               alt="blog image"
               width={416}
               height={286}
+              placeholder="blur"
               className="w-full blog-card-img rounded-[12px]"
+              blurDataURL={`https://i0.wp.com/${imageUrl}?w=10`}
+                loading="lazy"
+                
             />
             {/* <div className="w-full absolute flex items-center gap-2 bottom-4 inset-x-0 px-4">
               {content?.date && (

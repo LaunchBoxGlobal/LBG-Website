@@ -390,19 +390,40 @@ summary::marker {
   animation: shine-move 0.5s ease-in-out forwards;
 }
 
-/* Optional: subtle scale-up */
-.blogBlackCta a:hover {
+.blogRedButton::before {
+   content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+.blogRedButton:hover {
   transform: scale(1.03);
 }
+.blogRedButton:hover::before {
+  animation: shine-move 0.5s ease-in-out forwards;
+}
+
 
 
 .blogRedButton {
   display: block;
+  position: relative;
   background-color: #f40e00;
   color: white;
   font-weight: 700;
   padding: 1rem 1.5rem;
   border-radius: 8px;
+  overflow:hidden;
   max-width: max-content;
   margin-top: 1rem;
 }

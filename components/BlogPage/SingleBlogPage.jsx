@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import parse, { domToReact } from "html-react-parser";
 import BlogAuthorDetails from "./BlogAuthorDetails";
 import TableOfContent from "./TableOfContent";
+import Image from "next/image";
 
 const SingleBlogPage = ({ blog, author, date, headings }) => {
   const [readTime, setReadTime] = useState(null);
@@ -81,7 +82,8 @@ const SingleBlogPage = ({ blog, author, date, headings }) => {
         tocInserted = true;
         return (
           <>
-            <img
+            <Image
+            
               {...domNode.attribs}
               className={`w-full rounded-xl my-5 ${
                 domNode.attribs?.class || ""

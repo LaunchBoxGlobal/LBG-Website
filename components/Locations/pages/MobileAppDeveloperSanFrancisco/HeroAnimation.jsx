@@ -19,7 +19,7 @@ function HeroAnimation() {
         }}
         onAnimationComplete={() => {
           setShowShape(true);
-          // Slight delay before showing cards
+
           setTimeout(() => setShowCards(true), 500);
         }}
         className="relative z-20"
@@ -29,25 +29,24 @@ function HeroAnimation() {
           width={1000}
           height={1000}
           alt="hero"
-          className="w-[80%] mx-auto"
+          className="w-[100%] mx-auto"
         />
       </motion.div>
 
-      {/* Floating Cards (show after hero animation) */}
       {showCards && (
         <>
           <motion.div
             initial={{ opacity: 1, y: 20 }}
             animate={{
               opacity: 1,
-              y: [0, -15, 0], // up-down loop
+              y: [0, -15, 0],
             }}
             transition={{
               duration: 3,
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="mx-auto absolute left-[12%] z-30"
+            className="mx-auto md:block hidden absolute left-[12%] z-30"
           >
             <Image
               src={"/locations/mobile-app-company-francisco/card.png"}
@@ -68,7 +67,7 @@ function HeroAnimation() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="mx-auto absolute right-[30%] top-10 z-30"
+            className="mx-auto md:block hidden absolute right-[30%] top-10 z-30"
           >
             <Image
               src={"/locations/mobile-app-company-francisco/card1.png"}
@@ -80,7 +79,6 @@ function HeroAnimation() {
         </>
       )}
 
-      {/* Animated Background Shape (appears after hero animates) */}
       {showShape && (
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -88,12 +86,12 @@ function HeroAnimation() {
           transition={{
             opacity: { duration: 0.8, ease: "easeOut" },
           }}
-          className="absolute z-10 -top-[30%] md:-top-[60%] -translate-x-1/2"
+          className="absolute z-10 -top-[30%] md:-top-[50%] -translate-x-1/2"
         >
           <Image
             src={"/locations/mobile-app-company-francisco/shape.png"}
-            width={1000}
-            height={1000}
+            width={1200}
+            height={1200}
             alt="rotating background shape"
             className="w-full h-auto"
           />
