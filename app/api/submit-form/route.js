@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export async function POST(request) {
   try {
     const body = await request.json();
-    console.log("body >>", body);
+    console.log("body >>", body ,process.env.TO_EMAIL , process.env.TO_EMAIL_2 );
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
@@ -17,10 +17,10 @@ export async function POST(request) {
     });
 
     // Send the email
-    await transporter.sendMail({
+  transporter.sendMail({
       // from: `${body?.firstName} <${process.env.SMTP_USER}>`,
-      from: `Leads`,
-      to: process.env.TO_EMAIL, // where the form gets sent
+   from: `"Lead" <biz_lbg@launchbox.pk>`, // recognized by Odoo
+  to: `newsletter@launchbox.odoo.com`,   
       subject: body?.emailSubject
         ? body?.emailSubject
         : "New Contact Form From Website",
@@ -54,7 +54,7 @@ export async function POST(request) {
       : ""
   }
 `,
-    });
+    }).then(console.log).catch(console.error);;
 
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
