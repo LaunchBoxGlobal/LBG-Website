@@ -14,16 +14,16 @@ export async function POST(request) {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
+      logger:true,
+      debug:true
     });
 
     // Send the email
   transporter.sendMail({
       // from: `${body?.firstName} <${process.env.SMTP_USER}>`,
-   from: `"Lead" <biz_lbg@launchbox.pk>`, // recognized by Odoo
-  to: `newsletter@launchbox.odoo.com`,   
-      subject: body?.emailSubject
-        ? body?.emailSubject
-        : "New Contact Form From Website",
+   from: `lbgwebleads@launchbox.pk`, // recognized by Odoo  
+  to: `lbgwebleads@launchbox.pk`,   
+      subject: "TEST",
       html: `
   ${body?.firstName ? `<p><strong>Name:</strong> ${body.firstName}</p>` : ""}
   ${body?.email ? `<p><strong>Email:</strong> ${body.email}</p>` : ""}
