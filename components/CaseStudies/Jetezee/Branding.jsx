@@ -32,7 +32,7 @@ function Branding() {
       {/* Main Image */}
       <div className="my-10 flex justify-center items-center">
         <Image
-          src={"/case-studies/Jetezee/inter.png"}
+          src={"/case-studies/jetezee/inter.png"}
           alt="inter-image"
           width={1000}
           height={1000}
@@ -51,7 +51,7 @@ function Branding() {
       {/* Colors Image */}
       <div className="flex justify-center items-center my-12">
         <Image
-          src={"/case-studies/Jetezee/colors.png"}
+          src={"/case-studies/jetezee/colors.png"}
           alt="colors-image"
           width={800}
           height={800}
