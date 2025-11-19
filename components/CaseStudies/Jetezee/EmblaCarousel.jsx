@@ -20,7 +20,7 @@ export default function EmblaCarousel({ slides, color }) {
 
   return (
     <div className="flex justify-center items-center py-10 overflow-hidden">
-      <div className="relative w-[80%] md:w-[100%] h-[500px]">
+      <div className="relative w-[100%] h-[150px] md:h-[500px]">
         {[-2, -1, 0, 1, 2].map((position) => {
           const isActive = position === 0;
           const slide = getSlide(position);
@@ -32,7 +32,7 @@ export default function EmblaCarousel({ slides, color }) {
                 absolute top-0 left-1/2 -translate-x-1/2
                 flex items-center justify-center rounded-2xl
                 transition-all duration-1000 ease-in-out
-                ${isActive ? "border-4 scale-105 shadow-xl z-10" : "z-0"}
+                ${isActive ? "border-4  md:w-auto w-[250px] md:scale-105 shadow-xl z-10" : "z-0"}
               `}
               style={{
                 transform: `

@@ -124,7 +124,7 @@ export default function ResearchSection() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           {researchCards.slice(1).map((card, i) => (
             <motion.div
               key={card.id}

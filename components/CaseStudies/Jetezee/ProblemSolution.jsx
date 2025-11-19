@@ -33,12 +33,12 @@ export default function ProblemSolution() {
       </div>
 
       {/* Tabs */}
-      <div className="flex justify-center gap-4 w-[22%] py-2  mx-auto rounded-full mb-10 bg-gray-300">
+      <div className="flex justify-center  w-fit p-1  mx-auto rounded-full mb-10 bg-gray-300">
         {["webapp", "admin"].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-2 rounded-full font-semibold  transition 
+            className={`px-4 py-2 rounded-full font-semibold  transition 
               ${activeTab === tab ? "bg-[#E6B557] text-white shadow-xl" : " text-gray-700"}`}
           >
             {tab === "webapp" ? "Web App" : "Admin Dashboard"}
