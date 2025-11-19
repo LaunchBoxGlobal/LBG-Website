@@ -81,7 +81,7 @@ function Built() {
                       }
                     : {}
                 }
-                className="flex flex-colitems-center my-4 text-center w-[150px] sm:w-[220px]"
+                className="flex flex-colitems-center my-4 text-center w-[220px]"
               >
                 {/* <h1 className="text-4xl md:text-5xl font-bold opacity-20">{step.id}</h1> */}
                 <div className="bg-[#E9B44C]  gap-3  w-[230px] text-white h-[230px] rounded-full flex flex-col items-center p-5">

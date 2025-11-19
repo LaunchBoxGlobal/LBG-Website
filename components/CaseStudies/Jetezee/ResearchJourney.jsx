@@ -44,7 +44,7 @@ export default function ResearchSection() {
   return (
     <section className="w-full  padding-x">
       {/* Header */}
-      <div className="max-w-3xl mb-14 w-[40%]">
+      <div className="max-w-3xl mb-14 w-full md:w-[40%]">
         <h2 className="text-4xl font-bold text-gray-900">
           Researching the Sky Market
         </h2>
@@ -54,7 +54,7 @@ export default function ResearchSection() {
       </div>
 
       {/* 1 left, 2 right layout */}
-      <div className="grid grid-cols-1 -mt-20 md:grid-cols-2 gap-10 md:gap-16 items-start">
+      <div className="grid grid-cols-1 md:-mt-20 md:grid-cols-2 gap-10 md:gap-16 items-start">
         
        {/* LEFT COLUMN → Centered vertically */}
 <div className="flex md:h-full text-white md:items-center">
