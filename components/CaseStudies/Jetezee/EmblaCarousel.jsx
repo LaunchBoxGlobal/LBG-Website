@@ -1,59 +1,62 @@
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Swiper core styles
-import "swiper/css";
-import "swiper/css/effect-cards";
-
-// Swiper modules
-import { EffectCards, Autoplay } from "swiper/modules";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function EmblaCarousel({ slides, color }) {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  // Helper function to get slide at any index with wrapping
+  const getSlide = (offset) => {
+    const index = (currentIndex + offset + slides.length) % slides.length;
+    return slides[index];
+  };
 
   return (
-    <div className="flex justify-center items-center py-10">
-      <Swiper
-        effect={"cards"}
-        grabCursor={true}
-        modules={[EffectCards, Autoplay]}
-        loop={true}
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        cardsEffect={{
-          slideShadows: true,
-          rotate: true,
-          perSlideOffset: 12,
-          perSlideRotate: 4,
-          depth: 100,
-        }}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        className="!bg-transparent !w-[80%] md:!w-[50%]"
-      >
-        {slides.map((s, i) => {
-          const isActive = i === activeIndex;
-
+    <div className="flex justify-center items-center py-10 overflow-hidden">
+      <div className="relative w-[80%] md:w-[100%] h-[500px]">
+        {[-2, -1, 0, 1, 2].map((position) => {
+          const isActive = position === 0;
+          const slide = getSlide(position);
+          
           return (
-            <SwiperSlide
-              key={i}
+            <div
+              key={position}
               className={`
-    flex items-center justify-center rounded-2xl text-white 
-    font-bold text-2xl transition-all duration-300 !bg-transparent
-    ${isActive ? "border-4 scale-105 shadow-xl" : ""}
-  `}
-              style={isActive ? { borderColor: color } : {}}
+                absolute top-0 left-1/2 -translate-x-1/2
+                flex items-center justify-center rounded-2xl
+                transition-all duration-1000 ease-in-out
+                ${isActive ? "border-4 scale-105 shadow-xl z-10" : "z-0"}
+              `}
+              style={{
+                transform: `
+                  translateX(calc(-50% + ${position * 100}px))
+                  translateY(${Math.abs(position) * 15}px)
+                  rotate(${position * 6}deg)
+                  scale(${1 - Math.abs(position) * 0.08})
+                `,
+                borderColor: isActive ? color : "transparent",
+                // opacity: Math.abs(position) > 2 ? 0 : 1 - Math.abs(position) * 0.15,
+                zIndex: 10 - Math.abs(position),
+              }}
             >
               <Image
-                src={s}
+                src={slide}
                 alt="image-card"
                 width={700}
                 height={700}
-                className="!object-contain rounded-2xl"
+                className="object-contain rounded-2xl"
               />
-            </SwiperSlide>
+            </div>
           );
         })}
-      </Swiper>
+      </div>
     </div>
   );
 }

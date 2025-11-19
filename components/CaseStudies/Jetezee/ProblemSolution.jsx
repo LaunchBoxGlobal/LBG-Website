@@ -33,23 +33,20 @@ export default function ProblemSolution() {
       </div>
 
       {/* Tabs */}
-      <div className="flex justify-center gap-4 mb-10">
+      <div className="flex justify-center gap-4 w-[22%] py-2  mx-auto rounded-full mb-10 bg-gray-300">
         {["webapp", "admin"].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-2 rounded-full font-semibold transition 
-              ${activeTab === tab ? "bg-[#E6B557] text-white" : "bg-gray-200 text-gray-700"}`}
+            className={`px-6 py-2 rounded-full font-semibold  transition 
+              ${activeTab === tab ? "bg-[#E6B557] text-white shadow-xl" : " text-gray-700"}`}
           >
             {tab === "webapp" ? "Web App" : "Admin Dashboard"}
           </button>
         ))}
       </div>
-
-      {/* Main Layout */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-16 max-w-6xl mx-auto">
-        {/* LEFT – Problems */}
-        <div className="w-full md:w-1/3 text-left">
+      <div className="flex flex-col md:flex-row  items-center justify-center gap-16 max-w-6xl mx-auto">
+        <div className="w-full md:w-1/3 text-left h-[250px]">
           <IoWarning className="text-yellow-400" size={50} />
           <div className="flex items-center gap-2 mb-4">
             <h3 className="font-bold text-lg text-gray-900">Problems</h3>
@@ -62,10 +59,8 @@ export default function ProblemSolution() {
     <div>
       <Image src={"/case-studies/jetezee/ps.png"} alt="logo" width={200} height={200} />
     </div>
- 
 
-        {/* RIGHT – Solutions */}
-        <div className="w-full md:w-1/3 text-right">
+        <div className="w-full md:w-1/3 text-right h-[250px]">
         <div className="flex flex-col items-end">
           <FcIdea className="text-3xl md:text-4xl" />
           <div className="flex items-center gap-2 mb-4">

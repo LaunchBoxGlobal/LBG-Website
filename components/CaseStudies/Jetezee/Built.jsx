@@ -49,11 +49,7 @@ function Built() {
           <span className="text-[#E9B44C]">Functionality</span>
         </h2>
         <p className="text-gray-500 mt-4 text-base md:text-xl max-w-3xl mx-auto">
-          To create a meaningful prototype for JetEzee, we implemented our
-          functionality-first prototyping workflow, a concise, stepwise process
-          that combines market research, user journey mapping, wireframing,
-          interactive prototyping, and interactive validation to align the
-          design with real user needs.
+       To build a functional and engaging prototype for JetEzee, we utilized our Functionality First Prototyping Workflow, which combines research, wireframes, prototypes, and testing to ensure an intuitive experience for buyers, sellers, and admins alike. Our custom web app development services and user experience design services will guide you through every step of the process
         </p>
       </div>
 
