@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { CiSearch ,CiPen} from "react-icons/ci";
 import { IoBugOutline } from "react-icons/io5";
+import { cn } from "@/lib/utils";
 const steps = [
   {
     id: "01",
@@ -80,7 +81,8 @@ function Built() {
                 className="flex flex-colitems-center my-4 text-center w-[220px]"
               >
                 {/* <h1 className="text-4xl md:text-5xl font-bold opacity-20">{step.id}</h1> */}
-                <div className="bg-[#E9B44C]  gap-3  w-[230px] text-white h-[230px] rounded-full flex flex-col items-center p-5">
+                <div className="bg-[#E9B44C] relative   gap-3  w-[230px] text-white h-[230px] rounded-full flex flex-col items-center p-5">
+                  <div className={cn("absolute border-4 border-[#E9B44C] w-[230px] h-[230px] rounded-full border-dashed " , i %2 ? "top-4":"-top-4")} />
                   <div className="w-12 h-12 flex justify-center items-center text-3xl rounded-full bg-white text-[#E9B44C]">
                     0{i + 1}
                   </div>

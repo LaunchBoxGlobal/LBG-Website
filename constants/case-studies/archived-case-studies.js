@@ -20,7 +20,7 @@ export const ARCHIVED_CASE_STUDIES = [
     url: "/case-studies/my-garage-outlet",
   },
   {
-    image: "/case-studies/fit110/fit110-case-study-mockup.webp",
+    image: "/case-studies/fit110.webp",
     title: "Fit 110",
     url: "/case-studies/fit110",
   },
@@ -30,7 +30,7 @@ export const ARCHIVED_CASE_STUDIES = [
     url: "/case-studies/jb-sittner-trucking",
   },
   {
-    image: "/case-studies/market/market-toll-banner.png",
+    image: "/case-studies/market/marketall.webp",
     title: "Market Toll",
     url: "/case-studies/market-toll",
   },
