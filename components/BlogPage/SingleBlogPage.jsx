@@ -5,12 +5,13 @@ import parse, { domToReact } from "html-react-parser";
 import BlogAuthorDetails from "./BlogAuthorDetails";
 import TableOfContent from "./TableOfContent";
 import Image from "next/image";
+import axios from "axios";
 
 const SingleBlogPage = ({ blog, author, date, headings }) => {
   const [readTime, setReadTime] = useState(null);
   const [numericReadTime, setNumericReadTime] = useState(null);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-
+  const [email, setEmail] = useState("");
   useEffect(() => {
     getReadTime();
     getNumericReadTime();
@@ -58,6 +59,56 @@ const SingleBlogPage = ({ blog, author, date, headings }) => {
         );
       }
 
+      if (
+        domNode.name === "div" &&
+        domNode.attribs?.class?.includes("blogCtaForm")
+      ) {
+        return (
+          <div className="my-4 w-full">
+            <form className="relative bg-white shadow-xl p-2 w-full rounded-xl">
+              <input
+                placeholder="Enter Your Email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="pl-4 pr-32 py-2 w-full rounded-full text-sm sm:text-base outline-none text-gray-600"
+              />
+              <button
+                onClick={async (e) => {
+                  e.preventDefault();
+                  if(email == "") return alert("please enter your email")
+                  try {
+                    const res = await axios.post(
+                      `/api/submit-form`,
+                      {
+                        email,
+                        emailSubject: `${window.location.pathname}=> Newsletter => CTA`,
+                      },
+                      {
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                      }
+                    );
+
+                    if (res?.status === 200) {
+                      setEmail("");
+                      alert("Form submitted successfully!");
+                    }
+                  } catch (error) {
+                    console.log("error while submitting form >>>", error);
+                    alert("Something went wrong!");
+                  }
+                }}
+                className="bg-[#f40e00] text-white px-5 sm:px-6 py-3 rounded-xl absolute right-1 top-1/2 -translate-y-1/2 text-xs sm:text-sm font-medium"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        );
+      }
+
       if (domNode.name === "h1") {
         return (
           <>
@@ -83,7 +134,6 @@ const SingleBlogPage = ({ blog, author, date, headings }) => {
         return (
           <>
             <Image
-            
               {...domNode.attribs}
               className={`w-full rounded-xl my-5 ${
                 domNode.attribs?.class || ""
@@ -171,7 +221,10 @@ const SingleBlogPage = ({ blog, author, date, headings }) => {
                     Privacy Policy
                   </a>{" "}
                   &{" "}
-                  <a href="/terms-and-conditions" className="text-blue-600 underline">
+                  <a
+                    href="/terms-and-conditions"
+                    className="text-blue-600 underline"
+                  >
                     Terms and Conditions
                   </a>
                   .
