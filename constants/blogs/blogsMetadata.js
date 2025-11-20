@@ -1,4 +1,9 @@
 export const BLOGS_METADATA = {
+  "the-1-mistake-in-ecommerce-development-skipping-product-research": {
+  "title": "Skipping Product Research in Ecommerce Development | LaunchBox Global",
+  "description": "Avoid the major mistake in ecommerce development: skipping product research. Learn the essential steps to validate your idea and build an online store.",
+  "canonical": "https://launchboxglobal.com/blog/the-1-mistake-in-ecommerce-development-skipping-product-research"
+},
   "freelancer-vs-staff-augmentation-which-delivers-better-results": {
   title: "Freelancers vs Staff Augmentation | LaunchBox Global",
   description:
