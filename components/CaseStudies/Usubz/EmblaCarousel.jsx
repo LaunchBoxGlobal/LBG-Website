@@ -51,7 +51,7 @@ export default function EmblaCarousel({ slides, color }) {
                 alt="image-card"
                 width={700}
                 height={700}
-                className="object-fill rounded-2xl"
+                className="object-contain rounded-2xl"
               />
             </div>
           );

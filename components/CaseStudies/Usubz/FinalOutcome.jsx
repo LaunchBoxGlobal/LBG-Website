@@ -1,18 +1,22 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
-import WireCarousel from "./WireCrousel";
 import EmblaCarousel from "./EmblaCarousel";
+import Image from "next/image";
 
 const FinalOutcome = () => {
   const images = [
-    "/case-studies/jetezee/e1.png",
-    "/case-studies/jetezee/e2.png",
-    "/case-studies/jetezee/e3.png",
-    "/case-studies/jetezee/e4.png",
-    "/case-studies/jetezee/e5.png",
+    "/case-studies/usubz/p1.png",
+    "/case-studies/usubz/p2.png",
+    "/case-studies/usubz/p3.png",
+    "/case-studies/usubz/p4.png",
+    "/case-studies/usubz/p5.png",
+    "/case-studies/usubz/p6.png",
+    "/case-studies/usubz/p7.png",
+    "/case-studies/usubz/p8.png",
+    "/case-studies/usubz/p9.png",
     // "/case-studies/jetezee/r6.png",
   ];
 const OPTIONS = { loop: true }
@@ -32,7 +36,7 @@ const OPTIONS = { loop: true }
   const next = (index + 1) % images.length;
 
   return (
-    <section className="w-full padding-x ">
+    <section className="w-full padding-x pb-24">
       {/* Top Section */}
       <div className="text-center max-w-3xl mx-auto mb-12">
         <motion.h2
@@ -52,13 +56,27 @@ const OPTIONS = { loop: true }
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          The complex aviation marketplace was transformed into a user-friendly, visually striking product through the JetEzee prototype. The UX testing increased clarity, buyer confidence, and administrative efficiency. LaunchBox Global guaranteed that the personalized web app development services and UI/UX design services were prepared for development through minimal rework and total alignment, providing completely validated Web App and Admin Dashboard prototypes.
+      The final design successfully merged education, motivation, and employability into a unified platform. Usubz’s redesigned interface empowered users to learn, earn recognition, and stand out in one continuous journey. This approach positioned the platform among the best job portals, increasing engagement and building trust between learners and recruiters.
         </motion.p>
       </div>
+      <div className="flex gap-10 md:gap-20 justify-center mt-20">
+        <div className="space-y-10 md:space-y-20">
+          {images.slice(0,3).map((im,i)=>(
+            <Image src={im} alt="im" width={300} height={300} />
+          ))}
+        </div>
+        <div className="mt-20 space-y-10 md:space-y-20">
+          {images.slice(3,6).map((im,i)=>(
+            <Image src={im} alt="im" width={300} height={300} />
+          ))}
+        </div>
+        <div className="space-y-10 md:space-y-20">
+          {images.slice(6,9).map((im,i)=>(
+            <Image src={im} alt="im" width={300} height={300} />
+          ))}
+        </div>
 
-      {/* Main Card Section */}
-     {/* <WireCarousel images={images} /> */}
-     <EmblaCarousel slides={images} color={"#E9B44C"} />
+      </div>
     </section>
   );
 };
