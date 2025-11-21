@@ -30,7 +30,7 @@ export default function EmblaCarousel({ slides, color }) {
               key={position}
               className={`
                 absolute top-0 left-1/2 -translate-x-1/2
-                flex items-center justify-center rounded-2xl
+                flex items-center justify-center rounded-3xl
                 transition-all duration-1000 ease-in-out
                 ${isActive ? "border-4  md:w-auto w-[250px] md:scale-105 shadow-xl z-10" : "z-0"}
               `}
@@ -42,6 +42,7 @@ export default function EmblaCarousel({ slides, color }) {
                   scale(${1 - Math.abs(position) * 0.08})
                 `,
                 borderColor: isActive ? color : "transparent",
+                background: isActive ? color : "transparent",
                 // opacity: Math.abs(position) > 2 ? 0 : 1 - Math.abs(position) * 0.15,
                 zIndex: 10 - Math.abs(position),
               }}
@@ -51,7 +52,7 @@ export default function EmblaCarousel({ slides, color }) {
                 alt="image-card"
                 width={700}
                 height={700}
-                className="object-fill rounded-2xl"
+                className="object-fill rounded-3xl"
               />
             </div>
           );
